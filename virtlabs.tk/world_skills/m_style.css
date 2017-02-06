@@ -1,0 +1,64 @@
+.header{
+    width: 99%;
+    min-height: 100pt;
+    margin: 0.5%;
+    border: 1pt solid black;
+}
+.logo{
+    width: 19%;
+    float: left;
+    border: 1pt solid black;
+    margin: 0.5%;
+}
+.reg{
+    width: 19%;
+    float: right;
+    border: 1pt solid black;
+    margin: 0.5%;
+}
+.div-h1{
+    display: inline-block;
+    margin-left: 20.5%;
+    margin-right: 20.5%; 
+    margin-top: 0.5%;
+    border: 3pt solid black;
+    text-align: center;
+}
+.main{
+    width: 98%;
+    min-height: 300pt;
+    margin: 0.5%;
+    padding: 0.5%;
+    border: 2pt solid green;
+}
+.sidebar{
+    width: 10%;
+    min-width: 30pt;
+    border: 1pt solid blue;
+}
+.sidebar li{
+    display: inline;
+}
+.banner{
+    width: 15%;
+    min-width: 20pt;
+    min-height: 20pt;
+    border: 1pt solid blue;
+    float: right;
+}
+.main_area{
+    margin-right: 16%;
+    border: 1pt solid blue;
+    text-align: justify;
+}
+.main_img{
+    display: inline-block;
+    float: left;
+}
+.footer{
+    margin: 0.5%;
+    border: 1pt solid blue;
+    text-align: justify;
+    width: 99%;
+    min-height: 50pt;
+}    

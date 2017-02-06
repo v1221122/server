@@ -1,0 +1,77 @@
+.main_wrapper{
+    margin: 0.5%;
+    background: #454545;
+}
+.header{
+    background: #889840;
+    text-align: center;
+    margin: 0.5%;
+    height: 10%;
+    border: 3px solid black;
+    border-radius: 15pt;
+}
+.header h1{
+    text-shadow: 5pt -2pt 5pt #0022ff;
+}
+.sidebar{
+    background: #954545;
+    float: left;
+    width: 20%;
+    text-align: left;
+    border: 2px solid red;
+    box-sizing: border-box;
+    transform-origin: right top;
+/*    transform: rotate(-20deg);*/
+    transition-property: background-color, transform;
+    transition-duration: 2s;
+}
+.sidebar:hover{
+    background-color: #0000aa;
+    transform: rotate(360deg);
+}
+.main{
+    background: #889870;
+    margin-left: 20%;
+    min-height: 500px;
+    text-align: left;
+}
+@keyframes back{
+    from{
+        background-color: green;
+    }
+    25%{
+        background-color: yellow;
+    }
+    50%{
+        background-color: blue;
+    }
+    75%{
+        background-color: violet;
+    }
+    to{
+        background-color: red;
+    }
+}
+@keyframes opacity{
+    from{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0.6;
+    }
+    to{
+        opacity: 1;
+    }
+}
+.footer{
+    background: green;
+    margin: 0.5%;
+    text-align: center;
+    height: 10%;
+}
+.footer:hover{
+    animation-name: back, opacity;
+    animation-duration: 6s, 2s;
+    animation-iteration-count: 3, 9;
+    animation-timing-function: linear;
+}
