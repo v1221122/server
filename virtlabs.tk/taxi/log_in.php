@@ -1,0 +1,53 @@
+<?php
+    $dbname = "alex";
+    $url = "taxi.php";
+
+    $link = mysqli_connect("localhost", "nerrevar", "01050062", "$dbname");
+    if (isset($_POST['login']))
+        if (!empty($_POST['login'])){
+            $query = mysqli_query($link, "select * from user where user='".$_POST['login']."'");
+            $user = mysqli_fetch_array($query);
+            if (!empty($user['password'])){
+                if ($_POST['password'] == $user['password']){
+                    $_SESSION['id'] = session_id();
+                    $_SESSION['login'] = $_POST['login'];
+                }
+            }
+            else
+                echo "wrong login or password!";
+        }
+?>
+
+<?php
+    if (empty($_SESSION["id"]) or empty($_SESSION["login"])){
+        echo '<form method="post">';
+        require_once "login_form.php";
+        echo '</form>';
+    }
+    else{
+        echo '<form method="post" style="float:right">';
+        echo "Hello, ".$_SESSION['login']."!<br>";
+        echo '<input type="hidden" name="logout" value="yes"/>';
+        echo '<input type="submit" value="Log out"/><br>';
+        if (mysqli_fetch_array(mysqli_query($link, "select * from user where user='".$_SESSION["login"]."'"))['admin'])
+            echo '<a href="registration.php">Registration</a>';
+        echo '</form>';
+        require_once "change_status.php";  
+        require_once "table.php" ;
+        if (isset($_POST['work'])){
+            $query=mysqli_query($link, "update user set work=true where user='".$_SESSION['login']."'");
+            require "refresh.php";
+            unset($_POST['work']);
+        }
+        if (isset($_POST['not_work'])){
+            $query=mysqli_query($link, "update user set work=false where user='".$_SESSION['login']."'");
+            require "refresh.php";
+            unset($_POST['not work']);
+        }
+    }
+
+    if (isset($_POST['logout'])){
+        session_destroy();
+        echo '<meta http-equiv="refresh" content="0,'.$url.'">';
+    }
+?>
