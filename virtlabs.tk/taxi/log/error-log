@@ -1,0 +1,8 @@
+[Tue Feb 07 02:14:43.809163 2017] [php7:error] [pid 414] [client 77.108.204.175:61848] script '/srv/http/virtlabs.tk/taxi/taxi.php' not found or unable to stat, referer: http://forsaje.tk/
+[Tue Feb 07 02:15:28.497896 2017] [php7:error] [pid 415] [client 77.108.204.175:61864] script '/srv/http/virtlabs.tk/taxi/taxi.php' not found or unable to stat, referer: http://forsaje.tk/
+[Tue Feb 07 02:18:27.428294 2017] [php7:notice] [pid 417] [client 77.108.204.175:62180] PHP Notice:  Undefined index: user in /srv/http/virtlabs.tk/taxi/chat_content.php on line 22, referer: http://forsaje.tk/chat_content.php
+[Tue Feb 07 02:18:35.597904 2017] [php7:notice] [pid 425] [client 77.108.204.175:62229] PHP Notice:  Undefined index: user in /srv/http/virtlabs.tk/taxi/chat_content.php on line 22, referer: http://forsaje.tk/chat_content.php
+[Tue Feb 07 02:18:41.627725 2017] [php7:notice] [pid 418] [client 77.108.204.175:62242] PHP Notice:  Undefined index: user in /srv/http/virtlabs.tk/taxi/chat_content.php on line 22, referer: http://forsaje.tk/chat_content.php
+[Tue Feb 07 02:18:47.695257 2017] [php7:notice] [pid 414] [client 77.108.204.175:62270] PHP Notice:  Undefined index: user in /srv/http/virtlabs.tk/taxi/chat_content.php on line 22, referer: http://forsaje.tk/chat_content.php
+[Tue Feb 07 02:20:57.112306 2017] [php7:notice] [pid 415] [client 77.108.204.175:62405] PHP Notice:  Undefined variable: _SESSION in /srv/http/virtlabs.tk/taxi/chat_content.php on line 9, referer: http://forsaje.tk/index.php
+[Tue Feb 07 02:21:46.522547 2017] [php7:notice] [pid 416] [client 77.108.204.175:62414] PHP Notice:  Undefined index: user in /srv/http/virtlabs.tk/taxi/chat_content.php on line 22, referer: http://forsaje.tk/chat_content.php

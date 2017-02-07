@@ -5,8 +5,7 @@ $row = mysqli_fetch_array($query);
 
 require_once "chat.php";
 
-echo '<table style="border: 2px solid black; width:100%; 
-margin-top:225px">';
+echo '<table style="border: 2px solid black; width:100%; margin-top:5px">';
 while ($row){
     echo '<tr><td style="border: 2px solid black">';
     echo $row["id"];

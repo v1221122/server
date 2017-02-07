@@ -1,6 +1,6 @@
 <?php
     $dbname = "alex";
-    $url = "taxi.php";
+    $url = "index.php";
 
     $link = mysqli_connect("localhost", "nerrevar", "01050062", "$dbname");
     if (isset($_POST['login']))
@@ -26,7 +26,9 @@
     }
     else{
         echo '<form method="post" style="float:right">';
-        echo "Hello, ".$_SESSION['login']."!<br>";
+        $name_query = mysqli_query($link, "select name from user where user = '".$_SESSION['login']."'");
+        $name = mysqli_fetch_array($name_query);
+        echo "Hello, ".$name['name']."!<br>";
         echo '<input type="hidden" name="logout" value="yes"/>';
         echo '<input type="submit" value="Log out"/><br>';
         if (mysqli_fetch_array(mysqli_query($link, "select * from user where user='".$_SESSION["login"]."'"))['admin'])

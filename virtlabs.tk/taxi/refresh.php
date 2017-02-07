@@ -1,1 +1,1 @@
-echo '<meta http-equiv="refresh" content="0,taxi.php">';
+echo '<meta http-equiv="refresh" content="0,index.php">';

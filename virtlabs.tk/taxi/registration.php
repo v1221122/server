@@ -1,7 +1,7 @@
 <?php
     $title = "Такси форсаж";
     $dbname = "alex";
-    $url = "taxi.php";
+    $url = "index.php";
 ?>
 
 <!DOCTYPE html>
