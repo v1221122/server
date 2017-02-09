@@ -9,7 +9,12 @@ div{
 }
 .header{
     width:100%;
-    height:10%;
+    min-height:18%;
+}
+.logo{
+    width:10%;
+    height:100%;
+    float:left;
 }
 .header h1{
     width:20%;
@@ -17,10 +22,21 @@ div{
     margin-right:40%;
     text-align:center;
 }
+.registration{
+    width:15%;
+    float:right;
+    border:none;
+}
 .left_panel{
     width:15%;
     height:80%;
     float:left;
+}
+.main_menu{
+    margin:0.2em;
+}
+.main_menu li{
+    margin:0.2em;
 }
 .right_panel{
     width:20%;
@@ -31,6 +47,14 @@ div{
     width:65%;
     height:80%;
     display:inline-block;
+}
+.frame{
+    border:2px solig blue;
+    margin:3px;
+    padding:3px;
+    width:99.5%;
+    height:99.5%;
+    background:#999;
 }
 .footer{
     width:100%;
