@@ -10,10 +10,7 @@
         <h1>Toolbar</h1>
     </div>
     <div class="main" id="main">
-        <form method="post">
-            <input type="hidden" name="point"/>
-            <input type="submit" value=""><img src='' alt='point'/></input>
-        </form>
+        <button value="point">Point</button>
         <?php
             require "point.php";
         ?>
