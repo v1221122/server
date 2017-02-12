@@ -6,8 +6,8 @@
 <head>
     <title>VirtLabGraph</title>
     <link rel="stylesheet" href="style.css">
-    <script src="jquery.js"></script>
-    <script src="hide.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/hide.js"></script>
 </head>
 <body>
     <div class="header">
@@ -16,7 +16,7 @@
         </div>
         <div class="registration">
             <?php
-                require_once "login.php";
+                require_once "php/login.php";
             ?>
             <dialog id="registration_dialog">
                 <form method="post">
@@ -27,7 +27,7 @@
                     <input type="password" name="reg_password" class="dialog_input"/>
                     <input type=submit value="Регистрация" class="dialog_button"/>
                     <?php
-                        require_once "registration.php";
+                        require_once "php/registration.php";
                     ?>
                 </form>
             </dialog>
@@ -54,9 +54,6 @@
             </li>
             <li><a href="#?section=inc">inc</a></li>
         </ul>
-    </div>
-    <div class="right_panel">
-        <h1>matrix frames</h1>
     </div>
     <div class="main_area">
         <iframe src="main.php" class="frame">

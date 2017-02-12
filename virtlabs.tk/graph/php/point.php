@@ -5,7 +5,7 @@ if (isset($_POST['point'])){
     else
         $_POST['index'] = $_POST['index'] + 1;
     echo '
-    <img src="" alt="point" id="'.$_POST['index'].'">
+    <img src="point.png" alt="point" id="'.$_POST['index'].'">
     ';
 }
 ?>

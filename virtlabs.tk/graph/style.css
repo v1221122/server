@@ -23,7 +23,7 @@ div{
     text-align:center;
 }
 .registration{
-    width:15%;
+    width:20%;
     float:right;
     border:none;
 }
@@ -38,13 +38,8 @@ div{
 .main_menu li{
     margin:0.2em;
 }
-.right_panel{
-    width:20%;
-    height:80%;
-    float:right;
-}
 .main_area{
-    width:65%;
+    width:85%;
     height:80%;
     display:inline-block;
 }
