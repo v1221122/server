@@ -1,8 +1,5 @@
 function paint_point(){
-    $(document).ready(function(){
-        alert("hello!");
-    });
-/*    $(document).ready(
+    $(document).ready(
         $("#main").click(function(){
             var point = $("#main").createElement("img");
             point.setAttribute("class", "point");
@@ -10,5 +7,4 @@ function paint_point(){
             $(document).$(".main").innerHTML.appendChild(point);
         });
     );
-*/
-}
+};
