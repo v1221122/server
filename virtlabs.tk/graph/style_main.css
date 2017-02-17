@@ -1,3 +1,6 @@
+*{
+    box-sizing:border-box;
+}
 body{
     bg-color:#999;
 }
@@ -6,13 +9,37 @@ div{
     padding:3px;
 }
 .wrapper{
-    width:64%;
-    height:100%;
-    float:left;
+    position:absolute;
+    top:3px;
+    right:280px;
+    bottom:3px;
+    left:3px;
 }
 .frames{
-    width:33.5%;
+    position:absolute;
+    top:3px;
+    right:3px;
+    bottom:3px;
+    width:271px;
+}
+#main{
+    min-height:70%;
+    margin:3px;
+}
+#toolbar{
+    margin:3px;
+    height:13%;
+}
+#console{
+    margin:3px;
+    height:15.5%;
+}
+#console_text{
+    width:100%;
     height:100%;
-    margin-left:65.5%;
-    display:inline-block;
+}
+#svg{
+    width:100%;
+    height:100%;
+    border:2px solid green;
 }

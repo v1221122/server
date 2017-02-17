@@ -6,9 +6,9 @@ $(document).ready(
         $("#s1").click(
             function(){
                 if ($("#hide1").is(":visible"))
-                    $("#hide1").hide();
+                    $("#hide1").slideUp();
                 else
-                    $("#hide1").show();
+                    $("#hide1").slideDown();
              }
         )
     }
