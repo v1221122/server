@@ -22,10 +22,6 @@ div{
     bottom:3px;
     width:271px;
 }
-#main{
-    min-height:70%;
-    margin:3px;
-}
 #toolbar{
     margin:3px;
     height:13%;
@@ -42,4 +38,6 @@ div{
     width:100%;
     height:100%;
     border:2px solid green;
+    min-height:70%;
+    margin:3px;
 }

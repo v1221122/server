@@ -11,10 +11,8 @@
             <button class="toolbar_button" onClick="paint_point()"><img src="img/point.png" alt="point"/></button>
             <button class="toolbar_button" onClick="paint_line()"><img src="img/line.png" alt="line"/></button>
         </div>
-        <div id="main">
-            <svg id="svg">
-            </svg>
-        </div>
+        <svg id="svg">
+        </svg>
         <div id="console">
             <textarea disabled=true id="console_text">hello</textarea>
         </div>
