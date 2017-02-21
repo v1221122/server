@@ -24,20 +24,28 @@ div{
 }
 #toolbar{
     margin:3px;
-    height:13%;
+    height:80px;
+    width:calc(100% - 3px);
+    padding:8px;
 }
 #console{
     margin:3px;
-    height:15.5%;
+    height:130px;
 }
 #console_text{
     width:100%;
     height:100%;
 }
 #svg{
-    width:100%;
-    height:100%;
+    width:calc(100% - 3px);
+    height:calc(100% - 80px - 130px - 12px);
     border:2px solid green;
-    min-height:70%;
     margin:3px;
+    min-height:300px;
+    min-width:300px;
+}
+.svg_img{
+    stroke:#000;
+    stroke-width:3;
+    fill:none;
 }

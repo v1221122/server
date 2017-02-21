@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" style="display:none">
+<symbol viewBox="0 0 64 64" id="icon_point_button">
+    <circle r="30" cx="32" cy="32" fill="#393" stroke="#000" stroke-width="3"/>
+    <text x="14" y="48" font-size="48" fill="#000">N</text>
+</symbol>
+<symbol viewBox="0 0 64 64" id="icon_line_button">
+    <line x1="0" y1="40" x2="64" y2="24" fill="#000" stroke="#000" stroke-width="8"/>
+</symbol>
+<symbol viewBox="0 0 64 64" id="icon_replace_button">
+    <line x1="32" y1="8" x2="32" y2="56" stroke="#000" stroke-width="8"/>
+    <line x1="8" y1="32" x2="56" y2="32" stroke="#000" stroke-width="8"/>
+    <polygon points="32,3 42,13 22,13" stroke="#000" stroke-width="3" fill="#000"/>
+    <polygon points="3,32 13,22 13,42" stroke="#000" stroke-width="3" fill="#000"/>
+    <polygon points="32,61 42,51 22,51" stroke="#000" stroke-width="3" fill="#000"/>
+    <polygon points="61,32 51,22 51,42" stroke="#000" stroke-width="3" fill="#000"/>
+</symbol>
+</svg>
