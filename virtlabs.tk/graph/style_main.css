@@ -19,8 +19,23 @@ div{
     position:absolute;
     top:3px;
     right:3px;
-    bottom:3px;
+    bottom:46px;
     width:271px;
+}
+#check_div{
+    position:absolute;
+    bottom:3px;
+    right:3px;
+    width:271px;
+    height:40px;
+}
+#check_form{
+    width:100%;
+    height:100%;
+}
+#check_button{
+    height:100%;
+    width:100%;
 }
 #toolbar{
     margin:3px;
@@ -49,3 +64,8 @@ div{
     stroke-width:3;
     fill:none;
 }
+.svg_img_small{
+    stroke:#000;
+    stroke-width:1;
+    fill:none;
+}    

@@ -20,7 +20,7 @@
                 <use xlink:href="#icon_replace_button"></use>
             </svg>
         </div>
-        <svg id="svg" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 600 600">
+        <svg id="svg" xmlns="http://www.w3.org/2000/svg" version="1.1">
         </svg>
         <div id="console">
             <textarea disabled=true id="console_text">hello</textarea>
@@ -28,6 +28,15 @@
     </div>
     <div class="frames">
         <h1>matrix frames</h1>
+    </div>
+    <div id="check_div">
+        <form method="post" id="check_form">
+            <input type="hidden" name="coordinats" id="coordinats">
+            <input type="submit" value="Проверить" id="check_button">
+        </form>
+        <?php
+            require_once "php/check.php";
+        ?>
     </div>
 </body>
 </html>
