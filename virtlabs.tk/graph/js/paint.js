@@ -3,13 +3,18 @@ function paint_point(){
         $("#console_text").val("Выберите место\n" + $("#console_text").val());
         $("#svg").off("click");
         $("#svg").click(function(e){
+            var clear = true;
+            var url = window.location.href;
             var x = e.pageX - 10;
             var y = e.pageY - 93;
+            var request = new HtmlHttpRequest();
+
             var circle = document.createElementNS(svg_str, "circle");
             circle.setAttribute('cx', x);
             circle.setAttribute('cy', y);
             circle.setAttribute('r', '10');
             circle.setAttribute('class','svg_img_small');
+
             var text = document.createElementNS(svg_str, "text");
             text.setAttribute('class', 'svg_img_small');
             text.setAttribute('font-size', '8');
@@ -17,11 +22,15 @@ function paint_point(){
             text.textContent = '' + point_index;
             text.setAttribute('x', x - 3);
             text.setAttribute('y', y + 1);
-            point_index++;
+
             $("#svg").append(circle);
             $("#svg").append(text);
-            $("#console_text").val("Вершина добавлена\n" + $("#console_text").val());
-            $("#coordinats").val($("#coordinats").val() + x + " " + y + "\n");
+            $("#console_text").val("Вершина №" + point_index + " добавлена\n" + $("#console_text").val());
+
+            request.open("GET", "php/temp_table.php?point_index=" + point_index +"&x=" + x + "&y=" + y, true);
+            request.send();
+
+            point_index++;
         });
     });
 };

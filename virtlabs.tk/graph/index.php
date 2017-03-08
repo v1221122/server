@@ -5,6 +5,7 @@
 <html>
 <head>
     <title>VirtLabGraph</title>
+    <meta name="yandex-verification" content="3de45f2600675f37" />
     <link rel="stylesheet" href="style.css">
     <script src="js/jquery.js"></script>
     <script src="js/hide.js"></script>
@@ -20,7 +21,7 @@
             ?>
             <dialog id="registration_dialog">
                 <form method="post">
-                    <img src="close.jpg" alt="close" id="dialog_close"/>
+                    <img src="img/close.jpg" alt="close" id="dialog_close"/>
                     <label for="reg_login" class="dialog_label">Логин</label>
                     <input type="text" name="reg_login" class="dialog_input"/>
                     <label for="reg_password" class="dialog_label">Пароль</label>
