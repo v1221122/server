@@ -69,3 +69,10 @@ div{
     stroke-width:1;
     fill:none;
 }    
+#ya{
+    display:inline-block;
+    float:right;
+    width:92px;
+    height:34px;
+    margin:auto 3px, 3px, auto;
+}

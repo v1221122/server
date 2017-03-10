@@ -5,7 +5,9 @@
     <script src="js/jquery.js"></script>
     <script src="js/svg.js"></script>
     <script src="js/paint.js"></script>
-    <?php require_once "svg/icons.svg" ?>
+    <?php require_once "svg/icons.svg";
+        $_SESSION['id'] = $_GET['id'];
+    ?>
 </head>
 <body>
     <div class="wrapper">

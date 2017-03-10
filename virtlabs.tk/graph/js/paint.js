@@ -1,3 +1,10 @@
+function parse(){
+    var params = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
+    var values = params[0].split('=');
+    var value = values[1];
+    return value;
+};
+
 function paint_point(){
     $(document).ready(function(){
         $("#console_text").val("Выберите место\n" + $("#console_text").val());
@@ -7,7 +14,7 @@ function paint_point(){
             var url = window.location.href;
             var x = e.pageX - 10;
             var y = e.pageY - 93;
-            var request = new HtmlHttpRequest();
+            var request = new XMLHttpRequest();
 
             var circle = document.createElementNS(svg_str, "circle");
             circle.setAttribute('cx', x);
@@ -27,7 +34,7 @@ function paint_point(){
             $("#svg").append(text);
             $("#console_text").val("Вершина №" + point_index + " добавлена\n" + $("#console_text").val());
 
-            request.open("GET", "php/temp_table.php?point_index=" + point_index +"&x=" + x + "&y=" + y, true);
+            request.open("GET", "http://virtlabs.tk/php/temp_table.php?id=" + parse() + "&point_index=" + point_index +"&x=" + x + "&y=" + y, true);
             request.send();
 
             point_index++;

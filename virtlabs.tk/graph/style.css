@@ -2,7 +2,7 @@
     box-sizing:border-box;
 }
 body{
-    height:100vh;
+    height:92vh;
 }
 div{
     border:2px solid black;
@@ -60,4 +60,11 @@ div{
     margin-right:40%;
     width:20%;
     text-align:center;
+}
+#ya{
+    display:inline-block;
+    float:right;
+    width:92px;
+    height:34px;
+    margin:-30px 3px 3px auto;
 }
