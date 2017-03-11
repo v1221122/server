@@ -20,7 +20,7 @@ function paint_point(){
             circle.setAttribute('cx', x);
             circle.setAttribute('cy', y);
             circle.setAttribute('r', '10');
-            circle.setAttribute('class','svg_img_small');
+            circle.setAttribute('class','svg_img_small point');
 
             var text = document.createElementNS(svg_str, "text");
             text.setAttribute('class', 'svg_img_small');
@@ -47,7 +47,7 @@ function paint_line(){
         $("#svg").off("click");
         $("#console_text").val("Выберите начальную вершину\n" + $("#console_text").val());
         var line = document.createElementNS(svg_str, "line");
-        $("#svg").click(function(e){
+        $(".point").click(function(e){
             $("#console_text").val("Выберите конечную вершину\n" + $("#console_text").val());
             var x1 = e.pageX;
             var y1 = e.pageY;
