@@ -240,3 +240,17 @@ su
 mkdir /var/log/mysql/log
 mkdir /var/log/mysql
 su
+св юю
+cd ..
+ls
+ls -l graph
+su
+nano js/paint.js 
+nano js/paint.js 
+nano js/paint.js 
+nano js/paint.js 
+nano js/paint.js 
+nano js/paint.js 
+nano js/paint.js 
+nano js/paint.js 
+nano js/paint.js 
