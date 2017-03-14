@@ -29,7 +29,8 @@
     $link = mysqli_connect("localhost", "nerrevar", "01050062", "$dbname");
     if (isset($_POST['login']))
         if (!empty($_POST['login'])){
-            $query = mysqli_query($link, "select * from user where login='".$_POST['login']."'");
+			$login = htmlentities(mysql_real_escape_string($_POST['login']));
+            $query = mysqli_query($link, "select * from user where login='".$login."'");
             $user = mysqli_fetch_array($query);
             if (!empty($user['password'])){
                 if ($_POST['password'] == $user['password']){

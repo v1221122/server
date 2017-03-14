@@ -14,4 +14,7 @@
     <polygon points="32,61 42,51 22,51" stroke="#000" stroke-width="3" fill="#000"/>
     <polygon points="61,32 51,22 51,42" stroke="#000" stroke-width="3" fill="#000"/>
 </symbol>
+<symbol viewBox="0 0 64 64" id="icon_close">
+	<line x1="3" y1="3" x2="61" y2="61" stroke="#000" stroke-width="6"/>
+	<line x1="3" y1="61" x2="61" y2="3" stroke="#000" stroke-width="6"/>
 </svg>

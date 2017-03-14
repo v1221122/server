@@ -254,3 +254,7 @@ nano js/paint.js
 nano js/paint.js 
 nano js/paint.js 
 nano js/paint.js 
+nano js/paint.js 
+nano js/paint.js 
+ыг
+su

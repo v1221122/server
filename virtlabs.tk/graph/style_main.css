@@ -66,8 +66,7 @@ div{
 }
 .svg_img_small{
     stroke:#000;
-    stroke-width:1;
-    fill:none;
+    stroke-width:2;
 }    
 #ya{
     display:inline-block;

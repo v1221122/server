@@ -6,8 +6,8 @@
         elseif (empty($_POST['reg_password']))
             echo "Не введен пароль";
         else{
-            $login = $_POST['reg_login'];
-            $password = $_POST['reg_password'];
+            $login = htmlentities(mysql_real_escape_string($_POST['reg_login']));
+            $password = htmlentities(mysql_real_escape_string($_POST['reg_password']));
             $check_query = mysqli_query($link, "select * from user where login='$login'");
             if (mysqli_fetch_array($check_query)){
                 echo "Пользователь с таким логином уже существует. Пожалуйста попробуйте еще раз";
@@ -21,6 +21,4 @@
     }
     else
         echo "Заполнены не все поля";
-
-    mysqli_close($db);
 ?>

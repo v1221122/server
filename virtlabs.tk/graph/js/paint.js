@@ -17,22 +17,27 @@ function paint_point(){
             var y = e.pageY - 93;
             var request = new XMLHttpRequest();
 
+			var g = document.createElementNS(svg_str, "g");
+			g.setAttribute("class", "point");
+			
             var circle = document.createElementNS(svg_str, "circle");
             circle.setAttribute('cx', x);
             circle.setAttribute('cy', y);
-            circle.setAttribute('r', '10');
-            circle.setAttribute('class','svg_img_small point');
+            circle.setAttribute('r', '15');
+            circle.setAttribute('class','svg_img_small');
+			circle.setAttribute('fill', '#393');
 
             var text = document.createElementNS(svg_str, "text");
             text.setAttribute('class', 'svg_img_small');
-            text.setAttribute('font-size', '8');
+            text.setAttribute('font-size', '12');
             text.setAttribute('fill', '#000');
             text.textContent = '' + point_index;
-            text.setAttribute('x', x - 3);
-            text.setAttribute('y', y + 1);
+            text.setAttribute('x', x - 5);
+            text.setAttribute('y', y + 2);
 
-            $("#svg").append(circle);
-            $("#svg").append(text);
+			g.append(circle);
+			g.append(text);
+            $("#svg").append(g);
             $("#console_text").val("Вершина №" + point_index + " добавлена\n" + $("#console_text").val());
 
             request.open("GET", "http://virtlabs.tk/php/temp_table.php?id=" + parse() + "&point_index=" + point_index +"&x=" + x + "&y=" + y, true);
@@ -53,40 +58,48 @@ function paint_line(){
 			
         $("#console_text").val("Выберите начальную вершину\n" + $("#console_text").val());
         var line = document.createElementNS(svg_str, "line");
-		$(".point").each(function (){
+		var arr = $(".point");
+		arr.each(function (){
 			$(this).click(function(e){
-alert("1");
+				var p = $(this);
+				arr.each(function(){
+					if ($(this) != p)
+						$(this).off("click");
+				});
 	            var request = new XMLHttpRequest();
-				request.open("GET", "http://virtlabs.tk/php/temp_table_select.php?id=" + parse(), true);
+				request.open("GET", "/php/temp_table_select.php?id=" + parse());
 				request.send();
-
 				request.onreadystatechange = function(){
 					if (request.readyState == 4){
-						alert(request.responsetext);
-						if (request.responsetext == "true"){
+						if (request.responseText == "true"){
 							$("#console_text").val("Выберите конечную вершину\n" + $("#console_text").val());
-							var x1 = e.pageX;
-							var y1 = e.pageY;
-							var x2 = e.pageX;
-							var y2 = e.pageY;
-							line.setAttribute('x1', x1);
-							line.setAttribute('y1', y1);
-							line.setAttribute('x2', x2);
-							line.setAttribute('y2', y2);
+							var x1 = e.pageX - 10;
+							var y1 = e.pageY - 93;
+							var x2 = x1;
+							var y2 = y1;
+							line.setAttribute("x1", x1);
+							line.setAttribute("y1", y1);
+							line.setAttribute("x2", x2);
+							line.setAttribute("y2", y2);
+							line.setAttribute("stroke", "#000");
+							line.setAttribute("stroke-width", "2");
 							$("#svg").append(line);
 							$("#svg").on("mousemove", function(e2){
-								line.setAttribute('x2', e2.pageX);
-								line.setAttribute('y2', e2.pageY);
+								line.setAttribute("x2", e2.pageX - 10);
+								line.setAttribute("y2", e2.pageY - 93);
 							});
-							$("#svg").click(function(e3){
-								line.setAttribute('x2', e3.pageX);
-								line.setAttribute('y2', e3.pageY);
-								$("#svg").off("click");
-								$("#svg").off("mousemove");
+							arr.each(function(){
+								$(this).click(function(e3){
+									line.setAttribute("x2", e3.pageX - 10);
+									line.setAttribute("y2", e3.pageY - 93);
+									arr.each(function(){
+										$(this).off("click");
+									});
+									$("#svg").off("mousemove");
+								});
 							});
 						};
 					};
-            alert("request.readyState");
 				};
 			});
         });

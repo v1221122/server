@@ -6,9 +6,13 @@
 <head>
     <title>VirtLabGraph</title>
     <meta name="yandex-verification" content="3de45f2600675f37" />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css"/>
+	<link rel="shortcut icon" href="img/icon.png" type="image/x-icon"/>
     <script src="js/jquery.js"></script>
     <script src="js/hide.js"></script>
+	<?php 
+		require_once "svg/icons.svg";
+    ?>
 </head>
 <body>
     <div class="header">
@@ -21,12 +25,14 @@
             ?>
             <dialog id="registration_dialog">
                 <form method="post">
-                    <img src="img/close.jpg" alt="close" id="dialog_close"/>
-                    <label for="reg_login" class="dialog_label">Логин</label>
-                    <input type="text" name="reg_login" class="dialog_input"/>
-                    <label for="reg_password" class="dialog_label">Пароль</label>
-                    <input type="password" name="reg_password" class="dialog_input"/>
-                    <input type=submit value="Регистрация" class="dialog_button"/>
+					<svg id="dialog_close">
+						<use xlink:href="#icon_close"></use>
+					</svg>
+                    <label for="reg_login" class="dialog_label">Логин</label><br>
+                    <input type="text" name="reg_login" class="dialog_input"/><br>
+                    <label for="reg_password" class="dialog_label">Пароль</label><br>
+                    <input type="password" name="reg_password" class="dialog_input"/><br>
+                    <input type=submit value="Регистрация" class="dialog_button"/><br>
                     <?php
                         require_once "php/registration.php";
                     ?>

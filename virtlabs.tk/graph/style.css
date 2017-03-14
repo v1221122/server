@@ -43,6 +43,14 @@ div{
     height:80%;
     display:inline-block;
 }
+#dialog_close{
+	position:absolute;
+	right:3px;
+	top:3px;
+	width:20px;
+	height:20px;
+	viewBox:"0 0 20 20";
+}
 .frame{
     border:2px solig blue;
     margin:3px;
