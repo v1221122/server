@@ -258,3 +258,9 @@ nano js/paint.js
 nano js/paint.js 
 ыг
 su
+mysql -p -u nerrevar
+mysql -p -u nerrevar
+mysql -p -u nerrevar
+mysql -p -u nerrevar
+show tables;
+mysql -p -u nerrevar

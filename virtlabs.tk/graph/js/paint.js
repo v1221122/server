@@ -42,7 +42,7 @@ function paint_point(){
 
             request.open("GET", "http://virtlabs.tk/php/temp_table.php?id=" + parse() + "&point_index=" + point_index +"&x=" + x + "&y=" + y, true);
             request.send();
-
+			
             point_index++;
         });
     });
@@ -63,7 +63,6 @@ function paint_line(){
 			$(this).click(function(e){
 				var p = $(this);
 				arr.each(function(){
-					if ($(this) != p)
 						$(this).off("click");
 				});
 	            var request = new XMLHttpRequest();
@@ -89,14 +88,18 @@ function paint_line(){
 								line.setAttribute("y2", e2.pageY - 93);
 							});
 							arr.each(function(){
-								$(this).click(function(e3){
-									line.setAttribute("x2", e3.pageX - 10);
-									line.setAttribute("y2", e3.pageY - 93);
-									arr.each(function(){
-										$(this).off("click");
+								if ($(this) != p){
+									$(this).click(function(e3){
+										line.setAttribute("x2", e3.pageX - 10);
+										line.setAttribute("y2", e3.pageY - 93);
+										arr.each(function(){
+											$(this).off("click");
+										});
+										$("#svg").off("mousemove");
+										request.open("GET", "php/temp_table_line.php?id=" + parse() + "&p1=" + p.$("text").textContent + "&p2=" + $(this).$("text").textContent);
+										request.send(null);
 									});
-									$("#svg").off("mousemove");
-								});
+								};
 							});
 						};
 					};
@@ -104,4 +107,12 @@ function paint_line(){
 			});
         });
     });
+};
+
+window.onbeforeunload = function(){
+	var request = new XMLHttpRequest();
+	request.open("GET", "php/drop.php?id=" + parse(), false);
+	request.send(null);
+	while (request.readyState != 4);
+	return "Ok";
 };

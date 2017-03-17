@@ -6,3 +6,5 @@
 [Wed Mar 15 08:10:33.703024 2017] [php7:error] [pid 298] [client 185.24.93.74:49739] script '/srv/http/virtlabs.tk/graph/prox_ch.php' not found or unable to stat
 [Wed Mar 15 19:57:30.865846 2017] [cgi:error] [pid 1419] [client 189.35.64.193:42102] AH02811: script not found or unable to stat: /srv/http/virtlabs.tk/graph/hndUnblock.cgi
 [Wed Mar 15 19:57:31.481080 2017] [cgi:error] [pid 298] [client 189.35.64.193:42106] AH02811: script not found or unable to stat: /srv/http/virtlabs.tk/graph/tmUnblock.cgi
+[Thu Mar 16 14:16:10.726186 2017] [php7:error] [pid 298] [client 139.162.124.167:39374] script '/srv/http/virtlabs.tk/graph/echo.php' not found or unable to stat
+[Thu Mar 16 17:36:48.015007 2017] [php7:error] [pid 295] [client 141.8.183.20:41507] script '/srv/http/virtlabs.tk/graph/taxi.php' not found or unable to stat
