@@ -8,3 +8,7 @@
 [Wed Mar 15 19:57:31.481080 2017] [cgi:error] [pid 298] [client 189.35.64.193:42106] AH02811: script not found or unable to stat: /srv/http/virtlabs.tk/graph/tmUnblock.cgi
 [Thu Mar 16 14:16:10.726186 2017] [php7:error] [pid 298] [client 139.162.124.167:39374] script '/srv/http/virtlabs.tk/graph/echo.php' not found or unable to stat
 [Thu Mar 16 17:36:48.015007 2017] [php7:error] [pid 295] [client 141.8.183.20:41507] script '/srv/http/virtlabs.tk/graph/taxi.php' not found or unable to stat
+[Fri Mar 17 18:27:57.506778 2017] [php7:error] [pid 1423] [client 95.108.179.5:38881] script '/srv/http/virtlabs.tk/graph/uchet.php' not found or unable to stat
+[Sat Mar 18 16:00:21.975018 2017] [cgi:error] [pid 5367] [client 74.81.75.67:42120] AH02811: script not found or unable to stat: /srv/http/cgi-bin
+[Sat Mar 18 16:00:22.293990 2017] [cgi:error] [pid 3122] [client 74.81.75.67:42184] AH02811: script not found or unable to stat: /srv/http/cgi-bin
+[Sat Mar 18 16:00:22.619502 2017] [cgi:error] [pid 1423] [client 74.81.75.67:42237] AH02811: script not found or unable to stat: /srv/http/cgi-bin

@@ -1,5 +1,0 @@
-<?php
-    if (isset($POST['coordinates']){
-        $str = $POST['coordinats'];
-    }
-?>

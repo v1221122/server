@@ -88,18 +88,16 @@ function paint_line(){
 								line.setAttribute("y2", e2.pageY - 93);
 							});
 							arr.each(function(){
-								if ($(this) != p){
-									$(this).click(function(e3){
-										line.setAttribute("x2", e3.pageX - 10);
-										line.setAttribute("y2", e3.pageY - 93);
-										arr.each(function(){
-											$(this).off("click");
-										});
-										$("#svg").off("mousemove");
-										request.open("GET", "php/temp_table_line.php?id=" + parse() + "&p1=" + p.$("text").textContent + "&p2=" + $(this).$("text").textContent);
-										request.send(null);
+								$(this).click(function(e3){
+									line.setAttribute("x2", e3.pageX - 10);
+									line.setAttribute("y2", e3.pageY - 93);
+									arr.each(function(){
+										$(this).off("click");
 									});
-								};
+									$("#svg").off("mousemove");
+									request.open("GET", "php/temp_table_line.php?id=" + parse() + "&p1=" + p.find('text').text() + "&p2=" + $(this).find('text').text());
+									request.send(null);
+								});
 							});
 						};
 					};

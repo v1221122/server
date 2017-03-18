@@ -59,6 +59,9 @@ div{
     min-height:300px;
     min-width:300px;
 }
+#svg *{
+	margin:0;
+}
 .svg_img{
     stroke:#000;
     stroke-width:3;
@@ -74,4 +77,9 @@ div{
     width:92px;
     height:34px;
     margin:auto 3px, 3px, auto;
+}
+.matrix{
+	min-height:50%;
+	max-height:50%;
+	margin:1px;
 }

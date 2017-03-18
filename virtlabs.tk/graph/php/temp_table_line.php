@@ -8,12 +8,4 @@
 	mysqli_query($db, $create_query);
 	$insert_query = "insert into ".$id."_line values(null, ".$p1.", ".$p2.")";
 	mysqli_query($db, $insert_query);
-	
-	$f = fopen("t_table", "w");
-	$arr = mysqli_query($db, "select * from ".$id."_line");
-	fputs($f, $p1." ".$p2."\n");
-	while ($a1 = mysqli_fetch_array($arr))
-		foreach ($a1 as $a)
-			fputs($f, $a."\n");
-	fclose($f);
 ?>

@@ -5,6 +5,7 @@
     <script src="js/jquery.js"></script>
     <script src="js/svg.js"></script>
     <script src="js/paint.js"></script>
+	<script src="js/check.js"></script>
     <?php require_once "svg/icons.svg";
         $_SESSION['id'] = $_GET['id'];
     ?>
@@ -29,16 +30,15 @@
         </div>
     </div>
     <div class="frames">
-        <h1>matrix frames</h1>
+        <div id="m1" class="matrix">
+			<?php require_once "php/m1.php" ?>
+		</div>
+		<div id="m2" class="matrix">
+			<?php require_once "php/m2.php" ?>
+		</div>
     </div>
     <div id="check_div">
-        <form method="post" id="check_form">
-            <input type="hidden" name="coordinats" id="coordinats">
-            <input type="submit" value="Проверить" id="check_button">
-        </form>
-        <?php
-            require_once "php/check.php";
-        ?>
+		<button id="check_button" onClick="check()">Проверить</button>
     </div>
 </body>
 </html>
