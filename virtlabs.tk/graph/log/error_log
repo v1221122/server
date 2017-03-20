@@ -12,3 +12,9 @@
 [Sat Mar 18 16:00:21.975018 2017] [cgi:error] [pid 5367] [client 74.81.75.67:42120] AH02811: script not found or unable to stat: /srv/http/cgi-bin
 [Sat Mar 18 16:00:22.293990 2017] [cgi:error] [pid 3122] [client 74.81.75.67:42184] AH02811: script not found or unable to stat: /srv/http/cgi-bin
 [Sat Mar 18 16:00:22.619502 2017] [cgi:error] [pid 1423] [client 74.81.75.67:42237] AH02811: script not found or unable to stat: /srv/http/cgi-bin
+[Sun Mar 19 05:38:24.016112 2017] [core:error] [pid 3122] [client 1.214.89.69:51401] AH00126: Invalid URI in request GET HTTP/1.1 HTTP/1.1
+[Sun Mar 19 05:38:24.744646 2017] [cgi:error] [pid 5367] [client 1.214.89.69:51554] AH02811: script not found or unable to stat: /srv/http/cgi-bin
+[Sun Mar 19 05:38:25.466014 2017] [cgi:error] [pid 1423] [client 1.214.89.69:51710] AH02811: script not found or unable to stat: /srv/http/cgi-bin
+[Sun Mar 19 05:38:26.216940 2017] [cgi:error] [pid 394] [client 1.214.89.69:51858] AH02811: script not found or unable to stat: /srv/http/cgi-bin
+[Sun Mar 19 05:38:26.951883 2017] [cgi:error] [pid 5373] [client 1.214.89.69:52013] AH02811: script not found or unable to stat: /srv/http/cgi-bin
+[Sun Mar 19 05:38:27.677575 2017] [cgi:error] [pid 5361] [client 1.214.89.69:52167] AH02811: script not found or unable to stat: /srv/http/cgi-bin
