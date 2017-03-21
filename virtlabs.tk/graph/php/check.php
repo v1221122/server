@@ -6,8 +6,8 @@
 	
 	$select_query_point = "select * from ".$id;
 	$user_point_num = 0;
-	$arr_point = mysql_query($select_query_point);
-	while ($x = mysqli_fetch_array($db, $arr_point)
+	$arr_point = mysqli_query($db, $select_query_point);
+	while ($x = mysqli_fetch_array($arr_point))
 		$point_num++;
 	
 	$select_query_line = "select * from ".$id."_line";

@@ -31,6 +31,9 @@
     </div>
     <div class="frames">
         <div id="m1" class="matrix">
+			<div class="matrix_head">
+				Матрица смежности
+			</div>
 			<?php require_once "php/m1.php" ?>
 		</div>
 		<div id="m2" class="matrix">
