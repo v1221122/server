@@ -65,11 +65,6 @@ function paint_line(){
 				arr.each(function(){
 						$(this).off("click");
 				});
-	            var request = new XMLHttpRequest();
-				request.open("GET", "/php/temp_table_select.php?id=" + parse());
-				request.send();
-				request.onreadystatechange = function(){
-					if (request.readyState == 4){
 						if (request.responseText == "true"){
 							$("#console_text").val("Выберите конечную вершину\n" + $("#console_text").val());
 							var x1 = e.pageX - 10;
@@ -100,8 +95,6 @@ function paint_line(){
 								});
 							});
 						};
-					};
-				};
 			});
         });
     });
