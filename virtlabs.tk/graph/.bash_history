@@ -267,3 +267,32 @@ mysql -p -u nerrevar
 mysql -p -u nerrevar
 mysql -p -u nerrevar
 mysql -p -u nerrevar
+ls
+cd ../
+cd ../
+ls
+mkdir test.tk
+cd test.tk/
+ls
+scp --help
+man scp
+su
+cd ../
+rm -r test.tk
+mkdir test.nerrevar.tk
+apachectl restart
+ls
+ls
+rm -r test.nerrevar.tk
+mkdir test-nerrevar.tk
+cd test-nerrevar.tk/
+mkdir log
+apachectl restart
+su
+cd ..
+ls
+cd test-nerrevar.tk/
+ls
+ls
+cat index.html 
+su
