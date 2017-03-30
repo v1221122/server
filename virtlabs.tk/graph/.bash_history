@@ -296,3 +296,6 @@ ls
 ls
 cat index.html 
 su
+cat js/hide.js 
+cat index.php 
+nano index.php 
