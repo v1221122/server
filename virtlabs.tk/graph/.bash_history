@@ -299,3 +299,30 @@ su
 cat js/hide.js 
 cat index.php 
 nano index.php 
+nano js/paint.js 
+nano js/paint.js 
+nano php/temp_table_line.php 
+nano php/m1.php 
+nano php/get_matrix.php 
+nano php/m2.php 
+nano style_main.css 
+nano php/m2.php 
+nano php/m1.php 
+nano php/m2.php 
+nano php/m1.php 
+cat php/get_matrix.php 
+nano php/m2hp 
+nano php/m2.php 
+nano php/m1.php 
+nano php/m2.php 
+nano php/m1.php 
+nano php/get_matrix.php 
+echo $locale
+echo $LOCALE
+echo $lang
+echo $LANG
+nano /etc/locale.conf 
+su
+nano php/get_matrix.php 
+nano php/get_matrix.php 
+mysql -p -u nerrevar

@@ -1,4 +1,4 @@
 <?php
-	require_once "get_matrix.php";
+	require "get_matrix.php";
 	echo $str;
 ?>

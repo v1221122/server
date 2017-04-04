@@ -65,36 +65,37 @@ function paint_line(){
 				arr.each(function(){
 						$(this).off("click");
 				});
-						if (request.responseText == "true"){
-							$("#console_text").val("Выберите конечную вершину\n" + $("#console_text").val());
-							var x1 = e.pageX - 10;
-							var y1 = e.pageY - 93;
-							var x2 = x1;
-							var y2 = y1;
-							line.setAttribute("x1", x1);
-							line.setAttribute("y1", y1);
-							line.setAttribute("x2", x2);
-							line.setAttribute("y2", y2);
-							line.setAttribute("stroke", "#000");
-							line.setAttribute("stroke-width", "2");
-							$("#svg").append(line);
-							$("#svg").on("mousemove", function(e2){
-								line.setAttribute("x2", e2.pageX - 10);
-								line.setAttribute("y2", e2.pageY - 93);
-							});
-							arr.each(function(){
-								$(this).click(function(e3){
-									line.setAttribute("x2", e3.pageX - 10);
-									line.setAttribute("y2", e3.pageY - 93);
-									arr.each(function(){
-										$(this).off("click");
-									});
-									$("#svg").off("mousemove");
-									request.open("GET", "php/temp_table_line.php?id=" + parse() + "&p1=" + p.find('text').text() + "&p2=" + $(this).find('text').text());
-									request.send(null);
-								});
-							});
-						};
+
+				$("#console_text").val("Выберите конечную вершину\n" + $("#console_text").val());
+				var x1 = e.pageX - 10;
+				var y1 = e.pageY - 93;
+				var x2 = x1;
+				var y2 = y1;
+				line.setAttribute("x1", x1);
+				line.setAttribute("y1", y1);
+				line.setAttribute("x2", x2);
+				line.setAttribute("y2", y2);
+				line.setAttribute("stroke", "#000");
+				line.setAttribute("stroke-width", "2");
+				$("#svg").append(line);
+				$("#svg").on("mousemove", function(e2){
+    				line.setAttribute("x2", e2.pageX - 10);
+					line.setAttribute("y2", e2.pageY - 93);
+				});
+				arr.each(function(){
+					$(this).click(function(e3){
+						line.setAttribute("x2", e3.pageX - 10);
+						line.setAttribute("y2", e3.pageY - 93);
+						arr.each(function(){
+							$(this).off("click");
+						});
+						$("#svg").off("mousemove");
+
+                        var request = new XMLHttpRequest();
+						request.open("GET", "php/temp_table_line.php?id=" + parse() + "&p1=" + p.find('text').text() + "&p2=" + $(this).find('text').text());
+						request.send(null);
+					});
+				});
 			});
         });
     });
