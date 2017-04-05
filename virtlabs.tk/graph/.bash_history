@@ -326,3 +326,9 @@ su
 nano php/get_matrix.php 
 nano php/get_matrix.php 
 mysql -p -u nerrevar
+nano php/m2.php 
+nano php/m2.php 
+nano php/m1.php 
+nano php/m2.php 
+nano php/m2.php 
+nano php/m2.php 
