@@ -332,3 +332,25 @@ nano php/m1.php
 nano php/m2.php 
 nano php/m2.php 
 nano php/m2.php 
+nano php/m2.php 
+top
+nano php/m2.php 
+nano php/m2.php 
+nano m_inc.py
+nano m_inc.py
+nano php/m2.php 
+nano m_inc.py
+python m_inc.py 
+nano m_inc.py
+python m_inc.py 
+nano m_inc.py
+python m_inc.py 
+ls
+nano m_inc.py 
+nano m_inc.py
+ls
+mv m_inc.py.save m_inc.py
+ls
+nano m_inc.py 
+python m_inc.py 
+nano m_inc.py 
