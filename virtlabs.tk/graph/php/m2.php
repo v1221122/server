@@ -1,3 +1,4 @@
+
 <?php
 function parse(){
     require("get_matrix.php");
@@ -11,6 +12,7 @@ function parse(){
 };
 
 $arr =  parse();
-foreach ($arr as $a)
+foreach ($arr as $a){
     echo $a;
+};
 ?>

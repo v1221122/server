@@ -4,7 +4,7 @@
 	$task = 1;
 	if (!isset($db))
 		$db = mysqli_connect("localhost", "nerrevar", "01050062", "graph");
-
+	
 	$select_query_point = "select * from ".$id;
 	$user_point_num = 0;
 	$arr_point = mysqli_query($db, $select_query_point);
@@ -17,4 +17,5 @@
 		$user_arr_line[$a['id']] = array($a['p1'], $a['p2']);
 
 	require "get_matrix.php";
+
 ?>
