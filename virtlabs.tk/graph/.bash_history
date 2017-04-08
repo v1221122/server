@@ -404,3 +404,35 @@ nano m_inc.py
 nano php/check.php 
 nano php/check.php
 nano php/check.php
+nano php/check.php
+python convert_sm.py 3
+nano php/check.php
+nano convert_sm.py 
+python convert_sm.py 3
+python convert_sm.py 
+nano convert_sm.py 
+python convert_sm.py 
+nano php/check.php
+nano convert_sm.py
+cat m_inc.py > convert_sm.py 
+nano convert_sm.py 
+nano php/check.php
+nano convert_sm.py 
+nano convert_sm.py 
+nano php/check.php
+nano php/check.php
+python convert_sm.py 0100
+nano convert_sm.py 
+python convert_sm.py 0100
+nano convert_sm.py 
+python convert_sm.py 3
+nano convert_sm.py 
+python convert_sm.py 3
+python convert_sm.py 3 3
+nano php/check.php
+nano convert_sm.py 
+nano convert_sm.py 
+nano php/check.php
+nano php/check.php
+nano php/check.php
+nano php/check.php
