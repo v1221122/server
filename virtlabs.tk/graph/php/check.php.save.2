@@ -16,6 +16,8 @@
 	while ($a = mysqli_fetch_array($arr_user_line_temp))
 		$str_user_line = $str_user_line.$a['id'].$a['p1'].$a['p2'];
 
+    echo "\n$str_user_line\n";
+
     exec("python convert_sm.py $user_point_num $str_user_line", $user_sm_arr);
 
     $user_sm_str = '';
@@ -24,6 +26,7 @@
         echo $ar;
     }
 
+    echo "<br>matrix<br>";
     echo $user_sm_str;
 
 	require "get_matrix.php";

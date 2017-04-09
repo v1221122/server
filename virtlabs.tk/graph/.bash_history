@@ -436,3 +436,20 @@ nano php/check.php
 nano php/check.php
 nano php/check.php
 nano php/check.php
+nano php/check.php
+nano php/check.php
+nano js/check.js 
+nano php/check.php
+nano php/get_matrix.php 
+nano php/check.php
+nano convert_sm.py 
+nano convert_sm.py 
+python convert_sm.py 1
+nano convert_sm.py 
+python convert_sm.py 1
+python convert_sm.py 2 0110
+python convert_sm.py 2 012
+nano convert_sm.py 
+python convert_sm.py 2 012
+nano convert_sm.py 
+python convert_sm.py 2 012
