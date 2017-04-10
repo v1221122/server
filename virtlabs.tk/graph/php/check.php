@@ -16,7 +16,10 @@
 	while ($a = mysqli_fetch_array($arr_user_line_temp))
 		$str_user_line = $str_user_line.$a['id'].$a['p1'].$a['p2'];
 
-    exec("python convert_sm.py $user_point_num $str_user_line", $user_sm_arr);
+    $user_sm_arr = [];
+    exec("python convert_sm.py $user_point_num $str_user_line", $user_sm_arr, $err);
+
+    echo $err;
 
     $user_sm_str = '';
     foreach($user_sm_arr as $ar){
