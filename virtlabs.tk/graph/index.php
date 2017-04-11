@@ -10,14 +10,14 @@
 	<link rel="shortcut icon" href="img/icon.png" type="image/x-icon"/>
     <script src="js/jquery.js"></script>
     <script src="js/hide.js"></script>
-	<?php 
+	<?php
 		require_once "svg/icons.svg";
     ?>
 </head>
 <body>
     <div class="header">
-        <div class="logo">
-            <img src="" alt="logo">
+        <div id="logo">
+            <img src="img/logo.jpg" alt="logo">
         </div>
         <div class="registration">
             <?php

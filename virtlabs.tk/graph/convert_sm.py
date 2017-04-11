@@ -1,5 +1,3 @@
-#!ussr/bin/python3
-
 import sys
 
 length = int(sys.argv[1])
@@ -16,9 +14,9 @@ for i in range(length):
     for j in range(length):
         arr[i].append(0)
 
-for i in range(0, len(string), 3):
-    i1 = int(string[i+1]) - 1
-    i2 = int(string[i+2]) - 1
+for i in range(0, len(string), 2):
+    i1 = int(string[i]) - 1
+    i2 = int(string[i+1]) - 1
     arr[i1][i2] = 1
     arr[i2][i1] = 1
 

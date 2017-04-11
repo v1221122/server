@@ -14,25 +14,21 @@
 	$arr_user_line_temp = mysqli_query($db, $select_query_user_line);
     $str_user_line = '';
 	while ($a = mysqli_fetch_array($arr_user_line_temp))
-		$str_user_line = $str_user_line.$a['id'].$a['p1'].$a['p2'];
+		$str_user_line = $str_user_line.$a['p1'].$a['p2'];
 
-    $user_sm_arr = [];
-    exec("python convert_sm.py $user_point_num $str_user_line", $user_sm_arr, $err);
-
-    echo $err;
+	$exec_str = "python ../convert_sm.py $user_point_num $str_user_line";
+    exec($exec_str, $user_sm_arr, $err);
 
     $user_sm_str = '';
-    foreach($user_sm_arr as $ar){
+    foreach($user_sm_arr as $ar)
         $user_sm_str = $user_sm_str.$ar;
-        echo $ar;
-    }
 
     echo $user_sm_str;
 
 	require "get_matrix.php";
 
     if ($str == $user_sm_str)
-        echo 'successful';
+        echo "\nsuccessful";
     else
-        echo 'epic fail';
+        echo "\nepic fail";
 ?>

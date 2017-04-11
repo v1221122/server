@@ -1,25 +1,3 @@
-ды
-ls
-mkdir log
-su
-nano js/paint.js 
-nano log/error_log 
-nano log/access_log 
-ls img/
-ls
-nano log/error_log 
-nano php/temp_table.php 
-rm log/error_log 
-ls log/
-nano php/temp_table.php 
-nano js/paint.js 
-nano php/temp_table.php 
-ls php/
-cat php/temp
-cat php/temp
-nano php/temp
-nano php/temp
-nano php/temp
 nano php/temp_table.php 
 nano php/temp_table.php 
 cat php/temp
@@ -453,3 +431,70 @@ nano convert_sm.py
 python convert_sm.py 2 012
 nano convert_sm.py 
 python convert_sm.py 2 012
+python convert_sm.py 2 012
+nano convert_sm.py 
+nano convert_sm.py 
+nano php/check.php
+ls -l
+python convert_sm.py 2 0121
+nano php/check.php
+python convert_sm.py 2 112
+nano php/check.php
+nano php/check.php
+python convert_sm.py 2 12
+python convert_sm.py 3 12
+python convert_sm.py 2 12
+python convert_sm.py 4 122314
+ls -l
+python convert_sm.py 8 121723262838364547
+python convert_sm.py 8 121723262838364547
+python convert_sm.py 4 122314
+python convert_sm.py 4 122314
+python convert_sm.py 4 122314
+python convert_sm.py 4 122314
+python convert_sm.py 4 122314
+python convert_sm.py 4 122314
+python convert_sm.py 4 122314
+python convert_sm.py 8 121723262838364547
+php
+php
+php -h
+php -f php/check.php 
+clear
+python convert_sm.py 3 122331
+python convert_sm.py 3 1223311
+python convert_sm.py 3 1223314
+python convert_sm.py 3 12233141
+python convert_sm.py 3 12233111
+python convert_sm.py 3 12
+python convert_sm.py 3 1213
+python convert_sm.py 3 1213
+convert_sm.py 3 1213
+python convert_sm.py 3 1213
+php -f php/check.php 
+convert
+convert_sm
+python
+python convert_sm.py 
+python convert_sm.py 3
+python convert_sm.py 3 12
+ls -l
+cd
+./
+nano php/check.php 
+nano php/check.php 
+nano php/check.php 
+wget
+wget http://images.gofreedownload.net/letter-in-circle-clip-art-19613.jpg
+ls
+mv letter-in-circle-clip-art-19613.jpg logo.jpg
+mv logo.jpg img/
+nano index.php 
+nano style.css 
+nano index.php 
+nano style.css 
+nano style.css 
+nano style.css 
+nano index.php 
+nano style.css 
+nano js/paint.js 

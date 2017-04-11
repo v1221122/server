@@ -48,12 +48,13 @@ function paint_point(){
     });
 };
 
+
 function paint_line(){
     $(document).ready(function(){
 		//disable active click
         $("#svg").off("click");
 		$(".point").each(function (){
-		    $(this).off("click");
+		    $(this).click(false);
 	    });
 			
         $("#console_text").val("Выберите начальную вершину\n" + $("#console_text").val());
@@ -63,7 +64,7 @@ function paint_line(){
 			$(this).click(function(e){
 				var p = $(this);
 				arr.each(function(){
-						$(this).off("click");
+						$(this).click(false);
 				});
 
 				$("#console_text").val("Выберите конечную вершину\n" + $("#console_text").val());
@@ -87,7 +88,7 @@ function paint_line(){
 						line.setAttribute("x2", e3.pageX - 10);
 						line.setAttribute("y2", e3.pageY - 93);
 						arr.each(function(){
-							$(this).off("click");
+							$(this).click(false);
 						});
 						$("#svg").off("mousemove");
 

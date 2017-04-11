@@ -1,5 +1,3 @@
-#!ussr/bin/python3
-
 import sys
 import math
 
@@ -27,3 +25,5 @@ for i in range(len):
     for j in range(len_line):
         print(arr[i][j], end=' ')
     print('<br>')
+
+sys.exit(0)
