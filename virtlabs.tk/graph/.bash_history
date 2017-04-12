@@ -1,5 +1,4 @@
 nano php/temp_table.php 
-nano php/temp_table.php 
 cat php/temp
 nano php/temp_table.php 
 cat php/temp
@@ -498,3 +497,4 @@ nano style.css
 nano index.php 
 nano style.css 
 nano js/paint.js 
+nano style_main.css 
