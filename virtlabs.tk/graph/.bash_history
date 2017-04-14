@@ -3,10 +3,6 @@ cat php/temp
 nano php/temp_table.php 
 cat php/temp
 nano php/temp_table.php 
-cat php/temp
-nano php/temp_table.php 
-cat php/temp
-nano php/temp_table.php 
 rm php/temp
 cat php/temp
 nano php/temp_table.php 
@@ -498,3 +494,7 @@ nano index.php
 nano style.css 
 nano js/paint.js 
 nano style_main.css 
+nano js/paint.js 
+nano js/svg.js 
+nano js/paint.js 
+nano js/paint.js

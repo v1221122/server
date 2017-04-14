@@ -11,10 +11,6 @@ function paint_point(){
 		$(".point").each(function (){
 		    $(this).off("click");
 	    });
-
-        if (!ended)
-            $("#svg:last-child").remove();
-        ended = 0;
 		
         $("#svg").click(function(e){
             var x = e.pageX - 10;
@@ -44,8 +40,6 @@ function paint_point(){
             $("#svg").append(g);
             $("#console_text").val("Вершина №" + point_index + " добавлена\n" + $("#console_text").val());
 
-
-            ended = 1;
             request.open("GET", "http://virtlabs.tk/php/temp_table.php?id=" + parse() + "&point_index=" + point_index +"&x=" + x + "&y=" + y, true);
             request.send();
 			
@@ -62,6 +56,7 @@ function paint_line(){
 		$(".point").each(function (){
 		    $(this).click(false);
 	    });
+
 			
         $("#console_text").val("Выберите начальную вершину\n" + $("#console_text").val());
         var line = document.createElementNS(svg_str, "line");
