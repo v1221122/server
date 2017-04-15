@@ -1,9 +1,3 @@
-nano php/temp_table.php 
-cat php/temp
-nano php/temp_table.php 
-cat php/temp
-nano php/temp_table.php 
-rm php/temp
 cat php/temp
 nano php/temp_table.php 
 cat PHP_LOG
@@ -497,4 +491,10 @@ nano style_main.css
 nano js/paint.js 
 nano js/svg.js 
 nano js/paint.js 
+nano js/paint.js
+nano js/paint.js
+nano js/paint.js
+nano js/paint.js
+su
+nano js/paint.js
 nano js/paint.js

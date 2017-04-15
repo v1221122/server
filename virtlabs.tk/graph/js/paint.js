@@ -13,8 +13,8 @@ function paint_point(){
 	    });
 
         if (!ended)
-            $("#svg:last-child").remove();
-        ended = 0;
+            $("#svg :last-child").remove();
+        ended = 1;
 		
         $("#svg").click(function(e){
             var x = e.pageX - 10;
