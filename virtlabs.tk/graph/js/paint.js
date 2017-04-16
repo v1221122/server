@@ -58,11 +58,13 @@ function paint_point(){
 function paint_line(){
     $(document).ready(function(){
 		//disable active click
-        $("#svg").off("click");
+        $("#svg").off("mousemove");
 		$(".point").each(function (){
 		    $(this).click(false);
 	    });
-			
+		if(!ended)
+			$("#svg :last-chid").remove();
+				
         $("#console_text").val("Выберите начальную вершину\n" + $("#console_text").val());
         var line = document.createElementNS(svg_str, "line");
 		var arr = $(".point");
@@ -73,6 +75,8 @@ function paint_line(){
 						$(this).click(false);
 				});
 
+				ended = 0;
+				
 				$("#console_text").val("Выберите конечную вершину\n" + $("#console_text").val());
 				var x1 = e.pageX - 10;
 				var y1 = e.pageY - 93;

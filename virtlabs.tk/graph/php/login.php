@@ -29,7 +29,7 @@
     $link = mysqli_connect("localhost", "nerrevar", "01050062", "$dbname");
     if (isset($_POST['login']))
         if (!empty($_POST['login'])){
-			$login = htmlentities(mysql_real_escape_string($_POST['login']));
+			$login = htmlentities(mysqli_escape_string($link, $_POST['login']));
             $query = mysqli_query($link, "select * from user where login='".$login."'");
             $user = mysqli_fetch_array($query);
             if (!empty($user['password'])){
@@ -39,6 +39,6 @@
                 }
             }
             else
-                echo "Введен неверный логин или пароль!";
+                echo "<script>aert('Введен неверный логин или пароль!')<script>";
         }
 ?>

@@ -17,7 +17,7 @@
 <body>
     <div class="header">
         <div id="logo">
-            <img src="img/logo.jpg" alt="logo">
+            <img src="img/logo.png" alt="logo">
         </div>
         <div class="registration">
             <?php
@@ -38,9 +38,9 @@
                     ?>
                 </form>
             </dialog>
-            <button id="open_dialog" >Зарегистрироваться</button>
+            <button id="open_dialog">Зарегистрироваться</button>
         </div>
-        <h1>header</h1>
+        <h1>Виртуальная лаборатория<br>Граф</h1>
         <script>
             var dialog = document.querySelector('#registration_dialog');
             document.querySelector('#open_dialog').onclick = function(){
@@ -51,8 +51,8 @@
             }
         </script>
     </div>
-    <div class="left_panel">
-        <h1>nav</h1>
+    <div id="left_panel">
+        <h2>Навигация<button id="hide_button" style="width:30px;background-color:#093">&#9668</button></h2>
         <ul class="main_menu">
             <li><a href="#?section=sm" id="s1">sm</a><br>
                 <ul id="hide1" class="hidden">
@@ -67,7 +67,7 @@
         </iframe>
     </div>
     <div class="footer">
-        <h1>footer</h1>
+        <p>(c) nerrevar 2017</p>
 
         <div id="ya"><!-- Yandex.Metrika informer -->
         <a href="https://metrika.yandex.ru/stat/?id=43325794&amp;from=informer" target="_blank" rel="nofollow"><img src="https://informer.yandex.ru/informer/43325794/3_1_B9FF53FF_99FF33FF_0_pageviews" style="display:inline-block; width:88px; height:31px; border:0;" alt="Яндекс.Метрика" title="Яндекс.Метрика: данные за сегодня (просмотры, визиты и уникальные посетители)" class="ym-advanced-informer" data-cid="43325794" data-lang="ru" /></a>

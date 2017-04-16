@@ -1,7 +1,3 @@
-cat php/temp
-nano php/temp_table.php 
-cat PHP_LOG
-cat $PHP_LOG
 nano php/temp_table.php 
 nano /srv/php/log/error_log 
 rm /srv/php/log/error_log 
@@ -498,3 +494,7 @@ nano js/paint.js
 su
 nano js/paint.js
 nano js/paint.js
+nano index.php 
+nano index.php 
+nano index.php 
+nano index.php 

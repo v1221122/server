@@ -2,32 +2,41 @@
     box-sizing:border-box;
 }
 body{
-    bg-color:#999;
-}
-div{
-    border:2px solid red;
-    padding:3px;
-}
-.wrapper{
-    position:absolute;
-    top:3px;
-    right:280px;
-    bottom:3px;
-    left:3px;
+    background-color:#393;
+	overflow:hide;
 }
 .frames{
     position:absolute;
-    top:3px;
-    right:3px;
-    bottom:46px;
-    width:271px;
+    top:0;
+    right:0;
+    bottom:50px;
+    width:200px;
+	margin:0;
+}
+.matrix{
+	max-height:calc(50% - 1px);
+	margin:1px;
+    overflow: auto;
+	border:1px solid red;
+	margin-right:3px;
+}
+.matrix_head{
+	width:100%;
+	margin:0;
+	padding:3px;
+	border:1px solid red;
+	text-align:center;
+}
+.matrix_main{
+	margin:3px;
 }
 #check_div{
     position:absolute;
-    bottom:3px;
-    right:3px;
-    width:271px;
-    height:40px;
+    bottom:0;
+    right:0;
+    width:203px;
+    height:47px;
+	margin:0;
 }
 #check_form{
     width:100%;
@@ -37,15 +46,27 @@ div{
     height:100%;
     width:100%;
 }
+.wrapper{
+    position:absolute;
+    top:0;
+    right:203px;
+    bottom:0;
+    left:0;
+	margin:0;
+}
 #toolbar{
-    margin:3px;
+    margin:0;
     height:80px;
     width:calc(100% - 3px);
     padding:8px;
 }
+.toolbar_icon{
+	cursor:pointer;
+	margin-left:10px;
+}
 #console{
-    margin:3px;
-    height:130px;
+    margin:0;
+    height:100px;
 }
 #console_text{
     width:100%;
@@ -53,9 +74,9 @@ div{
 }
 #svg{
     width:calc(100% - 3px);
-    height:calc(100% - 80px - 130px - 12px);
+    height:calc(100% - 80px - 100px - 6px);
     border:2px solid green;
-    margin:3px;
+    margin:0;
     min-height:300px;
     min-width:300px;
 }
@@ -74,16 +95,3 @@ div{
 .point{
     cursor:pointer;
 }    
-#ya{
-    display:inline-block;
-    float:right;
-    width:92px;
-    height:34px;
-    margin:auto 3px, 3px, auto;
-}
-.matrix{
-	min-height:50%;
-	max-height:50%;
-	margin:1px;
-    overflow: auto;
-}

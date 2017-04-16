@@ -34,13 +34,17 @@
 			<div class="matrix_head">
 				Матрица смежности
 			</div>
-			<?php require_once "php/m1.php" ?>
+			<div class="matrix_main">
+				<?php require_once "php/m1.php" ?>
+			</div>
 		</div>
 		<div id="m2" class="matrix">
 			<div class="matrix_head">
 				Матрица инцидентности
 			</div>
-			<?php require_once "php/m2.php" ?>
+			<div class="matrix_main">
+				<?php require_once "php/m2.php" ?>
+			</div>
 		</div>
     </div>
     <div id="check_div">
