@@ -12,7 +12,7 @@ function paint_point(){
 		    $(this).off("click");
 	    });
 
-        if (!ended)
+        if (ended == 0)
             $("#svg :last-child").remove();
         ended = 1;
 		
@@ -50,6 +50,7 @@ function paint_point(){
             request.send();
 			
             point_index++;
+		$("#svg").off(click);
         });
     });
 };
@@ -58,11 +59,11 @@ function paint_point(){
 function paint_line(){
     $(document).ready(function(){
 		//disable active click
-        $("#svg").off("mousemove");
+        $("#svg").off("click");
 		$(".point").each(function (){
-		    $(this).click(false);
+		    $(this).off("click");
 	    });
-		if(!ended)
+		if(ended == 0)
 			$("#svg :last-chid").remove();
 				
         $("#console_text").val("Выберите начальную вершину\n" + $("#console_text").val());
@@ -72,14 +73,14 @@ function paint_line(){
 			$(this).click(function(e){
 				var p = $(this);
 				arr.each(function(){
-						$(this).click(false);
+						$(this).off("click");
 				});
 
 				ended = 0;
 				
 				$("#console_text").val("Выберите конечную вершину\n" + $("#console_text").val());
-				var x1 = e.pageX - 10;
-				var y1 = e.pageY - 93;
+				var x1 = e.pageX;
+				var y1 = e.pageY - 80;
 				var x2 = x1;
 				var y2 = y1;
 				line.setAttribute("x1", x1);
@@ -90,21 +91,23 @@ function paint_line(){
 				line.setAttribute("stroke-width", "2");
 				$("#svg").append(line);
 				$("#svg").on("mousemove", function(e2){
-    				line.setAttribute("x2", e2.pageX - 10);
-					line.setAttribute("y2", e2.pageY - 93);
+    				line.setAttribute("x2", e2.pageX);
+					line.setAttribute("y2", e2.pageY - 80);
 				});
 				arr.each(function(){
 					$(this).click(function(e3){
-						line.setAttribute("x2", e3.pageX - 10);
-						line.setAttribute("y2", e3.pageY - 93);
-						arr.each(function(){
-							$(this).click(false);
-						});
+						line.setAttribute("x2", e3.pageX);
+						line.setAttribute("y2", e3.pageY - 80);
 						$("#svg").off("mousemove");
+						
+						ended = 1;
 
                         var request = new XMLHttpRequest();
 						request.open("GET", "php/temp_table_line.php?id=" + parse() + "&p1=" + p.find('text').text() + "&p2=" + $(this).find('text').text());
 						request.send(null);
+						arr.each(function(){
+							$(this).off("click");
+						});
 					});
 				});
 			});

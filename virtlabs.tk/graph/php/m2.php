@@ -12,6 +12,6 @@
 
 	$arr =  parse();
 	foreach ($arr as $a){
-		echo $a;
+		// echo $a;
 	};
 ?>

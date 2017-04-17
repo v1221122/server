@@ -1,5 +1,11 @@
 *{
     box-sizing:border-box;
+	font-family: 'PT Sans', sans-serif;
+}
+html{
+	background-image:url("img/back2.jpg");
+	background-clip:border-box;
+	/* background-size:cover; */
 }
 body{
 	position:absolute;
@@ -9,7 +15,10 @@ body{
 	left:0;
 	margin:0;
 	padding:0;
-	background-color:#093;
+	color:#ffa;
+}
+a{
+	color:#faf;
 }
 .header{
 	position:absoute;
@@ -43,9 +52,14 @@ body{
 	margin-right:5px;
     width:150px;
     float:right;
+	font-size:8pt;
+	color:green;
 }
 .registration input,button{
 	width:150px;
+	height:20px;
+	font-size:8pt;
+	
 }
 #left_panel{
 	position:absolute;
@@ -53,13 +67,12 @@ body{
 	bottom:50px;
 	left:0;
 	width:200px;
-	background-color:#093;
 }
 .main_menu{
     margin:0.2em;
 }
-.main_menu li{
-    margin:0.2em;
+.main_menu > li{
+    margin:20px 0.2em 0.2em 0.2em;
 }
 .main_area{
 	position:absolute;
@@ -68,7 +81,6 @@ body{
 	bottom:50px;
 	right:0;
     display:inline-block;
-	border-top,border-left:1px solid grey;
 }
 #dialog_close{
 	position:absolute;

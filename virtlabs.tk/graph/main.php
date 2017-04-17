@@ -2,6 +2,7 @@
 <html>
 <head>
     <link rel="stylesheet" href="style_main.css">
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
     <script src="js/jquery.js"></script>
     <script src="js/svg.js"></script>
     <script src="js/paint.js"></script>

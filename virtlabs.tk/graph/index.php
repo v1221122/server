@@ -8,6 +8,7 @@
     <meta name="yandex-verification" content="3de45f2600675f37" />
     <link rel="stylesheet" href="style.css"/>
 	<link rel="shortcut icon" href="img/icon.png" type="image/x-icon"/>
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
     <script src="js/jquery.js"></script>
     <script src="js/hide.js"></script>
 	<?php
@@ -52,18 +53,28 @@
         </script>
     </div>
     <div id="left_panel">
-        <h2>Навигация<button id="hide_button" style="width:30px;background-color:#093">&#9668</button></h2>
+        <h1>Навигация
+			<!--<button id="hide_button" style="width:30px;background-color:#093">&#9668</button>-->
+		</h1>
         <ul class="main_menu">
-            <li><a href="#?section=sm" id="s1">sm</a><br>
+            <li class="section"><a href="#" id="s1">Матрица смежности</a><br>
                 <ul id="hide1" class="hidden">
-                    <li>1</li>
+                    <li><a href="#?section=sm&task=1">1</a></li>
+					<li><a href="#?section=sm&task=2">2</a></li>
+					<li><a href="#?section=sm&task=3">3</a></li>
                 </ul>
             </li>
-            <li><a href="#?section=inc">inc</a></li>
+            <li class="section"><a href="#">Матрица инцидентности</a>
+                <ul id="hide2" class="hidden">
+                    <li><a href="#?section=inc&task=1">1</a></li>
+					<li><a href="#?section=inc&task=2">2</a></li>
+					<li><a href="#?section=inc&task=3">3</a></li>
+                </ul>
+			</li>
         </ul>
     </div>
     <div class="main_area">
-        <iframe src=<?php echo "main.php?id=".session_id() ?> class="frame">
+        <iframe src=<?php echo "main.php?id=".session_id()."&section=".$_GET['section']."&task=".$_GET['task'] ?> class="frame">
         </iframe>
     </div>
     <div class="footer">
