@@ -1,5 +1,5 @@
 <?php
-	$task = 1;
+	$task = $_GET['task'];
 	if (!isset($db))
 		$db = mysqli_connect("localhost", "nerrevar", "01050062", "graph");
 	

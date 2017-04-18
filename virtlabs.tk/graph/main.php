@@ -7,7 +7,8 @@
     <script src="js/svg.js"></script>
     <script src="js/paint.js"></script>
 	<script src="js/check.js"></script>
-    <?php require_once "svg/icons.svg";
+    <?php
+		require_once "svg/icons.svg";
         $_SESSION['id'] = $_GET['id'];
     ?>
 </head>
@@ -27,7 +28,7 @@
         <svg id="svg" xmlns="http://www.w3.org/2000/svg" version="1.1">
         </svg>
         <div id="console">
-            <textarea disabled=true id="console_text">hello</textarea>
+            <textarea disabled=true id="console_text">Hello!</textarea>
         </div>
     </div>
     <div class="frames">
@@ -36,7 +37,7 @@
 				Матрица смежности
 			</div>
 			<div class="matrix_main">
-				<?php require_once "php/m1.php" ?>
+				<?php require "php/m1.php" ?>
 			</div>
 		</div>
 		<div id="m2" class="matrix">
@@ -44,7 +45,7 @@
 				Матрица инцидентности
 			</div>
 			<div class="matrix_main">
-				<?php require_once "php/m2.php" ?>
+				<?php require "php/m2.php" ?>
 			</div>
 		</div>
     </div>

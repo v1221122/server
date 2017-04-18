@@ -100,12 +100,12 @@ body{
 	margin:0;
 }
 .svg_img{
-    stroke:#000;
+    stroke:#fff;
     stroke-width:3;
     fill:none;
 }
 .svg_img_small{
-    stroke:#000;
+    stroke:#fff;
     stroke-width:2;
 }
 .point{

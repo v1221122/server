@@ -13,7 +13,7 @@ function paint_point(){
 	    });
 
         if (ended == 0)
-            $("#svg :last-child").remove();
+            $("#svg:last-child").remove();
         ended = 1;
 		
         $("#svg").click(function(e){
@@ -50,7 +50,7 @@ function paint_point(){
             request.send();
 			
             point_index++;
-		$("#svg").off(click);
+			$("#svg").off("click");
         });
     });
 };
@@ -87,7 +87,7 @@ function paint_line(){
 				line.setAttribute("y1", y1);
 				line.setAttribute("x2", x2);
 				line.setAttribute("y2", y2);
-				line.setAttribute("stroke", "#000");
+				line.setAttribute("stroke", "#fff");
 				line.setAttribute("stroke-width", "2");
 				$("#svg").append(line);
 				$("#svg").on("mousemove", function(e2){

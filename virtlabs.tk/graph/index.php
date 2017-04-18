@@ -6,6 +6,7 @@
 <head>
     <title>VirtLabGraph</title>
     <meta name="yandex-verification" content="3de45f2600675f37" />
+	<meta charset="UTF-8">
     <link rel="stylesheet" href="style.css"/>
 	<link rel="shortcut icon" href="img/icon.png" type="image/x-icon"/>
 	<link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
@@ -13,6 +14,10 @@
     <script src="js/hide.js"></script>
 	<?php
 		require_once "svg/icons.svg";
+		if (isset($_GET['task']) && isset($_GET['section'])){
+			$section = $_GET['section'];
+			$task = $_GET['task'];
+		}
     ?>
 </head>
 <body>
@@ -22,7 +27,7 @@
         </div>
         <div class="registration">
             <?php
-                require_once "php/login.php";
+                require "php/login.php";
             ?>
             <dialog id="registration_dialog">
                 <form method="post">
@@ -35,7 +40,7 @@
                     <input type="password" name="reg_password" class="dialog_input"/><br>
                     <input type=submit value="Регистрация" class="dialog_button"/><br>
                     <?php
-                        require_once "php/registration.php";
+                        require "php/registration.php";
                     ?>
                 </form>
             </dialog>
@@ -57,24 +62,38 @@
 			<!--<button id="hide_button" style="width:30px;background-color:#093">&#9668</button>-->
 		</h1>
         <ul class="main_menu">
+			<li class="section"><a href="#">Теория</a></br>
+				<ul class="hidden">
+					<li><a href="theory/graph.html" target="_blank">Графы</a></li>
+					<li><a href="theory/m_sm.html" target="_blank">Матрица смежности</a></li>
+					<li><a href="theory/m_inc.html" target="_blank">Матрица инцидентности</a></li>
+				</ul>
+			</li>
             <li class="section"><a href="#" id="s1">Матрица смежности</a><br>
-                <ul id="hide1" class="hidden">
-                    <li><a href="#?section=sm&task=1">1</a></li>
-					<li><a href="#?section=sm&task=2">2</a></li>
-					<li><a href="#?section=sm&task=3">3</a></li>
+                <ul class="hidden">
+                    <li><a href="?section=sm&task=1">1</a></li>
+					<li><a href="?section=sm&task=2">2</a></li>
+					<li><a href="?section=sm&task=3">3</a></li>
                 </ul>
             </li>
             <li class="section"><a href="#">Матрица инцидентности</a>
-                <ul id="hide2" class="hidden">
-                    <li><a href="#?section=inc&task=1">1</a></li>
-					<li><a href="#?section=inc&task=2">2</a></li>
-					<li><a href="#?section=inc&task=3">3</a></li>
+                <ul class="hidden">
+                    <li><a href="?section=inc&task=1">1</a></li>
+					<li><a href="?section=inc&task=2">2</a></li>
+					<li><a href="?section=inc&task=3">3</a></li>
                 </ul>
 			</li>
         </ul>
     </div>
     <div class="main_area">
-        <iframe src=<?php echo "main.php?id=".session_id()."&section=".$_GET['section']."&task=".$_GET['task'] ?> class="frame">
+        <iframe src=<?php
+			if (!(empty($section) || empty($task))){
+				echo "main.php?id=".session_id()."&section=".$section."&task=".$task;
+			}
+			else
+				echo "main.php?id=".session_id()."&section=sm&task=1";
+			?> 
+			class="frame">
         </iframe>
     </div>
     <div class="footer">
