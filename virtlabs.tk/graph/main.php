@@ -21,9 +21,9 @@
             <svg class="toolbar_icon" height="64px" width="64px" onClick="paint_line()">
                 <use xlink:href="#icon_line_button"></use>
             </svg>
-            <svg class="toolbar_icon" height="64px" width="64px" onClick="replace()">
+<!--            <svg class="toolbar_icon" height="64px" width="64px" onClick="replace()">
                 <use xlink:href="#icon_replace_button"></use>
-            </svg>
+            </svg>-->
         </div>
         <svg id="svg" xmlns="http://www.w3.org/2000/svg" version="1.1">
         </svg>

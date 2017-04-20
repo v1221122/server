@@ -1,6 +1,3 @@
-rm /srv/php/log/error_log 
-nano /srv/php/log/error_log 
-nano php/temp_table.php 
 mysql -p -u nerrevar
 nano php/t_table 
 nano php/temp_table.php 
@@ -498,3 +495,6 @@ nano index.php
 nano index.php 
 mysql -p -u nerrevar
 mysql -p -u nerrevar
+nano main.php 
+nano theory/m_sm.html 
+nano theory/m_inc.html 

@@ -17,4 +17,5 @@
 	display:inline-block;
 	width:calc(100% - 200px - 3px);
 	height:100%;
+	overflow-y:auto;
 }
