@@ -5,13 +5,15 @@
 		$str = str_replace('<br>', ' ', $str);
 		$str = str_replace(' ', '', $str);
 
-		exec("python m_inc.py $str", $m_inc);
+		// echo getcwd();
+		
+		exec("python3 python/m2.py $str", $m_inc);
 
 		return $m_inc;
 	};
 
 	$arr =  parse();
 	foreach ($arr as $a){
-		// echo $a;
+		echo $a;
 	};
 ?>

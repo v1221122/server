@@ -10,6 +10,8 @@
     <?php
 		require_once "svg/icons.svg";
         $_SESSION['id'] = $_GET['id'];
+		$section = $_GET['section'];
+		$task = $_GET['task'];
     ?>
 </head>
 <body>
@@ -50,7 +52,7 @@
 		</div>
     </div>
     <div id="check_div">
-		<button id="check_button" onClick="check()">Проверить</button>
+		<button id="check_button" onClick="check(<?php echo '\''.$section.'\', '.$task ?>)">Проверить</button>
     </div>
 </body>
 </html>

@@ -1,21 +1,3 @@
-mysql -p -u nerrevar
-nano php/t_table 
-nano php/temp_table.php 
-nano php/t_table 
-nano /srv/php/log/error_log 
-su
-cat $PHP_LOG
-nano php/temp_table.php 
-nano php/t_table 
-cat $PHP_LOG
-nano php/t_table 
-nano php/temp_table.php 
-rm php/t_table 
-nano php/t_table 
-cat $PHP_LOG
-nano php/temp_table.php 
-cat $PHP_LOG
-nano php/t_table 
 nano php/temp_table.php 
 cat php/temp_table.php 
 clear
@@ -498,3 +480,21 @@ mysql -p -u nerrevar
 nano main.php 
 nano theory/m_sm.html 
 nano theory/m_inc.html 
+ls
+nano main.php 
+nano php/m2.php 
+mkdir python
+mv *.py python/
+nano php/m1.php 
+nano php/get_matrix.php 
+nano php/m2.php 
+ls python/
+nano php/check.php 
+nano php/check.php 
+nano python/m2.py
+mv python/m2.py.save php/m2.php
+nano php/m2.php 
+cat python/m_inc.py python/m2.py
+cat python/m_inc.py > python/m2.py
+cat php/m2.php 
+git clone git@github.com:nerrevar/server/virtlabs.tk/php/m2.php

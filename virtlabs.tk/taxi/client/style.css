@@ -1,0 +1,32 @@
+*{
+    box-sizing:border-box;
+    font-size:32pt;
+}
+body{
+    height:99vh;
+    width:99vw;
+}
+body div,form{
+    display:table-cell;
+}
+#reg{
+    width:50%;
+    margin-left:50%;
+}
+#z input,label{
+    width:97vw;
+    margin:auto;
+}
+#z label{
+    height:30px;
+}
+#phone{
+    height:10vh;
+}
+#adr{
+    height:10vh;
+}
+#submit{
+    height:30vh;
+    font-size:48pt
+}
