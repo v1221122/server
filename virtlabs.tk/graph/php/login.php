@@ -1,4 +1,7 @@
 <?php
+    $dbname = "virtlabs";
+    $url = "index.php";
+	
     if (empty($_SESSION["id"]) or empty($_SESSION["login"])){
         echo '<form method="post">';
         echo '<label for="login">Логин</label>';
@@ -9,22 +12,22 @@
         echo '</form>';
     }
     else{
-        echo "Hello!";
+        echo "Hello ".$_SESSION['login']."!";
         echo '<form method="post"/>';
         echo '<input type="hidden" name="logout" value="yes"/>';
         echo '<input type="submit" value="Выйти"/>';
         echo '</form>';
     }
+	
+	if (isset($SESSION['f']))
+		if ($SESSION['f'])
+            echo "Введен неверный логин или пароль!";
+	$SESSION['f'] = false;
 
     if (isset($_POST['logout'])){
         session_destroy();
         echo '<meta http-equiv="refresh" content="0,'. $url.'">';
     }
-?>
-
-<?php
-    $dbname = "virtlabs";
-    $url = "index.php";
 
     $link = mysqli_connect("localhost", "nerrevar", "01050062", "$dbname");
     if (isset($_POST['login']))
@@ -39,6 +42,6 @@
                 }
             }
             else
-                echo "<script>aert('Введен неверный логин или пароль!')<script>";
+				$SESSION['f'] = true;
         }
 ?>
