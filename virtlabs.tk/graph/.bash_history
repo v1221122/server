@@ -1,11 +1,3 @@
-nano php/temp_table.php 
-cat php/temp_table.php 
-clear
-mysql -p -u nerrevar
-nano php/temp_table.php 
-nano php/t_table 
-cat $PHP_LOG
-nano php/temp_table.php 
 cat $PHP_LOG
 rm $PHP_LOG
 cat $PHP_LOG
@@ -498,3 +490,11 @@ cat python/m_inc.py python/m2.py
 cat python/m_inc.py > python/m2.py
 cat php/m2.php 
 git clone git@github.com:nerrevar/server/virtlabs.tk/php/m2.php
+grep
+grep --help
+du
+du --help
+df
+touch
+touch -h
+touch --help
