@@ -1,11 +1,3 @@
-cat $PHP_LOG
-rm $PHP_LOG
-cat $PHP_LOG
-cat $PHP_LOG
-nano php/temp_table.php 
-nano php/t_table 
-nano php/temp_table.php 
-clear
 cat php/temp_table.php 
 maysql -p -u nerrevar
 mysql -p -u nerrevar
@@ -498,3 +490,11 @@ df
 touch
 touch -h
 touch --help
+cd ..
+ls
+mkdir casino
+cd casino/
+nano index.php
+su 
+mkdir log
+su 
