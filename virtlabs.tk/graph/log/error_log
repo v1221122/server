@@ -41,3 +41,5 @@
 [Sun May 07 10:53:27.199312 2017] [php7:error] [pid 28588] [client 5.189.152.71:38834] script '/srv/http/virtlabs.tk/graph/wp-login.php' not found or unable to stat
 [Sat May 13 15:41:14.101315 2017] [php7:error] [pid 297] [client 113.107.183.45:34418] script '/srv/http/virtlabs.tk/graph/wp-login.php' not found or unable to stat
 [Sun May 14 15:51:47.943899 2017] [php7:error] [pid 295] [client 46.255.96.74:55166] script '/srv/http/virtlabs.tk/graph/prox_ch.php' not found or unable to stat
+[Mon May 15 12:31:33.567713 2017] [php7:error] [pid 896] [client 104.128.144.131:44194] script '/srv/http/virtlabs.tk/graph/redirect.php' not found or unable to stat
+[Mon May 15 12:56:01.774047 2017] [php7:error] [pid 299] [client 189.123.94.140:41083] script '/srv/http/virtlabs.tk/graph/command.php' not found or unable to stat
