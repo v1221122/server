@@ -13,7 +13,7 @@ function paint_point(){
 	    });
 
         if (ended == 0)
-            $("#svg:last-child").remove();
+			$(".line:last").remove();
         ended = 1;
 		
         $("#svg").click(function(e){
@@ -64,10 +64,9 @@ function paint_line(){
 		    $(this).off("click");
 	    });
 		if(ended == 0)
-			$("#svg :last-chid").remove();
+			$(".line:last").remove();
 				
         $("#console_text").val("Выберите начальную вершину\n" + $("#console_text").val());
-        var line = document.createElementNS(svg_str, "line");
 		var arr = $(".point");
 		arr.each(function (){
 			$(this).click(function(e){
@@ -75,6 +74,9 @@ function paint_line(){
 				arr.each(function(){
 						$(this).off("click");
 				});
+				
+				var line = document.createElementNS(svg_str, "line");
+				line.setAttribute("class", "line");
 
 				ended = 0;
 				
