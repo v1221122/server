@@ -23,6 +23,8 @@ function paint_point(){
 
 			var g = document.createElementNS(svg_str, "g");
 			g.setAttribute("class", "point");
+			g.setAttribute("position", "relative");
+			g.setAttribute("z-index", "10");
 			
             var circle = document.createElementNS(svg_str, "circle");
             circle.setAttribute('cx', x);
@@ -41,6 +43,8 @@ function paint_point(){
 
 			g.append(circle);
 			g.append(text);
+			g.setAttribute("cx", circle.getAttribute("cx"));
+			g.setAttribute("cy", circle.getAttribute("cy"));
             $("#svg").append(g);
             $("#console_text").val("Вершина №" + point_index + " добавлена\n" + $("#console_text").val());
 
@@ -67,12 +71,11 @@ function paint_line(){
 			$(".line:last").remove();
 				
         $("#console_text").val("Выберите начальную вершину\n" + $("#console_text").val());
-		var arr = $(".point");
-		arr.each(function (){
+		$(".point").each(function (){
 			$(this).click(function(e){
 				var p = $(this);
-				arr.each(function(){
-						$(this).off("click");
+				$(".point").each(function(){
+					$(this).off("click");
 				});
 				
 				var line = document.createElementNS(svg_str, "line");
@@ -81,25 +84,26 @@ function paint_line(){
 				ended = 0;
 				
 				$("#console_text").val("Выберите конечную вершину\n" + $("#console_text").val());
-				var x1 = e.pageX;
-				var y1 = e.pageY - 80;
+				var x1 = $(this).attr("cx");
+				var y1 = $(this).attr("cy");
 				var x2 = x1;
 				var y2 = y1;
 				line.setAttribute("x1", x1);
 				line.setAttribute("y1", y1);
 				line.setAttribute("x2", x2);
 				line.setAttribute("y2", y2);
-				line.setAttribute("stroke", "#fff");
-				line.setAttribute("stroke-width", "2");
+				line.setAttribute('class','svg_img_small');
+				line.setAttribute("position", "relative");
+				line.setAttribute("z-index", "2");
 				$("#svg").append(line);
 				$("#svg").on("mousemove", function(e2){
     				line.setAttribute("x2", e2.pageX);
 					line.setAttribute("y2", e2.pageY - 80);
 				});
-				arr.each(function(){
+				$(".point").each(function(){
 					$(this).click(function(e3){
-						line.setAttribute("x2", e3.pageX);
-						line.setAttribute("y2", e3.pageY - 80);
+						line.setAttribute("x2", $(this).attr("cx"));
+						line.setAttribute("y2", $(this).attr("cy"));
 						$("#svg").off("mousemove");
 						
 						ended = 1;
@@ -107,7 +111,7 @@ function paint_line(){
                         var request = new XMLHttpRequest();
 						request.open("GET", "php/temp_table_line.php?id=" + parse() + "&p1=" + p.find('text').text() + "&p2=" + $(this).find('text').text());
 						request.send(null);
-						arr.each(function(){
+						$(".point").each(function(){
 							$(this).off("click");
 						});
 					});
@@ -115,6 +119,31 @@ function paint_line(){
 			});
         });
     });
+};
+
+function replace(){
+	$(document).ready(function(){
+		$("#console_text").val("Выберите вершину\n" + $("#console_text").val());
+		$(".point").each(function(){
+			$(this).click(function(){
+				$("#console_text").val("Выберите новое место\n" + $("#console_text").val());
+				$(".point").each(function(){
+					$(this).off("click");
+				});
+				$("#svg").on("mousemove", function(e){
+					$(this).attr("cx", e.pageX);
+					$(this).attr("cy", e.pageY - 80);
+				});
+				$("#svg").click(function(e2){
+					$("#console_text").val("Вершина перемещена\n" + $("#console_text").val());
+					$(this).attr("cx", e2.pageX);
+					$(this).attr("cy", e2.pageY - 80);
+					$("#svg").off("mousemove");
+					$("#svg").off("click");
+				});
+			});
+		});
+	});
 };
 
 window.onbeforeunload = function(){
