@@ -1,5 +1,3 @@
-cat php/temp_table.php 
-maysql -p -u nerrevar
 mysql -p -u nerrevar
 nano php/temp_table.php 
 nano php/t_table 
@@ -498,3 +496,5 @@ nano index.php
 su 
 mkdir log
 su 
+nano svg/icons.svg 
+nano main.php 

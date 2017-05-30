@@ -26,6 +26,9 @@
 			<svg class="toolbar_icon" height="64px" width="64px" onClick="replace()">
                 <use xlink:href="#icon_replace_button"></use>
             </svg>
+			<svg class="toolbar_icon" height="64px" width="64px" onClick="delete_any()">
+                <use xlink:href="#icon_delete_button"></use>
+            </svg>
         </div>
         <svg id="svg" xmlns="http://www.w3.org/2000/svg" version="1.1">
         </svg>

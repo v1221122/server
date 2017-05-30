@@ -52,3 +52,4 @@
 [Thu May 25 19:27:02.097854 2017] [core:error] [pid 303] [client 5.29.60.147:49038] AH00126: Invalid URI in request GET login.cgi HTTP/1.0
 [Sat May 27 01:32:08.336326 2017] [cgi:error] [pid 4556] [client 177.83.40.91:60054] AH02811: script not found or unable to stat: /srv/http/virtlabs.tk/graph/hndUnblock.cgi
 [Sat May 27 01:32:08.960345 2017] [cgi:error] [pid 4555] [client 177.83.40.91:60056] AH02811: script not found or unable to stat: /srv/http/virtlabs.tk/graph/tmUnblock.cgi
+[Tue May 30 01:33:03.367087 2017] [php7:error] [pid 621] [client 201.37.151.202:58509] script '/srv/http/virtlabs.tk/graph/command.php' not found or unable to stat

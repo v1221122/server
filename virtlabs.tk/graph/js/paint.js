@@ -9,7 +9,7 @@ function paint_point(){
     $(document).ready(function(){
         $("#console_text").val("Выберите место\n" + $("#console_text").val());
 		$(".point").each(function (){
-		    $(this).off("click");
+		    $(this).off();
 	    });
 
         if (ended == 0)
@@ -54,7 +54,7 @@ function paint_point(){
             request.send();
 			
             point_index++;
-			$("#svg").off("click");
+			$("#svg").off();
         });
     });
 };
@@ -63,9 +63,9 @@ function paint_point(){
 function paint_line(){
     $(document).ready(function(){
 		//disable active click
-        $("#svg").off("click");
+        $("#svg").off();
 		$(".point").each(function (){
-		    $(this).off("click");
+		    $(this).off();
 	    });
 		if(ended == 0)
 			$(".line:last").remove();
@@ -75,7 +75,7 @@ function paint_line(){
 			$(this).click(function(e){
 				var p = $(this);
 				$(".point").each(function(){
-					$(this).off("click");
+					$(this).off();
 				});
 				
 				var line = document.createElementNS(svg_str, "line");
@@ -104,7 +104,7 @@ function paint_line(){
 					$(this).click(function(e3){
 						line.setAttribute("x2", $(this).attr("cx"));
 						line.setAttribute("y2", $(this).attr("cy"));
-						$("#svg").off("mousemove");
+						$("#svg").off();
 						
 						ended = 1;
 
@@ -112,7 +112,7 @@ function paint_line(){
 						request.open("GET", "php/temp_table_line.php?id=" + parse() + "&p1=" + p.find('text').text() + "&p2=" + $(this).find('text').text());
 						request.send(null);
 						$(".point").each(function(){
-							$(this).off("click");
+							$(this).off();
 						});
 					});
 				});
@@ -125,25 +125,39 @@ function replace(){
 	$(document).ready(function(){
 		$("#console_text").val("Выберите вершину\n" + $("#console_text").val());
 		$(".point").each(function(){
-			$(this).click(function(){
+			$(this).click(function(e){
 				$("#console_text").val("Выберите новое место\n" + $("#console_text").val());
 				$(".point").each(function(){
-					$(this).off("click");
+					$(this).off();
 				});
-				$("#svg").on("mousemove", function(e){
+				$("#svg").on("mousemove", function(e2){
 					$(this).attr("cx", e.pageX);
 					$(this).attr("cy", e.pageY - 80);
-				});
-				$("#svg").click(function(e2){
-					$("#console_text").val("Вершина перемещена\n" + $("#console_text").val());
-					$(this).attr("cx", e2.pageX);
-					$(this).attr("cy", e2.pageY - 80);
-					$("#svg").off("mousemove");
-					$("#svg").off("click");
+					
+					
+					$("#svg").one("click", function(e3){
+						$("#console_text").val("Вершина перемещена\n" + $("#console_text").val());
+						$(this).attr("cx", e2.pageX);
+						$(this).attr("cy", e2.pageY - 80);
+						$("#svg").off();
+					});
 				});
 			});
 		});
 	});
+};
+
+function delete_any(){
+    $(document).ready(function(){
+        $(".point, .line").each(function(){
+            $(this).click(function(e){
+                $(this).remove();
+		$(".point, .line").each(function(){
+		    $(this).off();
+		});
+            });
+        });
+    });
 };
 
 window.onbeforeunload = function(){
