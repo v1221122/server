@@ -134,13 +134,13 @@ function replace(){
 					$(this).attr("cx", e.pageX);
 					$(this).attr("cy", e.pageY - 80);
 					
-					
-					$("#svg").one("click", function(e3){
-						$("#console_text").val("Вершина перемещена\n" + $("#console_text").val());
-						$(this).attr("cx", e2.pageX);
-						$(this).attr("cy", e2.pageY - 80);
-						$("#svg").off();
-					});
+					if (!$("#svg").hasHandlers("click"))
+						$("#svg").one("click", function(e3){
+							$("#console_text").val("Вершина перемещена\n" + $("#console_text").val());
+							$(this).attr("cx", e2.pageX);
+							$(this).attr("cy", e2.pageY - 80);
+							$("#svg").off();
+						});
 				});
 			});
 		});
