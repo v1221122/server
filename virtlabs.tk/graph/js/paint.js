@@ -21,8 +21,22 @@ function paint_point(){
             var y = e.pageY - 93;
             var request = new XMLHttpRequest();
 
+			// var g = $("g", {
+				// class:"point",
+				// position:"relative",
+				// Zindex:"10"
+			// });
+			
+            // var circle = $("circle", {
+				// cx:x,
+				// cy:y,
+				// r:"15",
+				// class:"svg_ing_small",
+				// fill:"#393"
+			// });
+			
 			var g = document.createElementNS(svg_str, "g");
-			g.setAttribute("class", "point");
+			$(g).attr("class", "point");
 			g.setAttribute("position", "relative");
 			g.setAttribute("z-index", "10");
 			
@@ -41,8 +55,8 @@ function paint_point(){
             text.setAttribute('x', x - 5);
             text.setAttribute('y', y + 2);
 
-			g.append(circle);
-			g.append(text);
+			g.appendChild(circle);
+			g.appendChild(text);
 			g.setAttribute("cx", circle.getAttribute("cx"));
 			g.setAttribute("cy", circle.getAttribute("cy"));
             $("#svg").append(g);
@@ -126,21 +140,22 @@ function replace(){
 		$("#console_text").val("Выберите вершину\n" + $("#console_text").val());
 		$(".point").each(function(){
 			$(this).click(function(e){
+				
+				var p = $(this);
+				
 				$("#console_text").val("Выберите новое место\n" + $("#console_text").val());
 				$(".point").each(function(){
 					$(this).off();
 				});
 				$("#svg").on("mousemove", function(e2){
-					$(this).attr("cx", e.pageX);
-					$(this).attr("cy", e.pageY - 80);
-					
-					if (!$("#svg").hasHandlers("click"))
-						$("#svg").one("click", function(e3){
-							$("#console_text").val("Вершина перемещена\n" + $("#console_text").val());
-							$(this).attr("cx", e2.pageX);
-							$(this).attr("cy", e2.pageY - 80);
-							$("#svg").off();
-						});
+					p.attr("cx", e2.pageX);
+					p.attr("cy", e2.pageY - 80);	
+				});
+				$("#svg").on("click", function(e3){
+						$("#console_text").val("Вершина перемещена\n" + $("#console_text").val());
+						p.attr("cx", e3.pageX);
+						p.attr("cy", e3.pageY - 80);
+						$("#svg").off();
 				});
 			});
 		});
