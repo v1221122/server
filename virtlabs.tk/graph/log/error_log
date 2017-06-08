@@ -63,3 +63,6 @@
 [Mon Jun 05 14:45:57.841485 2017] [core:error] [pid 3463] [client 178.189.150.245:45062] AH00126: Invalid URI in request GET login.cgi HTTP/1.0
 [Wed Jun 07 00:00:49.778946 2017] [php7:error] [pid 3303] [client 179.234.244.84:35339] script '/srv/http/virtlabs.tk/graph/command.php' not found or unable to stat
 [Wed Jun 07 17:05:27.489849 2017] [php7:error] [pid 296] [client 139.162.7.49:54692] script '/srv/http/virtlabs.tk/graph/echo.php' not found or unable to stat
+[Thu Jun 08 13:14:27.389453 2017] [cgi:error] [pid 297] [client 69.50.209.208:44100] AH02811: script not found or unable to stat: /srv/http/cgi-bin
+[Thu Jun 08 13:14:27.813206 2017] [cgi:error] [pid 3303] [client 69.50.209.208:44146] AH02811: script not found or unable to stat: /srv/http/cgi-bin
+[Thu Jun 08 13:14:28.234442 2017] [cgi:error] [pid 300] [client 69.50.209.208:44203] AH02811: script not found or unable to stat: /srv/http/cgi-bin

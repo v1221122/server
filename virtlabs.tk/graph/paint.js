@@ -149,7 +149,7 @@ function replace(){
 				});
 				$("#svg").on("mousemove", function(e2){
 					p.attr("cx", e2.pageX);
-					p.attr("cy", e2.pageY - 80);
+					p.attr("cy", e2.pageY - 80);	
 				});
 				$("#svg").on("click", function(e3){
 						$("#console_text").val("Вершина перемещена\n" + $("#console_text").val());
@@ -164,21 +164,12 @@ function replace(){
 
 function delete_any(){
     $(document).ready(function(){
-        $(".point").each(function(){
+        $(".point, .line").each(function(){
             $(this).click(function(e){
                 $(this).remove();
-				
-				var request = new XMLHttpRequest();
-				request.open("GET", "php/delete.php?id=" + parse() + "&point_num=" + $(this).find("text").text());
-				request.send();
-				request.onreadystatechange = function(){
-					if(request.readyState == 4){
-						alert(request.responseText);
-					}
-				};
-				$(".point").each(function(){
-					$(this).off();
-				});
+		$(".point, .line").each(function(){
+		    $(this).off();
+		});
             });
         });
     });
@@ -189,5 +180,5 @@ window.onbeforeunload = function(){
 	request.open("GET", "php/drop.php?id=" + parse(), false);
 	request.send(null);
 	while (request.readyState != 4);
-	return;
+	return "Ok";
 };
