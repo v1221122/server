@@ -92,8 +92,6 @@ function paint_line(){
 					$(this).off();
 				});
 				
-				var line = document.createElementNS(svg_str, "line");
-				line.setAttribute("class", "line");
 
 				ended = 0;
 				
@@ -102,13 +100,25 @@ function paint_line(){
 				var y1 = $(this).attr("cy");
 				var x2 = x1;
 				var y2 = y1;
-				line.setAttribute("x1", x1);
-				line.setAttribute("y1", y1);
-				line.setAttribute("x2", x2);
-				line.setAttribute("y2", y2);
-				line.setAttribute('class','svg_img_small');
-				line.setAttribute("position", "relative");
-				line.setAttribute("z-index", "2");
+				
+				var line = $("line", {
+					class:"line, svg_img_small",
+					x1:x1,
+					y1:y1,
+					x2:x2,
+					y2:y1,
+					Zindex:"2"
+				});
+				
+//				var line = document.createElementNS(svg_str, "line");
+//				line.setAttribute("class", "line");
+//				line.setAttribute("x1", x1);
+//				line.setAttribute("y1", y1);
+//				line.setAttribute("x2", x2);
+//				line.setAttribute("y2", y2);
+//				line.setAttribute('class','svg_img_small');
+//				line.setAttribute("position", "relative");
+//				line.setAttribute("z-index", "2");
 				$("#svg").append(line);
 				$("#svg").on("mousemove", function(e2){
     				line.setAttribute("x2", e2.pageX);
@@ -149,7 +159,7 @@ function replace(){
 				});
 				$("#svg").on("mousemove", function(e2){
 					p.attr("cx", e2.pageX);
-					p.attr("cy", e2.pageY - 80);	
+					p.attr("cy", e2.pageY - 80);
 				});
 				$("#svg").on("click", function(e3){
 						$("#console_text").val("Вершина перемещена\n" + $("#console_text").val());
@@ -164,12 +174,21 @@ function replace(){
 
 function delete_any(){
     $(document).ready(function(){
-        $(".point, .line").each(function(){
+        $(".point").each(function(){
             $(this).click(function(e){
                 $(this).remove();
-		$(".point, .line").each(function(){
-		    $(this).off();
-		});
+				
+				var request = new XMLHttpRequest();
+				request.open("GET", "php/delete.php?id=" + parse() + "&point_num=" + $(this).find("text").text());
+				request.send();
+				request.onreadystatechange = function(){
+					if(request.readyState == 4){
+						alert(request.responseText);
+					}
+				};
+				$(".point").each(function(){
+					$(this).off();
+				});
             });
         });
     });
@@ -180,5 +199,5 @@ window.onbeforeunload = function(){
 	request.open("GET", "php/drop.php?id=" + parse(), false);
 	request.send(null);
 	while (request.readyState != 4);
-	return "Ok";
+	return;
 };

@@ -66,3 +66,6 @@
 [Thu Jun 08 13:14:27.389453 2017] [cgi:error] [pid 297] [client 69.50.209.208:44100] AH02811: script not found or unable to stat: /srv/http/cgi-bin
 [Thu Jun 08 13:14:27.813206 2017] [cgi:error] [pid 3303] [client 69.50.209.208:44146] AH02811: script not found or unable to stat: /srv/http/cgi-bin
 [Thu Jun 08 13:14:28.234442 2017] [cgi:error] [pid 300] [client 69.50.209.208:44203] AH02811: script not found or unable to stat: /srv/http/cgi-bin
+[Fri Jun 09 15:37:03.564244 2017] [php7:error] [pid 456] [client 85.234.35.191:61982] script '/srv/http/virtlabs.tk/graph/get_point_num.php' not found or unable to stat, referer: http://virtlabs.tk/main.php?id=q8qkcqdoe52ig45h57hhukor3u&section=inc&task=2
+[Fri Jun 09 15:37:05.526979 2017] [php7:error] [pid 456] [client 85.234.35.191:61982] script '/srv/http/virtlabs.tk/graph/get_point_num.php' not found or unable to stat, referer: http://virtlabs.tk/main.php?id=q8qkcqdoe52ig45h57hhukor3u&section=inc&task=2
+[Fri Jun 09 17:32:14.374379 2017] [php7:error] [pid 297] [client 191.96.249.61:41651] script '/srv/http/virtlabs.tk/graph/socks_test_logger.php' not found or unable to stat

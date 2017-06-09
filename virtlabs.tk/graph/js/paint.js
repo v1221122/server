@@ -67,7 +67,7 @@ function paint_point(){
             request.open("GET", "http://virtlabs.tk/php/temp_table.php?id=" + parse() + "&point_index=" + point_index +"&x=" + x + "&y=" + y, true);
             request.send();
 			
-            point_index++;
+            point_index = get_point_index();
 			$("#svg").off();
         });
     });
@@ -92,8 +92,6 @@ function paint_line(){
 					$(this).off();
 				});
 				
-				var line = document.createElementNS(svg_str, "line");
-				line.setAttribute("class", "line");
 
 				ended = 0;
 				
@@ -102,13 +100,29 @@ function paint_line(){
 				var y1 = $(this).attr("cy");
 				var x2 = x1;
 				var y2 = y1;
+				
+				var line = document.createElementNS(svg_str, "line");
+				line.setAttribute("class", "line svg_img_small");
 				line.setAttribute("x1", x1);
 				line.setAttribute("y1", y1);
 				line.setAttribute("x2", x2);
 				line.setAttribute("y2", y2);
-				line.setAttribute('class','svg_img_small');
 				line.setAttribute("position", "relative");
 				line.setAttribute("z-index", "2");
+				line.setAttribute("line_id", line_id);
+				
+				// var line = $("line", {
+					// "class":"line, svg_img_small",
+					// "x1":x1,
+					// "y1":y1,
+					// "x2":x2,
+					// "y2":y2,
+					// "position":"relative",
+					// "z-index":"2",
+					// "id":line_id
+				// });
+				line_id++;
+				
 				$("#svg").append(line);
 				$("#svg").on("mousemove", function(e2){
     				line.setAttribute("x2", e2.pageX);
@@ -173,7 +187,13 @@ function delete_any(){
 				request.send();
 				request.onreadystatechange = function(){
 					if(request.readyState == 4){
-						alert(request.responseText);
+						var deleted_lines = request.responseText.trim().split(' ');
+						for (i = 0; i < deleted_lines.length; i++){
+							var num = deleted_lines[i];
+							var lines = $("line[class*='line']");
+							$("line[class*='line'][line_id*=" + num + "]").remove();
+							get_point_index();
+						}
 					}
 				};
 				$(".point").each(function(){
@@ -183,6 +203,17 @@ function delete_any(){
         });
     });
 };
+
+function get_point_index(){
+	var request = new XMLHttpRequest();
+	request.open("GET", "php/get_point_num.php?id=" + parse());
+	request.send();
+	request.onreadystatechange = function(){
+		if (request.readyState == 4){
+			point_index = request.responseText;
+		}
+	}
+}
 
 window.onbeforeunload = function(){
 	var request = new XMLHttpRequest();
