@@ -6,11 +6,10 @@
 	$point_num = 1;
 	if ($result)
 		while ($r = mysqli_fetch_array($result)){
-			echo $r['point_index'];
 			if ($r['point_index'] == $point_num)
 				$point_num++;
 			else
 				break;
 		}
-	// echo $point_num;
+	echo $point_num;
 ?>

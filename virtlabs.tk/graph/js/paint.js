@@ -17,6 +17,9 @@ function paint_point(){
         ended = 1;
 		
         $("#svg").click(function(e){
+			
+            get_point_index();
+			
             var x = e.pageX - 10;
             var y = e.pageY - 93;
             var request = new XMLHttpRequest();
@@ -67,7 +70,6 @@ function paint_point(){
             request.open("GET", "http://virtlabs.tk/php/temp_table.php?id=" + parse() + "&point_index=" + point_index +"&x=" + x + "&y=" + y, true);
             request.send();
 			
-            point_index = get_point_index();
 			$("#svg").off();
         });
     });

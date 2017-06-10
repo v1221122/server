@@ -69,3 +69,6 @@
 [Fri Jun 09 15:37:03.564244 2017] [php7:error] [pid 456] [client 85.234.35.191:61982] script '/srv/http/virtlabs.tk/graph/get_point_num.php' not found or unable to stat, referer: http://virtlabs.tk/main.php?id=q8qkcqdoe52ig45h57hhukor3u&section=inc&task=2
 [Fri Jun 09 15:37:05.526979 2017] [php7:error] [pid 456] [client 85.234.35.191:61982] script '/srv/http/virtlabs.tk/graph/get_point_num.php' not found or unable to stat, referer: http://virtlabs.tk/main.php?id=q8qkcqdoe52ig45h57hhukor3u&section=inc&task=2
 [Fri Jun 09 17:32:14.374379 2017] [php7:error] [pid 297] [client 191.96.249.61:41651] script '/srv/http/virtlabs.tk/graph/socks_test_logger.php' not found or unable to stat
+[Sat Jun 10 20:51:05.346008 2017] [php7:error] [pid 3303] [client 89.248.171.38:47014] script '/srv/http/virtlabs.tk/graph/xmlrpc.php' not found or unable to stat
+[Sat Jun 10 21:08:53.511905 2017] [php7:error] [pid 3304] [client 89.248.171.38:51014] script '/srv/http/virtlabs.tk/graph/xmlrpc.php' not found or unable to stat
+[Sat Jun 10 23:34:27.099417 2017] [core:error] [pid 296] [client 113.56.140.113:40342] AH00126: Invalid URI in request GET login.cgi HTTP/1.0

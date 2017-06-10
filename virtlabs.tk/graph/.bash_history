@@ -1,4 +1,3 @@
-nano php/t_table 
 cat $PHP_LOG
 ls
 nano php/temp_table.php 
@@ -498,3 +497,4 @@ nano svg/icons.svg
 nano main.php 
 nano main.php 
 nano index.php 
+mysql -p -u nerrevar
