@@ -72,3 +72,6 @@
 [Sat Jun 10 20:51:05.346008 2017] [php7:error] [pid 3303] [client 89.248.171.38:47014] script '/srv/http/virtlabs.tk/graph/xmlrpc.php' not found or unable to stat
 [Sat Jun 10 21:08:53.511905 2017] [php7:error] [pid 3304] [client 89.248.171.38:51014] script '/srv/http/virtlabs.tk/graph/xmlrpc.php' not found or unable to stat
 [Sat Jun 10 23:34:27.099417 2017] [core:error] [pid 296] [client 113.56.140.113:40342] AH00126: Invalid URI in request GET login.cgi HTTP/1.0
+[Sun Jun 11 06:50:00.887321 2017] [php7:error] [pid 296] [client 83.217.8.122:54015] script '/srv/http/virtlabs.tk/graph/prox_ch.php' not found or unable to stat
+[Sun Jun 11 17:47:24.442242 2017] [php7:error] [pid 300] [client 186.206.111.18:49368] script '/srv/http/virtlabs.tk/graph/command.php' not found or unable to stat
+[Sun Jun 11 21:09:50.320199 2017] [php7:error] [pid 3303] [client 185.188.7.27:40310] script '/srv/http/virtlabs.tk/graph/xmlrpc.php' not found or unable to stat
