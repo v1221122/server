@@ -1,5 +1,3 @@
-cat $PHP_LOG
-ls
 nano php/temp_table.php 
 cat php/temp
 rm php/temp
@@ -497,4 +495,6 @@ nano svg/icons.svg
 nano main.php 
 nano main.php 
 nano index.php 
+mysql -p -u nerrevar
+su
 mysql -p -u nerrevar
