@@ -13,60 +13,54 @@ function paint_point(){
 	    });
 
         if (ended == 0)
-			$(".line:last").remove();
+			remove_last_line();
         ended = 1;
+		
+        get_point_index();
 		
         $("#svg").click(function(e){
 			
-            get_point_index();
 			
             var x = e.pageX - 10;
             var y = e.pageY - 93;
             var request = new XMLHttpRequest();
-
-			// var g = $("g", {
-				// class:"point",
-				// position:"relative",
-				// Zindex:"10"
-			// });
-			
-            // var circle = $("circle", {
-				// cx:x,
-				// cy:y,
-				// r:"15",
-				// class:"svg_ing_small",
-				// fill:"#393"
-			// });
 			
 			var g = document.createElementNS(svg_str, "g");
-			$(g).attr("class", "point");
-			g.setAttribute("position", "relative");
-			g.setAttribute("z-index", "10");
+			var attrs = {
+				"class": "point",
+				"position": "relative",
+				"z-index": "10"
+			};
+			$(g).attr(attrs);
 			
             var circle = document.createElementNS(svg_str, "circle");
-            circle.setAttribute('cx', x);
-            circle.setAttribute('cy', y);
-            circle.setAttribute('r', '15');
-            circle.setAttribute('class','svg_img_small');
-			circle.setAttribute('fill', '#393');
+			attrs = {
+				"class": "svg_img_small",
+				"cx": x,
+				"cy": y,
+				"r": "15",
+				"fill": "#393"
+			};
+			$(circle).attr(attrs);
 
             var text = document.createElementNS(svg_str, "text");
-            text.setAttribute('class', 'svg_img_small');
-            text.setAttribute('font-size', '12');
-            text.setAttribute('fill', '#000');
+			attrs = {
+				"class": "svg_img_small",
+				"font-size": "12",
+				"fill": "#000",
+				"x": x-5,
+				"y": y+2
+			}
+			$(text).attr(attrs);
             text.textContent = '' + point_index;
-            text.setAttribute('x', x - 5);
-            text.setAttribute('y', y + 2);
 
 			g.appendChild(circle);
 			g.appendChild(text);
-			g.setAttribute("cx", circle.getAttribute("cx"));
-			g.setAttribute("cy", circle.getAttribute("cy"));
+			$(g).attr("cx", $(circle).attr("cx"));
+			$(g).attr("cy", $(circle).attr("cy"));
             $("#svg").append(g);
             $("#console_text").val("Вершина №" + point_index + " добавлена\n" + $("#console_text").val());
 
-
-            ended = 1;
             request.open("GET", "http://virtlabs.tk/php/temp_table.php?id=" + parse() + "&point_index=" + point_index +"&x=" + x + "&y=" + y, true);
             request.send();
 			
@@ -104,36 +98,29 @@ function paint_line(){
 				var y2 = y1;
 				
 				var line = document.createElementNS(svg_str, "line");
-				line.setAttribute("class", "line svg_img_small");
-				line.setAttribute("x1", x1);
-				line.setAttribute("y1", y1);
-				line.setAttribute("x2", x2);
-				line.setAttribute("y2", y2);
-				line.setAttribute("position", "relative");
-				line.setAttribute("z-index", "2");
-				line.setAttribute("line_id", line_id);
+				var attrs = {
+					"class": "line svg_img_small",
+					"x1": x1,
+					"y1": y1,
+					"x2": x2,
+					"y2": y2,
+					"position": "relative",
+					"z-index": "2",
+					"line_id": line_id
+				}
+				$(line).attr(attrs);
 				
-				// var line = $("line", {
-					// "class":"line, svg_img_small",
-					// "x1":x1,
-					// "y1":y1,
-					// "x2":x2,
-					// "y2":y2,
-					// "position":"relative",
-					// "z-index":"2",
-					// "id":line_id
-				// });
 				line_id++;
 				
 				$("#svg").append(line);
 				$("#svg").on("mousemove", function(e2){
-    				line.setAttribute("x2", e2.pageX);
-					line.setAttribute("y2", e2.pageY - 80);
+    				$(line).attr("x2", e2.pageX);
+					$(line).attr("y2", e2.pageY - 80);
 				});
 				$(".point").each(function(){
 					$(this).click(function(e3){
-						line.setAttribute("x2", $(this).attr("cx"));
-						line.setAttribute("y2", $(this).attr("cy"));
+						$(line).attr("x2", $(this).attr("cx"));
+						$(line).attr("y2", $(this).attr("cy"));
 						$("#svg").off();
 						
 						ended = 1;
@@ -155,7 +142,7 @@ function replace(){
 	$(document).ready(function(){
 		$("#console_text").val("Выберите вершину\n" + $("#console_text").val());
 		$(".point").each(function(){
-			$(this).click(function(e){
+			$(this).on("mouseup", function(e){
 				
 				var p = $(this);
 				
@@ -163,15 +150,60 @@ function replace(){
 				$(".point").each(function(){
 					$(this).off();
 				});
+				
+				var line_p1;
+				var line_p2;
+				
+				var request = new XMLHttpRequest();
+				request.open("GET", "php/replace_p1.php?id=" + parse() + "&point_num=" + $(this).find("text").text());
+				request.send();
+				request.onreadystatechange = function(){
+					if(request.readyState == 4){
+						var replaced_lines = request.responseText.trim().split(' ');
+						for (i = 0; i < replaced_lines.length; i++){
+							var num = replaced_lines[i];
+							var lile_p1 = $("line[class*='line'][line_id*='" + num + "']");
+						}
+					}
+				};
+				request.close;
+				
+				var request = new XMLHttpRequest();
+				request.open("GET", "php/replace_p2.php?id=" + parse() + "&point_num=" + $(this).find("text").text());
+				request.send();
+				request.onreadystatechange = function(){
+					if(request.readyState == 4){
+						var replaced_lines = request.responseText.trim().split(' ');
+						for (i = 0; i < replaced_lines.length; i++){
+							var num = replaced_lines[i];
+							var line_p2 = $("line[class*='line'][line_id*='" + num + "']");
+						}
+					}
+				};
+				request.close;
+				
 				$("#svg").on("mousemove", function(e2){
 					p.attr("cx", e2.pageX);
 					p.attr("cy", e2.pageY - 80);
+					p.find("circle").attr("cx", e2.pageX);
+					p.find("circle").attr("cy", e2.pageY - 80);
+					p.find("text").attr("x", e2.pageX - 5);
+					p.find("text").attr("y", e2.pageY - 78);
+					if (line_p1)
+						for (i = 0; i < line_p1.length; i++){
+							line_p1[i].attr("x1", e2.pageX);
+						}
 				});
-				$("#svg").on("click", function(e3){
-						$("#console_text").val("Вершина перемещена\n" + $("#console_text").val());
-						p.attr("cx", e3.pageX);
-						p.attr("cy", e3.pageY - 80);
-						$("#svg").off();
+				
+				$("#svg").on("mousedown", function(e3){
+					p.attr("cx", e3.pageX);
+					p.attr("cy", e3.pageY - 80);
+					$("#console_text").val("Вершина перемещена\n" + $("#console_text").val());
+					p.find("circle").attr("cx", e3.pageX);
+					p.find("circle").attr("cy", e3.pageY - 80);
+					p.find("text").attr("x", e3.pageX - 5);
+					p.find("text").attr("y", e3.pageY - 78);
+					$("#svg").off();
 				});
 			});
 		});
@@ -192,8 +224,7 @@ function delete_any(){
 						var deleted_lines = request.responseText.trim().split(' ');
 						for (i = 0; i < deleted_lines.length; i++){
 							var num = deleted_lines[i];
-							var lines = $("line[class*='line']");
-							$("line[class*='line'][line_id*=" + num + "]").remove();
+							$("line[class*='line'][line_id*='" + num + "']").remove();
 							get_point_index();
 						}
 					}
@@ -206,9 +237,15 @@ function delete_any(){
     });
 };
 
+function remove_last_line(){
+	var line = $(".line:last");
+	
+	line.remove();
+}
+
 function get_point_index(){
 	var request = new XMLHttpRequest();
-	request.open("GET", "php/get_point_num.php?id=" + parse());
+	request.open("GET", "php/get_point_num.php?id=" + parse(), true);
 	request.send();
 	request.onreadystatechange = function(){
 		if (request.readyState == 4){

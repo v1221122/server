@@ -7,7 +7,7 @@
 	if ($result)
 		while ($r = mysqli_fetch_array($result)){
 			if ($r['point_index'] == $point_num)
-				$point_num++;
+				$point_num++.'';
 			else
 				break;
 		}
