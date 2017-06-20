@@ -120,3 +120,4 @@
 [Sun Jun 18 16:10:20.555059 2017] [php7:error] [pid 370] [client 85.234.35.191:61324] script '/srv/http/virtlabs.tk/graph/php/replace_p1.php' not found or unable to stat, referer: http://virtlabs.tk/main.php?id=fha2rtphm9q5dpc33sog727k5q&section=sm&task=1
 [Sun Jun 18 16:10:20.627012 2017] [php7:error] [pid 370] [client 85.234.35.191:61324] script '/srv/http/virtlabs.tk/graph/php/replace_p1.php' not found or unable to stat, referer: http://virtlabs.tk/main.php?id=fha2rtphm9q5dpc33sog727k5q&section=sm&task=1
 [Sun Jun 18 16:10:20.679458 2017] [php7:error] [pid 370] [client 85.234.35.191:61324] script '/srv/http/virtlabs.tk/graph/php/replace_p1.php' not found or unable to stat, referer: http://virtlabs.tk/main.php?id=fha2rtphm9q5dpc33sog727k5q&section=sm&task=1
+[Tue Jun 20 17:35:56.791425 2017] [core:error] [pid 321] [client 116.107.123.255:46485] AH00126: Invalid URI in request GET login.cgi HTTP/1.0
