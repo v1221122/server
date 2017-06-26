@@ -125,3 +125,4 @@
 [Wed Jun 21 08:11:00.869051 2017] [core:error] [pid 372] [client 79.116.59.139:58482] AH00126: Invalid URI in request GET login.cgi HTTP/1.0
 [Wed Jun 21 15:26:03.260422 2017] [php7:error] [pid 323] [client 113.107.183.45:40983] script '/srv/http/virtlabs.tk/graph/wp-login.php' not found or unable to stat
 [Sat Jun 24 16:51:47.642715 2017] [php7:error] [pid 374] [client 187.64.136.254:33082] script '/srv/http/virtlabs.tk/graph/command.php' not found or unable to stat
+[Sun Jun 25 09:30:17.573165 2017] [php7:error] [pid 322] [client 113.107.183.45:59638] script '/srv/http/virtlabs.tk/graph/wp-login.php' not found or unable to stat
