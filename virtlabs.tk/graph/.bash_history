@@ -1,13 +1,3 @@
-nano php/temp_table.php 
-cat php/temp
-rm php/temp
-cat php/temp
-nano php/temp_table.php 
-cat php/temp
-nano php/temp
-rm php/temp
-cat php/temp
-nano php/temp_table.php 
 cat php/temp
 rm php/temp
 nano php/temp_table.php 
@@ -498,3 +488,13 @@ nano index.php
 mysql -p -u nerrevar
 su
 mysql -p -u nerrevar
+su
+git checkout index.php 
+git checkout index.php > log
+git checkout index.php > log.txt
+ls
+nano log.txt 
+clear
+git h
+git -h
+su

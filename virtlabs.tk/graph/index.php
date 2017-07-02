@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="style.css"/>
 	<link rel="shortcut icon" href="img/icon.png" type="image/x-icon"/>
 	<link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
-    <script src="js/jquery.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="js/hide.js"></script>
 	<?php
 		require_once "svg/icons.svg";
