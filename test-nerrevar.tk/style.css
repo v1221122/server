@@ -3,7 +3,6 @@
     margin:0;
     padding:0;
     text-align:center;
-    vertical-align:middle;
 }
 #wrapper{
     /*border:1px solid black;*/
@@ -19,35 +18,40 @@ header{
     right:0;
     left:0;
     height:100px;
-    border:1px solid black;
+    /*border:1px solid black;*/
 }
 nav{
     float:left;
-    width:200px;
+    width:210px;
     height:100%;
+    padding:auto;
     /*border:1px solid black;*/
 }
 nav li{
-    background:url("img/navigation.png");
+    width:200px;
+    height:40px;
+    margin:2px;
+    background:url("img/navigation_button_200x40.png");
 }
-nav *{
-    margin:auto;
-    padding:2px;
-    width:calc(100% - 4px);
+nav li a{
+    display:block;
+    color:yellow;
+    font:oblique 20px/32px sans-serif;
+    text-decoration:none;
 }
 #main{
-    width:calc(100% - 200px - 200px - 2px);
+    width:calc(100% - 210px - 200px - 2px);
     height:100%;
-    margin-left:200px;
+    margin-left:210px;
     margin-right:200px;
     /*border:1px solid black;*/
 }
 #main_header{
-    border:1px solid black;
+    /*border:1px solid black;*/
     height:60px;
 }
 #news{
-    border:1px solid black;
+    /*border:1px solid black;*/
     height:calc(100% - 60px);
     overflow-y:scroll;
 }
@@ -64,5 +68,5 @@ footer{
     left:0;
     right:0;
     height:60px;
-    border:1px solid black;
+    /*border:1px solid black;*/
 }
