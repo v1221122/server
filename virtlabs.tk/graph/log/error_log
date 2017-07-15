@@ -132,3 +132,4 @@
 [Thu Jul 06 17:08:40.832139 2017] [php7:error] [pid 24577] [client 163.172.158.118:39144] script '/srv/http/virtlabs.tk/graph/xmlrpc.php' not found or unable to stat
 [Thu Jul 06 17:21:55.833760 2017] [php7:error] [pid 6269] [client 177.141.163.10:45850] script '/srv/http/virtlabs.tk/graph/command.php' not found or unable to stat
 [Wed Jul 12 17:26:29.195712 2017] [core:error] [pid 358] [client 185.61.254.65:34476] AH00126: Invalid URI in request GET login.cgi HTTP/1.0
+[Sat Jul 15 06:46:27.334938 2017] [core:error] [pid 306] [client 121.227.63.85:57840] AH00126: Invalid URI in request GET login.cgi HTTP/1.0
