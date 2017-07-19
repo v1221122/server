@@ -138,3 +138,6 @@
 [Sat Jul 15 20:48:02.346618 2017] [cgi:error] [pid 357] [client 201.6.195.9:46263] AH02811: script not found or unable to stat: /srv/http/virtlabs.tk/graph/tmUnblock.cgi
 [Sun Jul 16 06:30:28.275413 2017] [php7:error] [pid 306] [client 185.188.204.13:57784] script '/srv/http/virtlabs.tk/graph/xmlrpc.php' not found or unable to stat
 [Mon Jul 17 06:49:29.428324 2017] [php7:error] [pid 358] [client 185.188.204.13:37906] script '/srv/http/virtlabs.tk/graph/xmlrpc.php' not found or unable to stat
+[Tue Jul 18 15:14:52.509331 2017] [core:error] [pid 307] [client 111.2.111.239:34094] AH00126: Invalid URI in request GET login.cgi HTTP/1.0
+[Wed Jul 19 13:28:08.806920 2017] [core:error] [pid 360] [client 58.11.74.109:36965] AH00126: Invalid URI in request GET login.cgi HTTP/1.0
+[Wed Jul 19 16:38:16.676189 2017] [php7:error] [pid 308] [client 201.81.48.166:38573] script '/srv/http/virtlabs.tk/graph/command.php' not found or unable to stat
