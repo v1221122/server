@@ -7,3 +7,4 @@
 [Tue Feb 07 02:20:57.112306 2017] [php7:notice] [pid 415] [client 77.108.204.175:62405] PHP Notice:  Undefined variable: _SESSION in /srv/http/virtlabs.tk/taxi/chat_content.php on line 9, referer: http://forsaje.tk/index.php
 [Tue Feb 07 02:21:46.522547 2017] [php7:notice] [pid 416] [client 77.108.204.175:62414] PHP Notice:  Undefined index: user in /srv/http/virtlabs.tk/taxi/chat_content.php on line 22, referer: http://forsaje.tk/chat_content.php
 [Wed Mar 29 12:23:37.574413 2017] [negotiation:error] [pid 4688] [client 66.102.9.156:54175] AH00690: no acceptable variant: /usr/share/httpd/error/HTTP_NOT_FOUND.html.var
+[Mon Jul 24 17:30:52.951885 2017] [negotiation:error] [pid 359] [client 66.102.9.28:59485] AH00690: no acceptable variant: /usr/share/httpd/error/HTTP_NOT_FOUND.html.var
