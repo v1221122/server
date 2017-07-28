@@ -148,3 +148,4 @@
 [Wed Jul 26 00:21:49.970798 2017] [php7:error] [pid 306] [client 46.255.96.74:50207] script '/srv/http/virtlabs.tk/graph/prox_ch.php' not found or unable to stat
 [Wed Jul 26 21:25:16.522910 2017] [cgi:error] [pid 305] [client 187.37.28.179:54391] AH02811: script not found or unable to stat: /srv/http/virtlabs.tk/graph/hndUnblock.cgi
 [Wed Jul 26 21:25:20.059167 2017] [cgi:error] [pid 360] [client 187.37.28.179:54407] AH02811: script not found or unable to stat: /srv/http/virtlabs.tk/graph/tmUnblock.cgi
+[Fri Jul 28 06:33:28.232444 2017] [php7:error] [pid 360] [client 104.128.144.131:48592] script '/srv/http/virtlabs.tk/graph/redirect.php' not found or unable to stat
