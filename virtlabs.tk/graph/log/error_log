@@ -153,3 +153,4 @@
 [Sun Jul 30 16:50:37.798323 2017] [php7:error] [pid 293] [client 179.216.13.158:36880] script '/srv/http/virtlabs.tk/graph/command.php' not found or unable to stat
 [Mon Jul 31 18:31:57.869955 2017] [core:error] [pid 440] [client 87.97.70.56:53182] AH00126: Invalid URI in request GET login.cgi HTTP/1.0
 [Mon Jul 31 20:25:10.129310 2017] [php7:error] [pid 298] [client 59.188.2.9:48930] script '/srv/http/virtlabs.tk/graph/wp-login.php' not found or unable to stat
+[Wed Aug 02 12:24:47.184169 2017] [php7:error] [pid 440] [client 113.107.183.45:53773] script '/srv/http/virtlabs.tk/graph/wp-login.php' not found or unable to stat
