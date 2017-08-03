@@ -1,8 +1,3 @@
-cat php/temp
-rm php/temp
-nano php/temp_table.php 
-cat php/temp
-nano js/paint.js 
 nano js/paint.js 
 cat php/temp
 clear
@@ -498,3 +493,8 @@ clear
 git h
 git -h
 su
+su
+su
+ls
+cd ../../test-nerrevar.tk/
+ls

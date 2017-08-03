@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html ng-app="test_app">
+<head>
+    <title>Тест AngularJS</title>
+    
+    <meta charset="UTF-8">
+    
+	<link rel="shortcut icon" href="img/icon.png" type="image/x-icon"/>
+    
+    <link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+    
+    <script src="js/jquery.js"></script>
+    <script src="js/angular.min.js"></script>
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <div id="header">
+        <div id="logo">
+            <img src="img/logo.png" alt="logo">
+        </div>
+        <!--<div class="registration">-->
+            <!--<dialog id="registration_dialog">-->
+                <!--<form method="post">-->
+					<!--<svg id="dialog_close">-->
+						<!--<use xlink:href="#icon_close"></use>-->
+					<!--</svg>-->
+                    <!--<label for="reg_login" class="dialog_label">Логин</label><br>-->
+                    <!--<input type="text" name="reg_login" class="dialog_input"/><br>-->
+                    <!--<label for="reg_password" class="dialog_label">Пароль</label><br>-->
+                    <!--<input type="password" name="reg_password" class="dialog_input"/><br>-->
+                    <!--<input type=submit value="Регистрация" class="dialog_button"/><br>-->
+                    <!--<?php-->
+                        <!--require "php/registration.php";-->
+                    <!--?>-->
+                <!--</form>-->
+            <!--</dialog>-->
+            <!--<button id="open_dialog">Зарегистрироваться</button>-->
+        <!--</div>-->
+        <h1>Виртуальная лаборатория<br>Граф</h1>
+        <script>
+            var dialog = document.querySelector('#registration_dialog');
+            document.querySelector('#open_dialog').onclick = function(){
+                dialog.showModal();
+            }
+            document.querySelector('#dialog_close').onclick = function(){
+                dialog.close();
+            }
+        </script>
+    </div>
+    
+    <div id="sidebar" ng-controller="sidebar_ctrl">
+        <ul>
+            <li ng-repeat="item in menu">
+                <a>{{item.name}}</a>
+                <ul ng-repeat="subitem in item.sub">
+                    <li>
+                        <a href={{subitem.href}} target="_blank">{{subitem.name}}</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    
+    <div id="wrapper">
+        <ng-include src="'svg/icons.svg'"></ng-include>
+        <div id="toolbar">
+                <svg class="toolbar_icon" height="64px" width="64px" onClick="paint_point()">
+                    <use xlink:href="#icon_point_button"></use>
+                </svg>
+                <svg class="toolbar_icon" height="64px" width="64px" onClick="paint_line()">
+                    <use xlink:href="#icon_line_button"></use>
+                </svg>
+                <svg class="toolbar_icon" height="64px" width="64px" onClick="replace()">
+                    <use xlink:href="#icon_replace_button"></use>
+                </svg>
+                <svg class="toolbar_icon" height="64px" width="64px" onClick="delete_any()">
+                    <use xlink:href="#icon_delete_button"></use>
+                </svg>
+            </div>
+            <svg id="svg" xmlns="http://www.w3.org/2000/svg" version="1.1">
+            </svg>
+            <div id="console">
+                <textarea disabled=true id="console_text">Hello!</textarea>
+            </div>
+        </div>
+        <div class="frames">
+            <div id="m1" class="matrix">
+                <div class="matrix_head">
+                    Матрица смежности
+                </div>
+                <div class="matrix_main">
+                    <?php require "php/m1.php" ?>
+                </div>
+            </div>
+            <div id="m2" class="matrix">
+                <div class="matrix_head">
+                    Матрица инцидентности
+                </div>
+                <div class="matrix_main">
+                    <?php require "php/m2.php" ?>
+                </div>
+            </div>
+        </div>
+        <div id="check_div">
+            <button id="check_button" onClick="check(<?php echo '\''.$section.'\', '.$task ?>)">Проверить</button>
+        </div>
+    </div>
+    
+    <div id="footer">
+    </div>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" style="display:none">
+<symbol viewBox="0 0 64 64" id="icon_point_button">
+    <circle r="30" cx="32" cy="32" fill="#393" stroke="#fff" stroke-width="3"/>
+    <text x="14" y="48" font-size="48" fill="#fff">N</text>
+</symbol>
+<symbol viewBox="0 0 64 64" id="icon_line_button">
+    <line x1="0" y1="40" x2="64" y2="24" fill="#fff" stroke="#fff" stroke-width="8"/>
+</symbol>
+<symbol viewBox="0 0 64 64" id="icon_replace_button">
+    <line x1="32" y1="8" x2="32" y2="56" stroke="#fff" stroke-width="8"/>
+    <line x1="8" y1="32" x2="56" y2="32" stroke="#fff" stroke-width="8"/>
+    <polygon points="32,3 42,13 22,13" stroke="#fff" stroke-width="3" fill="#fff"/>
+    <polygon points="3,32 13,22 13,42" stroke="#fff" stroke-width="3" fill="#fff"/>
+    <polygon points="32,61 42,51 22,51" stroke="#fff" stroke-width="3" fill="#fff"/>
+    <polygon points="61,32 51,22 51,42" stroke="#fff" stroke-width="3" fill="#fff"/>
+</symbol>
+<symbol viewBox="0 0 64 64" id="icon_delete_button">
+    <circle r="30" cx="32" cy="32" fill="red" stroke="#fff" stroke-width="3"/>
+    <line x1="15" y1="15" x2="49" y2="49" stroke="#fff" stroke-width="4"/>
+    <line x1="49" y1="15" x2="15" y2="49" stroke="#fff" stroke-width="4"/>
+</symbol>
+<symbol viewBox="0 0 64 64" id="icon_close">
+	<line x1="3" y1="3" x2="61" y2="61" stroke="#fff" stroke-width="6"/>
+	<line x1="3" y1="61" x2="61" y2="3" stroke="#fff" stroke-width="6"/>
+</svg>
