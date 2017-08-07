@@ -1,22 +1,3 @@
-nano js/paint.js 
-cat php/temp
-clear
-nano js/paint.js 
-nano php/temp
-rm php/temp
-nano php/temp_table.php 
-nano php/temp
-nano php/temp_table.php 
-nano php/temp
-nano php/temp_table.php 
-nano php/temp
-nano php/temp
-rm php/temp
-nano php/temp_table.php 
-nano php/login.php 
-nano php/temp_table.php 
-mysql
-mysql -p -u nerrevar
 clear
 nano php/temp_table.php 
 mysql -p -u nerrevar
@@ -498,3 +479,22 @@ su
 ls
 cd ../../test-nerrevar.tk/
 ls
+su
+su
+su
+ls
+man ln
+cd /lib/
+ln -h
+ln --help
+man ln
+ln -s libcrypto.so.1.1 libcrypto.so
+su
+su
+su
+su
+su postgres
+su postgres
+su
+su
+su
