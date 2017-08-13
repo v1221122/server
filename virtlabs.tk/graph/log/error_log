@@ -160,3 +160,4 @@
 [Sat Aug 05 06:29:39.308559 2017] [php7:error] [pid 465] [client 201.21.67.212:40593] script '/srv/http/virtlabs.tk/graph/command.php' not found or unable to stat
 [Sun Aug 06 00:58:45.460794 2017] [php7:error] [pid 298] [client 83.217.8.122:34129] script '/srv/http/virtlabs.tk/graph/prox_ch.php' not found or unable to stat
 [Thu Aug 10 16:13:47.541599 2017] [php7:error] [pid 466] [client 89.248.171.38:58632] script '/srv/http/virtlabs.tk/graph/xmlrpc.php' not found or unable to stat
+[Fri Aug 11 09:13:55.760471 2017] [php7:error] [pid 294] [client 187.183.209.92:60925] script '/srv/http/virtlabs.tk/graph/command.php' not found or unable to stat
