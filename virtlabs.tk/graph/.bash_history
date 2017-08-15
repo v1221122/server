@@ -1,15 +1,3 @@
-clear
-nano php/temp_table.php 
-mysql -p -u nerrevar
-nano php/temp_table.php 
-mysql -p -u nerrevar
-clear
-nano php/temp_table.php 
-nano php/t_table 
-nano /var/log/httpd/error_log 
-nano /etc/php/php.ini 
-su
-su
 mkdir /srv/php/log
 su
 nano php/temp_table.php 
@@ -497,4 +485,16 @@ su postgres
 su postgres
 su
 su
+su
+apache -v
+apachectl -v
+su
+mkdir /srv/http/test-nerrevar.tk/log
+su
+cd ../../test-nerrevar.tk/
+su
+ls
+ls log/
+ls log/
+nano log/error.log 
 su
