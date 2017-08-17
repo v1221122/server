@@ -162,3 +162,5 @@
 [Thu Aug 10 16:13:47.541599 2017] [php7:error] [pid 466] [client 89.248.171.38:58632] script '/srv/http/virtlabs.tk/graph/xmlrpc.php' not found or unable to stat
 [Fri Aug 11 09:13:55.760471 2017] [php7:error] [pid 294] [client 187.183.209.92:60925] script '/srv/http/virtlabs.tk/graph/command.php' not found or unable to stat
 [Tue Aug 15 04:28:00.088467 2017] [php7:error] [pid 11194] [client 187.67.101.26:33027] script '/srv/http/virtlabs.tk/graph/command.php' not found or unable to stat
+[Wed Aug 16 19:01:53.654186 2017] [cgi:error] [pid 20314] [client 179.217.226.99:42802] AH02811: script not found or unable to stat: /srv/http/virtlabs.tk/graph/hndUnblock.cgi
+[Wed Aug 16 19:01:57.361437 2017] [cgi:error] [pid 11196] [client 179.217.226.99:42828] AH02811: script not found or unable to stat: /srv/http/virtlabs.tk/graph/tmUnblock.cgi
