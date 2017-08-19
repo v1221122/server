@@ -1,27 +1,3 @@
-mkdir /srv/php/log
-su
-nano php/temp_table.php 
-nano /srv/php/log/error_log 
-nano php/temp_table.php 
-nano main.php 
-nano php/t_table 
-nano php/temp_table.php 
-cat $PHP_LOG
-cat $MY_LOG
-nano php/temp_table.php 
-rm php/t_table 
-nano php/temp_table.php 
-cat $PHP_LOG
-nano php/temp_table.php 
-cat $PHP_LOG
-nano php/temp_table.php 
-cat $PHP_LOG
-nano php/t_table 
-nano php/temp_table.php 
-rm php/t_table 
-nano php/t_table 
-nano php/t_table 
-nano php/temp_table.php 
 rm php/t_table 
 nano php/t_table 
 nano php/temp_table.php 
@@ -498,3 +474,27 @@ ls log/
 ls log/
 nano log/error.log 
 su
+cd ../../test-nerrevar.tk/
+ls
+rm app.wsgi 
+rm test_app.py 
+git clone http://github.com/nerrevar/schedule.git
+ls
+ls schedule/
+mv -r schedule/* ./
+mv -R schedule/* ./
+mv schedule/* ./
+ls
+rm schedule/
+rm -r schedule/
+su
+npm install
+npm --help
+man
+man npm
+npm help 5
+npm help 5 package.json
+su
+cd ../../test-nerrevar.tk/
+npm
+npm install

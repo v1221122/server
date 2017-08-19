@@ -34,3 +34,5 @@
 [Mon Aug 14 21:33:18.386328 2017] [wsgi:error] [pid 11193] [client 94.181.132.48:18268]   File "/usr/lib/python3.6/site-packages/sqlalchemy/dialects/postgresql/psycopg2.py", line 554, in dbapi, referer: http://www.yandex.ru/clck/jsredir?from=yandex.ru;suggest;browser&text=
 [Mon Aug 14 21:33:18.386344 2017] [wsgi:error] [pid 11193] [client 94.181.132.48:18268]     import psycopg2, referer: http://www.yandex.ru/clck/jsredir?from=yandex.ru;suggest;browser&text=
 [Mon Aug 14 21:33:18.386522 2017] [wsgi:error] [pid 11193] [client 94.181.132.48:18268] ModuleNotFoundError: No module named 'psycopg2', referer: http://www.yandex.ru/clck/jsredir?from=yandex.ru;suggest;browser&text=
+[Fri Aug 18 22:37:07.069301 2017] [wsgi:error] [pid 300] [client 95.108.181.69:46508] Target WSGI script not found or unable to stat: /srv/http/test-nerrevar.tk/app.wsgi
+[Fri Aug 18 22:37:10.986648 2017] [wsgi:error] [pid 300] [client 95.108.181.69:46508] Target WSGI script not found or unable to stat: /srv/http/test-nerrevar.tk/app.wsgi
