@@ -36,3 +36,5 @@
 [Mon Aug 14 21:33:18.386522 2017] [wsgi:error] [pid 11193] [client 94.181.132.48:18268] ModuleNotFoundError: No module named 'psycopg2', referer: http://www.yandex.ru/clck/jsredir?from=yandex.ru;suggest;browser&text=
 [Fri Aug 18 22:37:07.069301 2017] [wsgi:error] [pid 300] [client 95.108.181.69:46508] Target WSGI script not found or unable to stat: /srv/http/test-nerrevar.tk/app.wsgi
 [Fri Aug 18 22:37:10.986648 2017] [wsgi:error] [pid 300] [client 95.108.181.69:46508] Target WSGI script not found or unable to stat: /srv/http/test-nerrevar.tk/app.wsgi
+[Sat Aug 19 16:20:27.169801 2017] [wsgi:error] [pid 298] [client 95.108.181.69:59273] Target WSGI script not found or unable to stat: /srv/http/test-nerrevar.tk/app.wsgi
+[Sat Aug 19 16:20:31.097596 2017] [wsgi:error] [pid 298] [client 95.108.181.69:59273] Target WSGI script not found or unable to stat: /srv/http/test-nerrevar.tk/app.wsgi
