@@ -38,3 +38,5 @@
 [Fri Aug 18 22:37:10.986648 2017] [wsgi:error] [pid 300] [client 95.108.181.69:46508] Target WSGI script not found or unable to stat: /srv/http/test-nerrevar.tk/app.wsgi
 [Sat Aug 19 16:20:27.169801 2017] [wsgi:error] [pid 298] [client 95.108.181.69:59273] Target WSGI script not found or unable to stat: /srv/http/test-nerrevar.tk/app.wsgi
 [Sat Aug 19 16:20:31.097596 2017] [wsgi:error] [pid 298] [client 95.108.181.69:59273] Target WSGI script not found or unable to stat: /srv/http/test-nerrevar.tk/app.wsgi
+[Tue Aug 22 11:46:50.426867 2017] [wsgi:error] [pid 824] [client 95.108.181.69:47799] Target WSGI script not found or unable to stat: /srv/http/test-nerrevar.tk/app.wsgi
+[Tue Aug 22 11:46:54.289328 2017] [wsgi:error] [pid 824] [client 95.108.181.69:47799] Target WSGI script not found or unable to stat: /srv/http/test-nerrevar.tk/app.wsgi
