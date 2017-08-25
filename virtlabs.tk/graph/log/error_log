@@ -168,3 +168,4 @@
 [Mon Aug 21 14:50:18.128063 2017] [php7:error] [pid 299] [client 198.55.103.198:2769] script '/srv/http/virtlabs.tk/graph/av.php' not found or unable to stat
 [Tue Aug 22 04:25:41.433280 2017] [php7:error] [pid 23188] [client 176.120.25.160:33909] script '/srv/http/virtlabs.tk/graph/prox_ch.php' not found or unable to stat
 [Tue Aug 22 05:33:22.195080 2017] [php7:error] [pid 300] [client 211.154.134.220:51006] script '/srv/http/virtlabs.tk/graph/wp-login.php' not found or unable to stat
+[Fri Aug 25 03:38:47.224137 2017] [php7:error] [pid 32680] [client 80.82.70.231:57344] script '/srv/http/virtlabs.tk/graph/setup.php' not found or unable to stat
