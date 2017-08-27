@@ -170,3 +170,6 @@
 [Tue Aug 22 05:33:22.195080 2017] [php7:error] [pid 300] [client 211.154.134.220:51006] script '/srv/http/virtlabs.tk/graph/wp-login.php' not found or unable to stat
 [Fri Aug 25 03:38:47.224137 2017] [php7:error] [pid 32680] [client 80.82.70.231:57344] script '/srv/http/virtlabs.tk/graph/setup.php' not found or unable to stat
 [Fri Aug 25 08:34:11.610625 2017] [php7:error] [pid 26157] [client 198.55.103.198:2940] script '/srv/http/virtlabs.tk/graph/azenv.php' not found or unable to stat
+[Sat Aug 26 09:40:36.230208 2017] [php7:error] [pid 26157] [client 202.101.247.10:49148] script '/srv/http/virtlabs.tk/graph/xmlrpc.php' not found or unable to stat
+[Sat Aug 26 13:50:58.835915 2017] [php7:error] [pid 26157] [client 95.215.62.44:39880] script '/srv/http/virtlabs.tk/graph/xmlrpc.php' not found or unable to stat
+[Sat Aug 26 17:22:07.044096 2017] [php7:error] [pid 26165] [client 186.223.125.182:49928] script '/srv/http/virtlabs.tk/graph/command.php' not found or unable to stat
