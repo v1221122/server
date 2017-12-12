@@ -1,0 +1,16 @@
+{% extends "index.html" %}
+{% block body %}
+<form action="wait">
+    <input type="text" placeholder="№ телефона (с 8-й)" />
+    <p>Откуда</p>
+    <input type="text" placeholder="Улица" style="width:65%" />
+    <input type="text" placeholder="Дом" style="width:30%" /><br>
+    <input type="text" placeholder="Корус" style="width:30%" />
+    <input type="text" placeholder="Подьезд" style="width:30%" /><br>
+    <input type="text" placeholder="Примечания" style="width:calc(95% + 4px)" /><br>
+    <input type="checkbox" checked />По городу<br>
+    <input type="checkbox" />Перезвонить
+    <p>Куда: <input type="text" style="width:80%" /></p>
+    <input type="submit" value="Вызвать" />
+</form>
+{% endblock %}

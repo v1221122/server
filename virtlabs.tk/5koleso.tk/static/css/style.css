@@ -1,0 +1,42 @@
+#header{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 100px;
+	text-align: center;
+}
+#body{
+	position: absolute;
+	top: 100px;
+	bottom: 60px;
+	left: 50px;
+	right: 50px;
+	padding: 5px;
+}
+#footer{
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 30;
+	height: 30px;
+	text-align: center;
+}
+.img{
+	width:400px;
+	height:300px;
+	float:left;
+}
+#wrapper{
+	display:inline-block;
+	height:300px;
+	align:left;
+	margin-left:5px;
+}
+h2{
+	text-align:center;
+}
+.text{
+	display:block;
+	text-align:left;
+}

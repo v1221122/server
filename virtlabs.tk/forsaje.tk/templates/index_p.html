@@ -1,0 +1,15 @@
+{% extends "index.html" %}
+{% block body %}
+<div>
+    {% if cars > 0 %}
+        <p>Вас приветствует служба такси</p>
+    {% else %}
+        <p>Извините, в данный момент нет свободных машин</p>
+    {% endif %}
+</div>
+<div>
+    <form action="get_form">
+        <input type="submit" value="Заказать такси" />
+    </form>
+</div>
+{% endblock %}

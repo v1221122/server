@@ -1,88 +1,3 @@
-rm php/t_table 
-nano php/t_table 
-nano php/temp_table.php 
-nano js/paint.js 
-cat $MY_LOG
-clear
-cat $MY_LOG
-cat log/error_log 
-rm log/error_log 
-cat $PHP_LOG
-nano php/temp_table.php 
-nano index.php 
-nano index.php 
-nano index.php 
-nano style_main.css 
-nano index.php 
-nano style_main.css 
-cat style_main.css >>style.css 
-nano style.css 
-nano style.css 
-nano style.css 
-nano index.php 
-nano index.php 
-nano main.php 
-nano index.php 
-nano main.php 
-nano php/temp_table.php 
-nano js/paint.js 
-nano index.php 
-nano index.php 
-nano php/t_table 
-cat $PHP_LOG
-nano js/paint.js 
-cat $PHP_LOG
-nano main.php 
-nano php/temp_table.php 
-cat $PHP_LOG
-nano php/temp_table.php 
-cat $PHP_LOG
-nano js/paint.js 
-nano php/t_table 
-cat $PHP_LOG
-nano php/temp_table.php 
-nano php/t_table 
-nano js/paint.js 
-nano php/t_table 
-rm php/t_table 
-nano php/t_table 
-nano js/paint.js 
-nano php/temp_table.php 
-nano php/t_table 
-nano js/paint.js 
-nano php/t_table 
-cat $PHP_LOG
-nano php/temp_table.php 
-nano php/t_table 
-rm $PHP_LOG
-cat $PHP_LOG
-nano php/temp_table.php 
-cat $PHP_LOG
-nano php/t_table 
-rm php/t_table 
-nano php/temp_table.php 
-nano php/t_table 
-cat $PHP_LOG
-nano php/temp_table.php 
-cat $PHP_LOG
-nano php/temp_table.php 
-cat $PHP_LOG
-nano php/temp_table.php 
-nano php/t_table 
-nano php/temp_table.php 
-cat $PHP_LOG
-nano php/temp_table.php 
-cat php/t_table 
-nano php/temp_table.php 
-nano php/t_table 
-nano php/temp_table.php 
-nano php/t_table 
-nano php/temp_table.php 
-nano php/t_table 
-mysql -p -u nerrevar
-mysql -p -u nerrevar
-nano php/temp_table.php 
-nano /etc/mysql/my.cnf 
 su
 mkdir /var/log/mysql/log
 mkdir /var/log/mysql
@@ -498,3 +413,88 @@ su
 cd ../../test-nerrevar.tk/
 npm
 npm install
+cd /srv/http/
+ls
+cd virtlabs.tk/
+ls
+mkdir 5koleso.tk
+mkdir forsaje.tk
+ls 5koleso.tk/
+su
+nano 5koleso.tk/index.py 
+pip install livereload
+su
+mkdir 5koleso.tk/log
+mkdir forsaje.tk/log
+su
+su
+nano 5koleso.tk/index.py 
+5koleso.tk/index.py 
+nano 5koleso.tk/index.py 
+5koleso.tk/index.py 
+nano 5koleso.tk/index.py 
+5koleso.tk/index.py 
+rm -r 5koleso.tk/ forsaje.tk/
+yes | rm -r 5koleso.tk/ forsaje.tk/
+ls
+git clone https://github.com/nerrevar/forsaje
+ls forsaje/
+rm forsaje/
+rm -r forsaje/
+rm -r forsaje
+ls
+mkdir forsaje.tk
+ls forsaje.tk/
+ls 5koleso.tk/
+5koleso.tk/index.py 
+cd ~
+git clone lhttps://github.com/lepture/python-livereload
+git clone https://github.com/lepture/python-livereload
+su
+su
+cd ~
+ls
+cd ../
+ls
+cd ../virtlabs.tk/5koleso.tk/index.py 
+cd ../virtlabs.tk/5koleso.tk/
+mv index.py index.wsgi
+nano index.wsgi 
+mv index.wsgi index.py
+nano index.wsgi
+nano api.py 
+cd /srv/http/virtlabs.tk/5koleso.tk/
+ls
+mkdir log
+mkdir ../forsaje.tk/log
+cd /srv/http/virtlabs.tk/5koleso.tk/
+mv index.wsgi api.wsgi
+su
+./api.wsgi 
+nano api.wsgi 
+./api.wsgi 
+su
+./api.wsgi 
+nano api.wsgi 
+su
+nano log/error-log 
+ls
+nano api.wsgi 
+ll
+ll
+ls -l
+echo $PYTHONPATH
+PYTHONPATH=$PYTHONPATH:/srv/http/virtlabs.tk/5koleso.tk/
+echo $PYTHONPATH
+PYTHONPATH=/srv/http/virtlabs.tk/5koleso.tk/
+echo $PYTHONPATH
+less log/error-log 
+rm log/error-log 
+less log/error-log 
+ls log/
+ls log/
+./api.wsgi 
+python api.wsgi 
+ll
+ls -l
+less log/access-log 

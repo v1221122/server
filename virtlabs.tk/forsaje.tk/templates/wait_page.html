@@ -1,0 +1,19 @@
+{% extends "index.html" %}
+{% block body %}
+{% if not confirm %}
+    {% set time = time - 1 %}
+    {% set t %}
+        {{ time // 60 }}:{{ '{:02}'.format(time % 60) }}
+    {% endset %}
+    <h1>{{ t }}</h1>
+{% else %}
+<p>Выходите, Вас ожидает{{ car.name }}. Гос. номер: {{ car.number }}. Цвет: {{ car.color }}</p>
+<form action="/">
+    <input type="submit" value="OK" />
+</form>
+<br><br>
+<form action="cancel">
+    <input type="submit" value="Отменить" />
+</form>
+{% endif %}
+{% endblock %}
