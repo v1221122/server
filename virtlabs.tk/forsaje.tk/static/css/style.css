@@ -1,0 +1,24 @@
+#header{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 10%;
+	text-align: center;
+}
+#body{
+	position: absolute;
+	top: 10%;
+	left: 0;
+	right: 0;
+	height: 85%;
+	text-align: center;
+}
+#footer{
+	position: absolute;
+	top: 95%;
+	left: 0;
+	right: 0;
+	height: 5%;
+	text-align: center;
+}

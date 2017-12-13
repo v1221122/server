@@ -1,21 +1,3 @@
-su
-mkdir /var/log/mysql/log
-mkdir /var/log/mysql
-su
-св юю
-cd ..
-ls
-ls -l graph
-su
-nano js/paint.js 
-nano js/paint.js 
-nano js/paint.js 
-nano js/paint.js 
-nano js/paint.js 
-nano js/paint.js 
-nano js/paint.js 
-nano js/paint.js 
-nano js/paint.js 
 nano js/paint.js 
 nano js/paint.js 
 ыг
@@ -498,3 +480,21 @@ python api.wsgi
 ll
 ls -l
 less log/access-log 
+cd /srv/http/virtlabs.tk/5koleso.tk/
+less log/access-log 
+./api.wsgi 
+python api.wsgi 
+ls -l
+chmod -x api.wsgi 
+ls -l
+cp api.wsgi ../forsaje.tk/api.wsgi
+cp -r ../5koleso.tk/static ./
+ls static/
+rm static/img/*
+nano static/css/style.css 
+cd /srv/http/virtlabs.tk/forsaje.tk/
+less log/access-log 
+rm log/access-log 
+less log/error-log 
+rm log/error-log 
+su
