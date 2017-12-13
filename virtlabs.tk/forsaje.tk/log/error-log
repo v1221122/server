@@ -1,0 +1,40 @@
+[Wed Dec 13 12:36:27.373384 2017] [wsgi:error] [pid 22643] [remote 85.26.164.180:6534] [2017-12-13 12:36:27,369] ERROR in app: Exception on /apk [GET]
+[Wed Dec 13 15:13:45.663616 2017] [wsgi:error] [pid 24697] [remote 176.59.113.137:59289] mod_wsgi (pid=24697): Exception occurred processing WSGI script '/srv/http/virtlabs.tk/forsaje.tk/api.wsgi'.
+[Wed Dec 13 15:13:45.664128 2017] [wsgi:error] [pid 24697] [remote 176.59.113.137:59289] OSError: Apache/mod_wsgi failed to write response data: Broken pipe.
+[Wed Dec 13 15:34:53.296958 2017] [wsgi:error] [pid 24893] [remote 85.26.164.180:54150] [2017-12-13 15:34:53,293] ERROR in app: Exception on /application [GET]
+[Wed Dec 13 15:34:53.297118 2017] [wsgi:error] [pid 24893] [remote 85.26.164.180:54150] Traceback (most recent call last):
+[Wed Dec 13 15:34:53.297133 2017] [wsgi:error] [pid 24893] [remote 85.26.164.180:54150]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+[Wed Dec 13 15:34:53.297145 2017] [wsgi:error] [pid 24893] [remote 85.26.164.180:54150]     response = self.full_dispatch_request()
+[Wed Dec 13 15:34:53.297154 2017] [wsgi:error] [pid 24893] [remote 85.26.164.180:54150]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1615, in full_dispatch_request
+[Wed Dec 13 15:34:53.297163 2017] [wsgi:error] [pid 24893] [remote 85.26.164.180:54150]     return self.finalize_request(rv)
+[Wed Dec 13 15:34:53.297172 2017] [wsgi:error] [pid 24893] [remote 85.26.164.180:54150]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1630, in finalize_request
+[Wed Dec 13 15:34:53.297181 2017] [wsgi:error] [pid 24893] [remote 85.26.164.180:54150]     response = self.make_response(rv)
+[Wed Dec 13 15:34:53.297190 2017] [wsgi:error] [pid 24893] [remote 85.26.164.180:54150]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1725, in make_response
+[Wed Dec 13 15:34:53.297199 2017] [wsgi:error] [pid 24893] [remote 85.26.164.180:54150]     raise ValueError('View function did not return a response')
+[Wed Dec 13 15:34:53.297213 2017] [wsgi:error] [pid 24893] [remote 85.26.164.180:54150] ValueError: View function did not return a response
+[Wed Dec 13 15:34:53.297415 2017] [wsgi:error] [pid 24893] [remote 85.26.164.180:54150] 
+[Wed Dec 13 15:38:51.510675 2017] [wsgi:error] [pid 24893] [remote 85.26.164.180:35631] [2017-12-13 15:38:51,509] ERROR in app: Exception on /application [GET]
+[Wed Dec 13 15:38:51.510836 2017] [wsgi:error] [pid 24893] [remote 85.26.164.180:35631] Traceback (most recent call last):
+[Wed Dec 13 15:38:51.510857 2017] [wsgi:error] [pid 24893] [remote 85.26.164.180:35631]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+[Wed Dec 13 15:38:51.510869 2017] [wsgi:error] [pid 24893] [remote 85.26.164.180:35631]     response = self.full_dispatch_request()
+[Wed Dec 13 15:38:51.510879 2017] [wsgi:error] [pid 24893] [remote 85.26.164.180:35631]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1615, in full_dispatch_request
+[Wed Dec 13 15:38:51.510889 2017] [wsgi:error] [pid 24893] [remote 85.26.164.180:35631]     return self.finalize_request(rv)
+[Wed Dec 13 15:38:51.510898 2017] [wsgi:error] [pid 24893] [remote 85.26.164.180:35631]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1630, in finalize_request
+[Wed Dec 13 15:38:51.510907 2017] [wsgi:error] [pid 24893] [remote 85.26.164.180:35631]     response = self.make_response(rv)
+[Wed Dec 13 15:38:51.510916 2017] [wsgi:error] [pid 24893] [remote 85.26.164.180:35631]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1725, in make_response
+[Wed Dec 13 15:38:51.510926 2017] [wsgi:error] [pid 24893] [remote 85.26.164.180:35631]     raise ValueError('View function did not return a response')
+[Wed Dec 13 15:38:51.510946 2017] [wsgi:error] [pid 24893] [remote 85.26.164.180:35631] ValueError: View function did not return a response
+[Wed Dec 13 15:38:51.510997 2017] [wsgi:error] [pid 24893] [remote 85.26.164.180:35631] 
+[Wed Dec 13 16:19:30.707247 2017] [wsgi:error] [pid 25413] [remote 176.59.113.137:63434] mod_wsgi (pid=25413): Exception occurred processing WSGI script '/srv/http/virtlabs.tk/forsaje.tk/api.wsgi'.
+[Wed Dec 13 16:19:30.707729 2017] [wsgi:error] [pid 25413] [remote 176.59.113.137:63434] OSError: Apache/mod_wsgi failed to write response data: Broken pipe.
+[Wed Dec 13 16:20:34.016659 2017] [wsgi:error] [pid 25418] (70007)The timeout specified has expired: [client 176.59.113.137:18251] mod_wsgi (pid=25418): Failed to proxy response to client.
+[Wed Dec 13 16:20:34.018289 2017] [wsgi:error] [pid 25413] [remote 176.59.113.137:18251] mod_wsgi (pid=25413): Exception occurred processing WSGI script '/srv/http/virtlabs.tk/forsaje.tk/api.wsgi'.
+[Wed Dec 13 16:20:34.018669 2017] [wsgi:error] [pid 25413] [remote 176.59.113.137:18251] OSError: Apache/mod_wsgi failed to write response data: Broken pipe.
+[Wed Dec 13 16:30:37.447270 2017] [wsgi:error] [pid 25413] [remote 176.59.113.137:25832] mod_wsgi (pid=25413): Exception occurred processing WSGI script '/srv/http/virtlabs.tk/forsaje.tk/api.wsgi'.
+[Wed Dec 13 16:30:37.447625 2017] [wsgi:error] [pid 25413] [remote 176.59.113.137:25832] OSError: Apache/mod_wsgi failed to write response data: Broken pipe.
+[Wed Dec 13 17:08:43.162321 2017] [wsgi:error] [pid 25688] [remote 176.59.113.137:58168] mod_wsgi (pid=25688): Exception occurred processing WSGI script '/srv/http/virtlabs.tk/forsaje.tk/api.wsgi'.
+[Wed Dec 13 17:08:43.162837 2017] [wsgi:error] [pid 25688] [remote 176.59.113.137:58168] OSError: Apache/mod_wsgi failed to write response data: Broken pipe.
+[Wed Dec 13 17:09:01.371441 2017] [wsgi:error] [pid 25688] [remote 176.59.113.137:27554] mod_wsgi (pid=25688): Exception occurred processing WSGI script '/srv/http/virtlabs.tk/forsaje.tk/api.wsgi'.
+[Wed Dec 13 17:09:01.371791 2017] [wsgi:error] [pid 25688] [remote 176.59.113.137:27554] OSError: Apache/mod_wsgi failed to write response data: Broken pipe.
+[Wed Dec 13 17:47:12.782005 2017] [wsgi:error] [pid 25688] [remote 176.59.113.137:63171] mod_wsgi (pid=25688): Exception occurred processing WSGI script '/srv/http/virtlabs.tk/forsaje.tk/api.wsgi'.
+[Wed Dec 13 17:47:12.782364 2017] [wsgi:error] [pid 25688] [remote 176.59.113.137:63171] OSError: Apache/mod_wsgi failed to write response data: Broken pipe.

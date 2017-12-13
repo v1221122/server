@@ -10,21 +10,29 @@
     </div>
     <div id="body_div" style="overflow:auto">
         {% for item in items %}
-            <div class="item">
-                {% block loop_item scoped %}
-                    <hr>
-                    <img src="{{ item.src }}" class="img" />
-                    <div class="wrapper">
-                        <h2>{{ item.title|safe }}</h2>
-                            <p class="text">{{ item.text|safe }}</p>
-                    </div>
-                {% endblock %}
-            </div>
+                <div class="item">
+                    {% block loop_item scoped %}
+                        <hr>
+                        <a href="{{ item.target }}">
+                                    <img src="{{ item.src }}" class="img" />
+                                    <div class="wrapper">
+                                        <h2>{{ item.title|safe }}</h2>
+                                        <p class="text">{{ item.text|safe }}</p>
+                                    </div>
+                        </a>
+                    {% endblock %}
+                </div>
         {% endfor %}
         <hr>
     </div>
     <div id="footer">
-        <h6>(c)nerrevar</h6>
+        <h6 style="display:inline-block;">(c)nerrevar</h6>
+        
+            <a href="http://jigsaw.w3.org/css-validator/check/referer" style="display:inline-block; float:right">
+                <img style="border:0;width:88px;height:31px"
+                    src="http://jigsaw.w3.org/css-validator/images/vcss"
+                    alt="Правильный CSS!" />
+            </a>
     </div>
 </body>
 </html>

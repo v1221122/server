@@ -180,3 +180,4 @@
 [Sat Sep 02 14:51:34.646403 2017] [php7:error] [pid 19416] [client 185.24.93.74:44769] script '/srv/http/virtlabs.tk/graph/prox_ch.php' not found or unable to stat
 [Sat Sep 02 20:31:10.696482 2017] [cgi:error] [pid 299] [client 149.202.175.5:52374] AH02811: script not found or unable to stat: /srv/http/cgi-bin
 [Tue Dec 12 20:27:45.063536 2017] [cgi:error] [pid 24013] [client 162.243.79.133:56190] AH02811: script not found or unable to stat: /srv/http/cgi-bin
+[Wed Dec 13 07:09:48.835948 2017] [cgi:error] [pid 24012] [client 162.243.79.133:55005] AH02811: script not found or unable to stat: /srv/http/cgi-bin

@@ -1,5 +1,6 @@
 import time
-from flask import Flask, render_template, redirect
+import os
+from flask import Flask, render_template, redirect, send_file
 
 app = Flask(__name__)
 
@@ -46,3 +47,9 @@ def wait_page():
 def cancel():
     #delete!!!
     return redirect('/')
+
+@app.route('/application')
+def application():
+    f = os.path.join(app.root_path, 'static', 'apk', 'forsaje.apk')
+    return send_file(f, as_attachment=True, attachment_filename='taxi_forsaje.apk')
+

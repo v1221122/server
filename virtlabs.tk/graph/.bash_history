@@ -1,64 +1,3 @@
-nano js/paint.js 
-nano js/paint.js 
-ыг
-su
-mysql -p -u nerrevar
-mysql -p -u nerrevar
-mysql -p -u nerrevar
-mysql -p -u nerrevar
-show tables;
-mysql -p -u nerrevar
-mysql -p -u nerrevar
-mysql -p -u nerrevar
-mysql -p -u nerrevar
-ls
-cd ../
-cd ../
-ls
-mkdir test.tk
-cd test.tk/
-ls
-scp --help
-man scp
-su
-cd ../
-rm -r test.tk
-mkdir test.nerrevar.tk
-apachectl restart
-ls
-ls
-rm -r test.nerrevar.tk
-mkdir test-nerrevar.tk
-cd test-nerrevar.tk/
-mkdir log
-apachectl restart
-su
-cd ..
-ls
-cd test-nerrevar.tk/
-ls
-ls
-cat index.html 
-su
-cat js/hide.js 
-cat index.php 
-nano index.php 
-nano js/paint.js 
-nano js/paint.js 
-nano php/temp_table_line.php 
-nano php/m1.php 
-nano php/get_matrix.php 
-nano php/m2.php 
-nano style_main.css 
-nano php/m2.php 
-nano php/m1.php 
-nano php/m2.php 
-nano php/m1.php 
-cat php/get_matrix.php 
-nano php/m2hp 
-nano php/m2.php 
-nano php/m1.php 
-nano php/m2.php 
 nano php/m1.php 
 nano php/get_matrix.php 
 echo $locale
@@ -498,3 +437,64 @@ rm log/access-log
 less log/error-log 
 rm log/error-log 
 su
+su
+cd /srv/http/virtlabs.tk/forsaje.tk/
+ls
+mkdir apk
+cd ap
+cd apk
+w3m https://yadi.sk/d/dHexNqWv3QZzY8
+w3m https://yadi.sk/d/dHexNqWV3QZzY8
+w3m https://yadi.sk/d/dHexNqWV3QZzY8
+pacman -S thunar
+su
+less log/error-log 
+rm log/error-log 
+less log/error-log 
+nano api.py 
+ыг
+ыг
+su
+cd /srv/http/virtlabs.tk/forsaje.tk/
+nano api.py 
+su
+ls
+mv apk static/apk
+ls
+ls static/
+ls static/apk/
+nano api.py 
+apachectl --help
+su
+nano api.py 
+su
+less log/error-log 
+nano api.py 
+su
+nano api.py
+less log/error-log 
+nano api.py 
+less log/error-log 
+nano api.py 
+python api.py 
+less log/access-log 
+nano api.py 
+nano api.py 
+less log/error-log 
+less log/access-log 
+nano api.py 
+nano api.py
+nano api.py
+nano api.py
+less log/error-log 
+nano api.py 
+less log/error-log 
+nano api.py 
+ыг
+su
+su
+ыг
+su
+su
+nano ~/.bash_history 
+cadaver https://webdav.yandex.ru

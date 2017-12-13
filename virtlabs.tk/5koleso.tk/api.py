@@ -5,15 +5,18 @@ app = Flask(__name__)
 
 @app.route('/')
 def main():
-    items = [{
-                'src': '/static/img/renault.jpg',
-                'title': '<div style="margin-left:30%; margin-right:30%">Пассажирские<br>перевозки</div>',
-                'text': '<p>paragraph1</p><p>paragraph2</p>'
+    items = [
+            {
+                'target': 'http://forsaje.tk/application',
+                'src': '/static/img/forsaje.jpg',
+                'title': 'Приложение Forsaje',
+                'text': 'Приложение такси'
             },
             {
-                'src': '/static/img/forsaje.jpg',
-                'title': 'Forsaje',
-                'text': 'this is text about forsaje'
+                'target': '#',
+                'src': '/static/img/renault.jpg',
+                'title': 'Пассажирские перевозки',
+                'text': 'paragraph1<br>paragraph2'
             }
     ]
     stylesheet = "style.css"
