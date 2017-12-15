@@ -1,51 +1,100 @@
 import time
 import os
-from flask import Flask, render_template, redirect, send_file
+
+from flask import Flask, render_template, redirect, send_file, request
+from pony.orm import db_session, select, delete
+
+
+from initdb import Worker, Auth, Online, Taxi_order
 
 app = Flask(__name__)
 
 @app.route('/')
 def main():
-    context = {
-                'cars': 1,
-                'body': 'hello world!',
-    }
-    return render_template('index_p.html', **context)
+    with db_session:
+        query = Online.select()
+        context = {
+                    'cars': len(query),
+        }
+        return render_template('index_p.html', **context)
 
    
 @app.route('/get_form')
 def get_form():
     return render_template('get_form.html')
-    
+  
+
+@app.route('/commit')  
+def commit_to_db():
+    d = request.args.to_dict()
+    order = {
+        'phone': d['phone'],
+        'address_from': 'ул. {} д. {} к. {} п. {}'.format(d['street'], d['dom'], d['korp'], d['pod']),
+        'address_to': d['dest'],
+        'comment': d['comment']
+    }
+    with db_session:
+        try:
+            added_order = Taxi_order(**order)
+            return redirect('/wait?phone=' + d['phone'])
+        except:
+            return redirect('/')
     
 @app.route('/wait')
 def wait():
-    current_car = {
-                    'name': 'wv',
-                    'color': 'синий',
-                    'number': 466,
-    }
+    current_car = dict()
+    id = 0
+    with db_session:
+        order = Taxi_order.get(phone=request.args.get('phone'))
+        if order:
+            if order.worker_id:
+                worker = Worker.get(id=order.worker_id)
+                current_car = {
+                    'car': worker.car,
+                    'color': worker.color,
+                    'number': worker.number,
+                }
+                id = order.id
     time = 5
-    if current_car:
-        pass
-    return render_template('wait.html', car = current_car, time = time)
+    context = {
+        'car': current_car,
+        'time': time,
+        'refresh': True,
+        'id': id
+    }
+    return render_template('wait.html', **context)
     
     
 @app.route('/wait_page')
 def wait_page():
     confirm = False
-    time = 5
-    current_car = {
-                    'name': 'wv',
-                    'color': 'синий',
-                    'number': 466,
+    time = request.args.get('time') - 1
+    current_car = dict()
+    with db_session:
+        order = Taxi_order.get(id=request.args.get('id'))
+        if order:
+            if order.worker_id:
+                worker = Worker.get(id=order.worker_id)
+                current_car = {
+                    'car': worker.car,
+                    'color': worker.color,
+                    'number': worker.number,
+                }
+    context = {
+        'car': current_car,
+        'time': time,
+        'confirm': confirm,
+        'refresh': True,
+        'id': order.id
     }
-    return render_template('wait_page.html', car = current_car, time = time * 60, confirm = confirm)
+    return render_template('wait_page.html', **context)
     
     
 @app.route('/cancel')
 def cancel():
-    #delete!!!
+    with db_session:
+        if request.args.get('id'):
+            Taxi_order.get(request.args.get('id')).delete(bulk=True)
     return redirect('/')
 
 @app.route('/application')

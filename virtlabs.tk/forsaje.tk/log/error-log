@@ -1,40 +1,562 @@
-[Wed Dec 13 12:36:27.373384 2017] [wsgi:error] [pid 22643] [remote 85.26.164.180:6534] [2017-12-13 12:36:27,369] ERROR in app: Exception on /apk [GET]
-[Wed Dec 13 15:13:45.663616 2017] [wsgi:error] [pid 24697] [remote 176.59.113.137:59289] mod_wsgi (pid=24697): Exception occurred processing WSGI script '/srv/http/virtlabs.tk/forsaje.tk/api.wsgi'.
-[Wed Dec 13 15:13:45.664128 2017] [wsgi:error] [pid 24697] [remote 176.59.113.137:59289] OSError: Apache/mod_wsgi failed to write response data: Broken pipe.
-[Wed Dec 13 15:34:53.296958 2017] [wsgi:error] [pid 24893] [remote 85.26.164.180:54150] [2017-12-13 15:34:53,293] ERROR in app: Exception on /application [GET]
-[Wed Dec 13 15:34:53.297118 2017] [wsgi:error] [pid 24893] [remote 85.26.164.180:54150] Traceback (most recent call last):
-[Wed Dec 13 15:34:53.297133 2017] [wsgi:error] [pid 24893] [remote 85.26.164.180:54150]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
-[Wed Dec 13 15:34:53.297145 2017] [wsgi:error] [pid 24893] [remote 85.26.164.180:54150]     response = self.full_dispatch_request()
-[Wed Dec 13 15:34:53.297154 2017] [wsgi:error] [pid 24893] [remote 85.26.164.180:54150]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1615, in full_dispatch_request
-[Wed Dec 13 15:34:53.297163 2017] [wsgi:error] [pid 24893] [remote 85.26.164.180:54150]     return self.finalize_request(rv)
-[Wed Dec 13 15:34:53.297172 2017] [wsgi:error] [pid 24893] [remote 85.26.164.180:54150]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1630, in finalize_request
-[Wed Dec 13 15:34:53.297181 2017] [wsgi:error] [pid 24893] [remote 85.26.164.180:54150]     response = self.make_response(rv)
-[Wed Dec 13 15:34:53.297190 2017] [wsgi:error] [pid 24893] [remote 85.26.164.180:54150]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1725, in make_response
-[Wed Dec 13 15:34:53.297199 2017] [wsgi:error] [pid 24893] [remote 85.26.164.180:54150]     raise ValueError('View function did not return a response')
-[Wed Dec 13 15:34:53.297213 2017] [wsgi:error] [pid 24893] [remote 85.26.164.180:54150] ValueError: View function did not return a response
-[Wed Dec 13 15:34:53.297415 2017] [wsgi:error] [pid 24893] [remote 85.26.164.180:54150] 
-[Wed Dec 13 15:38:51.510675 2017] [wsgi:error] [pid 24893] [remote 85.26.164.180:35631] [2017-12-13 15:38:51,509] ERROR in app: Exception on /application [GET]
-[Wed Dec 13 15:38:51.510836 2017] [wsgi:error] [pid 24893] [remote 85.26.164.180:35631] Traceback (most recent call last):
-[Wed Dec 13 15:38:51.510857 2017] [wsgi:error] [pid 24893] [remote 85.26.164.180:35631]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
-[Wed Dec 13 15:38:51.510869 2017] [wsgi:error] [pid 24893] [remote 85.26.164.180:35631]     response = self.full_dispatch_request()
-[Wed Dec 13 15:38:51.510879 2017] [wsgi:error] [pid 24893] [remote 85.26.164.180:35631]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1615, in full_dispatch_request
-[Wed Dec 13 15:38:51.510889 2017] [wsgi:error] [pid 24893] [remote 85.26.164.180:35631]     return self.finalize_request(rv)
-[Wed Dec 13 15:38:51.510898 2017] [wsgi:error] [pid 24893] [remote 85.26.164.180:35631]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1630, in finalize_request
-[Wed Dec 13 15:38:51.510907 2017] [wsgi:error] [pid 24893] [remote 85.26.164.180:35631]     response = self.make_response(rv)
-[Wed Dec 13 15:38:51.510916 2017] [wsgi:error] [pid 24893] [remote 85.26.164.180:35631]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1725, in make_response
-[Wed Dec 13 15:38:51.510926 2017] [wsgi:error] [pid 24893] [remote 85.26.164.180:35631]     raise ValueError('View function did not return a response')
-[Wed Dec 13 15:38:51.510946 2017] [wsgi:error] [pid 24893] [remote 85.26.164.180:35631] ValueError: View function did not return a response
-[Wed Dec 13 15:38:51.510997 2017] [wsgi:error] [pid 24893] [remote 85.26.164.180:35631] 
-[Wed Dec 13 16:19:30.707247 2017] [wsgi:error] [pid 25413] [remote 176.59.113.137:63434] mod_wsgi (pid=25413): Exception occurred processing WSGI script '/srv/http/virtlabs.tk/forsaje.tk/api.wsgi'.
-[Wed Dec 13 16:19:30.707729 2017] [wsgi:error] [pid 25413] [remote 176.59.113.137:63434] OSError: Apache/mod_wsgi failed to write response data: Broken pipe.
-[Wed Dec 13 16:20:34.016659 2017] [wsgi:error] [pid 25418] (70007)The timeout specified has expired: [client 176.59.113.137:18251] mod_wsgi (pid=25418): Failed to proxy response to client.
-[Wed Dec 13 16:20:34.018289 2017] [wsgi:error] [pid 25413] [remote 176.59.113.137:18251] mod_wsgi (pid=25413): Exception occurred processing WSGI script '/srv/http/virtlabs.tk/forsaje.tk/api.wsgi'.
-[Wed Dec 13 16:20:34.018669 2017] [wsgi:error] [pid 25413] [remote 176.59.113.137:18251] OSError: Apache/mod_wsgi failed to write response data: Broken pipe.
-[Wed Dec 13 16:30:37.447270 2017] [wsgi:error] [pid 25413] [remote 176.59.113.137:25832] mod_wsgi (pid=25413): Exception occurred processing WSGI script '/srv/http/virtlabs.tk/forsaje.tk/api.wsgi'.
-[Wed Dec 13 16:30:37.447625 2017] [wsgi:error] [pid 25413] [remote 176.59.113.137:25832] OSError: Apache/mod_wsgi failed to write response data: Broken pipe.
-[Wed Dec 13 17:08:43.162321 2017] [wsgi:error] [pid 25688] [remote 176.59.113.137:58168] mod_wsgi (pid=25688): Exception occurred processing WSGI script '/srv/http/virtlabs.tk/forsaje.tk/api.wsgi'.
-[Wed Dec 13 17:08:43.162837 2017] [wsgi:error] [pid 25688] [remote 176.59.113.137:58168] OSError: Apache/mod_wsgi failed to write response data: Broken pipe.
-[Wed Dec 13 17:09:01.371441 2017] [wsgi:error] [pid 25688] [remote 176.59.113.137:27554] mod_wsgi (pid=25688): Exception occurred processing WSGI script '/srv/http/virtlabs.tk/forsaje.tk/api.wsgi'.
-[Wed Dec 13 17:09:01.371791 2017] [wsgi:error] [pid 25688] [remote 176.59.113.137:27554] OSError: Apache/mod_wsgi failed to write response data: Broken pipe.
-[Wed Dec 13 17:47:12.782005 2017] [wsgi:error] [pid 25688] [remote 176.59.113.137:63171] mod_wsgi (pid=25688): Exception occurred processing WSGI script '/srv/http/virtlabs.tk/forsaje.tk/api.wsgi'.
-[Wed Dec 13 17:47:12.782364 2017] [wsgi:error] [pid 25688] [remote 176.59.113.137:63171] OSError: Apache/mod_wsgi failed to write response data: Broken pipe.
+[Fri Dec 15 15:16:08.216293 2017] [wsgi:error] [pid 11350] [remote 85.26.165.131:22063] [2017-12-15 15:16:08,212] ERROR in app: Exception on /wait [GET]
+[Fri Dec 15 15:16:08.216507 2017] [wsgi:error] [pid 11350] [remote 85.26.165.131:22063] Traceback (most recent call last):
+[Fri Dec 15 15:16:08.216522 2017] [wsgi:error] [pid 11350] [remote 85.26.165.131:22063]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+[Fri Dec 15 15:16:08.216533 2017] [wsgi:error] [pid 11350] [remote 85.26.165.131:22063]     response = self.full_dispatch_request()
+[Fri Dec 15 15:16:08.216542 2017] [wsgi:error] [pid 11350] [remote 85.26.165.131:22063]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1614, in full_dispatch_request
+[Fri Dec 15 15:16:08.216552 2017] [wsgi:error] [pid 11350] [remote 85.26.165.131:22063]     rv = self.handle_user_exception(e)
+[Fri Dec 15 15:16:08.216561 2017] [wsgi:error] [pid 11350] [remote 85.26.165.131:22063]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1517, in handle_user_exception
+[Fri Dec 15 15:16:08.216571 2017] [wsgi:error] [pid 11350] [remote 85.26.165.131:22063]     reraise(exc_type, exc_value, tb)
+[Fri Dec 15 15:16:08.216580 2017] [wsgi:error] [pid 11350] [remote 85.26.165.131:22063]   File "/usr/lib/python3.6/site-packages/flask/_compat.py", line 33, in reraise
+[Fri Dec 15 15:16:08.216589 2017] [wsgi:error] [pid 11350] [remote 85.26.165.131:22063]     raise value
+[Fri Dec 15 15:16:08.216598 2017] [wsgi:error] [pid 11350] [remote 85.26.165.131:22063]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1612, in full_dispatch_request
+[Fri Dec 15 15:16:08.216607 2017] [wsgi:error] [pid 11350] [remote 85.26.165.131:22063]     rv = self.dispatch_request()
+[Fri Dec 15 15:16:08.216616 2017] [wsgi:error] [pid 11350] [remote 85.26.165.131:22063]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1598, in dispatch_request
+[Fri Dec 15 15:16:08.216626 2017] [wsgi:error] [pid 11350] [remote 85.26.165.131:22063]     return self.view_functions[rule.endpoint](**req.view_args)
+[Fri Dec 15 15:16:08.216635 2017] [wsgi:error] [pid 11350] [remote 85.26.165.131:22063]   File "/srv/http/virtlabs.tk/forsaje.tk/api.py", line 51, in wait
+[Fri Dec 15 15:16:08.216645 2017] [wsgi:error] [pid 11350] [remote 85.26.165.131:22063]     worker = Worker.select(id=query['worker_id'])
+[Fri Dec 15 15:16:08.216662 2017] [wsgi:error] [pid 11350] [remote 85.26.165.131:22063] TypeError: 'Taxi_order' object is not subscriptable
+[Fri Dec 15 15:16:08.216723 2017] [wsgi:error] [pid 11350] [remote 85.26.165.131:22063] 
+[Fri Dec 15 15:18:08.202862 2017] [wsgi:error] [pid 11401] [remote 85.26.165.131:28797] mod_wsgi (pid=11401): Target WSGI script '/srv/http/virtlabs.tk/forsaje.tk/api.wsgi' cannot be loaded as Python module.
+[Fri Dec 15 15:18:08.203152 2017] [wsgi:error] [pid 11401] [remote 85.26.165.131:28797] mod_wsgi (pid=11401): Exception occurred processing WSGI script '/srv/http/virtlabs.tk/forsaje.tk/api.wsgi'.
+[Fri Dec 15 15:18:08.227386 2017] [wsgi:error] [pid 11401] [remote 85.26.165.131:28797] Traceback (most recent call last):
+[Fri Dec 15 15:18:08.227523 2017] [wsgi:error] [pid 11401] [remote 85.26.165.131:28797]   File "/srv/http/virtlabs.tk/forsaje.tk/api.wsgi", line 1, in <module>
+[Fri Dec 15 15:18:08.227542 2017] [wsgi:error] [pid 11401] [remote 85.26.165.131:28797]     from api import app as application
+[Fri Dec 15 15:18:08.227598 2017] [wsgi:error] [pid 11401] [remote 85.26.165.131:28797]   File "/srv/http/virtlabs.tk/forsaje.tk/api.py", line 58
+[Fri Dec 15 15:18:08.227635 2017] [wsgi:error] [pid 11401] [remote 85.26.165.131:28797]     print 'name error'
+[Fri Dec 15 15:18:08.227715 2017] [wsgi:error] [pid 11401] [remote 85.26.165.131:28797]                      ^
+[Fri Dec 15 15:18:08.227751 2017] [wsgi:error] [pid 11401] [remote 85.26.165.131:28797] SyntaxError: Missing parentheses in call to 'print'. Did you mean print(print 'name error')?
+[Fri Dec 15 15:18:16.370428 2017] [wsgi:error] [pid 11401] [remote 37.9.113.170:53570] mod_wsgi (pid=11401): Target WSGI script '/srv/http/virtlabs.tk/forsaje.tk/api.wsgi' cannot be loaded as Python module.
+[Fri Dec 15 15:18:16.370773 2017] [wsgi:error] [pid 11401] [remote 37.9.113.170:53570] mod_wsgi (pid=11401): Exception occurred processing WSGI script '/srv/http/virtlabs.tk/forsaje.tk/api.wsgi'.
+[Fri Dec 15 15:18:16.371096 2017] [wsgi:error] [pid 11401] [remote 37.9.113.170:53570] Traceback (most recent call last):
+[Fri Dec 15 15:18:16.371176 2017] [wsgi:error] [pid 11401] [remote 37.9.113.170:53570]   File "/srv/http/virtlabs.tk/forsaje.tk/api.wsgi", line 1, in <module>
+[Fri Dec 15 15:18:16.371192 2017] [wsgi:error] [pid 11401] [remote 37.9.113.170:53570]     from api import app as application
+[Fri Dec 15 15:18:16.371572 2017] [wsgi:error] [pid 11401] [remote 37.9.113.170:53570]   File "/srv/http/virtlabs.tk/forsaje.tk/api.py", line 58
+[Fri Dec 15 15:18:16.371640 2017] [wsgi:error] [pid 11401] [remote 37.9.113.170:53570]     print 'name error'
+[Fri Dec 15 15:18:16.371736 2017] [wsgi:error] [pid 11401] [remote 37.9.113.170:53570]                      ^
+[Fri Dec 15 15:18:16.371775 2017] [wsgi:error] [pid 11401] [remote 37.9.113.170:53570] SyntaxError: Missing parentheses in call to 'print'. Did you mean print(print 'name error')?
+[Fri Dec 15 15:18:20.391184 2017] [wsgi:error] [pid 11401] [remote 37.9.113.170:54078] mod_wsgi (pid=11401): Target WSGI script '/srv/http/virtlabs.tk/forsaje.tk/api.wsgi' cannot be loaded as Python module.
+[Fri Dec 15 15:18:20.391565 2017] [wsgi:error] [pid 11401] [remote 37.9.113.170:54078] mod_wsgi (pid=11401): Exception occurred processing WSGI script '/srv/http/virtlabs.tk/forsaje.tk/api.wsgi'.
+[Fri Dec 15 15:18:20.391886 2017] [wsgi:error] [pid 11401] [remote 37.9.113.170:54078] Traceback (most recent call last):
+[Fri Dec 15 15:18:20.391963 2017] [wsgi:error] [pid 11401] [remote 37.9.113.170:54078]   File "/srv/http/virtlabs.tk/forsaje.tk/api.wsgi", line 1, in <module>
+[Fri Dec 15 15:18:20.391980 2017] [wsgi:error] [pid 11401] [remote 37.9.113.170:54078]     from api import app as application
+[Fri Dec 15 15:18:20.392032 2017] [wsgi:error] [pid 11401] [remote 37.9.113.170:54078]   File "/srv/http/virtlabs.tk/forsaje.tk/api.py", line 58
+[Fri Dec 15 15:18:20.392069 2017] [wsgi:error] [pid 11401] [remote 37.9.113.170:54078]     print 'name error'
+[Fri Dec 15 15:18:20.392150 2017] [wsgi:error] [pid 11401] [remote 37.9.113.170:54078]                      ^
+[Fri Dec 15 15:18:20.392186 2017] [wsgi:error] [pid 11401] [remote 37.9.113.170:54078] SyntaxError: Missing parentheses in call to 'print'. Did you mean print(print 'name error')?
+[Fri Dec 15 15:18:24.308475 2017] [wsgi:error] [pid 11401] [remote 37.9.113.74:64600] mod_wsgi (pid=11401): Target WSGI script '/srv/http/virtlabs.tk/forsaje.tk/api.wsgi' cannot be loaded as Python module.
+[Fri Dec 15 15:18:24.308697 2017] [wsgi:error] [pid 11401] [remote 37.9.113.74:64600] mod_wsgi (pid=11401): Exception occurred processing WSGI script '/srv/http/virtlabs.tk/forsaje.tk/api.wsgi'.
+[Fri Dec 15 15:18:24.309009 2017] [wsgi:error] [pid 11401] [remote 37.9.113.74:64600] Traceback (most recent call last):
+[Fri Dec 15 15:18:24.309085 2017] [wsgi:error] [pid 11401] [remote 37.9.113.74:64600]   File "/srv/http/virtlabs.tk/forsaje.tk/api.wsgi", line 1, in <module>
+[Fri Dec 15 15:18:24.309102 2017] [wsgi:error] [pid 11401] [remote 37.9.113.74:64600]     from api import app as application
+[Fri Dec 15 15:18:24.309153 2017] [wsgi:error] [pid 11401] [remote 37.9.113.74:64600]   File "/srv/http/virtlabs.tk/forsaje.tk/api.py", line 58
+[Fri Dec 15 15:18:24.309190 2017] [wsgi:error] [pid 11401] [remote 37.9.113.74:64600]     print 'name error'
+[Fri Dec 15 15:18:24.309271 2017] [wsgi:error] [pid 11401] [remote 37.9.113.74:64600]                      ^
+[Fri Dec 15 15:18:24.309307 2017] [wsgi:error] [pid 11401] [remote 37.9.113.74:64600] SyntaxError: Missing parentheses in call to 'print'. Did you mean print(print 'name error')?
+[Fri Dec 15 15:18:46.040301 2017] [wsgi:error] [pid 11443] [remote 85.26.165.131:3381] name error
+[Fri Dec 15 15:18:46.047487 2017] [wsgi:error] [pid 11443] [remote 85.26.165.131:3381] [2017-12-15 15:18:46,042] ERROR in app: Exception on /wait [GET]
+[Fri Dec 15 15:18:46.047662 2017] [wsgi:error] [pid 11443] [remote 85.26.165.131:3381] Traceback (most recent call last):
+[Fri Dec 15 15:18:46.047677 2017] [wsgi:error] [pid 11443] [remote 85.26.165.131:3381]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+[Fri Dec 15 15:18:46.047689 2017] [wsgi:error] [pid 11443] [remote 85.26.165.131:3381]     response = self.full_dispatch_request()
+[Fri Dec 15 15:18:46.047699 2017] [wsgi:error] [pid 11443] [remote 85.26.165.131:3381]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1614, in full_dispatch_request
+[Fri Dec 15 15:18:46.047708 2017] [wsgi:error] [pid 11443] [remote 85.26.165.131:3381]     rv = self.handle_user_exception(e)
+[Fri Dec 15 15:18:46.047718 2017] [wsgi:error] [pid 11443] [remote 85.26.165.131:3381]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1517, in handle_user_exception
+[Fri Dec 15 15:18:46.047727 2017] [wsgi:error] [pid 11443] [remote 85.26.165.131:3381]     reraise(exc_type, exc_value, tb)
+[Fri Dec 15 15:18:46.047737 2017] [wsgi:error] [pid 11443] [remote 85.26.165.131:3381]   File "/usr/lib/python3.6/site-packages/flask/_compat.py", line 33, in reraise
+[Fri Dec 15 15:18:46.047746 2017] [wsgi:error] [pid 11443] [remote 85.26.165.131:3381]     raise value
+[Fri Dec 15 15:18:46.047755 2017] [wsgi:error] [pid 11443] [remote 85.26.165.131:3381]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1612, in full_dispatch_request
+[Fri Dec 15 15:18:46.047765 2017] [wsgi:error] [pid 11443] [remote 85.26.165.131:3381]     rv = self.dispatch_request()
+[Fri Dec 15 15:18:46.047774 2017] [wsgi:error] [pid 11443] [remote 85.26.165.131:3381]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1598, in dispatch_request
+[Fri Dec 15 15:18:46.047783 2017] [wsgi:error] [pid 11443] [remote 85.26.165.131:3381]     return self.view_functions[rule.endpoint](**req.view_args)
+[Fri Dec 15 15:18:46.047793 2017] [wsgi:error] [pid 11443] [remote 85.26.165.131:3381]   File "/srv/http/virtlabs.tk/forsaje.tk/api.py", line 64, in wait
+[Fri Dec 15 15:18:46.047802 2017] [wsgi:error] [pid 11443] [remote 85.26.165.131:3381]     return render_template('wait.html', car = current_car, time = time, refresh=True)
+[Fri Dec 15 15:18:46.047819 2017] [wsgi:error] [pid 11443] [remote 85.26.165.131:3381] UnboundLocalError: local variable 'current_car' referenced before assignment
+[Fri Dec 15 15:18:46.047871 2017] [wsgi:error] [pid 11443] [remote 85.26.165.131:3381] 
+[Fri Dec 15 15:20:10.341910 2017] [wsgi:error] [pid 11492] [remote 85.26.165.131:13067] name error
+[Fri Dec 15 15:20:16.040281 2017] [wsgi:error] [pid 11492] [remote 85.26.165.131:23703] name error
+[Fri Dec 15 15:20:21.427176 2017] [wsgi:error] [pid 11492] [remote 85.26.165.131:10006] name error
+[Fri Dec 15 15:20:26.969621 2017] [wsgi:error] [pid 11492] [remote 85.26.165.131:60919] name error
+[Fri Dec 15 15:20:32.351770 2017] [wsgi:error] [pid 11492] [remote 85.26.165.131:30825] name error
+[Fri Dec 15 15:20:37.911180 2017] [wsgi:error] [pid 11492] [remote 85.26.165.131:29185] name error
+[Fri Dec 15 15:20:43.457122 2017] [wsgi:error] [pid 11492] [remote 85.26.165.131:2128] name error
+[Fri Dec 15 15:20:49.058011 2017] [wsgi:error] [pid 11492] [remote 85.26.165.131:39407] name error
+[Fri Dec 15 15:20:54.605737 2017] [wsgi:error] [pid 11492] [remote 85.26.165.131:19431] name error
+[Fri Dec 15 15:21:00.225841 2017] [wsgi:error] [pid 11492] [remote 85.26.165.131:60912] name error
+[Fri Dec 15 15:21:05.906139 2017] [wsgi:error] [pid 11492] [remote 85.26.165.131:11311] name error
+[Fri Dec 15 15:31:02.980491 2017] [wsgi:error] [pid 11600] [remote 176.59.97.187:25971] [2017-12-15 15:31:02,974] ERROR in app: Exception on /wait [GET]
+[Fri Dec 15 15:31:02.980668 2017] [wsgi:error] [pid 11600] [remote 176.59.97.187:25971] Traceback (most recent call last):
+[Fri Dec 15 15:31:02.980685 2017] [wsgi:error] [pid 11600] [remote 176.59.97.187:25971]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+[Fri Dec 15 15:31:02.980773 2017] [wsgi:error] [pid 11600] [remote 176.59.97.187:25971]     response = self.full_dispatch_request()
+[Fri Dec 15 15:31:02.980785 2017] [wsgi:error] [pid 11600] [remote 176.59.97.187:25971]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1614, in full_dispatch_request
+[Fri Dec 15 15:31:02.980796 2017] [wsgi:error] [pid 11600] [remote 176.59.97.187:25971]     rv = self.handle_user_exception(e)
+[Fri Dec 15 15:31:02.980805 2017] [wsgi:error] [pid 11600] [remote 176.59.97.187:25971]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1517, in handle_user_exception
+[Fri Dec 15 15:31:02.980815 2017] [wsgi:error] [pid 11600] [remote 176.59.97.187:25971]     reraise(exc_type, exc_value, tb)
+[Fri Dec 15 15:31:02.980824 2017] [wsgi:error] [pid 11600] [remote 176.59.97.187:25971]   File "/usr/lib/python3.6/site-packages/flask/_compat.py", line 33, in reraise
+[Fri Dec 15 15:31:02.980833 2017] [wsgi:error] [pid 11600] [remote 176.59.97.187:25971]     raise value
+[Fri Dec 15 15:31:02.980842 2017] [wsgi:error] [pid 11600] [remote 176.59.97.187:25971]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1612, in full_dispatch_request
+[Fri Dec 15 15:31:02.980852 2017] [wsgi:error] [pid 11600] [remote 176.59.97.187:25971]     rv = self.dispatch_request()
+[Fri Dec 15 15:31:02.980861 2017] [wsgi:error] [pid 11600] [remote 176.59.97.187:25971]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1598, in dispatch_request
+[Fri Dec 15 15:31:02.980870 2017] [wsgi:error] [pid 11600] [remote 176.59.97.187:25971]     return self.view_functions[rule.endpoint](**req.view_args)
+[Fri Dec 15 15:31:02.980879 2017] [wsgi:error] [pid 11600] [remote 176.59.97.187:25971]   File "/srv/http/virtlabs.tk/forsaje.tk/api.py", line 48, in wait
+[Fri Dec 15 15:31:02.980889 2017] [wsgi:error] [pid 11600] [remote 176.59.97.187:25971]     if query['worker_id']:
+[Fri Dec 15 15:31:02.980903 2017] [wsgi:error] [pid 11600] [remote 176.59.97.187:25971] TypeError: 'Taxi_order' object is not subscriptable
+[Fri Dec 15 15:31:02.980971 2017] [wsgi:error] [pid 11600] [remote 176.59.97.187:25971] 
+[Fri Dec 15 15:31:02.982952 2017] [wsgi:error] [pid 11600] [remote 85.26.165.131:4897] [2017-12-15 15:31:02,976] ERROR in app: Exception on /wait [GET]
+[Fri Dec 15 15:31:02.983036 2017] [wsgi:error] [pid 11600] [remote 85.26.165.131:4897] Traceback (most recent call last):
+[Fri Dec 15 15:31:02.983048 2017] [wsgi:error] [pid 11600] [remote 85.26.165.131:4897]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+[Fri Dec 15 15:31:02.983060 2017] [wsgi:error] [pid 11600] [remote 85.26.165.131:4897]     response = self.full_dispatch_request()
+[Fri Dec 15 15:31:02.983070 2017] [wsgi:error] [pid 11600] [remote 85.26.165.131:4897]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1614, in full_dispatch_request
+[Fri Dec 15 15:31:02.983079 2017] [wsgi:error] [pid 11600] [remote 85.26.165.131:4897]     rv = self.handle_user_exception(e)
+[Fri Dec 15 15:31:02.983089 2017] [wsgi:error] [pid 11600] [remote 85.26.165.131:4897]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1517, in handle_user_exception
+[Fri Dec 15 15:31:02.983099 2017] [wsgi:error] [pid 11600] [remote 85.26.165.131:4897]     reraise(exc_type, exc_value, tb)
+[Fri Dec 15 15:31:02.983108 2017] [wsgi:error] [pid 11600] [remote 85.26.165.131:4897]   File "/usr/lib/python3.6/site-packages/flask/_compat.py", line 33, in reraise
+[Fri Dec 15 15:31:02.983117 2017] [wsgi:error] [pid 11600] [remote 85.26.165.131:4897]     raise value
+[Fri Dec 15 15:31:02.983126 2017] [wsgi:error] [pid 11600] [remote 85.26.165.131:4897]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1612, in full_dispatch_request
+[Fri Dec 15 15:31:02.983136 2017] [wsgi:error] [pid 11600] [remote 85.26.165.131:4897]     rv = self.dispatch_request()
+[Fri Dec 15 15:31:02.983145 2017] [wsgi:error] [pid 11600] [remote 85.26.165.131:4897]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1598, in dispatch_request
+[Fri Dec 15 15:31:02.983155 2017] [wsgi:error] [pid 11600] [remote 85.26.165.131:4897]     return self.view_functions[rule.endpoint](**req.view_args)
+[Fri Dec 15 15:31:02.983247 2017] [wsgi:error] [pid 11600] [remote 85.26.165.131:4897]   File "/srv/http/virtlabs.tk/forsaje.tk/api.py", line 48, in wait
+[Fri Dec 15 15:31:02.983259 2017] [wsgi:error] [pid 11600] [remote 85.26.165.131:4897]     if query['worker_id']:
+[Fri Dec 15 15:31:02.983273 2017] [wsgi:error] [pid 11600] [remote 85.26.165.131:4897] TypeError: 'Taxi_order' object is not subscriptable
+[Fri Dec 15 15:31:02.983324 2017] [wsgi:error] [pid 11600] [remote 85.26.165.131:4897] 
+[Fri Dec 15 15:43:10.003911 2017] [wsgi:error] [pid 11600] [remote 176.59.97.187:30990] [2017-12-15 15:43:09,995] ERROR in app: Exception on /wait [GET]
+[Fri Dec 15 15:43:10.004038 2017] [wsgi:error] [pid 11600] [remote 176.59.97.187:30990] Traceback (most recent call last):
+[Fri Dec 15 15:43:10.004051 2017] [wsgi:error] [pid 11600] [remote 176.59.97.187:30990]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+[Fri Dec 15 15:43:10.004063 2017] [wsgi:error] [pid 11600] [remote 176.59.97.187:30990]     response = self.full_dispatch_request()
+[Fri Dec 15 15:43:10.004072 2017] [wsgi:error] [pid 11600] [remote 176.59.97.187:30990]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1614, in full_dispatch_request
+[Fri Dec 15 15:43:10.004082 2017] [wsgi:error] [pid 11600] [remote 176.59.97.187:30990]     rv = self.handle_user_exception(e)
+[Fri Dec 15 15:43:10.004091 2017] [wsgi:error] [pid 11600] [remote 176.59.97.187:30990]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1517, in handle_user_exception
+[Fri Dec 15 15:43:10.004101 2017] [wsgi:error] [pid 11600] [remote 176.59.97.187:30990]     reraise(exc_type, exc_value, tb)
+[Fri Dec 15 15:43:10.004110 2017] [wsgi:error] [pid 11600] [remote 176.59.97.187:30990]   File "/usr/lib/python3.6/site-packages/flask/_compat.py", line 33, in reraise
+[Fri Dec 15 15:43:10.004120 2017] [wsgi:error] [pid 11600] [remote 176.59.97.187:30990]     raise value
+[Fri Dec 15 15:43:10.004129 2017] [wsgi:error] [pid 11600] [remote 176.59.97.187:30990]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1612, in full_dispatch_request
+[Fri Dec 15 15:43:10.004138 2017] [wsgi:error] [pid 11600] [remote 176.59.97.187:30990]     rv = self.dispatch_request()
+[Fri Dec 15 15:43:10.004148 2017] [wsgi:error] [pid 11600] [remote 176.59.97.187:30990]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1598, in dispatch_request
+[Fri Dec 15 15:43:10.004157 2017] [wsgi:error] [pid 11600] [remote 176.59.97.187:30990]     return self.view_functions[rule.endpoint](**req.view_args)
+[Fri Dec 15 15:43:10.004166 2017] [wsgi:error] [pid 11600] [remote 176.59.97.187:30990]   File "/srv/http/virtlabs.tk/forsaje.tk/api.py", line 46, in wait
+[Fri Dec 15 15:43:10.004176 2017] [wsgi:error] [pid 11600] [remote 176.59.97.187:30990]     order = Taxi_order.get(phone=request.args.get('phone'))
+[Fri Dec 15 15:43:10.004185 2017] [wsgi:error] [pid 11600] [remote 176.59.97.187:30990]   File "<string>", line 2, in get
+[Fri Dec 15 15:43:10.004194 2017] [wsgi:error] [pid 11600] [remote 176.59.97.187:30990]   File "/usr/lib/python3.6/site-packages/pony/utils/utils.py", line 58, in cut_traceback
+[Fri Dec 15 15:43:10.004204 2017] [wsgi:error] [pid 11600] [remote 176.59.97.187:30990]     return func(*args, **kwargs)
+[Fri Dec 15 15:43:10.004213 2017] [wsgi:error] [pid 11600] [remote 176.59.97.187:30990]   File "/usr/lib/python3.6/site-packages/pony/orm/core.py", line 3702, in get
+[Fri Dec 15 15:43:10.004222 2017] [wsgi:error] [pid 11600] [remote 176.59.97.187:30990]     try: return entity._find_one_(kwargs)  # can throw MultipleObjectsFoundError
+[Fri Dec 15 15:43:10.004232 2017] [wsgi:error] [pid 11600] [remote 176.59.97.187:30990]   File "/usr/lib/python3.6/site-packages/pony/orm/core.py", line 3801, in _find_one_
+[Fri Dec 15 15:43:10.004242 2017] [wsgi:error] [pid 11600] [remote 176.59.97.187:30990]     if obj is None: obj = entity._find_in_db_(avdict, unique, for_update, nowait)
+[Fri Dec 15 15:43:10.004344 2017] [wsgi:error] [pid 11600] [remote 176.59.97.187:30990]   File "/usr/lib/python3.6/site-packages/pony/orm/core.py", line 3861, in _find_in_db_
+[Fri Dec 15 15:43:10.004356 2017] [wsgi:error] [pid 11600] [remote 176.59.97.187:30990]     objects = entity._fetch_objects(cursor, attr_offsets, 1, for_update, avdict)
+[Fri Dec 15 15:43:10.004366 2017] [wsgi:error] [pid 11600] [remote 176.59.97.187:30990]   File "/usr/lib/python3.6/site-packages/pony/orm/core.py", line 3980, in _fetch_objects
+[Fri Dec 15 15:43:10.004376 2017] [wsgi:error] [pid 11600] [remote 176.59.97.187:30990]     'Multiple objects were found. Use %s.select(...) to retrieve them' % entity.__name__)
+[Fri Dec 15 15:43:10.004386 2017] [wsgi:error] [pid 11600] [remote 176.59.97.187:30990]   File "/usr/lib/python3.6/site-packages/pony/utils/utils.py", line 98, in throw
+[Fri Dec 15 15:43:10.004395 2017] [wsgi:error] [pid 11600] [remote 176.59.97.187:30990]     raise exc
+[Fri Dec 15 15:43:10.004521 2017] [wsgi:error] [pid 11600] [remote 176.59.97.187:30990] pony.orm.core.MultipleObjectsFoundError: Multiple objects were found. Use Taxi_order.select(...) to retrieve them
+[Fri Dec 15 15:43:10.004610 2017] [wsgi:error] [pid 11600] [remote 176.59.97.187:30990] 
+[Fri Dec 15 15:44:49.060689 2017] [wsgi:error] [pid 11730] [remote 176.59.97.187:47482] [2017-12-15 15:44:49,050] ERROR in app: Exception on /wait [GET]
+[Fri Dec 15 15:44:49.060846 2017] [wsgi:error] [pid 11730] [remote 176.59.97.187:47482] Traceback (most recent call last):
+[Fri Dec 15 15:44:49.060860 2017] [wsgi:error] [pid 11730] [remote 176.59.97.187:47482]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+[Fri Dec 15 15:44:49.060871 2017] [wsgi:error] [pid 11730] [remote 176.59.97.187:47482]     response = self.full_dispatch_request()
+[Fri Dec 15 15:44:49.060882 2017] [wsgi:error] [pid 11730] [remote 176.59.97.187:47482]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1614, in full_dispatch_request
+[Fri Dec 15 15:44:49.060892 2017] [wsgi:error] [pid 11730] [remote 176.59.97.187:47482]     rv = self.handle_user_exception(e)
+[Fri Dec 15 15:44:49.060901 2017] [wsgi:error] [pid 11730] [remote 176.59.97.187:47482]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1517, in handle_user_exception
+[Fri Dec 15 15:44:49.060910 2017] [wsgi:error] [pid 11730] [remote 176.59.97.187:47482]     reraise(exc_type, exc_value, tb)
+[Fri Dec 15 15:44:49.060919 2017] [wsgi:error] [pid 11730] [remote 176.59.97.187:47482]   File "/usr/lib/python3.6/site-packages/flask/_compat.py", line 33, in reraise
+[Fri Dec 15 15:44:49.060929 2017] [wsgi:error] [pid 11730] [remote 176.59.97.187:47482]     raise value
+[Fri Dec 15 15:44:49.060938 2017] [wsgi:error] [pid 11730] [remote 176.59.97.187:47482]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1612, in full_dispatch_request
+[Fri Dec 15 15:44:49.060947 2017] [wsgi:error] [pid 11730] [remote 176.59.97.187:47482]     rv = self.dispatch_request()
+[Fri Dec 15 15:44:49.060956 2017] [wsgi:error] [pid 11730] [remote 176.59.97.187:47482]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1598, in dispatch_request
+[Fri Dec 15 15:44:49.060966 2017] [wsgi:error] [pid 11730] [remote 176.59.97.187:47482]     return self.view_functions[rule.endpoint](**req.view_args)
+[Fri Dec 15 15:44:49.060976 2017] [wsgi:error] [pid 11730] [remote 176.59.97.187:47482]   File "/srv/http/virtlabs.tk/forsaje.tk/api.py", line 58, in wait
+[Fri Dec 15 15:44:49.060985 2017] [wsgi:error] [pid 11730] [remote 176.59.97.187:47482]     return render_template('wait.html', car = current_car, time = time, refresh=True)
+[Fri Dec 15 15:44:49.061000 2017] [wsgi:error] [pid 11730] [remote 176.59.97.187:47482] UnboundLocalError: local variable 'current_car' referenced before assignment
+[Fri Dec 15 15:44:49.061055 2017] [wsgi:error] [pid 11730] [remote 176.59.97.187:47482] 
+[Fri Dec 15 15:46:42.665229 2017] [wsgi:error] [pid 11780] [remote 176.59.97.187:57014] [2017-12-15 15:46:42,653] ERROR in app: Exception on /wait [GET]
+[Fri Dec 15 15:46:42.666844 2017] [wsgi:error] [pid 11780] [remote 176.59.97.187:57014] Traceback (most recent call last):
+[Fri Dec 15 15:46:42.666884 2017] [wsgi:error] [pid 11780] [remote 176.59.97.187:57014]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+[Fri Dec 15 15:46:42.666896 2017] [wsgi:error] [pid 11780] [remote 176.59.97.187:57014]     response = self.full_dispatch_request()
+[Fri Dec 15 15:46:42.666905 2017] [wsgi:error] [pid 11780] [remote 176.59.97.187:57014]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1614, in full_dispatch_request
+[Fri Dec 15 15:46:42.666916 2017] [wsgi:error] [pid 11780] [remote 176.59.97.187:57014]     rv = self.handle_user_exception(e)
+[Fri Dec 15 15:46:42.666925 2017] [wsgi:error] [pid 11780] [remote 176.59.97.187:57014]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1517, in handle_user_exception
+[Fri Dec 15 15:46:42.666935 2017] [wsgi:error] [pid 11780] [remote 176.59.97.187:57014]     reraise(exc_type, exc_value, tb)
+[Fri Dec 15 15:46:42.666944 2017] [wsgi:error] [pid 11780] [remote 176.59.97.187:57014]   File "/usr/lib/python3.6/site-packages/flask/_compat.py", line 33, in reraise
+[Fri Dec 15 15:46:42.666954 2017] [wsgi:error] [pid 11780] [remote 176.59.97.187:57014]     raise value
+[Fri Dec 15 15:46:42.666963 2017] [wsgi:error] [pid 11780] [remote 176.59.97.187:57014]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1612, in full_dispatch_request
+[Fri Dec 15 15:46:42.666972 2017] [wsgi:error] [pid 11780] [remote 176.59.97.187:57014]     rv = self.dispatch_request()
+[Fri Dec 15 15:46:42.666981 2017] [wsgi:error] [pid 11780] [remote 176.59.97.187:57014]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1598, in dispatch_request
+[Fri Dec 15 15:46:42.666991 2017] [wsgi:error] [pid 11780] [remote 176.59.97.187:57014]     return self.view_functions[rule.endpoint](**req.view_args)
+[Fri Dec 15 15:46:42.667001 2017] [wsgi:error] [pid 11780] [remote 176.59.97.187:57014]   File "/srv/http/virtlabs.tk/forsaje.tk/api.py", line 50, in wait
+[Fri Dec 15 15:46:42.667010 2017] [wsgi:error] [pid 11780] [remote 176.59.97.187:57014]     worker = Worker.get(id=order.worker_id)
+[Fri Dec 15 15:46:42.667019 2017] [wsgi:error] [pid 11780] [remote 176.59.97.187:57014]   File "<string>", line 2, in get
+[Fri Dec 15 15:46:42.667027 2017] [wsgi:error] [pid 11780] [remote 176.59.97.187:57014]   File "/usr/lib/python3.6/site-packages/pony/utils/utils.py", line 58, in cut_traceback
+[Fri Dec 15 15:46:42.667037 2017] [wsgi:error] [pid 11780] [remote 176.59.97.187:57014]     return func(*args, **kwargs)
+[Fri Dec 15 15:46:42.667046 2017] [wsgi:error] [pid 11780] [remote 176.59.97.187:57014]   File "/usr/lib/python3.6/site-packages/pony/orm/core.py", line 3702, in get
+[Fri Dec 15 15:46:42.667055 2017] [wsgi:error] [pid 11780] [remote 176.59.97.187:57014]     try: return entity._find_one_(kwargs)  # can throw MultipleObjectsFoundError
+[Fri Dec 15 15:46:42.667065 2017] [wsgi:error] [pid 11780] [remote 176.59.97.187:57014]   File "/usr/lib/python3.6/site-packages/pony/orm/core.py", line 3800, in _find_one_
+[Fri Dec 15 15:46:42.667075 2017] [wsgi:error] [pid 11780] [remote 176.59.97.187:57014]     obj, unique = entity._find_in_cache_(pkval, avdict, for_update)
+[Fri Dec 15 15:46:42.667084 2017] [wsgi:error] [pid 11780] [remote 176.59.97.187:57014]   File "/usr/lib/python3.6/site-packages/pony/orm/core.py", line 3805, in _find_in_cache_
+[Fri Dec 15 15:46:42.667094 2017] [wsgi:error] [pid 11780] [remote 176.59.97.187:57014]     cache = entity._database_._get_cache()
+[Fri Dec 15 15:46:42.667103 2017] [wsgi:error] [pid 11780] [remote 176.59.97.187:57014]   File "/usr/lib/python3.6/site-packages/pony/orm/core.py", line 726, in _get_cache
+[Fri Dec 15 15:46:42.667112 2017] [wsgi:error] [pid 11780] [remote 176.59.97.187:57014]     ): throw(TransactionError, 'db_session is required when working with the database')
+[Fri Dec 15 15:46:42.667122 2017] [wsgi:error] [pid 11780] [remote 176.59.97.187:57014]   File "/usr/lib/python3.6/site-packages/pony/utils/utils.py", line 98, in throw
+[Fri Dec 15 15:46:42.667156 2017] [wsgi:error] [pid 11780] [remote 176.59.97.187:57014]     raise exc
+[Fri Dec 15 15:46:42.667186 2017] [wsgi:error] [pid 11780] [remote 176.59.97.187:57014] pony.orm.core.TransactionError: db_session is required when working with the database
+[Fri Dec 15 15:46:42.667343 2017] [wsgi:error] [pid 11780] [remote 176.59.97.187:57014] 
+[Fri Dec 15 16:08:49.066089 2017] [wsgi:error] [pid 11976] [remote 176.59.97.187:15194] [2017-12-15 16:08:49,061] ERROR in app: Exception on /cancel [GET]
+[Fri Dec 15 16:08:49.066225 2017] [wsgi:error] [pid 11976] [remote 176.59.97.187:15194] Traceback (most recent call last):
+[Fri Dec 15 16:08:49.066238 2017] [wsgi:error] [pid 11976] [remote 176.59.97.187:15194]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+[Fri Dec 15 16:08:49.066251 2017] [wsgi:error] [pid 11976] [remote 176.59.97.187:15194]     response = self.full_dispatch_request()
+[Fri Dec 15 16:08:49.066261 2017] [wsgi:error] [pid 11976] [remote 176.59.97.187:15194]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1614, in full_dispatch_request
+[Fri Dec 15 16:08:49.066271 2017] [wsgi:error] [pid 11976] [remote 176.59.97.187:15194]     rv = self.handle_user_exception(e)
+[Fri Dec 15 16:08:49.066280 2017] [wsgi:error] [pid 11976] [remote 176.59.97.187:15194]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1517, in handle_user_exception
+[Fri Dec 15 16:08:49.066290 2017] [wsgi:error] [pid 11976] [remote 176.59.97.187:15194]     reraise(exc_type, exc_value, tb)
+[Fri Dec 15 16:08:49.066299 2017] [wsgi:error] [pid 11976] [remote 176.59.97.187:15194]   File "/usr/lib/python3.6/site-packages/flask/_compat.py", line 33, in reraise
+[Fri Dec 15 16:08:49.066309 2017] [wsgi:error] [pid 11976] [remote 176.59.97.187:15194]     raise value
+[Fri Dec 15 16:08:49.066318 2017] [wsgi:error] [pid 11976] [remote 176.59.97.187:15194]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1612, in full_dispatch_request
+[Fri Dec 15 16:08:49.066328 2017] [wsgi:error] [pid 11976] [remote 176.59.97.187:15194]     rv = self.dispatch_request()
+[Fri Dec 15 16:08:49.066337 2017] [wsgi:error] [pid 11976] [remote 176.59.97.187:15194]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1598, in dispatch_request
+[Fri Dec 15 16:08:49.066347 2017] [wsgi:error] [pid 11976] [remote 176.59.97.187:15194]     return self.view_functions[rule.endpoint](**req.view_args)
+[Fri Dec 15 16:08:49.066356 2017] [wsgi:error] [pid 11976] [remote 176.59.97.187:15194]   File "/srv/http/virtlabs.tk/forsaje.tk/api.py", line 94, in cancel
+[Fri Dec 15 16:08:49.066366 2017] [wsgi:error] [pid 11976] [remote 176.59.97.187:15194]     delete(Taxi_order.get(phone=request.args.get('phone')), bulk=True)
+[Fri Dec 15 16:08:49.066381 2017] [wsgi:error] [pid 11976] [remote 176.59.97.187:15194] NameError: name 'delete' is not defined
+[Fri Dec 15 16:08:49.066434 2017] [wsgi:error] [pid 11976] [remote 176.59.97.187:15194] 
+[Fri Dec 15 16:10:08.139362 2017] [wsgi:error] [pid 11979] (2)No such file or directory: [client 176.59.97.187:49950] mod_wsgi (pid=11979): Unable to connect to WSGI daemon process 'api_forsaje' on '/run/httpd/wsgi.23089.90.1.sock' as user with uid=1002.
+[Fri Dec 15 16:10:08.163013 2017] [wsgi:error] [pid 11983] (2)No such file or directory: [client 176.59.97.187:51467] mod_wsgi (pid=11983): Unable to connect to WSGI daemon process 'api_forsaje' on '/run/httpd/wsgi.23089.90.1.sock' as user with uid=1002.
+[Fri Dec 15 16:10:23.674851 2017] [wsgi:error] [pid 12038] [remote 176.59.97.187:42546] [2017-12-15 16:10:23,663] ERROR in app: Exception on /cancel [GET]
+[Fri Dec 15 16:10:23.675006 2017] [wsgi:error] [pid 12038] [remote 176.59.97.187:42546] Traceback (most recent call last):
+[Fri Dec 15 16:10:23.675020 2017] [wsgi:error] [pid 12038] [remote 176.59.97.187:42546]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+[Fri Dec 15 16:10:23.675031 2017] [wsgi:error] [pid 12038] [remote 176.59.97.187:42546]     response = self.full_dispatch_request()
+[Fri Dec 15 16:10:23.675114 2017] [wsgi:error] [pid 12038] [remote 176.59.97.187:42546]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1614, in full_dispatch_request
+[Fri Dec 15 16:10:23.675127 2017] [wsgi:error] [pid 12038] [remote 176.59.97.187:42546]     rv = self.handle_user_exception(e)
+[Fri Dec 15 16:10:23.675136 2017] [wsgi:error] [pid 12038] [remote 176.59.97.187:42546]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1517, in handle_user_exception
+[Fri Dec 15 16:10:23.675146 2017] [wsgi:error] [pid 12038] [remote 176.59.97.187:42546]     reraise(exc_type, exc_value, tb)
+[Fri Dec 15 16:10:23.675155 2017] [wsgi:error] [pid 12038] [remote 176.59.97.187:42546]   File "/usr/lib/python3.6/site-packages/flask/_compat.py", line 33, in reraise
+[Fri Dec 15 16:10:23.675164 2017] [wsgi:error] [pid 12038] [remote 176.59.97.187:42546]     raise value
+[Fri Dec 15 16:10:23.675173 2017] [wsgi:error] [pid 12038] [remote 176.59.97.187:42546]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1612, in full_dispatch_request
+[Fri Dec 15 16:10:23.675182 2017] [wsgi:error] [pid 12038] [remote 176.59.97.187:42546]     rv = self.dispatch_request()
+[Fri Dec 15 16:10:23.675191 2017] [wsgi:error] [pid 12038] [remote 176.59.97.187:42546]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1598, in dispatch_request
+[Fri Dec 15 16:10:23.675200 2017] [wsgi:error] [pid 12038] [remote 176.59.97.187:42546]     return self.view_functions[rule.endpoint](**req.view_args)
+[Fri Dec 15 16:10:23.675209 2017] [wsgi:error] [pid 12038] [remote 176.59.97.187:42546]   File "/srv/http/virtlabs.tk/forsaje.tk/api.py", line 94, in cancel
+[Fri Dec 15 16:10:23.675218 2017] [wsgi:error] [pid 12038] [remote 176.59.97.187:42546]     delete(Taxi_order.get(phone=request.args.get('phone')), bulk=True)
+[Fri Dec 15 16:10:23.675227 2017] [wsgi:error] [pid 12038] [remote 176.59.97.187:42546]   File "<string>", line 2, in get
+[Fri Dec 15 16:10:23.675236 2017] [wsgi:error] [pid 12038] [remote 176.59.97.187:42546]   File "/usr/lib/python3.6/site-packages/pony/utils/utils.py", line 58, in cut_traceback
+[Fri Dec 15 16:10:23.675245 2017] [wsgi:error] [pid 12038] [remote 176.59.97.187:42546]     return func(*args, **kwargs)
+[Fri Dec 15 16:10:23.675254 2017] [wsgi:error] [pid 12038] [remote 176.59.97.187:42546]   File "/usr/lib/python3.6/site-packages/pony/orm/core.py", line 3702, in get
+[Fri Dec 15 16:10:23.675263 2017] [wsgi:error] [pid 12038] [remote 176.59.97.187:42546]     try: return entity._find_one_(kwargs)  # can throw MultipleObjectsFoundError
+[Fri Dec 15 16:10:23.675272 2017] [wsgi:error] [pid 12038] [remote 176.59.97.187:42546]   File "/usr/lib/python3.6/site-packages/pony/orm/core.py", line 3792, in _find_one_
+[Fri Dec 15 16:10:23.675281 2017] [wsgi:error] [pid 12038] [remote 176.59.97.187:42546]     avdict[attr] = attr.validate(val, None, entity, from_db=False)
+[Fri Dec 15 16:10:23.675290 2017] [wsgi:error] [pid 12038] [remote 176.59.97.187:42546]   File "/usr/lib/python3.6/site-packages/pony/orm/core.py", line 2356, in validate
+[Fri Dec 15 16:10:23.675300 2017] [wsgi:error] [pid 12038] [remote 176.59.97.187:42546]     attr if obj is None or obj._status_ is None else '%r.%s' % (obj, attr.name)))
+[Fri Dec 15 16:10:23.675309 2017] [wsgi:error] [pid 12038] [remote 176.59.97.187:42546]   File "/usr/lib/python3.6/site-packages/pony/utils/utils.py", line 98, in throw
+[Fri Dec 15 16:10:23.675318 2017] [wsgi:error] [pid 12038] [remote 176.59.97.187:42546]     raise exc
+[Fri Dec 15 16:10:23.675333 2017] [wsgi:error] [pid 12038] [remote 176.59.97.187:42546] ValueError: Attribute Taxi_order.phone is required
+[Fri Dec 15 16:10:23.675395 2017] [wsgi:error] [pid 12038] [remote 176.59.97.187:42546] 
+[Fri Dec 15 16:10:46.307282 2017] [wsgi:error] [pid 12038] [remote 176.59.97.187:31378] [2017-12-15 16:10:46,305] ERROR in app: Exception on /cancel [GET]
+[Fri Dec 15 16:10:46.307420 2017] [wsgi:error] [pid 12038] [remote 176.59.97.187:31378] Traceback (most recent call last):
+[Fri Dec 15 16:10:46.307434 2017] [wsgi:error] [pid 12038] [remote 176.59.97.187:31378]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+[Fri Dec 15 16:10:46.307529 2017] [wsgi:error] [pid 12038] [remote 176.59.97.187:31378]     response = self.full_dispatch_request()
+[Fri Dec 15 16:10:46.307542 2017] [wsgi:error] [pid 12038] [remote 176.59.97.187:31378]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1614, in full_dispatch_request
+[Fri Dec 15 16:10:46.307552 2017] [wsgi:error] [pid 12038] [remote 176.59.97.187:31378]     rv = self.handle_user_exception(e)
+[Fri Dec 15 16:10:46.307561 2017] [wsgi:error] [pid 12038] [remote 176.59.97.187:31378]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1517, in handle_user_exception
+[Fri Dec 15 16:10:46.307800 2017] [wsgi:error] [pid 12038] [remote 176.59.97.187:31378]     reraise(exc_type, exc_value, tb)
+[Fri Dec 15 16:10:46.307820 2017] [wsgi:error] [pid 12038] [remote 176.59.97.187:31378]   File "/usr/lib/python3.6/site-packages/flask/_compat.py", line 33, in reraise
+[Fri Dec 15 16:10:46.307830 2017] [wsgi:error] [pid 12038] [remote 176.59.97.187:31378]     raise value
+[Fri Dec 15 16:10:46.307840 2017] [wsgi:error] [pid 12038] [remote 176.59.97.187:31378]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1612, in full_dispatch_request
+[Fri Dec 15 16:10:46.307850 2017] [wsgi:error] [pid 12038] [remote 176.59.97.187:31378]     rv = self.dispatch_request()
+[Fri Dec 15 16:10:46.307858 2017] [wsgi:error] [pid 12038] [remote 176.59.97.187:31378]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1598, in dispatch_request
+[Fri Dec 15 16:10:46.307868 2017] [wsgi:error] [pid 12038] [remote 176.59.97.187:31378]     return self.view_functions[rule.endpoint](**req.view_args)
+[Fri Dec 15 16:10:46.307877 2017] [wsgi:error] [pid 12038] [remote 176.59.97.187:31378]   File "/srv/http/virtlabs.tk/forsaje.tk/api.py", line 94, in cancel
+[Fri Dec 15 16:10:46.307887 2017] [wsgi:error] [pid 12038] [remote 176.59.97.187:31378]     delete(Taxi_order.get(phone=request.args.get('phone')), bulk=True)
+[Fri Dec 15 16:10:46.307896 2017] [wsgi:error] [pid 12038] [remote 176.59.97.187:31378]   File "<string>", line 2, in get
+[Fri Dec 15 16:10:46.307905 2017] [wsgi:error] [pid 12038] [remote 176.59.97.187:31378]   File "/usr/lib/python3.6/site-packages/pony/utils/utils.py", line 58, in cut_traceback
+[Fri Dec 15 16:10:46.307914 2017] [wsgi:error] [pid 12038] [remote 176.59.97.187:31378]     return func(*args, **kwargs)
+[Fri Dec 15 16:10:46.307923 2017] [wsgi:error] [pid 12038] [remote 176.59.97.187:31378]   File "/usr/lib/python3.6/site-packages/pony/orm/core.py", line 3702, in get
+[Fri Dec 15 16:10:46.307933 2017] [wsgi:error] [pid 12038] [remote 176.59.97.187:31378]     try: return entity._find_one_(kwargs)  # can throw MultipleObjectsFoundError
+[Fri Dec 15 16:10:46.307942 2017] [wsgi:error] [pid 12038] [remote 176.59.97.187:31378]   File "/usr/lib/python3.6/site-packages/pony/orm/core.py", line 3792, in _find_one_
+[Fri Dec 15 16:10:46.307952 2017] [wsgi:error] [pid 12038] [remote 176.59.97.187:31378]     avdict[attr] = attr.validate(val, None, entity, from_db=False)
+[Fri Dec 15 16:10:46.307961 2017] [wsgi:error] [pid 12038] [remote 176.59.97.187:31378]   File "/usr/lib/python3.6/site-packages/pony/orm/core.py", line 2356, in validate
+[Fri Dec 15 16:10:46.307970 2017] [wsgi:error] [pid 12038] [remote 176.59.97.187:31378]     attr if obj is None or obj._status_ is None else '%r.%s' % (obj, attr.name)))
+[Fri Dec 15 16:10:46.307980 2017] [wsgi:error] [pid 12038] [remote 176.59.97.187:31378]   File "/usr/lib/python3.6/site-packages/pony/utils/utils.py", line 98, in throw
+[Fri Dec 15 16:10:46.307989 2017] [wsgi:error] [pid 12038] [remote 176.59.97.187:31378]     raise exc
+[Fri Dec 15 16:10:46.308010 2017] [wsgi:error] [pid 12038] [remote 176.59.97.187:31378] ValueError: Attribute Taxi_order.phone is required
+[Fri Dec 15 16:10:46.308129 2017] [wsgi:error] [pid 12038] [remote 176.59.97.187:31378] 
+[Fri Dec 15 16:15:06.907808 2017] [wsgi:error] [pid 12094] [remote 176.59.97.187:21811] [2017-12-15 16:15:06,896] ERROR in app: Exception on /cancel [GET]
+[Fri Dec 15 16:15:06.908041 2017] [wsgi:error] [pid 12094] [remote 176.59.97.187:21811] Traceback (most recent call last):
+[Fri Dec 15 16:15:06.908056 2017] [wsgi:error] [pid 12094] [remote 176.59.97.187:21811]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+[Fri Dec 15 16:15:06.908068 2017] [wsgi:error] [pid 12094] [remote 176.59.97.187:21811]     response = self.full_dispatch_request()
+[Fri Dec 15 16:15:06.908078 2017] [wsgi:error] [pid 12094] [remote 176.59.97.187:21811]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1614, in full_dispatch_request
+[Fri Dec 15 16:15:06.908087 2017] [wsgi:error] [pid 12094] [remote 176.59.97.187:21811]     rv = self.handle_user_exception(e)
+[Fri Dec 15 16:15:06.908097 2017] [wsgi:error] [pid 12094] [remote 176.59.97.187:21811]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1517, in handle_user_exception
+[Fri Dec 15 16:15:06.908106 2017] [wsgi:error] [pid 12094] [remote 176.59.97.187:21811]     reraise(exc_type, exc_value, tb)
+[Fri Dec 15 16:15:06.908116 2017] [wsgi:error] [pid 12094] [remote 176.59.97.187:21811]   File "/usr/lib/python3.6/site-packages/flask/_compat.py", line 33, in reraise
+[Fri Dec 15 16:15:06.908125 2017] [wsgi:error] [pid 12094] [remote 176.59.97.187:21811]     raise value
+[Fri Dec 15 16:15:06.908135 2017] [wsgi:error] [pid 12094] [remote 176.59.97.187:21811]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1612, in full_dispatch_request
+[Fri Dec 15 16:15:06.908144 2017] [wsgi:error] [pid 12094] [remote 176.59.97.187:21811]     rv = self.dispatch_request()
+[Fri Dec 15 16:15:06.908153 2017] [wsgi:error] [pid 12094] [remote 176.59.97.187:21811]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1598, in dispatch_request
+[Fri Dec 15 16:15:06.908163 2017] [wsgi:error] [pid 12094] [remote 176.59.97.187:21811]     return self.view_functions[rule.endpoint](**req.view_args)
+[Fri Dec 15 16:15:06.908172 2017] [wsgi:error] [pid 12094] [remote 176.59.97.187:21811]   File "/srv/http/virtlabs.tk/forsaje.tk/api.py", line 94, in cancel
+[Fri Dec 15 16:15:06.908182 2017] [wsgi:error] [pid 12094] [remote 176.59.97.187:21811]     order = Taxi_order.get(phone=request.args.get('phone')).delete(bulk=True)
+[Fri Dec 15 16:15:06.908191 2017] [wsgi:error] [pid 12094] [remote 176.59.97.187:21811]   File "<string>", line 2, in get
+[Fri Dec 15 16:15:06.908201 2017] [wsgi:error] [pid 12094] [remote 176.59.97.187:21811]   File "/usr/lib/python3.6/site-packages/pony/utils/utils.py", line 58, in cut_traceback
+[Fri Dec 15 16:15:06.908210 2017] [wsgi:error] [pid 12094] [remote 176.59.97.187:21811]     return func(*args, **kwargs)
+[Fri Dec 15 16:15:06.908219 2017] [wsgi:error] [pid 12094] [remote 176.59.97.187:21811]   File "/usr/lib/python3.6/site-packages/pony/orm/core.py", line 3702, in get
+[Fri Dec 15 16:15:06.908229 2017] [wsgi:error] [pid 12094] [remote 176.59.97.187:21811]     try: return entity._find_one_(kwargs)  # can throw MultipleObjectsFoundError
+[Fri Dec 15 16:15:06.908239 2017] [wsgi:error] [pid 12094] [remote 176.59.97.187:21811]   File "/usr/lib/python3.6/site-packages/pony/orm/core.py", line 3792, in _find_one_
+[Fri Dec 15 16:15:06.908248 2017] [wsgi:error] [pid 12094] [remote 176.59.97.187:21811]     avdict[attr] = attr.validate(val, None, entity, from_db=False)
+[Fri Dec 15 16:15:06.908258 2017] [wsgi:error] [pid 12094] [remote 176.59.97.187:21811]   File "/usr/lib/python3.6/site-packages/pony/orm/core.py", line 2356, in validate
+[Fri Dec 15 16:15:06.908267 2017] [wsgi:error] [pid 12094] [remote 176.59.97.187:21811]     attr if obj is None or obj._status_ is None else '%r.%s' % (obj, attr.name)))
+[Fri Dec 15 16:15:06.908277 2017] [wsgi:error] [pid 12094] [remote 176.59.97.187:21811]   File "/usr/lib/python3.6/site-packages/pony/utils/utils.py", line 98, in throw
+[Fri Dec 15 16:15:06.908287 2017] [wsgi:error] [pid 12094] [remote 176.59.97.187:21811]     raise exc
+[Fri Dec 15 16:15:06.908302 2017] [wsgi:error] [pid 12094] [remote 176.59.97.187:21811] ValueError: Attribute Taxi_order.phone is required
+[Fri Dec 15 16:15:06.908395 2017] [wsgi:error] [pid 12094] [remote 176.59.97.187:21811] 
+[Fri Dec 15 16:16:37.812275 2017] [wsgi:error] [pid 12156] [remote 176.59.97.187:43176] [2017-12-15 16:16:37,801] ERROR in app: Exception on /cancel [GET]
+[Fri Dec 15 16:16:37.812418 2017] [wsgi:error] [pid 12156] [remote 176.59.97.187:43176] Traceback (most recent call last):
+[Fri Dec 15 16:16:37.812432 2017] [wsgi:error] [pid 12156] [remote 176.59.97.187:43176]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+[Fri Dec 15 16:16:37.812444 2017] [wsgi:error] [pid 12156] [remote 176.59.97.187:43176]     response = self.full_dispatch_request()
+[Fri Dec 15 16:16:37.812453 2017] [wsgi:error] [pid 12156] [remote 176.59.97.187:43176]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1614, in full_dispatch_request
+[Fri Dec 15 16:16:37.812463 2017] [wsgi:error] [pid 12156] [remote 176.59.97.187:43176]     rv = self.handle_user_exception(e)
+[Fri Dec 15 16:16:37.812473 2017] [wsgi:error] [pid 12156] [remote 176.59.97.187:43176]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1517, in handle_user_exception
+[Fri Dec 15 16:16:37.812482 2017] [wsgi:error] [pid 12156] [remote 176.59.97.187:43176]     reraise(exc_type, exc_value, tb)
+[Fri Dec 15 16:16:37.812491 2017] [wsgi:error] [pid 12156] [remote 176.59.97.187:43176]   File "/usr/lib/python3.6/site-packages/flask/_compat.py", line 33, in reraise
+[Fri Dec 15 16:16:37.812501 2017] [wsgi:error] [pid 12156] [remote 176.59.97.187:43176]     raise value
+[Fri Dec 15 16:16:37.812509 2017] [wsgi:error] [pid 12156] [remote 176.59.97.187:43176]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1612, in full_dispatch_request
+[Fri Dec 15 16:16:37.812519 2017] [wsgi:error] [pid 12156] [remote 176.59.97.187:43176]     rv = self.dispatch_request()
+[Fri Dec 15 16:16:37.812528 2017] [wsgi:error] [pid 12156] [remote 176.59.97.187:43176]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1598, in dispatch_request
+[Fri Dec 15 16:16:37.812537 2017] [wsgi:error] [pid 12156] [remote 176.59.97.187:43176]     return self.view_functions[rule.endpoint](**req.view_args)
+[Fri Dec 15 16:16:37.812546 2017] [wsgi:error] [pid 12156] [remote 176.59.97.187:43176]   File "/srv/http/virtlabs.tk/forsaje.tk/api.py", line 94, in cancel
+[Fri Dec 15 16:16:37.812556 2017] [wsgi:error] [pid 12156] [remote 176.59.97.187:43176]     order = Taxi_order.get(phone=request.args.get('phone'))
+[Fri Dec 15 16:16:37.812565 2017] [wsgi:error] [pid 12156] [remote 176.59.97.187:43176]   File "<string>", line 2, in get
+[Fri Dec 15 16:16:37.812574 2017] [wsgi:error] [pid 12156] [remote 176.59.97.187:43176]   File "/usr/lib/python3.6/site-packages/pony/utils/utils.py", line 58, in cut_traceback
+[Fri Dec 15 16:16:37.812584 2017] [wsgi:error] [pid 12156] [remote 176.59.97.187:43176]     return func(*args, **kwargs)
+[Fri Dec 15 16:16:37.812593 2017] [wsgi:error] [pid 12156] [remote 176.59.97.187:43176]   File "/usr/lib/python3.6/site-packages/pony/orm/core.py", line 3702, in get
+[Fri Dec 15 16:16:37.812602 2017] [wsgi:error] [pid 12156] [remote 176.59.97.187:43176]     try: return entity._find_one_(kwargs)  # can throw MultipleObjectsFoundError
+[Fri Dec 15 16:16:37.812612 2017] [wsgi:error] [pid 12156] [remote 176.59.97.187:43176]   File "/usr/lib/python3.6/site-packages/pony/orm/core.py", line 3792, in _find_one_
+[Fri Dec 15 16:16:37.812621 2017] [wsgi:error] [pid 12156] [remote 176.59.97.187:43176]     avdict[attr] = attr.validate(val, None, entity, from_db=False)
+[Fri Dec 15 16:16:37.812631 2017] [wsgi:error] [pid 12156] [remote 176.59.97.187:43176]   File "/usr/lib/python3.6/site-packages/pony/orm/core.py", line 2356, in validate
+[Fri Dec 15 16:16:37.812640 2017] [wsgi:error] [pid 12156] [remote 176.59.97.187:43176]     attr if obj is None or obj._status_ is None else '%r.%s' % (obj, attr.name)))
+[Fri Dec 15 16:16:37.812649 2017] [wsgi:error] [pid 12156] [remote 176.59.97.187:43176]   File "/usr/lib/python3.6/site-packages/pony/utils/utils.py", line 98, in throw
+[Fri Dec 15 16:16:37.812785 2017] [wsgi:error] [pid 12156] [remote 176.59.97.187:43176]     raise exc
+[Fri Dec 15 16:16:37.812804 2017] [wsgi:error] [pid 12156] [remote 176.59.97.187:43176] ValueError: Attribute Taxi_order.phone is required
+[Fri Dec 15 16:16:37.812875 2017] [wsgi:error] [pid 12156] [remote 176.59.97.187:43176] 
+[Fri Dec 15 16:17:22.030641 2017] [wsgi:error] [pid 12199] [remote 176.59.97.187:28629] [2017-12-15 16:17:22,013] ERROR in app: Exception on /wait [GET]
+[Fri Dec 15 16:17:22.030794 2017] [wsgi:error] [pid 12199] [remote 176.59.97.187:28629] Traceback (most recent call last):
+[Fri Dec 15 16:17:22.030810 2017] [wsgi:error] [pid 12199] [remote 176.59.97.187:28629]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+[Fri Dec 15 16:17:22.030823 2017] [wsgi:error] [pid 12199] [remote 176.59.97.187:28629]     response = self.full_dispatch_request()
+[Fri Dec 15 16:17:22.030832 2017] [wsgi:error] [pid 12199] [remote 176.59.97.187:28629]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1614, in full_dispatch_request
+[Fri Dec 15 16:17:22.030842 2017] [wsgi:error] [pid 12199] [remote 176.59.97.187:28629]     rv = self.handle_user_exception(e)
+[Fri Dec 15 16:17:22.030851 2017] [wsgi:error] [pid 12199] [remote 176.59.97.187:28629]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1517, in handle_user_exception
+[Fri Dec 15 16:17:22.030861 2017] [wsgi:error] [pid 12199] [remote 176.59.97.187:28629]     reraise(exc_type, exc_value, tb)
+[Fri Dec 15 16:17:22.030983 2017] [wsgi:error] [pid 12199] [remote 176.59.97.187:28629]   File "/usr/lib/python3.6/site-packages/flask/_compat.py", line 33, in reraise
+[Fri Dec 15 16:17:22.030995 2017] [wsgi:error] [pid 12199] [remote 176.59.97.187:28629]     raise value
+[Fri Dec 15 16:17:22.031005 2017] [wsgi:error] [pid 12199] [remote 176.59.97.187:28629]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1612, in full_dispatch_request
+[Fri Dec 15 16:17:22.031014 2017] [wsgi:error] [pid 12199] [remote 176.59.97.187:28629]     rv = self.dispatch_request()
+[Fri Dec 15 16:17:22.031023 2017] [wsgi:error] [pid 12199] [remote 176.59.97.187:28629]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1598, in dispatch_request
+[Fri Dec 15 16:17:22.031033 2017] [wsgi:error] [pid 12199] [remote 176.59.97.187:28629]     return self.view_functions[rule.endpoint](**req.view_args)
+[Fri Dec 15 16:17:22.031042 2017] [wsgi:error] [pid 12199] [remote 176.59.97.187:28629]   File "/srv/http/virtlabs.tk/forsaje.tk/api.py", line 47, in wait
+[Fri Dec 15 16:17:22.031052 2017] [wsgi:error] [pid 12199] [remote 176.59.97.187:28629]     order = Taxi_order.get(phone=request.args.get('phone'))
+[Fri Dec 15 16:17:22.031061 2017] [wsgi:error] [pid 12199] [remote 176.59.97.187:28629]   File "<string>", line 2, in get
+[Fri Dec 15 16:17:22.031070 2017] [wsgi:error] [pid 12199] [remote 176.59.97.187:28629]   File "/usr/lib/python3.6/site-packages/pony/utils/utils.py", line 58, in cut_traceback
+[Fri Dec 15 16:17:22.031079 2017] [wsgi:error] [pid 12199] [remote 176.59.97.187:28629]     return func(*args, **kwargs)
+[Fri Dec 15 16:17:22.031088 2017] [wsgi:error] [pid 12199] [remote 176.59.97.187:28629]   File "/usr/lib/python3.6/site-packages/pony/orm/core.py", line 3702, in get
+[Fri Dec 15 16:17:22.031098 2017] [wsgi:error] [pid 12199] [remote 176.59.97.187:28629]     try: return entity._find_one_(kwargs)  # can throw MultipleObjectsFoundError
+[Fri Dec 15 16:17:22.031107 2017] [wsgi:error] [pid 12199] [remote 176.59.97.187:28629]   File "/usr/lib/python3.6/site-packages/pony/orm/core.py", line 3801, in _find_one_
+[Fri Dec 15 16:17:22.031117 2017] [wsgi:error] [pid 12199] [remote 176.59.97.187:28629]     if obj is None: obj = entity._find_in_db_(avdict, unique, for_update, nowait)
+[Fri Dec 15 16:17:22.031309 2017] [wsgi:error] [pid 12199] [remote 176.59.97.187:28629]   File "/usr/lib/python3.6/site-packages/pony/orm/core.py", line 3861, in _find_in_db_
+[Fri Dec 15 16:17:22.031322 2017] [wsgi:error] [pid 12199] [remote 176.59.97.187:28629]     objects = entity._fetch_objects(cursor, attr_offsets, 1, for_update, avdict)
+[Fri Dec 15 16:17:22.031424 2017] [wsgi:error] [pid 12199] [remote 176.59.97.187:28629]   File "/usr/lib/python3.6/site-packages/pony/orm/core.py", line 3980, in _fetch_objects
+[Fri Dec 15 16:17:22.031437 2017] [wsgi:error] [pid 12199] [remote 176.59.97.187:28629]     'Multiple objects were found. Use %s.select(...) to retrieve them' % entity.__name__)
+[Fri Dec 15 16:17:22.031447 2017] [wsgi:error] [pid 12199] [remote 176.59.97.187:28629]   File "/usr/lib/python3.6/site-packages/pony/utils/utils.py", line 98, in throw
+[Fri Dec 15 16:17:22.031457 2017] [wsgi:error] [pid 12199] [remote 176.59.97.187:28629]     raise exc
+[Fri Dec 15 16:17:22.031484 2017] [wsgi:error] [pid 12199] [remote 176.59.97.187:28629] pony.orm.core.MultipleObjectsFoundError: Multiple objects were found. Use Taxi_order.select(...) to retrieve them
+[Fri Dec 15 16:17:22.031633 2017] [wsgi:error] [pid 12199] [remote 176.59.97.187:28629] 
+[Fri Dec 15 16:18:11.389390 2017] [wsgi:error] [pid 12199] [remote 176.59.97.187:43870] [2017-12-15 16:18:11,388] ERROR in app: Exception on /cancel [GET]
+[Fri Dec 15 16:18:11.389498 2017] [wsgi:error] [pid 12199] [remote 176.59.97.187:43870] Traceback (most recent call last):
+[Fri Dec 15 16:18:11.389512 2017] [wsgi:error] [pid 12199] [remote 176.59.97.187:43870]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+[Fri Dec 15 16:18:11.389523 2017] [wsgi:error] [pid 12199] [remote 176.59.97.187:43870]     response = self.full_dispatch_request()
+[Fri Dec 15 16:18:11.389534 2017] [wsgi:error] [pid 12199] [remote 176.59.97.187:43870]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1614, in full_dispatch_request
+[Fri Dec 15 16:18:11.389544 2017] [wsgi:error] [pid 12199] [remote 176.59.97.187:43870]     rv = self.handle_user_exception(e)
+[Fri Dec 15 16:18:11.389553 2017] [wsgi:error] [pid 12199] [remote 176.59.97.187:43870]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1517, in handle_user_exception
+[Fri Dec 15 16:18:11.389563 2017] [wsgi:error] [pid 12199] [remote 176.59.97.187:43870]     reraise(exc_type, exc_value, tb)
+[Fri Dec 15 16:18:11.389573 2017] [wsgi:error] [pid 12199] [remote 176.59.97.187:43870]   File "/usr/lib/python3.6/site-packages/flask/_compat.py", line 33, in reraise
+[Fri Dec 15 16:18:11.389583 2017] [wsgi:error] [pid 12199] [remote 176.59.97.187:43870]     raise value
+[Fri Dec 15 16:18:11.389592 2017] [wsgi:error] [pid 12199] [remote 176.59.97.187:43870]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1612, in full_dispatch_request
+[Fri Dec 15 16:18:11.389602 2017] [wsgi:error] [pid 12199] [remote 176.59.97.187:43870]     rv = self.dispatch_request()
+[Fri Dec 15 16:18:11.389611 2017] [wsgi:error] [pid 12199] [remote 176.59.97.187:43870]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1598, in dispatch_request
+[Fri Dec 15 16:18:11.389621 2017] [wsgi:error] [pid 12199] [remote 176.59.97.187:43870]     return self.view_functions[rule.endpoint](**req.view_args)
+[Fri Dec 15 16:18:11.389631 2017] [wsgi:error] [pid 12199] [remote 176.59.97.187:43870]   File "/srv/http/virtlabs.tk/forsaje.tk/api.py", line 94, in cancel
+[Fri Dec 15 16:18:11.389641 2017] [wsgi:error] [pid 12199] [remote 176.59.97.187:43870]     order = Taxi_order.select(phone=request.args.get('phone'))
+[Fri Dec 15 16:18:11.389656 2017] [wsgi:error] [pid 12199] [remote 176.59.97.187:43870] TypeError: select() got an unexpected keyword argument 'phone'
+[Fri Dec 15 16:18:11.389704 2017] [wsgi:error] [pid 12199] [remote 176.59.97.187:43870] 
+[Fri Dec 15 16:19:31.331540 2017] [wsgi:error] [pid 12254] [remote 176.59.97.187:6923] [2017-12-15 16:19:31,320] ERROR in app: Exception on /cancel [GET]
+[Fri Dec 15 16:19:31.331681 2017] [wsgi:error] [pid 12254] [remote 176.59.97.187:6923] Traceback (most recent call last):
+[Fri Dec 15 16:19:31.331695 2017] [wsgi:error] [pid 12254] [remote 176.59.97.187:6923]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+[Fri Dec 15 16:19:31.331706 2017] [wsgi:error] [pid 12254] [remote 176.59.97.187:6923]     response = self.full_dispatch_request()
+[Fri Dec 15 16:19:31.331812 2017] [wsgi:error] [pid 12254] [remote 176.59.97.187:6923]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1614, in full_dispatch_request
+[Fri Dec 15 16:19:31.331824 2017] [wsgi:error] [pid 12254] [remote 176.59.97.187:6923]     rv = self.handle_user_exception(e)
+[Fri Dec 15 16:19:31.331834 2017] [wsgi:error] [pid 12254] [remote 176.59.97.187:6923]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1517, in handle_user_exception
+[Fri Dec 15 16:19:31.331843 2017] [wsgi:error] [pid 12254] [remote 176.59.97.187:6923]     reraise(exc_type, exc_value, tb)
+[Fri Dec 15 16:19:31.331852 2017] [wsgi:error] [pid 12254] [remote 176.59.97.187:6923]   File "/usr/lib/python3.6/site-packages/flask/_compat.py", line 33, in reraise
+[Fri Dec 15 16:19:31.331861 2017] [wsgi:error] [pid 12254] [remote 176.59.97.187:6923]     raise value
+[Fri Dec 15 16:19:31.331869 2017] [wsgi:error] [pid 12254] [remote 176.59.97.187:6923]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1612, in full_dispatch_request
+[Fri Dec 15 16:19:31.331878 2017] [wsgi:error] [pid 12254] [remote 176.59.97.187:6923]     rv = self.dispatch_request()
+[Fri Dec 15 16:19:31.331887 2017] [wsgi:error] [pid 12254] [remote 176.59.97.187:6923]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1598, in dispatch_request
+[Fri Dec 15 16:19:31.331896 2017] [wsgi:error] [pid 12254] [remote 176.59.97.187:6923]     return self.view_functions[rule.endpoint](**req.view_args)
+[Fri Dec 15 16:19:31.331905 2017] [wsgi:error] [pid 12254] [remote 176.59.97.187:6923]   File "/srv/http/virtlabs.tk/forsaje.tk/api.py", line 94, in cancel
+[Fri Dec 15 16:19:31.331915 2017] [wsgi:error] [pid 12254] [remote 176.59.97.187:6923]     order = Taxi_order.get(phone=request.args.get('phone'))
+[Fri Dec 15 16:19:31.331923 2017] [wsgi:error] [pid 12254] [remote 176.59.97.187:6923]   File "<string>", line 2, in get
+[Fri Dec 15 16:19:31.331932 2017] [wsgi:error] [pid 12254] [remote 176.59.97.187:6923]   File "/usr/lib/python3.6/site-packages/pony/utils/utils.py", line 58, in cut_traceback
+[Fri Dec 15 16:19:31.331941 2017] [wsgi:error] [pid 12254] [remote 176.59.97.187:6923]     return func(*args, **kwargs)
+[Fri Dec 15 16:19:31.331950 2017] [wsgi:error] [pid 12254] [remote 176.59.97.187:6923]   File "/usr/lib/python3.6/site-packages/pony/orm/core.py", line 3702, in get
+[Fri Dec 15 16:19:31.331959 2017] [wsgi:error] [pid 12254] [remote 176.59.97.187:6923]     try: return entity._find_one_(kwargs)  # can throw MultipleObjectsFoundError
+[Fri Dec 15 16:19:31.331968 2017] [wsgi:error] [pid 12254] [remote 176.59.97.187:6923]   File "/usr/lib/python3.6/site-packages/pony/orm/core.py", line 3792, in _find_one_
+[Fri Dec 15 16:19:31.331977 2017] [wsgi:error] [pid 12254] [remote 176.59.97.187:6923]     avdict[attr] = attr.validate(val, None, entity, from_db=False)
+[Fri Dec 15 16:19:31.331986 2017] [wsgi:error] [pid 12254] [remote 176.59.97.187:6923]   File "/usr/lib/python3.6/site-packages/pony/orm/core.py", line 2356, in validate
+[Fri Dec 15 16:19:31.331995 2017] [wsgi:error] [pid 12254] [remote 176.59.97.187:6923]     attr if obj is None or obj._status_ is None else '%r.%s' % (obj, attr.name)))
+[Fri Dec 15 16:19:31.332004 2017] [wsgi:error] [pid 12254] [remote 176.59.97.187:6923]   File "/usr/lib/python3.6/site-packages/pony/utils/utils.py", line 98, in throw
+[Fri Dec 15 16:19:31.332013 2017] [wsgi:error] [pid 12254] [remote 176.59.97.187:6923]     raise exc
+[Fri Dec 15 16:19:31.332028 2017] [wsgi:error] [pid 12254] [remote 176.59.97.187:6923] ValueError: Attribute Taxi_order.phone is required
+[Fri Dec 15 16:19:31.332094 2017] [wsgi:error] [pid 12254] [remote 176.59.97.187:6923] 
+[Fri Dec 15 16:29:43.093035 2017] [wsgi:error] [pid 12399] [remote 176.59.97.187:47590] [2017-12-15 16:29:43,082] ERROR in app: Exception on /cancel [GET]
+[Fri Dec 15 16:29:43.093179 2017] [wsgi:error] [pid 12399] [remote 176.59.97.187:47590] Traceback (most recent call last):
+[Fri Dec 15 16:29:43.093287 2017] [wsgi:error] [pid 12399] [remote 176.59.97.187:47590]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+[Fri Dec 15 16:29:43.093301 2017] [wsgi:error] [pid 12399] [remote 176.59.97.187:47590]     response = self.full_dispatch_request()
+[Fri Dec 15 16:29:43.093310 2017] [wsgi:error] [pid 12399] [remote 176.59.97.187:47590]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1614, in full_dispatch_request
+[Fri Dec 15 16:29:43.093320 2017] [wsgi:error] [pid 12399] [remote 176.59.97.187:47590]     rv = self.handle_user_exception(e)
+[Fri Dec 15 16:29:43.093329 2017] [wsgi:error] [pid 12399] [remote 176.59.97.187:47590]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1517, in handle_user_exception
+[Fri Dec 15 16:29:43.093339 2017] [wsgi:error] [pid 12399] [remote 176.59.97.187:47590]     reraise(exc_type, exc_value, tb)
+[Fri Dec 15 16:29:43.093348 2017] [wsgi:error] [pid 12399] [remote 176.59.97.187:47590]   File "/usr/lib/python3.6/site-packages/flask/_compat.py", line 33, in reraise
+[Fri Dec 15 16:29:43.093357 2017] [wsgi:error] [pid 12399] [remote 176.59.97.187:47590]     raise value
+[Fri Dec 15 16:29:43.093366 2017] [wsgi:error] [pid 12399] [remote 176.59.97.187:47590]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1612, in full_dispatch_request
+[Fri Dec 15 16:29:43.093375 2017] [wsgi:error] [pid 12399] [remote 176.59.97.187:47590]     rv = self.dispatch_request()
+[Fri Dec 15 16:29:43.093384 2017] [wsgi:error] [pid 12399] [remote 176.59.97.187:47590]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1598, in dispatch_request
+[Fri Dec 15 16:29:43.093393 2017] [wsgi:error] [pid 12399] [remote 176.59.97.187:47590]     return self.view_functions[rule.endpoint](**req.view_args)
+[Fri Dec 15 16:29:43.093402 2017] [wsgi:error] [pid 12399] [remote 176.59.97.187:47590]   File "/srv/http/virtlabs.tk/forsaje.tk/api.py", line 94, in cancel
+[Fri Dec 15 16:29:43.093412 2017] [wsgi:error] [pid 12399] [remote 176.59.97.187:47590]     Taxi_order[request.args.get('id')].delete(bulk=True)
+[Fri Dec 15 16:29:43.093421 2017] [wsgi:error] [pid 12399] [remote 176.59.97.187:47590]   File "<string>", line 2, in __getitem__
+[Fri Dec 15 16:29:43.093430 2017] [wsgi:error] [pid 12399] [remote 176.59.97.187:47590]   File "/usr/lib/python3.6/site-packages/pony/utils/utils.py", line 58, in cut_traceback
+[Fri Dec 15 16:29:43.093439 2017] [wsgi:error] [pid 12399] [remote 176.59.97.187:47590]     return func(*args, **kwargs)
+[Fri Dec 15 16:29:43.093448 2017] [wsgi:error] [pid 12399] [remote 176.59.97.187:47590]   File "/usr/lib/python3.6/site-packages/pony/orm/core.py", line 3691, in __getitem__
+[Fri Dec 15 16:29:43.093457 2017] [wsgi:error] [pid 12399] [remote 176.59.97.187:47590]     return entity._find_one_(kwargs)
+[Fri Dec 15 16:29:43.093466 2017] [wsgi:error] [pid 12399] [remote 176.59.97.187:47590]   File "/usr/lib/python3.6/site-packages/pony/orm/core.py", line 3802, in _find_one_
+[Fri Dec 15 16:29:43.093476 2017] [wsgi:error] [pid 12399] [remote 176.59.97.187:47590]     if obj is None: throw(ObjectNotFound, entity, pkval)
+[Fri Dec 15 16:29:43.093485 2017] [wsgi:error] [pid 12399] [remote 176.59.97.187:47590]   File "/usr/lib/python3.6/site-packages/pony/utils/utils.py", line 98, in throw
+[Fri Dec 15 16:29:43.093494 2017] [wsgi:error] [pid 12399] [remote 176.59.97.187:47590]     raise exc
+[Fri Dec 15 16:29:43.093508 2017] [wsgi:error] [pid 12399] [remote 176.59.97.187:47590] pony.orm.core.ObjectNotFound: Taxi_order
+[Fri Dec 15 16:29:43.093573 2017] [wsgi:error] [pid 12399] [remote 176.59.97.187:47590] 
+[Fri Dec 15 16:31:03.823855 2017] [wsgi:error] [pid 12447] [remote 176.59.97.187:47955] [2017-12-15 16:31:03,819] ERROR in app: Exception on /cancel [GET]
+[Fri Dec 15 16:31:03.824026 2017] [wsgi:error] [pid 12447] [remote 176.59.97.187:47955] Traceback (most recent call last):
+[Fri Dec 15 16:31:03.824040 2017] [wsgi:error] [pid 12447] [remote 176.59.97.187:47955]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+[Fri Dec 15 16:31:03.824264 2017] [wsgi:error] [pid 12447] [remote 176.59.97.187:47955]     response = self.full_dispatch_request()
+[Fri Dec 15 16:31:03.824281 2017] [wsgi:error] [pid 12447] [remote 176.59.97.187:47955]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1614, in full_dispatch_request
+[Fri Dec 15 16:31:03.824292 2017] [wsgi:error] [pid 12447] [remote 176.59.97.187:47955]     rv = self.handle_user_exception(e)
+[Fri Dec 15 16:31:03.824301 2017] [wsgi:error] [pid 12447] [remote 176.59.97.187:47955]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1517, in handle_user_exception
+[Fri Dec 15 16:31:03.824310 2017] [wsgi:error] [pid 12447] [remote 176.59.97.187:47955]     reraise(exc_type, exc_value, tb)
+[Fri Dec 15 16:31:03.824319 2017] [wsgi:error] [pid 12447] [remote 176.59.97.187:47955]   File "/usr/lib/python3.6/site-packages/flask/_compat.py", line 33, in reraise
+[Fri Dec 15 16:31:03.824328 2017] [wsgi:error] [pid 12447] [remote 176.59.97.187:47955]     raise value
+[Fri Dec 15 16:31:03.824337 2017] [wsgi:error] [pid 12447] [remote 176.59.97.187:47955]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1612, in full_dispatch_request
+[Fri Dec 15 16:31:03.824346 2017] [wsgi:error] [pid 12447] [remote 176.59.97.187:47955]     rv = self.dispatch_request()
+[Fri Dec 15 16:31:03.824355 2017] [wsgi:error] [pid 12447] [remote 176.59.97.187:47955]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1598, in dispatch_request
+[Fri Dec 15 16:31:03.824364 2017] [wsgi:error] [pid 12447] [remote 176.59.97.187:47955]     return self.view_functions[rule.endpoint](**req.view_args)
+[Fri Dec 15 16:31:03.824373 2017] [wsgi:error] [pid 12447] [remote 176.59.97.187:47955]   File "/srv/http/virtlabs.tk/forsaje.tk/api.py", line 94, in cancel
+[Fri Dec 15 16:31:03.824383 2017] [wsgi:error] [pid 12447] [remote 176.59.97.187:47955]     Taxi_order[int(request.args.get('id'))].delete(bulk=True)
+[Fri Dec 15 16:31:03.824402 2017] [wsgi:error] [pid 12447] [remote 176.59.97.187:47955] TypeError: int() argument must be a string, a bytes-like object or a number, not 'NoneType'
+[Fri Dec 15 16:31:03.824504 2017] [wsgi:error] [pid 12447] [remote 176.59.97.187:47955] 
+[Fri Dec 15 16:34:53.419826 2017] [wsgi:error] [pid 12447] [remote 176.59.97.187:47967] [2017-12-15 16:34:53,418] ERROR in app: Exception on /cancel [GET]
+[Fri Dec 15 16:34:53.420663 2017] [wsgi:error] [pid 12447] [remote 176.59.97.187:47967] Traceback (most recent call last):
+[Fri Dec 15 16:34:53.420698 2017] [wsgi:error] [pid 12447] [remote 176.59.97.187:47967]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+[Fri Dec 15 16:34:53.420710 2017] [wsgi:error] [pid 12447] [remote 176.59.97.187:47967]     response = self.full_dispatch_request()
+[Fri Dec 15 16:34:53.420720 2017] [wsgi:error] [pid 12447] [remote 176.59.97.187:47967]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1614, in full_dispatch_request
+[Fri Dec 15 16:34:53.420730 2017] [wsgi:error] [pid 12447] [remote 176.59.97.187:47967]     rv = self.handle_user_exception(e)
+[Fri Dec 15 16:34:53.420739 2017] [wsgi:error] [pid 12447] [remote 176.59.97.187:47967]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1517, in handle_user_exception
+[Fri Dec 15 16:34:53.420749 2017] [wsgi:error] [pid 12447] [remote 176.59.97.187:47967]     reraise(exc_type, exc_value, tb)
+[Fri Dec 15 16:34:53.420794 2017] [wsgi:error] [pid 12447] [remote 176.59.97.187:47967]   File "/usr/lib/python3.6/site-packages/flask/_compat.py", line 33, in reraise
+[Fri Dec 15 16:34:53.420811 2017] [wsgi:error] [pid 12447] [remote 176.59.97.187:47967]     raise value
+[Fri Dec 15 16:34:53.420821 2017] [wsgi:error] [pid 12447] [remote 176.59.97.187:47967]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1612, in full_dispatch_request
+[Fri Dec 15 16:34:53.420831 2017] [wsgi:error] [pid 12447] [remote 176.59.97.187:47967]     rv = self.dispatch_request()
+[Fri Dec 15 16:34:53.420840 2017] [wsgi:error] [pid 12447] [remote 176.59.97.187:47967]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1598, in dispatch_request
+[Fri Dec 15 16:34:53.420921 2017] [wsgi:error] [pid 12447] [remote 176.59.97.187:47967]     return self.view_functions[rule.endpoint](**req.view_args)
+[Fri Dec 15 16:34:53.420933 2017] [wsgi:error] [pid 12447] [remote 176.59.97.187:47967]   File "/srv/http/virtlabs.tk/forsaje.tk/api.py", line 94, in cancel
+[Fri Dec 15 16:34:53.420944 2017] [wsgi:error] [pid 12447] [remote 176.59.97.187:47967]     Taxi_order[int(request.args.get('id'))].delete(bulk=True)
+[Fri Dec 15 16:34:53.420973 2017] [wsgi:error] [pid 12447] [remote 176.59.97.187:47967] TypeError: int() argument must be a string, a bytes-like object or a number, not 'NoneType'
+[Fri Dec 15 16:34:53.421126 2017] [wsgi:error] [pid 12447] [remote 176.59.97.187:47967] 
+[Fri Dec 15 16:35:31.765297 2017] [wsgi:error] [pid 12510] [remote 176.59.97.187:15718] [2017-12-15 16:35:31,761] ERROR in app: Exception on /cancel [GET]
+[Fri Dec 15 16:35:31.765438 2017] [wsgi:error] [pid 12510] [remote 176.59.97.187:15718] Traceback (most recent call last):
+[Fri Dec 15 16:35:31.765450 2017] [wsgi:error] [pid 12510] [remote 176.59.97.187:15718]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+[Fri Dec 15 16:35:31.765461 2017] [wsgi:error] [pid 12510] [remote 176.59.97.187:15718]     response = self.full_dispatch_request()
+[Fri Dec 15 16:35:31.765470 2017] [wsgi:error] [pid 12510] [remote 176.59.97.187:15718]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1614, in full_dispatch_request
+[Fri Dec 15 16:35:31.765480 2017] [wsgi:error] [pid 12510] [remote 176.59.97.187:15718]     rv = self.handle_user_exception(e)
+[Fri Dec 15 16:35:31.765489 2017] [wsgi:error] [pid 12510] [remote 176.59.97.187:15718]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1517, in handle_user_exception
+[Fri Dec 15 16:35:31.765499 2017] [wsgi:error] [pid 12510] [remote 176.59.97.187:15718]     reraise(exc_type, exc_value, tb)
+[Fri Dec 15 16:35:31.765507 2017] [wsgi:error] [pid 12510] [remote 176.59.97.187:15718]   File "/usr/lib/python3.6/site-packages/flask/_compat.py", line 33, in reraise
+[Fri Dec 15 16:35:31.765517 2017] [wsgi:error] [pid 12510] [remote 176.59.97.187:15718]     raise value
+[Fri Dec 15 16:35:31.765526 2017] [wsgi:error] [pid 12510] [remote 176.59.97.187:15718]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1612, in full_dispatch_request
+[Fri Dec 15 16:35:31.765535 2017] [wsgi:error] [pid 12510] [remote 176.59.97.187:15718]     rv = self.dispatch_request()
+[Fri Dec 15 16:35:31.765544 2017] [wsgi:error] [pid 12510] [remote 176.59.97.187:15718]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1598, in dispatch_request
+[Fri Dec 15 16:35:31.765553 2017] [wsgi:error] [pid 12510] [remote 176.59.97.187:15718]     return self.view_functions[rule.endpoint](**req.view_args)
+[Fri Dec 15 16:35:31.765563 2017] [wsgi:error] [pid 12510] [remote 176.59.97.187:15718]   File "/srv/http/virtlabs.tk/forsaje.tk/api.py", line 94, in cancel
+[Fri Dec 15 16:35:31.765572 2017] [wsgi:error] [pid 12510] [remote 176.59.97.187:15718]     Taxi_order[int(request.args.get('id'))].delete(bulk=True)
+[Fri Dec 15 16:35:31.765588 2017] [wsgi:error] [pid 12510] [remote 176.59.97.187:15718] TypeError: int() argument must be a string, a bytes-like object or a number, not 'NoneType'
+[Fri Dec 15 16:35:31.765642 2017] [wsgi:error] [pid 12510] [remote 176.59.97.187:15718] 
+[Fri Dec 15 16:38:02.409661 2017] [wsgi:error] [pid 12561] [remote 176.59.97.187:32532] [2017-12-15 16:38:02,405] ERROR in app: Exception on /cancel [GET]
+[Fri Dec 15 16:38:02.409827 2017] [wsgi:error] [pid 12561] [remote 176.59.97.187:32532] Traceback (most recent call last):
+[Fri Dec 15 16:38:02.409841 2017] [wsgi:error] [pid 12561] [remote 176.59.97.187:32532]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+[Fri Dec 15 16:38:02.409853 2017] [wsgi:error] [pid 12561] [remote 176.59.97.187:32532]     response = self.full_dispatch_request()
+[Fri Dec 15 16:38:02.409863 2017] [wsgi:error] [pid 12561] [remote 176.59.97.187:32532]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1614, in full_dispatch_request
+[Fri Dec 15 16:38:02.409980 2017] [wsgi:error] [pid 12561] [remote 176.59.97.187:32532]     rv = self.handle_user_exception(e)
+[Fri Dec 15 16:38:02.409993 2017] [wsgi:error] [pid 12561] [remote 176.59.97.187:32532]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1517, in handle_user_exception
+[Fri Dec 15 16:38:02.410003 2017] [wsgi:error] [pid 12561] [remote 176.59.97.187:32532]     reraise(exc_type, exc_value, tb)
+[Fri Dec 15 16:38:02.410013 2017] [wsgi:error] [pid 12561] [remote 176.59.97.187:32532]   File "/usr/lib/python3.6/site-packages/flask/_compat.py", line 33, in reraise
+[Fri Dec 15 16:38:02.410023 2017] [wsgi:error] [pid 12561] [remote 176.59.97.187:32532]     raise value
+[Fri Dec 15 16:38:02.410032 2017] [wsgi:error] [pid 12561] [remote 176.59.97.187:32532]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1612, in full_dispatch_request
+[Fri Dec 15 16:38:02.410042 2017] [wsgi:error] [pid 12561] [remote 176.59.97.187:32532]     rv = self.dispatch_request()
+[Fri Dec 15 16:38:02.410051 2017] [wsgi:error] [pid 12561] [remote 176.59.97.187:32532]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1598, in dispatch_request
+[Fri Dec 15 16:38:02.410061 2017] [wsgi:error] [pid 12561] [remote 176.59.97.187:32532]     return self.view_functions[rule.endpoint](**req.view_args)
+[Fri Dec 15 16:38:02.410070 2017] [wsgi:error] [pid 12561] [remote 176.59.97.187:32532]   File "/srv/http/virtlabs.tk/forsaje.tk/api.py", line 94, in cancel
+[Fri Dec 15 16:38:02.410079 2017] [wsgi:error] [pid 12561] [remote 176.59.97.187:32532]     Taxi_order[int(request.args.get('id'))].delete(bulk=True)
+[Fri Dec 15 16:38:02.410097 2017] [wsgi:error] [pid 12561] [remote 176.59.97.187:32532] TypeError: int() argument must be a string, a bytes-like object or a number, not 'NoneType'
+[Fri Dec 15 16:38:02.410167 2017] [wsgi:error] [pid 12561] [remote 176.59.97.187:32532] 
+[Fri Dec 15 16:38:41.397628 2017] [wsgi:error] [pid 12561] [remote 176.59.97.187:62770] [2017-12-15 16:38:41,396] ERROR in app: Exception on /cancel [GET]
+[Fri Dec 15 16:38:41.399406 2017] [wsgi:error] [pid 12561] [remote 176.59.97.187:62770] Traceback (most recent call last):
+[Fri Dec 15 16:38:41.399441 2017] [wsgi:error] [pid 12561] [remote 176.59.97.187:62770]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+[Fri Dec 15 16:38:41.399454 2017] [wsgi:error] [pid 12561] [remote 176.59.97.187:62770]     response = self.full_dispatch_request()
+[Fri Dec 15 16:38:41.399465 2017] [wsgi:error] [pid 12561] [remote 176.59.97.187:62770]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1614, in full_dispatch_request
+[Fri Dec 15 16:38:41.399474 2017] [wsgi:error] [pid 12561] [remote 176.59.97.187:62770]     rv = self.handle_user_exception(e)
+[Fri Dec 15 16:38:41.399484 2017] [wsgi:error] [pid 12561] [remote 176.59.97.187:62770]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1517, in handle_user_exception
+[Fri Dec 15 16:38:41.399493 2017] [wsgi:error] [pid 12561] [remote 176.59.97.187:62770]     reraise(exc_type, exc_value, tb)
+[Fri Dec 15 16:38:41.399502 2017] [wsgi:error] [pid 12561] [remote 176.59.97.187:62770]   File "/usr/lib/python3.6/site-packages/flask/_compat.py", line 33, in reraise
+[Fri Dec 15 16:38:41.399512 2017] [wsgi:error] [pid 12561] [remote 176.59.97.187:62770]     raise value
+[Fri Dec 15 16:38:41.399521 2017] [wsgi:error] [pid 12561] [remote 176.59.97.187:62770]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1612, in full_dispatch_request
+[Fri Dec 15 16:38:41.399531 2017] [wsgi:error] [pid 12561] [remote 176.59.97.187:62770]     rv = self.dispatch_request()
+[Fri Dec 15 16:38:41.399540 2017] [wsgi:error] [pid 12561] [remote 176.59.97.187:62770]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1598, in dispatch_request
+[Fri Dec 15 16:38:41.399550 2017] [wsgi:error] [pid 12561] [remote 176.59.97.187:62770]     return self.view_functions[rule.endpoint](**req.view_args)
+[Fri Dec 15 16:38:41.399617 2017] [wsgi:error] [pid 12561] [remote 176.59.97.187:62770]   File "/srv/http/virtlabs.tk/forsaje.tk/api.py", line 94, in cancel
+[Fri Dec 15 16:38:41.399630 2017] [wsgi:error] [pid 12561] [remote 176.59.97.187:62770]     Taxi_order[int(request.args.get('id'))].delete(bulk=True)
+[Fri Dec 15 16:38:41.399658 2017] [wsgi:error] [pid 12561] [remote 176.59.97.187:62770] TypeError: int() argument must be a string, a bytes-like object or a number, not 'NoneType'
+[Fri Dec 15 16:38:41.399802 2017] [wsgi:error] [pid 12561] [remote 176.59.97.187:62770] 
+[Fri Dec 15 16:49:15.232817 2017] [wsgi:error] [pid 12709] [remote 176.59.97.187:33954] [2017-12-15 16:49:15,215] ERROR in app: Exception on /wait [GET]
+[Fri Dec 15 16:49:15.232986 2017] [wsgi:error] [pid 12709] [remote 176.59.97.187:33954] Traceback (most recent call last):
+[Fri Dec 15 16:49:15.232999 2017] [wsgi:error] [pid 12709] [remote 176.59.97.187:33954]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+[Fri Dec 15 16:49:15.233011 2017] [wsgi:error] [pid 12709] [remote 176.59.97.187:33954]     response = self.full_dispatch_request()
+[Fri Dec 15 16:49:15.233020 2017] [wsgi:error] [pid 12709] [remote 176.59.97.187:33954]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1614, in full_dispatch_request
+[Fri Dec 15 16:49:15.233030 2017] [wsgi:error] [pid 12709] [remote 176.59.97.187:33954]     rv = self.handle_user_exception(e)
+[Fri Dec 15 16:49:15.233040 2017] [wsgi:error] [pid 12709] [remote 176.59.97.187:33954]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1517, in handle_user_exception
+[Fri Dec 15 16:49:15.233049 2017] [wsgi:error] [pid 12709] [remote 176.59.97.187:33954]     reraise(exc_type, exc_value, tb)
+[Fri Dec 15 16:49:15.233059 2017] [wsgi:error] [pid 12709] [remote 176.59.97.187:33954]   File "/usr/lib/python3.6/site-packages/flask/_compat.py", line 33, in reraise
+[Fri Dec 15 16:49:15.233068 2017] [wsgi:error] [pid 12709] [remote 176.59.97.187:33954]     raise value
+[Fri Dec 15 16:49:15.233078 2017] [wsgi:error] [pid 12709] [remote 176.59.97.187:33954]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1612, in full_dispatch_request
+[Fri Dec 15 16:49:15.233087 2017] [wsgi:error] [pid 12709] [remote 176.59.97.187:33954]     rv = self.dispatch_request()
+[Fri Dec 15 16:49:15.233096 2017] [wsgi:error] [pid 12709] [remote 176.59.97.187:33954]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1598, in dispatch_request
+[Fri Dec 15 16:49:15.233106 2017] [wsgi:error] [pid 12709] [remote 176.59.97.187:33954]     return self.view_functions[rule.endpoint](**req.view_args)
+[Fri Dec 15 16:49:15.233115 2017] [wsgi:error] [pid 12709] [remote 176.59.97.187:33954]   File "/srv/http/virtlabs.tk/forsaje.tk/api.py", line 48, in wait
+[Fri Dec 15 16:49:15.233125 2017] [wsgi:error] [pid 12709] [remote 176.59.97.187:33954]     order = Taxi_order.get(phone=request.args.get('phone'))
+[Fri Dec 15 16:49:15.233134 2017] [wsgi:error] [pid 12709] [remote 176.59.97.187:33954]   File "<string>", line 2, in get
+[Fri Dec 15 16:49:15.233144 2017] [wsgi:error] [pid 12709] [remote 176.59.97.187:33954]   File "/usr/lib/python3.6/site-packages/pony/utils/utils.py", line 58, in cut_traceback
+[Fri Dec 15 16:49:15.233153 2017] [wsgi:error] [pid 12709] [remote 176.59.97.187:33954]     return func(*args, **kwargs)
+[Fri Dec 15 16:49:15.233163 2017] [wsgi:error] [pid 12709] [remote 176.59.97.187:33954]   File "/usr/lib/python3.6/site-packages/pony/orm/core.py", line 3702, in get
+[Fri Dec 15 16:49:15.233172 2017] [wsgi:error] [pid 12709] [remote 176.59.97.187:33954]     try: return entity._find_one_(kwargs)  # can throw MultipleObjectsFoundError
+[Fri Dec 15 16:49:15.233182 2017] [wsgi:error] [pid 12709] [remote 176.59.97.187:33954]   File "/usr/lib/python3.6/site-packages/pony/orm/core.py", line 3801, in _find_one_
+[Fri Dec 15 16:49:15.233192 2017] [wsgi:error] [pid 12709] [remote 176.59.97.187:33954]     if obj is None: obj = entity._find_in_db_(avdict, unique, for_update, nowait)
+[Fri Dec 15 16:49:15.233201 2017] [wsgi:error] [pid 12709] [remote 176.59.97.187:33954]   File "/usr/lib/python3.6/site-packages/pony/orm/core.py", line 3861, in _find_in_db_
+[Fri Dec 15 16:49:15.233314 2017] [wsgi:error] [pid 12709] [remote 176.59.97.187:33954]     objects = entity._fetch_objects(cursor, attr_offsets, 1, for_update, avdict)
+[Fri Dec 15 16:49:15.233328 2017] [wsgi:error] [pid 12709] [remote 176.59.97.187:33954]   File "/usr/lib/python3.6/site-packages/pony/orm/core.py", line 3980, in _fetch_objects
+[Fri Dec 15 16:49:15.233338 2017] [wsgi:error] [pid 12709] [remote 176.59.97.187:33954]     'Multiple objects were found. Use %s.select(...) to retrieve them' % entity.__name__)
+[Fri Dec 15 16:49:15.233348 2017] [wsgi:error] [pid 12709] [remote 176.59.97.187:33954]   File "/usr/lib/python3.6/site-packages/pony/utils/utils.py", line 98, in throw
+[Fri Dec 15 16:49:15.233357 2017] [wsgi:error] [pid 12709] [remote 176.59.97.187:33954]     raise exc
+[Fri Dec 15 16:49:15.233373 2017] [wsgi:error] [pid 12709] [remote 176.59.97.187:33954] pony.orm.core.MultipleObjectsFoundError: Multiple objects were found. Use Taxi_order.select(...) to retrieve them
+[Fri Dec 15 16:49:15.233445 2017] [wsgi:error] [pid 12709] [remote 176.59.97.187:33954] 

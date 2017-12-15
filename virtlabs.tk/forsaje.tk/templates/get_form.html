@@ -1,16 +1,18 @@
 {% extends "index.html" %}
 {% block body %}
-<form action="wait">
-    <input type="text" placeholder="№ телефона (с 8-й)" />
-    <p>Откуда</p>
-    <input type="text" placeholder="Улица" style="width:65%" />
-    <input type="text" placeholder="Дом" style="width:30%" /><br>
-    <input type="text" placeholder="Корус" style="width:30%" />
-    <input type="text" placeholder="Подьезд" style="width:30%" /><br>
-    <input type="text" placeholder="Примечания" style="width:calc(95% + 4px)" /><br>
-    <input type="checkbox" checked />По городу<br>
-    <input type="checkbox" />Перезвонить
-    <p>Куда: <input type="text" style="width:80%" /></p>
-    <input type="submit" value="Вызвать" />
+<form action="commit">
+    <input name="phone" class="input" type="text" placeholder="№ телефона (с 8-й)" style="width:90%;" />
+    <p class="label" style="text-align:left;">Откуда:</p>
+    <input name="street" class="input" type="text" placeholder="Улица" style="width:60%;" />
+    <input name="dom" class="input" type="text" placeholder="Дом" style="width:15%;" /><br>
+    <input name="korp" class="input" type="text" placeholder="Корпус" style="width:25%;" />
+    <input name="pod" class="input" type="text" placeholder="Подьезд" style="width:30%;" /><br>
+    <input name="comment" class="input" type="text" placeholder="Примечания" style="width:90%; height:2em;" /><br>
+    <input name="city" id="city" class="checkbox" type="checkbox" checked /><label class="label" style="margin:0;" for="city" >По городу</label>
+    <input name="recall" id="recall" class="checkbox" type="checkbox" /><label class="label" style="margin:0;" for="recall" >Перезвонить</label>
+    <br><br>
+    <p class="label" style="text-align:left;">Куда: <input name="dest" style="width:65%" class="input" type="text" /></p>
+    <br>
+    <input class="input" style="width:90%; height:2em;" type="submit" value="Вызвать" />
 </form>
 {% endblock %}

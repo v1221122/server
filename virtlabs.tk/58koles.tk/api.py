@@ -9,8 +9,8 @@ def main():
             {
                 'target': 'http://forsaje.tk/application',
                 'src': '/static/img/forsaje.jpg',
-                'title': 'Приложение Forsaje',
-                'text': ['Приложение такси']
+                'title': 'Приложение ТАКСИ Forsaje',
+                'text': ['Приложение такси Forsaje можно скачать <a href="http://forsaje.tk/application">здесь</a>.']
             },
             {
                 'target': '#',

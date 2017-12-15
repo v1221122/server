@@ -7,13 +7,13 @@
     {% endset %}
     <h1>{{ t }}</h1>
 {% else %}
-<p>Выходите, Вас ожидает{{ car.name }}. Гос. номер: {{ car.number }}. Цвет: {{ car.color }}</p>
+<p class="label">Выходите, Вас ожидает{{ car.name }}. Гос. номер: {{ car.number }}. Цвет: {{ car.color }}</p>
 <form action="/">
-    <input type="submit" value="OK" />
+    <input class="input" type="submit" value="OK" />
 </form>
 <br><br>
-<form action="cancel">
-    <input type="submit" value="Отменить" />
+<form action="cancel?id={{ id }}">
+    <input class="input" type="submit" value="Отменить" />
 </form>
 {% endif %}
 {% endblock %}

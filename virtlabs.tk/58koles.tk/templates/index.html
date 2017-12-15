@@ -2,34 +2,32 @@
 <html>
 <head>
     <link rel="stylesheet" href="/static/css/{{ stylesheet }}" />
-    <title>5-е колесо</title>
+    <title>58 КОЛЁС</title>
 </head>
 <body>
     <div style="width:100%; height:100%; opacity:0.3; position:fixed; top:0; right:0; bottom:0; left:0;">
         <img style="width:100%; height:100%" src="/static/img/back.jpg" />
     </div>
     <div id="header">
-        <h1>5-е колесо</h1>
+        <h1>58 КОЛЁС</h1>
     </div>
     <div id="body_div" style="overflow:auto">
         {% for item in items %}
                 <div class="item">
                     {% block loop_item scoped %}
                         <hr>
-                        <a href="{{ item.target }}">
-                                    <img src="{{ item.src }}" class="img" />
-                                    <div class="wrapper">
-                                        <h2>{{ item.title|safe }}</h2>
-                                        {% for string in item.text %}
-                                            <div class="line_wrapper">
-                                                {% if item.list %}
-                                                    <img src="/static/img/list.png" alt="*" class="list_img"/>
-                                                {% endif %}
-                                                <p class="text">{{ string|safe }}</p><br>
-                                            </div>
-                                        {% endfor %}
-                                    </div>
-                        </a>
+                        <img src="{{ item.src }}" class="img" />
+                        <div class="wrapper">
+                            <h2>{{ item.title|safe }}</h2>
+                            {% for string in item.text %}
+                                <div class="line_wrapper">
+                                    {% if item.list %}
+                                        <img src="/static/img/list.png" alt="*" class="list_img"/>
+                                    {% endif %}
+                                    <p class="text">{{ string|safe }}</p><br>
+                                </div>
+                            {% endfor %}
+                        </div>
                     {% endblock %}
                 </div>
         {% endfor %}

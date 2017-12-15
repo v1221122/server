@@ -1,54 +1,3 @@
-nano php/m1.php 
-nano php/get_matrix.php 
-echo $locale
-echo $LOCALE
-echo $lang
-echo $LANG
-nano /etc/locale.conf 
-su
-nano php/get_matrix.php 
-nano php/get_matrix.php 
-mysql -p -u nerrevar
-nano php/m2.php 
-nano php/m2.php 
-nano php/m1.php 
-nano php/m2.php 
-nano php/m2.php 
-nano php/m2.php 
-nano php/m2.php 
-top
-nano php/m2.php 
-nano php/m2.php 
-nano m_inc.py
-nano m_inc.py
-nano php/m2.php 
-nano m_inc.py
-python m_inc.py 
-nano m_inc.py
-python m_inc.py 
-nano m_inc.py
-python m_inc.py 
-ls
-nano m_inc.py 
-nano m_inc.py
-ls
-mv m_inc.py.save m_inc.py
-ls
-nano m_inc.py 
-python m_inc.py 
-nano m_inc.py 
-nano m_inc.py 
-python m_inc.py 
-nano m_inc.py 
-python m_inc.py 
-nano m_inc.py 
-python m_inc.py 
-nano m_inc.py 
-python m_inc.py 
-nano m_inc.py 
-python m_inc.py 
-python m_inc.py 1
-python m_inc.py 1111
 nano m_inc.py 
 python m_inc.py 1111
 nano m_inc.py 
@@ -498,3 +447,54 @@ su
 su
 nano ~/.bash_history 
 cadaver https://webdav.yandex.ru
+cp -r /srv/http/virtlabs.tk/5koleso.tk/ /srv/http/virtlabs.tk/58koles.tk
+su
+ыг
+su
+nano static/css/style.css 
+nano static/css/style.css 
+cd /srv/http/virtlabs.tk/forsaje.tk/
+nano static/css/style.css 
+su
+nano static/css/style.css 
+apachectl graceful
+cd /srv/http/virtlabs.tk/forsaje.tk/
+su
+mv -r static/db_config/ ./
+mv -R static/db_config/ ./
+mv static/db_config/ ./
+ls
+python api.py 
+python api.py 
+pgsql
+pgctl
+pg_ctl
+pg_ctl --help
+psql 
+psql -u postgres
+psql --help
+psql -U postgres
+psql -U postgres -d alex
+psql -U postgres -d test
+psql -U postgres
+psql --help
+psql -U alex
+psql -U alex_forsaje
+psql -U alex_forsaje
+ыг
+su
+psql -U httpd
+psql -U postgres
+su
+cd /srv/http/virtlabs.tk/forsaje.tk/
+less log/error-log 
+su
+ыг
+01050062
+su
+cd ../forsaje.tk/
+python api.py 
+python api.py 
+python api.py 
+python api.py 
+su
