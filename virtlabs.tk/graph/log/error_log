@@ -185,3 +185,4 @@
 [Fri Dec 15 10:53:21.874861 2017] [cgi:error] [pid 29181] [client 189.35.223.220:53968] AH02811: script not found or unable to stat: /srv/http/virtlabs.tk/graph/tmUnblock.cgi
 [Fri Dec 15 10:53:33.030164 2017] [php7:error] [pid 29204] [client 189.35.223.220:54050] script '/srv/http/virtlabs.tk/graph/getcfg.php' not found or unable to stat
 [Fri Dec 15 10:53:36.661152 2017] [php7:error] [pid 29178] [client 189.35.223.220:54080] script '/srv/http/virtlabs.tk/graph/getcfg.php' not found or unable to stat
+[Sat Dec 16 13:56:42.362236 2017] [cgi:error] [pid 14941] [client 27.255.77.103:44056] AH02811: script not found or unable to stat: /srv/http/cgi-bin
