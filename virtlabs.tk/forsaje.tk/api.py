@@ -9,6 +9,8 @@ from initdb import Worker, Auth, Online, Taxi_order
 
 app = Flask(__name__)
 
+# Passenger
+
 @app.route('/')
 def main():
     with db_session:
@@ -94,7 +96,7 @@ def wait_page():
 def cancel():
     with db_session:
         if request.args.get('id'):
-            Taxi_order.get(request.args.get('id')).delete(bulk=True)
+            Taxi_order.get(request.args.get('id')).delete()
     return redirect('/')
 
 @app.route('/application')
@@ -102,3 +104,57 @@ def application():
     f = os.path.join(app.root_path, 'static', 'apk', 'forsaje.apk')
     return send_file(f, as_attachment=True, attachment_filename='taxi_forsaje.apk')
 
+# End passenger
+
+# Worker
+
+@app.route('/work/')
+def work():
+    return render_template('work/auth.html')
+
+@app.route('/work/index')
+def work_index():
+    context = {
+        "worker_id": request.args.get('worker_id')
+    }
+    return render_template('work/index_w.html', **context)
+    
+@app.route('/work/check_worker')
+def check_worker():
+    #check login
+    id = 1
+    return redirect('/work/index?worker_id=' + id)
+    
+@app.route('/work/zarechny')
+def work_zarechny():
+    context = {
+        'queue': 1,
+        'position': 1
+    }
+    return render_template('work/zarechny.html', **context)
+    
+@app.route('/work/order_zarechny')
+def order_zarechny():
+    with db_session:
+        orders = Taxi_order.select()
+        if orders:
+            o = list()
+            for order in orders:
+                o.append({
+                            'phone': order.phone,
+                            'address_from': order.address_from,
+                            'address_to': order.address_to,
+                            'comment': order.comment
+                        })
+                context = {
+                    'orders': o
+                }
+        else:
+            context = dict()
+    return render_template('work/order_zarechny.html', **context)
+    
+
+@app.route('/work/application')
+def application_work():
+    f = os.path.join(app.root_path, 'static', 'apk', 'work', 'forsaje_work.apk')
+    return send_file(f, as_attachment=True, attachment_filename='forsaje_work.apk')

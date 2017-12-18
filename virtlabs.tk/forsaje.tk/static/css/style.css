@@ -4,6 +4,9 @@
 body{
 	font-size: 1.5em;
 }
+
+/* passenger */
+
 #header{
 	position: fixed;
 	top: 0;
@@ -21,6 +24,7 @@ body{
 	right: 0;
 	height: 65%;
 	text-align: center;
+	overflow: scroll;
 }
 .big_margin{
 	font-size: 120%;
@@ -51,4 +55,26 @@ body{
 	height: 5%;
 	text-align: center;
 	font-size: 50%;
+}
+
+/* worker */
+.work_block{
+	display: inline-block;
+	margin: 5px;
+	padding: auto;
+	width: calc(50vw - 10px);
+	height: calc(50vw - 10px);
+	background-color: #555;
+}
+.left{
+	float: left;
+}
+.work_label{
+	display: block;
+	margin-top: calc(25vw - 0.9em);
+	color: #fff;
+	font-size: 120%;
+}
+.order_div{
+	text-align: left;
 }

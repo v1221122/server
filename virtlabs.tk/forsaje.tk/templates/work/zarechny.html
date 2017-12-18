@@ -1,0 +1,7 @@
+{% extends "index.html" %}
+{% block body %}
+<div id="queue">
+    <p id="queue_p">В очереди: {{ position }}/{{ queue }}</p>
+</div>
+<a href="/work/order_zarechny"><button class="order_button">Свободные заказы</button></a>
+{% endblock %}

@@ -1,0 +1,17 @@
+{% extends "index.html" %}
+{% block body %}
+    <hr>
+    {% for order in orders %}
+        <a>
+            <div class="order_div">
+                Телефон: {{ order.phone }}<br>
+                Откуда: {{ order.address_from }}<br>
+                Куда: {{ order.address_to }}<br>
+                {% if order.comment %}
+                    Комментарий: {{ order.comment }} <br>
+                {% endif %}
+            </div>
+            <hr>
+        </a>
+    {% endfor %}
+{% endblock %}

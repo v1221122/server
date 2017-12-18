@@ -1,6 +1,4 @@
 nano m_inc.py 
-python m_inc.py 1111
-nano m_inc.py 
 nano m_inc.py 
 python m_inc.py 1111
 nano m_inc.py 
@@ -497,4 +495,6 @@ python api.py
 python api.py 
 su
 ыг
+su
+su
 su
