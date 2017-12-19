@@ -1,0 +1,58 @@
+[Mon Dec 18 16:23:07.610178 2017] [wsgi:error] [pid 25138] [remote 85.26.232.95:30006] mod_wsgi (pid=25138): Target WSGI script '/srv/http/virtlabs.tk/forsaje.tk/api.wsgi' cannot be loaded as Python module.
+[Mon Dec 18 16:23:07.610553 2017] [wsgi:error] [pid 25138] [remote 85.26.232.95:30006] mod_wsgi (pid=25138): Exception occurred processing WSGI script '/srv/http/virtlabs.tk/forsaje.tk/api.wsgi'.
+[Mon Dec 18 16:23:07.634442 2017] [wsgi:error] [pid 25138] [remote 85.26.232.95:30006] Traceback (most recent call last):
+[Mon Dec 18 16:23:07.634581 2017] [wsgi:error] [pid 25138] [remote 85.26.232.95:30006]   File "/srv/http/virtlabs.tk/forsaje.tk/api.wsgi", line 1, in <module>
+[Mon Dec 18 16:23:07.634600 2017] [wsgi:error] [pid 25138] [remote 85.26.232.95:30006]     from api import app as application
+[Mon Dec 18 16:23:07.634655 2017] [wsgi:error] [pid 25138] [remote 85.26.232.95:30006]   File "/srv/http/virtlabs.tk/forsaje.tk/api.py", line 124
+[Mon Dec 18 16:23:07.634693 2017] [wsgi:error] [pid 25138] [remote 85.26.232.95:30006]     if user.password == request.form['password']
+[Mon Dec 18 16:23:07.634795 2017] [wsgi:error] [pid 25138] [remote 85.26.232.95:30006]                                                ^
+[Mon Dec 18 16:23:07.634830 2017] [wsgi:error] [pid 25138] [remote 85.26.232.95:30006] SyntaxError: invalid syntax
+[Mon Dec 18 16:34:50.977657 2017] [wsgi:error] [pid 25316] [remote 85.26.232.95:25905] [2017-12-18 16:34:50,965] ERROR in app: Exception on /work/check_worker [POST]
+[Mon Dec 18 16:34:50.977835 2017] [wsgi:error] [pid 25316] [remote 85.26.232.95:25905] Traceback (most recent call last):
+[Mon Dec 18 16:34:50.977849 2017] [wsgi:error] [pid 25316] [remote 85.26.232.95:25905]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+[Mon Dec 18 16:34:50.977860 2017] [wsgi:error] [pid 25316] [remote 85.26.232.95:25905]     response = self.full_dispatch_request()
+[Mon Dec 18 16:34:50.977870 2017] [wsgi:error] [pid 25316] [remote 85.26.232.95:25905]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1614, in full_dispatch_request
+[Mon Dec 18 16:34:50.977880 2017] [wsgi:error] [pid 25316] [remote 85.26.232.95:25905]     rv = self.handle_user_exception(e)
+[Mon Dec 18 16:34:50.977888 2017] [wsgi:error] [pid 25316] [remote 85.26.232.95:25905]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1517, in handle_user_exception
+[Mon Dec 18 16:34:50.977898 2017] [wsgi:error] [pid 25316] [remote 85.26.232.95:25905]     reraise(exc_type, exc_value, tb)
+[Mon Dec 18 16:34:50.977906 2017] [wsgi:error] [pid 25316] [remote 85.26.232.95:25905]   File "/usr/lib/python3.6/site-packages/flask/_compat.py", line 33, in reraise
+[Mon Dec 18 16:34:50.977915 2017] [wsgi:error] [pid 25316] [remote 85.26.232.95:25905]     raise value
+[Mon Dec 18 16:34:50.977924 2017] [wsgi:error] [pid 25316] [remote 85.26.232.95:25905]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1612, in full_dispatch_request
+[Mon Dec 18 16:34:50.977933 2017] [wsgi:error] [pid 25316] [remote 85.26.232.95:25905]     rv = self.dispatch_request()
+[Mon Dec 18 16:34:50.977942 2017] [wsgi:error] [pid 25316] [remote 85.26.232.95:25905]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1598, in dispatch_request
+[Mon Dec 18 16:34:50.977953 2017] [wsgi:error] [pid 25316] [remote 85.26.232.95:25905]     return self.view_functions[rule.endpoint](**req.view_args)
+[Mon Dec 18 16:34:50.977962 2017] [wsgi:error] [pid 25316] [remote 85.26.232.95:25905]   File "/srv/http/virtlabs.tk/forsaje.tk/api.py", line 122, in check_worker
+[Mon Dec 18 16:34:50.977971 2017] [wsgi:error] [pid 25316] [remote 85.26.232.95:25905]     user = Auth.get(login=request.form['login'])
+[Mon Dec 18 16:34:50.977980 2017] [wsgi:error] [pid 25316] [remote 85.26.232.95:25905]   File "<string>", line 2, in get
+[Mon Dec 18 16:34:50.977988 2017] [wsgi:error] [pid 25316] [remote 85.26.232.95:25905]   File "/usr/lib/python3.6/site-packages/pony/utils/utils.py", line 58, in cut_traceback
+[Mon Dec 18 16:34:50.977998 2017] [wsgi:error] [pid 25316] [remote 85.26.232.95:25905]     return func(*args, **kwargs)
+[Mon Dec 18 16:34:50.978092 2017] [wsgi:error] [pid 25316] [remote 85.26.232.95:25905]   File "/usr/lib/python3.6/site-packages/pony/orm/core.py", line 3702, in get
+[Mon Dec 18 16:34:50.978104 2017] [wsgi:error] [pid 25316] [remote 85.26.232.95:25905]     try: return entity._find_one_(kwargs)  # can throw MultipleObjectsFoundError
+[Mon Dec 18 16:34:50.978114 2017] [wsgi:error] [pid 25316] [remote 85.26.232.95:25905]   File "/usr/lib/python3.6/site-packages/pony/orm/core.py", line 3800, in _find_one_
+[Mon Dec 18 16:34:50.978123 2017] [wsgi:error] [pid 25316] [remote 85.26.232.95:25905]     obj, unique = entity._find_in_cache_(pkval, avdict, for_update)
+[Mon Dec 18 16:34:50.978132 2017] [wsgi:error] [pid 25316] [remote 85.26.232.95:25905]   File "/usr/lib/python3.6/site-packages/pony/orm/core.py", line 3805, in _find_in_cache_
+[Mon Dec 18 16:34:50.978141 2017] [wsgi:error] [pid 25316] [remote 85.26.232.95:25905]     cache = entity._database_._get_cache()
+[Mon Dec 18 16:34:50.978150 2017] [wsgi:error] [pid 25316] [remote 85.26.232.95:25905]   File "/usr/lib/python3.6/site-packages/pony/orm/core.py", line 726, in _get_cache
+[Mon Dec 18 16:34:50.978159 2017] [wsgi:error] [pid 25316] [remote 85.26.232.95:25905]     ): throw(TransactionError, 'db_session is required when working with the database')
+[Mon Dec 18 16:34:50.978169 2017] [wsgi:error] [pid 25316] [remote 85.26.232.95:25905]   File "/usr/lib/python3.6/site-packages/pony/utils/utils.py", line 98, in throw
+[Mon Dec 18 16:34:50.978293 2017] [wsgi:error] [pid 25316] [remote 85.26.232.95:25905]     raise exc
+[Mon Dec 18 16:34:50.978315 2017] [wsgi:error] [pid 25316] [remote 85.26.232.95:25905] pony.orm.core.TransactionError: db_session is required when working with the database
+[Mon Dec 18 16:34:50.978418 2017] [wsgi:error] [pid 25316] [remote 85.26.232.95:25905] 
+[Mon Dec 18 16:35:51.384406 2017] [wsgi:error] [pid 25418] [remote 85.26.232.95:47634] [2017-12-18 16:35:51,379] ERROR in app: Exception on /work/check_worker [POST]
+[Mon Dec 18 16:35:51.384575 2017] [wsgi:error] [pid 25418] [remote 85.26.232.95:47634] Traceback (most recent call last):
+[Mon Dec 18 16:35:51.384589 2017] [wsgi:error] [pid 25418] [remote 85.26.232.95:47634]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+[Mon Dec 18 16:35:51.384600 2017] [wsgi:error] [pid 25418] [remote 85.26.232.95:47634]     response = self.full_dispatch_request()
+[Mon Dec 18 16:35:51.384609 2017] [wsgi:error] [pid 25418] [remote 85.26.232.95:47634]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1614, in full_dispatch_request
+[Mon Dec 18 16:35:51.384618 2017] [wsgi:error] [pid 25418] [remote 85.26.232.95:47634]     rv = self.handle_user_exception(e)
+[Mon Dec 18 16:35:51.384627 2017] [wsgi:error] [pid 25418] [remote 85.26.232.95:47634]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1517, in handle_user_exception
+[Mon Dec 18 16:35:51.384637 2017] [wsgi:error] [pid 25418] [remote 85.26.232.95:47634]     reraise(exc_type, exc_value, tb)
+[Mon Dec 18 16:35:51.384645 2017] [wsgi:error] [pid 25418] [remote 85.26.232.95:47634]   File "/usr/lib/python3.6/site-packages/flask/_compat.py", line 33, in reraise
+[Mon Dec 18 16:35:51.384654 2017] [wsgi:error] [pid 25418] [remote 85.26.232.95:47634]     raise value
+[Mon Dec 18 16:35:51.384663 2017] [wsgi:error] [pid 25418] [remote 85.26.232.95:47634]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1612, in full_dispatch_request
+[Mon Dec 18 16:35:51.384672 2017] [wsgi:error] [pid 25418] [remote 85.26.232.95:47634]     rv = self.dispatch_request()
+[Mon Dec 18 16:35:51.384681 2017] [wsgi:error] [pid 25418] [remote 85.26.232.95:47634]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1598, in dispatch_request
+[Mon Dec 18 16:35:51.384692 2017] [wsgi:error] [pid 25418] [remote 85.26.232.95:47634]     return self.view_functions[rule.endpoint](**req.view_args)
+[Mon Dec 18 16:35:51.384701 2017] [wsgi:error] [pid 25418] [remote 85.26.232.95:47634]   File "/srv/http/virtlabs.tk/forsaje.tk/api.py", line 126, in check_worker
+[Mon Dec 18 16:35:51.384794 2017] [wsgi:error] [pid 25418] [remote 85.26.232.95:47634]     return redirect('/work/index?worker_id=' + user.id)
+[Mon Dec 18 16:35:51.384812 2017] [wsgi:error] [pid 25418] [remote 85.26.232.95:47634] TypeError: must be str, not int
+[Mon Dec 18 16:35:51.384999 2017] [wsgi:error] [pid 25418] [remote 85.26.232.95:47634] 

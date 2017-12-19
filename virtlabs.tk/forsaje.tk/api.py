@@ -109,9 +109,23 @@ def application():
 # Worker
 
 @app.route('/work/')
+def auth_check():
+    # if authenticated
+    return redirect('/work/auth')
+
+@app.route('/work/auth')
 def work():
     return render_template('work/auth.html')
-
+    
+@app.route('/work/check_worker', methods=['POST'])
+def check_worker():
+    with db_session:
+        user = Auth.get(login=request.form['login'])
+        if user:
+            if user.password == request.form['password']:
+                return redirect('/work/index?worker_id=' + str(user.id))
+    return redirect('/work/auth')
+    
 @app.route('/work/index')
 def work_index():
     context = {
@@ -119,18 +133,15 @@ def work_index():
     }
     return render_template('work/index_w.html', **context)
     
-@app.route('/work/check_worker')
-def check_worker():
-    #check login
-    id = 1
-    return redirect('/work/index?worker_id=' + id)
-    
 @app.route('/work/zarechny')
 def work_zarechny():
-    context = {
-        'queue': 1,
-        'position': 1
-    }
+    context = dict()
+    with db_session:
+        worker = Worker.get(id=request.args.get('worker_id'))
+        context = {
+            'queue': len(Online.select()),
+            'position': 1
+        }
     return render_template('work/zarechny.html', **context)
     
 @app.route('/work/order_zarechny')

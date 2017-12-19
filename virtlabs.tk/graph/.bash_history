@@ -1,7 +1,4 @@
 nano m_inc.py 
-nano m_inc.py 
-python m_inc.py 1111
-nano m_inc.py 
 python m_inc.py 1111
 nano m_inc.py 
 nano php/m2.php 
@@ -496,5 +493,8 @@ python api.py
 su
 ыг
 su
+su
+su
+ыг
 su
 su
