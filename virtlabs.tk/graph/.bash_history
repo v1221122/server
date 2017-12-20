@@ -1,21 +1,3 @@
-nano m_inc.py 
-python m_inc.py 1111
-nano m_inc.py 
-nano php/m2.php 
-nano php/m2.php 
-nano m_inc.py 
-python m_inc.py 1111
-nano m_inc.py 
-python m_inc.py 1111
-nano m_inc.py 
-python m_inc.py 1111
-nano m_inc.py 
-python m_inc.py 1111
-nano m_inc.py 
-python m_inc.py 1111
-nano m_inc.py 
-python m_inc.py 1111
-nano m_inc.py 
 python m_inc.py 1111
 python m_inc.py 0111
 python m_inc.py 0110
@@ -497,4 +479,22 @@ su
 su
 ыг
 su
+su
+su
+ыг
+01050062
+su
+su
+su
+su
+ыг
+su
+cd ../58koles.tk/
+nano templates/index.html 
+nano api.py 
+su
+nano static/css/style.css 
+nano api.py 
+nano templates/index.html 
+nano static/css/style.css 
 su

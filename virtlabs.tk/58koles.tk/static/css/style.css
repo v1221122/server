@@ -23,6 +23,8 @@ h2{
 }
 .wrapper{
 	margin-left: 15px;
+	word-wrap: break-word;
+    height: auto;
 }
 .line_wrapper{
 	display: table-row;
@@ -31,6 +33,25 @@ h2{
 .list_img{
 	margin-right: 3px;
 	display: table-cell;
+	height: 1em;
+	width: 1em;
+}
+h6{
+	position: fixed;
+	bottom: 0;
+	left: 40vw;
+	right: 40vw;
+	text-align: center;
+	margin: 0;
+}
+#w3c, #ya_metr{
+	position: fixed;
+	right: 1px;
+}
+.inner_img{
+	width: 100%;
+	height: 100%;
+	border: 0;
 }
 @media screen and (min-width:650px){
 	#header{
@@ -69,13 +90,19 @@ h2{
 	}
 	.wrapper{
 		display:inline-block;
-		height:180px;
+		min-height:180px;
 		font-size: 25px;
 		padding: 0;
 	}
-	.list_img{
-		height: 28px;
-		width: 28px;
+	#w3c{
+		width: 88px;
+		height: 31px;
+		bottom: 32px;
+	}
+	#ya_metr{
+		width: 88px;
+		height: 31px;
+		bottom: 1px;
 	}
 }
 @media screen and (max-width: 649px){
@@ -84,43 +111,53 @@ h2{
 		top: 0;
 		left: 0;
 		right: 0;
-		height: 180px;
+		height: 25%;
 		text-align: center;
-		font-size: 40px;
+		font-size: 1.5em;
 		color: #000;
 	}
 	h2{
-		font-size: 47px;
+		font-size: 1em;
 	}
 	#body_div{
 		position: fixed;
-		top: 180px;
-		bottom: 30px;
-		left: 20px;
-		right: 20px;
+		top: 25%;
+		bottom: 10%;
+		left: 5px;
+		right: 5px;
 		padding: 5px;
 	}
 	#footer{
 		position: fixed;
 		left: 0;
 		right: 0;
-		bottom: 30px;
-		height: 30px;
+		bottom: 0;
+		height: 10%;
 		text-align: center;
 	}
 	.img{
-		width:300px;
-		height:225px;
+		width:40vw;
+		height:30vw;
 		float:left;
 	}
 	.wrapper{
-		display:inline-block;
-		height:180px;
-		font-size: 36px;
+		display: inline-block;
+		min-height: 30vw;
 		padding: 0;
+		width: 49vw;
 	}
-	.list_img{
-		height: 42px;
-		width: 42px;
+	h6{
+		height: 15px;
+		font-size: 12px;
+	}
+	#w3c{
+		width: 44px;
+		height: 16px;
+		bottom: 18px;
+	}
+	#ya_metr{
+		width: 44px;
+		height: 16px;
+		bottom: 1px;
 	}
 }

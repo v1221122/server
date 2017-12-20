@@ -56,3 +56,35 @@
 [Mon Dec 18 16:35:51.384794 2017] [wsgi:error] [pid 25418] [remote 85.26.232.95:47634]     return redirect('/work/index?worker_id=' + user.id)
 [Mon Dec 18 16:35:51.384812 2017] [wsgi:error] [pid 25418] [remote 85.26.232.95:47634] TypeError: must be str, not int
 [Mon Dec 18 16:35:51.384999 2017] [wsgi:error] [pid 25418] [remote 85.26.232.95:47634] 
+[Tue Dec 19 14:45:28.253148 2017] [wsgi:error] [pid 2924] (2)No such file or directory: [client 85.26.235.192:3229] mod_wsgi (pid=2924): Unable to connect to WSGI daemon process 'api_forsaje' on '/run/httpd/wsgi.23089.178.1.sock' as user with uid=1002., referer: http://forsaje.tk/
+[Tue Dec 19 16:10:33.967225 2017] [wsgi:error] [pid 3058] [remote 94.181.184.47:10799] [2017-12-19 16:10:33,955] ERROR in app: Exception on /wait [GET]
+[Tue Dec 19 16:10:33.967397 2017] [wsgi:error] [pid 3058] [remote 94.181.184.47:10799] Traceback (most recent call last):
+[Tue Dec 19 16:10:33.967412 2017] [wsgi:error] [pid 3058] [remote 94.181.184.47:10799]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+[Tue Dec 19 16:10:33.967424 2017] [wsgi:error] [pid 3058] [remote 94.181.184.47:10799]     response = self.full_dispatch_request()
+[Tue Dec 19 16:10:33.967434 2017] [wsgi:error] [pid 3058] [remote 94.181.184.47:10799]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1614, in full_dispatch_request
+[Tue Dec 19 16:10:33.967443 2017] [wsgi:error] [pid 3058] [remote 94.181.184.47:10799]     rv = self.handle_user_exception(e)
+[Tue Dec 19 16:10:33.967452 2017] [wsgi:error] [pid 3058] [remote 94.181.184.47:10799]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1517, in handle_user_exception
+[Tue Dec 19 16:10:33.967462 2017] [wsgi:error] [pid 3058] [remote 94.181.184.47:10799]     reraise(exc_type, exc_value, tb)
+[Tue Dec 19 16:10:33.967470 2017] [wsgi:error] [pid 3058] [remote 94.181.184.47:10799]   File "/usr/lib/python3.6/site-packages/flask/_compat.py", line 33, in reraise
+[Tue Dec 19 16:10:33.967480 2017] [wsgi:error] [pid 3058] [remote 94.181.184.47:10799]     raise value
+[Tue Dec 19 16:10:33.967489 2017] [wsgi:error] [pid 3058] [remote 94.181.184.47:10799]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1612, in full_dispatch_request
+[Tue Dec 19 16:10:33.967498 2017] [wsgi:error] [pid 3058] [remote 94.181.184.47:10799]     rv = self.dispatch_request()
+[Tue Dec 19 16:10:33.967507 2017] [wsgi:error] [pid 3058] [remote 94.181.184.47:10799]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1598, in dispatch_request
+[Tue Dec 19 16:10:33.967517 2017] [wsgi:error] [pid 3058] [remote 94.181.184.47:10799]     return self.view_functions[rule.endpoint](**req.view_args)
+[Tue Dec 19 16:10:33.967526 2017] [wsgi:error] [pid 3058] [remote 94.181.184.47:10799]   File "/srv/http/virtlabs.tk/forsaje.tk/api.py", line 55, in wait
+[Tue Dec 19 16:10:33.967535 2017] [wsgi:error] [pid 3058] [remote 94.181.184.47:10799]     order = Taxi_order.get(phone=request.args.get('phone'))
+[Tue Dec 19 16:10:33.967545 2017] [wsgi:error] [pid 3058] [remote 94.181.184.47:10799]   File "<string>", line 2, in get
+[Tue Dec 19 16:10:33.967554 2017] [wsgi:error] [pid 3058] [remote 94.181.184.47:10799]   File "/usr/lib/python3.6/site-packages/pony/utils/utils.py", line 58, in cut_traceback
+[Tue Dec 19 16:10:33.967563 2017] [wsgi:error] [pid 3058] [remote 94.181.184.47:10799]     return func(*args, **kwargs)
+[Tue Dec 19 16:10:33.967572 2017] [wsgi:error] [pid 3058] [remote 94.181.184.47:10799]   File "/usr/lib/python3.6/site-packages/pony/orm/core.py", line 3702, in get
+[Tue Dec 19 16:10:33.967582 2017] [wsgi:error] [pid 3058] [remote 94.181.184.47:10799]     try: return entity._find_one_(kwargs)  # can throw MultipleObjectsFoundError
+[Tue Dec 19 16:10:33.967591 2017] [wsgi:error] [pid 3058] [remote 94.181.184.47:10799]   File "/usr/lib/python3.6/site-packages/pony/orm/core.py", line 3801, in _find_one_
+[Tue Dec 19 16:10:33.967600 2017] [wsgi:error] [pid 3058] [remote 94.181.184.47:10799]     if obj is None: obj = entity._find_in_db_(avdict, unique, for_update, nowait)
+[Tue Dec 19 16:10:33.967698 2017] [wsgi:error] [pid 3058] [remote 94.181.184.47:10799]   File "/usr/lib/python3.6/site-packages/pony/orm/core.py", line 3861, in _find_in_db_
+[Tue Dec 19 16:10:33.967710 2017] [wsgi:error] [pid 3058] [remote 94.181.184.47:10799]     objects = entity._fetch_objects(cursor, attr_offsets, 1, for_update, avdict)
+[Tue Dec 19 16:10:33.967720 2017] [wsgi:error] [pid 3058] [remote 94.181.184.47:10799]   File "/usr/lib/python3.6/site-packages/pony/orm/core.py", line 3980, in _fetch_objects
+[Tue Dec 19 16:10:33.967729 2017] [wsgi:error] [pid 3058] [remote 94.181.184.47:10799]     'Multiple objects were found. Use %s.select(...) to retrieve them' % entity.__name__)
+[Tue Dec 19 16:10:33.967738 2017] [wsgi:error] [pid 3058] [remote 94.181.184.47:10799]   File "/usr/lib/python3.6/site-packages/pony/utils/utils.py", line 98, in throw
+[Tue Dec 19 16:10:33.967747 2017] [wsgi:error] [pid 3058] [remote 94.181.184.47:10799]     raise exc
+[Tue Dec 19 16:10:33.967763 2017] [wsgi:error] [pid 3058] [remote 94.181.184.47:10799] pony.orm.core.MultipleObjectsFoundError: Multiple objects were found. Use Taxi_order.select(...) to retrieve them
+[Tue Dec 19 16:10:33.967832 2017] [wsgi:error] [pid 3058] [remote 94.181.184.47:10799] 

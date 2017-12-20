@@ -22,3 +22,5 @@
 [Tue Dec 12 13:36:32.895666 2017] [wsgi:error] [pid 23110] [remote 141.8.142.75:37090]   File "/srv/http/virtlabs.tk/5koleso.tk/api.wsgi", line 1, in <module>
 [Tue Dec 12 13:36:32.895683 2017] [wsgi:error] [pid 23110] [remote 141.8.142.75:37090]     from api import app as application
 [Tue Dec 12 13:36:32.895736 2017] [wsgi:error] [pid 23110] [remote 141.8.142.75:37090] ModuleNotFoundError: No module named 'api'
+[Tue Dec 19 12:57:57.897479 2017] [wsgi:error] [pid 1196] (2)No such file or directory: [client 85.26.235.192:27738] mod_wsgi (pid=1196): Unable to connect to WSGI daemon process 'api_58' on '/run/httpd/wsgi.23089.154.3.sock' as user with uid=1002.
+[Tue Dec 19 13:05:30.457343 2017] [wsgi:error] [pid 1298] (2)No such file or directory: [client 85.26.235.192:11062] mod_wsgi (pid=1298): Unable to connect to WSGI daemon process 'api_58' on '/run/httpd/wsgi.23089.156.3.sock' as user with uid=1002.

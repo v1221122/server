@@ -9,6 +9,11 @@ from initdb import Worker, Auth, Online, Taxi_order
 
 app = Flask(__name__)
 
+@app.route('/robots.txt')
+def robots():
+    f = os.path.join(app.root_path, 'robots.txt')
+    return send_file(f, as_attachment=False, attachment_filename='robots.txt')
+
 # Passenger
 
 @app.route('/')
