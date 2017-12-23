@@ -29,6 +29,14 @@ body{
 .big_margin{
 	font-size: 120%;
 }
+.small_left_margin{
+	margin-left: 1vw!important;
+	float: none!important;
+}
+.small_right_margin{
+	margin-right: 1vw!important;
+	float: none!important;
+}
 .button{
 	margin-top: calc(50% - 3.5em);
 	font-size: 120%;
@@ -52,14 +60,20 @@ body{
 	text-align: center;
 	font-size: 50%;
 }
+.row{
+	width: 90vw;
+	margin-left: 5vw;
+}
+
+
 
 /* worker */
 .work_block{
 	display: inline-block;
-	margin: 5px;
+	margin: 1vw;
 	padding: auto;
-	width: calc(50vw - 10px);
-	height: calc(50vw - 10px);
+	width: 48vw;
+	height: 48vw;
 	background-color: #555;
 }
 .left{
@@ -67,7 +81,7 @@ body{
 }
 .work_label{
 	display: block;
-	margin-top: calc(23vw);
+	margin-top: 23vw;
 	color: #fff;
 	font-size: 120%;
 }

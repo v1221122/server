@@ -1,19 +1,32 @@
 {% extends "index.html" %}
 {% block body %}
 <form action="commit">
-    <input name="phone" class="input" type="number" placeholder="№ телефона (с 8-й)" style="width:88vw;" />
-    <p class="label">Откуда:</p>
-    <input name="street" class="input" type="text" placeholder="Улица" style="width:55vw; float:right; margin-right:7vw;" /><br>
-    <input name="dom" class="input" type="number" placeholder="Дом" style="width:15vw;" />
-    <input name="korp" class="input" type="number" placeholder="Корпус" style="width:25vw;" />
-    <input name="pod" class="input" type="number" placeholder="Подьезд" style="width:25vw; float:right; margin-right:7vw;" /><br>
-    <input name="comment" class="input" type="text" placeholder="Примечания" style="width:88vw; height:10vh;" /><br>
-    <input name="city" id="city" class="checkbox" type="checkbox" checked /><label class="label" style="margin:0;" for="city" >По городу</label>
-    <input name="recall" id="recall" class="checkbox" type="checkbox" /><label class="label" style="margin:0;" for="recall" >Перезвонить</label>
-    <br><br>
-    <label class="label">Куда: </label>
-    <input name="dest" style="width:60vw" class="input" type="text" />
+    <div style="display:table-row;" class="row">
+        <input name="phone" class="input" type="number" placeholder="№ телефона (с 8-й)" style="width:90vw;" />
+    </div>
+    <div style="display:table-row;" class="row">
+        <p class="label" style="display:table-cell; width:20vw;">Откуда:</p>
+        <input name="street" class="input" type="text" placeholder="Улица" style="width:60vw; float:right; display:table-cell;" />
+    </div>
+    <div style="display:table-row;" class="row">
+        <input name="dom" class="input small_right_margin" type="number" placeholder="Дом" style="width:20vw; float:left;" />
+        <input name="korp" class="input small_left_margin small_right_margin" type="number" placeholder="Корпус" style="width:30vw;" />
+        <input name="pod" class="input small_left_margin" type="number" placeholder="Подьезд" style="width:35vw; float:right;" />
+    </div>
+    <div style="display:table-row;" class="row">
+        <input name="comment" class="input" type="text" placeholder="Примечания" style="width:90vw; height:10vh;" />
+    </div>
+    <div style="display:table-row;" class="row">
+        <input name="city" id="city" class="checkbox small_right_margin" type="checkbox" checked />
+        <label class="label small_left_margin small_right_margin" for="city" >По городу</label>
+        <input name="recall" id="recall" class="checkbox small_right_margin small_left_margin" type="checkbox" />
+        <label class="label small_left_margin" for="recall" >Перезвонить</label>
+    </div>
     <br>
-    <input class="input" style="position:fixed; width:88vw; height:2em; bottom:6vh; left:0;" type="submit" value="Вызвать" />
+    <div style="display:table-row;" class="row">
+        <p class="label" style="display:table-cell; width:20vw;">Куда: </p>
+        <input name="dest" style="width:60vw; float:right;" class="input" type="text" />
+    </div>
+    <input class="input" style="position:fixed; width:90vw; height:2em; bottom:6vh; left:0;" type="submit" value="Вызвать" />
 </form>
 {% endblock %}

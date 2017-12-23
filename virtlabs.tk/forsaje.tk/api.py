@@ -1,13 +1,22 @@
 import time
 import os
 
-from flask import Flask, render_template, redirect, send_file, request
+from flask import (
+                    Flask,
+                    render_template,
+                    redirect,
+                    send_file,
+                    request,
+                    make_response,
+                    session
+)
 from pony.orm import db_session, select, delete
 
 
 from initdb import Worker, Auth, Online, Taxi_order
 
 app = Flask(__name__)
+app.secret_key = '\x8a<\x1fQ\xf1A#:\xb5A\x18\x8b\xcb\x84\xb9\xe8k\xaf1\xb5\xdc\x04x]'
 
 @app.route('/robots.txt')
 def robots():
@@ -111,15 +120,24 @@ def application():
 
 # End passenger
 
+
+
+
+
 # Worker
 
 @app.route('/work/')
 def auth_check():
+    id = 0
+    if 'id' in session:
+        id = session['id']
+    if id:
+        return redirect('/work/index')
     # if authenticated
     return redirect('/work/auth')
 
 @app.route('/work/auth')
-def work():
+def auth():
     return render_template('work/auth.html')
     
 @app.route('/work/check_worker', methods=['POST'])
@@ -128,26 +146,35 @@ def check_worker():
         user = Auth.get(login=request.form['login'])
         if user:
             if user.password == request.form['password']:
-                return redirect('/work/index?worker_id=' + str(user.id))
+                session.permanent = True
+                session['id'] = user.id
+                session.modified = True
+                resp = make_response(redirect('/work/index'))
+                resp.set_cookie('id', bytes(user.id))
+                return resp
     return redirect('/work/auth')
     
 @app.route('/work/index')
 def work_index():
     context = {
-        "worker_id": request.args.get('worker_id')
+        "worker_id": session['id']
     }
     return render_template('work/index_w.html', **context)
     
-@app.route('/work/zarechny')
-def work_zarechny():
+@app.route('/work/part')
+def work_part():
+    const = ['', 'Заречный', 'Пенза'] # Constant for directions  
+    part = int(request.args.get('part'))
     context = dict()
     with db_session:
-        worker = Worker.get(id=request.args.get('worker_id'))
+        worker = Worker.get(id=session['id'])
         context = {
             'queue': len(Online.select()),
-            'position': 1
+            'position': 1,
+            'direction': const[part],
+            'refresh': True
         }
-    return render_template('work/zarechny.html', **context)
+    return render_template('work/orders.html', **context)
     
 @app.route('/work/order_zarechny')
 def order_zarechny():

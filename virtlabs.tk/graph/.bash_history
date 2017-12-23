@@ -1,6 +1,3 @@
-python m_inc.py 1111
-python m_inc.py 0111
-python m_inc.py 0110
 nano m_inc.py 
 python m_inc.py 0110
 nano m_inc.py 
@@ -497,4 +494,7 @@ nano static/css/style.css
 nano api.py 
 nano templates/index.html 
 nano static/css/style.css 
+su
+su
+su
 su
