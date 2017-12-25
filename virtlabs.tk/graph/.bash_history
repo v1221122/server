@@ -1,6 +1,4 @@
 nano m_inc.py 
-python m_inc.py 0110
-nano m_inc.py 
 nano m_inc.py 
 nano php/m2.php 
 nano m_inc.py 
@@ -497,4 +495,6 @@ nano static/css/style.css
 su
 su
 su
+su
+fdisk -l
 su
