@@ -161,6 +161,10 @@ def work_index():
     }
     return render_template('work/index_w.html', **context)
     
+@app.route('/work/queue')
+def queue():
+    return render_template('work/queue.html', part=request.args.get('part'))
+    
 @app.route('/work/part')
 def work_part():
     const = ['', 'Заречный', 'Пенза'] # Constant for directions  
@@ -174,11 +178,6 @@ def work_part():
             'direction': const[part],
             'refresh': True
         }
-    return render_template('work/orders.html', **context)
-    
-@app.route('/work/order_zarechny')
-def order_zarechny():
-    with db_session:
         orders = Taxi_order.select()
         if orders:
             o = list()
@@ -188,15 +187,52 @@ def order_zarechny():
                             'address_from': order.address_from,
                             'address_to': order.address_to,
                             'comment': order.comment
-                        })
-                context = {
-                    'orders': o
-                }
-        else:
-            context = dict()
-    return render_template('work/order_zarechny.html', **context)
-    
+                })
+                context['orders'] = o
+    return render_template('work/orders.html', **context)
 
+@app.route('/work/order')
+def order():
+    context = {
+        'id': request.args.get('id'),
+        'phone': request.args.get('phone'),
+        'address_from': request.args.get('address_from'),
+        'address_to': request.args.get('address_to'),
+        'comment': request.args.get('comment'),
+        'time_list': [3, 5, 10, 15]
+    }
+    return render_template('work/order.html', **context)
+
+@app.route('/work/wait_confirm')
+def wait_confirm():
+    # delete order!!
+    context = {
+        'id': request.args.get('id'),
+        'phone': request.args.get('phone'),
+        'address_from': request.args.get('address_from'),
+        'address_to': request.args.get('address_to'),
+        'comment': request.args.get('comment'),
+        'time': request.form['time']
+    }
+    return render_template('work/wait_confirm.html', **context)
+    
+@app.route('/work/lets_go')
+def lets_go():
+    context = {
+        'id': request.args.get('id'),
+        'phone': request.args.get('phone'),
+        'address_from': request.args.get('address_from'),
+        'address_to': request.args.get('address_to'),
+        'comment': request.args.get('comment'),
+        'time': request.form['time']
+    }
+    return render_template('/work/lets_go', **context)
+
+@app.route('/work/cancel')
+def work_cancel():
+    # delete order!!
+    return redirect('/work/index')
+    
 @app.route('/work/application')
 def application_work():
     f = os.path.join(app.root_path, 'static', 'apk', 'work', 'forsaje_work.apk')

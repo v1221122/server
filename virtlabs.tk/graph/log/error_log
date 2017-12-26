@@ -189,3 +189,9 @@
 [Thu Dec 21 01:34:06.831073 2017] [php7:error] [pid 3616] [client 185.188.207.6:57714] script '/srv/http/virtlabs.tk/graph/xmlrpc.php' not found or unable to stat
 [Fri Dec 22 03:24:01.059064 2017] [php7:error] [pid 3615] [client 176.120.25.160:42921] script '/srv/http/virtlabs.tk/graph/prox_ch.php' not found or unable to stat
 [Fri Dec 22 08:30:53.094237 2017] [php7:error] [pid 3576] [client 177.35.87.58:39185] script '/srv/http/virtlabs.tk/graph/command.php' not found or unable to stat
+[Tue Dec 26 05:54:23.969653 2017] [cgi:error] [pid 6197] [client 201.37.148.6:33263] AH02811: script not found or unable to stat: /srv/http/virtlabs.tk/graph/hndUnblock.cgi
+[Tue Dec 26 05:54:27.550145 2017] [cgi:error] [pid 6198] [client 201.37.148.6:33294] AH02811: script not found or unable to stat: /srv/http/virtlabs.tk/graph/tmUnblock.cgi
+[Tue Dec 26 05:54:38.845007 2017] [php7:error] [pid 8747] [client 201.37.148.6:33399] script '/srv/http/virtlabs.tk/graph/getcfg.php' not found or unable to stat
+[Tue Dec 26 05:54:42.486024 2017] [php7:error] [pid 6195] [client 201.37.148.6:33431] script '/srv/http/virtlabs.tk/graph/getcfg.php' not found or unable to stat
+[Tue Dec 26 09:52:40.826219 2017] [php7:error] [pid 8747] [client 217.106.238.30:34567] script '/srv/http/virtlabs.tk/graph/prox_ch.php' not found or unable to stat
+[Tue Dec 26 14:18:49.029898 2017] [php7:error] [pid 8745] [client 185.188.207.6:35526] script '/srv/http/virtlabs.tk/graph/xmlrpc.php' not found or unable to stat

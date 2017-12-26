@@ -1,7 +1,17 @@
 import time
-from flask import Flask, render_template, redirect
+import os
+
+
+from flask import (
+                Flask,
+                render_template,
+                redirect,
+                send_file
+)
+
 
 app = Flask(__name__)
+
 
 @app.route('/')
 def main():
@@ -22,3 +32,9 @@ def main():
     ]
     stylesheet = "style.css"
     return render_template('index.html', items=items, stylesheet=stylesheet)
+
+
+@app.route('/favicon.ico')
+def robots():
+    f = os.path.join(app.root_path, 'static', 'img', 'favicon32x32.ico')
+    return send_file(f, as_attachment=False, attachment_filename='favicon.ico')

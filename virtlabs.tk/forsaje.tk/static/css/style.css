@@ -71,20 +71,23 @@ body{
 .work_block{
 	display: inline-block;
 	margin: 1vw;
-	padding: auto;
-	width: 48vw;
-	height: 48vw;
+	width: 30vw;
+	height: 30vw;
 	background-color: #555;
 }
 .left{
 	float: left;
 }
+.right{
+	float: right;
+}
 .work_label{
 	display: block;
-	margin-top: 23vw;
+	margin-top: 13vw;
 	color: #fff;
-	font-size: 120%;
+	font-size: 85%;
 }
 .order_div{
 	text-align: left;
+	font-size: 60%;
 }

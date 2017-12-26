@@ -1,0 +1,10 @@
+{% extends "index.html" %}
+{% block body %}
+    <p>{{ address_to }}</p>
+	<p>Время в пути:</p>
+    <p id="timer">{{ time }}</p>
+	<a href="/work/end_order?id={{ order.id }}">
+        <button>На месте</button>
+    </a>
+{% endblock %}
+	

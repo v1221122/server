@@ -2,7 +2,7 @@
 {% block orders %}
     <hr>
     {% for order in orders %}
-        <a>
+        <a href="/work/order?id={{ order.id }}&phone={{ order.phone }}&address_from={{ order.address_from }}&address_to={{ order.address_to }}&comment={{ order.comment }}">
             <div class="order_div">
                 Телефон: {{ order.phone }}<br>
                 Откуда: {{ order.address_from }}<br>

@@ -24,3 +24,327 @@
 [Tue Dec 12 13:36:32.895736 2017] [wsgi:error] [pid 23110] [remote 141.8.142.75:37090] ModuleNotFoundError: No module named 'api'
 [Tue Dec 19 12:57:57.897479 2017] [wsgi:error] [pid 1196] (2)No such file or directory: [client 85.26.235.192:27738] mod_wsgi (pid=1196): Unable to connect to WSGI daemon process 'api_58' on '/run/httpd/wsgi.23089.154.3.sock' as user with uid=1002.
 [Tue Dec 19 13:05:30.457343 2017] [wsgi:error] [pid 1298] (2)No such file or directory: [client 85.26.235.192:11062] mod_wsgi (pid=1298): Unable to connect to WSGI daemon process 'api_58' on '/run/httpd/wsgi.23089.156.3.sock' as user with uid=1002.
+[Mon Dec 25 13:23:14.780636 2017] [wsgi:error] [pid 5610] [remote 83.149.21.196:45761] [2017-12-25 13:23:14,776] ERROR in app: Exception on /favicon.ico [GET]
+[Mon Dec 25 13:23:14.780791 2017] [wsgi:error] [pid 5610] [remote 83.149.21.196:45761] Traceback (most recent call last):
+[Mon Dec 25 13:23:14.780805 2017] [wsgi:error] [pid 5610] [remote 83.149.21.196:45761]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+[Mon Dec 25 13:23:14.780815 2017] [wsgi:error] [pid 5610] [remote 83.149.21.196:45761]     response = self.full_dispatch_request()
+[Mon Dec 25 13:23:14.780825 2017] [wsgi:error] [pid 5610] [remote 83.149.21.196:45761]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1614, in full_dispatch_request
+[Mon Dec 25 13:23:14.780834 2017] [wsgi:error] [pid 5610] [remote 83.149.21.196:45761]     rv = self.handle_user_exception(e)
+[Mon Dec 25 13:23:14.780843 2017] [wsgi:error] [pid 5610] [remote 83.149.21.196:45761]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1517, in handle_user_exception
+[Mon Dec 25 13:23:14.780852 2017] [wsgi:error] [pid 5610] [remote 83.149.21.196:45761]     reraise(exc_type, exc_value, tb)
+[Mon Dec 25 13:23:14.780861 2017] [wsgi:error] [pid 5610] [remote 83.149.21.196:45761]   File "/usr/lib/python3.6/site-packages/flask/_compat.py", line 33, in reraise
+[Mon Dec 25 13:23:14.780870 2017] [wsgi:error] [pid 5610] [remote 83.149.21.196:45761]     raise value
+[Mon Dec 25 13:23:14.780879 2017] [wsgi:error] [pid 5610] [remote 83.149.21.196:45761]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1612, in full_dispatch_request
+[Mon Dec 25 13:23:14.780888 2017] [wsgi:error] [pid 5610] [remote 83.149.21.196:45761]     rv = self.dispatch_request()
+[Mon Dec 25 13:23:14.780897 2017] [wsgi:error] [pid 5610] [remote 83.149.21.196:45761]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1598, in dispatch_request
+[Mon Dec 25 13:23:14.780906 2017] [wsgi:error] [pid 5610] [remote 83.149.21.196:45761]     return self.view_functions[rule.endpoint](**req.view_args)
+[Mon Dec 25 13:23:14.780916 2017] [wsgi:error] [pid 5610] [remote 83.149.21.196:45761]   File "/srv/http/virtlabs.tk/58koles.tk/api.py", line 28, in robots
+[Mon Dec 25 13:23:14.780925 2017] [wsgi:error] [pid 5610] [remote 83.149.21.196:45761]     f = os.path.join(app.root_path, 'static', 'img', 'favicon.jpg')
+[Mon Dec 25 13:23:14.780940 2017] [wsgi:error] [pid 5610] [remote 83.149.21.196:45761] NameError: name 'os' is not defined
+[Mon Dec 25 13:23:14.780996 2017] [wsgi:error] [pid 5610] [remote 83.149.21.196:45761] 
+[Mon Dec 25 13:28:44.346896 2017] [wsgi:error] [pid 5673] [remote 83.149.21.196:14491] [2017-12-25 13:28:44,342] ERROR in app: Exception on /favicon.ico [GET]
+[Mon Dec 25 13:28:44.347046 2017] [wsgi:error] [pid 5673] [remote 83.149.21.196:14491] Traceback (most recent call last):
+[Mon Dec 25 13:28:44.347066 2017] [wsgi:error] [pid 5673] [remote 83.149.21.196:14491]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+[Mon Dec 25 13:28:44.347077 2017] [wsgi:error] [pid 5673] [remote 83.149.21.196:14491]     response = self.full_dispatch_request()
+[Mon Dec 25 13:28:44.347086 2017] [wsgi:error] [pid 5673] [remote 83.149.21.196:14491]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1614, in full_dispatch_request
+[Mon Dec 25 13:28:44.347096 2017] [wsgi:error] [pid 5673] [remote 83.149.21.196:14491]     rv = self.handle_user_exception(e)
+[Mon Dec 25 13:28:44.347104 2017] [wsgi:error] [pid 5673] [remote 83.149.21.196:14491]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1517, in handle_user_exception
+[Mon Dec 25 13:28:44.347114 2017] [wsgi:error] [pid 5673] [remote 83.149.21.196:14491]     reraise(exc_type, exc_value, tb)
+[Mon Dec 25 13:28:44.347122 2017] [wsgi:error] [pid 5673] [remote 83.149.21.196:14491]   File "/usr/lib/python3.6/site-packages/flask/_compat.py", line 33, in reraise
+[Mon Dec 25 13:28:44.347231 2017] [wsgi:error] [pid 5673] [remote 83.149.21.196:14491]     raise value
+[Mon Dec 25 13:28:44.347243 2017] [wsgi:error] [pid 5673] [remote 83.149.21.196:14491]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1612, in full_dispatch_request
+[Mon Dec 25 13:28:44.347253 2017] [wsgi:error] [pid 5673] [remote 83.149.21.196:14491]     rv = self.dispatch_request()
+[Mon Dec 25 13:28:44.347261 2017] [wsgi:error] [pid 5673] [remote 83.149.21.196:14491]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1598, in dispatch_request
+[Mon Dec 25 13:28:44.347271 2017] [wsgi:error] [pid 5673] [remote 83.149.21.196:14491]     return self.view_functions[rule.endpoint](**req.view_args)
+[Mon Dec 25 13:28:44.347279 2017] [wsgi:error] [pid 5673] [remote 83.149.21.196:14491]   File "/srv/http/virtlabs.tk/58koles.tk/api.py", line 28, in robots
+[Mon Dec 25 13:28:44.347288 2017] [wsgi:error] [pid 5673] [remote 83.149.21.196:14491]     f = os.path.join(app.root_path, 'static', 'img', 'favicon.ico')
+[Mon Dec 25 13:28:44.347306 2017] [wsgi:error] [pid 5673] [remote 83.149.21.196:14491] NameError: name 'os' is not defined
+[Mon Dec 25 13:28:44.347381 2017] [wsgi:error] [pid 5673] [remote 83.149.21.196:14491] 
+[Mon Dec 25 13:28:48.094903 2017] [wsgi:error] [pid 5673] [remote 83.149.21.196:38354] [2017-12-25 13:28:48,093] ERROR in app: Exception on /favicon.ico [GET]
+[Mon Dec 25 13:28:48.097341 2017] [wsgi:error] [pid 5673] [remote 83.149.21.196:38354] Traceback (most recent call last):
+[Mon Dec 25 13:28:48.097382 2017] [wsgi:error] [pid 5673] [remote 83.149.21.196:38354]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+[Mon Dec 25 13:28:48.097393 2017] [wsgi:error] [pid 5673] [remote 83.149.21.196:38354]     response = self.full_dispatch_request()
+[Mon Dec 25 13:28:48.097403 2017] [wsgi:error] [pid 5673] [remote 83.149.21.196:38354]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1614, in full_dispatch_request
+[Mon Dec 25 13:28:48.097412 2017] [wsgi:error] [pid 5673] [remote 83.149.21.196:38354]     rv = self.handle_user_exception(e)
+[Mon Dec 25 13:28:48.097421 2017] [wsgi:error] [pid 5673] [remote 83.149.21.196:38354]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1517, in handle_user_exception
+[Mon Dec 25 13:28:48.097430 2017] [wsgi:error] [pid 5673] [remote 83.149.21.196:38354]     reraise(exc_type, exc_value, tb)
+[Mon Dec 25 13:28:48.097439 2017] [wsgi:error] [pid 5673] [remote 83.149.21.196:38354]   File "/usr/lib/python3.6/site-packages/flask/_compat.py", line 33, in reraise
+[Mon Dec 25 13:28:48.097448 2017] [wsgi:error] [pid 5673] [remote 83.149.21.196:38354]     raise value
+[Mon Dec 25 13:28:48.097456 2017] [wsgi:error] [pid 5673] [remote 83.149.21.196:38354]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1612, in full_dispatch_request
+[Mon Dec 25 13:28:48.097465 2017] [wsgi:error] [pid 5673] [remote 83.149.21.196:38354]     rv = self.dispatch_request()
+[Mon Dec 25 13:28:48.097474 2017] [wsgi:error] [pid 5673] [remote 83.149.21.196:38354]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1598, in dispatch_request
+[Mon Dec 25 13:28:48.097483 2017] [wsgi:error] [pid 5673] [remote 83.149.21.196:38354]     return self.view_functions[rule.endpoint](**req.view_args)
+[Mon Dec 25 13:28:48.097491 2017] [wsgi:error] [pid 5673] [remote 83.149.21.196:38354]   File "/srv/http/virtlabs.tk/58koles.tk/api.py", line 28, in robots
+[Mon Dec 25 13:28:48.097500 2017] [wsgi:error] [pid 5673] [remote 83.149.21.196:38354]     f = os.path.join(app.root_path, 'static', 'img', 'favicon.ico')
+[Mon Dec 25 13:28:48.097528 2017] [wsgi:error] [pid 5673] [remote 83.149.21.196:38354] NameError: name 'os' is not defined
+[Mon Dec 25 13:28:48.097674 2017] [wsgi:error] [pid 5673] [remote 83.149.21.196:38354] 
+[Mon Dec 25 13:28:54.808587 2017] [wsgi:error] [pid 5673] [remote 83.149.21.196:35256] [2017-12-25 13:28:54,806] ERROR in app: Exception on /favicon.ico [GET]
+[Mon Dec 25 13:28:54.808709 2017] [wsgi:error] [pid 5673] [remote 83.149.21.196:35256] Traceback (most recent call last):
+[Mon Dec 25 13:28:54.809045 2017] [wsgi:error] [pid 5673] [remote 83.149.21.196:35256]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+[Mon Dec 25 13:28:54.809069 2017] [wsgi:error] [pid 5673] [remote 83.149.21.196:35256]     response = self.full_dispatch_request()
+[Mon Dec 25 13:28:54.809079 2017] [wsgi:error] [pid 5673] [remote 83.149.21.196:35256]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1614, in full_dispatch_request
+[Mon Dec 25 13:28:54.809088 2017] [wsgi:error] [pid 5673] [remote 83.149.21.196:35256]     rv = self.handle_user_exception(e)
+[Mon Dec 25 13:28:54.809097 2017] [wsgi:error] [pid 5673] [remote 83.149.21.196:35256]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1517, in handle_user_exception
+[Mon Dec 25 13:28:54.809106 2017] [wsgi:error] [pid 5673] [remote 83.149.21.196:35256]     reraise(exc_type, exc_value, tb)
+[Mon Dec 25 13:28:54.809115 2017] [wsgi:error] [pid 5673] [remote 83.149.21.196:35256]   File "/usr/lib/python3.6/site-packages/flask/_compat.py", line 33, in reraise
+[Mon Dec 25 13:28:54.809124 2017] [wsgi:error] [pid 5673] [remote 83.149.21.196:35256]     raise value
+[Mon Dec 25 13:28:54.809133 2017] [wsgi:error] [pid 5673] [remote 83.149.21.196:35256]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1612, in full_dispatch_request
+[Mon Dec 25 13:28:54.809142 2017] [wsgi:error] [pid 5673] [remote 83.149.21.196:35256]     rv = self.dispatch_request()
+[Mon Dec 25 13:28:54.809150 2017] [wsgi:error] [pid 5673] [remote 83.149.21.196:35256]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1598, in dispatch_request
+[Mon Dec 25 13:28:54.809160 2017] [wsgi:error] [pid 5673] [remote 83.149.21.196:35256]     return self.view_functions[rule.endpoint](**req.view_args)
+[Mon Dec 25 13:28:54.809169 2017] [wsgi:error] [pid 5673] [remote 83.149.21.196:35256]   File "/srv/http/virtlabs.tk/58koles.tk/api.py", line 28, in robots
+[Mon Dec 25 13:28:54.809177 2017] [wsgi:error] [pid 5673] [remote 83.149.21.196:35256]     f = os.path.join(app.root_path, 'static', 'img', 'favicon.ico')
+[Mon Dec 25 13:28:54.809198 2017] [wsgi:error] [pid 5673] [remote 83.149.21.196:35256] NameError: name 'os' is not defined
+[Mon Dec 25 13:28:54.809305 2017] [wsgi:error] [pid 5673] [remote 83.149.21.196:35256] 
+[Mon Dec 25 13:29:07.055695 2017] [wsgi:error] [pid 5673] [remote 83.149.21.196:57028] [2017-12-25 13:29:07,054] ERROR in app: Exception on /favicon.ico [GET]
+[Mon Dec 25 13:29:07.055829 2017] [wsgi:error] [pid 5673] [remote 83.149.21.196:57028] Traceback (most recent call last):
+[Mon Dec 25 13:29:07.055842 2017] [wsgi:error] [pid 5673] [remote 83.149.21.196:57028]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+[Mon Dec 25 13:29:07.055854 2017] [wsgi:error] [pid 5673] [remote 83.149.21.196:57028]     response = self.full_dispatch_request()
+[Mon Dec 25 13:29:07.055863 2017] [wsgi:error] [pid 5673] [remote 83.149.21.196:57028]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1614, in full_dispatch_request
+[Mon Dec 25 13:29:07.055873 2017] [wsgi:error] [pid 5673] [remote 83.149.21.196:57028]     rv = self.handle_user_exception(e)
+[Mon Dec 25 13:29:07.055882 2017] [wsgi:error] [pid 5673] [remote 83.149.21.196:57028]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1517, in handle_user_exception
+[Mon Dec 25 13:29:07.055892 2017] [wsgi:error] [pid 5673] [remote 83.149.21.196:57028]     reraise(exc_type, exc_value, tb)
+[Mon Dec 25 13:29:07.055901 2017] [wsgi:error] [pid 5673] [remote 83.149.21.196:57028]   File "/usr/lib/python3.6/site-packages/flask/_compat.py", line 33, in reraise
+[Mon Dec 25 13:29:07.055910 2017] [wsgi:error] [pid 5673] [remote 83.149.21.196:57028]     raise value
+[Mon Dec 25 13:29:07.055919 2017] [wsgi:error] [pid 5673] [remote 83.149.21.196:57028]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1612, in full_dispatch_request
+[Mon Dec 25 13:29:07.055928 2017] [wsgi:error] [pid 5673] [remote 83.149.21.196:57028]     rv = self.dispatch_request()
+[Mon Dec 25 13:29:07.056016 2017] [wsgi:error] [pid 5673] [remote 83.149.21.196:57028]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1598, in dispatch_request
+[Mon Dec 25 13:29:07.056029 2017] [wsgi:error] [pid 5673] [remote 83.149.21.196:57028]     return self.view_functions[rule.endpoint](**req.view_args)
+[Mon Dec 25 13:29:07.056038 2017] [wsgi:error] [pid 5673] [remote 83.149.21.196:57028]   File "/srv/http/virtlabs.tk/58koles.tk/api.py", line 28, in robots
+[Mon Dec 25 13:29:07.056048 2017] [wsgi:error] [pid 5673] [remote 83.149.21.196:57028]     f = os.path.join(app.root_path, 'static', 'img', 'favicon.ico')
+[Mon Dec 25 13:29:07.056063 2017] [wsgi:error] [pid 5673] [remote 83.149.21.196:57028] NameError: name 'os' is not defined
+[Mon Dec 25 13:29:07.056120 2017] [wsgi:error] [pid 5673] [remote 83.149.21.196:57028] 
+[Mon Dec 25 13:29:29.695104 2017] [wsgi:error] [pid 5673] [remote 83.149.21.196:5882] [2017-12-25 13:29:29,694] ERROR in app: Exception on /favicon.ico [GET]
+[Mon Dec 25 13:29:29.695212 2017] [wsgi:error] [pid 5673] [remote 83.149.21.196:5882] Traceback (most recent call last):
+[Mon Dec 25 13:29:29.695224 2017] [wsgi:error] [pid 5673] [remote 83.149.21.196:5882]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+[Mon Dec 25 13:29:29.695235 2017] [wsgi:error] [pid 5673] [remote 83.149.21.196:5882]     response = self.full_dispatch_request()
+[Mon Dec 25 13:29:29.695244 2017] [wsgi:error] [pid 5673] [remote 83.149.21.196:5882]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1614, in full_dispatch_request
+[Mon Dec 25 13:29:29.695253 2017] [wsgi:error] [pid 5673] [remote 83.149.21.196:5882]     rv = self.handle_user_exception(e)
+[Mon Dec 25 13:29:29.695262 2017] [wsgi:error] [pid 5673] [remote 83.149.21.196:5882]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1517, in handle_user_exception
+[Mon Dec 25 13:29:29.695271 2017] [wsgi:error] [pid 5673] [remote 83.149.21.196:5882]     reraise(exc_type, exc_value, tb)
+[Mon Dec 25 13:29:29.695280 2017] [wsgi:error] [pid 5673] [remote 83.149.21.196:5882]   File "/usr/lib/python3.6/site-packages/flask/_compat.py", line 33, in reraise
+[Mon Dec 25 13:29:29.695289 2017] [wsgi:error] [pid 5673] [remote 83.149.21.196:5882]     raise value
+[Mon Dec 25 13:29:29.695297 2017] [wsgi:error] [pid 5673] [remote 83.149.21.196:5882]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1612, in full_dispatch_request
+[Mon Dec 25 13:29:29.695306 2017] [wsgi:error] [pid 5673] [remote 83.149.21.196:5882]     rv = self.dispatch_request()
+[Mon Dec 25 13:29:29.695315 2017] [wsgi:error] [pid 5673] [remote 83.149.21.196:5882]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1598, in dispatch_request
+[Mon Dec 25 13:29:29.695324 2017] [wsgi:error] [pid 5673] [remote 83.149.21.196:5882]     return self.view_functions[rule.endpoint](**req.view_args)
+[Mon Dec 25 13:29:29.695333 2017] [wsgi:error] [pid 5673] [remote 83.149.21.196:5882]   File "/srv/http/virtlabs.tk/58koles.tk/api.py", line 28, in robots
+[Mon Dec 25 13:29:29.695342 2017] [wsgi:error] [pid 5673] [remote 83.149.21.196:5882]     f = os.path.join(app.root_path, 'static', 'img', 'favicon.ico')
+[Mon Dec 25 13:29:29.695356 2017] [wsgi:error] [pid 5673] [remote 83.149.21.196:5882] NameError: name 'os' is not defined
+[Mon Dec 25 13:29:29.695401 2017] [wsgi:error] [pid 5673] [remote 83.149.21.196:5882] 
+[Mon Dec 25 13:29:33.407733 2017] [wsgi:error] [pid 5673] [remote 83.149.21.196:32666] [2017-12-25 13:29:33,406] ERROR in app: Exception on /favicon.ico [GET]
+[Mon Dec 25 13:29:33.407835 2017] [wsgi:error] [pid 5673] [remote 83.149.21.196:32666] Traceback (most recent call last):
+[Mon Dec 25 13:29:33.407848 2017] [wsgi:error] [pid 5673] [remote 83.149.21.196:32666]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+[Mon Dec 25 13:29:33.407859 2017] [wsgi:error] [pid 5673] [remote 83.149.21.196:32666]     response = self.full_dispatch_request()
+[Mon Dec 25 13:29:33.407869 2017] [wsgi:error] [pid 5673] [remote 83.149.21.196:32666]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1614, in full_dispatch_request
+[Mon Dec 25 13:29:33.407970 2017] [wsgi:error] [pid 5673] [remote 83.149.21.196:32666]     rv = self.handle_user_exception(e)
+[Mon Dec 25 13:29:33.407982 2017] [wsgi:error] [pid 5673] [remote 83.149.21.196:32666]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1517, in handle_user_exception
+[Mon Dec 25 13:29:33.407992 2017] [wsgi:error] [pid 5673] [remote 83.149.21.196:32666]     reraise(exc_type, exc_value, tb)
+[Mon Dec 25 13:29:33.408001 2017] [wsgi:error] [pid 5673] [remote 83.149.21.196:32666]   File "/usr/lib/python3.6/site-packages/flask/_compat.py", line 33, in reraise
+[Mon Dec 25 13:29:33.408010 2017] [wsgi:error] [pid 5673] [remote 83.149.21.196:32666]     raise value
+[Mon Dec 25 13:29:33.408019 2017] [wsgi:error] [pid 5673] [remote 83.149.21.196:32666]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1612, in full_dispatch_request
+[Mon Dec 25 13:29:33.408028 2017] [wsgi:error] [pid 5673] [remote 83.149.21.196:32666]     rv = self.dispatch_request()
+[Mon Dec 25 13:29:33.408037 2017] [wsgi:error] [pid 5673] [remote 83.149.21.196:32666]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1598, in dispatch_request
+[Mon Dec 25 13:29:33.408046 2017] [wsgi:error] [pid 5673] [remote 83.149.21.196:32666]     return self.view_functions[rule.endpoint](**req.view_args)
+[Mon Dec 25 13:29:33.408055 2017] [wsgi:error] [pid 5673] [remote 83.149.21.196:32666]   File "/srv/http/virtlabs.tk/58koles.tk/api.py", line 28, in robots
+[Mon Dec 25 13:29:33.408064 2017] [wsgi:error] [pid 5673] [remote 83.149.21.196:32666]     f = os.path.join(app.root_path, 'static', 'img', 'favicon.ico')
+[Mon Dec 25 13:29:33.408078 2017] [wsgi:error] [pid 5673] [remote 83.149.21.196:32666] NameError: name 'os' is not defined
+[Mon Dec 25 13:29:33.408130 2017] [wsgi:error] [pid 5673] [remote 83.149.21.196:32666] 
+[Mon Dec 25 13:29:40.251987 2017] [wsgi:error] [pid 5719] [remote 83.149.21.196:26024] [2017-12-25 13:29:40,247] ERROR in app: Exception on /favicon.ico [GET]
+[Mon Dec 25 13:29:40.252252 2017] [wsgi:error] [pid 5719] [remote 83.149.21.196:26024] Traceback (most recent call last):
+[Mon Dec 25 13:29:40.252270 2017] [wsgi:error] [pid 5719] [remote 83.149.21.196:26024]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+[Mon Dec 25 13:29:40.252282 2017] [wsgi:error] [pid 5719] [remote 83.149.21.196:26024]     response = self.full_dispatch_request()
+[Mon Dec 25 13:29:40.252291 2017] [wsgi:error] [pid 5719] [remote 83.149.21.196:26024]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1614, in full_dispatch_request
+[Mon Dec 25 13:29:40.252301 2017] [wsgi:error] [pid 5719] [remote 83.149.21.196:26024]     rv = self.handle_user_exception(e)
+[Mon Dec 25 13:29:40.252310 2017] [wsgi:error] [pid 5719] [remote 83.149.21.196:26024]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1517, in handle_user_exception
+[Mon Dec 25 13:29:40.252320 2017] [wsgi:error] [pid 5719] [remote 83.149.21.196:26024]     reraise(exc_type, exc_value, tb)
+[Mon Dec 25 13:29:40.252329 2017] [wsgi:error] [pid 5719] [remote 83.149.21.196:26024]   File "/usr/lib/python3.6/site-packages/flask/_compat.py", line 33, in reraise
+[Mon Dec 25 13:29:40.252338 2017] [wsgi:error] [pid 5719] [remote 83.149.21.196:26024]     raise value
+[Mon Dec 25 13:29:40.252347 2017] [wsgi:error] [pid 5719] [remote 83.149.21.196:26024]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1612, in full_dispatch_request
+[Mon Dec 25 13:29:40.252356 2017] [wsgi:error] [pid 5719] [remote 83.149.21.196:26024]     rv = self.dispatch_request()
+[Mon Dec 25 13:29:40.252365 2017] [wsgi:error] [pid 5719] [remote 83.149.21.196:26024]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1598, in dispatch_request
+[Mon Dec 25 13:29:40.252374 2017] [wsgi:error] [pid 5719] [remote 83.149.21.196:26024]     return self.view_functions[rule.endpoint](**req.view_args)
+[Mon Dec 25 13:29:40.252384 2017] [wsgi:error] [pid 5719] [remote 83.149.21.196:26024]   File "/srv/http/virtlabs.tk/58koles.tk/api.py", line 28, in robots
+[Mon Dec 25 13:29:40.252469 2017] [wsgi:error] [pid 5719] [remote 83.149.21.196:26024]     f = os.path.join(app.root_path, 'static', 'img', 'favicon.ico')
+[Mon Dec 25 13:29:40.252490 2017] [wsgi:error] [pid 5719] [remote 83.149.21.196:26024] NameError: name 'os' is not defined
+[Mon Dec 25 13:29:40.252581 2017] [wsgi:error] [pid 5719] [remote 83.149.21.196:26024] 
+[Mon Dec 25 13:29:42.295041 2017] [wsgi:error] [pid 5719] [remote 83.149.21.196:48497] [2017-12-25 13:29:42,294] ERROR in app: Exception on /favicon.ico [GET]
+[Mon Dec 25 13:29:42.295137 2017] [wsgi:error] [pid 5719] [remote 83.149.21.196:48497] Traceback (most recent call last):
+[Mon Dec 25 13:29:42.295148 2017] [wsgi:error] [pid 5719] [remote 83.149.21.196:48497]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+[Mon Dec 25 13:29:42.295158 2017] [wsgi:error] [pid 5719] [remote 83.149.21.196:48497]     response = self.full_dispatch_request()
+[Mon Dec 25 13:29:42.295167 2017] [wsgi:error] [pid 5719] [remote 83.149.21.196:48497]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1614, in full_dispatch_request
+[Mon Dec 25 13:29:42.295177 2017] [wsgi:error] [pid 5719] [remote 83.149.21.196:48497]     rv = self.handle_user_exception(e)
+[Mon Dec 25 13:29:42.295185 2017] [wsgi:error] [pid 5719] [remote 83.149.21.196:48497]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1517, in handle_user_exception
+[Mon Dec 25 13:29:42.295194 2017] [wsgi:error] [pid 5719] [remote 83.149.21.196:48497]     reraise(exc_type, exc_value, tb)
+[Mon Dec 25 13:29:42.295203 2017] [wsgi:error] [pid 5719] [remote 83.149.21.196:48497]   File "/usr/lib/python3.6/site-packages/flask/_compat.py", line 33, in reraise
+[Mon Dec 25 13:29:42.295212 2017] [wsgi:error] [pid 5719] [remote 83.149.21.196:48497]     raise value
+[Mon Dec 25 13:29:42.295221 2017] [wsgi:error] [pid 5719] [remote 83.149.21.196:48497]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1612, in full_dispatch_request
+[Mon Dec 25 13:29:42.295230 2017] [wsgi:error] [pid 5719] [remote 83.149.21.196:48497]     rv = self.dispatch_request()
+[Mon Dec 25 13:29:42.295238 2017] [wsgi:error] [pid 5719] [remote 83.149.21.196:48497]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1598, in dispatch_request
+[Mon Dec 25 13:29:42.295247 2017] [wsgi:error] [pid 5719] [remote 83.149.21.196:48497]     return self.view_functions[rule.endpoint](**req.view_args)
+[Mon Dec 25 13:29:42.295256 2017] [wsgi:error] [pid 5719] [remote 83.149.21.196:48497]   File "/srv/http/virtlabs.tk/58koles.tk/api.py", line 28, in robots
+[Mon Dec 25 13:29:42.295265 2017] [wsgi:error] [pid 5719] [remote 83.149.21.196:48497]     f = os.path.join(app.root_path, 'static', 'img', 'favicon.ico')
+[Mon Dec 25 13:29:42.295279 2017] [wsgi:error] [pid 5719] [remote 83.149.21.196:48497] NameError: name 'os' is not defined
+[Mon Dec 25 13:29:42.295324 2017] [wsgi:error] [pid 5719] [remote 83.149.21.196:48497] 
+[Mon Dec 25 13:29:44.246572 2017] [wsgi:error] [pid 5719] [remote 83.149.21.196:44235] [2017-12-25 13:29:44,245] ERROR in app: Exception on /favicon.ico [GET]
+[Mon Dec 25 13:29:44.247631 2017] [wsgi:error] [pid 5719] [remote 83.149.21.196:44235] Traceback (most recent call last):
+[Mon Dec 25 13:29:44.247665 2017] [wsgi:error] [pid 5719] [remote 83.149.21.196:44235]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+[Mon Dec 25 13:29:44.247675 2017] [wsgi:error] [pid 5719] [remote 83.149.21.196:44235]     response = self.full_dispatch_request()
+[Mon Dec 25 13:29:44.247685 2017] [wsgi:error] [pid 5719] [remote 83.149.21.196:44235]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1614, in full_dispatch_request
+[Mon Dec 25 13:29:44.247694 2017] [wsgi:error] [pid 5719] [remote 83.149.21.196:44235]     rv = self.handle_user_exception(e)
+[Mon Dec 25 13:29:44.247703 2017] [wsgi:error] [pid 5719] [remote 83.149.21.196:44235]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1517, in handle_user_exception
+[Mon Dec 25 13:29:44.247755 2017] [wsgi:error] [pid 5719] [remote 83.149.21.196:44235]     reraise(exc_type, exc_value, tb)
+[Mon Dec 25 13:29:44.247766 2017] [wsgi:error] [pid 5719] [remote 83.149.21.196:44235]   File "/usr/lib/python3.6/site-packages/flask/_compat.py", line 33, in reraise
+[Mon Dec 25 13:29:44.247776 2017] [wsgi:error] [pid 5719] [remote 83.149.21.196:44235]     raise value
+[Mon Dec 25 13:29:44.247785 2017] [wsgi:error] [pid 5719] [remote 83.149.21.196:44235]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1612, in full_dispatch_request
+[Mon Dec 25 13:29:44.247794 2017] [wsgi:error] [pid 5719] [remote 83.149.21.196:44235]     rv = self.dispatch_request()
+[Mon Dec 25 13:29:44.247803 2017] [wsgi:error] [pid 5719] [remote 83.149.21.196:44235]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1598, in dispatch_request
+[Mon Dec 25 13:29:44.247812 2017] [wsgi:error] [pid 5719] [remote 83.149.21.196:44235]     return self.view_functions[rule.endpoint](**req.view_args)
+[Mon Dec 25 13:29:44.247821 2017] [wsgi:error] [pid 5719] [remote 83.149.21.196:44235]   File "/srv/http/virtlabs.tk/58koles.tk/api.py", line 28, in robots
+[Mon Dec 25 13:29:44.247830 2017] [wsgi:error] [pid 5719] [remote 83.149.21.196:44235]     f = os.path.join(app.root_path, 'static', 'img', 'favicon.ico')
+[Mon Dec 25 13:29:44.247856 2017] [wsgi:error] [pid 5719] [remote 83.149.21.196:44235] NameError: name 'os' is not defined
+[Mon Dec 25 13:29:44.247996 2017] [wsgi:error] [pid 5719] [remote 83.149.21.196:44235] 
+[Mon Dec 25 13:29:52.500471 2017] [wsgi:error] [pid 5719] [remote 83.149.21.196:8318] [2017-12-25 13:29:52,499] ERROR in app: Exception on /favicon.ico [GET]
+[Mon Dec 25 13:29:52.500575 2017] [wsgi:error] [pid 5719] [remote 83.149.21.196:8318] Traceback (most recent call last):
+[Mon Dec 25 13:29:52.500588 2017] [wsgi:error] [pid 5719] [remote 83.149.21.196:8318]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+[Mon Dec 25 13:29:52.500598 2017] [wsgi:error] [pid 5719] [remote 83.149.21.196:8318]     response = self.full_dispatch_request()
+[Mon Dec 25 13:29:52.500607 2017] [wsgi:error] [pid 5719] [remote 83.149.21.196:8318]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1614, in full_dispatch_request
+[Mon Dec 25 13:29:52.500616 2017] [wsgi:error] [pid 5719] [remote 83.149.21.196:8318]     rv = self.handle_user_exception(e)
+[Mon Dec 25 13:29:52.500625 2017] [wsgi:error] [pid 5719] [remote 83.149.21.196:8318]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1517, in handle_user_exception
+[Mon Dec 25 13:29:52.500634 2017] [wsgi:error] [pid 5719] [remote 83.149.21.196:8318]     reraise(exc_type, exc_value, tb)
+[Mon Dec 25 13:29:52.500643 2017] [wsgi:error] [pid 5719] [remote 83.149.21.196:8318]   File "/usr/lib/python3.6/site-packages/flask/_compat.py", line 33, in reraise
+[Mon Dec 25 13:29:52.500652 2017] [wsgi:error] [pid 5719] [remote 83.149.21.196:8318]     raise value
+[Mon Dec 25 13:29:52.500661 2017] [wsgi:error] [pid 5719] [remote 83.149.21.196:8318]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1612, in full_dispatch_request
+[Mon Dec 25 13:29:52.500670 2017] [wsgi:error] [pid 5719] [remote 83.149.21.196:8318]     rv = self.dispatch_request()
+[Mon Dec 25 13:29:52.500679 2017] [wsgi:error] [pid 5719] [remote 83.149.21.196:8318]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1598, in dispatch_request
+[Mon Dec 25 13:29:52.500688 2017] [wsgi:error] [pid 5719] [remote 83.149.21.196:8318]     return self.view_functions[rule.endpoint](**req.view_args)
+[Mon Dec 25 13:29:52.500697 2017] [wsgi:error] [pid 5719] [remote 83.149.21.196:8318]   File "/srv/http/virtlabs.tk/58koles.tk/api.py", line 28, in robots
+[Mon Dec 25 13:29:52.500706 2017] [wsgi:error] [pid 5719] [remote 83.149.21.196:8318]     f = os.path.join(app.root_path, 'static', 'img', 'favicon.ico')
+[Mon Dec 25 13:29:52.500719 2017] [wsgi:error] [pid 5719] [remote 83.149.21.196:8318] NameError: name 'os' is not defined
+[Mon Dec 25 13:29:52.500766 2017] [wsgi:error] [pid 5719] [remote 83.149.21.196:8318] 
+[Mon Dec 25 13:31:32.020577 2017] [wsgi:error] [pid 5766] [remote 83.149.21.196:46483] [2017-12-25 13:31:32,016] ERROR in app: Exception on /favicon.ico [GET]
+[Mon Dec 25 13:31:32.020726 2017] [wsgi:error] [pid 5766] [remote 83.149.21.196:46483] Traceback (most recent call last):
+[Mon Dec 25 13:31:32.020744 2017] [wsgi:error] [pid 5766] [remote 83.149.21.196:46483]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+[Mon Dec 25 13:31:32.020756 2017] [wsgi:error] [pid 5766] [remote 83.149.21.196:46483]     response = self.full_dispatch_request()
+[Mon Dec 25 13:31:32.020766 2017] [wsgi:error] [pid 5766] [remote 83.149.21.196:46483]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1614, in full_dispatch_request
+[Mon Dec 25 13:31:32.020776 2017] [wsgi:error] [pid 5766] [remote 83.149.21.196:46483]     rv = self.handle_user_exception(e)
+[Mon Dec 25 13:31:32.020785 2017] [wsgi:error] [pid 5766] [remote 83.149.21.196:46483]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1517, in handle_user_exception
+[Mon Dec 25 13:31:32.020794 2017] [wsgi:error] [pid 5766] [remote 83.149.21.196:46483]     reraise(exc_type, exc_value, tb)
+[Mon Dec 25 13:31:32.020803 2017] [wsgi:error] [pid 5766] [remote 83.149.21.196:46483]   File "/usr/lib/python3.6/site-packages/flask/_compat.py", line 33, in reraise
+[Mon Dec 25 13:31:32.020813 2017] [wsgi:error] [pid 5766] [remote 83.149.21.196:46483]     raise value
+[Mon Dec 25 13:31:32.020821 2017] [wsgi:error] [pid 5766] [remote 83.149.21.196:46483]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1612, in full_dispatch_request
+[Mon Dec 25 13:31:32.020830 2017] [wsgi:error] [pid 5766] [remote 83.149.21.196:46483]     rv = self.dispatch_request()
+[Mon Dec 25 13:31:32.020839 2017] [wsgi:error] [pid 5766] [remote 83.149.21.196:46483]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1598, in dispatch_request
+[Mon Dec 25 13:31:32.020849 2017] [wsgi:error] [pid 5766] [remote 83.149.21.196:46483]     return self.view_functions[rule.endpoint](**req.view_args)
+[Mon Dec 25 13:31:32.020858 2017] [wsgi:error] [pid 5766] [remote 83.149.21.196:46483]   File "/srv/http/virtlabs.tk/58koles.tk/api.py", line 28, in robots
+[Mon Dec 25 13:31:32.020867 2017] [wsgi:error] [pid 5766] [remote 83.149.21.196:46483]     f = os.path.join(app.root_path, 'static', 'img', 'favicon16x16.ico')
+[Mon Dec 25 13:31:32.020883 2017] [wsgi:error] [pid 5766] [remote 83.149.21.196:46483] NameError: name 'os' is not defined
+[Mon Dec 25 13:31:32.020939 2017] [wsgi:error] [pid 5766] [remote 83.149.21.196:46483] 
+[Mon Dec 25 13:31:46.546811 2017] [wsgi:error] [pid 5766] [remote 83.149.21.196:53333] [2017-12-25 13:31:46,545] ERROR in app: Exception on /favicon.ico [GET]
+[Mon Dec 25 13:31:46.546934 2017] [wsgi:error] [pid 5766] [remote 83.149.21.196:53333] Traceback (most recent call last):
+[Mon Dec 25 13:31:46.546947 2017] [wsgi:error] [pid 5766] [remote 83.149.21.196:53333]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+[Mon Dec 25 13:31:46.546957 2017] [wsgi:error] [pid 5766] [remote 83.149.21.196:53333]     response = self.full_dispatch_request()
+[Mon Dec 25 13:31:46.546967 2017] [wsgi:error] [pid 5766] [remote 83.149.21.196:53333]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1614, in full_dispatch_request
+[Mon Dec 25 13:31:46.546976 2017] [wsgi:error] [pid 5766] [remote 83.149.21.196:53333]     rv = self.handle_user_exception(e)
+[Mon Dec 25 13:31:46.546985 2017] [wsgi:error] [pid 5766] [remote 83.149.21.196:53333]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1517, in handle_user_exception
+[Mon Dec 25 13:31:46.546994 2017] [wsgi:error] [pid 5766] [remote 83.149.21.196:53333]     reraise(exc_type, exc_value, tb)
+[Mon Dec 25 13:31:46.547003 2017] [wsgi:error] [pid 5766] [remote 83.149.21.196:53333]   File "/usr/lib/python3.6/site-packages/flask/_compat.py", line 33, in reraise
+[Mon Dec 25 13:31:46.547012 2017] [wsgi:error] [pid 5766] [remote 83.149.21.196:53333]     raise value
+[Mon Dec 25 13:31:46.547097 2017] [wsgi:error] [pid 5766] [remote 83.149.21.196:53333]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1612, in full_dispatch_request
+[Mon Dec 25 13:31:46.547109 2017] [wsgi:error] [pid 5766] [remote 83.149.21.196:53333]     rv = self.dispatch_request()
+[Mon Dec 25 13:31:46.547118 2017] [wsgi:error] [pid 5766] [remote 83.149.21.196:53333]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1598, in dispatch_request
+[Mon Dec 25 13:31:46.547127 2017] [wsgi:error] [pid 5766] [remote 83.149.21.196:53333]     return self.view_functions[rule.endpoint](**req.view_args)
+[Mon Dec 25 13:31:46.547136 2017] [wsgi:error] [pid 5766] [remote 83.149.21.196:53333]   File "/srv/http/virtlabs.tk/58koles.tk/api.py", line 28, in robots
+[Mon Dec 25 13:31:46.547145 2017] [wsgi:error] [pid 5766] [remote 83.149.21.196:53333]     f = os.path.join(app.root_path, 'static', 'img', 'favicon16x16.ico')
+[Mon Dec 25 13:31:46.547160 2017] [wsgi:error] [pid 5766] [remote 83.149.21.196:53333] NameError: name 'os' is not defined
+[Mon Dec 25 13:31:46.547217 2017] [wsgi:error] [pid 5766] [remote 83.149.21.196:53333] 
+[Mon Dec 25 13:33:03.096136 2017] [wsgi:error] [pid 5766] [remote 83.149.21.196:20923] [2017-12-25 13:33:03,095] ERROR in app: Exception on /favicon.ico [GET]
+[Mon Dec 25 13:33:03.096245 2017] [wsgi:error] [pid 5766] [remote 83.149.21.196:20923] Traceback (most recent call last):
+[Mon Dec 25 13:33:03.096258 2017] [wsgi:error] [pid 5766] [remote 83.149.21.196:20923]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+[Mon Dec 25 13:33:03.096269 2017] [wsgi:error] [pid 5766] [remote 83.149.21.196:20923]     response = self.full_dispatch_request()
+[Mon Dec 25 13:33:03.096277 2017] [wsgi:error] [pid 5766] [remote 83.149.21.196:20923]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1614, in full_dispatch_request
+[Mon Dec 25 13:33:03.096287 2017] [wsgi:error] [pid 5766] [remote 83.149.21.196:20923]     rv = self.handle_user_exception(e)
+[Mon Dec 25 13:33:03.096295 2017] [wsgi:error] [pid 5766] [remote 83.149.21.196:20923]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1517, in handle_user_exception
+[Mon Dec 25 13:33:03.096305 2017] [wsgi:error] [pid 5766] [remote 83.149.21.196:20923]     reraise(exc_type, exc_value, tb)
+[Mon Dec 25 13:33:03.096314 2017] [wsgi:error] [pid 5766] [remote 83.149.21.196:20923]   File "/usr/lib/python3.6/site-packages/flask/_compat.py", line 33, in reraise
+[Mon Dec 25 13:33:03.096323 2017] [wsgi:error] [pid 5766] [remote 83.149.21.196:20923]     raise value
+[Mon Dec 25 13:33:03.096331 2017] [wsgi:error] [pid 5766] [remote 83.149.21.196:20923]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1612, in full_dispatch_request
+[Mon Dec 25 13:33:03.096340 2017] [wsgi:error] [pid 5766] [remote 83.149.21.196:20923]     rv = self.dispatch_request()
+[Mon Dec 25 13:33:03.096349 2017] [wsgi:error] [pid 5766] [remote 83.149.21.196:20923]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1598, in dispatch_request
+[Mon Dec 25 13:33:03.096358 2017] [wsgi:error] [pid 5766] [remote 83.149.21.196:20923]     return self.view_functions[rule.endpoint](**req.view_args)
+[Mon Dec 25 13:33:03.096367 2017] [wsgi:error] [pid 5766] [remote 83.149.21.196:20923]   File "/srv/http/virtlabs.tk/58koles.tk/api.py", line 28, in robots
+[Mon Dec 25 13:33:03.096376 2017] [wsgi:error] [pid 5766] [remote 83.149.21.196:20923]     f = os.path.join(app.root_path, 'static', 'img', 'favicon16x16.ico')
+[Mon Dec 25 13:33:03.096391 2017] [wsgi:error] [pid 5766] [remote 83.149.21.196:20923] NameError: name 'os' is not defined
+[Mon Dec 25 13:33:03.096438 2017] [wsgi:error] [pid 5766] [remote 83.149.21.196:20923] 
+[Mon Dec 25 13:34:23.654785 2017] [wsgi:error] [pid 5766] [remote 83.149.21.196:39478] [2017-12-25 13:34:23,653] ERROR in app: Exception on /favicon.ico [GET]
+[Mon Dec 25 13:34:23.654890 2017] [wsgi:error] [pid 5766] [remote 83.149.21.196:39478] Traceback (most recent call last):
+[Mon Dec 25 13:34:23.654903 2017] [wsgi:error] [pid 5766] [remote 83.149.21.196:39478]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+[Mon Dec 25 13:34:23.655004 2017] [wsgi:error] [pid 5766] [remote 83.149.21.196:39478]     response = self.full_dispatch_request()
+[Mon Dec 25 13:34:23.655016 2017] [wsgi:error] [pid 5766] [remote 83.149.21.196:39478]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1614, in full_dispatch_request
+[Mon Dec 25 13:34:23.655026 2017] [wsgi:error] [pid 5766] [remote 83.149.21.196:39478]     rv = self.handle_user_exception(e)
+[Mon Dec 25 13:34:23.655034 2017] [wsgi:error] [pid 5766] [remote 83.149.21.196:39478]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1517, in handle_user_exception
+[Mon Dec 25 13:34:23.655043 2017] [wsgi:error] [pid 5766] [remote 83.149.21.196:39478]     reraise(exc_type, exc_value, tb)
+[Mon Dec 25 13:34:23.655052 2017] [wsgi:error] [pid 5766] [remote 83.149.21.196:39478]   File "/usr/lib/python3.6/site-packages/flask/_compat.py", line 33, in reraise
+[Mon Dec 25 13:34:23.655060 2017] [wsgi:error] [pid 5766] [remote 83.149.21.196:39478]     raise value
+[Mon Dec 25 13:34:23.655068 2017] [wsgi:error] [pid 5766] [remote 83.149.21.196:39478]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1612, in full_dispatch_request
+[Mon Dec 25 13:34:23.655077 2017] [wsgi:error] [pid 5766] [remote 83.149.21.196:39478]     rv = self.dispatch_request()
+[Mon Dec 25 13:34:23.655086 2017] [wsgi:error] [pid 5766] [remote 83.149.21.196:39478]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1598, in dispatch_request
+[Mon Dec 25 13:34:23.655095 2017] [wsgi:error] [pid 5766] [remote 83.149.21.196:39478]     return self.view_functions[rule.endpoint](**req.view_args)
+[Mon Dec 25 13:34:23.655104 2017] [wsgi:error] [pid 5766] [remote 83.149.21.196:39478]   File "/srv/http/virtlabs.tk/58koles.tk/api.py", line 28, in robots
+[Mon Dec 25 13:34:23.655112 2017] [wsgi:error] [pid 5766] [remote 83.149.21.196:39478]     f = os.path.join(app.root_path, 'static', 'img', 'favicon16x16.ico')
+[Mon Dec 25 13:34:23.655127 2017] [wsgi:error] [pid 5766] [remote 83.149.21.196:39478] NameError: name 'os' is not defined
+[Mon Dec 25 13:34:23.655178 2017] [wsgi:error] [pid 5766] [remote 83.149.21.196:39478] 
+[Mon Dec 25 13:34:46.766854 2017] [wsgi:error] [pid 5766] [remote 83.149.21.196:52365] [2017-12-25 13:34:46,765] ERROR in app: Exception on /favicon.ico [GET]
+[Mon Dec 25 13:34:46.766959 2017] [wsgi:error] [pid 5766] [remote 83.149.21.196:52365] Traceback (most recent call last):
+[Mon Dec 25 13:34:46.766986 2017] [wsgi:error] [pid 5766] [remote 83.149.21.196:52365]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+[Mon Dec 25 13:34:46.766998 2017] [wsgi:error] [pid 5766] [remote 83.149.21.196:52365]     response = self.full_dispatch_request()
+[Mon Dec 25 13:34:46.767007 2017] [wsgi:error] [pid 5766] [remote 83.149.21.196:52365]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1614, in full_dispatch_request
+[Mon Dec 25 13:34:46.767017 2017] [wsgi:error] [pid 5766] [remote 83.149.21.196:52365]     rv = self.handle_user_exception(e)
+[Mon Dec 25 13:34:46.767025 2017] [wsgi:error] [pid 5766] [remote 83.149.21.196:52365]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1517, in handle_user_exception
+[Mon Dec 25 13:34:46.767034 2017] [wsgi:error] [pid 5766] [remote 83.149.21.196:52365]     reraise(exc_type, exc_value, tb)
+[Mon Dec 25 13:34:46.767043 2017] [wsgi:error] [pid 5766] [remote 83.149.21.196:52365]   File "/usr/lib/python3.6/site-packages/flask/_compat.py", line 33, in reraise
+[Mon Dec 25 13:34:46.767052 2017] [wsgi:error] [pid 5766] [remote 83.149.21.196:52365]     raise value
+[Mon Dec 25 13:34:46.767060 2017] [wsgi:error] [pid 5766] [remote 83.149.21.196:52365]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1612, in full_dispatch_request
+[Mon Dec 25 13:34:46.767070 2017] [wsgi:error] [pid 5766] [remote 83.149.21.196:52365]     rv = self.dispatch_request()
+[Mon Dec 25 13:34:46.767078 2017] [wsgi:error] [pid 5766] [remote 83.149.21.196:52365]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1598, in dispatch_request
+[Mon Dec 25 13:34:46.767165 2017] [wsgi:error] [pid 5766] [remote 83.149.21.196:52365]     return self.view_functions[rule.endpoint](**req.view_args)
+[Mon Dec 25 13:34:46.767177 2017] [wsgi:error] [pid 5766] [remote 83.149.21.196:52365]   File "/srv/http/virtlabs.tk/58koles.tk/api.py", line 28, in robots
+[Mon Dec 25 13:34:46.767186 2017] [wsgi:error] [pid 5766] [remote 83.149.21.196:52365]     f = os.path.join(app.root_path, 'static', 'img', 'favicon16x16.ico')
+[Mon Dec 25 13:34:46.767201 2017] [wsgi:error] [pid 5766] [remote 83.149.21.196:52365] NameError: name 'os' is not defined
+[Mon Dec 25 13:34:46.767254 2017] [wsgi:error] [pid 5766] [remote 83.149.21.196:52365] 
+[Mon Dec 25 13:35:49.268733 2017] [wsgi:error] [pid 5827] [remote 83.149.21.196:28452] [2017-12-25 13:35:49,264] ERROR in app: Exception on /favicon.ico [GET]
+[Mon Dec 25 13:35:49.268993 2017] [wsgi:error] [pid 5827] [remote 83.149.21.196:28452] Traceback (most recent call last):
+[Mon Dec 25 13:35:49.269007 2017] [wsgi:error] [pid 5827] [remote 83.149.21.196:28452]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+[Mon Dec 25 13:35:49.269018 2017] [wsgi:error] [pid 5827] [remote 83.149.21.196:28452]     response = self.full_dispatch_request()
+[Mon Dec 25 13:35:49.269028 2017] [wsgi:error] [pid 5827] [remote 83.149.21.196:28452]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1614, in full_dispatch_request
+[Mon Dec 25 13:35:49.269037 2017] [wsgi:error] [pid 5827] [remote 83.149.21.196:28452]     rv = self.handle_user_exception(e)
+[Mon Dec 25 13:35:49.269046 2017] [wsgi:error] [pid 5827] [remote 83.149.21.196:28452]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1517, in handle_user_exception
+[Mon Dec 25 13:35:49.269055 2017] [wsgi:error] [pid 5827] [remote 83.149.21.196:28452]     reraise(exc_type, exc_value, tb)
+[Mon Dec 25 13:35:49.269064 2017] [wsgi:error] [pid 5827] [remote 83.149.21.196:28452]   File "/usr/lib/python3.6/site-packages/flask/_compat.py", line 33, in reraise
+[Mon Dec 25 13:35:49.269073 2017] [wsgi:error] [pid 5827] [remote 83.149.21.196:28452]     raise value
+[Mon Dec 25 13:35:49.269081 2017] [wsgi:error] [pid 5827] [remote 83.149.21.196:28452]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1612, in full_dispatch_request
+[Mon Dec 25 13:35:49.269090 2017] [wsgi:error] [pid 5827] [remote 83.149.21.196:28452]     rv = self.dispatch_request()
+[Mon Dec 25 13:35:49.269099 2017] [wsgi:error] [pid 5827] [remote 83.149.21.196:28452]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1598, in dispatch_request
+[Mon Dec 25 13:35:49.269108 2017] [wsgi:error] [pid 5827] [remote 83.149.21.196:28452]     return self.view_functions[rule.endpoint](**req.view_args)
+[Mon Dec 25 13:35:49.269117 2017] [wsgi:error] [pid 5827] [remote 83.149.21.196:28452]   File "/srv/http/virtlabs.tk/58koles.tk/api.py", line 31, in robots
+[Mon Dec 25 13:35:49.269126 2017] [wsgi:error] [pid 5827] [remote 83.149.21.196:28452]     return send_file(f, as_attachment=False, attachment_filename='favicon.ico')
+[Mon Dec 25 13:35:49.269143 2017] [wsgi:error] [pid 5827] [remote 83.149.21.196:28452] NameError: name 'send_file' is not defined
+[Mon Dec 25 13:35:49.269220 2017] [wsgi:error] [pid 5827] [remote 83.149.21.196:28452] 
+[Mon Dec 25 13:35:52.456008 2017] [wsgi:error] [pid 5827] [remote 83.149.21.196:47013] [2017-12-25 13:35:52,454] ERROR in app: Exception on /favicon.ico [GET]
+[Mon Dec 25 13:35:52.456112 2017] [wsgi:error] [pid 5827] [remote 83.149.21.196:47013] Traceback (most recent call last):
+[Mon Dec 25 13:35:52.456125 2017] [wsgi:error] [pid 5827] [remote 83.149.21.196:47013]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+[Mon Dec 25 13:35:52.456136 2017] [wsgi:error] [pid 5827] [remote 83.149.21.196:47013]     response = self.full_dispatch_request()
+[Mon Dec 25 13:35:52.456145 2017] [wsgi:error] [pid 5827] [remote 83.149.21.196:47013]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1614, in full_dispatch_request
+[Mon Dec 25 13:35:52.456286 2017] [wsgi:error] [pid 5827] [remote 83.149.21.196:47013]     rv = self.handle_user_exception(e)
+[Mon Dec 25 13:35:52.456299 2017] [wsgi:error] [pid 5827] [remote 83.149.21.196:47013]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1517, in handle_user_exception
+[Mon Dec 25 13:35:52.456308 2017] [wsgi:error] [pid 5827] [remote 83.149.21.196:47013]     reraise(exc_type, exc_value, tb)
+[Mon Dec 25 13:35:52.456317 2017] [wsgi:error] [pid 5827] [remote 83.149.21.196:47013]   File "/usr/lib/python3.6/site-packages/flask/_compat.py", line 33, in reraise
+[Mon Dec 25 13:35:52.456326 2017] [wsgi:error] [pid 5827] [remote 83.149.21.196:47013]     raise value
+[Mon Dec 25 13:35:52.456334 2017] [wsgi:error] [pid 5827] [remote 83.149.21.196:47013]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1612, in full_dispatch_request
+[Mon Dec 25 13:35:52.456344 2017] [wsgi:error] [pid 5827] [remote 83.149.21.196:47013]     rv = self.dispatch_request()
+[Mon Dec 25 13:35:52.456352 2017] [wsgi:error] [pid 5827] [remote 83.149.21.196:47013]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1598, in dispatch_request
+[Mon Dec 25 13:35:52.456361 2017] [wsgi:error] [pid 5827] [remote 83.149.21.196:47013]     return self.view_functions[rule.endpoint](**req.view_args)
+[Mon Dec 25 13:35:52.456370 2017] [wsgi:error] [pid 5827] [remote 83.149.21.196:47013]   File "/srv/http/virtlabs.tk/58koles.tk/api.py", line 31, in robots
+[Mon Dec 25 13:35:52.456379 2017] [wsgi:error] [pid 5827] [remote 83.149.21.196:47013]     return send_file(f, as_attachment=False, attachment_filename='favicon.ico')
+[Mon Dec 25 13:35:52.456395 2017] [wsgi:error] [pid 5827] [remote 83.149.21.196:47013] NameError: name 'send_file' is not defined
+[Mon Dec 25 13:35:52.456452 2017] [wsgi:error] [pid 5827] [remote 83.149.21.196:47013] 

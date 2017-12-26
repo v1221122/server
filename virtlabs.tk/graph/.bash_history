@@ -1,14 +1,3 @@
-nano m_inc.py 
-nano m_inc.py 
-nano php/m2.php 
-nano m_inc.py 
-nano m_inc.py 
-nano php/check.php 
-nano php/check.php
-nano php/check.php
-nano php/check.php
-python convert_sm.py 3
-nano php/check.php
 nano convert_sm.py 
 python convert_sm.py 3
 python convert_sm.py 
@@ -497,4 +486,15 @@ su
 su
 su
 fdisk -l
+su
+cd ../forsaje.tk/
+cd ../58koles.tk/
+nano templates/index.html 
+su
+su
+cd ../58koles.tk/
+nano templates/index.html 
+nano templates/index.html 
+cd ../forsaje.tk/
+cat log/error-log | tail
 su
