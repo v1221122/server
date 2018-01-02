@@ -196,3 +196,4 @@
 [Tue Dec 26 09:52:40.826219 2017] [php7:error] [pid 8747] [client 217.106.238.30:34567] script '/srv/http/virtlabs.tk/graph/prox_ch.php' not found or unable to stat
 [Tue Dec 26 14:18:49.029898 2017] [php7:error] [pid 8745] [client 185.188.207.6:35526] script '/srv/http/virtlabs.tk/graph/xmlrpc.php' not found or unable to stat
 [Mon Jan 01 03:13:37.209297 2018] [php7:error] [pid 6196] [client 191.189.219.168:50170] script '/srv/http/virtlabs.tk/graph/command.php' not found or unable to stat
+[Tue Jan 02 09:55:13.390382 2018] [php7:error] [pid 6231] [client 83.217.8.122:56960] script '/srv/http/virtlabs.tk/graph/prox_ch.php' not found or unable to stat
