@@ -110,7 +110,7 @@ def wait_page():
 def cancel():
     with db_session:
         if request.args.get('id'):
-            Taxi_order.get(request.args.get('id')).delete()
+            Taxi_order.get(id=request.args.get('id')).delete()
     return redirect('/')
 
 @app.route('/application')

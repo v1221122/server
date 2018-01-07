@@ -1,24 +1,5 @@
 nano convert_sm.py 
 python convert_sm.py 3
-python convert_sm.py 
-nano convert_sm.py 
-python convert_sm.py 
-nano php/check.php
-nano convert_sm.py
-cat m_inc.py > convert_sm.py 
-nano convert_sm.py 
-nano php/check.php
-nano convert_sm.py 
-nano convert_sm.py 
-nano php/check.php
-nano php/check.php
-python convert_sm.py 0100
-nano convert_sm.py 
-python convert_sm.py 0100
-nano convert_sm.py 
-python convert_sm.py 3
-nano convert_sm.py 
-python convert_sm.py 3
 python convert_sm.py 3 3
 nano php/check.php
 nano convert_sm.py 
@@ -497,4 +478,23 @@ nano templates/index.html
 nano templates/index.html 
 cd ../forsaje.tk/
 cat log/error-log | tail
+su
+cat log/error-log | tail
+cat log/error-log | tail
+su
+cat log/error-log | tail
+psql -U alex_forsaje
+nano api.py 
+nano templates/wait_page.html 
+nano templates/wait.html 
+nano api.py 
+y
+su 
+su
+cd ~/../forsaje.tk/
+cat log/error-log | tail
+psql -u alex_forsaje
+psql -U alex_forsaje
+cat log/error-log | tail
+nano api.py 
 su

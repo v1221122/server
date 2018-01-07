@@ -15,9 +15,10 @@
 /srv/http/virtlabs.tk/5koleso.tk/api.py 4 1
 /srv/http/virtlabs.tk/5koleso.tk/log/error-log 138 130
 /srv/http/virtlabs.tk/5koleso.tk/api.wsgi 2 1
-/srv/http/virtlabs.tk/forsaje.tk/api.py 56 1
 /srv/http/virtlabs.tk/graph/.bash_history 467 1
 /srv/http/virtlabs.tk/forsaje.tk/static/css/style.css 23 22
 /srv/http/virtlabs.tk/58koles.tk/api.py 14 15
 /srv/http/virtlabs.tk/58koles.tk/static/css/style.css 145 13
 /srv/http/virtlabs.tk/58koles.tk/templates/index.html 6 67
+/srv/http/virtlabs.tk/forsaje.tk/templates/wait.html 9 49
+/srv/http/virtlabs.tk/forsaje.tk/api.py 79 17
