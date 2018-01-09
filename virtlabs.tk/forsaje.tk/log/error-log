@@ -176,3 +176,34 @@
 [Sat Jan 06 17:50:35.994461 2018] [wsgi:error] [pid 924] [remote 94.181.154.87:45492]     raise exc
 [Sat Jan 06 17:50:35.994476 2018] [wsgi:error] [pid 924] [remote 94.181.154.87:45492] pony.orm.core.MultipleObjectsFoundError: Multiple objects were found. Use Taxi_order.select(...) to retrieve them
 [Sat Jan 06 17:50:35.994536 2018] [wsgi:error] [pid 924] [remote 94.181.154.87:45492] 
+[Tue Jan 09 11:02:47.721883 2018] [wsgi:error] [pid 1677] [remote 217.118.90.190:61799] [2018-01-09 11:02:47,710] ERROR in app: Exception on /wait [GET]
+[Tue Jan 09 11:02:47.722064 2018] [wsgi:error] [pid 1677] [remote 217.118.90.190:61799] Traceback (most recent call last):
+[Tue Jan 09 11:02:47.722078 2018] [wsgi:error] [pid 1677] [remote 217.118.90.190:61799]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+[Tue Jan 09 11:02:47.722090 2018] [wsgi:error] [pid 1677] [remote 217.118.90.190:61799]     response = self.full_dispatch_request()
+[Tue Jan 09 11:02:47.722100 2018] [wsgi:error] [pid 1677] [remote 217.118.90.190:61799]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1614, in full_dispatch_request
+[Tue Jan 09 11:02:47.722111 2018] [wsgi:error] [pid 1677] [remote 217.118.90.190:61799]     rv = self.handle_user_exception(e)
+[Tue Jan 09 11:02:47.722120 2018] [wsgi:error] [pid 1677] [remote 217.118.90.190:61799]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1517, in handle_user_exception
+[Tue Jan 09 11:02:47.722130 2018] [wsgi:error] [pid 1677] [remote 217.118.90.190:61799]     reraise(exc_type, exc_value, tb)
+[Tue Jan 09 11:02:47.722139 2018] [wsgi:error] [pid 1677] [remote 217.118.90.190:61799]   File "/usr/lib/python3.6/site-packages/flask/_compat.py", line 33, in reraise
+[Tue Jan 09 11:02:47.722148 2018] [wsgi:error] [pid 1677] [remote 217.118.90.190:61799]     raise value
+[Tue Jan 09 11:02:47.722157 2018] [wsgi:error] [pid 1677] [remote 217.118.90.190:61799]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1612, in full_dispatch_request
+[Tue Jan 09 11:02:47.722167 2018] [wsgi:error] [pid 1677] [remote 217.118.90.190:61799]     rv = self.dispatch_request()
+[Tue Jan 09 11:02:47.722176 2018] [wsgi:error] [pid 1677] [remote 217.118.90.190:61799]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1598, in dispatch_request
+[Tue Jan 09 11:02:47.722186 2018] [wsgi:error] [pid 1677] [remote 217.118.90.190:61799]     return self.view_functions[rule.endpoint](**req.view_args)
+[Tue Jan 09 11:02:47.722196 2018] [wsgi:error] [pid 1677] [remote 217.118.90.190:61799]   File "/srv/http/virtlabs.tk/forsaje.tk/api.py", line 64, in wait
+[Tue Jan 09 11:02:47.722205 2018] [wsgi:error] [pid 1677] [remote 217.118.90.190:61799]     order = Taxi_order.get(phone=request.args.get('phone'))
+[Tue Jan 09 11:02:47.722215 2018] [wsgi:error] [pid 1677] [remote 217.118.90.190:61799]   File "<string>", line 2, in get
+[Tue Jan 09 11:02:47.722224 2018] [wsgi:error] [pid 1677] [remote 217.118.90.190:61799]   File "/usr/lib/python3.6/site-packages/pony/utils/utils.py", line 58, in cut_traceback
+[Tue Jan 09 11:02:47.722313 2018] [wsgi:error] [pid 1677] [remote 217.118.90.190:61799]     return func(*args, **kwargs)
+[Tue Jan 09 11:02:47.722325 2018] [wsgi:error] [pid 1677] [remote 217.118.90.190:61799]   File "/usr/lib/python3.6/site-packages/pony/orm/core.py", line 3702, in get
+[Tue Jan 09 11:02:47.722334 2018] [wsgi:error] [pid 1677] [remote 217.118.90.190:61799]     try: return entity._find_one_(kwargs)  # can throw MultipleObjectsFoundError
+[Tue Jan 09 11:02:47.722343 2018] [wsgi:error] [pid 1677] [remote 217.118.90.190:61799]   File "/usr/lib/python3.6/site-packages/pony/orm/core.py", line 3801, in _find_one_
+[Tue Jan 09 11:02:47.722353 2018] [wsgi:error] [pid 1677] [remote 217.118.90.190:61799]     if obj is None: obj = entity._find_in_db_(avdict, unique, for_update, nowait)
+[Tue Jan 09 11:02:47.722362 2018] [wsgi:error] [pid 1677] [remote 217.118.90.190:61799]   File "/usr/lib/python3.6/site-packages/pony/orm/core.py", line 3861, in _find_in_db_
+[Tue Jan 09 11:02:47.722371 2018] [wsgi:error] [pid 1677] [remote 217.118.90.190:61799]     objects = entity._fetch_objects(cursor, attr_offsets, 1, for_update, avdict)
+[Tue Jan 09 11:02:47.722381 2018] [wsgi:error] [pid 1677] [remote 217.118.90.190:61799]   File "/usr/lib/python3.6/site-packages/pony/orm/core.py", line 3980, in _fetch_objects
+[Tue Jan 09 11:02:47.722390 2018] [wsgi:error] [pid 1677] [remote 217.118.90.190:61799]     'Multiple objects were found. Use %s.select(...) to retrieve them' % entity.__name__)
+[Tue Jan 09 11:02:47.722399 2018] [wsgi:error] [pid 1677] [remote 217.118.90.190:61799]   File "/usr/lib/python3.6/site-packages/pony/utils/utils.py", line 98, in throw
+[Tue Jan 09 11:02:47.722408 2018] [wsgi:error] [pid 1677] [remote 217.118.90.190:61799]     raise exc
+[Tue Jan 09 11:02:47.722425 2018] [wsgi:error] [pid 1677] [remote 217.118.90.190:61799] pony.orm.core.MultipleObjectsFoundError: Multiple objects were found. Use Taxi_order.select(...) to retrieve them
+[Tue Jan 09 11:02:47.722495 2018] [wsgi:error] [pid 1677] [remote 217.118.90.190:61799] 
