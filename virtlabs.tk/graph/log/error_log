@@ -205,3 +205,7 @@
 [Tue Jan 09 08:54:54.125099 2018] [php7:error] [pid 1683] [client 179.158.97.8:45901] script '/srv/http/virtlabs.tk/graph/command.php' not found or unable to stat
 [Tue Jan 09 15:58:57.857686 2018] [negotiation:error] [pid 1682] [client 62.210.152.47:59586] AH00690: no acceptable variant: /usr/share/httpd/error/HTTP_NOT_FOUND.html.var
 [Wed Jan 10 22:45:24.832058 2018] [negotiation:error] [pid 1682] [client 62.210.152.47:42258] AH00690: no acceptable variant: /usr/share/httpd/error/HTTP_NOT_FOUND.html.var
+[Sat Jan 13 04:41:04.079687 2018] [cgi:error] [pid 1707] [client 177.33.81.56:48241] AH02811: script not found or unable to stat: /srv/http/virtlabs.tk/graph/hndUnblock.cgi
+[Sat Jan 13 04:41:07.640394 2018] [cgi:error] [pid 21310] [client 177.33.81.56:48247] AH02811: script not found or unable to stat: /srv/http/virtlabs.tk/graph/tmUnblock.cgi
+[Sat Jan 13 04:41:18.739929 2018] [php7:error] [pid 1682] [client 177.33.81.56:48250] script '/srv/http/virtlabs.tk/graph/getcfg.php' not found or unable to stat
+[Sat Jan 13 04:41:22.357138 2018] [php7:error] [pid 31187] [client 177.33.81.56:48251] script '/srv/http/virtlabs.tk/graph/getcfg.php' not found or unable to stat
