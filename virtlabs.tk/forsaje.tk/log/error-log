@@ -207,3 +207,166 @@
 [Tue Jan 09 11:02:47.722408 2018] [wsgi:error] [pid 1677] [remote 217.118.90.190:61799]     raise exc
 [Tue Jan 09 11:02:47.722425 2018] [wsgi:error] [pid 1677] [remote 217.118.90.190:61799] pony.orm.core.MultipleObjectsFoundError: Multiple objects were found. Use Taxi_order.select(...) to retrieve them
 [Tue Jan 09 11:02:47.722495 2018] [wsgi:error] [pid 1677] [remote 217.118.90.190:61799] 
+[Wed Jan 17 10:15:30.748054 2018] [wsgi:error] [pid 344] [remote 83.149.21.147:16462] [2018-01-17 10:15:30,682] ERROR in app: Exception on /work/order [GET]
+[Wed Jan 17 10:15:30.760017 2018] [wsgi:error] [pid 344] [remote 83.149.21.147:16462] Traceback (most recent call last):
+[Wed Jan 17 10:15:30.760041 2018] [wsgi:error] [pid 344] [remote 83.149.21.147:16462]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+[Wed Jan 17 10:15:30.760054 2018] [wsgi:error] [pid 344] [remote 83.149.21.147:16462]     response = self.full_dispatch_request()
+[Wed Jan 17 10:15:30.760065 2018] [wsgi:error] [pid 344] [remote 83.149.21.147:16462]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1614, in full_dispatch_request
+[Wed Jan 17 10:15:30.760075 2018] [wsgi:error] [pid 344] [remote 83.149.21.147:16462]     rv = self.handle_user_exception(e)
+[Wed Jan 17 10:15:30.760085 2018] [wsgi:error] [pid 344] [remote 83.149.21.147:16462]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1517, in handle_user_exception
+[Wed Jan 17 10:15:30.760096 2018] [wsgi:error] [pid 344] [remote 83.149.21.147:16462]     reraise(exc_type, exc_value, tb)
+[Wed Jan 17 10:15:30.760105 2018] [wsgi:error] [pid 344] [remote 83.149.21.147:16462]   File "/usr/lib/python3.6/site-packages/flask/_compat.py", line 33, in reraise
+[Wed Jan 17 10:15:30.760116 2018] [wsgi:error] [pid 344] [remote 83.149.21.147:16462]     raise value
+[Wed Jan 17 10:15:30.760126 2018] [wsgi:error] [pid 344] [remote 83.149.21.147:16462]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1612, in full_dispatch_request
+[Wed Jan 17 10:15:30.760136 2018] [wsgi:error] [pid 344] [remote 83.149.21.147:16462]     rv = self.dispatch_request()
+[Wed Jan 17 10:15:30.760146 2018] [wsgi:error] [pid 344] [remote 83.149.21.147:16462]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1598, in dispatch_request
+[Wed Jan 17 10:15:30.760216 2018] [wsgi:error] [pid 344] [remote 83.149.21.147:16462]     return self.view_functions[rule.endpoint](**req.view_args)
+[Wed Jan 17 10:15:30.760229 2018] [wsgi:error] [pid 344] [remote 83.149.21.147:16462]   File "/srv/http/virtlabs.tk/forsaje.tk/api.py", line 204, in order
+[Wed Jan 17 10:15:30.760239 2018] [wsgi:error] [pid 344] [remote 83.149.21.147:16462]     'phone': request.args.get('phone'),
+[Wed Jan 17 10:15:30.760249 2018] [wsgi:error] [pid 344] [remote 83.149.21.147:16462]   File "/usr/lib/python3.6/site-packages/flask/templating.py", line 134, in render_template
+[Wed Jan 17 10:15:30.760259 2018] [wsgi:error] [pid 344] [remote 83.149.21.147:16462]     context, ctx.app)
+[Wed Jan 17 10:15:30.760269 2018] [wsgi:error] [pid 344] [remote 83.149.21.147:16462]   File "/usr/lib/python3.6/site-packages/flask/templating.py", line 116, in _render
+[Wed Jan 17 10:15:30.760279 2018] [wsgi:error] [pid 344] [remote 83.149.21.147:16462]     rv = template.render(context)
+[Wed Jan 17 10:15:30.760288 2018] [wsgi:error] [pid 344] [remote 83.149.21.147:16462]   File "/usr/lib/python3.6/site-packages/jinja2/asyncsupport.py", line 76, in render
+[Wed Jan 17 10:15:30.760299 2018] [wsgi:error] [pid 344] [remote 83.149.21.147:16462]     return original_render(self, *args, **kwargs)
+[Wed Jan 17 10:15:30.760308 2018] [wsgi:error] [pid 344] [remote 83.149.21.147:16462]   File "/usr/lib/python3.6/site-packages/jinja2/environment.py", line 1008, in render
+[Wed Jan 17 10:15:30.760319 2018] [wsgi:error] [pid 344] [remote 83.149.21.147:16462]     return self.environment.handle_exception(exc_info, True)
+[Wed Jan 17 10:15:30.760329 2018] [wsgi:error] [pid 344] [remote 83.149.21.147:16462]   File "/usr/lib/python3.6/site-packages/jinja2/environment.py", line 780, in handle_exception
+[Wed Jan 17 10:15:30.760339 2018] [wsgi:error] [pid 344] [remote 83.149.21.147:16462]     reraise(exc_type, exc_value, tb)
+[Wed Jan 17 10:15:30.760349 2018] [wsgi:error] [pid 344] [remote 83.149.21.147:16462]   File "/usr/lib/python3.6/site-packages/jinja2/_compat.py", line 37, in reraise
+[Wed Jan 17 10:15:30.760359 2018] [wsgi:error] [pid 344] [remote 83.149.21.147:16462]     raise value.with_traceback(tb)
+[Wed Jan 17 10:15:30.760369 2018] [wsgi:error] [pid 344] [remote 83.149.21.147:16462]   File "/srv/http/virtlabs.tk/forsaje.tk/templates/work/order.html", line 1, in top-level template code
+[Wed Jan 17 10:15:30.760379 2018] [wsgi:error] [pid 344] [remote 83.149.21.147:16462]     {% extends "work/part.html" %}
+[Wed Jan 17 10:15:30.760389 2018] [wsgi:error] [pid 344] [remote 83.149.21.147:16462]   File "/srv/http/virtlabs.tk/forsaje.tk/templates/work/part.html", line 1, in top-level template code
+[Wed Jan 17 10:15:30.760398 2018] [wsgi:error] [pid 344] [remote 83.149.21.147:16462]     {% extends "index.html" %}
+[Wed Jan 17 10:15:30.760408 2018] [wsgi:error] [pid 344] [remote 83.149.21.147:16462]   File "/srv/http/virtlabs.tk/forsaje.tk/templates/index.html", line 42, in top-level template code
+[Wed Jan 17 10:15:30.760419 2018] [wsgi:error] [pid 344] [remote 83.149.21.147:16462]     {% block body %}
+[Wed Jan 17 10:15:30.760428 2018] [wsgi:error] [pid 344] [remote 83.149.21.147:16462]   File "/srv/http/virtlabs.tk/forsaje.tk/templates/work/order.html", line 10, in block "body"
+[Wed Jan 17 10:15:30.760439 2018] [wsgi:error] [pid 344] [remote 83.149.21.147:16462]     <form action="/work/wait_confirm?id={{ order.id }}&phone={{ order.phone }}&address_from={{ order.address_from }}&address_to={{ order.address_to }}&comment={{ order.comment }}" style="display:inline">
+[Wed Jan 17 10:15:30.760451 2018] [wsgi:error] [pid 344] [remote 83.149.21.147:16462]   File "/usr/lib/python3.6/site-packages/jinja2/environment.py", line 430, in getattr
+[Wed Jan 17 10:15:30.760461 2018] [wsgi:error] [pid 344] [remote 83.149.21.147:16462]     return getattr(obj, attribute)
+[Wed Jan 17 10:15:30.760485 2018] [wsgi:error] [pid 344] [remote 83.149.21.147:16462] jinja2.exceptions.UndefinedError: 'order' is undefined
+[Wed Jan 17 10:15:30.760627 2018] [wsgi:error] [pid 344] [remote 83.149.21.147:16462] 
+[Wed Jan 17 10:36:32.912694 2018] [wsgi:error] [pid 7978] [remote 83.149.21.147:39309] [2018-01-17 10:36:32,834] ERROR in app: Exception on /work/part [GET]
+[Wed Jan 17 10:36:32.912876 2018] [wsgi:error] [pid 7978] [remote 83.149.21.147:39309] Traceback (most recent call last):
+[Wed Jan 17 10:36:32.912895 2018] [wsgi:error] [pid 7978] [remote 83.149.21.147:39309]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+[Wed Jan 17 10:36:32.912907 2018] [wsgi:error] [pid 7978] [remote 83.149.21.147:39309]     response = self.full_dispatch_request()
+[Wed Jan 17 10:36:32.912917 2018] [wsgi:error] [pid 7978] [remote 83.149.21.147:39309]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1614, in full_dispatch_request
+[Wed Jan 17 10:36:32.912928 2018] [wsgi:error] [pid 7978] [remote 83.149.21.147:39309]     rv = self.handle_user_exception(e)
+[Wed Jan 17 10:36:32.912938 2018] [wsgi:error] [pid 7978] [remote 83.149.21.147:39309]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1517, in handle_user_exception
+[Wed Jan 17 10:36:32.912949 2018] [wsgi:error] [pid 7978] [remote 83.149.21.147:39309]     reraise(exc_type, exc_value, tb)
+[Wed Jan 17 10:36:32.912958 2018] [wsgi:error] [pid 7978] [remote 83.149.21.147:39309]   File "/usr/lib/python3.6/site-packages/flask/_compat.py", line 33, in reraise
+[Wed Jan 17 10:36:32.912969 2018] [wsgi:error] [pid 7978] [remote 83.149.21.147:39309]     raise value
+[Wed Jan 17 10:36:32.912978 2018] [wsgi:error] [pid 7978] [remote 83.149.21.147:39309]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1612, in full_dispatch_request
+[Wed Jan 17 10:36:32.912988 2018] [wsgi:error] [pid 7978] [remote 83.149.21.147:39309]     rv = self.dispatch_request()
+[Wed Jan 17 10:36:32.912998 2018] [wsgi:error] [pid 7978] [remote 83.149.21.147:39309]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1598, in dispatch_request
+[Wed Jan 17 10:36:32.913009 2018] [wsgi:error] [pid 7978] [remote 83.149.21.147:39309]     return self.view_functions[rule.endpoint](**req.view_args)
+[Wed Jan 17 10:36:32.913019 2018] [wsgi:error] [pid 7978] [remote 83.149.21.147:39309]   File "/srv/http/virtlabs.tk/forsaje.tk/api.py", line 168, in work_part
+[Wed Jan 17 10:36:32.913030 2018] [wsgi:error] [pid 7978] [remote 83.149.21.147:39309]     worker = Worker.get(id=request.cookies.get('id'))
+[Wed Jan 17 10:36:32.913040 2018] [wsgi:error] [pid 7978] [remote 83.149.21.147:39309]   File "<string>", line 2, in get
+[Wed Jan 17 10:36:32.913049 2018] [wsgi:error] [pid 7978] [remote 83.149.21.147:39309]   File "/usr/lib/python3.6/site-packages/pony/utils/utils.py", line 58, in cut_traceback
+[Wed Jan 17 10:36:32.913060 2018] [wsgi:error] [pid 7978] [remote 83.149.21.147:39309]     return func(*args, **kwargs)
+[Wed Jan 17 10:36:32.913069 2018] [wsgi:error] [pid 7978] [remote 83.149.21.147:39309]   File "/usr/lib/python3.6/site-packages/pony/orm/core.py", line 3702, in get
+[Wed Jan 17 10:36:32.913080 2018] [wsgi:error] [pid 7978] [remote 83.149.21.147:39309]     try: return entity._find_one_(kwargs)  # can throw MultipleObjectsFoundError
+[Wed Jan 17 10:36:32.913090 2018] [wsgi:error] [pid 7978] [remote 83.149.21.147:39309]   File "/usr/lib/python3.6/site-packages/pony/orm/core.py", line 3792, in _find_one_
+[Wed Jan 17 10:36:32.913100 2018] [wsgi:error] [pid 7978] [remote 83.149.21.147:39309]     avdict[attr] = attr.validate(val, None, entity, from_db=False)
+[Wed Jan 17 10:36:32.913110 2018] [wsgi:error] [pid 7978] [remote 83.149.21.147:39309]   File "/usr/lib/python3.6/site-packages/pony/orm/core.py", line 2352, in validate
+[Wed Jan 17 10:36:32.913121 2018] [wsgi:error] [pid 7978] [remote 83.149.21.147:39309]     val = Attribute.validate(attr, val, obj, entity, from_db)
+[Wed Jan 17 10:36:32.913131 2018] [wsgi:error] [pid 7978] [remote 83.149.21.147:39309]   File "/usr/lib/python3.6/site-packages/pony/orm/core.py", line 2027, in validate
+[Wed Jan 17 10:36:32.913141 2018] [wsgi:error] [pid 7978] [remote 83.149.21.147:39309]     val = converter.validate(val, obj)
+[Wed Jan 17 10:36:32.913232 2018] [wsgi:error] [pid 7978] [remote 83.149.21.147:39309]   File "/usr/lib/python3.6/site-packages/pony/orm/dbapiprovider.py", line 507, in validate
+[Wed Jan 17 10:36:32.913245 2018] [wsgi:error] [pid 7978] [remote 83.149.21.147:39309]     'Value type for attribute %s must be int. Got string %r' % (converter.attr, val))
+[Wed Jan 17 10:36:32.913256 2018] [wsgi:error] [pid 7978] [remote 83.149.21.147:39309]   File "/usr/lib/python3.6/site-packages/pony/utils/utils.py", line 98, in throw
+[Wed Jan 17 10:36:32.913266 2018] [wsgi:error] [pid 7978] [remote 83.149.21.147:39309]     raise exc
+[Wed Jan 17 10:36:32.913283 2018] [wsgi:error] [pid 7978] [remote 83.149.21.147:39309] ValueError: Value type for attribute Worker.id must be int. Got string '\\x00'
+[Wed Jan 17 10:36:32.913353 2018] [wsgi:error] [pid 7978] [remote 83.149.21.147:39309] 
+[Wed Jan 17 10:38:44.000317 2018] [wsgi:error] [pid 8023] [remote 83.149.21.147:24295] [2018-01-17 10:38:43,995] ERROR in app: Exception on /work/part [GET]
+[Wed Jan 17 10:38:44.000484 2018] [wsgi:error] [pid 8023] [remote 83.149.21.147:24295] Traceback (most recent call last):
+[Wed Jan 17 10:38:44.000499 2018] [wsgi:error] [pid 8023] [remote 83.149.21.147:24295]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+[Wed Jan 17 10:38:44.000510 2018] [wsgi:error] [pid 8023] [remote 83.149.21.147:24295]     response = self.full_dispatch_request()
+[Wed Jan 17 10:38:44.000520 2018] [wsgi:error] [pid 8023] [remote 83.149.21.147:24295]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1614, in full_dispatch_request
+[Wed Jan 17 10:38:44.000530 2018] [wsgi:error] [pid 8023] [remote 83.149.21.147:24295]     rv = self.handle_user_exception(e)
+[Wed Jan 17 10:38:44.000540 2018] [wsgi:error] [pid 8023] [remote 83.149.21.147:24295]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1517, in handle_user_exception
+[Wed Jan 17 10:38:44.000550 2018] [wsgi:error] [pid 8023] [remote 83.149.21.147:24295]     reraise(exc_type, exc_value, tb)
+[Wed Jan 17 10:38:44.000560 2018] [wsgi:error] [pid 8023] [remote 83.149.21.147:24295]   File "/usr/lib/python3.6/site-packages/flask/_compat.py", line 33, in reraise
+[Wed Jan 17 10:38:44.000570 2018] [wsgi:error] [pid 8023] [remote 83.149.21.147:24295]     raise value
+[Wed Jan 17 10:38:44.000579 2018] [wsgi:error] [pid 8023] [remote 83.149.21.147:24295]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1612, in full_dispatch_request
+[Wed Jan 17 10:38:44.000589 2018] [wsgi:error] [pid 8023] [remote 83.149.21.147:24295]     rv = self.dispatch_request()
+[Wed Jan 17 10:38:44.000599 2018] [wsgi:error] [pid 8023] [remote 83.149.21.147:24295]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1598, in dispatch_request
+[Wed Jan 17 10:38:44.000609 2018] [wsgi:error] [pid 8023] [remote 83.149.21.147:24295]     return self.view_functions[rule.endpoint](**req.view_args)
+[Wed Jan 17 10:38:44.000619 2018] [wsgi:error] [pid 8023] [remote 83.149.21.147:24295]   File "/srv/http/virtlabs.tk/forsaje.tk/api.py", line 168, in work_part
+[Wed Jan 17 10:38:44.000630 2018] [wsgi:error] [pid 8023] [remote 83.149.21.147:24295]     worker = Worker.get(id=int(request.cookies.get('id')))
+[Wed Jan 17 10:38:44.000645 2018] [wsgi:error] [pid 8023] [remote 83.149.21.147:24295] ValueError: invalid literal for int() with base 10: '\\x00'
+[Wed Jan 17 10:38:44.000702 2018] [wsgi:error] [pid 8023] [remote 83.149.21.147:24295] 
+[Wed Jan 17 10:38:51.188726 2018] [wsgi:error] [pid 8023] [remote 83.149.21.147:24623] [2018-01-17 10:38:51,187] ERROR in app: Exception on /work/part [GET]
+[Wed Jan 17 10:38:51.188882 2018] [wsgi:error] [pid 8023] [remote 83.149.21.147:24623] Traceback (most recent call last):
+[Wed Jan 17 10:38:51.188898 2018] [wsgi:error] [pid 8023] [remote 83.149.21.147:24623]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+[Wed Jan 17 10:38:51.188910 2018] [wsgi:error] [pid 8023] [remote 83.149.21.147:24623]     response = self.full_dispatch_request()
+[Wed Jan 17 10:38:51.188996 2018] [wsgi:error] [pid 8023] [remote 83.149.21.147:24623]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1614, in full_dispatch_request
+[Wed Jan 17 10:38:51.189010 2018] [wsgi:error] [pid 8023] [remote 83.149.21.147:24623]     rv = self.handle_user_exception(e)
+[Wed Jan 17 10:38:51.189020 2018] [wsgi:error] [pid 8023] [remote 83.149.21.147:24623]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1517, in handle_user_exception
+[Wed Jan 17 10:38:51.189030 2018] [wsgi:error] [pid 8023] [remote 83.149.21.147:24623]     reraise(exc_type, exc_value, tb)
+[Wed Jan 17 10:38:51.189040 2018] [wsgi:error] [pid 8023] [remote 83.149.21.147:24623]   File "/usr/lib/python3.6/site-packages/flask/_compat.py", line 33, in reraise
+[Wed Jan 17 10:38:51.189050 2018] [wsgi:error] [pid 8023] [remote 83.149.21.147:24623]     raise value
+[Wed Jan 17 10:38:51.189060 2018] [wsgi:error] [pid 8023] [remote 83.149.21.147:24623]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1612, in full_dispatch_request
+[Wed Jan 17 10:38:51.189069 2018] [wsgi:error] [pid 8023] [remote 83.149.21.147:24623]     rv = self.dispatch_request()
+[Wed Jan 17 10:38:51.189079 2018] [wsgi:error] [pid 8023] [remote 83.149.21.147:24623]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1598, in dispatch_request
+[Wed Jan 17 10:38:51.189089 2018] [wsgi:error] [pid 8023] [remote 83.149.21.147:24623]     return self.view_functions[rule.endpoint](**req.view_args)
+[Wed Jan 17 10:38:51.189099 2018] [wsgi:error] [pid 8023] [remote 83.149.21.147:24623]   File "/srv/http/virtlabs.tk/forsaje.tk/api.py", line 168, in work_part
+[Wed Jan 17 10:38:51.189115 2018] [wsgi:error] [pid 8023] [remote 83.149.21.147:24623]     worker = Worker.get(id=int(request.cookies.get('id')))
+[Wed Jan 17 10:38:51.189133 2018] [wsgi:error] [pid 8023] [remote 83.149.21.147:24623] ValueError: invalid literal for int() with base 10: '\\x00'
+[Wed Jan 17 10:38:51.189193 2018] [wsgi:error] [pid 8023] [remote 83.149.21.147:24623] 
+[Wed Jan 17 10:38:59.185867 2018] [wsgi:error] [pid 8023] [remote 83.149.21.147:49045] [2018-01-17 10:38:59,184] ERROR in app: Exception on /work/part [GET]
+[Wed Jan 17 10:38:59.185984 2018] [wsgi:error] [pid 8023] [remote 83.149.21.147:49045] Traceback (most recent call last):
+[Wed Jan 17 10:38:59.185998 2018] [wsgi:error] [pid 8023] [remote 83.149.21.147:49045]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+[Wed Jan 17 10:38:59.186009 2018] [wsgi:error] [pid 8023] [remote 83.149.21.147:49045]     response = self.full_dispatch_request()
+[Wed Jan 17 10:38:59.186020 2018] [wsgi:error] [pid 8023] [remote 83.149.21.147:49045]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1614, in full_dispatch_request
+[Wed Jan 17 10:38:59.186031 2018] [wsgi:error] [pid 8023] [remote 83.149.21.147:49045]     rv = self.handle_user_exception(e)
+[Wed Jan 17 10:38:59.186040 2018] [wsgi:error] [pid 8023] [remote 83.149.21.147:49045]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1517, in handle_user_exception
+[Wed Jan 17 10:38:59.186051 2018] [wsgi:error] [pid 8023] [remote 83.149.21.147:49045]     reraise(exc_type, exc_value, tb)
+[Wed Jan 17 10:38:59.186061 2018] [wsgi:error] [pid 8023] [remote 83.149.21.147:49045]   File "/usr/lib/python3.6/site-packages/flask/_compat.py", line 33, in reraise
+[Wed Jan 17 10:38:59.186071 2018] [wsgi:error] [pid 8023] [remote 83.149.21.147:49045]     raise value
+[Wed Jan 17 10:38:59.186081 2018] [wsgi:error] [pid 8023] [remote 83.149.21.147:49045]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1612, in full_dispatch_request
+[Wed Jan 17 10:38:59.186091 2018] [wsgi:error] [pid 8023] [remote 83.149.21.147:49045]     rv = self.dispatch_request()
+[Wed Jan 17 10:38:59.186101 2018] [wsgi:error] [pid 8023] [remote 83.149.21.147:49045]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1598, in dispatch_request
+[Wed Jan 17 10:38:59.186111 2018] [wsgi:error] [pid 8023] [remote 83.149.21.147:49045]     return self.view_functions[rule.endpoint](**req.view_args)
+[Wed Jan 17 10:38:59.186240 2018] [wsgi:error] [pid 8023] [remote 83.149.21.147:49045]   File "/srv/http/virtlabs.tk/forsaje.tk/api.py", line 168, in work_part
+[Wed Jan 17 10:38:59.186254 2018] [wsgi:error] [pid 8023] [remote 83.149.21.147:49045]     worker = Worker.get(id=int(request.cookies.get('id')))
+[Wed Jan 17 10:38:59.186271 2018] [wsgi:error] [pid 8023] [remote 83.149.21.147:49045] ValueError: invalid literal for int() with base 10: '\\x00'
+[Wed Jan 17 10:38:59.186332 2018] [wsgi:error] [pid 8023] [remote 83.149.21.147:49045] 
+[Wed Jan 17 10:39:11.305649 2018] [wsgi:error] [pid 8023] [remote 83.149.21.147:36797] [2018-01-17 10:39:11,304] ERROR in app: Exception on /work/part [GET]
+[Wed Jan 17 10:39:11.305770 2018] [wsgi:error] [pid 8023] [remote 83.149.21.147:36797] Traceback (most recent call last):
+[Wed Jan 17 10:39:11.305783 2018] [wsgi:error] [pid 8023] [remote 83.149.21.147:36797]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+[Wed Jan 17 10:39:11.305795 2018] [wsgi:error] [pid 8023] [remote 83.149.21.147:36797]     response = self.full_dispatch_request()
+[Wed Jan 17 10:39:11.305805 2018] [wsgi:error] [pid 8023] [remote 83.149.21.147:36797]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1614, in full_dispatch_request
+[Wed Jan 17 10:39:11.305816 2018] [wsgi:error] [pid 8023] [remote 83.149.21.147:36797]     rv = self.handle_user_exception(e)
+[Wed Jan 17 10:39:11.305825 2018] [wsgi:error] [pid 8023] [remote 83.149.21.147:36797]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1517, in handle_user_exception
+[Wed Jan 17 10:39:11.305836 2018] [wsgi:error] [pid 8023] [remote 83.149.21.147:36797]     reraise(exc_type, exc_value, tb)
+[Wed Jan 17 10:39:11.305846 2018] [wsgi:error] [pid 8023] [remote 83.149.21.147:36797]   File "/usr/lib/python3.6/site-packages/flask/_compat.py", line 33, in reraise
+[Wed Jan 17 10:39:11.305856 2018] [wsgi:error] [pid 8023] [remote 83.149.21.147:36797]     raise value
+[Wed Jan 17 10:39:11.305865 2018] [wsgi:error] [pid 8023] [remote 83.149.21.147:36797]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1612, in full_dispatch_request
+[Wed Jan 17 10:39:11.305875 2018] [wsgi:error] [pid 8023] [remote 83.149.21.147:36797]     rv = self.dispatch_request()
+[Wed Jan 17 10:39:11.305885 2018] [wsgi:error] [pid 8023] [remote 83.149.21.147:36797]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1598, in dispatch_request
+[Wed Jan 17 10:39:11.305896 2018] [wsgi:error] [pid 8023] [remote 83.149.21.147:36797]     return self.view_functions[rule.endpoint](**req.view_args)
+[Wed Jan 17 10:39:11.305906 2018] [wsgi:error] [pid 8023] [remote 83.149.21.147:36797]   File "/srv/http/virtlabs.tk/forsaje.tk/api.py", line 168, in work_part
+[Wed Jan 17 10:39:11.305916 2018] [wsgi:error] [pid 8023] [remote 83.149.21.147:36797]     worker = Worker.get(id=int(request.cookies.get('id')))
+[Wed Jan 17 10:39:11.305931 2018] [wsgi:error] [pid 8023] [remote 83.149.21.147:36797] ValueError: invalid literal for int() with base 10: '\\x00'
+[Wed Jan 17 10:39:11.305979 2018] [wsgi:error] [pid 8023] [remote 83.149.21.147:36797] 
+[Wed Jan 17 14:25:49.947193 2018] [wsgi:error] [pid 8023] [remote 83.149.21.147:61560] [2018-01-17 14:25:49,945] ERROR in app: Exception on /work/part [GET]
+[Wed Jan 17 14:25:49.947316 2018] [wsgi:error] [pid 8023] [remote 83.149.21.147:61560] Traceback (most recent call last):
+[Wed Jan 17 14:25:49.947331 2018] [wsgi:error] [pid 8023] [remote 83.149.21.147:61560]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+[Wed Jan 17 14:25:49.947342 2018] [wsgi:error] [pid 8023] [remote 83.149.21.147:61560]     response = self.full_dispatch_request()
+[Wed Jan 17 14:25:49.947352 2018] [wsgi:error] [pid 8023] [remote 83.149.21.147:61560]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1614, in full_dispatch_request
+[Wed Jan 17 14:25:49.947362 2018] [wsgi:error] [pid 8023] [remote 83.149.21.147:61560]     rv = self.handle_user_exception(e)
+[Wed Jan 17 14:25:49.947372 2018] [wsgi:error] [pid 8023] [remote 83.149.21.147:61560]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1517, in handle_user_exception
+[Wed Jan 17 14:25:49.947467 2018] [wsgi:error] [pid 8023] [remote 83.149.21.147:61560]     reraise(exc_type, exc_value, tb)
+[Wed Jan 17 14:25:49.947480 2018] [wsgi:error] [pid 8023] [remote 83.149.21.147:61560]   File "/usr/lib/python3.6/site-packages/flask/_compat.py", line 33, in reraise
+[Wed Jan 17 14:25:49.947490 2018] [wsgi:error] [pid 8023] [remote 83.149.21.147:61560]     raise value
+[Wed Jan 17 14:25:49.947500 2018] [wsgi:error] [pid 8023] [remote 83.149.21.147:61560]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1612, in full_dispatch_request
+[Wed Jan 17 14:25:49.947509 2018] [wsgi:error] [pid 8023] [remote 83.149.21.147:61560]     rv = self.dispatch_request()
+[Wed Jan 17 14:25:49.947519 2018] [wsgi:error] [pid 8023] [remote 83.149.21.147:61560]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1598, in dispatch_request
+[Wed Jan 17 14:25:49.947529 2018] [wsgi:error] [pid 8023] [remote 83.149.21.147:61560]     return self.view_functions[rule.endpoint](**req.view_args)
+[Wed Jan 17 14:25:49.947539 2018] [wsgi:error] [pid 8023] [remote 83.149.21.147:61560]   File "/srv/http/virtlabs.tk/forsaje.tk/api.py", line 168, in work_part
+[Wed Jan 17 14:25:49.947549 2018] [wsgi:error] [pid 8023] [remote 83.149.21.147:61560]     worker = Worker.get(id=request.args.get('id'))
+[Wed Jan 17 14:25:49.947564 2018] [wsgi:error] [pid 8023] [remote 83.149.21.147:61560] ValueError: invalid literal for int() with base 10: '\\x00'
+[Wed Jan 17 14:25:49.947619 2018] [wsgi:error] [pid 8023] [remote 83.149.21.147:61560] 

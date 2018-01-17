@@ -1,5 +1,3 @@
-nano convert_sm.py 
-python convert_sm.py 3
 python convert_sm.py 3 3
 nano php/check.php
 nano convert_sm.py 
@@ -497,4 +495,6 @@ psql -u alex_forsaje
 psql -U alex_forsaje
 cat log/error-log | tail
 nano api.py 
+su
+ls
 su

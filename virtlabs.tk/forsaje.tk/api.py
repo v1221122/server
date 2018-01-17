@@ -34,13 +34,13 @@ def main():
         }
         return render_template('index_p.html', **context)
 
-   
+
 @app.route('/get_form')
 def get_form():
     return render_template('get_form.html')
-  
 
-@app.route('/commit')  
+
+@app.route('/commit')
 def commit_to_db():
     d = request.args.to_dict()
     order = {
@@ -55,7 +55,7 @@ def commit_to_db():
             return redirect('/wait?phone=' + d['phone'])
         except:
             return redirect('/')
-    
+
 @app.route('/wait')
 def wait():
     current_car = dict()
@@ -79,8 +79,8 @@ def wait():
         'id': id
     }
     return render_template('wait.html', **context)
-    
-    
+
+
 @app.route('/wait_page')
 def wait_page():
     confirm = False
@@ -104,8 +104,8 @@ def wait_page():
         'id': order.id
     }
     return render_template('wait_page.html', **context)
-    
-    
+
+
 @app.route('/cancel')
 def cancel():
     with db_session:
@@ -129,66 +129,49 @@ def application():
 @app.route('/work/')
 def auth_check():
     id = 0
-    if 'id' in session:
-        id = session['id']
-    if id:
+    if request.cookies.get('id'):
         return redirect('/work/index')
-    # if authenticated
     return redirect('/work/auth')
 
 @app.route('/work/auth')
 def auth():
     return render_template('work/auth.html')
-    
+
 @app.route('/work/check_worker', methods=['POST'])
 def check_worker():
     with db_session:
         user = Auth.get(login=request.form['login'])
         if user:
             if user.password == request.form['password']:
-                session.permanent = True
-                session['id'] = user.id
-                session.modified = True
                 resp = make_response(redirect('/work/index'))
-                resp.set_cookie('id', bytes(user.id))
+                resp.set_cookie('id', user.id)
                 return resp
     return redirect('/work/auth')
-    
+
 @app.route('/work/index')
 def work_index():
     context = {
-        "worker_id": session['id']
+        "worker_id": request.cookies.get('id')
     }
     return render_template('work/index_w.html', **context)
-    
+
 @app.route('/work/queue')
 def queue():
     return render_template('work/queue.html', part=request.args.get('part'))
-    
+
 @app.route('/work/part')
 def work_part():
-    const = ['', 'Заречный', 'Пенза'] # Constant for directions  
+    const = ['', 'Заречный', 'Пенза'] # Constant for directions
     part = int(request.args.get('part'))
     context = dict()
     with db_session:
-        worker = Worker.get(id=session['id'])
+        worker = Worker.get(id=request.args.get('id'))
         context = {
             'queue': len(Online.select()),
             'position': 1,
             'direction': const[part],
-            'refresh': True
+            'orders': Taxi_order.select()
         }
-        orders = Taxi_order.select()
-        if orders:
-            o = list()
-            for order in orders:
-                o.append({
-                            'phone': order.phone,
-                            'address_from': order.address_from,
-                            'address_to': order.address_to,
-                            'comment': order.comment
-                })
-                context['orders'] = o
     return render_template('work/orders.html', **context)
 
 @app.route('/work/order')
@@ -215,7 +198,7 @@ def wait_confirm():
         'time': request.form['time']
     }
     return render_template('work/wait_confirm.html', **context)
-    
+
 @app.route('/work/lets_go')
 def lets_go():
     context = {
@@ -232,7 +215,7 @@ def lets_go():
 def work_cancel():
     # delete order!!
     return redirect('/work/index')
-    
+
 @app.route('/work/application')
 def application_work():
     f = os.path.join(app.root_path, 'static', 'apk', 'work', 'forsaje_work.apk')

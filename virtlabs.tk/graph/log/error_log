@@ -211,3 +211,5 @@
 [Sat Jan 13 04:41:22.357138 2018] [php7:error] [pid 31187] [client 177.33.81.56:48251] script '/srv/http/virtlabs.tk/graph/getcfg.php' not found or unable to stat
 [Tue Jan 16 13:30:27.810180 2018] [php7:error] [pid 629] [client 189.101.148.24:42827] script '/srv/http/virtlabs.tk/graph/command.php' not found or unable to stat
 [Tue Jan 16 18:27:53.090173 2018] [cgi:error] [pid 347] [client 145.249.106.108:42131] AH02811: script not found or unable to stat: /srv/http/cgi-bin
+[Wed Jan 17 01:32:07.481354 2018] [php7:error] [pid 350] [client 104.128.144.131:40602] script '/srv/http/virtlabs.tk/graph/redirect.php' not found or unable to stat
+[Wed Jan 17 02:10:47.284549 2018] [cgi:error] [pid 349] [client 145.249.104.20:39505] AH02811: script not found or unable to stat: /srv/http/cgi-bin
