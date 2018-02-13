@@ -8,3 +8,13 @@ apachectl status
 apachectl status forsaje.tk
 w3m forsaje.tk
 su
+ls
+cat robots.txt 
+nano robots.txt 
+cat robots.txt 
+nano robots.txt 
+yaourt -S ryzom-client
+screen -x
+pacman -Sscreen
+pacman -S screen
+su
