@@ -18,3 +18,4 @@ screen -x
 pacman -Sscreen
 pacman -S screen
 su
+su

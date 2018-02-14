@@ -1,24 +1,372 @@
-[Tue Dec 12 13:36:19.577495 2017] [wsgi:error] [pid 23110] [remote 85.26.233.60:39881] mod_wsgi (pid=23110): Target WSGI script '/srv/http/virtlabs.tk/5koleso.tk/api.wsgi' cannot be loaded as Python module.
-[Tue Dec 12 13:36:19.578211 2017] [wsgi:error] [pid 23110] [remote 85.26.233.60:39881] mod_wsgi (pid=23110): Exception occurred processing WSGI script '/srv/http/virtlabs.tk/5koleso.tk/api.wsgi'.
-[Tue Dec 12 13:36:19.601551 2017] [wsgi:error] [pid 23110] [remote 85.26.233.60:39881] Traceback (most recent call last):
-[Tue Dec 12 13:36:19.601688 2017] [wsgi:error] [pid 23110] [remote 85.26.233.60:39881]   File "/srv/http/virtlabs.tk/5koleso.tk/api.wsgi", line 1, in <module>
-[Tue Dec 12 13:36:19.601706 2017] [wsgi:error] [pid 23110] [remote 85.26.233.60:39881]     from api import app as application
-[Tue Dec 12 13:36:19.601766 2017] [wsgi:error] [pid 23110] [remote 85.26.233.60:39881] ModuleNotFoundError: No module named 'api'
-[Tue Dec 12 13:36:20.346136 2017] [wsgi:error] [pid 23110] [remote 85.26.233.60:43401] mod_wsgi (pid=23110): Target WSGI script '/srv/http/virtlabs.tk/5koleso.tk/api.wsgi' cannot be loaded as Python module.
-[Tue Dec 12 13:36:20.346357 2017] [wsgi:error] [pid 23110] [remote 85.26.233.60:43401] mod_wsgi (pid=23110): Exception occurred processing WSGI script '/srv/http/virtlabs.tk/5koleso.tk/api.wsgi'.
-[Tue Dec 12 13:36:20.346609 2017] [wsgi:error] [pid 23110] [remote 85.26.233.60:43401] Traceback (most recent call last):
-[Tue Dec 12 13:36:20.346684 2017] [wsgi:error] [pid 23110] [remote 85.26.233.60:43401]   File "/srv/http/virtlabs.tk/5koleso.tk/api.wsgi", line 1, in <module>
-[Tue Dec 12 13:36:20.346701 2017] [wsgi:error] [pid 23110] [remote 85.26.233.60:43401]     from api import app as application
-[Tue Dec 12 13:36:20.346754 2017] [wsgi:error] [pid 23110] [remote 85.26.233.60:43401] ModuleNotFoundError: No module named 'api'
-[Tue Dec 12 13:36:28.641336 2017] [wsgi:error] [pid 23110] [remote 178.154.171.12:38442] mod_wsgi (pid=23110): Target WSGI script '/srv/http/virtlabs.tk/5koleso.tk/api.wsgi' cannot be loaded as Python module.
-[Tue Dec 12 13:36:28.641551 2017] [wsgi:error] [pid 23110] [remote 178.154.171.12:38442] mod_wsgi (pid=23110): Exception occurred processing WSGI script '/srv/http/virtlabs.tk/5koleso.tk/api.wsgi'.
-[Tue Dec 12 13:36:28.641805 2017] [wsgi:error] [pid 23110] [remote 178.154.171.12:38442] Traceback (most recent call last):
-[Tue Dec 12 13:36:28.641878 2017] [wsgi:error] [pid 23110] [remote 178.154.171.12:38442]   File "/srv/http/virtlabs.tk/5koleso.tk/api.wsgi", line 1, in <module>
-[Tue Dec 12 13:36:28.641895 2017] [wsgi:error] [pid 23110] [remote 178.154.171.12:38442]     from api import app as application
-[Tue Dec 12 13:36:28.641950 2017] [wsgi:error] [pid 23110] [remote 178.154.171.12:38442] ModuleNotFoundError: No module named 'api'
-[Tue Dec 12 13:36:32.895157 2017] [wsgi:error] [pid 23110] [remote 141.8.142.75:37090] mod_wsgi (pid=23110): Target WSGI script '/srv/http/virtlabs.tk/5koleso.tk/api.wsgi' cannot be loaded as Python module.
-[Tue Dec 12 13:36:32.895356 2017] [wsgi:error] [pid 23110] [remote 141.8.142.75:37090] mod_wsgi (pid=23110): Exception occurred processing WSGI script '/srv/http/virtlabs.tk/5koleso.tk/api.wsgi'.
-[Tue Dec 12 13:36:32.895597 2017] [wsgi:error] [pid 23110] [remote 141.8.142.75:37090] Traceback (most recent call last):
-[Tue Dec 12 13:36:32.895666 2017] [wsgi:error] [pid 23110] [remote 141.8.142.75:37090]   File "/srv/http/virtlabs.tk/5koleso.tk/api.wsgi", line 1, in <module>
-[Tue Dec 12 13:36:32.895683 2017] [wsgi:error] [pid 23110] [remote 141.8.142.75:37090]     from api import app as application
-[Tue Dec 12 13:36:32.895736 2017] [wsgi:error] [pid 23110] [remote 141.8.142.75:37090] ModuleNotFoundError: No module named 'api'
+[Sat Jan 06 16:52:50.695307 2018] [wsgi:error] [pid 924] [remote 94.181.154.87:44949] mod_wsgi (pid=924): Target WSGI script '/srv/http/virtlabs.tk/forsaje.tk/api.wsgi' cannot be loaded as Python module.
+[Sat Jan 06 16:52:50.695669 2018] [wsgi:error] [pid 924] [remote 94.181.154.87:44949] mod_wsgi (pid=924): Exception occurred processing WSGI script '/srv/http/virtlabs.tk/forsaje.tk/api.wsgi'.
+[Sat Jan 06 16:52:50.800342 2018] [wsgi:error] [pid 924] [remote 94.181.154.87:44949] Traceback (most recent call last):
+[Sat Jan 06 16:52:50.800578 2018] [wsgi:error] [pid 924] [remote 94.181.154.87:44949]   File "/usr/lib/python3.6/site-packages/pony/orm/dbapiprovider.py", line 50, in wrap_dbapi_exceptions
+[Sat Jan 06 16:52:50.800599 2018] [wsgi:error] [pid 924] [remote 94.181.154.87:44949]     return func(provider, *args, **kwargs)
+[Sat Jan 06 16:52:50.800627 2018] [wsgi:error] [pid 924] [remote 94.181.154.87:44949]   File "/usr/lib/python3.6/site-packages/pony/orm/dbapiprovider.py", line 206, in connect
+[Sat Jan 06 16:52:50.800641 2018] [wsgi:error] [pid 924] [remote 94.181.154.87:44949]     return provider.pool.connect()
+[Sat Jan 06 16:52:50.800668 2018] [wsgi:error] [pid 924] [remote 94.181.154.87:44949]   File "/usr/lib/python3.6/site-packages/pony/orm/dbapiprovider.py", line 322, in connect
+[Sat Jan 06 16:52:50.800681 2018] [wsgi:error] [pid 924] [remote 94.181.154.87:44949]     pool._connect()
+[Sat Jan 06 16:52:50.800707 2018] [wsgi:error] [pid 924] [remote 94.181.154.87:44949]   File "/usr/lib/python3.6/site-packages/pony/orm/dbproviders/postgres.py", line 145, in _connect
+[Sat Jan 06 16:52:50.800721 2018] [wsgi:error] [pid 924] [remote 94.181.154.87:44949]     pool.con = pool.dbapi_module.connect(*pool.args, **pool.kwargs)
+[Sat Jan 06 16:52:50.800747 2018] [wsgi:error] [pid 924] [remote 94.181.154.87:44949]   File "/usr/lib/python3.6/site-packages/psycopg2cffi/__init__.py", line 104, in connect
+[Sat Jan 06 16:52:50.800760 2018] [wsgi:error] [pid 924] [remote 94.181.154.87:44949]     conn = _connect(dsn, connection_factory=connection_factory, async=async)
+[Sat Jan 06 16:52:50.800785 2018] [wsgi:error] [pid 924] [remote 94.181.154.87:44949]   File "/usr/lib/python3.6/site-packages/psycopg2cffi/_impl/connection.py", line 891, in _connect
+[Sat Jan 06 16:52:50.800798 2018] [wsgi:error] [pid 924] [remote 94.181.154.87:44949]     return connection_factory(dsn)
+[Sat Jan 06 16:52:50.800823 2018] [wsgi:error] [pid 924] [remote 94.181.154.87:44949]   File "/usr/lib/python3.6/site-packages/psycopg2cffi/_impl/connection.py", line 136, in __init__
+[Sat Jan 06 16:52:50.800836 2018] [wsgi:error] [pid 924] [remote 94.181.154.87:44949]     self._connect_sync()
+[Sat Jan 06 16:52:50.800860 2018] [wsgi:error] [pid 924] [remote 94.181.154.87:44949]   File "/usr/lib/python3.6/site-packages/psycopg2cffi/_impl/connection.py", line 145, in _connect_sync
+[Sat Jan 06 16:52:50.800873 2018] [wsgi:error] [pid 924] [remote 94.181.154.87:44949]     raise self._create_exception()
+[Sat Jan 06 16:52:50.800949 2018] [wsgi:error] [pid 924] [remote 94.181.154.87:44949] psycopg2cffi._impl.exceptions.OperationalError: could not connect to server: No such file or directory
+[Sat Jan 06 16:52:50.800965 2018] [wsgi:error] [pid 924] [remote 94.181.154.87:44949] \tIs the server running locally and accepting
+[Sat Jan 06 16:52:50.800975 2018] [wsgi:error] [pid 924] [remote 94.181.154.87:44949] \tconnections on Unix domain socket "/run/postgresql/.s.PGSQL.5432"?
+[Sat Jan 06 16:52:50.800984 2018] [wsgi:error] [pid 924] [remote 94.181.154.87:44949] 
+[Sat Jan 06 16:52:50.801021 2018] [wsgi:error] [pid 924] [remote 94.181.154.87:44949] 
+[Sat Jan 06 16:52:50.801034 2018] [wsgi:error] [pid 924] [remote 94.181.154.87:44949] During handling of the above exception, another exception occurred:
+[Sat Jan 06 16:52:50.801044 2018] [wsgi:error] [pid 924] [remote 94.181.154.87:44949] 
+[Sat Jan 06 16:52:50.801068 2018] [wsgi:error] [pid 924] [remote 94.181.154.87:44949] Traceback (most recent call last):
+[Sat Jan 06 16:52:50.801210 2018] [wsgi:error] [pid 924] [remote 94.181.154.87:44949]   File "/srv/http/virtlabs.tk/forsaje.tk/api.wsgi", line 1, in <module>
+[Sat Jan 06 16:52:50.801301 2018] [wsgi:error] [pid 924] [remote 94.181.154.87:44949]     from api import app as application
+[Sat Jan 06 16:52:50.801331 2018] [wsgi:error] [pid 924] [remote 94.181.154.87:44949]   File "/srv/http/virtlabs.tk/forsaje.tk/api.py", line 16, in <module>
+[Sat Jan 06 16:52:50.801345 2018] [wsgi:error] [pid 924] [remote 94.181.154.87:44949]     from initdb import Worker, Auth, Online, Taxi_order
+[Sat Jan 06 16:52:50.801370 2018] [wsgi:error] [pid 924] [remote 94.181.154.87:44949]   File "/srv/http/virtlabs.tk/forsaje.tk/initdb.py", line 35, in <module>
+[Sat Jan 06 16:52:50.801382 2018] [wsgi:error] [pid 924] [remote 94.181.154.87:44949]     _PostgresDb.bind(**_config)
+[Sat Jan 06 16:52:50.801407 2018] [wsgi:error] [pid 924] [remote 94.181.154.87:44949]   File "<string>", line 2, in bind
+[Sat Jan 06 16:52:50.801433 2018] [wsgi:error] [pid 924] [remote 94.181.154.87:44949]   File "/usr/lib/python3.6/site-packages/pony/utils/utils.py", line 58, in cut_traceback
+[Sat Jan 06 16:52:50.801446 2018] [wsgi:error] [pid 924] [remote 94.181.154.87:44949]     return func(*args, **kwargs)
+[Sat Jan 06 16:52:50.801470 2018] [wsgi:error] [pid 924] [remote 94.181.154.87:44949]   File "/usr/lib/python3.6/site-packages/pony/orm/core.py", line 657, in bind
+[Sat Jan 06 16:52:50.801482 2018] [wsgi:error] [pid 924] [remote 94.181.154.87:44949]     self._bind(*args, **kwargs)
+[Sat Jan 06 16:52:50.801506 2018] [wsgi:error] [pid 924] [remote 94.181.154.87:44949]   File "/usr/lib/python3.6/site-packages/pony/orm/core.py", line 673, in _bind
+[Sat Jan 06 16:52:50.801518 2018] [wsgi:error] [pid 924] [remote 94.181.154.87:44949]     self.provider = provider_cls(*args, **kwargs)
+[Sat Jan 06 16:52:50.801543 2018] [wsgi:error] [pid 924] [remote 94.181.154.87:44949]   File "/usr/lib/python3.6/site-packages/pony/orm/dbapiprovider.py", line 114, in __init__
+[Sat Jan 06 16:52:50.801555 2018] [wsgi:error] [pid 924] [remote 94.181.154.87:44949]     connection = provider.connect()
+[Sat Jan 06 16:52:50.801579 2018] [wsgi:error] [pid 924] [remote 94.181.154.87:44949]   File "<string>", line 2, in connect
+[Sat Jan 06 16:52:50.801606 2018] [wsgi:error] [pid 924] [remote 94.181.154.87:44949]   File "/usr/lib/python3.6/site-packages/pony/orm/dbapiprovider.py", line 61, in wrap_dbapi_exceptions
+[Sat Jan 06 16:52:50.801619 2018] [wsgi:error] [pid 924] [remote 94.181.154.87:44949]     raise OperationalError(e)
+[Sat Jan 06 16:52:50.801663 2018] [wsgi:error] [pid 924] [remote 94.181.154.87:44949] pony.orm.dbapiprovider.OperationalError: could not connect to server: No such file or directory
+[Sat Jan 06 16:52:50.801678 2018] [wsgi:error] [pid 924] [remote 94.181.154.87:44949] \tIs the server running locally and accepting
+[Sat Jan 06 16:52:50.801687 2018] [wsgi:error] [pid 924] [remote 94.181.154.87:44949] \tconnections on Unix domain socket "/run/postgresql/.s.PGSQL.5432"?
+[Sat Jan 06 16:52:50.801697 2018] [wsgi:error] [pid 924] [remote 94.181.154.87:44949] 
+[Sat Jan 06 16:55:16.165422 2018] [wsgi:error] [pid 924] [remote 94.181.154.87:44951] mod_wsgi (pid=924): Target WSGI script '/srv/http/virtlabs.tk/forsaje.tk/api.wsgi' cannot be loaded as Python module.
+[Sat Jan 06 16:55:16.165657 2018] [wsgi:error] [pid 924] [remote 94.181.154.87:44951] mod_wsgi (pid=924): Exception occurred processing WSGI script '/srv/http/virtlabs.tk/forsaje.tk/api.wsgi'.
+[Sat Jan 06 16:55:16.166636 2018] [wsgi:error] [pid 924] [remote 94.181.154.87:44951] Traceback (most recent call last):
+[Sat Jan 06 16:55:16.166850 2018] [wsgi:error] [pid 924] [remote 94.181.154.87:44951]   File "/usr/lib/python3.6/site-packages/pony/orm/dbapiprovider.py", line 50, in wrap_dbapi_exceptions
+[Sat Jan 06 16:55:16.166869 2018] [wsgi:error] [pid 924] [remote 94.181.154.87:44951]     return func(provider, *args, **kwargs)
+[Sat Jan 06 16:55:16.166904 2018] [wsgi:error] [pid 924] [remote 94.181.154.87:44951]   File "/usr/lib/python3.6/site-packages/pony/orm/dbapiprovider.py", line 206, in connect
+[Sat Jan 06 16:55:16.166919 2018] [wsgi:error] [pid 924] [remote 94.181.154.87:44951]     return provider.pool.connect()
+[Sat Jan 06 16:55:16.167031 2018] [wsgi:error] [pid 924] [remote 94.181.154.87:44951]   File "/usr/lib/python3.6/site-packages/pony/orm/dbapiprovider.py", line 322, in connect
+[Sat Jan 06 16:55:16.167046 2018] [wsgi:error] [pid 924] [remote 94.181.154.87:44951]     pool._connect()
+[Sat Jan 06 16:55:16.167072 2018] [wsgi:error] [pid 924] [remote 94.181.154.87:44951]   File "/usr/lib/python3.6/site-packages/pony/orm/dbproviders/postgres.py", line 145, in _connect
+[Sat Jan 06 16:55:16.167086 2018] [wsgi:error] [pid 924] [remote 94.181.154.87:44951]     pool.con = pool.dbapi_module.connect(*pool.args, **pool.kwargs)
+[Sat Jan 06 16:55:16.167111 2018] [wsgi:error] [pid 924] [remote 94.181.154.87:44951]   File "/usr/lib/python3.6/site-packages/psycopg2cffi/__init__.py", line 104, in connect
+[Sat Jan 06 16:55:16.167124 2018] [wsgi:error] [pid 924] [remote 94.181.154.87:44951]     conn = _connect(dsn, connection_factory=connection_factory, async=async)
+[Sat Jan 06 16:55:16.167149 2018] [wsgi:error] [pid 924] [remote 94.181.154.87:44951]   File "/usr/lib/python3.6/site-packages/psycopg2cffi/_impl/connection.py", line 891, in _connect
+[Sat Jan 06 16:55:16.167162 2018] [wsgi:error] [pid 924] [remote 94.181.154.87:44951]     return connection_factory(dsn)
+[Sat Jan 06 16:55:16.167186 2018] [wsgi:error] [pid 924] [remote 94.181.154.87:44951]   File "/usr/lib/python3.6/site-packages/psycopg2cffi/_impl/connection.py", line 136, in __init__
+[Sat Jan 06 16:55:16.167199 2018] [wsgi:error] [pid 924] [remote 94.181.154.87:44951]     self._connect_sync()
+[Sat Jan 06 16:55:16.167223 2018] [wsgi:error] [pid 924] [remote 94.181.154.87:44951]   File "/usr/lib/python3.6/site-packages/psycopg2cffi/_impl/connection.py", line 145, in _connect_sync
+[Sat Jan 06 16:55:16.167236 2018] [wsgi:error] [pid 924] [remote 94.181.154.87:44951]     raise self._create_exception()
+[Sat Jan 06 16:55:16.167297 2018] [wsgi:error] [pid 924] [remote 94.181.154.87:44951] psycopg2cffi._impl.exceptions.OperationalError: could not connect to server: No such file or directory
+[Sat Jan 06 16:55:16.167312 2018] [wsgi:error] [pid 924] [remote 94.181.154.87:44951] \tIs the server running locally and accepting
+[Sat Jan 06 16:55:16.167322 2018] [wsgi:error] [pid 924] [remote 94.181.154.87:44951] \tconnections on Unix domain socket "/run/postgresql/.s.PGSQL.5432"?
+[Sat Jan 06 16:55:16.167331 2018] [wsgi:error] [pid 924] [remote 94.181.154.87:44951] 
+[Sat Jan 06 16:55:16.167360 2018] [wsgi:error] [pid 924] [remote 94.181.154.87:44951] 
+[Sat Jan 06 16:55:16.167372 2018] [wsgi:error] [pid 924] [remote 94.181.154.87:44951] During handling of the above exception, another exception occurred:
+[Sat Jan 06 16:55:16.167381 2018] [wsgi:error] [pid 924] [remote 94.181.154.87:44951] 
+[Sat Jan 06 16:55:16.167405 2018] [wsgi:error] [pid 924] [remote 94.181.154.87:44951] Traceback (most recent call last):
+[Sat Jan 06 16:55:16.167546 2018] [wsgi:error] [pid 924] [remote 94.181.154.87:44951]   File "/srv/http/virtlabs.tk/forsaje.tk/api.wsgi", line 1, in <module>
+[Sat Jan 06 16:55:16.167560 2018] [wsgi:error] [pid 924] [remote 94.181.154.87:44951]     from api import app as application
+[Sat Jan 06 16:55:16.167585 2018] [wsgi:error] [pid 924] [remote 94.181.154.87:44951]   File "/srv/http/virtlabs.tk/forsaje.tk/api.py", line 16, in <module>
+[Sat Jan 06 16:55:16.167598 2018] [wsgi:error] [pid 924] [remote 94.181.154.87:44951]     from initdb import Worker, Auth, Online, Taxi_order
+[Sat Jan 06 16:55:16.167622 2018] [wsgi:error] [pid 924] [remote 94.181.154.87:44951]   File "/srv/http/virtlabs.tk/forsaje.tk/initdb.py", line 35, in <module>
+[Sat Jan 06 16:55:16.167634 2018] [wsgi:error] [pid 924] [remote 94.181.154.87:44951]     _PostgresDb.bind(**_config)
+[Sat Jan 06 16:55:16.167658 2018] [wsgi:error] [pid 924] [remote 94.181.154.87:44951]   File "<string>", line 2, in bind
+[Sat Jan 06 16:55:16.167685 2018] [wsgi:error] [pid 924] [remote 94.181.154.87:44951]   File "/usr/lib/python3.6/site-packages/pony/utils/utils.py", line 58, in cut_traceback
+[Sat Jan 06 16:55:16.167721 2018] [wsgi:error] [pid 924] [remote 94.181.154.87:44951]     return func(*args, **kwargs)
+[Sat Jan 06 16:55:16.167749 2018] [wsgi:error] [pid 924] [remote 94.181.154.87:44951]   File "/usr/lib/python3.6/site-packages/pony/orm/core.py", line 657, in bind
+[Sat Jan 06 16:55:16.167762 2018] [wsgi:error] [pid 924] [remote 94.181.154.87:44951]     self._bind(*args, **kwargs)
+[Sat Jan 06 16:55:16.167787 2018] [wsgi:error] [pid 924] [remote 94.181.154.87:44951]   File "/usr/lib/python3.6/site-packages/pony/orm/core.py", line 673, in _bind
+[Sat Jan 06 16:55:16.167799 2018] [wsgi:error] [pid 924] [remote 94.181.154.87:44951]     self.provider = provider_cls(*args, **kwargs)
+[Sat Jan 06 16:55:16.167823 2018] [wsgi:error] [pid 924] [remote 94.181.154.87:44951]   File "/usr/lib/python3.6/site-packages/pony/orm/dbapiprovider.py", line 114, in __init__
+[Sat Jan 06 16:55:16.167836 2018] [wsgi:error] [pid 924] [remote 94.181.154.87:44951]     connection = provider.connect()
+[Sat Jan 06 16:55:16.167859 2018] [wsgi:error] [pid 924] [remote 94.181.154.87:44951]   File "<string>", line 2, in connect
+[Sat Jan 06 16:55:16.167886 2018] [wsgi:error] [pid 924] [remote 94.181.154.87:44951]   File "/usr/lib/python3.6/site-packages/pony/orm/dbapiprovider.py", line 61, in wrap_dbapi_exceptions
+[Sat Jan 06 16:55:16.167898 2018] [wsgi:error] [pid 924] [remote 94.181.154.87:44951]     raise OperationalError(e)
+[Sat Jan 06 16:55:16.167941 2018] [wsgi:error] [pid 924] [remote 94.181.154.87:44951] pony.orm.dbapiprovider.OperationalError: could not connect to server: No such file or directory
+[Sat Jan 06 16:55:16.167956 2018] [wsgi:error] [pid 924] [remote 94.181.154.87:44951] \tIs the server running locally and accepting
+[Sat Jan 06 16:55:16.167965 2018] [wsgi:error] [pid 924] [remote 94.181.154.87:44951] \tconnections on Unix domain socket "/run/postgresql/.s.PGSQL.5432"?
+[Sat Jan 06 16:55:16.167975 2018] [wsgi:error] [pid 924] [remote 94.181.154.87:44951] 
+[Sat Jan 06 16:55:16.508854 2018] [wsgi:error] [pid 924] [remote 94.181.154.87:44953] mod_wsgi (pid=924): Target WSGI script '/srv/http/virtlabs.tk/forsaje.tk/api.wsgi' cannot be loaded as Python module.
+[Sat Jan 06 16:55:16.509037 2018] [wsgi:error] [pid 924] [remote 94.181.154.87:44953] mod_wsgi (pid=924): Exception occurred processing WSGI script '/srv/http/virtlabs.tk/forsaje.tk/api.wsgi'.
+[Sat Jan 06 16:55:16.509974 2018] [wsgi:error] [pid 924] [remote 94.181.154.87:44953] Traceback (most recent call last):
+[Sat Jan 06 16:55:16.510170 2018] [wsgi:error] [pid 924] [remote 94.181.154.87:44953]   File "/usr/lib/python3.6/site-packages/pony/orm/dbapiprovider.py", line 50, in wrap_dbapi_exceptions
+[Sat Jan 06 16:55:16.510190 2018] [wsgi:error] [pid 924] [remote 94.181.154.87:44953]     return func(provider, *args, **kwargs)
+[Sat Jan 06 16:55:16.510219 2018] [wsgi:error] [pid 924] [remote 94.181.154.87:44953]   File "/usr/lib/python3.6/site-packages/pony/orm/dbapiprovider.py", line 206, in connect
+[Sat Jan 06 16:55:16.510233 2018] [wsgi:error] [pid 924] [remote 94.181.154.87:44953]     return provider.pool.connect()
+[Sat Jan 06 16:55:16.510259 2018] [wsgi:error] [pid 924] [remote 94.181.154.87:44953]   File "/usr/lib/python3.6/site-packages/pony/orm/dbapiprovider.py", line 322, in connect
+[Sat Jan 06 16:55:16.510273 2018] [wsgi:error] [pid 924] [remote 94.181.154.87:44953]     pool._connect()
+[Sat Jan 06 16:55:16.510299 2018] [wsgi:error] [pid 924] [remote 94.181.154.87:44953]   File "/usr/lib/python3.6/site-packages/pony/orm/dbproviders/postgres.py", line 145, in _connect
+[Sat Jan 06 16:55:16.510312 2018] [wsgi:error] [pid 924] [remote 94.181.154.87:44953]     pool.con = pool.dbapi_module.connect(*pool.args, **pool.kwargs)
+[Sat Jan 06 16:55:16.510337 2018] [wsgi:error] [pid 924] [remote 94.181.154.87:44953]   File "/usr/lib/python3.6/site-packages/psycopg2cffi/__init__.py", line 104, in connect
+[Sat Jan 06 16:55:16.510350 2018] [wsgi:error] [pid 924] [remote 94.181.154.87:44953]     conn = _connect(dsn, connection_factory=connection_factory, async=async)
+[Sat Jan 06 16:55:16.510450 2018] [wsgi:error] [pid 924] [remote 94.181.154.87:44953]   File "/usr/lib/python3.6/site-packages/psycopg2cffi/_impl/connection.py", line 891, in _connect
+[Sat Jan 06 16:55:16.510465 2018] [wsgi:error] [pid 924] [remote 94.181.154.87:44953]     return connection_factory(dsn)
+[Sat Jan 06 16:55:16.510490 2018] [wsgi:error] [pid 924] [remote 94.181.154.87:44953]   File "/usr/lib/python3.6/site-packages/psycopg2cffi/_impl/connection.py", line 136, in __init__
+[Sat Jan 06 16:55:16.510503 2018] [wsgi:error] [pid 924] [remote 94.181.154.87:44953]     self._connect_sync()
+[Sat Jan 06 16:55:16.510527 2018] [wsgi:error] [pid 924] [remote 94.181.154.87:44953]   File "/usr/lib/python3.6/site-packages/psycopg2cffi/_impl/connection.py", line 145, in _connect_sync
+[Sat Jan 06 16:55:16.510541 2018] [wsgi:error] [pid 924] [remote 94.181.154.87:44953]     raise self._create_exception()
+[Sat Jan 06 16:55:16.510601 2018] [wsgi:error] [pid 924] [remote 94.181.154.87:44953] psycopg2cffi._impl.exceptions.OperationalError: could not connect to server: No such file or directory
+[Sat Jan 06 16:55:16.510615 2018] [wsgi:error] [pid 924] [remote 94.181.154.87:44953] \tIs the server running locally and accepting
+[Sat Jan 06 16:55:16.510625 2018] [wsgi:error] [pid 924] [remote 94.181.154.87:44953] \tconnections on Unix domain socket "/run/postgresql/.s.PGSQL.5432"?
+[Sat Jan 06 16:55:16.510635 2018] [wsgi:error] [pid 924] [remote 94.181.154.87:44953] 
+[Sat Jan 06 16:55:16.510664 2018] [wsgi:error] [pid 924] [remote 94.181.154.87:44953] 
+[Sat Jan 06 16:55:16.510677 2018] [wsgi:error] [pid 924] [remote 94.181.154.87:44953] During handling of the above exception, another exception occurred:
+[Sat Jan 06 16:55:16.510686 2018] [wsgi:error] [pid 924] [remote 94.181.154.87:44953] 
+[Sat Jan 06 16:55:16.510710 2018] [wsgi:error] [pid 924] [remote 94.181.154.87:44953] Traceback (most recent call last):
+[Sat Jan 06 16:55:16.510850 2018] [wsgi:error] [pid 924] [remote 94.181.154.87:44953]   File "/srv/http/virtlabs.tk/forsaje.tk/api.wsgi", line 1, in <module>
+[Sat Jan 06 16:55:16.510866 2018] [wsgi:error] [pid 924] [remote 94.181.154.87:44953]     from api import app as application
+[Sat Jan 06 16:55:16.510891 2018] [wsgi:error] [pid 924] [remote 94.181.154.87:44953]   File "/srv/http/virtlabs.tk/forsaje.tk/api.py", line 16, in <module>
+[Sat Jan 06 16:55:16.510904 2018] [wsgi:error] [pid 924] [remote 94.181.154.87:44953]     from initdb import Worker, Auth, Online, Taxi_order
+[Sat Jan 06 16:55:16.510929 2018] [wsgi:error] [pid 924] [remote 94.181.154.87:44953]   File "/srv/http/virtlabs.tk/forsaje.tk/initdb.py", line 35, in <module>
+[Sat Jan 06 16:55:16.510941 2018] [wsgi:error] [pid 924] [remote 94.181.154.87:44953]     _PostgresDb.bind(**_config)
+[Sat Jan 06 16:55:16.510965 2018] [wsgi:error] [pid 924] [remote 94.181.154.87:44953]   File "<string>", line 2, in bind
+[Sat Jan 06 16:55:16.510992 2018] [wsgi:error] [pid 924] [remote 94.181.154.87:44953]   File "/usr/lib/python3.6/site-packages/pony/utils/utils.py", line 58, in cut_traceback
+[Sat Jan 06 16:55:16.511004 2018] [wsgi:error] [pid 924] [remote 94.181.154.87:44953]     return func(*args, **kwargs)
+[Sat Jan 06 16:55:16.511028 2018] [wsgi:error] [pid 924] [remote 94.181.154.87:44953]   File "/usr/lib/python3.6/site-packages/pony/orm/core.py", line 657, in bind
+[Sat Jan 06 16:55:16.511040 2018] [wsgi:error] [pid 924] [remote 94.181.154.87:44953]     self._bind(*args, **kwargs)
+[Sat Jan 06 16:55:16.511064 2018] [wsgi:error] [pid 924] [remote 94.181.154.87:44953]   File "/usr/lib/python3.6/site-packages/pony/orm/core.py", line 673, in _bind
+[Sat Jan 06 16:55:16.511077 2018] [wsgi:error] [pid 924] [remote 94.181.154.87:44953]     self.provider = provider_cls(*args, **kwargs)
+[Sat Jan 06 16:55:16.511101 2018] [wsgi:error] [pid 924] [remote 94.181.154.87:44953]   File "/usr/lib/python3.6/site-packages/pony/orm/dbapiprovider.py", line 114, in __init__
+[Sat Jan 06 16:55:16.511113 2018] [wsgi:error] [pid 924] [remote 94.181.154.87:44953]     connection = provider.connect()
+[Sat Jan 06 16:55:16.511137 2018] [wsgi:error] [pid 924] [remote 94.181.154.87:44953]   File "<string>", line 2, in connect
+[Sat Jan 06 16:55:16.511190 2018] [wsgi:error] [pid 924] [remote 94.181.154.87:44953]   File "/usr/lib/python3.6/site-packages/pony/orm/dbapiprovider.py", line 61, in wrap_dbapi_exceptions
+[Sat Jan 06 16:55:16.511204 2018] [wsgi:error] [pid 924] [remote 94.181.154.87:44953]     raise OperationalError(e)
+[Sat Jan 06 16:55:16.511248 2018] [wsgi:error] [pid 924] [remote 94.181.154.87:44953] pony.orm.dbapiprovider.OperationalError: could not connect to server: No such file or directory
+[Sat Jan 06 16:55:16.511263 2018] [wsgi:error] [pid 924] [remote 94.181.154.87:44953] \tIs the server running locally and accepting
+[Sat Jan 06 16:55:16.511272 2018] [wsgi:error] [pid 924] [remote 94.181.154.87:44953] \tconnections on Unix domain socket "/run/postgresql/.s.PGSQL.5432"?
+[Sat Jan 06 16:55:16.511281 2018] [wsgi:error] [pid 924] [remote 94.181.154.87:44953] 
+[Sat Jan 06 17:50:35.993984 2018] [wsgi:error] [pid 924] [remote 94.181.154.87:45492] [2018-01-06 17:50:35,949] ERROR in app: Exception on /wait [GET]
+[Sat Jan 06 17:50:35.994135 2018] [wsgi:error] [pid 924] [remote 94.181.154.87:45492] Traceback (most recent call last):
+[Sat Jan 06 17:50:35.994149 2018] [wsgi:error] [pid 924] [remote 94.181.154.87:45492]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+[Sat Jan 06 17:50:35.994160 2018] [wsgi:error] [pid 924] [remote 94.181.154.87:45492]     response = self.full_dispatch_request()
+[Sat Jan 06 17:50:35.994169 2018] [wsgi:error] [pid 924] [remote 94.181.154.87:45492]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1614, in full_dispatch_request
+[Sat Jan 06 17:50:35.994179 2018] [wsgi:error] [pid 924] [remote 94.181.154.87:45492]     rv = self.handle_user_exception(e)
+[Sat Jan 06 17:50:35.994187 2018] [wsgi:error] [pid 924] [remote 94.181.154.87:45492]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1517, in handle_user_exception
+[Sat Jan 06 17:50:35.994196 2018] [wsgi:error] [pid 924] [remote 94.181.154.87:45492]     reraise(exc_type, exc_value, tb)
+[Sat Jan 06 17:50:35.994205 2018] [wsgi:error] [pid 924] [remote 94.181.154.87:45492]   File "/usr/lib/python3.6/site-packages/flask/_compat.py", line 33, in reraise
+[Sat Jan 06 17:50:35.994214 2018] [wsgi:error] [pid 924] [remote 94.181.154.87:45492]     raise value
+[Sat Jan 06 17:50:35.994222 2018] [wsgi:error] [pid 924] [remote 94.181.154.87:45492]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1612, in full_dispatch_request
+[Sat Jan 06 17:50:35.994232 2018] [wsgi:error] [pid 924] [remote 94.181.154.87:45492]     rv = self.dispatch_request()
+[Sat Jan 06 17:50:35.994240 2018] [wsgi:error] [pid 924] [remote 94.181.154.87:45492]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1598, in dispatch_request
+[Sat Jan 06 17:50:35.994249 2018] [wsgi:error] [pid 924] [remote 94.181.154.87:45492]     return self.view_functions[rule.endpoint](**req.view_args)
+[Sat Jan 06 17:50:35.994258 2018] [wsgi:error] [pid 924] [remote 94.181.154.87:45492]   File "/srv/http/virtlabs.tk/forsaje.tk/api.py", line 64, in wait
+[Sat Jan 06 17:50:35.994268 2018] [wsgi:error] [pid 924] [remote 94.181.154.87:45492]     order = Taxi_order.get(phone=request.args.get('phone'))
+[Sat Jan 06 17:50:35.994276 2018] [wsgi:error] [pid 924] [remote 94.181.154.87:45492]   File "<string>", line 2, in get
+[Sat Jan 06 17:50:35.994285 2018] [wsgi:error] [pid 924] [remote 94.181.154.87:45492]   File "/usr/lib/python3.6/site-packages/pony/utils/utils.py", line 58, in cut_traceback
+[Sat Jan 06 17:50:35.994294 2018] [wsgi:error] [pid 924] [remote 94.181.154.87:45492]     return func(*args, **kwargs)
+[Sat Jan 06 17:50:35.994303 2018] [wsgi:error] [pid 924] [remote 94.181.154.87:45492]   File "/usr/lib/python3.6/site-packages/pony/orm/core.py", line 3702, in get
+[Sat Jan 06 17:50:35.994312 2018] [wsgi:error] [pid 924] [remote 94.181.154.87:45492]     try: return entity._find_one_(kwargs)  # can throw MultipleObjectsFoundError
+[Sat Jan 06 17:50:35.994321 2018] [wsgi:error] [pid 924] [remote 94.181.154.87:45492]   File "/usr/lib/python3.6/site-packages/pony/orm/core.py", line 3801, in _find_one_
+[Sat Jan 06 17:50:35.994401 2018] [wsgi:error] [pid 924] [remote 94.181.154.87:45492]     if obj is None: obj = entity._find_in_db_(avdict, unique, for_update, nowait)
+[Sat Jan 06 17:50:35.994413 2018] [wsgi:error] [pid 924] [remote 94.181.154.87:45492]   File "/usr/lib/python3.6/site-packages/pony/orm/core.py", line 3861, in _find_in_db_
+[Sat Jan 06 17:50:35.994423 2018] [wsgi:error] [pid 924] [remote 94.181.154.87:45492]     objects = entity._fetch_objects(cursor, attr_offsets, 1, for_update, avdict)
+[Sat Jan 06 17:50:35.994433 2018] [wsgi:error] [pid 924] [remote 94.181.154.87:45492]   File "/usr/lib/python3.6/site-packages/pony/orm/core.py", line 3980, in _fetch_objects
+[Sat Jan 06 17:50:35.994442 2018] [wsgi:error] [pid 924] [remote 94.181.154.87:45492]     'Multiple objects were found. Use %s.select(...) to retrieve them' % entity.__name__)
+[Sat Jan 06 17:50:35.994452 2018] [wsgi:error] [pid 924] [remote 94.181.154.87:45492]   File "/usr/lib/python3.6/site-packages/pony/utils/utils.py", line 98, in throw
+[Sat Jan 06 17:50:35.994461 2018] [wsgi:error] [pid 924] [remote 94.181.154.87:45492]     raise exc
+[Sat Jan 06 17:50:35.994476 2018] [wsgi:error] [pid 924] [remote 94.181.154.87:45492] pony.orm.core.MultipleObjectsFoundError: Multiple objects were found. Use Taxi_order.select(...) to retrieve them
+[Sat Jan 06 17:50:35.994536 2018] [wsgi:error] [pid 924] [remote 94.181.154.87:45492] 
+[Tue Jan 09 11:02:47.721883 2018] [wsgi:error] [pid 1677] [remote 217.118.90.190:61799] [2018-01-09 11:02:47,710] ERROR in app: Exception on /wait [GET]
+[Tue Jan 09 11:02:47.722064 2018] [wsgi:error] [pid 1677] [remote 217.118.90.190:61799] Traceback (most recent call last):
+[Tue Jan 09 11:02:47.722078 2018] [wsgi:error] [pid 1677] [remote 217.118.90.190:61799]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+[Tue Jan 09 11:02:47.722090 2018] [wsgi:error] [pid 1677] [remote 217.118.90.190:61799]     response = self.full_dispatch_request()
+[Tue Jan 09 11:02:47.722100 2018] [wsgi:error] [pid 1677] [remote 217.118.90.190:61799]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1614, in full_dispatch_request
+[Tue Jan 09 11:02:47.722111 2018] [wsgi:error] [pid 1677] [remote 217.118.90.190:61799]     rv = self.handle_user_exception(e)
+[Tue Jan 09 11:02:47.722120 2018] [wsgi:error] [pid 1677] [remote 217.118.90.190:61799]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1517, in handle_user_exception
+[Tue Jan 09 11:02:47.722130 2018] [wsgi:error] [pid 1677] [remote 217.118.90.190:61799]     reraise(exc_type, exc_value, tb)
+[Tue Jan 09 11:02:47.722139 2018] [wsgi:error] [pid 1677] [remote 217.118.90.190:61799]   File "/usr/lib/python3.6/site-packages/flask/_compat.py", line 33, in reraise
+[Tue Jan 09 11:02:47.722148 2018] [wsgi:error] [pid 1677] [remote 217.118.90.190:61799]     raise value
+[Tue Jan 09 11:02:47.722157 2018] [wsgi:error] [pid 1677] [remote 217.118.90.190:61799]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1612, in full_dispatch_request
+[Tue Jan 09 11:02:47.722167 2018] [wsgi:error] [pid 1677] [remote 217.118.90.190:61799]     rv = self.dispatch_request()
+[Tue Jan 09 11:02:47.722176 2018] [wsgi:error] [pid 1677] [remote 217.118.90.190:61799]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1598, in dispatch_request
+[Tue Jan 09 11:02:47.722186 2018] [wsgi:error] [pid 1677] [remote 217.118.90.190:61799]     return self.view_functions[rule.endpoint](**req.view_args)
+[Tue Jan 09 11:02:47.722196 2018] [wsgi:error] [pid 1677] [remote 217.118.90.190:61799]   File "/srv/http/virtlabs.tk/forsaje.tk/api.py", line 64, in wait
+[Tue Jan 09 11:02:47.722205 2018] [wsgi:error] [pid 1677] [remote 217.118.90.190:61799]     order = Taxi_order.get(phone=request.args.get('phone'))
+[Tue Jan 09 11:02:47.722215 2018] [wsgi:error] [pid 1677] [remote 217.118.90.190:61799]   File "<string>", line 2, in get
+[Tue Jan 09 11:02:47.722224 2018] [wsgi:error] [pid 1677] [remote 217.118.90.190:61799]   File "/usr/lib/python3.6/site-packages/pony/utils/utils.py", line 58, in cut_traceback
+[Tue Jan 09 11:02:47.722313 2018] [wsgi:error] [pid 1677] [remote 217.118.90.190:61799]     return func(*args, **kwargs)
+[Tue Jan 09 11:02:47.722325 2018] [wsgi:error] [pid 1677] [remote 217.118.90.190:61799]   File "/usr/lib/python3.6/site-packages/pony/orm/core.py", line 3702, in get
+[Tue Jan 09 11:02:47.722334 2018] [wsgi:error] [pid 1677] [remote 217.118.90.190:61799]     try: return entity._find_one_(kwargs)  # can throw MultipleObjectsFoundError
+[Tue Jan 09 11:02:47.722343 2018] [wsgi:error] [pid 1677] [remote 217.118.90.190:61799]   File "/usr/lib/python3.6/site-packages/pony/orm/core.py", line 3801, in _find_one_
+[Tue Jan 09 11:02:47.722353 2018] [wsgi:error] [pid 1677] [remote 217.118.90.190:61799]     if obj is None: obj = entity._find_in_db_(avdict, unique, for_update, nowait)
+[Tue Jan 09 11:02:47.722362 2018] [wsgi:error] [pid 1677] [remote 217.118.90.190:61799]   File "/usr/lib/python3.6/site-packages/pony/orm/core.py", line 3861, in _find_in_db_
+[Tue Jan 09 11:02:47.722371 2018] [wsgi:error] [pid 1677] [remote 217.118.90.190:61799]     objects = entity._fetch_objects(cursor, attr_offsets, 1, for_update, avdict)
+[Tue Jan 09 11:02:47.722381 2018] [wsgi:error] [pid 1677] [remote 217.118.90.190:61799]   File "/usr/lib/python3.6/site-packages/pony/orm/core.py", line 3980, in _fetch_objects
+[Tue Jan 09 11:02:47.722390 2018] [wsgi:error] [pid 1677] [remote 217.118.90.190:61799]     'Multiple objects were found. Use %s.select(...) to retrieve them' % entity.__name__)
+[Tue Jan 09 11:02:47.722399 2018] [wsgi:error] [pid 1677] [remote 217.118.90.190:61799]   File "/usr/lib/python3.6/site-packages/pony/utils/utils.py", line 98, in throw
+[Tue Jan 09 11:02:47.722408 2018] [wsgi:error] [pid 1677] [remote 217.118.90.190:61799]     raise exc
+[Tue Jan 09 11:02:47.722425 2018] [wsgi:error] [pid 1677] [remote 217.118.90.190:61799] pony.orm.core.MultipleObjectsFoundError: Multiple objects were found. Use Taxi_order.select(...) to retrieve them
+[Tue Jan 09 11:02:47.722495 2018] [wsgi:error] [pid 1677] [remote 217.118.90.190:61799] 
+[Wed Jan 17 10:15:30.748054 2018] [wsgi:error] [pid 344] [remote 83.149.21.147:16462] [2018-01-17 10:15:30,682] ERROR in app: Exception on /work/order [GET]
+[Wed Jan 17 10:15:30.760017 2018] [wsgi:error] [pid 344] [remote 83.149.21.147:16462] Traceback (most recent call last):
+[Wed Jan 17 10:15:30.760041 2018] [wsgi:error] [pid 344] [remote 83.149.21.147:16462]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+[Wed Jan 17 10:15:30.760054 2018] [wsgi:error] [pid 344] [remote 83.149.21.147:16462]     response = self.full_dispatch_request()
+[Wed Jan 17 10:15:30.760065 2018] [wsgi:error] [pid 344] [remote 83.149.21.147:16462]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1614, in full_dispatch_request
+[Wed Jan 17 10:15:30.760075 2018] [wsgi:error] [pid 344] [remote 83.149.21.147:16462]     rv = self.handle_user_exception(e)
+[Wed Jan 17 10:15:30.760085 2018] [wsgi:error] [pid 344] [remote 83.149.21.147:16462]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1517, in handle_user_exception
+[Wed Jan 17 10:15:30.760096 2018] [wsgi:error] [pid 344] [remote 83.149.21.147:16462]     reraise(exc_type, exc_value, tb)
+[Wed Jan 17 10:15:30.760105 2018] [wsgi:error] [pid 344] [remote 83.149.21.147:16462]   File "/usr/lib/python3.6/site-packages/flask/_compat.py", line 33, in reraise
+[Wed Jan 17 10:15:30.760116 2018] [wsgi:error] [pid 344] [remote 83.149.21.147:16462]     raise value
+[Wed Jan 17 10:15:30.760126 2018] [wsgi:error] [pid 344] [remote 83.149.21.147:16462]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1612, in full_dispatch_request
+[Wed Jan 17 10:15:30.760136 2018] [wsgi:error] [pid 344] [remote 83.149.21.147:16462]     rv = self.dispatch_request()
+[Wed Jan 17 10:15:30.760146 2018] [wsgi:error] [pid 344] [remote 83.149.21.147:16462]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1598, in dispatch_request
+[Wed Jan 17 10:15:30.760216 2018] [wsgi:error] [pid 344] [remote 83.149.21.147:16462]     return self.view_functions[rule.endpoint](**req.view_args)
+[Wed Jan 17 10:15:30.760229 2018] [wsgi:error] [pid 344] [remote 83.149.21.147:16462]   File "/srv/http/virtlabs.tk/forsaje.tk/api.py", line 204, in order
+[Wed Jan 17 10:15:30.760239 2018] [wsgi:error] [pid 344] [remote 83.149.21.147:16462]     'phone': request.args.get('phone'),
+[Wed Jan 17 10:15:30.760249 2018] [wsgi:error] [pid 344] [remote 83.149.21.147:16462]   File "/usr/lib/python3.6/site-packages/flask/templating.py", line 134, in render_template
+[Wed Jan 17 10:15:30.760259 2018] [wsgi:error] [pid 344] [remote 83.149.21.147:16462]     context, ctx.app)
+[Wed Jan 17 10:15:30.760269 2018] [wsgi:error] [pid 344] [remote 83.149.21.147:16462]   File "/usr/lib/python3.6/site-packages/flask/templating.py", line 116, in _render
+[Wed Jan 17 10:15:30.760279 2018] [wsgi:error] [pid 344] [remote 83.149.21.147:16462]     rv = template.render(context)
+[Wed Jan 17 10:15:30.760288 2018] [wsgi:error] [pid 344] [remote 83.149.21.147:16462]   File "/usr/lib/python3.6/site-packages/jinja2/asyncsupport.py", line 76, in render
+[Wed Jan 17 10:15:30.760299 2018] [wsgi:error] [pid 344] [remote 83.149.21.147:16462]     return original_render(self, *args, **kwargs)
+[Wed Jan 17 10:15:30.760308 2018] [wsgi:error] [pid 344] [remote 83.149.21.147:16462]   File "/usr/lib/python3.6/site-packages/jinja2/environment.py", line 1008, in render
+[Wed Jan 17 10:15:30.760319 2018] [wsgi:error] [pid 344] [remote 83.149.21.147:16462]     return self.environment.handle_exception(exc_info, True)
+[Wed Jan 17 10:15:30.760329 2018] [wsgi:error] [pid 344] [remote 83.149.21.147:16462]   File "/usr/lib/python3.6/site-packages/jinja2/environment.py", line 780, in handle_exception
+[Wed Jan 17 10:15:30.760339 2018] [wsgi:error] [pid 344] [remote 83.149.21.147:16462]     reraise(exc_type, exc_value, tb)
+[Wed Jan 17 10:15:30.760349 2018] [wsgi:error] [pid 344] [remote 83.149.21.147:16462]   File "/usr/lib/python3.6/site-packages/jinja2/_compat.py", line 37, in reraise
+[Wed Jan 17 10:15:30.760359 2018] [wsgi:error] [pid 344] [remote 83.149.21.147:16462]     raise value.with_traceback(tb)
+[Wed Jan 17 10:15:30.760369 2018] [wsgi:error] [pid 344] [remote 83.149.21.147:16462]   File "/srv/http/virtlabs.tk/forsaje.tk/templates/work/order.html", line 1, in top-level template code
+[Wed Jan 17 10:15:30.760379 2018] [wsgi:error] [pid 344] [remote 83.149.21.147:16462]     {% extends "work/part.html" %}
+[Wed Jan 17 10:15:30.760389 2018] [wsgi:error] [pid 344] [remote 83.149.21.147:16462]   File "/srv/http/virtlabs.tk/forsaje.tk/templates/work/part.html", line 1, in top-level template code
+[Wed Jan 17 10:15:30.760398 2018] [wsgi:error] [pid 344] [remote 83.149.21.147:16462]     {% extends "index.html" %}
+[Wed Jan 17 10:15:30.760408 2018] [wsgi:error] [pid 344] [remote 83.149.21.147:16462]   File "/srv/http/virtlabs.tk/forsaje.tk/templates/index.html", line 42, in top-level template code
+[Wed Jan 17 10:15:30.760419 2018] [wsgi:error] [pid 344] [remote 83.149.21.147:16462]     {% block body %}
+[Wed Jan 17 10:15:30.760428 2018] [wsgi:error] [pid 344] [remote 83.149.21.147:16462]   File "/srv/http/virtlabs.tk/forsaje.tk/templates/work/order.html", line 10, in block "body"
+[Wed Jan 17 10:15:30.760439 2018] [wsgi:error] [pid 344] [remote 83.149.21.147:16462]     <form action="/work/wait_confirm?id={{ order.id }}&phone={{ order.phone }}&address_from={{ order.address_from }}&address_to={{ order.address_to }}&comment={{ order.comment }}" style="display:inline">
+[Wed Jan 17 10:15:30.760451 2018] [wsgi:error] [pid 344] [remote 83.149.21.147:16462]   File "/usr/lib/python3.6/site-packages/jinja2/environment.py", line 430, in getattr
+[Wed Jan 17 10:15:30.760461 2018] [wsgi:error] [pid 344] [remote 83.149.21.147:16462]     return getattr(obj, attribute)
+[Wed Jan 17 10:15:30.760485 2018] [wsgi:error] [pid 344] [remote 83.149.21.147:16462] jinja2.exceptions.UndefinedError: 'order' is undefined
+[Wed Jan 17 10:15:30.760627 2018] [wsgi:error] [pid 344] [remote 83.149.21.147:16462] 
+[Wed Jan 17 10:36:32.912694 2018] [wsgi:error] [pid 7978] [remote 83.149.21.147:39309] [2018-01-17 10:36:32,834] ERROR in app: Exception on /work/part [GET]
+[Wed Jan 17 10:36:32.912876 2018] [wsgi:error] [pid 7978] [remote 83.149.21.147:39309] Traceback (most recent call last):
+[Wed Jan 17 10:36:32.912895 2018] [wsgi:error] [pid 7978] [remote 83.149.21.147:39309]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+[Wed Jan 17 10:36:32.912907 2018] [wsgi:error] [pid 7978] [remote 83.149.21.147:39309]     response = self.full_dispatch_request()
+[Wed Jan 17 10:36:32.912917 2018] [wsgi:error] [pid 7978] [remote 83.149.21.147:39309]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1614, in full_dispatch_request
+[Wed Jan 17 10:36:32.912928 2018] [wsgi:error] [pid 7978] [remote 83.149.21.147:39309]     rv = self.handle_user_exception(e)
+[Wed Jan 17 10:36:32.912938 2018] [wsgi:error] [pid 7978] [remote 83.149.21.147:39309]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1517, in handle_user_exception
+[Wed Jan 17 10:36:32.912949 2018] [wsgi:error] [pid 7978] [remote 83.149.21.147:39309]     reraise(exc_type, exc_value, tb)
+[Wed Jan 17 10:36:32.912958 2018] [wsgi:error] [pid 7978] [remote 83.149.21.147:39309]   File "/usr/lib/python3.6/site-packages/flask/_compat.py", line 33, in reraise
+[Wed Jan 17 10:36:32.912969 2018] [wsgi:error] [pid 7978] [remote 83.149.21.147:39309]     raise value
+[Wed Jan 17 10:36:32.912978 2018] [wsgi:error] [pid 7978] [remote 83.149.21.147:39309]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1612, in full_dispatch_request
+[Wed Jan 17 10:36:32.912988 2018] [wsgi:error] [pid 7978] [remote 83.149.21.147:39309]     rv = self.dispatch_request()
+[Wed Jan 17 10:36:32.912998 2018] [wsgi:error] [pid 7978] [remote 83.149.21.147:39309]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1598, in dispatch_request
+[Wed Jan 17 10:36:32.913009 2018] [wsgi:error] [pid 7978] [remote 83.149.21.147:39309]     return self.view_functions[rule.endpoint](**req.view_args)
+[Wed Jan 17 10:36:32.913019 2018] [wsgi:error] [pid 7978] [remote 83.149.21.147:39309]   File "/srv/http/virtlabs.tk/forsaje.tk/api.py", line 168, in work_part
+[Wed Jan 17 10:36:32.913030 2018] [wsgi:error] [pid 7978] [remote 83.149.21.147:39309]     worker = Worker.get(id=request.cookies.get('id'))
+[Wed Jan 17 10:36:32.913040 2018] [wsgi:error] [pid 7978] [remote 83.149.21.147:39309]   File "<string>", line 2, in get
+[Wed Jan 17 10:36:32.913049 2018] [wsgi:error] [pid 7978] [remote 83.149.21.147:39309]   File "/usr/lib/python3.6/site-packages/pony/utils/utils.py", line 58, in cut_traceback
+[Wed Jan 17 10:36:32.913060 2018] [wsgi:error] [pid 7978] [remote 83.149.21.147:39309]     return func(*args, **kwargs)
+[Wed Jan 17 10:36:32.913069 2018] [wsgi:error] [pid 7978] [remote 83.149.21.147:39309]   File "/usr/lib/python3.6/site-packages/pony/orm/core.py", line 3702, in get
+[Wed Jan 17 10:36:32.913080 2018] [wsgi:error] [pid 7978] [remote 83.149.21.147:39309]     try: return entity._find_one_(kwargs)  # can throw MultipleObjectsFoundError
+[Wed Jan 17 10:36:32.913090 2018] [wsgi:error] [pid 7978] [remote 83.149.21.147:39309]   File "/usr/lib/python3.6/site-packages/pony/orm/core.py", line 3792, in _find_one_
+[Wed Jan 17 10:36:32.913100 2018] [wsgi:error] [pid 7978] [remote 83.149.21.147:39309]     avdict[attr] = attr.validate(val, None, entity, from_db=False)
+[Wed Jan 17 10:36:32.913110 2018] [wsgi:error] [pid 7978] [remote 83.149.21.147:39309]   File "/usr/lib/python3.6/site-packages/pony/orm/core.py", line 2352, in validate
+[Wed Jan 17 10:36:32.913121 2018] [wsgi:error] [pid 7978] [remote 83.149.21.147:39309]     val = Attribute.validate(attr, val, obj, entity, from_db)
+[Wed Jan 17 10:36:32.913131 2018] [wsgi:error] [pid 7978] [remote 83.149.21.147:39309]   File "/usr/lib/python3.6/site-packages/pony/orm/core.py", line 2027, in validate
+[Wed Jan 17 10:36:32.913141 2018] [wsgi:error] [pid 7978] [remote 83.149.21.147:39309]     val = converter.validate(val, obj)
+[Wed Jan 17 10:36:32.913232 2018] [wsgi:error] [pid 7978] [remote 83.149.21.147:39309]   File "/usr/lib/python3.6/site-packages/pony/orm/dbapiprovider.py", line 507, in validate
+[Wed Jan 17 10:36:32.913245 2018] [wsgi:error] [pid 7978] [remote 83.149.21.147:39309]     'Value type for attribute %s must be int. Got string %r' % (converter.attr, val))
+[Wed Jan 17 10:36:32.913256 2018] [wsgi:error] [pid 7978] [remote 83.149.21.147:39309]   File "/usr/lib/python3.6/site-packages/pony/utils/utils.py", line 98, in throw
+[Wed Jan 17 10:36:32.913266 2018] [wsgi:error] [pid 7978] [remote 83.149.21.147:39309]     raise exc
+[Wed Jan 17 10:36:32.913283 2018] [wsgi:error] [pid 7978] [remote 83.149.21.147:39309] ValueError: Value type for attribute Worker.id must be int. Got string '\\x00'
+[Wed Jan 17 10:36:32.913353 2018] [wsgi:error] [pid 7978] [remote 83.149.21.147:39309] 
+[Wed Jan 17 10:38:44.000317 2018] [wsgi:error] [pid 8023] [remote 83.149.21.147:24295] [2018-01-17 10:38:43,995] ERROR in app: Exception on /work/part [GET]
+[Wed Jan 17 10:38:44.000484 2018] [wsgi:error] [pid 8023] [remote 83.149.21.147:24295] Traceback (most recent call last):
+[Wed Jan 17 10:38:44.000499 2018] [wsgi:error] [pid 8023] [remote 83.149.21.147:24295]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+[Wed Jan 17 10:38:44.000510 2018] [wsgi:error] [pid 8023] [remote 83.149.21.147:24295]     response = self.full_dispatch_request()
+[Wed Jan 17 10:38:44.000520 2018] [wsgi:error] [pid 8023] [remote 83.149.21.147:24295]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1614, in full_dispatch_request
+[Wed Jan 17 10:38:44.000530 2018] [wsgi:error] [pid 8023] [remote 83.149.21.147:24295]     rv = self.handle_user_exception(e)
+[Wed Jan 17 10:38:44.000540 2018] [wsgi:error] [pid 8023] [remote 83.149.21.147:24295]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1517, in handle_user_exception
+[Wed Jan 17 10:38:44.000550 2018] [wsgi:error] [pid 8023] [remote 83.149.21.147:24295]     reraise(exc_type, exc_value, tb)
+[Wed Jan 17 10:38:44.000560 2018] [wsgi:error] [pid 8023] [remote 83.149.21.147:24295]   File "/usr/lib/python3.6/site-packages/flask/_compat.py", line 33, in reraise
+[Wed Jan 17 10:38:44.000570 2018] [wsgi:error] [pid 8023] [remote 83.149.21.147:24295]     raise value
+[Wed Jan 17 10:38:44.000579 2018] [wsgi:error] [pid 8023] [remote 83.149.21.147:24295]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1612, in full_dispatch_request
+[Wed Jan 17 10:38:44.000589 2018] [wsgi:error] [pid 8023] [remote 83.149.21.147:24295]     rv = self.dispatch_request()
+[Wed Jan 17 10:38:44.000599 2018] [wsgi:error] [pid 8023] [remote 83.149.21.147:24295]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1598, in dispatch_request
+[Wed Jan 17 10:38:44.000609 2018] [wsgi:error] [pid 8023] [remote 83.149.21.147:24295]     return self.view_functions[rule.endpoint](**req.view_args)
+[Wed Jan 17 10:38:44.000619 2018] [wsgi:error] [pid 8023] [remote 83.149.21.147:24295]   File "/srv/http/virtlabs.tk/forsaje.tk/api.py", line 168, in work_part
+[Wed Jan 17 10:38:44.000630 2018] [wsgi:error] [pid 8023] [remote 83.149.21.147:24295]     worker = Worker.get(id=int(request.cookies.get('id')))
+[Wed Jan 17 10:38:44.000645 2018] [wsgi:error] [pid 8023] [remote 83.149.21.147:24295] ValueError: invalid literal for int() with base 10: '\\x00'
+[Wed Jan 17 10:38:44.000702 2018] [wsgi:error] [pid 8023] [remote 83.149.21.147:24295] 
+[Wed Jan 17 10:38:51.188726 2018] [wsgi:error] [pid 8023] [remote 83.149.21.147:24623] [2018-01-17 10:38:51,187] ERROR in app: Exception on /work/part [GET]
+[Wed Jan 17 10:38:51.188882 2018] [wsgi:error] [pid 8023] [remote 83.149.21.147:24623] Traceback (most recent call last):
+[Wed Jan 17 10:38:51.188898 2018] [wsgi:error] [pid 8023] [remote 83.149.21.147:24623]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+[Wed Jan 17 10:38:51.188910 2018] [wsgi:error] [pid 8023] [remote 83.149.21.147:24623]     response = self.full_dispatch_request()
+[Wed Jan 17 10:38:51.188996 2018] [wsgi:error] [pid 8023] [remote 83.149.21.147:24623]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1614, in full_dispatch_request
+[Wed Jan 17 10:38:51.189010 2018] [wsgi:error] [pid 8023] [remote 83.149.21.147:24623]     rv = self.handle_user_exception(e)
+[Wed Jan 17 10:38:51.189020 2018] [wsgi:error] [pid 8023] [remote 83.149.21.147:24623]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1517, in handle_user_exception
+[Wed Jan 17 10:38:51.189030 2018] [wsgi:error] [pid 8023] [remote 83.149.21.147:24623]     reraise(exc_type, exc_value, tb)
+[Wed Jan 17 10:38:51.189040 2018] [wsgi:error] [pid 8023] [remote 83.149.21.147:24623]   File "/usr/lib/python3.6/site-packages/flask/_compat.py", line 33, in reraise
+[Wed Jan 17 10:38:51.189050 2018] [wsgi:error] [pid 8023] [remote 83.149.21.147:24623]     raise value
+[Wed Jan 17 10:38:51.189060 2018] [wsgi:error] [pid 8023] [remote 83.149.21.147:24623]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1612, in full_dispatch_request
+[Wed Jan 17 10:38:51.189069 2018] [wsgi:error] [pid 8023] [remote 83.149.21.147:24623]     rv = self.dispatch_request()
+[Wed Jan 17 10:38:51.189079 2018] [wsgi:error] [pid 8023] [remote 83.149.21.147:24623]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1598, in dispatch_request
+[Wed Jan 17 10:38:51.189089 2018] [wsgi:error] [pid 8023] [remote 83.149.21.147:24623]     return self.view_functions[rule.endpoint](**req.view_args)
+[Wed Jan 17 10:38:51.189099 2018] [wsgi:error] [pid 8023] [remote 83.149.21.147:24623]   File "/srv/http/virtlabs.tk/forsaje.tk/api.py", line 168, in work_part
+[Wed Jan 17 10:38:51.189115 2018] [wsgi:error] [pid 8023] [remote 83.149.21.147:24623]     worker = Worker.get(id=int(request.cookies.get('id')))
+[Wed Jan 17 10:38:51.189133 2018] [wsgi:error] [pid 8023] [remote 83.149.21.147:24623] ValueError: invalid literal for int() with base 10: '\\x00'
+[Wed Jan 17 10:38:51.189193 2018] [wsgi:error] [pid 8023] [remote 83.149.21.147:24623] 
+[Wed Jan 17 10:38:59.185867 2018] [wsgi:error] [pid 8023] [remote 83.149.21.147:49045] [2018-01-17 10:38:59,184] ERROR in app: Exception on /work/part [GET]
+[Wed Jan 17 10:38:59.185984 2018] [wsgi:error] [pid 8023] [remote 83.149.21.147:49045] Traceback (most recent call last):
+[Wed Jan 17 10:38:59.185998 2018] [wsgi:error] [pid 8023] [remote 83.149.21.147:49045]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+[Wed Jan 17 10:38:59.186009 2018] [wsgi:error] [pid 8023] [remote 83.149.21.147:49045]     response = self.full_dispatch_request()
+[Wed Jan 17 10:38:59.186020 2018] [wsgi:error] [pid 8023] [remote 83.149.21.147:49045]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1614, in full_dispatch_request
+[Wed Jan 17 10:38:59.186031 2018] [wsgi:error] [pid 8023] [remote 83.149.21.147:49045]     rv = self.handle_user_exception(e)
+[Wed Jan 17 10:38:59.186040 2018] [wsgi:error] [pid 8023] [remote 83.149.21.147:49045]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1517, in handle_user_exception
+[Wed Jan 17 10:38:59.186051 2018] [wsgi:error] [pid 8023] [remote 83.149.21.147:49045]     reraise(exc_type, exc_value, tb)
+[Wed Jan 17 10:38:59.186061 2018] [wsgi:error] [pid 8023] [remote 83.149.21.147:49045]   File "/usr/lib/python3.6/site-packages/flask/_compat.py", line 33, in reraise
+[Wed Jan 17 10:38:59.186071 2018] [wsgi:error] [pid 8023] [remote 83.149.21.147:49045]     raise value
+[Wed Jan 17 10:38:59.186081 2018] [wsgi:error] [pid 8023] [remote 83.149.21.147:49045]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1612, in full_dispatch_request
+[Wed Jan 17 10:38:59.186091 2018] [wsgi:error] [pid 8023] [remote 83.149.21.147:49045]     rv = self.dispatch_request()
+[Wed Jan 17 10:38:59.186101 2018] [wsgi:error] [pid 8023] [remote 83.149.21.147:49045]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1598, in dispatch_request
+[Wed Jan 17 10:38:59.186111 2018] [wsgi:error] [pid 8023] [remote 83.149.21.147:49045]     return self.view_functions[rule.endpoint](**req.view_args)
+[Wed Jan 17 10:38:59.186240 2018] [wsgi:error] [pid 8023] [remote 83.149.21.147:49045]   File "/srv/http/virtlabs.tk/forsaje.tk/api.py", line 168, in work_part
+[Wed Jan 17 10:38:59.186254 2018] [wsgi:error] [pid 8023] [remote 83.149.21.147:49045]     worker = Worker.get(id=int(request.cookies.get('id')))
+[Wed Jan 17 10:38:59.186271 2018] [wsgi:error] [pid 8023] [remote 83.149.21.147:49045] ValueError: invalid literal for int() with base 10: '\\x00'
+[Wed Jan 17 10:38:59.186332 2018] [wsgi:error] [pid 8023] [remote 83.149.21.147:49045] 
+[Wed Jan 17 10:39:11.305649 2018] [wsgi:error] [pid 8023] [remote 83.149.21.147:36797] [2018-01-17 10:39:11,304] ERROR in app: Exception on /work/part [GET]
+[Wed Jan 17 10:39:11.305770 2018] [wsgi:error] [pid 8023] [remote 83.149.21.147:36797] Traceback (most recent call last):
+[Wed Jan 17 10:39:11.305783 2018] [wsgi:error] [pid 8023] [remote 83.149.21.147:36797]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+[Wed Jan 17 10:39:11.305795 2018] [wsgi:error] [pid 8023] [remote 83.149.21.147:36797]     response = self.full_dispatch_request()
+[Wed Jan 17 10:39:11.305805 2018] [wsgi:error] [pid 8023] [remote 83.149.21.147:36797]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1614, in full_dispatch_request
+[Wed Jan 17 10:39:11.305816 2018] [wsgi:error] [pid 8023] [remote 83.149.21.147:36797]     rv = self.handle_user_exception(e)
+[Wed Jan 17 10:39:11.305825 2018] [wsgi:error] [pid 8023] [remote 83.149.21.147:36797]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1517, in handle_user_exception
+[Wed Jan 17 10:39:11.305836 2018] [wsgi:error] [pid 8023] [remote 83.149.21.147:36797]     reraise(exc_type, exc_value, tb)
+[Wed Jan 17 10:39:11.305846 2018] [wsgi:error] [pid 8023] [remote 83.149.21.147:36797]   File "/usr/lib/python3.6/site-packages/flask/_compat.py", line 33, in reraise
+[Wed Jan 17 10:39:11.305856 2018] [wsgi:error] [pid 8023] [remote 83.149.21.147:36797]     raise value
+[Wed Jan 17 10:39:11.305865 2018] [wsgi:error] [pid 8023] [remote 83.149.21.147:36797]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1612, in full_dispatch_request
+[Wed Jan 17 10:39:11.305875 2018] [wsgi:error] [pid 8023] [remote 83.149.21.147:36797]     rv = self.dispatch_request()
+[Wed Jan 17 10:39:11.305885 2018] [wsgi:error] [pid 8023] [remote 83.149.21.147:36797]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1598, in dispatch_request
+[Wed Jan 17 10:39:11.305896 2018] [wsgi:error] [pid 8023] [remote 83.149.21.147:36797]     return self.view_functions[rule.endpoint](**req.view_args)
+[Wed Jan 17 10:39:11.305906 2018] [wsgi:error] [pid 8023] [remote 83.149.21.147:36797]   File "/srv/http/virtlabs.tk/forsaje.tk/api.py", line 168, in work_part
+[Wed Jan 17 10:39:11.305916 2018] [wsgi:error] [pid 8023] [remote 83.149.21.147:36797]     worker = Worker.get(id=int(request.cookies.get('id')))
+[Wed Jan 17 10:39:11.305931 2018] [wsgi:error] [pid 8023] [remote 83.149.21.147:36797] ValueError: invalid literal for int() with base 10: '\\x00'
+[Wed Jan 17 10:39:11.305979 2018] [wsgi:error] [pid 8023] [remote 83.149.21.147:36797] 
+[Wed Jan 17 14:25:49.947193 2018] [wsgi:error] [pid 8023] [remote 83.149.21.147:61560] [2018-01-17 14:25:49,945] ERROR in app: Exception on /work/part [GET]
+[Wed Jan 17 14:25:49.947316 2018] [wsgi:error] [pid 8023] [remote 83.149.21.147:61560] Traceback (most recent call last):
+[Wed Jan 17 14:25:49.947331 2018] [wsgi:error] [pid 8023] [remote 83.149.21.147:61560]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+[Wed Jan 17 14:25:49.947342 2018] [wsgi:error] [pid 8023] [remote 83.149.21.147:61560]     response = self.full_dispatch_request()
+[Wed Jan 17 14:25:49.947352 2018] [wsgi:error] [pid 8023] [remote 83.149.21.147:61560]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1614, in full_dispatch_request
+[Wed Jan 17 14:25:49.947362 2018] [wsgi:error] [pid 8023] [remote 83.149.21.147:61560]     rv = self.handle_user_exception(e)
+[Wed Jan 17 14:25:49.947372 2018] [wsgi:error] [pid 8023] [remote 83.149.21.147:61560]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1517, in handle_user_exception
+[Wed Jan 17 14:25:49.947467 2018] [wsgi:error] [pid 8023] [remote 83.149.21.147:61560]     reraise(exc_type, exc_value, tb)
+[Wed Jan 17 14:25:49.947480 2018] [wsgi:error] [pid 8023] [remote 83.149.21.147:61560]   File "/usr/lib/python3.6/site-packages/flask/_compat.py", line 33, in reraise
+[Wed Jan 17 14:25:49.947490 2018] [wsgi:error] [pid 8023] [remote 83.149.21.147:61560]     raise value
+[Wed Jan 17 14:25:49.947500 2018] [wsgi:error] [pid 8023] [remote 83.149.21.147:61560]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1612, in full_dispatch_request
+[Wed Jan 17 14:25:49.947509 2018] [wsgi:error] [pid 8023] [remote 83.149.21.147:61560]     rv = self.dispatch_request()
+[Wed Jan 17 14:25:49.947519 2018] [wsgi:error] [pid 8023] [remote 83.149.21.147:61560]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1598, in dispatch_request
+[Wed Jan 17 14:25:49.947529 2018] [wsgi:error] [pid 8023] [remote 83.149.21.147:61560]     return self.view_functions[rule.endpoint](**req.view_args)
+[Wed Jan 17 14:25:49.947539 2018] [wsgi:error] [pid 8023] [remote 83.149.21.147:61560]   File "/srv/http/virtlabs.tk/forsaje.tk/api.py", line 168, in work_part
+[Wed Jan 17 14:25:49.947549 2018] [wsgi:error] [pid 8023] [remote 83.149.21.147:61560]     worker = Worker.get(id=request.args.get('id'))
+[Wed Jan 17 14:25:49.947564 2018] [wsgi:error] [pid 8023] [remote 83.149.21.147:61560] ValueError: invalid literal for int() with base 10: '\\x00'
+[Wed Jan 17 14:25:49.947619 2018] [wsgi:error] [pid 8023] [remote 83.149.21.147:61560] 

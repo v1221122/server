@@ -1,0 +1,17 @@
+{% extends "index.html" %}
+{% block body %}
+{% if not car %}
+<p class="label">Ваш заказ находится в обработке. Пожалуйста подождите</p>
+<button class="input"><i>i</i></button>
+{% else %}
+<audio src="sound.mp3" autoplay="autoplay" style="display:none" preload></audio>
+<p class="label">К вам подьедет {{ car.name }}. Гос. номер: {{ car.number }}. Цвет: {{ car.color }} через {{ time }} минут.</p>
+<form action="wait_page?time={{ time }}&id={{ id }}">
+    <input class="input" type="submit" value="OK" />
+</form>
+{% endif %}
+<br><br>
+<form action="cancel?id={{ id }}">
+    <input class="input" type="submit" value="Отменить" />
+</form>
+{% endblock %}

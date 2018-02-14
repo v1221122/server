@@ -1,0 +1,15 @@
+{% extends "index.html" %}
+{% block body %}
+<a href="/work/queue?part=1"  class="work_block left">
+    <label class="work_label">Заречный</label>
+</a>
+<a href="/work/settings" class="work_block right">
+    <label class="work_label">Настройки</label>
+</a>
+<a href="/work/queue?part=2" class="work_block">
+    <label class="work_label">Пенза</label>
+</a>
+<a href="/work/rss" class="work_block">
+    <label class="work_label">Объявления{% if new %}({{ count }}){% endif %}</label>
+</a>
+{% endblock %}
