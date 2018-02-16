@@ -214,3 +214,4 @@
 [Wed Jan 17 01:32:07.481354 2018] [php7:error] [pid 350] [client 104.128.144.131:40602] script '/srv/http/virtlabs.tk/graph/redirect.php' not found or unable to stat
 [Wed Jan 17 02:10:47.284549 2018] [cgi:error] [pid 349] [client 145.249.104.20:39505] AH02811: script not found or unable to stat: /srv/http/cgi-bin
 [Tue Feb 13 14:54:56.268031 2018] [php7:error] [pid 21485] [client 83.217.8.122:58347] script '/srv/http/virtlabs.tk/graph/prox_ch.php' not found or unable to stat
+[Thu Feb 15 02:02:29.232774 2018] [cgi:error] [pid 1553] [client 35.231.33.88:52148] AH02811: script not found or unable to stat: /srv/http/virtlabs.tk/graph/dnscfg.cgi
