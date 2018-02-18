@@ -216,3 +216,10 @@
 [Tue Feb 13 14:54:56.268031 2018] [php7:error] [pid 21485] [client 83.217.8.122:58347] script '/srv/http/virtlabs.tk/graph/prox_ch.php' not found or unable to stat
 [Thu Feb 15 02:02:29.232774 2018] [cgi:error] [pid 1553] [client 35.231.33.88:52148] AH02811: script not found or unable to stat: /srv/http/virtlabs.tk/graph/dnscfg.cgi
 [Fri Feb 16 10:12:39.658558 2018] [cgi:error] [pid 1549] [client 35.184.63.86:36298] AH02811: script not found or unable to stat: /srv/http/virtlabs.tk/graph/dnscfg.cgi
+[Sun Feb 18 00:05:33.539375 2018] [cgi:error] [pid 21484] [client 31.47.252.50:51961] AH02811: script not found or unable to stat: /srv/http/cgi-bin
+[Sun Feb 18 00:05:33.587029 2018] [cgi:error] [pid 21484] [client 31.47.252.50:51961] AH02811: script not found or unable to stat: /srv/http/cgi-bin
+[Sun Feb 18 00:05:33.633442 2018] [cgi:error] [pid 21484] [client 31.47.252.50:51961] AH02811: script not found or unable to stat: /srv/http/cgi-bin
+[Sun Feb 18 00:05:33.682986 2018] [cgi:error] [pid 21484] [client 31.47.252.50:51961] AH02811: script not found or unable to stat: /srv/http/cgi-bin
+[Sun Feb 18 00:05:33.731355 2018] [cgi:error] [pid 21484] [client 31.47.252.50:51961] AH02811: script not found or unable to stat: /srv/http/cgi-bin
+[Sun Feb 18 00:05:33.777940 2018] [cgi:error] [pid 21484] [client 31.47.252.50:51961] AH02811: script not found or unable to stat: /srv/http/cgi-bin
+[Sun Feb 18 00:05:33.827271 2018] [cgi:error] [pid 21484] [client 31.47.252.50:51961] AH02811: script not found or unable to stat: /srv/http/cgi-bin
