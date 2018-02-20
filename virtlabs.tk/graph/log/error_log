@@ -223,3 +223,4 @@
 [Sun Feb 18 00:05:33.731355 2018] [cgi:error] [pid 21484] [client 31.47.252.50:51961] AH02811: script not found or unable to stat: /srv/http/cgi-bin
 [Sun Feb 18 00:05:33.777940 2018] [cgi:error] [pid 21484] [client 31.47.252.50:51961] AH02811: script not found or unable to stat: /srv/http/cgi-bin
 [Sun Feb 18 00:05:33.827271 2018] [cgi:error] [pid 21484] [client 31.47.252.50:51961] AH02811: script not found or unable to stat: /srv/http/cgi-bin
+[Tue Feb 20 08:13:59.513656 2018] [php7:error] [pid 2282] [client 204.152.218.49:47502] script '/srv/http/virtlabs.tk/graph/proxyjudge.php' not found or unable to stat
