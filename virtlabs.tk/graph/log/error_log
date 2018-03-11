@@ -246,3 +246,10 @@
 [Fri Mar 09 22:54:23.492560 2018] [cgi:error] [pid 1553] [client 89.19.24.154:60217] AH02811: script not found or unable to stat: /srv/http/cgi-bin
 [Fri Mar 09 22:54:23.618755 2018] [cgi:error] [pid 1553] [client 89.19.24.154:60217] AH02811: script not found or unable to stat: /srv/http/cgi-bin
 [Fri Mar 09 22:54:23.716937 2018] [cgi:error] [pid 1553] [client 89.19.24.154:60217] AH02811: script not found or unable to stat: /srv/http/cgi-bin
+[Sun Mar 11 01:30:59.379189 2018] [cgi:error] [pid 1551] [client 89.19.24.154:44773] AH02811: script not found or unable to stat: /srv/http/cgi-bin
+[Sun Mar 11 01:30:59.474284 2018] [cgi:error] [pid 1551] [client 89.19.24.154:44773] AH02811: script not found or unable to stat: /srv/http/cgi-bin
+[Sun Mar 11 01:30:59.574340 2018] [cgi:error] [pid 1551] [client 89.19.24.154:44773] AH02811: script not found or unable to stat: /srv/http/cgi-bin
+[Sun Mar 11 01:30:59.668981 2018] [cgi:error] [pid 1551] [client 89.19.24.154:44773] AH02811: script not found or unable to stat: /srv/http/cgi-bin
+[Sun Mar 11 01:30:59.764589 2018] [cgi:error] [pid 1551] [client 89.19.24.154:44773] AH02811: script not found or unable to stat: /srv/http/cgi-bin
+[Sun Mar 11 01:30:59.859366 2018] [cgi:error] [pid 1551] [client 89.19.24.154:44773] AH02811: script not found or unable to stat: /srv/http/cgi-bin
+[Sun Mar 11 01:30:59.965521 2018] [cgi:error] [pid 1551] [client 89.19.24.154:44773] AH02811: script not found or unable to stat: /srv/http/cgi-bin
