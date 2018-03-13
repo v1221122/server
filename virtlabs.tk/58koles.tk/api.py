@@ -17,10 +17,10 @@ app = Flask(__name__)
 def main():
     items = [
             {
-                'target': 'http://forsaje.tk/application',
+                'target': 'http://5koleso.tk/application',
                 'src': '/static/img/forsaje.jpg',
                 'title': 'Приложение ТАКСИ Forsaje',
-                'text': ['Приложение такси Forsaje можно скачать <a href="http://forsaje.tk/application">здесь</a>.']
+                'text': ['Приложение такси Forsaje можно скачать <a href="http://5koleso.tk/application">здесь</a>.']
             },
             {
                 'target': '#',

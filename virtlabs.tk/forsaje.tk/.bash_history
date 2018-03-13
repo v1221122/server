@@ -19,3 +19,11 @@ pacman -Sscreen
 pacman -S screen
 su
 su
+less log/error-log 
+psql --help
+nano .bash_history 
+su
+psql -U alex_forsaje
+su
+su
+psql -U alex_forsaje

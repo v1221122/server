@@ -7,9 +7,6 @@
     <p>Куда:  {{ address_to }}</p>
     <p>Комментарий:  {{ comment }}</p>
     {% for i in time_list %}
-        <form action="/work/wait_confirm?id={{ order.id }}&phone={{ order.phone }}&address_from={{ order.address_from }}&address_to={{ order.address_to }}&comment={{ order.comment }}" style="display:inline">
-            <input type="hidden" name="time" value="{{ i }}" />
-            <input type="submit" value="{{ i }}" />
-        </form>
+        <a href="/work/wait_confirm?id={{ id }}&phone={{ phone }}&address_from={{ address_from }}&address_to={{ address_to }}&comment={{ comment }}&time={{ i }}" style="display:inline"><button>{{ i }}</button></a>
     {% endfor %}
 {% endblock %}
