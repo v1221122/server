@@ -27,3 +27,25 @@ mkdir template
 ls ../virtlabs.tk/5koleso.tk/
 mv template templates
 cat ../virtlabs.tk/5koleso.tk/api.wsgi 
+ls
+cd .test-nerrevar.tk
+clear
+ls
+cd ..
+cd test-nerrevar.tk/
+ls
+ls
+touch api.py
+mkdir project
+mv templates project/
+mv static project/
+ls
+ls project/
+nano api.py 
+clear
+c
+cat api.py 
+cd project/
+ls
+nano __init__.py
+ls
