@@ -49,3 +49,4 @@ cd project/
 ls
 nano __init__.py
 ls
+nano 5koleso.tk/api.py
