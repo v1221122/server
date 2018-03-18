@@ -50,3 +50,15 @@ ls
 nano __init__.py
 ls
 nano 5koleso.tk/api.py
+apachectl -k graceful
+su
+cd ../test-nerrevar.tk/
+ls
+mv project/* ./
+su
+nano api.py 
+file --mime-type api.py 
+file -i api.py 
+pacman -Ss recode
+pacman -Sy recode
+su

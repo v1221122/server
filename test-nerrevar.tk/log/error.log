@@ -1,0 +1,329 @@
+[Sat Mar 17 18:51:53.912640 2018] [wsgi:error] [pid 11302] [client 93.158.156.96:61476] Target WSGI script not found or unable to stat: /srv/http/test-nerrevar.tk/app.wsgi
+[Sat Mar 17 18:57:31.938455 2018] [wsgi:error] [pid 11308] [client 37.112.26.255:52568] Target WSGI script not found or unable to stat: /srv/http/test-nerrevar.tk/app.wsgi
+[Sat Mar 17 18:57:32.380252 2018] [wsgi:error] [pid 11271] [client 93.158.156.96:36056] Target WSGI script not found or unable to stat: /srv/http/test-nerrevar.tk/app.wsgi
+[Sat Mar 17 18:57:33.280250 2018] [wsgi:error] [pid 11309] [client 37.112.26.255:52571] Target WSGI script not found or unable to stat: /srv/http/test-nerrevar.tk/app.wsgi
+[Sat Mar 17 18:57:33.714870 2018] [wsgi:error] [pid 11309] [client 37.112.26.255:52571] Target WSGI script not found or unable to stat: /srv/http/test-nerrevar.tk/app.wsgi, referer: http://test-nerrevar.tk/
+[Sat Mar 17 18:58:27.431971 2018] [wsgi:error] [pid 11302] [client 37.112.26.255:52574] Target WSGI script not found or unable to stat: /srv/http/test-nerrevar.tk/app.wsgi
+[Sat Mar 17 18:59:27.445104 2018] [wsgi:error] [pid 11330] [client 37.112.26.255:52578] Target WSGI script not found or unable to stat: /srv/http/test-nerrevar.tk/app.wsgi
+[Sat Mar 17 18:59:45.940025 2018] [wsgi:error] [pid 11270] [client 37.112.26.255:52582] Target WSGI script not found or unable to stat: /srv/http/test-nerrevar.tk/app.wsgi
+[Sat Mar 17 19:00:20.272244 2018] [wsgi:error] [pid 11371] [client 37.112.26.255:52586] Target WSGI script not found or unable to stat: /srv/http/test-nerrevar.tk/app.py
+[Sat Mar 17 19:00:27.426766 2018] [wsgi:error] [pid 11372] [client 37.112.26.255:52590] Target WSGI script not found or unable to stat: /srv/http/test-nerrevar.tk/app.py
+[Sat Mar 17 19:01:07.949623 2018] [wsgi:error] [pid 11422] [client 37.112.26.255:52591] mod_wsgi (pid=11422): Target WSGI script '/srv/http/test-nerrevar.tk/api.py' cannot be loaded as Python module.
+[Sat Mar 17 19:01:07.949886 2018] [wsgi:error] [pid 11422] [client 37.112.26.255:52591] mod_wsgi (pid=11422): Exception occurred processing WSGI script '/srv/http/test-nerrevar.tk/api.py'.
+[Sat Mar 17 19:01:07.950714 2018] [wsgi:error] [pid 11422] [client 37.112.26.255:52591] Traceback (most recent call last):
+[Sat Mar 17 19:01:07.950844 2018] [wsgi:error] [pid 11422] [client 37.112.26.255:52591]   File "/srv/http/test-nerrevar.tk/api.py", line 1, in <module>
+[Sat Mar 17 19:01:07.950862 2018] [wsgi:error] [pid 11422] [client 37.112.26.255:52591]     from flask import (
+[Sat Mar 17 19:01:07.950924 2018] [wsgi:error] [pid 11422] [client 37.112.26.255:52591] ImportError: cannot import name 'response'
+[Sat Mar 17 19:01:29.525249 2018] [wsgi:error] [pid 11426] [client 37.112.26.255:52595] mod_wsgi (pid=11426): Target WSGI script '/srv/http/test-nerrevar.tk/api.py' cannot be loaded as Python module.
+[Sat Mar 17 19:01:29.525535 2018] [wsgi:error] [pid 11426] [client 37.112.26.255:52595] mod_wsgi (pid=11426): Exception occurred processing WSGI script '/srv/http/test-nerrevar.tk/api.py'.
+[Sat Mar 17 19:01:29.530004 2018] [wsgi:error] [pid 11426] [client 37.112.26.255:52595] Traceback (most recent call last):
+[Sat Mar 17 19:01:29.530148 2018] [wsgi:error] [pid 11426] [client 37.112.26.255:52595]   File "/srv/http/test-nerrevar.tk/api.py", line 1, in <module>
+[Sat Mar 17 19:01:29.530166 2018] [wsgi:error] [pid 11426] [client 37.112.26.255:52595]     from flask import (
+[Sat Mar 17 19:01:29.530227 2018] [wsgi:error] [pid 11426] [client 37.112.26.255:52595] ImportError: cannot import name 'response'
+[Sat Mar 17 19:01:37.878916 2018] [wsgi:error] [pid 11455] [client 37.112.26.255:52601] mod_wsgi (pid=11455): Target WSGI script '/srv/http/test-nerrevar.tk/api.py' cannot be loaded as Python module.
+[Sat Mar 17 19:01:37.879307 2018] [wsgi:error] [pid 11455] [client 37.112.26.255:52601] mod_wsgi (pid=11455): Exception occurred processing WSGI script '/srv/http/test-nerrevar.tk/api.py'.
+[Sat Mar 17 19:01:37.880099 2018] [wsgi:error] [pid 11455] [client 37.112.26.255:52601] Traceback (most recent call last):
+[Sat Mar 17 19:01:37.880211 2018] [wsgi:error] [pid 11455] [client 37.112.26.255:52601]   File "/srv/http/test-nerrevar.tk/api.py", line 1, in <module>
+[Sat Mar 17 19:01:37.880354 2018] [wsgi:error] [pid 11455] [client 37.112.26.255:52601] ImportError: cannot import name 'response'
+[Sat Mar 17 19:01:58.198557 2018] [wsgi:error] [pid 11483] [client 37.112.26.255:52602] [2018-03-17 19:01:58,191] ERROR in app: Exception on / [GET]
+[Sat Mar 17 19:01:58.198709 2018] [wsgi:error] [pid 11483] [client 37.112.26.255:52602] Traceback (most recent call last):
+[Sat Mar 17 19:01:58.198740 2018] [wsgi:error] [pid 11483] [client 37.112.26.255:52602]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+[Sat Mar 17 19:01:58.198752 2018] [wsgi:error] [pid 11483] [client 37.112.26.255:52602]     response = self.full_dispatch_request()
+[Sat Mar 17 19:01:58.198761 2018] [wsgi:error] [pid 11483] [client 37.112.26.255:52602]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1614, in full_dispatch_request
+[Sat Mar 17 19:01:58.198771 2018] [wsgi:error] [pid 11483] [client 37.112.26.255:52602]     rv = self.handle_user_exception(e)
+[Sat Mar 17 19:01:58.198780 2018] [wsgi:error] [pid 11483] [client 37.112.26.255:52602]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1517, in handle_user_exception
+[Sat Mar 17 19:01:58.198790 2018] [wsgi:error] [pid 11483] [client 37.112.26.255:52602]     reraise(exc_type, exc_value, tb)
+[Sat Mar 17 19:01:58.198799 2018] [wsgi:error] [pid 11483] [client 37.112.26.255:52602]   File "/usr/lib/python3.6/site-packages/flask/_compat.py", line 33, in reraise
+[Sat Mar 17 19:01:58.198808 2018] [wsgi:error] [pid 11483] [client 37.112.26.255:52602]     raise value
+[Sat Mar 17 19:01:58.198817 2018] [wsgi:error] [pid 11483] [client 37.112.26.255:52602]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1612, in full_dispatch_request
+[Sat Mar 17 19:01:58.198826 2018] [wsgi:error] [pid 11483] [client 37.112.26.255:52602]     rv = self.dispatch_request()
+[Sat Mar 17 19:01:58.198835 2018] [wsgi:error] [pid 11483] [client 37.112.26.255:52602]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1598, in dispatch_request
+[Sat Mar 17 19:01:58.198844 2018] [wsgi:error] [pid 11483] [client 37.112.26.255:52602]     return self.view_functions[rule.endpoint](**req.view_args)
+[Sat Mar 17 19:01:58.198853 2018] [wsgi:error] [pid 11483] [client 37.112.26.255:52602]   File "/srv/http/test-nerrevar.tk/api.py", line 12, in index
+[Sat Mar 17 19:01:58.198864 2018] [wsgi:error] [pid 11483] [client 37.112.26.255:52602]     return render_template("authorization.html")
+[Sat Mar 17 19:01:58.198874 2018] [wsgi:error] [pid 11483] [client 37.112.26.255:52602]   File "/usr/lib/python3.6/site-packages/flask/templating.py", line 133, in render_template
+[Sat Mar 17 19:01:58.198884 2018] [wsgi:error] [pid 11483] [client 37.112.26.255:52602]     return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+[Sat Mar 17 19:01:58.198894 2018] [wsgi:error] [pid 11483] [client 37.112.26.255:52602]   File "/usr/lib/python3.6/site-packages/jinja2/environment.py", line 869, in get_or_select_template
+[Sat Mar 17 19:01:58.198904 2018] [wsgi:error] [pid 11483] [client 37.112.26.255:52602]     return self.get_template(template_name_or_list, parent, globals)
+[Sat Mar 17 19:01:58.198913 2018] [wsgi:error] [pid 11483] [client 37.112.26.255:52602]   File "/usr/lib/python3.6/site-packages/jinja2/environment.py", line 830, in get_template
+[Sat Mar 17 19:01:58.198922 2018] [wsgi:error] [pid 11483] [client 37.112.26.255:52602]     return self._load_template(name, self.make_globals(globals))
+[Sat Mar 17 19:01:58.198931 2018] [wsgi:error] [pid 11483] [client 37.112.26.255:52602]   File "/usr/lib/python3.6/site-packages/jinja2/environment.py", line 804, in _load_template
+[Sat Mar 17 19:01:58.198941 2018] [wsgi:error] [pid 11483] [client 37.112.26.255:52602]     template = self.loader.load(self, name, globals)
+[Sat Mar 17 19:01:58.198950 2018] [wsgi:error] [pid 11483] [client 37.112.26.255:52602]   File "/usr/lib/python3.6/site-packages/jinja2/loaders.py", line 113, in load
+[Sat Mar 17 19:01:58.199138 2018] [wsgi:error] [pid 11483] [client 37.112.26.255:52602]     source, filename, uptodate = self.get_source(environment, name)
+[Sat Mar 17 19:01:58.199153 2018] [wsgi:error] [pid 11483] [client 37.112.26.255:52602]   File "/usr/lib/python3.6/site-packages/flask/templating.py", line 57, in get_source
+[Sat Mar 17 19:01:58.199163 2018] [wsgi:error] [pid 11483] [client 37.112.26.255:52602]     return self._get_source_fast(environment, template)
+[Sat Mar 17 19:01:58.199173 2018] [wsgi:error] [pid 11483] [client 37.112.26.255:52602]   File "/usr/lib/python3.6/site-packages/flask/templating.py", line 82, in _get_source_fast
+[Sat Mar 17 19:01:58.199182 2018] [wsgi:error] [pid 11483] [client 37.112.26.255:52602]     return loader.get_source(environment, template)
+[Sat Mar 17 19:01:58.199191 2018] [wsgi:error] [pid 11483] [client 37.112.26.255:52602]   File "/usr/lib/python3.6/site-packages/jinja2/loaders.py", line 175, in get_source
+[Sat Mar 17 19:01:58.199201 2018] [wsgi:error] [pid 11483] [client 37.112.26.255:52602]     contents = f.read().decode(self.encoding)
+[Sat Mar 17 19:01:58.199220 2018] [wsgi:error] [pid 11483] [client 37.112.26.255:52602] UnicodeDecodeError: 'utf-8' codec can't decode byte 0xc0 in position 99: invalid start byte
+[Sat Mar 17 19:01:58.199315 2018] [wsgi:error] [pid 11483] [client 37.112.26.255:52602] 
+[Sat Mar 17 19:03:58.288544 2018] [wsgi:error] [pid 11551] [client 37.112.26.255:52612] [2018-03-17 19:03:58,281] ERROR in app: Exception on / [GET]
+[Sat Mar 17 19:03:58.288710 2018] [wsgi:error] [pid 11551] [client 37.112.26.255:52612] Traceback (most recent call last):
+[Sat Mar 17 19:03:58.288725 2018] [wsgi:error] [pid 11551] [client 37.112.26.255:52612]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+[Sat Mar 17 19:03:58.288735 2018] [wsgi:error] [pid 11551] [client 37.112.26.255:52612]     response = self.full_dispatch_request()
+[Sat Mar 17 19:03:58.288745 2018] [wsgi:error] [pid 11551] [client 37.112.26.255:52612]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1614, in full_dispatch_request
+[Sat Mar 17 19:03:58.288755 2018] [wsgi:error] [pid 11551] [client 37.112.26.255:52612]     rv = self.handle_user_exception(e)
+[Sat Mar 17 19:03:58.288763 2018] [wsgi:error] [pid 11551] [client 37.112.26.255:52612]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1517, in handle_user_exception
+[Sat Mar 17 19:03:58.288773 2018] [wsgi:error] [pid 11551] [client 37.112.26.255:52612]     reraise(exc_type, exc_value, tb)
+[Sat Mar 17 19:03:58.288782 2018] [wsgi:error] [pid 11551] [client 37.112.26.255:52612]   File "/usr/lib/python3.6/site-packages/flask/_compat.py", line 33, in reraise
+[Sat Mar 17 19:03:58.288791 2018] [wsgi:error] [pid 11551] [client 37.112.26.255:52612]     raise value
+[Sat Mar 17 19:03:58.288800 2018] [wsgi:error] [pid 11551] [client 37.112.26.255:52612]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1612, in full_dispatch_request
+[Sat Mar 17 19:03:58.288809 2018] [wsgi:error] [pid 11551] [client 37.112.26.255:52612]     rv = self.dispatch_request()
+[Sat Mar 17 19:03:58.288818 2018] [wsgi:error] [pid 11551] [client 37.112.26.255:52612]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1598, in dispatch_request
+[Sat Mar 17 19:03:58.288827 2018] [wsgi:error] [pid 11551] [client 37.112.26.255:52612]     return self.view_functions[rule.endpoint](**req.view_args)
+[Sat Mar 17 19:03:58.288836 2018] [wsgi:error] [pid 11551] [client 37.112.26.255:52612]   File "/srv/http/test-nerrevar.tk/api.py", line 12, in index
+[Sat Mar 17 19:03:58.288848 2018] [wsgi:error] [pid 11551] [client 37.112.26.255:52612]     return render_template("authorization.html")
+[Sat Mar 17 19:03:58.288858 2018] [wsgi:error] [pid 11551] [client 37.112.26.255:52612]   File "/usr/lib/python3.6/site-packages/flask/templating.py", line 133, in render_template
+[Sat Mar 17 19:03:58.288868 2018] [wsgi:error] [pid 11551] [client 37.112.26.255:52612]     return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+[Sat Mar 17 19:03:58.289064 2018] [wsgi:error] [pid 11551] [client 37.112.26.255:52612]   File "/usr/lib/python3.6/site-packages/jinja2/environment.py", line 869, in get_or_select_template
+[Sat Mar 17 19:03:58.289083 2018] [wsgi:error] [pid 11551] [client 37.112.26.255:52612]     return self.get_template(template_name_or_list, parent, globals)
+[Sat Mar 17 19:03:58.289093 2018] [wsgi:error] [pid 11551] [client 37.112.26.255:52612]   File "/usr/lib/python3.6/site-packages/jinja2/environment.py", line 830, in get_template
+[Sat Mar 17 19:03:58.289103 2018] [wsgi:error] [pid 11551] [client 37.112.26.255:52612]     return self._load_template(name, self.make_globals(globals))
+[Sat Mar 17 19:03:58.289112 2018] [wsgi:error] [pid 11551] [client 37.112.26.255:52612]   File "/usr/lib/python3.6/site-packages/jinja2/environment.py", line 804, in _load_template
+[Sat Mar 17 19:03:58.289122 2018] [wsgi:error] [pid 11551] [client 37.112.26.255:52612]     template = self.loader.load(self, name, globals)
+[Sat Mar 17 19:03:58.289131 2018] [wsgi:error] [pid 11551] [client 37.112.26.255:52612]   File "/usr/lib/python3.6/site-packages/jinja2/loaders.py", line 113, in load
+[Sat Mar 17 19:03:58.289140 2018] [wsgi:error] [pid 11551] [client 37.112.26.255:52612]     source, filename, uptodate = self.get_source(environment, name)
+[Sat Mar 17 19:03:58.289149 2018] [wsgi:error] [pid 11551] [client 37.112.26.255:52612]   File "/usr/lib/python3.6/site-packages/flask/templating.py", line 57, in get_source
+[Sat Mar 17 19:03:58.289159 2018] [wsgi:error] [pid 11551] [client 37.112.26.255:52612]     return self._get_source_fast(environment, template)
+[Sat Mar 17 19:03:58.289167 2018] [wsgi:error] [pid 11551] [client 37.112.26.255:52612]   File "/usr/lib/python3.6/site-packages/flask/templating.py", line 82, in _get_source_fast
+[Sat Mar 17 19:03:58.289177 2018] [wsgi:error] [pid 11551] [client 37.112.26.255:52612]     return loader.get_source(environment, template)
+[Sat Mar 17 19:03:58.289186 2018] [wsgi:error] [pid 11551] [client 37.112.26.255:52612]   File "/usr/lib/python3.6/site-packages/jinja2/loaders.py", line 175, in get_source
+[Sat Mar 17 19:03:58.289195 2018] [wsgi:error] [pid 11551] [client 37.112.26.255:52612]     contents = f.read().decode(self.encoding)
+[Sat Mar 17 19:03:58.289214 2018] [wsgi:error] [pid 11551] [client 37.112.26.255:52612] UnicodeDecodeError: 'utf-8' codec can't decode byte 0xc0 in position 99: invalid start byte
+[Sat Mar 17 19:03:58.289304 2018] [wsgi:error] [pid 11551] [client 37.112.26.255:52612] 
+[Sat Mar 17 19:10:27.517992 2018] [wsgi:error] [pid 11552] [client 37.112.26.255:52638] mod_wsgi (pid=11552, process='', application='test-nerrevar.tk|'): Failed to parse WSGI script file '/srv/http/test-nerrevar.tk/api.py'.
+[Sat Mar 17 19:10:27.518597 2018] [wsgi:error] [pid 11552] [client 37.112.26.255:52638] mod_wsgi (pid=11552): Exception occurred processing WSGI script '/srv/http/test-nerrevar.tk/api.py'.
+[Sat Mar 17 19:10:27.519037 2018] [wsgi:error] [pid 11552] [client 37.112.26.255:52638]   File "/srv/http/test-nerrevar.tk/api.py", line 1
+[Sat Mar 17 19:10:27.519116 2018] [wsgi:error] [pid 11552] [client 37.112.26.255:52638]     -*- encoding=utf-8 -*-
+[Sat Mar 17 19:10:27.519200 2018] [wsgi:error] [pid 11552] [client 37.112.26.255:52638]      ^
+[Sat Mar 17 19:10:27.519236 2018] [wsgi:error] [pid 11552] [client 37.112.26.255:52638] SyntaxError: invalid syntax
+[Sat Mar 17 19:11:23.290692 2018] [wsgi:error] [pid 11553] [client 37.112.26.255:52640] mod_wsgi (pid=11553, process='', application='test-nerrevar.tk|'): Failed to parse WSGI script file '/srv/http/test-nerrevar.tk/api.py'.
+[Sat Mar 17 19:11:23.290945 2018] [wsgi:error] [pid 11553] [client 37.112.26.255:52640] mod_wsgi (pid=11553): Exception occurred processing WSGI script '/srv/http/test-nerrevar.tk/api.py'.
+[Sat Mar 17 19:11:23.291264 2018] [wsgi:error] [pid 11553] [client 37.112.26.255:52640]   File "/srv/http/test-nerrevar.tk/api.py", line 1
+[Sat Mar 17 19:11:23.291321 2018] [wsgi:error] [pid 11553] [client 37.112.26.255:52640]     -*- encoding=utf-8 -*-
+[Sat Mar 17 19:11:23.291462 2018] [wsgi:error] [pid 11553] [client 37.112.26.255:52640]      ^
+[Sat Mar 17 19:11:23.291499 2018] [wsgi:error] [pid 11553] [client 37.112.26.255:52640] SyntaxError: invalid syntax
+[Sat Mar 17 19:11:27.534226 2018] [wsgi:error] [pid 11555] [client 37.112.26.255:52642] mod_wsgi (pid=11555, process='', application='test-nerrevar.tk|'): Failed to parse WSGI script file '/srv/http/test-nerrevar.tk/api.py'.
+[Sat Mar 17 19:11:27.534454 2018] [wsgi:error] [pid 11555] [client 37.112.26.255:52642] mod_wsgi (pid=11555): Exception occurred processing WSGI script '/srv/http/test-nerrevar.tk/api.py'.
+[Sat Mar 17 19:11:27.534771 2018] [wsgi:error] [pid 11555] [client 37.112.26.255:52642]   File "/srv/http/test-nerrevar.tk/api.py", line 1
+[Sat Mar 17 19:11:27.534825 2018] [wsgi:error] [pid 11555] [client 37.112.26.255:52642]     -*- encoding=utf-8 -*-
+[Sat Mar 17 19:11:27.534903 2018] [wsgi:error] [pid 11555] [client 37.112.26.255:52642]      ^
+[Sat Mar 17 19:11:27.534938 2018] [wsgi:error] [pid 11555] [client 37.112.26.255:52642] SyntaxError: invalid syntax
+[Sat Mar 17 19:12:27.533252 2018] [wsgi:error] [pid 11551] [client 37.112.26.255:52698] mod_wsgi (pid=11551, process='', application='test-nerrevar.tk|'): Failed to parse WSGI script file '/srv/http/test-nerrevar.tk/api.py'.
+[Sat Mar 17 19:12:27.533507 2018] [wsgi:error] [pid 11551] [client 37.112.26.255:52698] mod_wsgi (pid=11551): Exception occurred processing WSGI script '/srv/http/test-nerrevar.tk/api.py'.
+[Sat Mar 17 19:12:27.533789 2018] [wsgi:error] [pid 11551] [client 37.112.26.255:52698]   File "/srv/http/test-nerrevar.tk/api.py", line 1
+[Sat Mar 17 19:12:27.533840 2018] [wsgi:error] [pid 11551] [client 37.112.26.255:52698]     -*- encoding=utf-8 -*-
+[Sat Mar 17 19:12:27.533931 2018] [wsgi:error] [pid 11551] [client 37.112.26.255:52698]      ^
+[Sat Mar 17 19:12:27.533967 2018] [wsgi:error] [pid 11551] [client 37.112.26.255:52698] SyntaxError: invalid syntax
+[Sat Mar 17 19:13:28.358615 2018] [wsgi:error] [pid 11554] [client 37.112.26.255:52727] mod_wsgi (pid=11554, process='', application='test-nerrevar.tk|'): Failed to parse WSGI script file '/srv/http/test-nerrevar.tk/api.py'.
+[Sat Mar 17 19:13:28.358831 2018] [wsgi:error] [pid 11554] [client 37.112.26.255:52727] mod_wsgi (pid=11554): Exception occurred processing WSGI script '/srv/http/test-nerrevar.tk/api.py'.
+[Sat Mar 17 19:13:28.359244 2018] [wsgi:error] [pid 11554] [client 37.112.26.255:52727]   File "/srv/http/test-nerrevar.tk/api.py", line 1
+[Sat Mar 17 19:13:28.359328 2018] [wsgi:error] [pid 11554] [client 37.112.26.255:52727]     -*- encoding=utf-8 -*-
+[Sat Mar 17 19:13:28.359403 2018] [wsgi:error] [pid 11554] [client 37.112.26.255:52727]      ^
+[Sat Mar 17 19:13:28.359439 2018] [wsgi:error] [pid 11554] [client 37.112.26.255:52727] SyntaxError: invalid syntax
+[Sat Mar 17 19:14:26.688458 2018] [wsgi:error] [pid 11586] [client 37.112.26.255:52732] [2018-03-17 19:14:26,681] ERROR in app: Exception on / [GET]
+[Sat Mar 17 19:14:26.688589 2018] [wsgi:error] [pid 11586] [client 37.112.26.255:52732] Traceback (most recent call last):
+[Sat Mar 17 19:14:26.688604 2018] [wsgi:error] [pid 11586] [client 37.112.26.255:52732]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+[Sat Mar 17 19:14:26.688615 2018] [wsgi:error] [pid 11586] [client 37.112.26.255:52732]     response = self.full_dispatch_request()
+[Sat Mar 17 19:14:26.688624 2018] [wsgi:error] [pid 11586] [client 37.112.26.255:52732]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1614, in full_dispatch_request
+[Sat Mar 17 19:14:26.688634 2018] [wsgi:error] [pid 11586] [client 37.112.26.255:52732]     rv = self.handle_user_exception(e)
+[Sat Mar 17 19:14:26.688642 2018] [wsgi:error] [pid 11586] [client 37.112.26.255:52732]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1517, in handle_user_exception
+[Sat Mar 17 19:14:26.688652 2018] [wsgi:error] [pid 11586] [client 37.112.26.255:52732]     reraise(exc_type, exc_value, tb)
+[Sat Mar 17 19:14:26.688661 2018] [wsgi:error] [pid 11586] [client 37.112.26.255:52732]   File "/usr/lib/python3.6/site-packages/flask/_compat.py", line 33, in reraise
+[Sat Mar 17 19:14:26.688752 2018] [wsgi:error] [pid 11586] [client 37.112.26.255:52732]     raise value
+[Sat Mar 17 19:14:26.688764 2018] [wsgi:error] [pid 11586] [client 37.112.26.255:52732]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1612, in full_dispatch_request
+[Sat Mar 17 19:14:26.688774 2018] [wsgi:error] [pid 11586] [client 37.112.26.255:52732]     rv = self.dispatch_request()
+[Sat Mar 17 19:14:26.688783 2018] [wsgi:error] [pid 11586] [client 37.112.26.255:52732]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1598, in dispatch_request
+[Sat Mar 17 19:14:26.688792 2018] [wsgi:error] [pid 11586] [client 37.112.26.255:52732]     return self.view_functions[rule.endpoint](**req.view_args)
+[Sat Mar 17 19:14:26.688801 2018] [wsgi:error] [pid 11586] [client 37.112.26.255:52732]   File "/srv/http/test-nerrevar.tk/api.py", line 15, in index
+[Sat Mar 17 19:14:26.688813 2018] [wsgi:error] [pid 11586] [client 37.112.26.255:52732]     return render_template('authorization.html')
+[Sat Mar 17 19:14:26.688823 2018] [wsgi:error] [pid 11586] [client 37.112.26.255:52732]   File "/usr/lib/python3.6/site-packages/flask/templating.py", line 133, in render_template
+[Sat Mar 17 19:14:26.688833 2018] [wsgi:error] [pid 11586] [client 37.112.26.255:52732]     return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+[Sat Mar 17 19:14:26.688843 2018] [wsgi:error] [pid 11586] [client 37.112.26.255:52732]   File "/usr/lib/python3.6/site-packages/jinja2/environment.py", line 869, in get_or_select_template
+[Sat Mar 17 19:14:26.688852 2018] [wsgi:error] [pid 11586] [client 37.112.26.255:52732]     return self.get_template(template_name_or_list, parent, globals)
+[Sat Mar 17 19:14:26.688861 2018] [wsgi:error] [pid 11586] [client 37.112.26.255:52732]   File "/usr/lib/python3.6/site-packages/jinja2/environment.py", line 830, in get_template
+[Sat Mar 17 19:14:26.688871 2018] [wsgi:error] [pid 11586] [client 37.112.26.255:52732]     return self._load_template(name, self.make_globals(globals))
+[Sat Mar 17 19:14:26.688879 2018] [wsgi:error] [pid 11586] [client 37.112.26.255:52732]   File "/usr/lib/python3.6/site-packages/jinja2/environment.py", line 804, in _load_template
+[Sat Mar 17 19:14:26.689004 2018] [wsgi:error] [pid 11586] [client 37.112.26.255:52732]     template = self.loader.load(self, name, globals)
+[Sat Mar 17 19:14:26.689020 2018] [wsgi:error] [pid 11586] [client 37.112.26.255:52732]   File "/usr/lib/python3.6/site-packages/jinja2/loaders.py", line 113, in load
+[Sat Mar 17 19:14:26.689030 2018] [wsgi:error] [pid 11586] [client 37.112.26.255:52732]     source, filename, uptodate = self.get_source(environment, name)
+[Sat Mar 17 19:14:26.689039 2018] [wsgi:error] [pid 11586] [client 37.112.26.255:52732]   File "/usr/lib/python3.6/site-packages/flask/templating.py", line 57, in get_source
+[Sat Mar 17 19:14:26.689049 2018] [wsgi:error] [pid 11586] [client 37.112.26.255:52732]     return self._get_source_fast(environment, template)
+[Sat Mar 17 19:14:26.689058 2018] [wsgi:error] [pid 11586] [client 37.112.26.255:52732]   File "/usr/lib/python3.6/site-packages/flask/templating.py", line 82, in _get_source_fast
+[Sat Mar 17 19:14:26.689067 2018] [wsgi:error] [pid 11586] [client 37.112.26.255:52732]     return loader.get_source(environment, template)
+[Sat Mar 17 19:14:26.689076 2018] [wsgi:error] [pid 11586] [client 37.112.26.255:52732]   File "/usr/lib/python3.6/site-packages/jinja2/loaders.py", line 175, in get_source
+[Sat Mar 17 19:14:26.689085 2018] [wsgi:error] [pid 11586] [client 37.112.26.255:52732]     contents = f.read().decode(self.encoding)
+[Sat Mar 17 19:14:26.689104 2018] [wsgi:error] [pid 11586] [client 37.112.26.255:52732] UnicodeDecodeError: 'utf-8' codec can't decode byte 0xc0 in position 99: invalid start byte
+[Sat Mar 17 19:14:26.689189 2018] [wsgi:error] [pid 11586] [client 37.112.26.255:52732] 
+[Sat Mar 17 19:15:27.727614 2018] [wsgi:error] [pid 11554] [client 37.112.26.255:52740] [2018-03-17 19:15:27,715] ERROR in app: Exception on / [GET]
+[Sat Mar 17 19:15:27.727815 2018] [wsgi:error] [pid 11554] [client 37.112.26.255:52740] Traceback (most recent call last):
+[Sat Mar 17 19:15:27.727832 2018] [wsgi:error] [pid 11554] [client 37.112.26.255:52740]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+[Sat Mar 17 19:15:27.727843 2018] [wsgi:error] [pid 11554] [client 37.112.26.255:52740]     response = self.full_dispatch_request()
+[Sat Mar 17 19:15:27.727853 2018] [wsgi:error] [pid 11554] [client 37.112.26.255:52740]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1614, in full_dispatch_request
+[Sat Mar 17 19:15:27.727862 2018] [wsgi:error] [pid 11554] [client 37.112.26.255:52740]     rv = self.handle_user_exception(e)
+[Sat Mar 17 19:15:27.727871 2018] [wsgi:error] [pid 11554] [client 37.112.26.255:52740]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1517, in handle_user_exception
+[Sat Mar 17 19:15:27.727881 2018] [wsgi:error] [pid 11554] [client 37.112.26.255:52740]     reraise(exc_type, exc_value, tb)
+[Sat Mar 17 19:15:27.727890 2018] [wsgi:error] [pid 11554] [client 37.112.26.255:52740]   File "/usr/lib/python3.6/site-packages/flask/_compat.py", line 33, in reraise
+[Sat Mar 17 19:15:27.727899 2018] [wsgi:error] [pid 11554] [client 37.112.26.255:52740]     raise value
+[Sat Mar 17 19:15:27.727908 2018] [wsgi:error] [pid 11554] [client 37.112.26.255:52740]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1612, in full_dispatch_request
+[Sat Mar 17 19:15:27.727917 2018] [wsgi:error] [pid 11554] [client 37.112.26.255:52740]     rv = self.dispatch_request()
+[Sat Mar 17 19:15:27.727926 2018] [wsgi:error] [pid 11554] [client 37.112.26.255:52740]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1598, in dispatch_request
+[Sat Mar 17 19:15:27.727935 2018] [wsgi:error] [pid 11554] [client 37.112.26.255:52740]     return self.view_functions[rule.endpoint](**req.view_args)
+[Sat Mar 17 19:15:27.727944 2018] [wsgi:error] [pid 11554] [client 37.112.26.255:52740]   File "/srv/http/test-nerrevar.tk/api.py", line 15, in index
+[Sat Mar 17 19:15:27.727956 2018] [wsgi:error] [pid 11554] [client 37.112.26.255:52740]     return render_template('authorization.html')
+[Sat Mar 17 19:15:27.727965 2018] [wsgi:error] [pid 11554] [client 37.112.26.255:52740]   File "/usr/lib/python3.6/site-packages/flask/templating.py", line 133, in render_template
+[Sat Mar 17 19:15:27.727975 2018] [wsgi:error] [pid 11554] [client 37.112.26.255:52740]     return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+[Sat Mar 17 19:15:27.727985 2018] [wsgi:error] [pid 11554] [client 37.112.26.255:52740]   File "/usr/lib/python3.6/site-packages/jinja2/environment.py", line 869, in get_or_select_template
+[Sat Mar 17 19:15:27.727995 2018] [wsgi:error] [pid 11554] [client 37.112.26.255:52740]     return self.get_template(template_name_or_list, parent, globals)
+[Sat Mar 17 19:15:27.728004 2018] [wsgi:error] [pid 11554] [client 37.112.26.255:52740]   File "/usr/lib/python3.6/site-packages/jinja2/environment.py", line 830, in get_template
+[Sat Mar 17 19:15:27.728013 2018] [wsgi:error] [pid 11554] [client 37.112.26.255:52740]     return self._load_template(name, self.make_globals(globals))
+[Sat Mar 17 19:15:27.728022 2018] [wsgi:error] [pid 11554] [client 37.112.26.255:52740]   File "/usr/lib/python3.6/site-packages/jinja2/environment.py", line 804, in _load_template
+[Sat Mar 17 19:15:27.728032 2018] [wsgi:error] [pid 11554] [client 37.112.26.255:52740]     template = self.loader.load(self, name, globals)
+[Sat Mar 17 19:15:27.728041 2018] [wsgi:error] [pid 11554] [client 37.112.26.255:52740]   File "/usr/lib/python3.6/site-packages/jinja2/loaders.py", line 113, in load
+[Sat Mar 17 19:15:27.728050 2018] [wsgi:error] [pid 11554] [client 37.112.26.255:52740]     source, filename, uptodate = self.get_source(environment, name)
+[Sat Mar 17 19:15:27.728060 2018] [wsgi:error] [pid 11554] [client 37.112.26.255:52740]   File "/usr/lib/python3.6/site-packages/flask/templating.py", line 57, in get_source
+[Sat Mar 17 19:15:27.728100 2018] [wsgi:error] [pid 11554] [client 37.112.26.255:52740]     return self._get_source_fast(environment, template)
+[Sat Mar 17 19:15:27.728111 2018] [wsgi:error] [pid 11554] [client 37.112.26.255:52740]   File "/usr/lib/python3.6/site-packages/flask/templating.py", line 82, in _get_source_fast
+[Sat Mar 17 19:15:27.728121 2018] [wsgi:error] [pid 11554] [client 37.112.26.255:52740]     return loader.get_source(environment, template)
+[Sat Mar 17 19:15:27.728130 2018] [wsgi:error] [pid 11554] [client 37.112.26.255:52740]   File "/usr/lib/python3.6/site-packages/jinja2/loaders.py", line 175, in get_source
+[Sat Mar 17 19:15:27.728139 2018] [wsgi:error] [pid 11554] [client 37.112.26.255:52740]     contents = f.read().decode(self.encoding)
+[Sat Mar 17 19:15:27.728155 2018] [wsgi:error] [pid 11554] [client 37.112.26.255:52740] UnicodeDecodeError: 'utf-8' codec can't decode byte 0xc0 in position 99: invalid start byte
+[Sat Mar 17 19:15:27.728218 2018] [wsgi:error] [pid 11554] [client 37.112.26.255:52740] 
+[Sat Mar 17 19:15:37.559647 2018] [wsgi:error] [pid 11555] [client 37.112.26.255:52745] [2018-03-17 19:15:37,552] ERROR in app: Exception on / [GET]
+[Sat Mar 17 19:15:37.559797 2018] [wsgi:error] [pid 11555] [client 37.112.26.255:52745] Traceback (most recent call last):
+[Sat Mar 17 19:15:37.559813 2018] [wsgi:error] [pid 11555] [client 37.112.26.255:52745]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+[Sat Mar 17 19:15:37.559824 2018] [wsgi:error] [pid 11555] [client 37.112.26.255:52745]     response = self.full_dispatch_request()
+[Sat Mar 17 19:15:37.559834 2018] [wsgi:error] [pid 11555] [client 37.112.26.255:52745]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1614, in full_dispatch_request
+[Sat Mar 17 19:15:37.559844 2018] [wsgi:error] [pid 11555] [client 37.112.26.255:52745]     rv = self.handle_user_exception(e)
+[Sat Mar 17 19:15:37.559853 2018] [wsgi:error] [pid 11555] [client 37.112.26.255:52745]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1517, in handle_user_exception
+[Sat Mar 17 19:15:37.559863 2018] [wsgi:error] [pid 11555] [client 37.112.26.255:52745]     reraise(exc_type, exc_value, tb)
+[Sat Mar 17 19:15:37.559871 2018] [wsgi:error] [pid 11555] [client 37.112.26.255:52745]   File "/usr/lib/python3.6/site-packages/flask/_compat.py", line 33, in reraise
+[Sat Mar 17 19:15:37.559881 2018] [wsgi:error] [pid 11555] [client 37.112.26.255:52745]     raise value
+[Sat Mar 17 19:15:37.559890 2018] [wsgi:error] [pid 11555] [client 37.112.26.255:52745]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1612, in full_dispatch_request
+[Sat Mar 17 19:15:37.559899 2018] [wsgi:error] [pid 11555] [client 37.112.26.255:52745]     rv = self.dispatch_request()
+[Sat Mar 17 19:15:37.559908 2018] [wsgi:error] [pid 11555] [client 37.112.26.255:52745]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1598, in dispatch_request
+[Sat Mar 17 19:15:37.559917 2018] [wsgi:error] [pid 11555] [client 37.112.26.255:52745]     return self.view_functions[rule.endpoint](**req.view_args)
+[Sat Mar 17 19:15:37.559926 2018] [wsgi:error] [pid 11555] [client 37.112.26.255:52745]   File "/srv/http/test-nerrevar.tk/api.py", line 15, in index
+[Sat Mar 17 19:15:37.559936 2018] [wsgi:error] [pid 11555] [client 37.112.26.255:52745]     return render_template('authorization.html')
+[Sat Mar 17 19:15:37.559945 2018] [wsgi:error] [pid 11555] [client 37.112.26.255:52745]   File "/usr/lib/python3.6/site-packages/flask/templating.py", line 133, in render_template
+[Sat Mar 17 19:15:37.559954 2018] [wsgi:error] [pid 11555] [client 37.112.26.255:52745]     return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+[Sat Mar 17 19:15:37.559965 2018] [wsgi:error] [pid 11555] [client 37.112.26.255:52745]   File "/usr/lib/python3.6/site-packages/jinja2/environment.py", line 869, in get_or_select_template
+[Sat Mar 17 19:15:37.559974 2018] [wsgi:error] [pid 11555] [client 37.112.26.255:52745]     return self.get_template(template_name_or_list, parent, globals)
+[Sat Mar 17 19:15:37.560038 2018] [wsgi:error] [pid 11555] [client 37.112.26.255:52745]   File "/usr/lib/python3.6/site-packages/jinja2/environment.py", line 830, in get_template
+[Sat Mar 17 19:15:37.560050 2018] [wsgi:error] [pid 11555] [client 37.112.26.255:52745]     return self._load_template(name, self.make_globals(globals))
+[Sat Mar 17 19:15:37.560059 2018] [wsgi:error] [pid 11555] [client 37.112.26.255:52745]   File "/usr/lib/python3.6/site-packages/jinja2/environment.py", line 804, in _load_template
+[Sat Mar 17 19:15:37.560069 2018] [wsgi:error] [pid 11555] [client 37.112.26.255:52745]     template = self.loader.load(self, name, globals)
+[Sat Mar 17 19:15:37.560079 2018] [wsgi:error] [pid 11555] [client 37.112.26.255:52745]   File "/usr/lib/python3.6/site-packages/jinja2/loaders.py", line 113, in load
+[Sat Mar 17 19:15:37.560088 2018] [wsgi:error] [pid 11555] [client 37.112.26.255:52745]     source, filename, uptodate = self.get_source(environment, name)
+[Sat Mar 17 19:15:37.560097 2018] [wsgi:error] [pid 11555] [client 37.112.26.255:52745]   File "/usr/lib/python3.6/site-packages/flask/templating.py", line 57, in get_source
+[Sat Mar 17 19:15:37.560107 2018] [wsgi:error] [pid 11555] [client 37.112.26.255:52745]     return self._get_source_fast(environment, template)
+[Sat Mar 17 19:15:37.560116 2018] [wsgi:error] [pid 11555] [client 37.112.26.255:52745]   File "/usr/lib/python3.6/site-packages/flask/templating.py", line 82, in _get_source_fast
+[Sat Mar 17 19:15:37.560126 2018] [wsgi:error] [pid 11555] [client 37.112.26.255:52745]     return loader.get_source(environment, template)
+[Sat Mar 17 19:15:37.560135 2018] [wsgi:error] [pid 11555] [client 37.112.26.255:52745]   File "/usr/lib/python3.6/site-packages/jinja2/loaders.py", line 175, in get_source
+[Sat Mar 17 19:15:37.560144 2018] [wsgi:error] [pid 11555] [client 37.112.26.255:52745]     contents = f.read().decode(self.encoding)
+[Sat Mar 17 19:15:37.560159 2018] [wsgi:error] [pid 11555] [client 37.112.26.255:52745] UnicodeDecodeError: 'utf-8' codec can't decode byte 0xc0 in position 99: invalid start byte
+[Sat Mar 17 19:15:37.560218 2018] [wsgi:error] [pid 11555] [client 37.112.26.255:52745] 
+[Sat Mar 17 19:23:09.530735 2018] [wsgi:error] [pid 11586] [client 37.112.26.255:52861] [2018-03-17 19:23:09,528] ERROR in app: Exception on / [GET]
+[Sat Mar 17 19:23:09.530847 2018] [wsgi:error] [pid 11586] [client 37.112.26.255:52861] Traceback (most recent call last):
+[Sat Mar 17 19:23:09.530860 2018] [wsgi:error] [pid 11586] [client 37.112.26.255:52861]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+[Sat Mar 17 19:23:09.530870 2018] [wsgi:error] [pid 11586] [client 37.112.26.255:52861]     response = self.full_dispatch_request()
+[Sat Mar 17 19:23:09.530880 2018] [wsgi:error] [pid 11586] [client 37.112.26.255:52861]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1614, in full_dispatch_request
+[Sat Mar 17 19:23:09.530889 2018] [wsgi:error] [pid 11586] [client 37.112.26.255:52861]     rv = self.handle_user_exception(e)
+[Sat Mar 17 19:23:09.530898 2018] [wsgi:error] [pid 11586] [client 37.112.26.255:52861]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1517, in handle_user_exception
+[Sat Mar 17 19:23:09.530907 2018] [wsgi:error] [pid 11586] [client 37.112.26.255:52861]     reraise(exc_type, exc_value, tb)
+[Sat Mar 17 19:23:09.530916 2018] [wsgi:error] [pid 11586] [client 37.112.26.255:52861]   File "/usr/lib/python3.6/site-packages/flask/_compat.py", line 33, in reraise
+[Sat Mar 17 19:23:09.530925 2018] [wsgi:error] [pid 11586] [client 37.112.26.255:52861]     raise value
+[Sat Mar 17 19:23:09.530934 2018] [wsgi:error] [pid 11586] [client 37.112.26.255:52861]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1612, in full_dispatch_request
+[Sat Mar 17 19:23:09.530943 2018] [wsgi:error] [pid 11586] [client 37.112.26.255:52861]     rv = self.dispatch_request()
+[Sat Mar 17 19:23:09.530952 2018] [wsgi:error] [pid 11586] [client 37.112.26.255:52861]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1598, in dispatch_request
+[Sat Mar 17 19:23:09.531034 2018] [wsgi:error] [pid 11586] [client 37.112.26.255:52861]     return self.view_functions[rule.endpoint](**req.view_args)
+[Sat Mar 17 19:23:09.531046 2018] [wsgi:error] [pid 11586] [client 37.112.26.255:52861]   File "/srv/http/test-nerrevar.tk/api.py", line 15, in index
+[Sat Mar 17 19:23:09.531056 2018] [wsgi:error] [pid 11586] [client 37.112.26.255:52861]     return render_template('authorization.html')
+[Sat Mar 17 19:23:09.531065 2018] [wsgi:error] [pid 11586] [client 37.112.26.255:52861]   File "/usr/lib/python3.6/site-packages/flask/templating.py", line 133, in render_template
+[Sat Mar 17 19:23:09.531074 2018] [wsgi:error] [pid 11586] [client 37.112.26.255:52861]     return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+[Sat Mar 17 19:23:09.531084 2018] [wsgi:error] [pid 11586] [client 37.112.26.255:52861]   File "/usr/lib/python3.6/site-packages/jinja2/environment.py", line 869, in get_or_select_template
+[Sat Mar 17 19:23:09.531093 2018] [wsgi:error] [pid 11586] [client 37.112.26.255:52861]     return self.get_template(template_name_or_list, parent, globals)
+[Sat Mar 17 19:23:09.531102 2018] [wsgi:error] [pid 11586] [client 37.112.26.255:52861]   File "/usr/lib/python3.6/site-packages/jinja2/environment.py", line 830, in get_template
+[Sat Mar 17 19:23:09.531111 2018] [wsgi:error] [pid 11586] [client 37.112.26.255:52861]     return self._load_template(name, self.make_globals(globals))
+[Sat Mar 17 19:23:09.531120 2018] [wsgi:error] [pid 11586] [client 37.112.26.255:52861]   File "/usr/lib/python3.6/site-packages/jinja2/environment.py", line 804, in _load_template
+[Sat Mar 17 19:23:09.531129 2018] [wsgi:error] [pid 11586] [client 37.112.26.255:52861]     template = self.loader.load(self, name, globals)
+[Sat Mar 17 19:23:09.531138 2018] [wsgi:error] [pid 11586] [client 37.112.26.255:52861]   File "/usr/lib/python3.6/site-packages/jinja2/loaders.py", line 113, in load
+[Sat Mar 17 19:23:09.531147 2018] [wsgi:error] [pid 11586] [client 37.112.26.255:52861]     source, filename, uptodate = self.get_source(environment, name)
+[Sat Mar 17 19:23:09.531156 2018] [wsgi:error] [pid 11586] [client 37.112.26.255:52861]   File "/usr/lib/python3.6/site-packages/flask/templating.py", line 57, in get_source
+[Sat Mar 17 19:23:09.531165 2018] [wsgi:error] [pid 11586] [client 37.112.26.255:52861]     return self._get_source_fast(environment, template)
+[Sat Mar 17 19:23:09.531174 2018] [wsgi:error] [pid 11586] [client 37.112.26.255:52861]   File "/usr/lib/python3.6/site-packages/flask/templating.py", line 82, in _get_source_fast
+[Sat Mar 17 19:23:09.531183 2018] [wsgi:error] [pid 11586] [client 37.112.26.255:52861]     return loader.get_source(environment, template)
+[Sat Mar 17 19:23:09.531192 2018] [wsgi:error] [pid 11586] [client 37.112.26.255:52861]   File "/usr/lib/python3.6/site-packages/jinja2/loaders.py", line 175, in get_source
+[Sat Mar 17 19:23:09.531201 2018] [wsgi:error] [pid 11586] [client 37.112.26.255:52861]     contents = f.read().decode(self.encoding)
+[Sat Mar 17 19:23:09.531215 2018] [wsgi:error] [pid 11586] [client 37.112.26.255:52861] UnicodeDecodeError: 'utf-8' codec can't decode byte 0xc0 in position 99: invalid start byte
+[Sat Mar 17 19:23:09.531270 2018] [wsgi:error] [pid 11586] [client 37.112.26.255:52861] 
+[Sat Mar 17 19:26:58.396737 2018] [wsgi:error] [pid 11554] [client 37.112.26.255:52934] [2018-03-17 19:26:58,395] ERROR in app: Exception on / [GET]
+[Sat Mar 17 19:26:58.396858 2018] [wsgi:error] [pid 11554] [client 37.112.26.255:52934] Traceback (most recent call last):
+[Sat Mar 17 19:26:58.396871 2018] [wsgi:error] [pid 11554] [client 37.112.26.255:52934]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+[Sat Mar 17 19:26:58.396882 2018] [wsgi:error] [pid 11554] [client 37.112.26.255:52934]     response = self.full_dispatch_request()
+[Sat Mar 17 19:26:58.396891 2018] [wsgi:error] [pid 11554] [client 37.112.26.255:52934]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1614, in full_dispatch_request
+[Sat Mar 17 19:26:58.396963 2018] [wsgi:error] [pid 11554] [client 37.112.26.255:52934]     rv = self.handle_user_exception(e)
+[Sat Mar 17 19:26:58.396974 2018] [wsgi:error] [pid 11554] [client 37.112.26.255:52934]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1517, in handle_user_exception
+[Sat Mar 17 19:26:58.396984 2018] [wsgi:error] [pid 11554] [client 37.112.26.255:52934]     reraise(exc_type, exc_value, tb)
+[Sat Mar 17 19:26:58.396993 2018] [wsgi:error] [pid 11554] [client 37.112.26.255:52934]   File "/usr/lib/python3.6/site-packages/flask/_compat.py", line 33, in reraise
+[Sat Mar 17 19:26:58.397003 2018] [wsgi:error] [pid 11554] [client 37.112.26.255:52934]     raise value
+[Sat Mar 17 19:26:58.397012 2018] [wsgi:error] [pid 11554] [client 37.112.26.255:52934]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1612, in full_dispatch_request
+[Sat Mar 17 19:26:58.397022 2018] [wsgi:error] [pid 11554] [client 37.112.26.255:52934]     rv = self.dispatch_request()
+[Sat Mar 17 19:26:58.397031 2018] [wsgi:error] [pid 11554] [client 37.112.26.255:52934]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1598, in dispatch_request
+[Sat Mar 17 19:26:58.397040 2018] [wsgi:error] [pid 11554] [client 37.112.26.255:52934]     return self.view_functions[rule.endpoint](**req.view_args)
+[Sat Mar 17 19:26:58.397049 2018] [wsgi:error] [pid 11554] [client 37.112.26.255:52934]   File "/srv/http/test-nerrevar.tk/api.py", line 15, in index
+[Sat Mar 17 19:26:58.397059 2018] [wsgi:error] [pid 11554] [client 37.112.26.255:52934]     return render_template('authorization.html')
+[Sat Mar 17 19:26:58.397068 2018] [wsgi:error] [pid 11554] [client 37.112.26.255:52934]   File "/usr/lib/python3.6/site-packages/flask/templating.py", line 133, in render_template
+[Sat Mar 17 19:26:58.397078 2018] [wsgi:error] [pid 11554] [client 37.112.26.255:52934]     return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+[Sat Mar 17 19:26:58.397088 2018] [wsgi:error] [pid 11554] [client 37.112.26.255:52934]   File "/usr/lib/python3.6/site-packages/jinja2/environment.py", line 869, in get_or_select_template
+[Sat Mar 17 19:26:58.397098 2018] [wsgi:error] [pid 11554] [client 37.112.26.255:52934]     return self.get_template(template_name_or_list, parent, globals)
+[Sat Mar 17 19:26:58.397107 2018] [wsgi:error] [pid 11554] [client 37.112.26.255:52934]   File "/usr/lib/python3.6/site-packages/jinja2/environment.py", line 830, in get_template
+[Sat Mar 17 19:26:58.397117 2018] [wsgi:error] [pid 11554] [client 37.112.26.255:52934]     return self._load_template(name, self.make_globals(globals))
+[Sat Mar 17 19:26:58.397126 2018] [wsgi:error] [pid 11554] [client 37.112.26.255:52934]   File "/usr/lib/python3.6/site-packages/jinja2/environment.py", line 804, in _load_template
+[Sat Mar 17 19:26:58.397135 2018] [wsgi:error] [pid 11554] [client 37.112.26.255:52934]     template = self.loader.load(self, name, globals)
+[Sat Mar 17 19:26:58.397145 2018] [wsgi:error] [pid 11554] [client 37.112.26.255:52934]   File "/usr/lib/python3.6/site-packages/jinja2/loaders.py", line 113, in load
+[Sat Mar 17 19:26:58.397154 2018] [wsgi:error] [pid 11554] [client 37.112.26.255:52934]     source, filename, uptodate = self.get_source(environment, name)
+[Sat Mar 17 19:26:58.397163 2018] [wsgi:error] [pid 11554] [client 37.112.26.255:52934]   File "/usr/lib/python3.6/site-packages/flask/templating.py", line 57, in get_source
+[Sat Mar 17 19:26:58.397173 2018] [wsgi:error] [pid 11554] [client 37.112.26.255:52934]     return self._get_source_fast(environment, template)
+[Sat Mar 17 19:26:58.397182 2018] [wsgi:error] [pid 11554] [client 37.112.26.255:52934]   File "/usr/lib/python3.6/site-packages/flask/templating.py", line 82, in _get_source_fast
+[Sat Mar 17 19:26:58.397192 2018] [wsgi:error] [pid 11554] [client 37.112.26.255:52934]     return loader.get_source(environment, template)
+[Sat Mar 17 19:26:58.397201 2018] [wsgi:error] [pid 11554] [client 37.112.26.255:52934]   File "/usr/lib/python3.6/site-packages/jinja2/loaders.py", line 175, in get_source
+[Sat Mar 17 19:26:58.397243 2018] [wsgi:error] [pid 11554] [client 37.112.26.255:52934]     contents = f.read().decode(self.encoding)
+[Sat Mar 17 19:26:58.397260 2018] [wsgi:error] [pid 11554] [client 37.112.26.255:52934] UnicodeDecodeError: 'utf-8' codec can't decode byte 0xc0 in position 128: invalid start byte
+[Sat Mar 17 19:26:58.397316 2018] [wsgi:error] [pid 11554] [client 37.112.26.255:52934] 
+[Sat Mar 17 19:27:22.353324 2018] [wsgi:error] [pid 11730] [client 37.112.26.255:52937] [2018-03-17 19:27:22,346] ERROR in app: Exception on / [GET]
+[Sat Mar 17 19:27:22.355160 2018] [wsgi:error] [pid 11730] [client 37.112.26.255:52937] Traceback (most recent call last):
+[Sat Mar 17 19:27:22.355193 2018] [wsgi:error] [pid 11730] [client 37.112.26.255:52937]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+[Sat Mar 17 19:27:22.355204 2018] [wsgi:error] [pid 11730] [client 37.112.26.255:52937]     response = self.full_dispatch_request()
+[Sat Mar 17 19:27:22.355214 2018] [wsgi:error] [pid 11730] [client 37.112.26.255:52937]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1614, in full_dispatch_request
+[Sat Mar 17 19:27:22.355223 2018] [wsgi:error] [pid 11730] [client 37.112.26.255:52937]     rv = self.handle_user_exception(e)
+[Sat Mar 17 19:27:22.355232 2018] [wsgi:error] [pid 11730] [client 37.112.26.255:52937]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1517, in handle_user_exception
+[Sat Mar 17 19:27:22.355242 2018] [wsgi:error] [pid 11730] [client 37.112.26.255:52937]     reraise(exc_type, exc_value, tb)
+[Sat Mar 17 19:27:22.355250 2018] [wsgi:error] [pid 11730] [client 37.112.26.255:52937]   File "/usr/lib/python3.6/site-packages/flask/_compat.py", line 33, in reraise
+[Sat Mar 17 19:27:22.355260 2018] [wsgi:error] [pid 11730] [client 37.112.26.255:52937]     raise value
+[Sat Mar 17 19:27:22.355268 2018] [wsgi:error] [pid 11730] [client 37.112.26.255:52937]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1612, in full_dispatch_request
+[Sat Mar 17 19:27:22.355278 2018] [wsgi:error] [pid 11730] [client 37.112.26.255:52937]     rv = self.dispatch_request()
+[Sat Mar 17 19:27:22.355287 2018] [wsgi:error] [pid 11730] [client 37.112.26.255:52937]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1598, in dispatch_request
+[Sat Mar 17 19:27:22.355296 2018] [wsgi:error] [pid 11730] [client 37.112.26.255:52937]     return self.view_functions[rule.endpoint](**req.view_args)
+[Sat Mar 17 19:27:22.355305 2018] [wsgi:error] [pid 11730] [client 37.112.26.255:52937]   File "/srv/http/test-nerrevar.tk/api.py", line 15, in index
+[Sat Mar 17 19:27:22.355317 2018] [wsgi:error] [pid 11730] [client 37.112.26.255:52937]     return render_template('authorization.html')
+[Sat Mar 17 19:27:22.355326 2018] [wsgi:error] [pid 11730] [client 37.112.26.255:52937]   File "/usr/lib/python3.6/site-packages/flask/templating.py", line 133, in render_template
+[Sat Mar 17 19:27:22.355336 2018] [wsgi:error] [pid 11730] [client 37.112.26.255:52937]     return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+[Sat Mar 17 19:27:22.355346 2018] [wsgi:error] [pid 11730] [client 37.112.26.255:52937]   File "/usr/lib/python3.6/site-packages/jinja2/environment.py", line 869, in get_or_select_template
+[Sat Mar 17 19:27:22.355355 2018] [wsgi:error] [pid 11730] [client 37.112.26.255:52937]     return self.get_template(template_name_or_list, parent, globals)
+[Sat Mar 17 19:27:22.355364 2018] [wsgi:error] [pid 11730] [client 37.112.26.255:52937]   File "/usr/lib/python3.6/site-packages/jinja2/environment.py", line 830, in get_template
+[Sat Mar 17 19:27:22.355374 2018] [wsgi:error] [pid 11730] [client 37.112.26.255:52937]     return self._load_template(name, self.make_globals(globals))
+[Sat Mar 17 19:27:22.355382 2018] [wsgi:error] [pid 11730] [client 37.112.26.255:52937]   File "/usr/lib/python3.6/site-packages/jinja2/environment.py", line 804, in _load_template
+[Sat Mar 17 19:27:22.355392 2018] [wsgi:error] [pid 11730] [client 37.112.26.255:52937]     template = self.loader.load(self, name, globals)
+[Sat Mar 17 19:27:22.355554 2018] [wsgi:error] [pid 11730] [client 37.112.26.255:52937]   File "/usr/lib/python3.6/site-packages/jinja2/loaders.py", line 113, in load
+[Sat Mar 17 19:27:22.355570 2018] [wsgi:error] [pid 11730] [client 37.112.26.255:52937]     source, filename, uptodate = self.get_source(environment, name)
+[Sat Mar 17 19:27:22.355581 2018] [wsgi:error] [pid 11730] [client 37.112.26.255:52937]   File "/usr/lib/python3.6/site-packages/flask/templating.py", line 57, in get_source
+[Sat Mar 17 19:27:22.355591 2018] [wsgi:error] [pid 11730] [client 37.112.26.255:52937]     return self._get_source_fast(environment, template)
+[Sat Mar 17 19:27:22.355600 2018] [wsgi:error] [pid 11730] [client 37.112.26.255:52937]   File "/usr/lib/python3.6/site-packages/flask/templating.py", line 82, in _get_source_fast
+[Sat Mar 17 19:27:22.355609 2018] [wsgi:error] [pid 11730] [client 37.112.26.255:52937]     return loader.get_source(environment, template)
+[Sat Mar 17 19:27:22.355618 2018] [wsgi:error] [pid 11730] [client 37.112.26.255:52937]   File "/usr/lib/python3.6/site-packages/jinja2/loaders.py", line 175, in get_source
+[Sat Mar 17 19:27:22.355627 2018] [wsgi:error] [pid 11730] [client 37.112.26.255:52937]     contents = f.read().decode(self.encoding)
+[Sat Mar 17 19:27:22.355658 2018] [wsgi:error] [pid 11730] [client 37.112.26.255:52937] UnicodeDecodeError: 'utf-8' codec can't decode byte 0xc0 in position 128: invalid start byte
+[Sat Mar 17 19:27:22.355811 2018] [wsgi:error] [pid 11730] [client 37.112.26.255:52937] 
