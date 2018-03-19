@@ -62,3 +62,4 @@ file -i api.py
 pacman -Ss recode
 pacman -Sy recode
 su
+su
