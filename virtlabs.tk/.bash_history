@@ -63,3 +63,4 @@ pacman -Ss recode
 pacman -Sy recode
 su
 su
+su

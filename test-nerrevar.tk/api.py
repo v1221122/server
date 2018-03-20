@@ -17,4 +17,13 @@ def index():
 
 @app.route('/authorized')
 def authorized():
-    return render_template('authorized.html')
+    context = {
+        'name': 'ivan',
+        'friends': {
+            'f1': {
+                'photo': 'p1',
+                'name': 'n1'
+            }
+        }
+    }
+    return render_template('authorized.html', **context)
