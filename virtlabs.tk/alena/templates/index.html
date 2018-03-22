@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <meta name="description" content="Доска автомобильных объявлений 58 колёс - 58koles.tk" />
+    <link rel="stylesheet" href="/static/css/{{ stylesheet }}" />
+    <title>Название</title>
+    <!-- Yandex.Metrika counter -->
+    <!-- <script type="text/javascript" > -->
+        <!-- (function (d, w, c) { -->
+            <!-- (w[c] = w[c] || []).push(function() { -->
+                <!-- try { -->
+                    <!-- w.yaCounter47070546 = new Ya.Metrika({ -->
+                        <!-- id:47070546, -->
+                        <!-- clickmap:true, -->
+                        <!-- trackLinks:true, -->
+                        <!-- accurateTrackBounce:true -->
+                    <!-- }); -->
+                <!-- } catch(e) { } -->
+            <!-- }); -->
+
+            <!-- var n = d.getElementsByTagName("script")[0], -->
+                <!-- s = d.createElement("script"), -->
+                <!-- f = function () { n.parentNode.insertBefore(s, n); }; -->
+            <!-- s.type = "text/javascript"; -->
+            <!-- s.async = true; -->
+            <!-- s.src = "https://mc.yandex.ru/metrika/watch.js"; -->
+
+            <!-- if (w.opera == "[object Opera]") { -->
+                <!-- d.addEventListener("DOMContentLoaded", f, false); -->
+            <!-- } else { f(); } -->
+        <!-- })(document, window, "yandex_metrika_callbacks"); -->
+    <!-- </script> -->
+    <!-- <noscript><div><img src="https://mc.yandex.ru/watch/47070546" style="position:absolute; left:-9999px;" alt="" /></div></noscript> -->
+    <!-- /Yandex.Metrika counter -->
+</head>
+<body>
+    <div id="back">
+        <img style="width:100%; height:100%" src="/static/img/back.jpg" />
+    </div>
+    <header id="header">
+        <h1>Название</h1>
+    </header>
+	<div id="about">
+		<p>текст текст<br>текст</p>
+	</div>
+	<div id="menu">
+        {% for item in menu %}
+            <a href={{ item.href }}><img src={{ item.img }} />{{ item.name }}</a>
+        {% endfor %}
+	</div>
+    <div id="body_div" style="overflow:auto">
+        {% for item in items %}
+                <div class="item">
+                    {% block loop_item scoped %}
+                        <hr>
+                        <img src="{{ item.src }}" class="img" />
+                        <div class="wrapper">
+                            <h2>{{ item.title|safe }}</h2>
+                            {% for string in item.text %}
+                                <div class="line_wrapper">
+                                    {% if item.list %}
+                                        <img src="/static/img/list.png" alt="*" class="list_img"/>
+                                    {% endif %}
+                                    <p class="text">{{ string|safe }}</p><br>
+                                </div>
+                            {% endfor %}
+                        </div>
+                    {% endblock %}
+                </div>
+        {% endfor %}
+        <hr>
+    </div>
+    <footer id="footer">
+        <h6 style="display:inline-block;">(c)nerrevar</h6>
+            <!-- Yandex.Metrika informer -->
+            <!-- <a id="ya_metr" href="https://metrika.yandex.ru/stat/?id=47070546&amp;from=informer"  -->
+                    <!-- target="_blank" rel="nofollow" -->
+                    <!-- style="display:inline-block; float:right;"> -->
+                <!-- <img src="https://informer.yandex.ru/informer/47070546/3_1_B9FF75FF_99FF55FF_0_pageviews" -->
+                        <!-- alt="Яндекс.Метрика" -->
+                        <!-- title="Яндекс.Метрика: данные за сегодня (просмотры, визиты и уникальные посетители)" -->
+                        <!-- class="inner_img" -->
+                        <!-- data-cid="47070546" data-lang="ru" -->
+                <!-- /> -->
+            <!-- </a> -->
+			<!-- /Yandex.Metrika informer -->
+    </footer>
+</body>
+</html>

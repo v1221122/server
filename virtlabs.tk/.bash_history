@@ -64,3 +64,48 @@ pacman -Sy recode
 su
 su
 su
+ls alena/log/
+ls alena/
+cat alena/api.wsgi 
+cat alena/api.py 
+su
+cd alena/
+nano api.wsgi 
+ls
+nano api.py 
+python api.py 
+cat log/error.log 
+su
+cat log/error.log 
+date
+ls
+cat index.py 
+rm index.py 
+ls
+nano api.
+nano api.py 
+apachectl -k graceful
+su
+nano api.py 
+rm static/img/amigurumi.jpg 
+cd static/img/
+man -k dav
+cadaver disk.yandex.ru
+cadaver https://webdav.yandex.ru
+ls
+pwd
+cd ../
+ls
+cd virtlabs.tk/
+cp -r 58koles.tk/ alena/
+ls
+ls alena/
+cd alena/static/img/
+ls
+rm *
+curl -O https://yadi.sk/i/0zd8iNP63TcwUd
+mv 0zd8iNP63TcwUd amigurumi.jpg
+su
+cd ../../
+ls
+ls log/
