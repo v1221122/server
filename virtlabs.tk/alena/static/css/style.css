@@ -18,6 +18,15 @@ body *{
 	bottom: 0;
 	left: 0;
 }
+.menu_item{
+    min-height: 32px;
+    width: 100%;
+}
+.menu_item_img{
+    width: 32px;
+    height: 32px;
+    display: inline;
+}
 h2{
 	color: #000;
 	text-align: center;

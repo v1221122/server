@@ -109,3 +109,12 @@ su
 cd ../../
 ls
 ls log/
+cd alena/static/img/
+curl -o back.jpg https://wallpapers-all.com/uplads/posts/2017-03/1_lady_and_the_tramp.jpg
+ls
+curl -o back.jpg https://wallpapers-all.com/uploads/posts/2017-03/1_lady_and_the_tramp.jpg
+cd ../..
+cat log/error.log 
+cd alena/
+curl -o static/img/knitting.ico http://moemesto.ru/favicons/91/55/www.passionforum.ru.ico
+su
