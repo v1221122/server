@@ -118,3 +118,20 @@ cat log/error.log
 cd alena/
 curl -o static/img/knitting.ico http://moemesto.ru/favicons/91/55/www.passionforum.ru.ico
 su
+su
+su
+cd alena/
+cd static/img/
+curl -o menu.png http://www.mcafeecomsupport.com/images/nav-icon.png
+su
+ls alena/static/img/
+su
+su
+cd alena/static/
+ls
+mkdir js
+cd js/
+curl -O https://code.jquery.com/jquery-3.3.1.min.js
+ls
+su
+su

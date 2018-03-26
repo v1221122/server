@@ -1,0 +1,25 @@
+{% extends "index.html" %}
+{% block body_inner %}
+    <div id="body_div" style="overflow:auto">
+        {% for item in items %}
+                <div class="item">
+                    {% block loop_item scoped %}
+                        <hr>
+                        <img src="{{ item.src }}" class="img" />
+                        <div class="wrapper">
+                            <h2>{{ item.title|safe }}</h2>
+                            {% for string in item.text %}
+                                <div class="line_wrapper">
+                                    {% if item.list %}
+                                        <img src="/static/img/list.png" alt="*" class="list_img"/>
+                                    {% endif %}
+                                    <p class="text">{{ string|safe }}</p><br>
+                                </div>
+                            {% endfor %}
+                        </div>
+                    {% endblock %}
+                </div>
+        {% endfor %}
+        <hr>
+    </div>
+{% endblock %}
