@@ -274,3 +274,10 @@
 [Mon Mar 26 00:59:13.487198 2018] [php7:error] [pid 5915] [client 139.199.227.12:49178] script '/srv/http/virtlabs.tk/graph/cmdd.php' not found or unable to stat
 [Mon Mar 26 00:59:13.997463 2018] [php7:error] [pid 5918] [client 139.199.227.12:49220] script '/srv/http/virtlabs.tk/graph/text.php' not found or unable to stat
 [Mon Mar 26 16:50:40.407597 2018] [php7:error] [pid 11976] [client 34.233.33.156:37963] script '/srv/http/virtlabs.tk/graph/setup.php' not found or unable to stat
+[Mon Mar 26 23:16:27.715408 2018] [cgi:error] [pid 11977] [client 191.189.165.252:44980] AH02811: script not found or unable to stat: /srv/http/virtlabs.tk/graph/hndUnblock.cgi
+[Mon Mar 26 23:16:31.406143 2018] [cgi:error] [pid 11979] [client 191.189.165.252:45004] AH02811: script not found or unable to stat: /srv/http/virtlabs.tk/graph/tmUnblock.cgi
+[Mon Mar 26 23:16:42.962487 2018] [php7:error] [pid 11976] [client 191.189.165.252:45073] script '/srv/http/virtlabs.tk/graph/getcfg.php' not found or unable to stat
+[Mon Mar 26 23:16:46.713529 2018] [php7:error] [pid 11975] [client 191.189.165.252:45100] script '/srv/http/virtlabs.tk/graph/getcfg.php' not found or unable to stat
+[Mon Mar 26 23:37:29.642025 2018] [php7:error] [pid 11977] [client 200.17.231.60:40136] script '/srv/http/virtlabs.tk/graph/setup.php' not found or unable to stat
+[Tue Mar 27 11:29:08.778880 2018] [php7:error] [pid 11975] [client 194.186.136.246:35354] script '/srv/http/virtlabs.tk/graph/setup.php' not found or unable to stat
+[Tue Mar 27 14:35:20.936070 2018] [php7:error] [pid 12016] [client 194.28.29.159:48563] script '/srv/http/virtlabs.tk/graph/setup.php' not found or unable to stat
