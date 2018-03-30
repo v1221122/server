@@ -285,3 +285,6 @@
 [Wed Mar 28 10:43:30.117921 2018] [php7:error] [pid 11975] [client 91.122.100.173:50584] script '/srv/http/virtlabs.tk/graph/setup.php' not found or unable to stat
 [Wed Mar 28 14:18:35.996223 2018] [php7:error] [pid 26739] [client 104.128.144.131:59989] script '/srv/http/virtlabs.tk/graph/redirect.php' not found or unable to stat
 [Thu Mar 29 01:18:31.574993 2018] [php7:error] [pid 11976] [client 156.54.140.31:57080] script '/srv/http/virtlabs.tk/graph/setup.php' not found or unable to stat
+[Thu Mar 29 17:28:58.246093 2018] [php7:error] [pid 26739] [client 69.162.73.83:45513] script '/srv/http/virtlabs.tk/graph/setup.php' not found or unable to stat
+[Thu Mar 29 23:00:42.800931 2018] [php7:error] [pid 12016] [client 213.32.28.12:55886] script '/srv/http/virtlabs.tk/graph/setup.php' not found or unable to stat
+[Fri Mar 30 00:00:06.274219 2018] [php7:error] [pid 27650] [client 195.142.115.186:47197] script '/srv/http/virtlabs.tk/graph/setup.php' not found or unable to stat
