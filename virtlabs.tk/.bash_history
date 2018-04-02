@@ -135,3 +135,25 @@ curl -O https://code.jquery.com/jquery-3.3.1.min.js
 ls
 su
 su
+su
+su
+certbot delete
+su
+certbot --apache
+su
+certbot --apache
+ls /home/
+ls
+cd ..
+ls
+cd ..
+ls
+mkdir certbot
+cd certbot/
+mkdir config work log
+cd config/
+pwd
+certbot --config-dir pwd
+su
+su
+su

@@ -122,9 +122,17 @@ def work_cancel():
 
 @app.route('/work/end_order')
 def end_order():
-    select(p for p in Taxi_order if p.id == request.args.get('id')).delete()
+    try:
+        select(p for p in Taxi_order if p.id == request.args.get('id')).delete()
+    except:
+        return redirect('/work/index')
+
 
 @app.route('/work/application')
 def application_work():
     f = os.path.join(app.root_path, 'static', 'apk', 'work', 'forsaje_work.apk')
     return send_file(f, as_attachment=True, attachment_filename='forsaje_work.apk')
+
+@app.route('/work/info')
+def info():
+    return render_template('/work/info.html')

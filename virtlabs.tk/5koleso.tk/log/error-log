@@ -666,3 +666,54 @@
 [Wed Mar 14 22:48:58.821495 2018] [wsgi:error] [pid 15125] [remote 217.118.90.212:47301]     raise exc
 [Wed Mar 14 22:48:58.821510 2018] [wsgi:error] [pid 15125] [remote 217.118.90.212:47301] pony.orm.core.TransactionError: db_session is required when working with the database
 [Wed Mar 14 22:48:58.821568 2018] [wsgi:error] [pid 15125] [remote 217.118.90.212:47301] 
+[Sun Apr 01 19:45:01.721730 2018] [wsgi:error] [pid 331] [remote 217.118.90.170:64598] [2018-04-01 19:45:01,601] ERROR in app: Exception on /work/end_order [GET]
+[Sun Apr 01 19:45:01.753417 2018] [wsgi:error] [pid 331] [remote 217.118.90.170:64598] Traceback (most recent call last):
+[Sun Apr 01 19:45:01.753450 2018] [wsgi:error] [pid 331] [remote 217.118.90.170:64598]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+[Sun Apr 01 19:45:01.753463 2018] [wsgi:error] [pid 331] [remote 217.118.90.170:64598]     response = self.full_dispatch_request()
+[Sun Apr 01 19:45:01.753474 2018] [wsgi:error] [pid 331] [remote 217.118.90.170:64598]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1614, in full_dispatch_request
+[Sun Apr 01 19:45:01.753485 2018] [wsgi:error] [pid 331] [remote 217.118.90.170:64598]     rv = self.handle_user_exception(e)
+[Sun Apr 01 19:45:01.753495 2018] [wsgi:error] [pid 331] [remote 217.118.90.170:64598]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1517, in handle_user_exception
+[Sun Apr 01 19:45:01.753505 2018] [wsgi:error] [pid 331] [remote 217.118.90.170:64598]     reraise(exc_type, exc_value, tb)
+[Sun Apr 01 19:45:01.753516 2018] [wsgi:error] [pid 331] [remote 217.118.90.170:64598]   File "/usr/lib/python3.6/site-packages/flask/_compat.py", line 33, in reraise
+[Sun Apr 01 19:45:01.753526 2018] [wsgi:error] [pid 331] [remote 217.118.90.170:64598]     raise value
+[Sun Apr 01 19:45:01.753536 2018] [wsgi:error] [pid 331] [remote 217.118.90.170:64598]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1612, in full_dispatch_request
+[Sun Apr 01 19:45:01.753546 2018] [wsgi:error] [pid 331] [remote 217.118.90.170:64598]     rv = self.dispatch_request()
+[Sun Apr 01 19:45:01.753556 2018] [wsgi:error] [pid 331] [remote 217.118.90.170:64598]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1598, in dispatch_request
+[Sun Apr 01 19:45:01.753567 2018] [wsgi:error] [pid 331] [remote 217.118.90.170:64598]     return self.view_functions[rule.endpoint](**req.view_args)
+[Sun Apr 01 19:45:01.753671 2018] [wsgi:error] [pid 331] [remote 217.118.90.170:64598]   File "/srv/http/virtlabs.tk/5koleso.tk/worker.py", line 125, in end_order
+[Sun Apr 01 19:45:01.753685 2018] [wsgi:error] [pid 331] [remote 217.118.90.170:64598]     select(p for p in Taxi_order if p.id == request.args.get('id')).delete()
+[Sun Apr 01 19:45:01.753696 2018] [wsgi:error] [pid 331] [remote 217.118.90.170:64598]   File "<string>", line 2, in delete
+[Sun Apr 01 19:45:01.753706 2018] [wsgi:error] [pid 331] [remote 217.118.90.170:64598]   File "/usr/lib/python3.6/site-packages/pony/utils/utils.py", line 58, in cut_traceback
+[Sun Apr 01 19:45:01.753716 2018] [wsgi:error] [pid 331] [remote 217.118.90.170:64598]     return func(*args, **kwargs)
+[Sun Apr 01 19:45:01.753725 2018] [wsgi:error] [pid 331] [remote 217.118.90.170:64598]   File "/usr/lib/python3.6/site-packages/pony/orm/core.py", line 5483, in delete
+[Sun Apr 01 19:45:01.753735 2018] [wsgi:error] [pid 331] [remote 217.118.90.170:64598]     objects = query._fetch()
+[Sun Apr 01 19:45:01.753745 2018] [wsgi:error] [pid 331] [remote 217.118.90.170:64598]   File "/usr/lib/python3.6/site-packages/pony/orm/core.py", line 5336, in _fetch
+[Sun Apr 01 19:45:01.753755 2018] [wsgi:error] [pid 331] [remote 217.118.90.170:64598]     sql, arguments, attr_offsets, query_key = query._construct_sql_and_arguments(range)
+[Sun Apr 01 19:45:01.753766 2018] [wsgi:error] [pid 331] [remote 217.118.90.170:64598]   File "/usr/lib/python3.6/site-packages/pony/orm/core.py", line 5316, in _construct_sql_and_arguments
+[Sun Apr 01 19:45:01.753776 2018] [wsgi:error] [pid 331] [remote 217.118.90.170:64598]     cache = database._get_cache()
+[Sun Apr 01 19:45:01.753786 2018] [wsgi:error] [pid 331] [remote 217.118.90.170:64598]   File "/usr/lib/python3.6/site-packages/pony/orm/core.py", line 726, in _get_cache
+[Sun Apr 01 19:45:01.753796 2018] [wsgi:error] [pid 331] [remote 217.118.90.170:64598]     ): throw(TransactionError, 'db_session is required when working with the database')
+[Sun Apr 01 19:45:01.753806 2018] [wsgi:error] [pid 331] [remote 217.118.90.170:64598]   File "/usr/lib/python3.6/site-packages/pony/utils/utils.py", line 98, in throw
+[Sun Apr 01 19:45:01.753816 2018] [wsgi:error] [pid 331] [remote 217.118.90.170:64598]     raise exc
+[Sun Apr 01 19:45:01.753848 2018] [wsgi:error] [pid 331] [remote 217.118.90.170:64598] pony.orm.core.TransactionError: db_session is required when working with the database
+[Sun Apr 01 19:45:01.754023 2018] [wsgi:error] [pid 331] [remote 217.118.90.170:64598] 
+[Mon Apr 02 12:22:39.281298 2018] [wsgi:error] [pid 3858] [remote 217.118.90.139:15708] mod_wsgi (pid=3858): Exception occurred processing WSGI script '/srv/http/virtlabs.tk/5koleso.tk/api.wsgi'.
+[Mon Apr 02 12:22:39.281821 2018] [wsgi:error] [pid 3858] [remote 217.118.90.139:15708] OSError: Apache/mod_wsgi failed to write response data: Broken pipe.
+[Mon Apr 02 12:22:56.531161 2018] [wsgi:error] [pid 3858] [remote 217.118.90.139:15710] mod_wsgi (pid=3858): Exception occurred processing WSGI script '/srv/http/virtlabs.tk/5koleso.tk/api.wsgi'.
+[Mon Apr 02 12:22:56.531587 2018] [wsgi:error] [pid 3858] [remote 217.118.90.139:15710] OSError: Apache/mod_wsgi failed to write response data: Broken pipe.
+[Mon Apr 02 12:23:19.189073 2018] [wsgi:error] [pid 3858] [remote 217.118.90.139:15711] mod_wsgi (pid=3858): Exception occurred processing WSGI script '/srv/http/virtlabs.tk/5koleso.tk/api.wsgi'.
+[Mon Apr 02 12:23:19.189494 2018] [wsgi:error] [pid 3858] [remote 217.118.90.139:15711] OSError: Apache/mod_wsgi failed to write response data: Broken pipe.
+[Mon Apr 02 12:24:09.567337 2018] [wsgi:error] [pid 3858] [remote 217.118.90.139:15715] mod_wsgi (pid=3858): Exception occurred processing WSGI script '/srv/http/virtlabs.tk/5koleso.tk/api.wsgi'.
+[Mon Apr 02 12:24:09.567768 2018] [wsgi:error] [pid 3858] [remote 217.118.90.139:15715] OSError: Apache/mod_wsgi failed to write response data: Broken pipe.
+[Mon Apr 02 12:24:20.668848 2018] [wsgi:error] [pid 3858] [remote 217.118.90.139:15717] mod_wsgi (pid=3858): Exception occurred processing WSGI script '/srv/http/virtlabs.tk/5koleso.tk/api.wsgi'.
+[Mon Apr 02 12:24:20.669310 2018] [wsgi:error] [pid 3858] [remote 217.118.90.139:15717] OSError: Apache/mod_wsgi failed to write response data: Broken pipe.
+[Mon Apr 02 12:24:27.775800 2018] [wsgi:error] [pid 3858] [remote 217.118.90.139:15718] mod_wsgi (pid=3858): Exception occurred processing WSGI script '/srv/http/virtlabs.tk/5koleso.tk/api.wsgi'.
+[Mon Apr 02 12:24:27.776202 2018] [wsgi:error] [pid 3858] [remote 217.118.90.139:15718] OSError: Apache/mod_wsgi failed to write response data: Broken pipe.
+[Mon Apr 02 12:24:40.616596 2018] [wsgi:error] [pid 3858] [remote 217.118.90.139:15720] mod_wsgi (pid=3858): Exception occurred processing WSGI script '/srv/http/virtlabs.tk/5koleso.tk/api.wsgi'.
+[Mon Apr 02 12:24:40.617152 2018] [wsgi:error] [pid 3858] [remote 217.118.90.139:15720] OSError: Apache/mod_wsgi failed to write response data: Broken pipe.
+[Mon Apr 02 12:24:41.537919 2018] [wsgi:error] [pid 3858] [remote 217.118.90.139:15721] mod_wsgi (pid=3858): Exception occurred processing WSGI script '/srv/http/virtlabs.tk/5koleso.tk/api.wsgi'.
+[Mon Apr 02 12:24:41.538319 2018] [wsgi:error] [pid 3858] [remote 217.118.90.139:15721] OSError: Apache/mod_wsgi failed to write response data: Broken pipe.
+[Mon Apr 02 12:30:53.165314 2018] [wsgi:error] [pid 3858] [remote 176.59.100.31:56719] mod_wsgi (pid=3858): Exception occurred processing WSGI script '/srv/http/virtlabs.tk/5koleso.tk/api.wsgi'.
+[Mon Apr 02 12:30:53.165758 2018] [wsgi:error] [pid 3858] [remote 176.59.100.31:56719] OSError: Apache/mod_wsgi failed to write response data: Broken pipe.
+[Mon Apr 02 12:30:56.113863 2018] [wsgi:error] [pid 3858] [remote 176.59.100.31:26101] mod_wsgi (pid=3858): Exception occurred processing WSGI script '/srv/http/virtlabs.tk/5koleso.tk/api.wsgi'.
+[Mon Apr 02 12:30:56.114292 2018] [wsgi:error] [pid 3858] [remote 176.59.100.31:26101] OSError: Apache/mod_wsgi failed to write response data: Broken pipe.
