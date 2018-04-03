@@ -289,3 +289,43 @@
 [Thu Mar 29 23:00:42.800931 2018] [php7:error] [pid 12016] [client 213.32.28.12:55886] script '/srv/http/virtlabs.tk/graph/setup.php' not found or unable to stat
 [Fri Mar 30 00:00:06.274219 2018] [php7:error] [pid 27650] [client 195.142.115.186:47197] script '/srv/http/virtlabs.tk/graph/setup.php' not found or unable to stat
 [Mon Apr 02 00:44:41.009020 2018] [php7:error] [pid 335] [client 179.208.133.172:39925] script '/srv/http/virtlabs.tk/graph/command.php' not found or unable to stat
+[Mon Apr 02 20:59:10.668445 2018] [core:error] [pid 9015] [client 31.184.194.114:35579] AH00126: Invalid URI in request GET HTTP/1.1 HTTP/1.1
+[Mon Apr 02 20:59:10.783385 2018] [cgi:error] [pid 9016] [client 31.184.194.114:35883] AH02811: script not found or unable to stat: /srv/http/cgi-bin
+[Mon Apr 02 20:59:10.828735 2018] [cgi:error] [pid 9040] [client 31.184.194.114:36005] AH02811: script not found or unable to stat: /srv/http/cgi-bin
+[Mon Apr 02 20:59:10.877709 2018] [cgi:error] [pid 9012] [client 31.184.194.114:36317] AH02811: script not found or unable to stat: /srv/http/cgi-bin
+[Mon Apr 02 20:59:10.924771 2018] [cgi:error] [pid 9071] [client 31.184.194.114:36445] AH02811: script not found or unable to stat: /srv/http/cgi-bin
+[Mon Apr 02 20:59:11.967445 2018] [cgi:error] [pid 9072] [client 31.184.194.114:36564] AH02811: script not found or unable to stat: /srv/http/cgi-bin
+[Mon Apr 02 20:59:12.011362 2018] [cgi:error] [pid 9073] [client 31.184.194.114:39139] AH02811: script not found or unable to stat: /srv/http/cgi-bin
+[Mon Apr 02 20:59:12.060940 2018] [cgi:error] [pid 9013] [client 31.184.194.114:39248] AH02811: script not found or unable to stat: /srv/http/cgi-bin
+[Mon Apr 02 20:59:12.106550 2018] [cgi:error] [pid 9179] [client 31.184.194.114:39366] AH02811: script not found or unable to stat: /srv/http/cgi-bin
+[Mon Apr 02 20:59:12.150898 2018] [cgi:error] [pid 9180] [client 31.184.194.114:39485] AH02811: script not found or unable to stat: /srv/http/cgi-bin
+[Mon Apr 02 20:59:12.673403 2018] [cgi:error] [pid 9015] [client 31.184.194.114:39609] AH02811: script not found or unable to stat: /srv/http/cgi-bin
+[Mon Apr 02 20:59:12.739813 2018] [cgi:error] [pid 9014] [client 31.184.194.114:40851] AH02811: script not found or unable to stat: /srv/http/cgi-bin
+[Mon Apr 02 20:59:12.788387 2018] [cgi:error] [pid 9016] [client 31.184.194.114:41012] AH02811: script not found or unable to stat: /srv/http/cgi-bin
+[Mon Apr 02 20:59:12.834614 2018] [cgi:error] [pid 9040] [client 31.184.194.114:41129] AH02811: script not found or unable to stat: /srv/http/cgi-bin
+[Mon Apr 02 20:59:12.882660 2018] [cgi:error] [pid 9012] [client 31.184.194.114:41349] AH02811: script not found or unable to stat: /srv/http/cgi-bin
+[Mon Apr 02 20:59:12.929790 2018] [cgi:error] [pid 9071] [client 31.184.194.114:41450] AH02811: script not found or unable to stat: /srv/http/cgi-bin
+[Mon Apr 02 20:59:13.102018 2018] [cgi:error] [pid 9182] [client 31.184.194.114:41571] AH02811: script not found or unable to stat: /srv/http/cgi-bin
+[Mon Apr 02 20:59:13.971113 2018] [cgi:error] [pid 9072] [client 31.184.194.114:41932] AH02811: script not found or unable to stat: /srv/http/cgi-bin
+[Mon Apr 02 20:59:14.020121 2018] [cgi:error] [pid 9073] [client 31.184.194.114:44098] AH02811: script not found or unable to stat: /srv/http/cgi-bin
+[Mon Apr 02 20:59:14.065909 2018] [cgi:error] [pid 9013] [client 31.184.194.114:44209] AH02811: script not found or unable to stat: /srv/http/cgi-bin
+[Mon Apr 02 20:59:14.112142 2018] [cgi:error] [pid 9179] [client 31.184.194.114:44320] AH02811: script not found or unable to stat: /srv/http/cgi-bin
+[Mon Apr 02 20:59:14.160473 2018] [cgi:error] [pid 9183] [client 31.184.194.114:44428] AH02811: script not found or unable to stat: /srv/http/cgi-bin
+[Mon Apr 02 20:59:14.205681 2018] [cgi:error] [pid 9180] [client 31.184.194.114:44542] AH02811: script not found or unable to stat: /srv/http/cgi-bin
+[Mon Apr 02 20:59:14.678391 2018] [cgi:error] [pid 9015] [client 31.184.194.114:44648] AH02811: script not found or unable to stat: /srv/http/cgi-bin
+[Mon Apr 02 20:59:14.745061 2018] [cgi:error] [pid 9014] [client 31.184.194.114:45739] AH02811: script not found or unable to stat: /srv/http/cgi-bin
+[Mon Apr 02 20:59:14.793217 2018] [cgi:error] [pid 9016] [client 31.184.194.114:45909] AH02811: script not found or unable to stat: /srv/http/cgi-bin
+[Mon Apr 02 20:59:14.839306 2018] [cgi:error] [pid 9040] [client 31.184.194.114:46044] AH02811: script not found or unable to stat: /srv/http/cgi-bin
+[Mon Apr 02 20:59:14.934766 2018] [cgi:error] [pid 9071] [client 31.184.194.114:46461] AH02811: script not found or unable to stat: /srv/http/cgi-bin
+[Mon Apr 02 20:59:15.107401 2018] [cgi:error] [pid 9182] [client 31.184.194.114:46582] AH02811: script not found or unable to stat: /srv/http/cgi-bin
+[Mon Apr 02 20:59:15.152980 2018] [cgi:error] [pid 9184] [client 31.184.194.114:46989] AH02811: script not found or unable to stat: /srv/http/cgi-bin
+[Mon Apr 02 20:59:15.974422 2018] [cgi:error] [pid 9072] [client 31.184.194.114:47101] AH02811: script not found or unable to stat: /srv/http/cgi-bin
+[Mon Apr 02 20:59:16.027360 2018] [cgi:error] [pid 9073] [client 31.184.194.114:49277] AH02811: script not found or unable to stat: /srv/http/cgi-bin
+[Mon Apr 02 20:59:16.073407 2018] [cgi:error] [pid 9013] [client 31.184.194.114:49428] AH02811: script not found or unable to stat: /srv/http/cgi-bin
+[Mon Apr 02 20:59:16.117817 2018] [cgi:error] [pid 9179] [client 31.184.194.114:49569] AH02811: script not found or unable to stat: /srv/http/cgi-bin
+[Mon Apr 02 20:59:16.166620 2018] [cgi:error] [pid 9185] [client 31.184.194.114:49722] AH02811: script not found or unable to stat: /srv/http/cgi-bin
+[Mon Apr 02 20:59:16.215789 2018] [cgi:error] [pid 9183] [client 31.184.194.114:49876] AH02811: script not found or unable to stat: /srv/http/cgi-bin
+[Mon Apr 02 20:59:16.261165 2018] [cgi:error] [pid 9180] [client 31.184.194.114:50023] AH02811: script not found or unable to stat: /srv/http/virtlabs.tk/graph/cgi.cgi
+[Mon Apr 02 20:59:18.311169 2018] [cgi:error] [pid 9188] [client 31.184.194.114:55558] AH02811: script not found or unable to stat: /srv/http/virtlabs.tk/graph/php/php.cgi
+[Tue Apr 03 07:54:28.748090 2018] [php7:error] [pid 9185] [client 124.120.192.232:19570] script '/srv/http/virtlabs.tk/graph/setup.php' not found or unable to stat
+[Tue Apr 03 13:37:35.485012 2018] [php7:error] [pid 9015] [client 217.106.238.30:45786] script '/srv/http/virtlabs.tk/graph/prox_ch.php' not found or unable to stat

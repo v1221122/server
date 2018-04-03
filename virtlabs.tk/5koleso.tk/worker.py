@@ -10,7 +10,7 @@ from flask import (
                     make_response,
                     session
 )
-from pony.orm import db_session, select, delete
+from pony.orm import db_session, select, delete, update
 
 
 from initdb import Worker, Auth, Online, Taxi_order
@@ -89,7 +89,7 @@ def wait_confirm():
         'time': request.args.get('time')
     }
     with db_session:
-        select(p for p in Taxi_order if p.phone == context['phone']).delete()
+        update(p.set(worker_id=request.cookies.get("id")) for p in Taxi_order if p.phone == context['phone'])
     return render_template('work/wait_confirm.html', **context)
 
 @app.route('/work/confirm')
