@@ -1,0 +1,19 @@
+[Thu Apr 12 00:53:49.831694 2018] [wsgi:error] [pid 3958] [client 37.112.28.62:53098] Attempt to invoke directory as WSGI application: /srv/http/test-nerrevar.tk/
+[Thu Apr 12 00:54:26.638476 2018] [wsgi:error] [pid 3960] [client 37.112.28.62:53102] Attempt to invoke directory as WSGI application: /srv/http/test-nerrevar.tk/
+[Thu Apr 12 00:54:37.903708 2018] [wsgi:error] [pid 4007] [client 37.112.28.62:53103] Target WSGI script not found or unable to stat: /srv/http/test-nerrevar.tk/favicon.ico
+[Thu Apr 12 00:55:37.923250 2018] [wsgi:error] [pid 4008] [client 37.112.28.62:53104] Target WSGI script not found or unable to stat: /srv/http/test-nerrevar.tk/favicon.ico
+[Thu Apr 12 00:56:37.923575 2018] [wsgi:error] [pid 4009] [client 37.112.28.62:53106] Target WSGI script not found or unable to stat: /srv/http/test-nerrevar.tk/favicon.ico
+[Thu Apr 12 00:57:21.434640 2018] [wsgi:error] [pid 4010] [client 37.112.28.62:53108] Attempt to invoke directory as WSGI application: /srv/http/test-nerrevar.tk/
+[Thu Apr 12 00:57:31.875557 2018] [wsgi:error] [pid 4011] [client 37.112.28.62:53109] Attempt to invoke directory as WSGI application: /srv/http/test-nerrevar.tk/
+[Thu Apr 12 00:57:37.931096 2018] [wsgi:error] [pid 4040] [client 37.112.28.62:53110] Target WSGI script not found or unable to stat: /srv/http/test-nerrevar.tk/favicon.ico
+[Thu Apr 12 00:58:37.943679 2018] [wsgi:error] [pid 4007] [client 37.112.28.62:53113] Target WSGI script not found or unable to stat: /srv/http/test-nerrevar.tk/favicon.ico
+[Thu Apr 12 00:59:37.949275 2018] [wsgi:error] [pid 4008] [client 37.112.28.62:53118] Target WSGI script not found or unable to stat: /srv/http/test-nerrevar.tk/favicon.ico
+[Thu Apr 12 01:00:37.964160 2018] [wsgi:error] [pid 4009] [client 37.112.28.62:53119] Target WSGI script not found or unable to stat: /srv/http/test-nerrevar.tk/favicon.ico
+[Thu Apr 12 01:01:29.100841 2018] [wsgi:error] [pid 4010] [client 37.112.28.62:53122] Attempt to invoke directory as WSGI application: /srv/http/test-nerrevar.tk/
+[Thu Apr 12 01:01:37.981279 2018] [wsgi:error] [pid 4011] [client 37.112.28.62:53124] Target WSGI script not found or unable to stat: /srv/http/test-nerrevar.tk/favicon.ico
+[Thu Apr 12 01:01:47.160776 2018] [wsgi:error] [pid 4079] [client 37.112.28.62:53126] Attempt to invoke directory as WSGI application: /srv/http/test-nerrevar.tk/
+[Thu Apr 12 01:02:37.978542 2018] [wsgi:error] [pid 4081] [client 37.112.28.62:53129] Target WSGI script not found or unable to stat: /srv/http/test-nerrevar.tk/favicon.ico
+[Thu Apr 12 01:03:39.161374 2018] [wsgi:error] [pid 4082] [client 37.112.28.62:53130] Target WSGI script not found or unable to stat: /srv/http/test-nerrevar.tk/favicon.ico
+[Thu Apr 12 01:04:37.997440 2018] [wsgi:error] [pid 4083] [client 37.112.28.62:53145] Target WSGI script not found or unable to stat: /srv/http/test-nerrevar.tk/favicon.ico
+[Thu Apr 12 01:31:47.419202 2018] [wsgi:error] [pid 4079] [client 37.112.28.62:53179] Target WSGI script not found or unable to stat: /srv/http/test-nerrevar.tk/favicon.ico
+[Thu Apr 12 01:31:49.781243 2018] [wsgi:error] [pid 4080] [client 37.112.28.62:53182] Attempt to invoke directory as WSGI application: /srv/http/test-nerrevar.tk/

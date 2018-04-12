@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>test</title>
+    <meta charset="utf-8" />
+    <style>
+        .border{
+            border: 5px solid black;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+<table class="border">
+    <thead>
+        <th class="border">Артикул</th>
+        <th class="border">Наименование</th>
+    </thead>
+    <tbody>
+        {% for d in data %}
+            <tr>
+                <td class="border">{{ d.art }}</td>
+                <td class="border">{{ d.desc }}</td>
+            </tr>
+        {% endfor %}
+    </tbody>
+</table>
+</body>
+</html>

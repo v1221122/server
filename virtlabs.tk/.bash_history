@@ -161,3 +161,21 @@ su
 su
 su
 su
+su
+apache configtest
+su
+su
+su
+mysql
+mysql -u root -p
+su
+su
+cd /srv/http/
+ls
+cd test-nerrevar.tk/
+nano index.py
+mkdir template
+mv index.html template/
+nano index.py
+nano template/index.html 
+su
