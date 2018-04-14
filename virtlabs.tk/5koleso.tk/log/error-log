@@ -3478,3 +3478,53 @@
 [Thu Apr 12 16:00:09.087002 2018] [wsgi:error] [pid 4075] [remote 85.26.234.38:27134]   File "/srv/http/virtlabs.tk/5koleso.tk/worker.py", line 13, in <module>
 [Thu Apr 12 16:00:09.087015 2018] [wsgi:error] [pid 4075] [remote 85.26.234.38:27134]     from pony.orm import db_session, select, delete, update
 [Thu Apr 12 16:00:09.087069 2018] [wsgi:error] [pid 4075] [remote 85.26.234.38:27134] ImportError: cannot import name 'update'
+[Fri Apr 13 03:16:13.547906 2018] [wsgi:error] [pid 4075] [remote 178.154.148.72:1933] mod_wsgi (pid=4075): Target WSGI script '/srv/http/virtlabs.tk/5koleso.tk/api.wsgi' cannot be loaded as Python module.
+[Fri Apr 13 03:16:13.548141 2018] [wsgi:error] [pid 4075] [remote 178.154.148.72:1933] mod_wsgi (pid=4075): Exception occurred processing WSGI script '/srv/http/virtlabs.tk/5koleso.tk/api.wsgi'.
+[Fri Apr 13 03:16:13.548612 2018] [wsgi:error] [pid 4075] [remote 178.154.148.72:1933] Traceback (most recent call last):
+[Fri Apr 13 03:16:13.548736 2018] [wsgi:error] [pid 4075] [remote 178.154.148.72:1933]   File "/srv/http/virtlabs.tk/5koleso.tk/api.wsgi", line 1, in <module>
+[Fri Apr 13 03:16:13.548754 2018] [wsgi:error] [pid 4075] [remote 178.154.148.72:1933]     from api import app as application
+[Fri Apr 13 03:16:13.548781 2018] [wsgi:error] [pid 4075] [remote 178.154.148.72:1933]   File "/srv/http/virtlabs.tk/5koleso.tk/api.py", line 28, in <module>
+[Fri Apr 13 03:16:13.548797 2018] [wsgi:error] [pid 4075] [remote 178.154.148.72:1933]     from worker import *
+[Fri Apr 13 03:16:13.548824 2018] [wsgi:error] [pid 4075] [remote 178.154.148.72:1933]   File "/srv/http/virtlabs.tk/5koleso.tk/worker.py", line 13, in <module>
+[Fri Apr 13 03:16:13.548838 2018] [wsgi:error] [pid 4075] [remote 178.154.148.72:1933]     from pony.orm import db_session, select, delete, update
+[Fri Apr 13 03:16:13.548891 2018] [wsgi:error] [pid 4075] [remote 178.154.148.72:1933] ImportError: cannot import name 'update'
+[Fri Apr 13 23:59:35.123006 2018] [wsgi:error] [pid 4075] [remote 37.9.113.170:39228] mod_wsgi (pid=4075): Target WSGI script '/srv/http/virtlabs.tk/5koleso.tk/api.wsgi' cannot be loaded as Python module.
+[Fri Apr 13 23:59:35.123230 2018] [wsgi:error] [pid 4075] [remote 37.9.113.170:39228] mod_wsgi (pid=4075): Exception occurred processing WSGI script '/srv/http/virtlabs.tk/5koleso.tk/api.wsgi'.
+[Fri Apr 13 23:59:35.123569 2018] [wsgi:error] [pid 4075] [remote 37.9.113.170:39228] Traceback (most recent call last):
+[Fri Apr 13 23:59:35.123667 2018] [wsgi:error] [pid 4075] [remote 37.9.113.170:39228]   File "/srv/http/virtlabs.tk/5koleso.tk/api.wsgi", line 1, in <module>
+[Fri Apr 13 23:59:35.123683 2018] [wsgi:error] [pid 4075] [remote 37.9.113.170:39228]     from api import app as application
+[Fri Apr 13 23:59:35.123711 2018] [wsgi:error] [pid 4075] [remote 37.9.113.170:39228]   File "/srv/http/virtlabs.tk/5koleso.tk/api.py", line 28, in <module>
+[Fri Apr 13 23:59:35.123726 2018] [wsgi:error] [pid 4075] [remote 37.9.113.170:39228]     from worker import *
+[Fri Apr 13 23:59:35.123751 2018] [wsgi:error] [pid 4075] [remote 37.9.113.170:39228]   File "/srv/http/virtlabs.tk/5koleso.tk/worker.py", line 13, in <module>
+[Fri Apr 13 23:59:35.123873 2018] [wsgi:error] [pid 4075] [remote 37.9.113.170:39228]     from pony.orm import db_session, select, delete, update
+[Fri Apr 13 23:59:35.123936 2018] [wsgi:error] [pid 4075] [remote 37.9.113.170:39228] ImportError: cannot import name 'update'
+[Fri Apr 13 23:59:38.969809 2018] [wsgi:error] [pid 4075] [remote 37.9.113.170:39566] mod_wsgi (pid=4075): Target WSGI script '/srv/http/virtlabs.tk/5koleso.tk/api.wsgi' cannot be loaded as Python module.
+[Fri Apr 13 23:59:38.970014 2018] [wsgi:error] [pid 4075] [remote 37.9.113.170:39566] mod_wsgi (pid=4075): Exception occurred processing WSGI script '/srv/http/virtlabs.tk/5koleso.tk/api.wsgi'.
+[Fri Apr 13 23:59:38.970346 2018] [wsgi:error] [pid 4075] [remote 37.9.113.170:39566] Traceback (most recent call last):
+[Fri Apr 13 23:59:38.970445 2018] [wsgi:error] [pid 4075] [remote 37.9.113.170:39566]   File "/srv/http/virtlabs.tk/5koleso.tk/api.wsgi", line 1, in <module>
+[Fri Apr 13 23:59:38.970462 2018] [wsgi:error] [pid 4075] [remote 37.9.113.170:39566]     from api import app as application
+[Fri Apr 13 23:59:38.970490 2018] [wsgi:error] [pid 4075] [remote 37.9.113.170:39566]   File "/srv/http/virtlabs.tk/5koleso.tk/api.py", line 28, in <module>
+[Fri Apr 13 23:59:38.970505 2018] [wsgi:error] [pid 4075] [remote 37.9.113.170:39566]     from worker import *
+[Fri Apr 13 23:59:38.970531 2018] [wsgi:error] [pid 4075] [remote 37.9.113.170:39566]   File "/srv/http/virtlabs.tk/5koleso.tk/worker.py", line 13, in <module>
+[Fri Apr 13 23:59:38.970545 2018] [wsgi:error] [pid 4075] [remote 37.9.113.170:39566]     from pony.orm import db_session, select, delete, update
+[Fri Apr 13 23:59:38.970598 2018] [wsgi:error] [pid 4075] [remote 37.9.113.170:39566] ImportError: cannot import name 'update'
+[Sat Apr 14 07:59:46.200418 2018] [wsgi:error] [pid 4075] [remote 141.8.142.191:51504] mod_wsgi (pid=4075): Target WSGI script '/srv/http/virtlabs.tk/5koleso.tk/api.wsgi' cannot be loaded as Python module.
+[Sat Apr 14 07:59:46.200645 2018] [wsgi:error] [pid 4075] [remote 141.8.142.191:51504] mod_wsgi (pid=4075): Exception occurred processing WSGI script '/srv/http/virtlabs.tk/5koleso.tk/api.wsgi'.
+[Sat Apr 14 07:59:46.200979 2018] [wsgi:error] [pid 4075] [remote 141.8.142.191:51504] Traceback (most recent call last):
+[Sat Apr 14 07:59:46.201077 2018] [wsgi:error] [pid 4075] [remote 141.8.142.191:51504]   File "/srv/http/virtlabs.tk/5koleso.tk/api.wsgi", line 1, in <module>
+[Sat Apr 14 07:59:46.201094 2018] [wsgi:error] [pid 4075] [remote 141.8.142.191:51504]     from api import app as application
+[Sat Apr 14 07:59:46.201123 2018] [wsgi:error] [pid 4075] [remote 141.8.142.191:51504]   File "/srv/http/virtlabs.tk/5koleso.tk/api.py", line 28, in <module>
+[Sat Apr 14 07:59:46.201137 2018] [wsgi:error] [pid 4075] [remote 141.8.142.191:51504]     from worker import *
+[Sat Apr 14 07:59:46.201163 2018] [wsgi:error] [pid 4075] [remote 141.8.142.191:51504]   File "/srv/http/virtlabs.tk/5koleso.tk/worker.py", line 13, in <module>
+[Sat Apr 14 07:59:46.201176 2018] [wsgi:error] [pid 4075] [remote 141.8.142.191:51504]     from pony.orm import db_session, select, delete, update
+[Sat Apr 14 07:59:46.201337 2018] [wsgi:error] [pid 4075] [remote 141.8.142.191:51504] ImportError: cannot import name 'update'
+[Sat Apr 14 07:59:50.061740 2018] [wsgi:error] [pid 4075] [remote 141.8.142.191:51880] mod_wsgi (pid=4075): Target WSGI script '/srv/http/virtlabs.tk/5koleso.tk/api.wsgi' cannot be loaded as Python module.
+[Sat Apr 14 07:59:50.061944 2018] [wsgi:error] [pid 4075] [remote 141.8.142.191:51880] mod_wsgi (pid=4075): Exception occurred processing WSGI script '/srv/http/virtlabs.tk/5koleso.tk/api.wsgi'.
+[Sat Apr 14 07:59:50.062297 2018] [wsgi:error] [pid 4075] [remote 141.8.142.191:51880] Traceback (most recent call last):
+[Sat Apr 14 07:59:50.062400 2018] [wsgi:error] [pid 4075] [remote 141.8.142.191:51880]   File "/srv/http/virtlabs.tk/5koleso.tk/api.wsgi", line 1, in <module>
+[Sat Apr 14 07:59:50.062509 2018] [wsgi:error] [pid 4075] [remote 141.8.142.191:51880]     from api import app as application
+[Sat Apr 14 07:59:50.062541 2018] [wsgi:error] [pid 4075] [remote 141.8.142.191:51880]   File "/srv/http/virtlabs.tk/5koleso.tk/api.py", line 28, in <module>
+[Sat Apr 14 07:59:50.062556 2018] [wsgi:error] [pid 4075] [remote 141.8.142.191:51880]     from worker import *
+[Sat Apr 14 07:59:50.062582 2018] [wsgi:error] [pid 4075] [remote 141.8.142.191:51880]   File "/srv/http/virtlabs.tk/5koleso.tk/worker.py", line 13, in <module>
+[Sat Apr 14 07:59:50.062596 2018] [wsgi:error] [pid 4075] [remote 141.8.142.191:51880]     from pony.orm import db_session, select, delete, update
+[Sat Apr 14 07:59:50.062651 2018] [wsgi:error] [pid 4075] [remote 141.8.142.191:51880] ImportError: cannot import name 'update'
