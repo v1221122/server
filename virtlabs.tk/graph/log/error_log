@@ -339,3 +339,4 @@
 [Sun Apr 15 16:08:38.457804 2018] [cgi:error] [pid 4204] [client 187.66.156.98:50733] AH02811: script not found or unable to stat: /srv/http/virtlabs.tk/graph/tmUnblock.cgi
 [Sun Apr 15 16:08:49.784166 2018] [php7:error] [pid 4112] [client 187.66.156.98:50806] script '/srv/http/virtlabs.tk/graph/getcfg.php' not found or unable to stat
 [Sun Apr 15 16:08:53.870888 2018] [php7:error] [pid 4083] [client 187.66.156.98:50829] script '/srv/http/virtlabs.tk/graph/getcfg.php' not found or unable to stat
+[Wed Apr 18 13:30:14.280782 2018] [php7:error] [pid 4079] [client 104.128.144.131:54045] script '/srv/http/virtlabs.tk/graph/redirect.php' not found or unable to stat
