@@ -340,3 +340,12 @@
 [Sun Apr 15 16:08:49.784166 2018] [php7:error] [pid 4112] [client 187.66.156.98:50806] script '/srv/http/virtlabs.tk/graph/getcfg.php' not found or unable to stat
 [Sun Apr 15 16:08:53.870888 2018] [php7:error] [pid 4083] [client 187.66.156.98:50829] script '/srv/http/virtlabs.tk/graph/getcfg.php' not found or unable to stat
 [Wed Apr 18 13:30:14.280782 2018] [php7:error] [pid 4079] [client 104.128.144.131:54045] script '/srv/http/virtlabs.tk/graph/redirect.php' not found or unable to stat
+[Thu Apr 19 19:07:51.662146 2018] [cgi:error] [pid 4112] [client 89.169.173.52:65113] AH02811: script not found or unable to stat: /srv/http/cgi-bin
+[Thu Apr 19 19:07:51.708386 2018] [cgi:error] [pid 24282] [client 89.169.173.52:49514] AH02811: script not found or unable to stat: /srv/http/cgi-bin
+[Thu Apr 19 19:07:51.757807 2018] [cgi:error] [pid 4764] [client 89.169.173.52:49522] AH02811: script not found or unable to stat: /srv/http/cgi-bin
+[Thu Apr 19 19:07:51.804535 2018] [cgi:error] [pid 4081] [client 89.169.173.52:49524] AH02811: script not found or unable to stat: /srv/http/cgi-bin
+[Thu Apr 19 19:07:51.893921 2018] [cgi:error] [pid 4080] [client 89.169.173.52:49528] AH02811: script not found or unable to stat: /srv/http/cgi-bin
+[Thu Apr 19 19:07:51.940886 2018] [cgi:error] [pid 4082] [client 89.169.173.52:49530] AH02811: script not found or unable to stat: /srv/http/cgi-bin
+[Thu Apr 19 19:07:51.998680 2018] [cgi:error] [pid 4079] [client 89.169.173.52:49531] AH02811: script not found or unable to stat: /srv/http/cgi-bin
+[Thu Apr 19 19:07:52.057804 2018] [cgi:error] [pid 4083] [client 89.169.173.52:49532] AH02811: script not found or unable to stat: /srv/http/cgi-bin
+[Thu Apr 19 19:07:52.104762 2018] [cgi:error] [pid 4204] [client 89.169.173.52:49537] AH02811: script not found or unable to stat: /srv/http/cgi-bin
