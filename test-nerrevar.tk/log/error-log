@@ -17,3 +17,14 @@
 [Thu Apr 12 01:04:37.997440 2018] [wsgi:error] [pid 4083] [client 37.112.28.62:53145] Target WSGI script not found or unable to stat: /srv/http/test-nerrevar.tk/favicon.ico
 [Thu Apr 12 01:31:47.419202 2018] [wsgi:error] [pid 4079] [client 37.112.28.62:53179] Target WSGI script not found or unable to stat: /srv/http/test-nerrevar.tk/favicon.ico
 [Thu Apr 12 01:31:49.781243 2018] [wsgi:error] [pid 4080] [client 37.112.28.62:53182] Attempt to invoke directory as WSGI application: /srv/http/test-nerrevar.tk/
+[Sat Apr 21 19:15:21.464273 2018] [wsgi:error] [pid 4081] [client 37.112.28.62:49587] Target WSGI script not found or unable to stat: /srv/http/test-nerrevar.tk/favicon.ico
+[Sat Apr 21 19:15:21.553400 2018] [wsgi:error] [pid 4081] [client 37.112.28.62:49587] Target WSGI script not found or unable to stat: /srv/http/test-nerrevar.tk/favicon.ico
+[Sat Apr 21 19:15:23.507625 2018] [wsgi:error] [pid 4081] [client 37.112.28.62:49587] Target WSGI script not found or unable to stat: /srv/http/test-nerrevar.tk/favicon.ico
+[Sat Apr 21 19:15:23.627170 2018] [wsgi:error] [pid 4081] [client 37.112.28.62:49587] Target WSGI script not found or unable to stat: /srv/http/test-nerrevar.tk/favicon.ico
+[Sat Apr 21 19:15:27.543892 2018] [wsgi:error] [pid 4083] [client 37.112.28.62:49574] Target WSGI script not found or unable to stat: /srv/http/test-nerrevar.tk/favicon.ico, referer: http://test-nerrevar.tk/
+[Sat Apr 21 19:16:16.203576 2018] [wsgi:error] [pid 17395] [client 37.112.28.62:49956] Target WSGI script not found or unable to stat: /srv/http/test-nerrevar.tk/favicon.ico
+[Sat Apr 21 19:17:17.318032 2018] [wsgi:error] [pid 4081] [client 37.112.28.62:50032] Target WSGI script not found or unable to stat: /srv/http/test-nerrevar.tk/favicon.ico
+[Sat Apr 21 19:18:16.651956 2018] [wsgi:error] [pid 4083] [client 37.112.28.62:50070] Target WSGI script not found or unable to stat: /srv/http/test-nerrevar.tk/favicon.ico
+[Sat Apr 21 19:19:16.326736 2018] [wsgi:error] [pid 4080] [client 37.112.28.62:50076] Target WSGI script not found or unable to stat: /srv/http/test-nerrevar.tk/favicon.ico
+[Sat Apr 21 19:20:16.107051 2018] [wsgi:error] [pid 4204] [client 37.112.28.62:50097] Target WSGI script not found or unable to stat: /srv/http/test-nerrevar.tk/favicon.ico
+[Sat Apr 21 19:21:16.114699 2018] [wsgi:error] [pid 24282] [client 37.112.28.62:50119] Target WSGI script not found or unable to stat: /srv/http/test-nerrevar.tk/favicon.ico
