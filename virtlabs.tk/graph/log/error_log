@@ -349,3 +349,5 @@
 [Thu Apr 19 19:07:51.998680 2018] [cgi:error] [pid 4079] [client 89.169.173.52:49531] AH02811: script not found or unable to stat: /srv/http/cgi-bin
 [Thu Apr 19 19:07:52.057804 2018] [cgi:error] [pid 4083] [client 89.169.173.52:49532] AH02811: script not found or unable to stat: /srv/http/cgi-bin
 [Thu Apr 19 19:07:52.104762 2018] [cgi:error] [pid 4204] [client 89.169.173.52:49537] AH02811: script not found or unable to stat: /srv/http/cgi-bin
+[Fri Apr 20 17:40:40.353373 2018] [php7:error] [pid 24282] [client 89.34.72.139:38803] script '/srv/http/virtlabs.tk/graph/xmlrpc.php' not found or unable to stat
+[Fri Apr 20 18:35:51.689268 2018] [php7:error] [pid 4204] [client 189.100.241.252:35932] script '/srv/http/virtlabs.tk/graph/command.php' not found or unable to stat
