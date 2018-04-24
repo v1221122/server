@@ -1,11 +1,7 @@
 {% extends "index.html" %}
 {% block body %}
 {% if not confirm %}
-    {% set time = time - 1 %}
-    {% set t %}
-        {{ time // 60 }}:{{ '{:02}'.format(time % 60) }}
-    {% endset %}
-    <h1>{{ t }}</h1>
+    <h1>{{ time }}</h1>
 {% else %}
 <p class="label">Выходите, Вас ожидает{{ car.name }}. Гос. номер: {{ car.number }}. Цвет: {{ car.color }}</p>
 <form action="/">

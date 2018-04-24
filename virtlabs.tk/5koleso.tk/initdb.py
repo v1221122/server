@@ -2,7 +2,7 @@ import json
 from pony.orm import Database, PrimaryKey, Required, Optional
 
 # Reading config file.  
-with open('/srv/http/virtlabs.tk/forsaje.tk/db_config/config.json') as config_file:
+with open('/srv/http/virtlabs.tk/5koleso.tk/db_config/config.json') as config_file:
     _config = json.loads(config_file.read())
     
 
@@ -31,6 +31,8 @@ class Taxi_order(_PostgresDb.Entity):
     address_to = Optional(str)
     comment = Optional(str)
     worker_id = Optional(int)
+    time = Optional(int)
+    confirm = Optional(bool)
     
 _PostgresDb.bind(**_config)
 _PostgresDb.generate_mapping(check_tables = True, create_tables = False)

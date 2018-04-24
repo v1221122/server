@@ -1,7 +1,0 @@
-{
-	"provider": "postgres",
-	"user": "alex_forsaje",
-	"password": "",
-	"host": "",
-	"database": "alex_forsaje"
-}

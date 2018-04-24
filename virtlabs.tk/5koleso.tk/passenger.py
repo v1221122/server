@@ -13,7 +13,7 @@ from flask import (
 from pony.orm import db_session, select, delete
 
 
-from initdb import Online, Taxi_order
+from initdb import Online, Taxi_order, Worker
 
 from api import app
 
@@ -67,10 +67,10 @@ def wait():
                     'color': worker.color,
                     'number': worker.number
                 }
-    time = 5
+    time = 5 # !!!!
     context = {
         'car': current_car,
-        'time': request.cookies.get('user_phone'),
+        'time': time,
         'refresh': True
     }
     return render_template('wait.html', **context)
@@ -79,7 +79,7 @@ def wait():
 @app.route('/wait_page')
 def wait_page():
     confirm = False
-    time = request.args.get('time') - 1
+    time = request.args.get('time')
     current_car = dict()
     with db_session:
         order = Taxi_order.get(phone=request.cookies.get('user_phone'))
@@ -91,9 +91,10 @@ def wait_page():
                     'color': worker.color,
                     'number': worker.number,
                 }
+                confirm = order.confirm
     context = {
         'car': current_car,
-        'time': time,
+        'time': time, # !!!!
         'confirm': confirm,
         'refresh': True
     }

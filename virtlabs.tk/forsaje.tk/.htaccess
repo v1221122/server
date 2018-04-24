@@ -1,3 +1,0 @@
-<filesMatch ".(css)$">
-	Header set Cache-Control "max-age=5, public"
-</filesMatch>

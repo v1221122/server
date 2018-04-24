@@ -2,7 +2,7 @@
 {% block body %}
     <p>{{ address_to }}</p>
 	<p>Время в пути:</p>
-    <p id="timer">{{ time }}</p>
+    <p id="timer">{{ time.int }}:{{ time.float }}</p>
 	<a href="/work/end_order?id={{ id }}">
         <button>На месте</button>
     </a>

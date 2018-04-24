@@ -37,6 +37,17 @@
     <!-- /Yandex.Metrika counter -->
 </head>
 <body>
+    {% if back %}
+        <form id="back" method="GET" action="http://5koleso.tk/work/{{ back }}">
+            <input type="submit" value="
+                {%- if back=='logout' -%}
+                    Выйти
+                {%- else -%}
+                    Назад
+                {%- endif -%}
+            ">
+        </form>
+    {% endif %}
     <div id="header">TAXI</div>
     <div id="body">
         {% block body %}

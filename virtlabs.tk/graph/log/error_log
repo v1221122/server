@@ -353,3 +353,19 @@
 [Fri Apr 20 18:35:51.689268 2018] [php7:error] [pid 4204] [client 189.100.241.252:35932] script '/srv/http/virtlabs.tk/graph/command.php' not found or unable to stat
 [Sat Apr 21 16:00:22.252757 2018] [cgi:error] [pid 4112] [client 125.76.61.193:49352] AH02811: script not found or unable to stat: /srv/http/cgi-bin
 [Sat Apr 21 17:08:14.410723 2018] [php7:error] [pid 4083] [client 83.217.8.122:49911] script '/srv/http/virtlabs.tk/graph/prox_ch.php' not found or unable to stat
+[Tue Apr 24 01:59:52.259394 2018] [php7:error] [pid 1398] [client 123.59.68.172:14213] script '/srv/http/virtlabs.tk/graph/help.php' not found or unable to stat
+[Tue Apr 24 01:59:52.710575 2018] [php7:error] [pid 1399] [client 123.59.68.172:14349] script '/srv/http/virtlabs.tk/graph/java.php' not found or unable to stat
+[Tue Apr 24 01:59:53.164957 2018] [php7:error] [pid 1401] [client 123.59.68.172:14526] script '/srv/http/virtlabs.tk/graph/_query.php' not found or unable to stat
+[Tue Apr 24 01:59:53.620591 2018] [php7:error] [pid 1443] [client 123.59.68.172:14682] script '/srv/http/virtlabs.tk/graph/x.php' not found or unable to stat
+[Tue Apr 24 01:59:55.330098 2018] [php7:error] [pid 1400] [client 123.59.68.172:14943] script '/srv/http/virtlabs.tk/graph/desktop.ini.php' not found or unable to stat
+[Tue Apr 24 01:59:55.783417 2018] [php7:error] [pid 1402] [client 123.59.68.172:15390] script '/srv/http/virtlabs.tk/graph/db_pma.php' not found or unable to stat
+[Tue Apr 24 01:59:56.233432 2018] [php7:error] [pid 1433] [client 123.59.68.172:15596] script '/srv/http/virtlabs.tk/graph/z.php' not found or unable to stat
+[Tue Apr 24 01:59:56.686498 2018] [php7:error] [pid 1398] [client 123.59.68.172:15762] script '/srv/http/virtlabs.tk/graph/lala.php' not found or unable to stat
+[Tue Apr 24 01:59:57.137167 2018] [php7:error] [pid 1399] [client 123.59.68.172:15983] script '/srv/http/virtlabs.tk/graph/wpo.php' not found or unable to stat
+[Tue Apr 24 01:59:57.588446 2018] [php7:error] [pid 1401] [client 123.59.68.172:16144] script '/srv/http/virtlabs.tk/graph/wp-config.php' not found or unable to stat
+[Tue Apr 24 01:59:58.040929 2018] [php7:error] [pid 1443] [client 123.59.68.172:16300] script '/srv/http/virtlabs.tk/graph/muhstik.php' not found or unable to stat
+[Tue Apr 24 01:59:58.493766 2018] [php7:error] [pid 1400] [client 123.59.68.172:16444] script '/srv/http/virtlabs.tk/graph/cmd.php' not found or unable to stat
+[Tue Apr 24 01:59:58.944482 2018] [php7:error] [pid 1402] [client 123.59.68.172:16599] script '/srv/http/virtlabs.tk/graph/cmx.php' not found or unable to stat
+[Tue Apr 24 01:59:59.400787 2018] [php7:error] [pid 1433] [client 123.59.68.172:16793] script '/srv/http/virtlabs.tk/graph/cmv.php' not found or unable to stat
+[Tue Apr 24 02:00:03.280418 2018] [php7:error] [pid 1398] [client 123.59.68.172:17023] script '/srv/http/virtlabs.tk/graph/text.php' not found or unable to stat
+[Tue Apr 24 02:40:21.687030 2018] [core:error] [pid 1443] [client 192.99.206.59:49547] AH00126: Invalid URI in request GET HTTP/1.1 HTTP/1.1

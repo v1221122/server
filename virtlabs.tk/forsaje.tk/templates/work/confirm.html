@@ -1,9 +1,0 @@
-{% extends "index.html" %}
-{% block body %}
-    <p>{{ address_from }}</p>
-    <p id="timer">{{ time }}</p>
-	<a href="/work/lets_go?id={{ order.id }}&phone={{ order.phone }}&address_from={{ order.address_from }}&address_to={{ order.address_to }}&comment={{ order.comment }}">
-        <button>Старт</button>
-    </a>
-{% endblock %}
-	

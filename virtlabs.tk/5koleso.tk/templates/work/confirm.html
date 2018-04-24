@@ -1,7 +1,7 @@
 {% extends "index.html" %}
 {% block body %}
     <p>{{ address_from }}</p>
-    <p id="timer">{{ time }}</p>
+    <p id="timer">{{ time.int }}:{{ time.float }}</p>
 	<a href="/work/lets_go?id={{ id }}&phone={{ phone }}&address_from={{ address_from }}&address_to={{ address_to }}&comment={{ comment }}&time={{ i }}">
         <button>Старт</button>
     </a>
