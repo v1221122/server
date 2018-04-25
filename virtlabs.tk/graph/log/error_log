@@ -369,3 +369,7 @@
 [Tue Apr 24 01:59:59.400787 2018] [php7:error] [pid 1433] [client 123.59.68.172:16793] script '/srv/http/virtlabs.tk/graph/cmv.php' not found or unable to stat
 [Tue Apr 24 02:00:03.280418 2018] [php7:error] [pid 1398] [client 123.59.68.172:17023] script '/srv/http/virtlabs.tk/graph/text.php' not found or unable to stat
 [Tue Apr 24 02:40:21.687030 2018] [core:error] [pid 1443] [client 192.99.206.59:49547] AH00126: Invalid URI in request GET HTTP/1.1 HTTP/1.1
+[Wed Apr 25 02:44:32.995808 2018] [cgi:error] [pid 1400] [client 189.100.247.56:41428] AH02811: script not found or unable to stat: /srv/http/virtlabs.tk/graph/hndUnblock.cgi
+[Wed Apr 25 02:44:36.522647 2018] [cgi:error] [pid 1433] [client 189.100.247.56:41456] AH02811: script not found or unable to stat: /srv/http/virtlabs.tk/graph/tmUnblock.cgi
+[Wed Apr 25 02:44:48.583290 2018] [php7:error] [pid 1401] [client 189.100.247.56:41517] script '/srv/http/virtlabs.tk/graph/getcfg.php' not found or unable to stat
+[Wed Apr 25 02:44:52.167156 2018] [php7:error] [pid 1443] [client 189.100.247.56:41546] script '/srv/http/virtlabs.tk/graph/getcfg.php' not found or unable to stat
