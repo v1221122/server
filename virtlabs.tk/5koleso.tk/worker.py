@@ -168,6 +168,10 @@ def end_order():
     with db_session:
         select(p for p in Taxi_order if p.id == request.args.get('id')).delete()  # need to store order and then delete and delete worker from queue!!!!
     return redirect('/work/index')
+    
+@app.route('/work/exit_queue')
+def exit_queue():
+    
 
 
 @app.route('/work/application')  # Apk file  
