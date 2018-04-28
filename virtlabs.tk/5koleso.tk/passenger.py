@@ -91,7 +91,7 @@ def wait_page():
                     'color': worker.color,
                     'number': worker.number,
                 }
-                confirm = order.confirm
+                confirm = order.w_confirm
     context = {
         'car': current_car,
         'time': time, # !!!!
@@ -100,6 +100,14 @@ def wait_page():
     }
     return render_template('wait_page.html', **context)
 
+    
+@app.route('/complete')
+def complete():
+    with db_session:
+        if request.cookies.get('user_phone'):
+            phone = request.cookies.get('user_phone')
+            select(p for p in Taxi_order if p.phone == phone).p_confirm = True
+    return redirect('/')
 
 @app.route('/cancel')
 def cancel():

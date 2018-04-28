@@ -449,3 +449,621 @@
 [Mon Apr 23 16:11:06.570134 2018] [wsgi:error] [pid 611] [remote 85.26.233.229:57316] ImportError: cannot import name 'abs'
 [Mon Apr 23 16:15:23.061750 2018] [wsgi:error] [pid 677] (2)No such file or directory: [client 85.26.233.229:15281] mod_wsgi (pid=677): Unable to connect to WSGI daemon process 'api' on '/run/httpd/wsgi.32180.34.1.sock' as user with uid=1002., referer: http://5koleso.tk/work/confirm?id=118&phone=5060&address_from=%D1%83%D0%BB.%20%20%D0%B4.%20%20%D0%BA.%20%20%D0%BF.&address_to=&comment=&time=
 [Mon Apr 23 16:22:25.993683 2018] [wsgi:error] [pid 797] (2)No such file or directory: [client 85.26.233.229:29990] mod_wsgi (pid=797): Unable to connect to WSGI daemon process 'api' on '/run/httpd/wsgi.32180.35.1.sock' as user with uid=1002., referer: http://5koleso.tk/work/confirm?id=118&phone=5060&address_from=%D1%83%D0%BB.%20%20%D0%B4.%20%20%D0%BA.%20%20%D0%BF.&address_to=&comment=&time=
+[Fri Apr 27 11:34:21.400095 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:28627] [2018-04-27 11:34:21,359] ERROR in app: Exception on /work/part [GET]
+[Fri Apr 27 11:34:21.400284 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:28627] Traceback (most recent call last):
+[Fri Apr 27 11:34:21.400299 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:28627]   File "/usr/lib/python3.6/site-packages/pony/orm/core.py", line 5341, in _fetch
+[Fri Apr 27 11:34:21.400311 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:28627]     try: result = cache.query_results[query_key]
+[Fri Apr 27 11:34:21.400321 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:28627] KeyError: (('t', ()), (<pony.orm.ormtypes.SetType object at 0xaf70e9bc>,), False, None, None, None, False, False, False, ())
+[Fri Apr 27 11:34:21.400332 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:28627] 
+[Fri Apr 27 11:34:21.400341 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:28627] During handling of the above exception, another exception occurred:
+[Fri Apr 27 11:34:21.400350 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:28627] 
+[Fri Apr 27 11:34:21.400359 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:28627] Traceback (most recent call last):
+[Fri Apr 27 11:34:21.400369 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:28627]   File "/usr/lib/python3.6/site-packages/pony/orm/dbapiprovider.py", line 50, in wrap_dbapi_exceptions
+[Fri Apr 27 11:34:21.400379 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:28627]     return func(provider, *args, **kwargs)
+[Fri Apr 27 11:34:21.400388 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:28627]   File "/usr/lib/python3.6/site-packages/pony/orm/dbproviders/postgres.py", line 216, in execute
+[Fri Apr 27 11:34:21.400398 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:28627]     else: cursor.execute(sql, arguments)
+[Fri Apr 27 11:34:21.400407 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:28627]   File "/usr/lib/python3.6/site-packages/psycopg2cffi/_impl/cursor.py", line 30, in check_closed_
+[Fri Apr 27 11:34:21.400417 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:28627]     return func(self, *args, **kwargs)
+[Fri Apr 27 11:34:21.400427 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:28627]   File "/usr/lib/python3.6/site-packages/psycopg2cffi/_impl/cursor.py", line 263, in execute
+[Fri Apr 27 11:34:21.400436 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:28627]     self._pq_execute(self._query, conn._async)
+[Fri Apr 27 11:34:21.400446 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:28627]   File "/usr/lib/python3.6/site-packages/psycopg2cffi/_impl/cursor.py", line 696, in _pq_execute
+[Fri Apr 27 11:34:21.400456 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:28627]     self._pq_fetch()
+[Fri Apr 27 11:34:21.400560 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:28627]   File "/usr/lib/python3.6/site-packages/psycopg2cffi/_impl/cursor.py", line 757, in _pq_fetch
+[Fri Apr 27 11:34:21.400573 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:28627]     raise self._conn._create_exception(cursor=self)
+[Fri Apr 27 11:34:21.400583 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:28627] psycopg2cffi._impl.exceptions.ProgrammingError: \xd0\x9e\xd0\xa8\xd0\x98\xd0\x91\xd0\x9a\xd0\x90:  \xd1\x81\xd1\x82\xd0\xbe\xd0\xbb\xd0\xb1\xd0\xb5\xd1\x86 t-1.confirm \xd0\xbd\xd0\xb5 \xd1\x81\xd1\x83\xd1\x89\xd0\xb5\xd1\x81\xd1\x82\xd0\xb2\xd1\x83\xd0\xb5\xd1\x82
+[Fri Apr 27 11:34:21.400595 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:28627] LINE 1: ..."t-1"."comment", "t-1"."worker_id", "t-1"."time", "t-1"."con...
+[Fri Apr 27 11:34:21.400605 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:28627]                                                              ^
+[Fri Apr 27 11:34:21.400615 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:28627] HINT:  \xd0\x92\xd0\xbe\xd0\xb7\xd0\xbc\xd0\xbe\xd0\xb6\xd0\xbd\xd0\xbe, \xd0\xbf\xd1\x80\xd0\xb5\xd0\xb4\xd0\xbf\xd0\xbe\xd0\xbb\xd0\xb0\xd0\xb3\xd0\xb0\xd0\xbb\xd0\xb0\xd1\x81\xd1\x8c \xd1\x81\xd1\x81\xd1\x8b\xd0\xbb\xd0\xba\xd0\xb0 \xd0\xbd\xd0\xb0 \xd1\x81\xd1\x82\xd0\xbe\xd0\xbb\xd0\xb1\xd0\xb5\xd1\x86 "t-1.w_confirm" \xd0\xb8\xd0\xbb\xd0\xb8 \xd1\x81\xd1\x82\xd0\xbe\xd0\xbb\xd0\xb1\xd0\xb5\xd1\x86 "t-1.p_confirm".
+[Fri Apr 27 11:34:21.400626 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:28627] 
+[Fri Apr 27 11:34:21.400635 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:28627] 
+[Fri Apr 27 11:34:21.400643 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:28627] During handling of the above exception, another exception occurred:
+[Fri Apr 27 11:34:21.400652 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:28627] 
+[Fri Apr 27 11:34:21.400661 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:28627] Traceback (most recent call last):
+[Fri Apr 27 11:34:21.400670 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:28627]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+[Fri Apr 27 11:34:21.400680 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:28627]     response = self.full_dispatch_request()
+[Fri Apr 27 11:34:21.400689 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:28627]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1614, in full_dispatch_request
+[Fri Apr 27 11:34:21.400698 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:28627]     rv = self.handle_user_exception(e)
+[Fri Apr 27 11:34:21.400707 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:28627]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1517, in handle_user_exception
+[Fri Apr 27 11:34:21.400717 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:28627]     reraise(exc_type, exc_value, tb)
+[Fri Apr 27 11:34:21.400726 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:28627]   File "/usr/lib/python3.6/site-packages/flask/_compat.py", line 33, in reraise
+[Fri Apr 27 11:34:21.400735 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:28627]     raise value
+[Fri Apr 27 11:34:21.400744 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:28627]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1612, in full_dispatch_request
+[Fri Apr 27 11:34:21.400753 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:28627]     rv = self.dispatch_request()
+[Fri Apr 27 11:34:21.400762 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:28627]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1598, in dispatch_request
+[Fri Apr 27 11:34:21.400772 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:28627]     return self.view_functions[rule.endpoint](**req.view_args)
+[Fri Apr 27 11:34:21.400781 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:28627]   File "/srv/http/virtlabs.tk/5koleso.tk/worker.py", line 80, in work_part
+[Fri Apr 27 11:34:21.400790 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:28627]     return render_template('work/orders.html', **context)
+[Fri Apr 27 11:34:21.400823 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:28627]   File "/usr/lib/python3.6/site-packages/flask/templating.py", line 134, in render_template
+[Fri Apr 27 11:34:21.400835 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:28627]     context, ctx.app)
+[Fri Apr 27 11:34:21.400844 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:28627]   File "/usr/lib/python3.6/site-packages/flask/templating.py", line 116, in _render
+[Fri Apr 27 11:34:21.400853 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:28627]     rv = template.render(context)
+[Fri Apr 27 11:34:21.400862 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:28627]   File "/usr/lib/python3.6/site-packages/jinja2/asyncsupport.py", line 76, in render
+[Fri Apr 27 11:34:21.400872 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:28627]     return original_render(self, *args, **kwargs)
+[Fri Apr 27 11:34:21.400881 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:28627]   File "/usr/lib/python3.6/site-packages/jinja2/environment.py", line 1008, in render
+[Fri Apr 27 11:34:21.400890 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:28627]     return self.environment.handle_exception(exc_info, True)
+[Fri Apr 27 11:34:21.400899 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:28627]   File "/usr/lib/python3.6/site-packages/jinja2/environment.py", line 780, in handle_exception
+[Fri Apr 27 11:34:21.400909 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:28627]     reraise(exc_type, exc_value, tb)
+[Fri Apr 27 11:34:21.400918 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:28627]   File "/usr/lib/python3.6/site-packages/jinja2/_compat.py", line 37, in reraise
+[Fri Apr 27 11:34:21.400927 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:28627]     raise value.with_traceback(tb)
+[Fri Apr 27 11:34:21.400936 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:28627]   File "/srv/http/virtlabs.tk/5koleso.tk/templates/work/orders.html", line 1, in top-level template code
+[Fri Apr 27 11:34:21.400945 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:28627]     {% extends "work/part.html" %}
+[Fri Apr 27 11:34:21.401072 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:28627]   File "/srv/http/virtlabs.tk/5koleso.tk/templates/work/part.html", line 1, in top-level template code
+[Fri Apr 27 11:34:21.401083 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:28627]     {% extends "index.html" %}
+[Fri Apr 27 11:34:21.401092 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:28627]   File "/srv/http/virtlabs.tk/5koleso.tk/templates/index.html", line 53, in top-level template code
+[Fri Apr 27 11:34:21.401101 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:28627]     {% block body %}
+[Fri Apr 27 11:34:21.401110 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:28627]   File "/srv/http/virtlabs.tk/5koleso.tk/templates/work/part.html", line 8, in block "body"
+[Fri Apr 27 11:34:21.401120 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:28627]     {% block orders %}
+[Fri Apr 27 11:34:21.401128 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:28627]   File "/srv/http/virtlabs.tk/5koleso.tk/templates/work/orders.html", line 4, in block "orders"
+[Fri Apr 27 11:34:21.401138 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:28627]     {% for order in orders %}
+[Fri Apr 27 11:34:21.401146 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:28627]   File "<string>", line 2, in __iter__
+[Fri Apr 27 11:34:21.401155 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:28627]   File "/usr/lib/python3.6/site-packages/pony/utils/utils.py", line 58, in cut_traceback
+[Fri Apr 27 11:34:21.401165 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:28627]     return func(*args, **kwargs)
+[Fri Apr 27 11:34:21.401174 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:28627]   File "/usr/lib/python3.6/site-packages/pony/orm/core.py", line 5506, in __iter__
+[Fri Apr 27 11:34:21.401183 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:28627]     return iter(query._fetch())
+[Fri Apr 27 11:34:21.401215 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:28627]   File "/usr/lib/python3.6/site-packages/pony/orm/core.py", line 5343, in _fetch
+[Fri Apr 27 11:34:21.401226 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:28627]     cursor = database._exec_sql(sql, arguments)
+[Fri Apr 27 11:34:21.401236 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:28627]   File "/usr/lib/python3.6/site-packages/pony/orm/core.py", line 820, in _exec_sql
+[Fri Apr 27 11:34:21.401245 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:28627]     connection = cache.reconnect(e)
+[Fri Apr 27 11:34:21.401254 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:28627]   File "/usr/lib/python3.6/site-packages/pony/orm/core.py", line 1625, in reconnect
+[Fri Apr 27 11:34:21.401263 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:28627]     if not provider.should_reconnect(exc): reraise(*sys.exc_info())
+[Fri Apr 27 11:34:21.401272 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:28627]   File "/usr/lib/python3.6/site-packages/pony/utils/utils.py", line 87, in reraise
+[Fri Apr 27 11:34:21.401282 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:28627]     try: raise exc.with_traceback(tb)
+[Fri Apr 27 11:34:21.401291 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:28627]   File "/usr/lib/python3.6/site-packages/pony/orm/core.py", line 818, in _exec_sql
+[Fri Apr 27 11:34:21.401300 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:28627]     try: new_id = provider.execute(cursor, sql, arguments, returning_id)
+[Fri Apr 27 11:34:21.401309 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:28627]   File "<string>", line 2, in execute
+[Fri Apr 27 11:34:21.401318 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:28627]   File "/usr/lib/python3.6/site-packages/pony/orm/dbapiprovider.py", line 56, in wrap_dbapi_exceptions
+[Fri Apr 27 11:34:21.401328 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:28627]     except dbapi_module.ProgrammingError as e: raise ProgrammingError(e)
+[Fri Apr 27 11:34:21.401337 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:28627] pony.orm.dbapiprovider.ProgrammingError: \xd0\x9e\xd0\xa8\xd0\x98\xd0\x91\xd0\x9a\xd0\x90:  \xd1\x81\xd1\x82\xd0\xbe\xd0\xbb\xd0\xb1\xd0\xb5\xd1\x86 t-1.confirm \xd0\xbd\xd0\xb5 \xd1\x81\xd1\x83\xd1\x89\xd0\xb5\xd1\x81\xd1\x82\xd0\xb2\xd1\x83\xd0\xb5\xd1\x82
+[Fri Apr 27 11:34:21.401347 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:28627] LINE 1: ..."t-1"."comment", "t-1"."worker_id", "t-1"."time", "t-1"."con...
+[Fri Apr 27 11:34:21.401357 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:28627]                                                              ^
+[Fri Apr 27 11:34:21.401366 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:28627] HINT:  \xd0\x92\xd0\xbe\xd0\xb7\xd0\xbc\xd0\xbe\xd0\xb6\xd0\xbd\xd0\xbe, \xd0\xbf\xd1\x80\xd0\xb5\xd0\xb4\xd0\xbf\xd0\xbe\xd0\xbb\xd0\xb0\xd0\xb3\xd0\xb0\xd0\xbb\xd0\xb0\xd1\x81\xd1\x8c \xd1\x81\xd1\x81\xd1\x8b\xd0\xbb\xd0\xba\xd0\xb0 \xd0\xbd\xd0\xb0 \xd1\x81\xd1\x82\xd0\xbe\xd0\xbb\xd0\xb1\xd0\xb5\xd1\x86 "t-1.w_confirm" \xd0\xb8\xd0\xbb\xd0\xb8 \xd1\x81\xd1\x82\xd0\xbe\xd0\xbb\xd0\xb1\xd0\xb5\xd1\x86 "t-1.p_confirm".
+[Fri Apr 27 11:34:21.401498 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:28627] 
+[Fri Apr 27 11:34:21.498802 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:28627] --- Logging error ---
+[Fri Apr 27 11:34:21.505632 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:28627] Traceback (most recent call last):
+[Fri Apr 27 11:34:21.505785 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:28627]   File "/usr/lib/python3.6/site-packages/pony/orm/core.py", line 5341, in _fetch
+[Fri Apr 27 11:34:21.505803 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:28627]     try: result = cache.query_results[query_key]
+[Fri Apr 27 11:34:21.505866 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:28627] KeyError: (('t', ()), (<pony.orm.ormtypes.SetType object at 0xaf70e9bc>,), False, None, None, None, False, False, False, ())
+[Fri Apr 27 11:34:21.505911 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:28627] 
+[Fri Apr 27 11:34:21.506003 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:28627] During handling of the above exception, another exception occurred:
+[Fri Apr 27 11:34:21.506015 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:28627] 
+[Fri Apr 27 11:34:21.506045 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:28627] Traceback (most recent call last):
+[Fri Apr 27 11:34:21.506155 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:28627]   File "/usr/lib/python3.6/site-packages/pony/orm/dbapiprovider.py", line 50, in wrap_dbapi_exceptions
+[Fri Apr 27 11:34:21.506171 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:28627]     return func(provider, *args, **kwargs)
+[Fri Apr 27 11:34:21.506199 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:28627]   File "/usr/lib/python3.6/site-packages/pony/orm/dbproviders/postgres.py", line 216, in execute
+[Fri Apr 27 11:34:21.506212 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:28627]     else: cursor.execute(sql, arguments)
+[Fri Apr 27 11:34:21.506239 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:28627]   File "/usr/lib/python3.6/site-packages/psycopg2cffi/_impl/cursor.py", line 30, in check_closed_
+[Fri Apr 27 11:34:21.506252 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:28627]     return func(self, *args, **kwargs)
+[Fri Apr 27 11:34:21.506279 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:28627]   File "/usr/lib/python3.6/site-packages/psycopg2cffi/_impl/cursor.py", line 263, in execute
+[Fri Apr 27 11:34:21.506292 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:28627]     self._pq_execute(self._query, conn._async)
+[Fri Apr 27 11:34:21.506318 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:28627]   File "/usr/lib/python3.6/site-packages/psycopg2cffi/_impl/cursor.py", line 696, in _pq_execute
+[Fri Apr 27 11:34:21.506332 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:28627]     self._pq_fetch()
+[Fri Apr 27 11:34:21.506358 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:28627]   File "/usr/lib/python3.6/site-packages/psycopg2cffi/_impl/cursor.py", line 757, in _pq_fetch
+[Fri Apr 27 11:34:21.506371 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:28627]     raise self._conn._create_exception(cursor=self)
+[Fri Apr 27 11:34:21.506436 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:28627] psycopg2cffi._impl.exceptions.ProgrammingError: \xd0\x9e\xd0\xa8\xd0\x98\xd0\x91\xd0\x9a\xd0\x90:  \xd1\x81\xd1\x82\xd0\xbe\xd0\xbb\xd0\xb1\xd0\xb5\xd1\x86 t-1.confirm \xd0\xbd\xd0\xb5 \xd1\x81\xd1\x83\xd1\x89\xd0\xb5\xd1\x81\xd1\x82\xd0\xb2\xd1\x83\xd0\xb5\xd1\x82
+[Fri Apr 27 11:34:21.506452 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:28627] LINE 1: ..."t-1"."comment", "t-1"."worker_id", "t-1"."time", "t-1"."con...
+[Fri Apr 27 11:34:21.506463 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:28627]                                                              ^
+[Fri Apr 27 11:34:21.506473 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:28627] HINT:  \xd0\x92\xd0\xbe\xd0\xb7\xd0\xbc\xd0\xbe\xd0\xb6\xd0\xbd\xd0\xbe, \xd0\xbf\xd1\x80\xd0\xb5\xd0\xb4\xd0\xbf\xd0\xbe\xd0\xbb\xd0\xb0\xd0\xb3\xd0\xb0\xd0\xbb\xd0\xb0\xd1\x81\xd1\x8c \xd1\x81\xd1\x81\xd1\x8b\xd0\xbb\xd0\xba\xd0\xb0 \xd0\xbd\xd0\xb0 \xd1\x81\xd1\x82\xd0\xbe\xd0\xbb\xd0\xb1\xd0\xb5\xd1\x86 "t-1.w_confirm" \xd0\xb8\xd0\xbb\xd0\xb8 \xd1\x81\xd1\x82\xd0\xbe\xd0\xbb\xd0\xb1\xd0\xb5\xd1\x86 "t-1.p_confirm".
+[Fri Apr 27 11:34:21.506485 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:28627] 
+[Fri Apr 27 11:34:21.506519 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:28627] 
+[Fri Apr 27 11:34:21.506531 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:28627] During handling of the above exception, another exception occurred:
+[Fri Apr 27 11:34:21.506541 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:28627] 
+[Fri Apr 27 11:34:21.506567 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:28627] Traceback (most recent call last):
+[Fri Apr 27 11:34:21.506913 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:28627]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+[Fri Apr 27 11:34:21.506961 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:28627]     response = self.full_dispatch_request()
+[Fri Apr 27 11:34:21.506992 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:28627]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1614, in full_dispatch_request
+[Fri Apr 27 11:34:21.507006 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:28627]     rv = self.handle_user_exception(e)
+[Fri Apr 27 11:34:21.507032 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:28627]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1517, in handle_user_exception
+[Fri Apr 27 11:34:21.507045 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:28627]     reraise(exc_type, exc_value, tb)
+[Fri Apr 27 11:34:21.507071 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:28627]   File "/usr/lib/python3.6/site-packages/flask/_compat.py", line 33, in reraise
+[Fri Apr 27 11:34:21.507085 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:28627]     raise value
+[Fri Apr 27 11:34:21.507110 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:28627]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1612, in full_dispatch_request
+[Fri Apr 27 11:34:21.507123 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:28627]     rv = self.dispatch_request()
+[Fri Apr 27 11:34:21.507149 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:28627]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1598, in dispatch_request
+[Fri Apr 27 11:34:21.507162 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:28627]     return self.view_functions[rule.endpoint](**req.view_args)
+[Fri Apr 27 11:34:21.507188 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:28627]   File "/srv/http/virtlabs.tk/5koleso.tk/worker.py", line 80, in work_part
+[Fri Apr 27 11:34:21.507201 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:28627]     return render_template('work/orders.html', **context)
+[Fri Apr 27 11:34:21.507227 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:28627]   File "/usr/lib/python3.6/site-packages/flask/templating.py", line 134, in render_template
+[Fri Apr 27 11:34:21.507240 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:28627]     context, ctx.app)
+[Fri Apr 27 11:34:21.507265 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:28627]   File "/usr/lib/python3.6/site-packages/flask/templating.py", line 116, in _render
+[Fri Apr 27 11:34:21.507278 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:28627]     rv = template.render(context)
+[Fri Apr 27 11:34:21.507304 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:28627]   File "/usr/lib/python3.6/site-packages/jinja2/asyncsupport.py", line 76, in render
+[Fri Apr 27 11:34:21.507317 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:28627]     return original_render(self, *args, **kwargs)
+[Fri Apr 27 11:34:21.507343 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:28627]   File "/usr/lib/python3.6/site-packages/jinja2/environment.py", line 1008, in render
+[Fri Apr 27 11:34:21.507356 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:28627]     return self.environment.handle_exception(exc_info, True)
+[Fri Apr 27 11:34:21.507382 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:28627]   File "/usr/lib/python3.6/site-packages/jinja2/environment.py", line 780, in handle_exception
+[Fri Apr 27 11:34:21.507395 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:28627]     reraise(exc_type, exc_value, tb)
+[Fri Apr 27 11:34:21.507421 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:28627]   File "/usr/lib/python3.6/site-packages/jinja2/_compat.py", line 37, in reraise
+[Fri Apr 27 11:34:21.507434 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:28627]     raise value.with_traceback(tb)
+[Fri Apr 27 11:34:21.507460 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:28627]   File "/srv/http/virtlabs.tk/5koleso.tk/templates/work/orders.html", line 1, in top-level template code
+[Fri Apr 27 11:34:21.507473 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:28627]     {% extends "work/part.html" %}
+[Fri Apr 27 11:34:21.507524 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:28627]   File "/srv/http/virtlabs.tk/5koleso.tk/templates/work/part.html", line 1, in top-level template code
+[Fri Apr 27 11:34:21.507539 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:28627]     {% extends "index.html" %}
+[Fri Apr 27 11:34:21.507565 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:28627]   File "/srv/http/virtlabs.tk/5koleso.tk/templates/index.html", line 53, in top-level template code
+[Fri Apr 27 11:34:21.507579 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:28627]     {% block body %}
+[Fri Apr 27 11:34:21.507604 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:28627]   File "/srv/http/virtlabs.tk/5koleso.tk/templates/work/part.html", line 8, in block "body"
+[Fri Apr 27 11:34:21.507753 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:28627]     {% block orders %}
+[Fri Apr 27 11:34:21.507791 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:28627]   File "/srv/http/virtlabs.tk/5koleso.tk/templates/work/orders.html", line 4, in block "orders"
+[Fri Apr 27 11:34:21.507805 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:28627]     {% for order in orders %}
+[Fri Apr 27 11:34:21.507831 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:28627]   File "<string>", line 2, in __iter__
+[Fri Apr 27 11:34:21.507860 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:28627]   File "/usr/lib/python3.6/site-packages/pony/utils/utils.py", line 58, in cut_traceback
+[Fri Apr 27 11:34:21.507873 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:28627]     return func(*args, **kwargs)
+[Fri Apr 27 11:34:21.507899 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:28627]   File "/usr/lib/python3.6/site-packages/pony/orm/core.py", line 5506, in __iter__
+[Fri Apr 27 11:34:21.507912 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:28627]     return iter(query._fetch())
+[Fri Apr 27 11:34:21.507938 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:28627]   File "/usr/lib/python3.6/site-packages/pony/orm/core.py", line 5343, in _fetch
+[Fri Apr 27 11:34:21.507951 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:28627]     cursor = database._exec_sql(sql, arguments)
+[Fri Apr 27 11:34:21.507978 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:28627]   File "/usr/lib/python3.6/site-packages/pony/orm/core.py", line 820, in _exec_sql
+[Fri Apr 27 11:34:21.507991 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:28627]     connection = cache.reconnect(e)
+[Fri Apr 27 11:34:21.508017 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:28627]   File "/usr/lib/python3.6/site-packages/pony/orm/core.py", line 1625, in reconnect
+[Fri Apr 27 11:34:21.508030 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:28627]     if not provider.should_reconnect(exc): reraise(*sys.exc_info())
+[Fri Apr 27 11:34:21.508056 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:28627]   File "/usr/lib/python3.6/site-packages/pony/utils/utils.py", line 87, in reraise
+[Fri Apr 27 11:34:21.508069 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:28627]     try: raise exc.with_traceback(tb)
+[Fri Apr 27 11:34:21.508095 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:28627]   File "/usr/lib/python3.6/site-packages/pony/orm/core.py", line 818, in _exec_sql
+[Fri Apr 27 11:34:21.508108 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:28627]     try: new_id = provider.execute(cursor, sql, arguments, returning_id)
+[Fri Apr 27 11:34:21.508134 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:28627]   File "<string>", line 2, in execute
+[Fri Apr 27 11:34:21.508164 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:28627]   File "/usr/lib/python3.6/site-packages/pony/orm/dbapiprovider.py", line 56, in wrap_dbapi_exceptions
+[Fri Apr 27 11:34:21.508177 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:28627]     except dbapi_module.ProgrammingError as e: raise ProgrammingError(e)
+[Fri Apr 27 11:34:21.508258 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:28627] pony.orm.dbapiprovider.ProgrammingError: \xd0\x9e\xd0\xa8\xd0\x98\xd0\x91\xd0\x9a\xd0\x90:  \xd1\x81\xd1\x82\xd0\xbe\xd0\xbb\xd0\xb1\xd0\xb5\xd1\x86 t-1.confirm \xd0\xbd\xd0\xb5 \xd1\x81\xd1\x83\xd1\x89\xd0\xb5\xd1\x81\xd1\x82\xd0\xb2\xd1\x83\xd0\xb5\xd1\x82
+[Fri Apr 27 11:34:21.508306 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:28627] LINE 1: ..."t-1"."comment", "t-1"."worker_id", "t-1"."time", "t-1"."con...
+[Fri Apr 27 11:34:21.508318 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:28627]                                                              ^
+[Fri Apr 27 11:34:21.508328 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:28627] HINT:  \xd0\x92\xd0\xbe\xd0\xb7\xd0\xbc\xd0\xbe\xd0\xb6\xd0\xbd\xd0\xbe, \xd0\xbf\xd1\x80\xd0\xb5\xd0\xb4\xd0\xbf\xd0\xbe\xd0\xbb\xd0\xb0\xd0\xb3\xd0\xb0\xd0\xbb\xd0\xb0\xd1\x81\xd1\x8c \xd1\x81\xd1\x81\xd1\x8b\xd0\xbb\xd0\xba\xd0\xb0 \xd0\xbd\xd0\xb0 \xd1\x81\xd1\x82\xd0\xbe\xd0\xbb\xd0\xb1\xd0\xb5\xd1\x86 "t-1.w_confirm" \xd0\xb8\xd0\xbb\xd0\xb8 \xd1\x81\xd1\x82\xd0\xbe\xd0\xbb\xd0\xb1\xd0\xb5\xd1\x86 "t-1.p_confirm".
+[Fri Apr 27 11:34:21.508339 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:28627] 
+[Fri Apr 27 11:34:21.508380 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:28627] 
+[Fri Apr 27 11:34:21.508393 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:28627] During handling of the above exception, another exception occurred:
+[Fri Apr 27 11:34:21.508402 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:28627] 
+[Fri Apr 27 11:34:21.508429 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:28627] Traceback (most recent call last):
+[Fri Apr 27 11:34:21.508550 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:28627]   File "/usr/lib/python3.6/logging/handlers.py", line 1010, in emit
+[Fri Apr 27 11:34:21.508564 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:28627]     smtp = smtplib.SMTP(self.mailhost, port, timeout=self.timeout)
+[Fri Apr 27 11:34:21.508591 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:28627]   File "/usr/lib/python3.6/smtplib.py", line 251, in __init__
+[Fri Apr 27 11:34:21.508604 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:28627]     (code, msg) = self.connect(host, port)
+[Fri Apr 27 11:34:21.508629 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:28627]   File "/usr/lib/python3.6/smtplib.py", line 336, in connect
+[Fri Apr 27 11:34:21.508642 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:28627]     self.sock = self._get_socket(host, port, self.timeout)
+[Fri Apr 27 11:34:21.508668 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:28627]   File "/usr/lib/python3.6/smtplib.py", line 307, in _get_socket
+[Fri Apr 27 11:34:21.508681 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:28627]     self.source_address)
+[Fri Apr 27 11:34:21.508706 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:28627]   File "/usr/lib/python3.6/socket.py", line 704, in create_connection
+[Fri Apr 27 11:34:21.508719 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:28627]     for res in getaddrinfo(host, port, 0, SOCK_STREAM):
+[Fri Apr 27 11:34:21.508745 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:28627]   File "/usr/lib/python3.6/socket.py", line 745, in getaddrinfo
+[Fri Apr 27 11:34:21.508757 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:28627]     for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+[Fri Apr 27 11:34:21.508802 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:28627] socket.gaierror: [Errno -2] Name or service not known
+[Fri Apr 27 11:34:21.508875 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:28627] Call stack:
+[Fri Apr 27 11:34:21.509311 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:28627]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1997, in __call__
+[Fri Apr 27 11:34:21.509337 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:28627]     return self.wsgi_app(environ, start_response)
+[Fri Apr 27 11:34:21.509366 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:28627]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1985, in wsgi_app
+[Fri Apr 27 11:34:21.509381 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:28627]     response = self.handle_exception(e)
+[Fri Apr 27 11:34:21.509466 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:28627]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1544, in handle_exception
+[Fri Apr 27 11:34:21.509481 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:28627]     self.log_exception((exc_type, exc_value, tb))
+[Fri Apr 27 11:34:21.509507 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:28627]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1560, in log_exception
+[Fri Apr 27 11:34:21.509520 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:28627]     ), exc_info=exc_info)
+[Fri Apr 27 11:34:21.509562 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:28627] Message: 'Exception on /work/part [GET]'
+[Fri Apr 27 11:34:21.509576 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:28627] Arguments: ()
+[Fri Apr 27 11:34:48.147153 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:22025] [2018-04-27 11:34:48,144] ERROR in app: Exception on /work/part [GET]
+[Fri Apr 27 11:34:48.147299 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:22025] Traceback (most recent call last):
+[Fri Apr 27 11:34:48.147314 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:22025]   File "/usr/lib/python3.6/site-packages/pony/orm/core.py", line 5341, in _fetch
+[Fri Apr 27 11:34:48.147325 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:22025]     try: result = cache.query_results[query_key]
+[Fri Apr 27 11:34:48.147335 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:22025] KeyError: (('t', ()), (<pony.orm.ormtypes.SetType object at 0xb01427ac>,), False, None, None, None, False, False, False, ())
+[Fri Apr 27 11:34:48.147346 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:22025] 
+[Fri Apr 27 11:34:48.147354 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:22025] During handling of the above exception, another exception occurred:
+[Fri Apr 27 11:34:48.147363 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:22025] 
+[Fri Apr 27 11:34:48.147372 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:22025] Traceback (most recent call last):
+[Fri Apr 27 11:34:48.147382 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:22025]   File "/usr/lib/python3.6/site-packages/pony/orm/dbapiprovider.py", line 50, in wrap_dbapi_exceptions
+[Fri Apr 27 11:34:48.147391 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:22025]     return func(provider, *args, **kwargs)
+[Fri Apr 27 11:34:48.147400 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:22025]   File "/usr/lib/python3.6/site-packages/pony/orm/dbproviders/postgres.py", line 216, in execute
+[Fri Apr 27 11:34:48.147410 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:22025]     else: cursor.execute(sql, arguments)
+[Fri Apr 27 11:34:48.147419 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:22025]   File "/usr/lib/python3.6/site-packages/psycopg2cffi/_impl/cursor.py", line 30, in check_closed_
+[Fri Apr 27 11:34:48.147429 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:22025]     return func(self, *args, **kwargs)
+[Fri Apr 27 11:34:48.147438 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:22025]   File "/usr/lib/python3.6/site-packages/psycopg2cffi/_impl/cursor.py", line 263, in execute
+[Fri Apr 27 11:34:48.147447 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:22025]     self._pq_execute(self._query, conn._async)
+[Fri Apr 27 11:34:48.147457 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:22025]   File "/usr/lib/python3.6/site-packages/psycopg2cffi/_impl/cursor.py", line 696, in _pq_execute
+[Fri Apr 27 11:34:48.147466 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:22025]     self._pq_fetch()
+[Fri Apr 27 11:34:48.147475 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:22025]   File "/usr/lib/python3.6/site-packages/psycopg2cffi/_impl/cursor.py", line 757, in _pq_fetch
+[Fri Apr 27 11:34:48.147485 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:22025]     raise self._conn._create_exception(cursor=self)
+[Fri Apr 27 11:34:48.147494 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:22025] psycopg2cffi._impl.exceptions.ProgrammingError: \xd0\x9e\xd0\xa8\xd0\x98\xd0\x91\xd0\x9a\xd0\x90:  \xd1\x81\xd1\x82\xd0\xbe\xd0\xbb\xd0\xb1\xd0\xb5\xd1\x86 t-1.confirm \xd0\xbd\xd0\xb5 \xd1\x81\xd1\x83\xd1\x89\xd0\xb5\xd1\x81\xd1\x82\xd0\xb2\xd1\x83\xd0\xb5\xd1\x82
+[Fri Apr 27 11:34:48.147581 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:22025] LINE 1: ..."t-1"."comment", "t-1"."worker_id", "t-1"."time", "t-1"."con...
+[Fri Apr 27 11:34:48.147593 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:22025]                                                              ^
+[Fri Apr 27 11:34:48.147603 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:22025] HINT:  \xd0\x92\xd0\xbe\xd0\xb7\xd0\xbc\xd0\xbe\xd0\xb6\xd0\xbd\xd0\xbe, \xd0\xbf\xd1\x80\xd0\xb5\xd0\xb4\xd0\xbf\xd0\xbe\xd0\xbb\xd0\xb0\xd0\xb3\xd0\xb0\xd0\xbb\xd0\xb0\xd1\x81\xd1\x8c \xd1\x81\xd1\x81\xd1\x8b\xd0\xbb\xd0\xba\xd0\xb0 \xd0\xbd\xd0\xb0 \xd1\x81\xd1\x82\xd0\xbe\xd0\xbb\xd0\xb1\xd0\xb5\xd1\x86 "t-1.w_confirm" \xd0\xb8\xd0\xbb\xd0\xb8 \xd1\x81\xd1\x82\xd0\xbe\xd0\xbb\xd0\xb1\xd0\xb5\xd1\x86 "t-1.p_confirm".
+[Fri Apr 27 11:34:48.147742 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:22025] 
+[Fri Apr 27 11:34:48.147756 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:22025] 
+[Fri Apr 27 11:34:48.147765 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:22025] During handling of the above exception, another exception occurred:
+[Fri Apr 27 11:34:48.147775 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:22025] 
+[Fri Apr 27 11:34:48.147783 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:22025] Traceback (most recent call last):
+[Fri Apr 27 11:34:48.147792 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:22025]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+[Fri Apr 27 11:34:48.147801 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:22025]     response = self.full_dispatch_request()
+[Fri Apr 27 11:34:48.147811 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:22025]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1614, in full_dispatch_request
+[Fri Apr 27 11:34:48.147820 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:22025]     rv = self.handle_user_exception(e)
+[Fri Apr 27 11:34:48.147829 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:22025]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1517, in handle_user_exception
+[Fri Apr 27 11:34:48.147838 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:22025]     reraise(exc_type, exc_value, tb)
+[Fri Apr 27 11:34:48.147847 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:22025]   File "/usr/lib/python3.6/site-packages/flask/_compat.py", line 33, in reraise
+[Fri Apr 27 11:34:48.147857 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:22025]     raise value
+[Fri Apr 27 11:34:48.147865 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:22025]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1612, in full_dispatch_request
+[Fri Apr 27 11:34:48.147875 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:22025]     rv = self.dispatch_request()
+[Fri Apr 27 11:34:48.147884 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:22025]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1598, in dispatch_request
+[Fri Apr 27 11:34:48.147893 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:22025]     return self.view_functions[rule.endpoint](**req.view_args)
+[Fri Apr 27 11:34:48.147902 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:22025]   File "/srv/http/virtlabs.tk/5koleso.tk/worker.py", line 80, in work_part
+[Fri Apr 27 11:34:48.147912 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:22025]     return render_template('work/orders.html', **context)
+[Fri Apr 27 11:34:48.147921 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:22025]   File "/usr/lib/python3.6/site-packages/flask/templating.py", line 134, in render_template
+[Fri Apr 27 11:34:48.147930 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:22025]     context, ctx.app)
+[Fri Apr 27 11:34:48.147939 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:22025]   File "/usr/lib/python3.6/site-packages/flask/templating.py", line 116, in _render
+[Fri Apr 27 11:34:48.147974 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:22025]     rv = template.render(context)
+[Fri Apr 27 11:34:48.147985 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:22025]   File "/usr/lib/python3.6/site-packages/jinja2/asyncsupport.py", line 76, in render
+[Fri Apr 27 11:34:48.147995 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:22025]     return original_render(self, *args, **kwargs)
+[Fri Apr 27 11:34:48.148004 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:22025]   File "/usr/lib/python3.6/site-packages/jinja2/environment.py", line 1008, in render
+[Fri Apr 27 11:34:48.148014 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:22025]     return self.environment.handle_exception(exc_info, True)
+[Fri Apr 27 11:34:48.148023 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:22025]   File "/usr/lib/python3.6/site-packages/jinja2/environment.py", line 780, in handle_exception
+[Fri Apr 27 11:34:48.148033 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:22025]     reraise(exc_type, exc_value, tb)
+[Fri Apr 27 11:34:48.148042 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:22025]   File "/usr/lib/python3.6/site-packages/jinja2/_compat.py", line 37, in reraise
+[Fri Apr 27 11:34:48.148051 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:22025]     raise value.with_traceback(tb)
+[Fri Apr 27 11:34:48.148060 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:22025]   File "/srv/http/virtlabs.tk/5koleso.tk/templates/work/orders.html", line 1, in top-level template code
+[Fri Apr 27 11:34:48.148069 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:22025]     {% extends "work/part.html" %}
+[Fri Apr 27 11:34:48.148079 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:22025]   File "/srv/http/virtlabs.tk/5koleso.tk/templates/work/part.html", line 1, in top-level template code
+[Fri Apr 27 11:34:48.148088 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:22025]     {% extends "index.html" %}
+[Fri Apr 27 11:34:48.148097 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:22025]   File "/srv/http/virtlabs.tk/5koleso.tk/templates/index.html", line 53, in top-level template code
+[Fri Apr 27 11:34:48.148107 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:22025]     {% block body %}
+[Fri Apr 27 11:34:48.148115 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:22025]   File "/srv/http/virtlabs.tk/5koleso.tk/templates/work/part.html", line 8, in block "body"
+[Fri Apr 27 11:34:48.148125 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:22025]     {% block orders %}
+[Fri Apr 27 11:34:48.148134 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:22025]   File "/srv/http/virtlabs.tk/5koleso.tk/templates/work/orders.html", line 4, in block "orders"
+[Fri Apr 27 11:34:48.148143 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:22025]     {% for order in orders %}
+[Fri Apr 27 11:34:48.148152 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:22025]   File "<string>", line 2, in __iter__
+[Fri Apr 27 11:34:48.148161 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:22025]   File "/usr/lib/python3.6/site-packages/pony/utils/utils.py", line 58, in cut_traceback
+[Fri Apr 27 11:34:48.148171 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:22025]     return func(*args, **kwargs)
+[Fri Apr 27 11:34:48.148179 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:22025]   File "/usr/lib/python3.6/site-packages/pony/orm/core.py", line 5506, in __iter__
+[Fri Apr 27 11:34:48.148189 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:22025]     return iter(query._fetch())
+[Fri Apr 27 11:34:48.148198 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:22025]   File "/usr/lib/python3.6/site-packages/pony/orm/core.py", line 5343, in _fetch
+[Fri Apr 27 11:34:48.148207 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:22025]     cursor = database._exec_sql(sql, arguments)
+[Fri Apr 27 11:34:48.148216 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:22025]   File "/usr/lib/python3.6/site-packages/pony/orm/core.py", line 820, in _exec_sql
+[Fri Apr 27 11:34:48.148246 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:22025]     connection = cache.reconnect(e)
+[Fri Apr 27 11:34:48.148257 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:22025]   File "/usr/lib/python3.6/site-packages/pony/orm/core.py", line 1625, in reconnect
+[Fri Apr 27 11:34:48.148267 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:22025]     if not provider.should_reconnect(exc): reraise(*sys.exc_info())
+[Fri Apr 27 11:34:48.148276 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:22025]   File "/usr/lib/python3.6/site-packages/pony/utils/utils.py", line 87, in reraise
+[Fri Apr 27 11:34:48.148286 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:22025]     try: raise exc.with_traceback(tb)
+[Fri Apr 27 11:34:48.148295 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:22025]   File "/usr/lib/python3.6/site-packages/pony/orm/core.py", line 818, in _exec_sql
+[Fri Apr 27 11:34:48.148304 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:22025]     try: new_id = provider.execute(cursor, sql, arguments, returning_id)
+[Fri Apr 27 11:34:48.148313 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:22025]   File "<string>", line 2, in execute
+[Fri Apr 27 11:34:48.148323 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:22025]   File "/usr/lib/python3.6/site-packages/pony/orm/dbapiprovider.py", line 56, in wrap_dbapi_exceptions
+[Fri Apr 27 11:34:48.148332 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:22025]     except dbapi_module.ProgrammingError as e: raise ProgrammingError(e)
+[Fri Apr 27 11:34:48.148342 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:22025] pony.orm.dbapiprovider.ProgrammingError: \xd0\x9e\xd0\xa8\xd0\x98\xd0\x91\xd0\x9a\xd0\x90:  \xd1\x81\xd1\x82\xd0\xbe\xd0\xbb\xd0\xb1\xd0\xb5\xd1\x86 t-1.confirm \xd0\xbd\xd0\xb5 \xd1\x81\xd1\x83\xd1\x89\xd0\xb5\xd1\x81\xd1\x82\xd0\xb2\xd1\x83\xd0\xb5\xd1\x82
+[Fri Apr 27 11:34:48.148352 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:22025] LINE 1: ..."t-1"."comment", "t-1"."worker_id", "t-1"."time", "t-1"."con...
+[Fri Apr 27 11:34:48.148362 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:22025]                                                              ^
+[Fri Apr 27 11:34:48.148371 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:22025] HINT:  \xd0\x92\xd0\xbe\xd0\xb7\xd0\xbc\xd0\xbe\xd0\xb6\xd0\xbd\xd0\xbe, \xd0\xbf\xd1\x80\xd0\xb5\xd0\xb4\xd0\xbf\xd0\xbe\xd0\xbb\xd0\xb0\xd0\xb3\xd0\xb0\xd0\xbb\xd0\xb0\xd1\x81\xd1\x8c \xd1\x81\xd1\x81\xd1\x8b\xd0\xbb\xd0\xba\xd0\xb0 \xd0\xbd\xd0\xb0 \xd1\x81\xd1\x82\xd0\xbe\xd0\xbb\xd0\xb1\xd0\xb5\xd1\x86 "t-1.w_confirm" \xd0\xb8\xd0\xbb\xd0\xb8 \xd1\x81\xd1\x82\xd0\xbe\xd0\xbb\xd0\xb1\xd0\xb5\xd1\x86 "t-1.p_confirm".
+[Fri Apr 27 11:34:48.148481 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:22025] 
+[Fri Apr 27 11:34:48.153675 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:22025] --- Logging error ---
+[Fri Apr 27 11:34:48.155419 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:22025] Traceback (most recent call last):
+[Fri Apr 27 11:34:48.155549 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:22025]   File "/usr/lib/python3.6/site-packages/pony/orm/core.py", line 5341, in _fetch
+[Fri Apr 27 11:34:48.155568 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:22025]     try: result = cache.query_results[query_key]
+[Fri Apr 27 11:34:48.155628 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:22025] KeyError: (('t', ()), (<pony.orm.ormtypes.SetType object at 0xb01427ac>,), False, None, None, None, False, False, False, ())
+[Fri Apr 27 11:34:48.155671 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:22025] 
+[Fri Apr 27 11:34:48.155684 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:22025] During handling of the above exception, another exception occurred:
+[Fri Apr 27 11:34:48.155694 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:22025] 
+[Fri Apr 27 11:34:48.155721 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:22025] Traceback (most recent call last):
+[Fri Apr 27 11:34:48.155828 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:22025]   File "/usr/lib/python3.6/site-packages/pony/orm/dbapiprovider.py", line 50, in wrap_dbapi_exceptions
+[Fri Apr 27 11:34:48.155919 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:22025]     return func(provider, *args, **kwargs)
+[Fri Apr 27 11:34:48.155952 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:22025]   File "/usr/lib/python3.6/site-packages/pony/orm/dbproviders/postgres.py", line 216, in execute
+[Fri Apr 27 11:34:48.155965 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:22025]     else: cursor.execute(sql, arguments)
+[Fri Apr 27 11:34:48.155993 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:22025]   File "/usr/lib/python3.6/site-packages/psycopg2cffi/_impl/cursor.py", line 30, in check_closed_
+[Fri Apr 27 11:34:48.156006 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:22025]     return func(self, *args, **kwargs)
+[Fri Apr 27 11:34:48.156032 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:22025]   File "/usr/lib/python3.6/site-packages/psycopg2cffi/_impl/cursor.py", line 263, in execute
+[Fri Apr 27 11:34:48.156046 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:22025]     self._pq_execute(self._query, conn._async)
+[Fri Apr 27 11:34:48.156072 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:22025]   File "/usr/lib/python3.6/site-packages/psycopg2cffi/_impl/cursor.py", line 696, in _pq_execute
+[Fri Apr 27 11:34:48.156086 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:22025]     self._pq_fetch()
+[Fri Apr 27 11:34:48.156112 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:22025]   File "/usr/lib/python3.6/site-packages/psycopg2cffi/_impl/cursor.py", line 757, in _pq_fetch
+[Fri Apr 27 11:34:48.156125 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:22025]     raise self._conn._create_exception(cursor=self)
+[Fri Apr 27 11:34:48.156206 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:22025] psycopg2cffi._impl.exceptions.ProgrammingError: \xd0\x9e\xd0\xa8\xd0\x98\xd0\x91\xd0\x9a\xd0\x90:  \xd1\x81\xd1\x82\xd0\xbe\xd0\xbb\xd0\xb1\xd0\xb5\xd1\x86 t-1.confirm \xd0\xbd\xd0\xb5 \xd1\x81\xd1\x83\xd1\x89\xd0\xb5\xd1\x81\xd1\x82\xd0\xb2\xd1\x83\xd0\xb5\xd1\x82
+[Fri Apr 27 11:34:48.156223 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:22025] LINE 1: ..."t-1"."comment", "t-1"."worker_id", "t-1"."time", "t-1"."con...
+[Fri Apr 27 11:34:48.156234 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:22025]                                                              ^
+[Fri Apr 27 11:34:48.156244 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:22025] HINT:  \xd0\x92\xd0\xbe\xd0\xb7\xd0\xbc\xd0\xbe\xd0\xb6\xd0\xbd\xd0\xbe, \xd0\xbf\xd1\x80\xd0\xb5\xd0\xb4\xd0\xbf\xd0\xbe\xd0\xbb\xd0\xb0\xd0\xb3\xd0\xb0\xd0\xbb\xd0\xb0\xd1\x81\xd1\x8c \xd1\x81\xd1\x81\xd1\x8b\xd0\xbb\xd0\xba\xd0\xb0 \xd0\xbd\xd0\xb0 \xd1\x81\xd1\x82\xd0\xbe\xd0\xbb\xd0\xb1\xd0\xb5\xd1\x86 "t-1.w_confirm" \xd0\xb8\xd0\xbb\xd0\xb8 \xd1\x81\xd1\x82\xd0\xbe\xd0\xbb\xd0\xb1\xd0\xb5\xd1\x86 "t-1.p_confirm".
+[Fri Apr 27 11:34:48.156256 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:22025] 
+[Fri Apr 27 11:34:48.156290 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:22025] 
+[Fri Apr 27 11:34:48.156303 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:22025] During handling of the above exception, another exception occurred:
+[Fri Apr 27 11:34:48.156312 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:22025] 
+[Fri Apr 27 11:34:48.156339 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:22025] Traceback (most recent call last):
+[Fri Apr 27 11:34:48.156684 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:22025]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+[Fri Apr 27 11:34:48.156699 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:22025]     response = self.full_dispatch_request()
+[Fri Apr 27 11:34:48.156727 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:22025]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1614, in full_dispatch_request
+[Fri Apr 27 11:34:48.156740 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:22025]     rv = self.handle_user_exception(e)
+[Fri Apr 27 11:34:48.156799 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:22025]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1517, in handle_user_exception
+[Fri Apr 27 11:34:48.156813 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:22025]     reraise(exc_type, exc_value, tb)
+[Fri Apr 27 11:34:48.156840 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:22025]   File "/usr/lib/python3.6/site-packages/flask/_compat.py", line 33, in reraise
+[Fri Apr 27 11:34:48.156853 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:22025]     raise value
+[Fri Apr 27 11:34:48.156879 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:22025]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1612, in full_dispatch_request
+[Fri Apr 27 11:34:48.156892 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:22025]     rv = self.dispatch_request()
+[Fri Apr 27 11:34:48.156918 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:22025]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1598, in dispatch_request
+[Fri Apr 27 11:34:48.156931 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:22025]     return self.view_functions[rule.endpoint](**req.view_args)
+[Fri Apr 27 11:34:48.156958 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:22025]   File "/srv/http/virtlabs.tk/5koleso.tk/worker.py", line 80, in work_part
+[Fri Apr 27 11:34:48.156971 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:22025]     return render_template('work/orders.html', **context)
+[Fri Apr 27 11:34:48.156997 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:22025]   File "/usr/lib/python3.6/site-packages/flask/templating.py", line 134, in render_template
+[Fri Apr 27 11:34:48.157010 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:22025]     context, ctx.app)
+[Fri Apr 27 11:34:48.157036 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:22025]   File "/usr/lib/python3.6/site-packages/flask/templating.py", line 116, in _render
+[Fri Apr 27 11:34:48.157049 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:22025]     rv = template.render(context)
+[Fri Apr 27 11:34:48.157074 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:22025]   File "/usr/lib/python3.6/site-packages/jinja2/asyncsupport.py", line 76, in render
+[Fri Apr 27 11:34:48.157087 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:22025]     return original_render(self, *args, **kwargs)
+[Fri Apr 27 11:34:48.157114 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:22025]   File "/usr/lib/python3.6/site-packages/jinja2/environment.py", line 1008, in render
+[Fri Apr 27 11:34:48.157127 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:22025]     return self.environment.handle_exception(exc_info, True)
+[Fri Apr 27 11:34:48.157153 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:22025]   File "/usr/lib/python3.6/site-packages/jinja2/environment.py", line 780, in handle_exception
+[Fri Apr 27 11:34:48.157166 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:22025]     reraise(exc_type, exc_value, tb)
+[Fri Apr 27 11:34:48.157192 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:22025]   File "/usr/lib/python3.6/site-packages/jinja2/_compat.py", line 37, in reraise
+[Fri Apr 27 11:34:48.157205 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:22025]     raise value.with_traceback(tb)
+[Fri Apr 27 11:34:48.157231 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:22025]   File "/srv/http/virtlabs.tk/5koleso.tk/templates/work/orders.html", line 1, in top-level template code
+[Fri Apr 27 11:34:48.157244 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:22025]     {% extends "work/part.html" %}
+[Fri Apr 27 11:34:48.157271 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:22025]   File "/srv/http/virtlabs.tk/5koleso.tk/templates/work/part.html", line 1, in top-level template code
+[Fri Apr 27 11:34:48.157284 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:22025]     {% extends "index.html" %}
+[Fri Apr 27 11:34:48.157310 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:22025]   File "/srv/http/virtlabs.tk/5koleso.tk/templates/index.html", line 53, in top-level template code
+[Fri Apr 27 11:34:48.157346 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:22025]     {% block body %}
+[Fri Apr 27 11:34:48.157377 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:22025]   File "/srv/http/virtlabs.tk/5koleso.tk/templates/work/part.html", line 8, in block "body"
+[Fri Apr 27 11:34:48.157390 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:22025]     {% block orders %}
+[Fri Apr 27 11:34:48.157417 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:22025]   File "/srv/http/virtlabs.tk/5koleso.tk/templates/work/orders.html", line 4, in block "orders"
+[Fri Apr 27 11:34:48.157429 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:22025]     {% for order in orders %}
+[Fri Apr 27 11:34:48.157455 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:22025]   File "<string>", line 2, in __iter__
+[Fri Apr 27 11:34:48.157484 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:22025]   File "/usr/lib/python3.6/site-packages/pony/utils/utils.py", line 58, in cut_traceback
+[Fri Apr 27 11:34:48.157497 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:22025]     return func(*args, **kwargs)
+[Fri Apr 27 11:34:48.157523 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:22025]   File "/usr/lib/python3.6/site-packages/pony/orm/core.py", line 5506, in __iter__
+[Fri Apr 27 11:34:48.157536 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:22025]     return iter(query._fetch())
+[Fri Apr 27 11:34:48.157562 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:22025]   File "/usr/lib/python3.6/site-packages/pony/orm/core.py", line 5343, in _fetch
+[Fri Apr 27 11:34:48.157575 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:22025]     cursor = database._exec_sql(sql, arguments)
+[Fri Apr 27 11:34:48.157601 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:22025]   File "/usr/lib/python3.6/site-packages/pony/orm/core.py", line 820, in _exec_sql
+[Fri Apr 27 11:34:48.157724 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:22025]     connection = cache.reconnect(e)
+[Fri Apr 27 11:34:48.157763 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:22025]   File "/usr/lib/python3.6/site-packages/pony/orm/core.py", line 1625, in reconnect
+[Fri Apr 27 11:34:48.157777 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:22025]     if not provider.should_reconnect(exc): reraise(*sys.exc_info())
+[Fri Apr 27 11:34:48.157803 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:22025]   File "/usr/lib/python3.6/site-packages/pony/utils/utils.py", line 87, in reraise
+[Fri Apr 27 11:34:48.157816 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:22025]     try: raise exc.with_traceback(tb)
+[Fri Apr 27 11:34:48.157843 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:22025]   File "/usr/lib/python3.6/site-packages/pony/orm/core.py", line 818, in _exec_sql
+[Fri Apr 27 11:34:48.157856 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:22025]     try: new_id = provider.execute(cursor, sql, arguments, returning_id)
+[Fri Apr 27 11:34:48.157882 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:22025]   File "<string>", line 2, in execute
+[Fri Apr 27 11:34:48.157911 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:22025]   File "/usr/lib/python3.6/site-packages/pony/orm/dbapiprovider.py", line 56, in wrap_dbapi_exceptions
+[Fri Apr 27 11:34:48.157924 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:22025]     except dbapi_module.ProgrammingError as e: raise ProgrammingError(e)
+[Fri Apr 27 11:34:48.158006 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:22025] pony.orm.dbapiprovider.ProgrammingError: \xd0\x9e\xd0\xa8\xd0\x98\xd0\x91\xd0\x9a\xd0\x90:  \xd1\x81\xd1\x82\xd0\xbe\xd0\xbb\xd0\xb1\xd0\xb5\xd1\x86 t-1.confirm \xd0\xbd\xd0\xb5 \xd1\x81\xd1\x83\xd1\x89\xd0\xb5\xd1\x81\xd1\x82\xd0\xb2\xd1\x83\xd0\xb5\xd1\x82
+[Fri Apr 27 11:34:48.158025 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:22025] LINE 1: ..."t-1"."comment", "t-1"."worker_id", "t-1"."time", "t-1"."con...
+[Fri Apr 27 11:34:48.158035 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:22025]                                                              ^
+[Fri Apr 27 11:34:48.158078 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:22025] HINT:  \xd0\x92\xd0\xbe\xd0\xb7\xd0\xbc\xd0\xbe\xd0\xb6\xd0\xbd\xd0\xbe, \xd0\xbf\xd1\x80\xd0\xb5\xd0\xb4\xd0\xbf\xd0\xbe\xd0\xbb\xd0\xb0\xd0\xb3\xd0\xb0\xd0\xbb\xd0\xb0\xd1\x81\xd1\x8c \xd1\x81\xd1\x81\xd1\x8b\xd0\xbb\xd0\xba\xd0\xb0 \xd0\xbd\xd0\xb0 \xd1\x81\xd1\x82\xd0\xbe\xd0\xbb\xd0\xb1\xd0\xb5\xd1\x86 "t-1.w_confirm" \xd0\xb8\xd0\xbb\xd0\xb8 \xd1\x81\xd1\x82\xd0\xbe\xd0\xbb\xd0\xb1\xd0\xb5\xd1\x86 "t-1.p_confirm".
+[Fri Apr 27 11:34:48.158092 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:22025] 
+[Fri Apr 27 11:34:48.158133 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:22025] 
+[Fri Apr 27 11:34:48.158147 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:22025] During handling of the above exception, another exception occurred:
+[Fri Apr 27 11:34:48.158156 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:22025] 
+[Fri Apr 27 11:34:48.158183 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:22025] Traceback (most recent call last):
+[Fri Apr 27 11:34:48.158305 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:22025]   File "/usr/lib/python3.6/logging/handlers.py", line 1010, in emit
+[Fri Apr 27 11:34:48.158320 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:22025]     smtp = smtplib.SMTP(self.mailhost, port, timeout=self.timeout)
+[Fri Apr 27 11:34:48.158347 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:22025]   File "/usr/lib/python3.6/smtplib.py", line 251, in __init__
+[Fri Apr 27 11:34:48.158360 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:22025]     (code, msg) = self.connect(host, port)
+[Fri Apr 27 11:34:48.158386 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:22025]   File "/usr/lib/python3.6/smtplib.py", line 336, in connect
+[Fri Apr 27 11:34:48.158399 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:22025]     self.sock = self._get_socket(host, port, self.timeout)
+[Fri Apr 27 11:34:48.158425 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:22025]   File "/usr/lib/python3.6/smtplib.py", line 307, in _get_socket
+[Fri Apr 27 11:34:48.158438 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:22025]     self.source_address)
+[Fri Apr 27 11:34:48.158464 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:22025]   File "/usr/lib/python3.6/socket.py", line 704, in create_connection
+[Fri Apr 27 11:34:48.158476 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:22025]     for res in getaddrinfo(host, port, 0, SOCK_STREAM):
+[Fri Apr 27 11:34:48.158502 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:22025]   File "/usr/lib/python3.6/socket.py", line 745, in getaddrinfo
+[Fri Apr 27 11:34:48.158515 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:22025]     for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+[Fri Apr 27 11:34:48.158560 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:22025] socket.gaierror: [Errno -2] Name or service not known
+[Fri Apr 27 11:34:48.158625 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:22025] Call stack:
+[Fri Apr 27 11:34:48.159054 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:22025]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1997, in __call__
+[Fri Apr 27 11:34:48.159079 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:22025]     return self.wsgi_app(environ, start_response)
+[Fri Apr 27 11:34:48.159109 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:22025]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1985, in wsgi_app
+[Fri Apr 27 11:34:48.159123 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:22025]     response = self.handle_exception(e)
+[Fri Apr 27 11:34:48.159149 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:22025]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1544, in handle_exception
+[Fri Apr 27 11:34:48.159162 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:22025]     self.log_exception((exc_type, exc_value, tb))
+[Fri Apr 27 11:34:48.159188 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:22025]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1560, in log_exception
+[Fri Apr 27 11:34:48.159279 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:22025]     ), exc_info=exc_info)
+[Fri Apr 27 11:34:48.159325 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:22025] Message: 'Exception on /work/part [GET]'
+[Fri Apr 27 11:34:48.159340 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:22025] Arguments: ()
+[Fri Apr 27 11:37:53.241093 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281] [2018-04-27 11:37:53,237] ERROR in app: Exception on /work/part [GET]
+[Fri Apr 27 11:37:53.241240 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281] Traceback (most recent call last):
+[Fri Apr 27 11:37:53.241255 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281]   File "/usr/lib/python3.6/site-packages/pony/orm/core.py", line 5341, in _fetch
+[Fri Apr 27 11:37:53.241266 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281]     try: result = cache.query_results[query_key]
+[Fri Apr 27 11:37:53.241277 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281] KeyError: (('t', ()), (<pony.orm.ormtypes.SetType object at 0xaf70e56c>,), False, None, None, None, False, False, False, ())
+[Fri Apr 27 11:37:53.241288 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281] 
+[Fri Apr 27 11:37:53.241296 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281] During handling of the above exception, another exception occurred:
+[Fri Apr 27 11:37:53.241306 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281] 
+[Fri Apr 27 11:37:53.241314 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281] Traceback (most recent call last):
+[Fri Apr 27 11:37:53.241324 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281]   File "/usr/lib/python3.6/site-packages/pony/orm/dbapiprovider.py", line 50, in wrap_dbapi_exceptions
+[Fri Apr 27 11:37:53.241334 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281]     return func(provider, *args, **kwargs)
+[Fri Apr 27 11:37:53.241343 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281]   File "/usr/lib/python3.6/site-packages/pony/orm/dbproviders/postgres.py", line 216, in execute
+[Fri Apr 27 11:37:53.241353 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281]     else: cursor.execute(sql, arguments)
+[Fri Apr 27 11:37:53.241362 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281]   File "/usr/lib/python3.6/site-packages/psycopg2cffi/_impl/cursor.py", line 30, in check_closed_
+[Fri Apr 27 11:37:53.241372 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281]     return func(self, *args, **kwargs)
+[Fri Apr 27 11:37:53.241381 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281]   File "/usr/lib/python3.6/site-packages/psycopg2cffi/_impl/cursor.py", line 263, in execute
+[Fri Apr 27 11:37:53.241391 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281]     self._pq_execute(self._query, conn._async)
+[Fri Apr 27 11:37:53.241400 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281]   File "/usr/lib/python3.6/site-packages/psycopg2cffi/_impl/cursor.py", line 696, in _pq_execute
+[Fri Apr 27 11:37:53.241409 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281]     self._pq_fetch()
+[Fri Apr 27 11:37:53.241418 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281]   File "/usr/lib/python3.6/site-packages/psycopg2cffi/_impl/cursor.py", line 757, in _pq_fetch
+[Fri Apr 27 11:37:53.241428 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281]     raise self._conn._create_exception(cursor=self)
+[Fri Apr 27 11:37:53.241438 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281] psycopg2cffi._impl.exceptions.ProgrammingError: \xd0\x9e\xd0\xa8\xd0\x98\xd0\x91\xd0\x9a\xd0\x90:  \xd1\x81\xd1\x82\xd0\xbe\xd0\xbb\xd0\xb1\xd0\xb5\xd1\x86 t-1.confirm \xd0\xbd\xd0\xb5 \xd1\x81\xd1\x83\xd1\x89\xd0\xb5\xd1\x81\xd1\x82\xd0\xb2\xd1\x83\xd0\xb5\xd1\x82
+[Fri Apr 27 11:37:53.241450 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281] LINE 1: ..."t-1"."comment", "t-1"."worker_id", "t-1"."time", "t-1"."con...
+[Fri Apr 27 11:37:53.241459 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281]                                                              ^
+[Fri Apr 27 11:37:53.241549 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281] HINT:  \xd0\x92\xd0\xbe\xd0\xb7\xd0\xbc\xd0\xbe\xd0\xb6\xd0\xbd\xd0\xbe, \xd0\xbf\xd1\x80\xd0\xb5\xd0\xb4\xd0\xbf\xd0\xbe\xd0\xbb\xd0\xb0\xd0\xb3\xd0\xb0\xd0\xbb\xd0\xb0\xd1\x81\xd1\x8c \xd1\x81\xd1\x81\xd1\x8b\xd0\xbb\xd0\xba\xd0\xb0 \xd0\xbd\xd0\xb0 \xd1\x81\xd1\x82\xd0\xbe\xd0\xbb\xd0\xb1\xd0\xb5\xd1\x86 "t-1.w_confirm" \xd0\xb8\xd0\xbb\xd0\xb8 \xd1\x81\xd1\x82\xd0\xbe\xd0\xbb\xd0\xb1\xd0\xb5\xd1\x86 "t-1.p_confirm".
+[Fri Apr 27 11:37:53.241564 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281] 
+[Fri Apr 27 11:37:53.241573 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281] 
+[Fri Apr 27 11:37:53.241582 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281] During handling of the above exception, another exception occurred:
+[Fri Apr 27 11:37:53.241591 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281] 
+[Fri Apr 27 11:37:53.241599 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281] Traceback (most recent call last):
+[Fri Apr 27 11:37:53.241608 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+[Fri Apr 27 11:37:53.241618 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281]     response = self.full_dispatch_request()
+[Fri Apr 27 11:37:53.241627 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1614, in full_dispatch_request
+[Fri Apr 27 11:37:53.241636 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281]     rv = self.handle_user_exception(e)
+[Fri Apr 27 11:37:53.241646 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1517, in handle_user_exception
+[Fri Apr 27 11:37:53.241655 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281]     reraise(exc_type, exc_value, tb)
+[Fri Apr 27 11:37:53.241664 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281]   File "/usr/lib/python3.6/site-packages/flask/_compat.py", line 33, in reraise
+[Fri Apr 27 11:37:53.241673 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281]     raise value
+[Fri Apr 27 11:37:53.241682 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1612, in full_dispatch_request
+[Fri Apr 27 11:37:53.241691 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281]     rv = self.dispatch_request()
+[Fri Apr 27 11:37:53.241700 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1598, in dispatch_request
+[Fri Apr 27 11:37:53.241710 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281]     return self.view_functions[rule.endpoint](**req.view_args)
+[Fri Apr 27 11:37:53.241719 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281]   File "/srv/http/virtlabs.tk/5koleso.tk/worker.py", line 80, in work_part
+[Fri Apr 27 11:37:53.241728 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281]     return render_template('work/orders.html', **context)
+[Fri Apr 27 11:37:53.241738 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281]   File "/usr/lib/python3.6/site-packages/flask/templating.py", line 134, in render_template
+[Fri Apr 27 11:37:53.241747 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281]     context, ctx.app)
+[Fri Apr 27 11:37:53.241756 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281]   File "/usr/lib/python3.6/site-packages/flask/templating.py", line 116, in _render
+[Fri Apr 27 11:37:53.241765 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281]     rv = template.render(context)
+[Fri Apr 27 11:37:53.241774 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281]   File "/usr/lib/python3.6/site-packages/jinja2/asyncsupport.py", line 76, in render
+[Fri Apr 27 11:37:53.241784 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281]     return original_render(self, *args, **kwargs)
+[Fri Apr 27 11:37:53.241807 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281]   File "/usr/lib/python3.6/site-packages/jinja2/environment.py", line 1008, in render
+[Fri Apr 27 11:37:53.241819 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281]     return self.environment.handle_exception(exc_info, True)
+[Fri Apr 27 11:37:53.241829 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281]   File "/usr/lib/python3.6/site-packages/jinja2/environment.py", line 780, in handle_exception
+[Fri Apr 27 11:37:53.241839 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281]     reraise(exc_type, exc_value, tb)
+[Fri Apr 27 11:37:53.241848 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281]   File "/usr/lib/python3.6/site-packages/jinja2/_compat.py", line 37, in reraise
+[Fri Apr 27 11:37:53.241858 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281]     raise value.with_traceback(tb)
+[Fri Apr 27 11:37:53.241867 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281]   File "/srv/http/virtlabs.tk/5koleso.tk/templates/work/orders.html", line 1, in top-level template code
+[Fri Apr 27 11:37:53.241877 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281]     {% extends "work/part.html" %}
+[Fri Apr 27 11:37:53.241886 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281]   File "/srv/http/virtlabs.tk/5koleso.tk/templates/work/part.html", line 1, in top-level template code
+[Fri Apr 27 11:37:53.241896 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281]     {% extends "index.html" %}
+[Fri Apr 27 11:37:53.241905 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281]   File "/srv/http/virtlabs.tk/5koleso.tk/templates/index.html", line 53, in top-level template code
+[Fri Apr 27 11:37:53.241915 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281]     {% block body %}
+[Fri Apr 27 11:37:53.241924 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281]   File "/srv/http/virtlabs.tk/5koleso.tk/templates/work/part.html", line 8, in block "body"
+[Fri Apr 27 11:37:53.241933 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281]     {% block orders %}
+[Fri Apr 27 11:37:53.241942 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281]   File "/srv/http/virtlabs.tk/5koleso.tk/templates/work/orders.html", line 4, in block "orders"
+[Fri Apr 27 11:37:53.241952 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281]     {% for order in orders %}
+[Fri Apr 27 11:37:53.241961 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281]   File "<string>", line 2, in __iter__
+[Fri Apr 27 11:37:53.241970 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281]   File "/usr/lib/python3.6/site-packages/pony/utils/utils.py", line 58, in cut_traceback
+[Fri Apr 27 11:37:53.241979 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281]     return func(*args, **kwargs)
+[Fri Apr 27 11:37:53.241988 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281]   File "/usr/lib/python3.6/site-packages/pony/orm/core.py", line 5506, in __iter__
+[Fri Apr 27 11:37:53.241998 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281]     return iter(query._fetch())
+[Fri Apr 27 11:37:53.242007 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281]   File "/usr/lib/python3.6/site-packages/pony/orm/core.py", line 5343, in _fetch
+[Fri Apr 27 11:37:53.242017 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281]     cursor = database._exec_sql(sql, arguments)
+[Fri Apr 27 11:37:53.242026 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281]   File "/usr/lib/python3.6/site-packages/pony/orm/core.py", line 820, in _exec_sql
+[Fri Apr 27 11:37:53.242035 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281]     connection = cache.reconnect(e)
+[Fri Apr 27 11:37:53.242044 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281]   File "/usr/lib/python3.6/site-packages/pony/orm/core.py", line 1625, in reconnect
+[Fri Apr 27 11:37:53.242054 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281]     if not provider.should_reconnect(exc): reraise(*sys.exc_info())
+[Fri Apr 27 11:37:53.242084 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281]   File "/usr/lib/python3.6/site-packages/pony/utils/utils.py", line 87, in reraise
+[Fri Apr 27 11:37:53.242095 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281]     try: raise exc.with_traceback(tb)
+[Fri Apr 27 11:37:53.242105 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281]   File "/usr/lib/python3.6/site-packages/pony/orm/core.py", line 818, in _exec_sql
+[Fri Apr 27 11:37:53.242114 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281]     try: new_id = provider.execute(cursor, sql, arguments, returning_id)
+[Fri Apr 27 11:37:53.242123 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281]   File "<string>", line 2, in execute
+[Fri Apr 27 11:37:53.242132 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281]   File "/usr/lib/python3.6/site-packages/pony/orm/dbapiprovider.py", line 56, in wrap_dbapi_exceptions
+[Fri Apr 27 11:37:53.242142 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281]     except dbapi_module.ProgrammingError as e: raise ProgrammingError(e)
+[Fri Apr 27 11:37:53.242151 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281] pony.orm.dbapiprovider.ProgrammingError: \xd0\x9e\xd0\xa8\xd0\x98\xd0\x91\xd0\x9a\xd0\x90:  \xd1\x81\xd1\x82\xd0\xbe\xd0\xbb\xd0\xb1\xd0\xb5\xd1\x86 t-1.confirm \xd0\xbd\xd0\xb5 \xd1\x81\xd1\x83\xd1\x89\xd0\xb5\xd1\x81\xd1\x82\xd0\xb2\xd1\x83\xd0\xb5\xd1\x82
+[Fri Apr 27 11:37:53.242162 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281] LINE 1: ..."t-1"."comment", "t-1"."worker_id", "t-1"."time", "t-1"."con...
+[Fri Apr 27 11:37:53.242171 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281]                                                              ^
+[Fri Apr 27 11:37:53.242180 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281] HINT:  \xd0\x92\xd0\xbe\xd0\xb7\xd0\xbc\xd0\xbe\xd0\xb6\xd0\xbd\xd0\xbe, \xd0\xbf\xd1\x80\xd0\xb5\xd0\xb4\xd0\xbf\xd0\xbe\xd0\xbb\xd0\xb0\xd0\xb3\xd0\xb0\xd0\xbb\xd0\xb0\xd1\x81\xd1\x8c \xd1\x81\xd1\x81\xd1\x8b\xd0\xbb\xd0\xba\xd0\xb0 \xd0\xbd\xd0\xb0 \xd1\x81\xd1\x82\xd0\xbe\xd0\xbb\xd0\xb1\xd0\xb5\xd1\x86 "t-1.w_confirm" \xd0\xb8\xd0\xbb\xd0\xb8 \xd1\x81\xd1\x82\xd0\xbe\xd0\xbb\xd0\xb1\xd0\xb5\xd1\x86 "t-1.p_confirm".
+[Fri Apr 27 11:37:53.242279 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281] 
+[Fri Apr 27 11:37:53.268500 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281] --- Logging error ---
+[Fri Apr 27 11:37:53.270148 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281] Traceback (most recent call last):
+[Fri Apr 27 11:37:53.270253 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281]   File "/usr/lib/python3.6/site-packages/pony/orm/core.py", line 5341, in _fetch
+[Fri Apr 27 11:37:53.270272 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281]     try: result = cache.query_results[query_key]
+[Fri Apr 27 11:37:53.270329 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281] KeyError: (('t', ()), (<pony.orm.ormtypes.SetType object at 0xaf70e56c>,), False, None, None, None, False, False, False, ())
+[Fri Apr 27 11:37:53.270369 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281] 
+[Fri Apr 27 11:37:53.270382 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281] During handling of the above exception, another exception occurred:
+[Fri Apr 27 11:37:53.270393 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281] 
+[Fri Apr 27 11:37:53.270419 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281] Traceback (most recent call last):
+[Fri Apr 27 11:37:53.270527 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281]   File "/usr/lib/python3.6/site-packages/pony/orm/dbapiprovider.py", line 50, in wrap_dbapi_exceptions
+[Fri Apr 27 11:37:53.270542 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281]     return func(provider, *args, **kwargs)
+[Fri Apr 27 11:37:53.270570 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281]   File "/usr/lib/python3.6/site-packages/pony/orm/dbproviders/postgres.py", line 216, in execute
+[Fri Apr 27 11:37:53.270583 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281]     else: cursor.execute(sql, arguments)
+[Fri Apr 27 11:37:53.270669 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281]   File "/usr/lib/python3.6/site-packages/psycopg2cffi/_impl/cursor.py", line 30, in check_closed_
+[Fri Apr 27 11:37:53.270684 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281]     return func(self, *args, **kwargs)
+[Fri Apr 27 11:37:53.270711 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281]   File "/usr/lib/python3.6/site-packages/psycopg2cffi/_impl/cursor.py", line 263, in execute
+[Fri Apr 27 11:37:53.270724 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281]     self._pq_execute(self._query, conn._async)
+[Fri Apr 27 11:37:53.270751 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281]   File "/usr/lib/python3.6/site-packages/psycopg2cffi/_impl/cursor.py", line 696, in _pq_execute
+[Fri Apr 27 11:37:53.270765 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281]     self._pq_fetch()
+[Fri Apr 27 11:37:53.270791 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281]   File "/usr/lib/python3.6/site-packages/psycopg2cffi/_impl/cursor.py", line 757, in _pq_fetch
+[Fri Apr 27 11:37:53.270805 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281]     raise self._conn._create_exception(cursor=self)
+[Fri Apr 27 11:37:53.270875 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281] psycopg2cffi._impl.exceptions.ProgrammingError: \xd0\x9e\xd0\xa8\xd0\x98\xd0\x91\xd0\x9a\xd0\x90:  \xd1\x81\xd1\x82\xd0\xbe\xd0\xbb\xd0\xb1\xd0\xb5\xd1\x86 t-1.confirm \xd0\xbd\xd0\xb5 \xd1\x81\xd1\x83\xd1\x89\xd0\xb5\xd1\x81\xd1\x82\xd0\xb2\xd1\x83\xd0\xb5\xd1\x82
+[Fri Apr 27 11:37:53.270892 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281] LINE 1: ..."t-1"."comment", "t-1"."worker_id", "t-1"."time", "t-1"."con...
+[Fri Apr 27 11:37:53.270903 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281]                                                              ^
+[Fri Apr 27 11:37:53.270913 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281] HINT:  \xd0\x92\xd0\xbe\xd0\xb7\xd0\xbc\xd0\xbe\xd0\xb6\xd0\xbd\xd0\xbe, \xd0\xbf\xd1\x80\xd0\xb5\xd0\xb4\xd0\xbf\xd0\xbe\xd0\xbb\xd0\xb0\xd0\xb3\xd0\xb0\xd0\xbb\xd0\xb0\xd1\x81\xd1\x8c \xd1\x81\xd1\x81\xd1\x8b\xd0\xbb\xd0\xba\xd0\xb0 \xd0\xbd\xd0\xb0 \xd1\x81\xd1\x82\xd0\xbe\xd0\xbb\xd0\xb1\xd0\xb5\xd1\x86 "t-1.w_confirm" \xd0\xb8\xd0\xbb\xd0\xb8 \xd1\x81\xd1\x82\xd0\xbe\xd0\xbb\xd0\xb1\xd0\xb5\xd1\x86 "t-1.p_confirm".
+[Fri Apr 27 11:37:53.270926 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281] 
+[Fri Apr 27 11:37:53.271075 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281] 
+[Fri Apr 27 11:37:53.271089 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281] During handling of the above exception, another exception occurred:
+[Fri Apr 27 11:37:53.271099 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281] 
+[Fri Apr 27 11:37:53.271126 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281] Traceback (most recent call last):
+[Fri Apr 27 11:37:53.271485 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+[Fri Apr 27 11:37:53.271500 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281]     response = self.full_dispatch_request()
+[Fri Apr 27 11:37:53.271529 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1614, in full_dispatch_request
+[Fri Apr 27 11:37:53.271542 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281]     rv = self.handle_user_exception(e)
+[Fri Apr 27 11:37:53.271569 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1517, in handle_user_exception
+[Fri Apr 27 11:37:53.271583 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281]     reraise(exc_type, exc_value, tb)
+[Fri Apr 27 11:37:53.271609 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281]   File "/usr/lib/python3.6/site-packages/flask/_compat.py", line 33, in reraise
+[Fri Apr 27 11:37:53.271672 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281]     raise value
+[Fri Apr 27 11:37:53.271703 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1612, in full_dispatch_request
+[Fri Apr 27 11:37:53.271717 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281]     rv = self.dispatch_request()
+[Fri Apr 27 11:37:53.271743 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1598, in dispatch_request
+[Fri Apr 27 11:37:53.271757 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281]     return self.view_functions[rule.endpoint](**req.view_args)
+[Fri Apr 27 11:37:53.271783 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281]   File "/srv/http/virtlabs.tk/5koleso.tk/worker.py", line 80, in work_part
+[Fri Apr 27 11:37:53.271797 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281]     return render_template('work/orders.html', **context)
+[Fri Apr 27 11:37:53.271824 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281]   File "/usr/lib/python3.6/site-packages/flask/templating.py", line 134, in render_template
+[Fri Apr 27 11:37:53.271837 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281]     context, ctx.app)
+[Fri Apr 27 11:37:53.271863 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281]   File "/usr/lib/python3.6/site-packages/flask/templating.py", line 116, in _render
+[Fri Apr 27 11:37:53.271876 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281]     rv = template.render(context)
+[Fri Apr 27 11:37:53.271902 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281]   File "/usr/lib/python3.6/site-packages/jinja2/asyncsupport.py", line 76, in render
+[Fri Apr 27 11:37:53.271915 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281]     return original_render(self, *args, **kwargs)
+[Fri Apr 27 11:37:53.271942 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281]   File "/usr/lib/python3.6/site-packages/jinja2/environment.py", line 1008, in render
+[Fri Apr 27 11:37:53.271956 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281]     return self.environment.handle_exception(exc_info, True)
+[Fri Apr 27 11:37:53.271982 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281]   File "/usr/lib/python3.6/site-packages/jinja2/environment.py", line 780, in handle_exception
+[Fri Apr 27 11:37:53.271995 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281]     reraise(exc_type, exc_value, tb)
+[Fri Apr 27 11:37:53.272021 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281]   File "/usr/lib/python3.6/site-packages/jinja2/_compat.py", line 37, in reraise
+[Fri Apr 27 11:37:53.272034 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281]     raise value.with_traceback(tb)
+[Fri Apr 27 11:37:53.272060 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281]   File "/srv/http/virtlabs.tk/5koleso.tk/templates/work/orders.html", line 1, in top-level template code
+[Fri Apr 27 11:37:53.272073 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281]     {% extends "work/part.html" %}
+[Fri Apr 27 11:37:53.272099 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281]   File "/srv/http/virtlabs.tk/5koleso.tk/templates/work/part.html", line 1, in top-level template code
+[Fri Apr 27 11:37:53.272113 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281]     {% extends "index.html" %}
+[Fri Apr 27 11:37:53.272139 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281]   File "/srv/http/virtlabs.tk/5koleso.tk/templates/index.html", line 53, in top-level template code
+[Fri Apr 27 11:37:53.272152 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281]     {% block body %}
+[Fri Apr 27 11:37:53.272178 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281]   File "/srv/http/virtlabs.tk/5koleso.tk/templates/work/part.html", line 8, in block "body"
+[Fri Apr 27 11:37:53.272192 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281]     {% block orders %}
+[Fri Apr 27 11:37:53.272235 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281]   File "/srv/http/virtlabs.tk/5koleso.tk/templates/work/orders.html", line 4, in block "orders"
+[Fri Apr 27 11:37:53.272249 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281]     {% for order in orders %}
+[Fri Apr 27 11:37:53.272275 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281]   File "<string>", line 2, in __iter__
+[Fri Apr 27 11:37:53.272305 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281]   File "/usr/lib/python3.6/site-packages/pony/utils/utils.py", line 58, in cut_traceback
+[Fri Apr 27 11:37:53.272318 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281]     return func(*args, **kwargs)
+[Fri Apr 27 11:37:53.272344 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281]   File "/usr/lib/python3.6/site-packages/pony/orm/core.py", line 5506, in __iter__
+[Fri Apr 27 11:37:53.272358 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281]     return iter(query._fetch())
+[Fri Apr 27 11:37:53.272384 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281]   File "/usr/lib/python3.6/site-packages/pony/orm/core.py", line 5343, in _fetch
+[Fri Apr 27 11:37:53.272397 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281]     cursor = database._exec_sql(sql, arguments)
+[Fri Apr 27 11:37:53.272424 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281]   File "/usr/lib/python3.6/site-packages/pony/orm/core.py", line 820, in _exec_sql
+[Fri Apr 27 11:37:53.272437 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281]     connection = cache.reconnect(e)
+[Fri Apr 27 11:37:53.272463 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281]   File "/usr/lib/python3.6/site-packages/pony/orm/core.py", line 1625, in reconnect
+[Fri Apr 27 11:37:53.272477 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281]     if not provider.should_reconnect(exc): reraise(*sys.exc_info())
+[Fri Apr 27 11:37:53.272503 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281]   File "/usr/lib/python3.6/site-packages/pony/utils/utils.py", line 87, in reraise
+[Fri Apr 27 11:37:53.272517 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281]     try: raise exc.with_traceback(tb)
+[Fri Apr 27 11:37:53.272543 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281]   File "/usr/lib/python3.6/site-packages/pony/orm/core.py", line 818, in _exec_sql
+[Fri Apr 27 11:37:53.272556 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281]     try: new_id = provider.execute(cursor, sql, arguments, returning_id)
+[Fri Apr 27 11:37:53.272582 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281]   File "<string>", line 2, in execute
+[Fri Apr 27 11:37:53.272612 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281]   File "/usr/lib/python3.6/site-packages/pony/orm/dbapiprovider.py", line 56, in wrap_dbapi_exceptions
+[Fri Apr 27 11:37:53.272626 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281]     except dbapi_module.ProgrammingError as e: raise ProgrammingError(e)
+[Fri Apr 27 11:37:53.272697 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281] pony.orm.dbapiprovider.ProgrammingError: \xd0\x9e\xd0\xa8\xd0\x98\xd0\x91\xd0\x9a\xd0\x90:  \xd1\x81\xd1\x82\xd0\xbe\xd0\xbb\xd0\xb1\xd0\xb5\xd1\x86 t-1.confirm \xd0\xbd\xd0\xb5 \xd1\x81\xd1\x83\xd1\x89\xd0\xb5\xd1\x81\xd1\x82\xd0\xb2\xd1\x83\xd0\xb5\xd1\x82
+[Fri Apr 27 11:37:53.272713 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281] LINE 1: ..."t-1"."comment", "t-1"."worker_id", "t-1"."time", "t-1"."con...
+[Fri Apr 27 11:37:53.272724 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281]                                                              ^
+[Fri Apr 27 11:37:53.272734 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281] HINT:  \xd0\x92\xd0\xbe\xd0\xb7\xd0\xbc\xd0\xbe\xd0\xb6\xd0\xbd\xd0\xbe, \xd0\xbf\xd1\x80\xd0\xb5\xd0\xb4\xd0\xbf\xd0\xbe\xd0\xbb\xd0\xb0\xd0\xb3\xd0\xb0\xd0\xbb\xd0\xb0\xd1\x81\xd1\x8c \xd1\x81\xd1\x81\xd1\x8b\xd0\xbb\xd0\xba\xd0\xb0 \xd0\xbd\xd0\xb0 \xd1\x81\xd1\x82\xd0\xbe\xd0\xbb\xd0\xb1\xd0\xb5\xd1\x86 "t-1.w_confirm" \xd0\xb8\xd0\xbb\xd0\xb8 \xd1\x81\xd1\x82\xd0\xbe\xd0\xbb\xd0\xb1\xd0\xb5\xd1\x86 "t-1.p_confirm".
+[Fri Apr 27 11:37:53.272772 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281] 
+[Fri Apr 27 11:37:53.272810 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281] 
+[Fri Apr 27 11:37:53.272823 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281] During handling of the above exception, another exception occurred:
+[Fri Apr 27 11:37:53.272832 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281] 
+[Fri Apr 27 11:37:53.272858 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281] Traceback (most recent call last):
+[Fri Apr 27 11:37:53.272968 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281]   File "/usr/lib/python3.6/logging/handlers.py", line 1010, in emit
+[Fri Apr 27 11:37:53.272983 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281]     smtp = smtplib.SMTP(self.mailhost, port, timeout=self.timeout)
+[Fri Apr 27 11:37:53.273009 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281]   File "/usr/lib/python3.6/smtplib.py", line 251, in __init__
+[Fri Apr 27 11:37:53.273022 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281]     (code, msg) = self.connect(host, port)
+[Fri Apr 27 11:37:53.273048 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281]   File "/usr/lib/python3.6/smtplib.py", line 336, in connect
+[Fri Apr 27 11:37:53.273061 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281]     self.sock = self._get_socket(host, port, self.timeout)
+[Fri Apr 27 11:37:53.273087 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281]   File "/usr/lib/python3.6/smtplib.py", line 307, in _get_socket
+[Fri Apr 27 11:37:53.273100 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281]     self.source_address)
+[Fri Apr 27 11:37:53.273125 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281]   File "/usr/lib/python3.6/socket.py", line 704, in create_connection
+[Fri Apr 27 11:37:53.273138 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281]     for res in getaddrinfo(host, port, 0, SOCK_STREAM):
+[Fri Apr 27 11:37:53.273163 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281]   File "/usr/lib/python3.6/socket.py", line 745, in getaddrinfo
+[Fri Apr 27 11:37:53.273176 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281]     for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+[Fri Apr 27 11:37:53.273220 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281] socket.gaierror: [Errno -2] Name or service not known
+[Fri Apr 27 11:37:53.273280 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281] Call stack:
+[Fri Apr 27 11:37:53.273703 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1997, in __call__
+[Fri Apr 27 11:37:53.273727 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281]     return self.wsgi_app(environ, start_response)
+[Fri Apr 27 11:37:53.273757 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1985, in wsgi_app
+[Fri Apr 27 11:37:53.273771 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281]     response = self.handle_exception(e)
+[Fri Apr 27 11:37:53.273797 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1544, in handle_exception
+[Fri Apr 27 11:37:53.273809 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281]     self.log_exception((exc_type, exc_value, tb))
+[Fri Apr 27 11:37:53.273835 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1560, in log_exception
+[Fri Apr 27 11:37:53.273847 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281]     ), exc_info=exc_info)
+[Fri Apr 27 11:37:53.273885 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281] Message: 'Exception on /work/part [GET]'
+[Fri Apr 27 11:37:53.273898 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281] Arguments: ()

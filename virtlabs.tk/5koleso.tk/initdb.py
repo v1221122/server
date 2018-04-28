@@ -32,7 +32,8 @@ class Taxi_order(_PostgresDb.Entity):
     comment = Optional(str)
     worker_id = Optional(int)
     time = Optional(int)
-    confirm = Optional(bool)
+    w_confirm = Optional(bool)
+    p_confirm = Optional(bool)
     
 _PostgresDb.bind(**_config)
 _PostgresDb.generate_mapping(check_tables = True, create_tables = False)

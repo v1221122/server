@@ -182,3 +182,4 @@ su
 su
 date
 su
+psql -U alex_forsaje

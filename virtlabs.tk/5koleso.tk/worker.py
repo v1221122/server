@@ -100,17 +100,20 @@ def wait_confirm():
         'address_from': request.args.get('address_from'),
         'address_to': request.args.get('address_to'),
         'comment': request.args.get('comment'),
-        'time': request.args.get('time')
+        'time': request.args.get('time'),
+        'refresh': True
     }
     timer[request.cookies.get('id')] = time.time() + float(context['time'])*60
+    p_confirm = False
     with db_session:
         order = select(p for p in Taxi_order if p.phone == context['phone'])
         for o in order:
             o.worker_id = request.cookies.get("id")
             o.time = context['time']
+            p_confirm = o.p_confirm
     global flag
     flag = True
-    return render_template('work/wait_confirm.html', **context)
+    return render_template('work/wait_confirm.html', **context)  # !!!! add timer start
 
     
 @app.route('/work/confirm')  # Page with timer  
@@ -132,7 +135,7 @@ def confirm():
         with db_session:
             order = select(p for p in Taxi_order if p.phone == context['phone'])
             for o in order:
-                o.confirm = True
+                o.w_confirm = True
         flag = False
         global time_flag
         time_flag = True
@@ -171,6 +174,7 @@ def end_order():
     
 @app.route('/work/exit_queue')
 def exit_queue():
+    pass
     
 
 
