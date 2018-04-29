@@ -183,3 +183,5 @@ su
 date
 su
 psql -U alex_forsaje
+apachectl status
+su

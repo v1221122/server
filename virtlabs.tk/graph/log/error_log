@@ -374,3 +374,7 @@
 [Wed Apr 25 02:44:48.583290 2018] [php7:error] [pid 1401] [client 189.100.247.56:41517] script '/srv/http/virtlabs.tk/graph/getcfg.php' not found or unable to stat
 [Wed Apr 25 02:44:52.167156 2018] [php7:error] [pid 1443] [client 189.100.247.56:41546] script '/srv/http/virtlabs.tk/graph/getcfg.php' not found or unable to stat
 [Wed Apr 25 18:27:17.406496 2018] [php7:error] [pid 1402] [client 185.172.110.202:38409] script '/srv/http/virtlabs.tk/graph/setup.php' not found or unable to stat
+[Sat Apr 28 06:08:46.640570 2018] [core:error] [pid 2518] [client 52.88.124.198:38965] AH00126: Invalid URI in request GET HTTP/1.1 HTTP/1.1
+[Sat Apr 28 17:56:24.007568 2018] [php7:error] [pid 10180] [client 185.24.93.74:49429] script '/srv/http/virtlabs.tk/graph/prox_ch.php' not found or unable to stat
+[Sun Apr 29 17:49:59.053946 2018] [php7:error] [pid 10150] [client 179.218.111.194:53670] script '/srv/http/virtlabs.tk/graph/command.php' not found or unable to stat
+[Sun Apr 29 20:58:32.450271 2018] [php7:error] [pid 10147] [client 35.187.6.188:56066] script '/srv/http/virtlabs.tk/graph/admin.php' not found or unable to stat

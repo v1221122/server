@@ -33,7 +33,7 @@ def main():
     items = [
             {
                 'target': '#',
-                'src': '/static/img/amigurumi.jpg',
+                'src': '/static/img/amigurumi1.jpg',
                 'title': 'Амигуруми',
                 'text': ['амигуруми']
             },
