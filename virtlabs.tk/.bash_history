@@ -185,3 +185,6 @@ su
 psql -U alex_forsaje
 apachectl status
 su
+su
+su
+su
