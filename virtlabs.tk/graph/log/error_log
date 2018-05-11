@@ -387,3 +387,4 @@
 [Tue May 08 13:10:16.972616 2018] [php7:error] [pid 10333] [client 185.24.93.74:53881] script '/srv/http/virtlabs.tk/graph/prox_ch.php' not found or unable to stat
 [Wed May 09 07:03:32.090764 2018] [php7:error] [pid 10151] [client 83.217.8.122:33360] script '/srv/http/virtlabs.tk/graph/prox_ch.php' not found or unable to stat
 [Wed May 09 17:18:21.246950 2018] [cgi:error] [pid 10180] [client 178.72.70.93:8176] AH02811: script not found or unable to stat: /srv/http/cgi-bin
+[Fri May 11 14:45:28.337107 2018] [php7:error] [pid 10180] [client 195.22.127.231:18280] script '/srv/http/virtlabs.tk/graph/lfm.php' not found or unable to stat
