@@ -1067,3 +1067,428 @@
 [Fri Apr 27 11:37:53.273847 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281]     ), exc_info=exc_info)
 [Fri Apr 27 11:37:53.273885 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281] Message: 'Exception on /work/part [GET]'
 [Fri Apr 27 11:37:53.273898 2018] [wsgi:error] [pid 27893] [remote 85.26.234.90:61281] Arguments: ()
+[Sun May 13 08:24:00.925475 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43656] [2018-05-13 08:24:00,743] ERROR in app: Exception on /work/check_worker [POST]
+[Sun May 13 08:24:00.943221 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43656] Traceback (most recent call last):
+[Sun May 13 08:24:00.943255 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43656]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+[Sun May 13 08:24:00.943266 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43656]     response = self.full_dispatch_request()
+[Sun May 13 08:24:00.943277 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43656]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1614, in full_dispatch_request
+[Sun May 13 08:24:00.943286 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43656]     rv = self.handle_user_exception(e)
+[Sun May 13 08:24:00.943296 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43656]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1517, in handle_user_exception
+[Sun May 13 08:24:00.943306 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43656]     reraise(exc_type, exc_value, tb)
+[Sun May 13 08:24:00.943315 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43656]   File "/usr/lib/python3.6/site-packages/flask/_compat.py", line 33, in reraise
+[Sun May 13 08:24:00.943325 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43656]     raise value
+[Sun May 13 08:24:00.943334 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43656]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1612, in full_dispatch_request
+[Sun May 13 08:24:00.943344 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43656]     rv = self.dispatch_request()
+[Sun May 13 08:24:00.943353 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43656]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1598, in dispatch_request
+[Sun May 13 08:24:00.943364 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43656]     return self.view_functions[rule.endpoint](**req.view_args)
+[Sun May 13 08:24:00.943373 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43656]   File "/srv/http/virtlabs.tk/5koleso.tk/worker.py", line 45, in check_worker
+[Sun May 13 08:24:00.943383 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43656]     user = Auth.get(login=request.form['login'])
+[Sun May 13 08:24:00.943393 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43656]   File "<string>", line 2, in get
+[Sun May 13 08:24:00.943402 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43656]   File "/usr/lib/python3.6/site-packages/pony/utils/utils.py", line 58, in cut_traceback
+[Sun May 13 08:24:00.943412 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43656]     return func(*args, **kwargs)
+[Sun May 13 08:24:00.943421 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43656]   File "/usr/lib/python3.6/site-packages/pony/orm/core.py", line 3702, in get
+[Sun May 13 08:24:00.943431 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43656]     try: return entity._find_one_(kwargs)  # can throw MultipleObjectsFoundError
+[Sun May 13 08:24:00.943441 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43656]   File "/usr/lib/python3.6/site-packages/pony/orm/core.py", line 3792, in _find_one_
+[Sun May 13 08:24:00.943450 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43656]     avdict[attr] = attr.validate(val, None, entity, from_db=False)
+[Sun May 13 08:24:00.943460 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43656]   File "/usr/lib/python3.6/site-packages/pony/orm/core.py", line 2356, in validate
+[Sun May 13 08:24:00.943470 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43656]     attr if obj is None or obj._status_ is None else '%r.%s' % (obj, attr.name)))
+[Sun May 13 08:24:00.943479 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43656]   File "/usr/lib/python3.6/site-packages/pony/utils/utils.py", line 98, in throw
+[Sun May 13 08:24:00.943489 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43656]     raise exc
+[Sun May 13 08:24:00.943515 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43656] ValueError: Attribute Auth.login is required
+[Sun May 13 08:24:00.943688 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43656] 
+[Sun May 13 08:24:01.033155 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43656] --- Logging error ---
+[Sun May 13 08:24:01.053219 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43672] [2018-05-13 08:24:01,051] ERROR in app: Exception on /work/check_worker [POST]
+[Sun May 13 08:24:01.053309 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43672] Traceback (most recent call last):
+[Sun May 13 08:24:01.053323 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43672]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+[Sun May 13 08:24:01.053334 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43672]     response = self.full_dispatch_request()
+[Sun May 13 08:24:01.053344 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43672]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1614, in full_dispatch_request
+[Sun May 13 08:24:01.053354 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43672]     rv = self.handle_user_exception(e)
+[Sun May 13 08:24:01.053364 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43672]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1517, in handle_user_exception
+[Sun May 13 08:24:01.053374 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43672]     reraise(exc_type, exc_value, tb)
+[Sun May 13 08:24:01.053383 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43672]   File "/usr/lib/python3.6/site-packages/flask/_compat.py", line 33, in reraise
+[Sun May 13 08:24:01.053393 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43672]     raise value
+[Sun May 13 08:24:01.053403 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43672]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1612, in full_dispatch_request
+[Sun May 13 08:24:01.053413 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43672]     rv = self.dispatch_request()
+[Sun May 13 08:24:01.053423 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43672]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1598, in dispatch_request
+[Sun May 13 08:24:01.053433 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43672]     return self.view_functions[rule.endpoint](**req.view_args)
+[Sun May 13 08:24:01.053443 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43672]   File "/srv/http/virtlabs.tk/5koleso.tk/worker.py", line 45, in check_worker
+[Sun May 13 08:24:01.053453 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43672]     user = Auth.get(login=request.form['login'])
+[Sun May 13 08:24:01.053463 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43672]   File "<string>", line 2, in get
+[Sun May 13 08:24:01.053472 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43672]   File "/usr/lib/python3.6/site-packages/pony/utils/utils.py", line 58, in cut_traceback
+[Sun May 13 08:24:01.053482 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43672]     return func(*args, **kwargs)
+[Sun May 13 08:24:01.053492 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43672]   File "/usr/lib/python3.6/site-packages/pony/orm/core.py", line 3702, in get
+[Sun May 13 08:24:01.053502 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43672]     try: return entity._find_one_(kwargs)  # can throw MultipleObjectsFoundError
+[Sun May 13 08:24:01.053512 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43672]   File "/usr/lib/python3.6/site-packages/pony/orm/core.py", line 3792, in _find_one_
+[Sun May 13 08:24:01.053522 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43672]     avdict[attr] = attr.validate(val, None, entity, from_db=False)
+[Sun May 13 08:24:01.053531 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43672]   File "/usr/lib/python3.6/site-packages/pony/orm/core.py", line 2356, in validate
+[Sun May 13 08:24:01.054750 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43672]     attr if obj is None or obj._status_ is None else '%r.%s' % (obj, attr.name)))
+[Sun May 13 08:24:01.054837 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43672]   File "/usr/lib/python3.6/site-packages/pony/utils/utils.py", line 98, in throw
+[Sun May 13 08:24:01.054851 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43672]     raise exc
+[Sun May 13 08:24:01.054872 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43672] ValueError: Attribute Auth.login is required
+[Sun May 13 08:24:01.055017 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43672] 
+[Sun May 13 08:24:01.087633 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43656] Traceback (most recent call last):
+[Sun May 13 08:24:01.087924 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43656]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+[Sun May 13 08:24:01.087942 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43656]     response = self.full_dispatch_request()
+[Sun May 13 08:24:01.087974 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43656]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1614, in full_dispatch_request
+[Sun May 13 08:24:01.087989 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43656]     rv = self.handle_user_exception(e)
+[Sun May 13 08:24:01.088017 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43656]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1517, in handle_user_exception
+[Sun May 13 08:24:01.088031 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43656]     reraise(exc_type, exc_value, tb)
+[Sun May 13 08:24:01.088058 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43656]   File "/usr/lib/python3.6/site-packages/flask/_compat.py", line 33, in reraise
+[Sun May 13 08:24:01.088071 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43656]     raise value
+[Sun May 13 08:24:01.088098 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43656]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1612, in full_dispatch_request
+[Sun May 13 08:24:01.088112 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43656]     rv = self.dispatch_request()
+[Sun May 13 08:24:01.088139 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43656]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1598, in dispatch_request
+[Sun May 13 08:24:01.088152 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43656]     return self.view_functions[rule.endpoint](**req.view_args)
+[Sun May 13 08:24:01.088179 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43656]   File "/srv/http/virtlabs.tk/5koleso.tk/worker.py", line 45, in check_worker
+[Sun May 13 08:24:01.088193 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43656]     user = Auth.get(login=request.form['login'])
+[Sun May 13 08:24:01.088219 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43656]   File "<string>", line 2, in get
+[Sun May 13 08:24:01.088249 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43656]   File "/usr/lib/python3.6/site-packages/pony/utils/utils.py", line 58, in cut_traceback
+[Sun May 13 08:24:01.088262 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43656]     return func(*args, **kwargs)
+[Sun May 13 08:24:01.088289 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43656]   File "/usr/lib/python3.6/site-packages/pony/orm/core.py", line 3702, in get
+[Sun May 13 08:24:01.088303 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43656]     try: return entity._find_one_(kwargs)  # can throw MultipleObjectsFoundError
+[Sun May 13 08:24:01.088330 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43656]   File "/usr/lib/python3.6/site-packages/pony/orm/core.py", line 3792, in _find_one_
+[Sun May 13 08:24:01.088343 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43656]     avdict[attr] = attr.validate(val, None, entity, from_db=False)
+[Sun May 13 08:24:01.088370 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43656]   File "/usr/lib/python3.6/site-packages/pony/orm/core.py", line 2356, in validate
+[Sun May 13 08:24:01.088384 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43656]     attr if obj is None or obj._status_ is None else '%r.%s' % (obj, attr.name)))
+[Sun May 13 08:24:01.088488 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43656]   File "/usr/lib/python3.6/site-packages/pony/utils/utils.py", line 98, in throw
+[Sun May 13 08:24:01.088503 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43656]     raise exc
+[Sun May 13 08:24:01.088563 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43656] ValueError: Attribute Auth.login is required
+[Sun May 13 08:24:01.088614 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43656] 
+[Sun May 13 08:24:01.088628 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43656] During handling of the above exception, another exception occurred:
+[Sun May 13 08:24:01.088638 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43656] 
+[Sun May 13 08:24:01.088664 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43656] Traceback (most recent call last):
+[Sun May 13 08:24:01.088775 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43656]   File "/usr/lib/python3.6/logging/handlers.py", line 1010, in emit
+[Sun May 13 08:24:01.088790 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43656]     smtp = smtplib.SMTP(self.mailhost, port, timeout=self.timeout)
+[Sun May 13 08:24:01.088817 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43656]   File "/usr/lib/python3.6/smtplib.py", line 251, in __init__
+[Sun May 13 08:24:01.088830 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43656]     (code, msg) = self.connect(host, port)
+[Sun May 13 08:24:01.088856 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43656]   File "/usr/lib/python3.6/smtplib.py", line 336, in connect
+[Sun May 13 08:24:01.088870 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43656]     self.sock = self._get_socket(host, port, self.timeout)
+[Sun May 13 08:24:01.088896 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43656]   File "/usr/lib/python3.6/smtplib.py", line 307, in _get_socket
+[Sun May 13 08:24:01.088909 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43656]     self.source_address)
+[Sun May 13 08:24:01.088935 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43656]   File "/usr/lib/python3.6/socket.py", line 704, in create_connection
+[Sun May 13 08:24:01.088948 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43656]     for res in getaddrinfo(host, port, 0, SOCK_STREAM):
+[Sun May 13 08:24:01.088974 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43656]   File "/usr/lib/python3.6/socket.py", line 745, in getaddrinfo
+[Sun May 13 08:24:01.088987 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43656]     for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+[Sun May 13 08:24:01.089032 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43656] socket.gaierror: [Errno -2] Name or service not known
+[Sun May 13 08:24:01.089082 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43656] Call stack:
+[Sun May 13 08:24:01.089510 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43656]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1997, in __call__
+[Sun May 13 08:24:01.089537 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43656]     return self.wsgi_app(environ, start_response)
+[Sun May 13 08:24:01.089567 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43656]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1985, in wsgi_app
+[Sun May 13 08:24:01.089582 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43656]     response = self.handle_exception(e)
+[Sun May 13 08:24:01.089608 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43656]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1544, in handle_exception
+[Sun May 13 08:24:01.089621 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43656]     self.log_exception((exc_type, exc_value, tb))
+[Sun May 13 08:24:01.089648 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43656]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1560, in log_exception
+[Sun May 13 08:24:01.089661 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43656]     ), exc_info=exc_info)
+[Sun May 13 08:24:01.089768 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43656] Message: 'Exception on /work/check_worker [POST]'
+[Sun May 13 08:24:01.089783 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43656] Arguments: ()
+[Sun May 13 08:24:01.095529 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43672] --- Logging error ---
+[Sun May 13 08:24:01.096439 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43672] Traceback (most recent call last):
+[Sun May 13 08:24:01.096662 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43672]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+[Sun May 13 08:24:01.096681 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43672]     response = self.full_dispatch_request()
+[Sun May 13 08:24:01.096711 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43672]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1614, in full_dispatch_request
+[Sun May 13 08:24:01.096726 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43672]     rv = self.handle_user_exception(e)
+[Sun May 13 08:24:01.096753 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43672]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1517, in handle_user_exception
+[Sun May 13 08:24:01.096767 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43672]     reraise(exc_type, exc_value, tb)
+[Sun May 13 08:24:01.096794 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43672]   File "/usr/lib/python3.6/site-packages/flask/_compat.py", line 33, in reraise
+[Sun May 13 08:24:01.096807 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43672]     raise value
+[Sun May 13 08:24:01.096834 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43672]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1612, in full_dispatch_request
+[Sun May 13 08:24:01.096848 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43672]     rv = self.dispatch_request()
+[Sun May 13 08:24:01.096874 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43672]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1598, in dispatch_request
+[Sun May 13 08:24:01.096888 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43672]     return self.view_functions[rule.endpoint](**req.view_args)
+[Sun May 13 08:24:01.096915 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43672]   File "/srv/http/virtlabs.tk/5koleso.tk/worker.py", line 45, in check_worker
+[Sun May 13 08:24:01.096928 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43672]     user = Auth.get(login=request.form['login'])
+[Sun May 13 08:24:01.096954 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43672]   File "<string>", line 2, in get
+[Sun May 13 08:24:01.096984 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43672]   File "/usr/lib/python3.6/site-packages/pony/utils/utils.py", line 58, in cut_traceback
+[Sun May 13 08:24:01.096997 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43672]     return func(*args, **kwargs)
+[Sun May 13 08:24:01.097024 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43672]   File "/usr/lib/python3.6/site-packages/pony/orm/core.py", line 3702, in get
+[Sun May 13 08:24:01.097037 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43672]     try: return entity._find_one_(kwargs)  # can throw MultipleObjectsFoundError
+[Sun May 13 08:24:01.097064 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43672]   File "/usr/lib/python3.6/site-packages/pony/orm/core.py", line 3792, in _find_one_
+[Sun May 13 08:24:01.097077 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43672]     avdict[attr] = attr.validate(val, None, entity, from_db=False)
+[Sun May 13 08:24:01.097104 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43672]   File "/usr/lib/python3.6/site-packages/pony/orm/core.py", line 2356, in validate
+[Sun May 13 08:24:01.097117 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43672]     attr if obj is None or obj._status_ is None else '%r.%s' % (obj, attr.name)))
+[Sun May 13 08:24:01.097144 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43672]   File "/usr/lib/python3.6/site-packages/pony/utils/utils.py", line 98, in throw
+[Sun May 13 08:24:01.097875 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43672]     raise exc
+[Sun May 13 08:24:01.098068 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43672] ValueError: Attribute Auth.login is required
+[Sun May 13 08:24:01.098121 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43672] 
+[Sun May 13 08:24:01.098136 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43672] During handling of the above exception, another exception occurred:
+[Sun May 13 08:24:01.098147 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43672] 
+[Sun May 13 08:24:01.098175 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43672] Traceback (most recent call last):
+[Sun May 13 08:24:01.098316 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43672]   File "/usr/lib/python3.6/logging/handlers.py", line 1010, in emit
+[Sun May 13 08:24:01.098333 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43672]     smtp = smtplib.SMTP(self.mailhost, port, timeout=self.timeout)
+[Sun May 13 08:24:01.098360 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43672]   File "/usr/lib/python3.6/smtplib.py", line 251, in __init__
+[Sun May 13 08:24:01.098374 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43672]     (code, msg) = self.connect(host, port)
+[Sun May 13 08:24:01.098400 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43672]   File "/usr/lib/python3.6/smtplib.py", line 336, in connect
+[Sun May 13 08:24:01.098414 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43672]     self.sock = self._get_socket(host, port, self.timeout)
+[Sun May 13 08:24:01.098440 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43672]   File "/usr/lib/python3.6/smtplib.py", line 307, in _get_socket
+[Sun May 13 08:24:01.098453 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43672]     self.source_address)
+[Sun May 13 08:24:01.098479 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43672]   File "/usr/lib/python3.6/socket.py", line 704, in create_connection
+[Sun May 13 08:24:01.098492 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43672]     for res in getaddrinfo(host, port, 0, SOCK_STREAM):
+[Sun May 13 08:24:01.098518 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43672]   File "/usr/lib/python3.6/socket.py", line 745, in getaddrinfo
+[Sun May 13 08:24:01.098531 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43672]     for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+[Sun May 13 08:24:01.098578 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43672] socket.gaierror: [Errno -2] Name or service not known
+[Sun May 13 08:24:01.098639 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43672] Call stack:
+[Sun May 13 08:24:01.099075 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43672]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1997, in __call__
+[Sun May 13 08:24:01.099100 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43672]     return self.wsgi_app(environ, start_response)
+[Sun May 13 08:24:01.099131 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43672]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1985, in wsgi_app
+[Sun May 13 08:24:01.099146 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43672]     response = self.handle_exception(e)
+[Sun May 13 08:24:01.099171 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43672]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1544, in handle_exception
+[Sun May 13 08:24:01.099185 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43672]     self.log_exception((exc_type, exc_value, tb))
+[Sun May 13 08:24:01.099211 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43672]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1560, in log_exception
+[Sun May 13 08:24:01.099225 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43672]     ), exc_info=exc_info)
+[Sun May 13 08:24:01.099268 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43672] Message: 'Exception on /work/check_worker [POST]'
+[Sun May 13 08:24:01.099363 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43672] Arguments: ()
+[Sun May 13 08:24:01.443638 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43796] [2018-05-13 08:24:01,442] ERROR in app: Exception on /work/check_worker [POST]
+[Sun May 13 08:24:01.443741 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43796] Traceback (most recent call last):
+[Sun May 13 08:24:01.443755 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43796]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+[Sun May 13 08:24:01.443766 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43796]     response = self.full_dispatch_request()
+[Sun May 13 08:24:01.443776 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43796]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1614, in full_dispatch_request
+[Sun May 13 08:24:01.443786 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43796]     rv = self.handle_user_exception(e)
+[Sun May 13 08:24:01.443796 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43796]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1517, in handle_user_exception
+[Sun May 13 08:24:01.443806 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43796]     reraise(exc_type, exc_value, tb)
+[Sun May 13 08:24:01.443815 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43796]   File "/usr/lib/python3.6/site-packages/flask/_compat.py", line 33, in reraise
+[Sun May 13 08:24:01.443825 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43796]     raise value
+[Sun May 13 08:24:01.443834 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43796]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1612, in full_dispatch_request
+[Sun May 13 08:24:01.443844 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43796]     rv = self.dispatch_request()
+[Sun May 13 08:24:01.443994 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43796]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1598, in dispatch_request
+[Sun May 13 08:24:01.444013 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43796]     return self.view_functions[rule.endpoint](**req.view_args)
+[Sun May 13 08:24:01.444024 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43796]   File "/srv/http/virtlabs.tk/5koleso.tk/worker.py", line 45, in check_worker
+[Sun May 13 08:24:01.444038 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43796]     user = Auth.get(login=request.form['login'])
+[Sun May 13 08:24:01.444048 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43796]   File "<string>", line 2, in get
+[Sun May 13 08:24:01.444057 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43796]   File "/usr/lib/python3.6/site-packages/pony/utils/utils.py", line 58, in cut_traceback
+[Sun May 13 08:24:01.444067 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43796]     return func(*args, **kwargs)
+[Sun May 13 08:24:01.444076 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43796]   File "/usr/lib/python3.6/site-packages/pony/orm/core.py", line 3702, in get
+[Sun May 13 08:24:01.444086 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43796]     try: return entity._find_one_(kwargs)  # can throw MultipleObjectsFoundError
+[Sun May 13 08:24:01.444096 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43796]   File "/usr/lib/python3.6/site-packages/pony/orm/core.py", line 3792, in _find_one_
+[Sun May 13 08:24:01.444106 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43796]     avdict[attr] = attr.validate(val, None, entity, from_db=False)
+[Sun May 13 08:24:01.444115 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43796]   File "/usr/lib/python3.6/site-packages/pony/orm/core.py", line 2356, in validate
+[Sun May 13 08:24:01.444125 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43796]     attr if obj is None or obj._status_ is None else '%r.%s' % (obj, attr.name)))
+[Sun May 13 08:24:01.444135 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43796]   File "/usr/lib/python3.6/site-packages/pony/utils/utils.py", line 98, in throw
+[Sun May 13 08:24:01.444215 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43796]     raise exc
+[Sun May 13 08:24:01.444236 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43796] ValueError: Attribute Auth.login is required
+[Sun May 13 08:24:01.444321 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43796] 
+[Sun May 13 08:24:01.449219 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43796] --- Logging error ---
+[Sun May 13 08:24:01.450114 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43796] Traceback (most recent call last):
+[Sun May 13 08:24:01.450337 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43796]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+[Sun May 13 08:24:01.450355 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43796]     response = self.full_dispatch_request()
+[Sun May 13 08:24:01.450385 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43796]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1614, in full_dispatch_request
+[Sun May 13 08:24:01.450399 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43796]     rv = self.handle_user_exception(e)
+[Sun May 13 08:24:01.450427 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43796]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1517, in handle_user_exception
+[Sun May 13 08:24:01.450441 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43796]     reraise(exc_type, exc_value, tb)
+[Sun May 13 08:24:01.450468 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43796]   File "/usr/lib/python3.6/site-packages/flask/_compat.py", line 33, in reraise
+[Sun May 13 08:24:01.450482 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43796]     raise value
+[Sun May 13 08:24:01.450507 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43796]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1612, in full_dispatch_request
+[Sun May 13 08:24:01.451139 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43796]     rv = self.dispatch_request()
+[Sun May 13 08:24:01.451251 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43796]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1598, in dispatch_request
+[Sun May 13 08:24:01.451270 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43796]     return self.view_functions[rule.endpoint](**req.view_args)
+[Sun May 13 08:24:01.451301 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43796]   File "/srv/http/virtlabs.tk/5koleso.tk/worker.py", line 45, in check_worker
+[Sun May 13 08:24:01.451316 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43796]     user = Auth.get(login=request.form['login'])
+[Sun May 13 08:24:01.451344 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43796]   File "<string>", line 2, in get
+[Sun May 13 08:24:01.451374 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43796]   File "/usr/lib/python3.6/site-packages/pony/utils/utils.py", line 58, in cut_traceback
+[Sun May 13 08:24:01.451388 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43796]     return func(*args, **kwargs)
+[Sun May 13 08:24:01.451415 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43796]   File "/usr/lib/python3.6/site-packages/pony/orm/core.py", line 3702, in get
+[Sun May 13 08:24:01.451428 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43796]     try: return entity._find_one_(kwargs)  # can throw MultipleObjectsFoundError
+[Sun May 13 08:24:01.451456 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43796]   File "/usr/lib/python3.6/site-packages/pony/orm/core.py", line 3792, in _find_one_
+[Sun May 13 08:24:01.451470 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43796]     avdict[attr] = attr.validate(val, None, entity, from_db=False)
+[Sun May 13 08:24:01.451497 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43796]   File "/usr/lib/python3.6/site-packages/pony/orm/core.py", line 2356, in validate
+[Sun May 13 08:24:01.451511 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43796]     attr if obj is None or obj._status_ is None else '%r.%s' % (obj, attr.name)))
+[Sun May 13 08:24:01.451620 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43796]   File "/usr/lib/python3.6/site-packages/pony/utils/utils.py", line 98, in throw
+[Sun May 13 08:24:01.451635 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43796]     raise exc
+[Sun May 13 08:24:01.451720 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43796] ValueError: Attribute Auth.login is required
+[Sun May 13 08:24:01.451765 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43796] 
+[Sun May 13 08:24:01.451779 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43796] During handling of the above exception, another exception occurred:
+[Sun May 13 08:24:01.451789 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43796] 
+[Sun May 13 08:24:01.451816 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43796] Traceback (most recent call last):
+[Sun May 13 08:24:01.451956 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43796]   File "/usr/lib/python3.6/logging/handlers.py", line 1010, in emit
+[Sun May 13 08:24:01.451971 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43796]     smtp = smtplib.SMTP(self.mailhost, port, timeout=self.timeout)
+[Sun May 13 08:24:01.451999 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43796]   File "/usr/lib/python3.6/smtplib.py", line 251, in __init__
+[Sun May 13 08:24:01.452013 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43796]     (code, msg) = self.connect(host, port)
+[Sun May 13 08:24:01.452039 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43796]   File "/usr/lib/python3.6/smtplib.py", line 336, in connect
+[Sun May 13 08:24:01.452053 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43796]     self.sock = self._get_socket(host, port, self.timeout)
+[Sun May 13 08:24:01.452079 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43796]   File "/usr/lib/python3.6/smtplib.py", line 307, in _get_socket
+[Sun May 13 08:24:01.452092 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43796]     self.source_address)
+[Sun May 13 08:24:01.452119 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43796]   File "/usr/lib/python3.6/socket.py", line 704, in create_connection
+[Sun May 13 08:24:01.452132 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43796]     for res in getaddrinfo(host, port, 0, SOCK_STREAM):
+[Sun May 13 08:24:01.452158 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43796]   File "/usr/lib/python3.6/socket.py", line 745, in getaddrinfo
+[Sun May 13 08:24:01.452171 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43796]     for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+[Sun May 13 08:24:01.452217 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43796] socket.gaierror: [Errno -2] Name or service not known
+[Sun May 13 08:24:01.452274 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43796] Call stack:
+[Sun May 13 08:24:01.452713 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43796]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1997, in __call__
+[Sun May 13 08:24:01.452738 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43796]     return self.wsgi_app(environ, start_response)
+[Sun May 13 08:24:01.452767 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43796]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1985, in wsgi_app
+[Sun May 13 08:24:01.452781 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43796]     response = self.handle_exception(e)
+[Sun May 13 08:24:01.452807 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43796]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1544, in handle_exception
+[Sun May 13 08:24:01.452821 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43796]     self.log_exception((exc_type, exc_value, tb))
+[Sun May 13 08:24:01.452846 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43796]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1560, in log_exception
+[Sun May 13 08:24:01.452860 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43796]     ), exc_info=exc_info)
+[Sun May 13 08:24:01.452966 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43796] Message: 'Exception on /work/check_worker [POST]'
+[Sun May 13 08:24:01.452983 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43796] Arguments: ()
+[Sun May 13 08:24:01.698622 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43803] [2018-05-13 08:24:01,697] ERROR in app: Exception on /work/check_worker [POST]
+[Sun May 13 08:24:01.698707 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43803] Traceback (most recent call last):
+[Sun May 13 08:24:01.698721 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43803]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+[Sun May 13 08:24:01.698732 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43803]     response = self.full_dispatch_request()
+[Sun May 13 08:24:01.698742 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43803]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1614, in full_dispatch_request
+[Sun May 13 08:24:01.698752 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43803]     rv = self.handle_user_exception(e)
+[Sun May 13 08:24:01.698762 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43803]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1517, in handle_user_exception
+[Sun May 13 08:24:01.698772 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43803]     reraise(exc_type, exc_value, tb)
+[Sun May 13 08:24:01.698781 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43803]   File "/usr/lib/python3.6/site-packages/flask/_compat.py", line 33, in reraise
+[Sun May 13 08:24:01.698792 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43803]     raise value
+[Sun May 13 08:24:01.698801 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43803]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1612, in full_dispatch_request
+[Sun May 13 08:24:01.698811 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43803]     rv = self.dispatch_request()
+[Sun May 13 08:24:01.698820 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43803]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1598, in dispatch_request
+[Sun May 13 08:24:01.698831 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43803]     return self.view_functions[rule.endpoint](**req.view_args)
+[Sun May 13 08:24:01.698840 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43803]   File "/srv/http/virtlabs.tk/5koleso.tk/worker.py", line 45, in check_worker
+[Sun May 13 08:24:01.698851 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43803]     user = Auth.get(login=request.form['login'])
+[Sun May 13 08:24:01.698860 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43803]   File "<string>", line 2, in get
+[Sun May 13 08:24:01.698870 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43803]   File "/usr/lib/python3.6/site-packages/pony/utils/utils.py", line 58, in cut_traceback
+[Sun May 13 08:24:01.698879 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43803]     return func(*args, **kwargs)
+[Sun May 13 08:24:01.698889 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43803]   File "/usr/lib/python3.6/site-packages/pony/orm/core.py", line 3702, in get
+[Sun May 13 08:24:01.698899 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43803]     try: return entity._find_one_(kwargs)  # can throw MultipleObjectsFoundError
+[Sun May 13 08:24:01.698909 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43803]   File "/usr/lib/python3.6/site-packages/pony/orm/core.py", line 3792, in _find_one_
+[Sun May 13 08:24:01.698918 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43803]     avdict[attr] = attr.validate(val, None, entity, from_db=False)
+[Sun May 13 08:24:01.698928 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43803]   File "/usr/lib/python3.6/site-packages/pony/orm/core.py", line 2356, in validate
+[Sun May 13 08:24:01.698938 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43803]     attr if obj is None or obj._status_ is None else '%r.%s' % (obj, attr.name)))
+[Sun May 13 08:24:01.699023 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43803]   File "/usr/lib/python3.6/site-packages/pony/utils/utils.py", line 98, in throw
+[Sun May 13 08:24:01.699035 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43803]     raise exc
+[Sun May 13 08:24:01.699049 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43803] ValueError: Attribute Auth.login is required
+[Sun May 13 08:24:01.699099 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43803] 
+[Sun May 13 08:24:01.704075 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43803] --- Logging error ---
+[Sun May 13 08:24:01.704955 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43803] Traceback (most recent call last):
+[Sun May 13 08:24:01.705175 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43803]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+[Sun May 13 08:24:01.705193 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43803]     response = self.full_dispatch_request()
+[Sun May 13 08:24:01.705223 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43803]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1614, in full_dispatch_request
+[Sun May 13 08:24:01.705237 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43803]     rv = self.handle_user_exception(e)
+[Sun May 13 08:24:01.705264 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43803]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1517, in handle_user_exception
+[Sun May 13 08:24:01.705278 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43803]     reraise(exc_type, exc_value, tb)
+[Sun May 13 08:24:01.705305 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43803]   File "/usr/lib/python3.6/site-packages/flask/_compat.py", line 33, in reraise
+[Sun May 13 08:24:01.705318 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43803]     raise value
+[Sun May 13 08:24:01.705344 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43803]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1612, in full_dispatch_request
+[Sun May 13 08:24:01.705358 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43803]     rv = self.dispatch_request()
+[Sun May 13 08:24:01.705384 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43803]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1598, in dispatch_request
+[Sun May 13 08:24:01.705398 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43803]     return self.view_functions[rule.endpoint](**req.view_args)
+[Sun May 13 08:24:01.705424 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43803]   File "/srv/http/virtlabs.tk/5koleso.tk/worker.py", line 45, in check_worker
+[Sun May 13 08:24:01.705438 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43803]     user = Auth.get(login=request.form['login'])
+[Sun May 13 08:24:01.705464 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43803]   File "<string>", line 2, in get
+[Sun May 13 08:24:01.705493 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43803]   File "/usr/lib/python3.6/site-packages/pony/utils/utils.py", line 58, in cut_traceback
+[Sun May 13 08:24:01.705507 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43803]     return func(*args, **kwargs)
+[Sun May 13 08:24:01.705533 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43803]   File "/usr/lib/python3.6/site-packages/pony/orm/core.py", line 3702, in get
+[Sun May 13 08:24:01.705546 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43803]     try: return entity._find_one_(kwargs)  # can throw MultipleObjectsFoundError
+[Sun May 13 08:24:01.705573 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43803]   File "/usr/lib/python3.6/site-packages/pony/orm/core.py", line 3792, in _find_one_
+[Sun May 13 08:24:01.705586 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43803]     avdict[attr] = attr.validate(val, None, entity, from_db=False)
+[Sun May 13 08:24:01.705613 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43803]   File "/usr/lib/python3.6/site-packages/pony/orm/core.py", line 2356, in validate
+[Sun May 13 08:24:01.705705 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43803]     attr if obj is None or obj._status_ is None else '%r.%s' % (obj, attr.name)))
+[Sun May 13 08:24:01.705737 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43803]   File "/usr/lib/python3.6/site-packages/pony/utils/utils.py", line 98, in throw
+[Sun May 13 08:24:01.705751 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43803]     raise exc
+[Sun May 13 08:24:01.705807 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43803] ValueError: Attribute Auth.login is required
+[Sun May 13 08:24:01.705845 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43803] 
+[Sun May 13 08:24:01.705859 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43803] During handling of the above exception, another exception occurred:
+[Sun May 13 08:24:01.705869 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43803] 
+[Sun May 13 08:24:01.705895 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43803] Traceback (most recent call last):
+[Sun May 13 08:24:01.706001 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43803]   File "/usr/lib/python3.6/logging/handlers.py", line 1010, in emit
+[Sun May 13 08:24:01.706016 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43803]     smtp = smtplib.SMTP(self.mailhost, port, timeout=self.timeout)
+[Sun May 13 08:24:01.706044 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43803]   File "/usr/lib/python3.6/smtplib.py", line 251, in __init__
+[Sun May 13 08:24:01.706057 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43803]     (code, msg) = self.connect(host, port)
+[Sun May 13 08:24:01.706082 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43803]   File "/usr/lib/python3.6/smtplib.py", line 336, in connect
+[Sun May 13 08:24:01.706095 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43803]     self.sock = self._get_socket(host, port, self.timeout)
+[Sun May 13 08:24:01.706121 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43803]   File "/usr/lib/python3.6/smtplib.py", line 307, in _get_socket
+[Sun May 13 08:24:01.706134 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43803]     self.source_address)
+[Sun May 13 08:24:01.706160 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43803]   File "/usr/lib/python3.6/socket.py", line 704, in create_connection
+[Sun May 13 08:24:01.706173 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43803]     for res in getaddrinfo(host, port, 0, SOCK_STREAM):
+[Sun May 13 08:24:01.706199 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43803]   File "/usr/lib/python3.6/socket.py", line 745, in getaddrinfo
+[Sun May 13 08:24:01.706212 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43803]     for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+[Sun May 13 08:24:01.706256 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43803] socket.gaierror: [Errno -2] Name or service not known
+[Sun May 13 08:24:01.706301 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43803] Call stack:
+[Sun May 13 08:24:01.706683 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43803]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1997, in __call__
+[Sun May 13 08:24:01.706706 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43803]     return self.wsgi_app(environ, start_response)
+[Sun May 13 08:24:01.706735 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43803]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1985, in wsgi_app
+[Sun May 13 08:24:01.706751 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43803]     response = self.handle_exception(e)
+[Sun May 13 08:24:01.706777 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43803]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1544, in handle_exception
+[Sun May 13 08:24:01.706790 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43803]     self.log_exception((exc_type, exc_value, tb))
+[Sun May 13 08:24:01.706816 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43803]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1560, in log_exception
+[Sun May 13 08:24:01.706884 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43803]     ), exc_info=exc_info)
+[Sun May 13 08:24:01.706932 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43803] Message: 'Exception on /work/check_worker [POST]'
+[Sun May 13 08:24:01.706946 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43803] Arguments: ()
+[Sun May 13 08:24:02.009061 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43808] [2018-05-13 08:24:02,007] ERROR in app: Exception on /work/check_worker [POST]
+[Sun May 13 08:24:02.009180 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43808] Traceback (most recent call last):
+[Sun May 13 08:24:02.009194 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43808]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+[Sun May 13 08:24:02.009205 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43808]     response = self.full_dispatch_request()
+[Sun May 13 08:24:02.009217 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43808]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1614, in full_dispatch_request
+[Sun May 13 08:24:02.009227 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43808]     rv = self.handle_user_exception(e)
+[Sun May 13 08:24:02.009236 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43808]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1517, in handle_user_exception
+[Sun May 13 08:24:02.009246 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43808]     reraise(exc_type, exc_value, tb)
+[Sun May 13 08:24:02.009256 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43808]   File "/usr/lib/python3.6/site-packages/flask/_compat.py", line 33, in reraise
+[Sun May 13 08:24:02.009266 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43808]     raise value
+[Sun May 13 08:24:02.009275 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43808]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1612, in full_dispatch_request
+[Sun May 13 08:24:02.009285 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43808]     rv = self.dispatch_request()
+[Sun May 13 08:24:02.009295 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43808]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1598, in dispatch_request
+[Sun May 13 08:24:02.009305 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43808]     return self.view_functions[rule.endpoint](**req.view_args)
+[Sun May 13 08:24:02.009315 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43808]   File "/srv/http/virtlabs.tk/5koleso.tk/worker.py", line 45, in check_worker
+[Sun May 13 08:24:02.009325 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43808]     user = Auth.get(login=request.form['login'])
+[Sun May 13 08:24:02.009335 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43808]   File "<string>", line 2, in get
+[Sun May 13 08:24:02.009344 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43808]   File "/usr/lib/python3.6/site-packages/pony/utils/utils.py", line 58, in cut_traceback
+[Sun May 13 08:24:02.009354 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43808]     return func(*args, **kwargs)
+[Sun May 13 08:24:02.009364 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43808]   File "/usr/lib/python3.6/site-packages/pony/orm/core.py", line 3702, in get
+[Sun May 13 08:24:02.009374 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43808]     try: return entity._find_one_(kwargs)  # can throw MultipleObjectsFoundError
+[Sun May 13 08:24:02.009383 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43808]   File "/usr/lib/python3.6/site-packages/pony/orm/core.py", line 3792, in _find_one_
+[Sun May 13 08:24:02.009393 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43808]     avdict[attr] = attr.validate(val, None, entity, from_db=False)
+[Sun May 13 08:24:02.009403 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43808]   File "/usr/lib/python3.6/site-packages/pony/orm/core.py", line 2356, in validate
+[Sun May 13 08:24:02.009413 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43808]     attr if obj is None or obj._status_ is None else '%r.%s' % (obj, attr.name)))
+[Sun May 13 08:24:02.009493 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43808]   File "/usr/lib/python3.6/site-packages/pony/utils/utils.py", line 98, in throw
+[Sun May 13 08:24:02.009506 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43808]     raise exc
+[Sun May 13 08:24:02.009521 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43808] ValueError: Attribute Auth.login is required
+[Sun May 13 08:24:02.009578 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43808] 
+[Sun May 13 08:24:02.014619 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43808] --- Logging error ---
+[Sun May 13 08:24:02.015524 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43808] Traceback (most recent call last):
+[Sun May 13 08:24:02.015779 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43808]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+[Sun May 13 08:24:02.015798 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43808]     response = self.full_dispatch_request()
+[Sun May 13 08:24:02.015828 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43808]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1614, in full_dispatch_request
+[Sun May 13 08:24:02.015843 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43808]     rv = self.handle_user_exception(e)
+[Sun May 13 08:24:02.015871 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43808]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1517, in handle_user_exception
+[Sun May 13 08:24:02.015885 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43808]     reraise(exc_type, exc_value, tb)
+[Sun May 13 08:24:02.015911 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43808]   File "/usr/lib/python3.6/site-packages/flask/_compat.py", line 33, in reraise
+[Sun May 13 08:24:02.015925 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43808]     raise value
+[Sun May 13 08:24:02.015951 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43808]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1612, in full_dispatch_request
+[Sun May 13 08:24:02.015965 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43808]     rv = self.dispatch_request()
+[Sun May 13 08:24:02.015992 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43808]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1598, in dispatch_request
+[Sun May 13 08:24:02.016006 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43808]     return self.view_functions[rule.endpoint](**req.view_args)
+[Sun May 13 08:24:02.016033 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43808]   File "/srv/http/virtlabs.tk/5koleso.tk/worker.py", line 45, in check_worker
+[Sun May 13 08:24:02.016047 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43808]     user = Auth.get(login=request.form['login'])
+[Sun May 13 08:24:02.016073 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43808]   File "<string>", line 2, in get
+[Sun May 13 08:24:02.016102 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43808]   File "/usr/lib/python3.6/site-packages/pony/utils/utils.py", line 58, in cut_traceback
+[Sun May 13 08:24:02.016116 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43808]     return func(*args, **kwargs)
+[Sun May 13 08:24:02.016143 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43808]   File "/usr/lib/python3.6/site-packages/pony/orm/core.py", line 3702, in get
+[Sun May 13 08:24:02.016157 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43808]     try: return entity._find_one_(kwargs)  # can throw MultipleObjectsFoundError
+[Sun May 13 08:24:02.016184 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43808]   File "/usr/lib/python3.6/site-packages/pony/orm/core.py", line 3792, in _find_one_
+[Sun May 13 08:24:02.016197 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43808]     avdict[attr] = attr.validate(val, None, entity, from_db=False)
+[Sun May 13 08:24:02.016224 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43808]   File "/usr/lib/python3.6/site-packages/pony/orm/core.py", line 2356, in validate
+[Sun May 13 08:24:02.016312 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43808]     attr if obj is None or obj._status_ is None else '%r.%s' % (obj, attr.name)))
+[Sun May 13 08:24:02.016344 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43808]   File "/usr/lib/python3.6/site-packages/pony/utils/utils.py", line 98, in throw
+[Sun May 13 08:24:02.016358 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43808]     raise exc
+[Sun May 13 08:24:02.016415 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43808] ValueError: Attribute Auth.login is required
+[Sun May 13 08:24:02.016453 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43808] 
+[Sun May 13 08:24:02.016467 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43808] During handling of the above exception, another exception occurred:
+[Sun May 13 08:24:02.016477 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43808] 
+[Sun May 13 08:24:02.016502 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43808] Traceback (most recent call last):
+[Sun May 13 08:24:02.016606 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43808]   File "/usr/lib/python3.6/logging/handlers.py", line 1010, in emit
+[Sun May 13 08:24:02.016621 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43808]     smtp = smtplib.SMTP(self.mailhost, port, timeout=self.timeout)
+[Sun May 13 08:24:02.016648 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43808]   File "/usr/lib/python3.6/smtplib.py", line 251, in __init__
+[Sun May 13 08:24:02.016661 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43808]     (code, msg) = self.connect(host, port)
+[Sun May 13 08:24:02.016687 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43808]   File "/usr/lib/python3.6/smtplib.py", line 336, in connect
+[Sun May 13 08:24:02.016701 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43808]     self.sock = self._get_socket(host, port, self.timeout)
+[Sun May 13 08:24:02.016727 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43808]   File "/usr/lib/python3.6/smtplib.py", line 307, in _get_socket
+[Sun May 13 08:24:02.016740 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43808]     self.source_address)
+[Sun May 13 08:24:02.016766 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43808]   File "/usr/lib/python3.6/socket.py", line 704, in create_connection
+[Sun May 13 08:24:02.016779 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43808]     for res in getaddrinfo(host, port, 0, SOCK_STREAM):
+[Sun May 13 08:24:02.016805 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43808]   File "/usr/lib/python3.6/socket.py", line 745, in getaddrinfo
+[Sun May 13 08:24:02.016819 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43808]     for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+[Sun May 13 08:24:02.016863 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43808] socket.gaierror: [Errno -2] Name or service not known
+[Sun May 13 08:24:02.016909 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43808] Call stack:
+[Sun May 13 08:24:02.018010 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43808]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1997, in __call__
+[Sun May 13 08:24:02.018091 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43808]     return self.wsgi_app(environ, start_response)
+[Sun May 13 08:24:02.018128 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43808]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1985, in wsgi_app
+[Sun May 13 08:24:02.018144 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43808]     response = self.handle_exception(e)
+[Sun May 13 08:24:02.018172 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43808]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1544, in handle_exception
+[Sun May 13 08:24:02.018186 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43808]     self.log_exception((exc_type, exc_value, tb))
+[Sun May 13 08:24:02.018287 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43808]   File "/usr/lib/python3.6/site-packages/flask/app.py", line 1560, in log_exception
+[Sun May 13 08:24:02.018303 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43808]     ), exc_info=exc_info)
+[Sun May 13 08:24:02.018351 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43808] Message: 'Exception on /work/check_worker [POST]'
+[Sun May 13 08:24:02.018366 2018] [wsgi:error] [pid 10143] [remote 183.232.175.3:43808] Arguments: ()
