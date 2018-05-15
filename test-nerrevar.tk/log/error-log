@@ -642,3 +642,10 @@
 [Mon May 14 17:20:03.704126 2018] [wsgi:error] [pid 10151] [client 109.194.252.123:54913] Target WSGI script not found or unable to stat: /srv/http/test-nerrevar.tk/favicon.ico
 [Mon May 14 17:21:03.700193 2018] [wsgi:error] [pid 10180] [client 109.194.252.123:54919] Target WSGI script not found or unable to stat: /srv/http/test-nerrevar.tk/favicon.ico
 [Mon May 14 17:22:04.209744 2018] [wsgi:error] [pid 7449] [client 109.194.252.123:54920] Target WSGI script not found or unable to stat: /srv/http/test-nerrevar.tk/favicon.ico
+[Mon May 14 17:23:03.715470 2018] [wsgi:error] [pid 10334] [client 109.194.252.123:54923] Target WSGI script not found or unable to stat: /srv/http/test-nerrevar.tk/favicon.ico
+[Mon May 14 17:24:03.726764 2018] [wsgi:error] [pid 10333] [client 109.194.252.123:54924] Target WSGI script not found or unable to stat: /srv/http/test-nerrevar.tk/favicon.ico
+[Mon May 14 17:25:04.515439 2018] [wsgi:error] [pid 10150] [client 109.194.252.123:54929] Target WSGI script not found or unable to stat: /srv/http/test-nerrevar.tk/favicon.ico
+[Mon May 14 17:26:03.744616 2018] [wsgi:error] [pid 10193] [client 109.194.252.123:54933] Target WSGI script not found or unable to stat: /srv/http/test-nerrevar.tk/favicon.ico
+[Mon May 14 17:27:04.446770 2018] [wsgi:error] [pid 690] [client 109.194.252.123:54936] Target WSGI script not found or unable to stat: /srv/http/test-nerrevar.tk/favicon.ico
+[Mon May 14 17:28:03.761710 2018] [wsgi:error] [pid 10148] [client 109.194.252.123:54937] Target WSGI script not found or unable to stat: /srv/http/test-nerrevar.tk/favicon.ico
+[Mon May 14 17:29:04.103321 2018] [wsgi:error] [pid 10151] [client 109.194.252.123:54938] Target WSGI script not found or unable to stat: /srv/http/test-nerrevar.tk/favicon.ico
