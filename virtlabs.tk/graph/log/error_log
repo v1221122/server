@@ -391,3 +391,9 @@
 [Fri May 11 18:47:30.010805 2018] [php7:error] [pid 10150] [client 181.223.184.54:59441] script '/srv/http/virtlabs.tk/graph/command.php' not found or unable to stat
 [Sun May 13 06:23:09.811458 2018] [core:error] [pid 10180] [client 134.119.179.146:59554] AH00126: Invalid URI in request GET HTTP/1.1 HTTP/1.1
 [Tue May 15 03:45:23.008009 2018] [php7:error] [pid 10334] [client 14.231.45.253:54476] script '/srv/http/virtlabs.tk/graph/asdfi23piuypiuh.php' not found or unable to stat
+[Tue May 15 15:25:23.891167 2018] [php7:error] [pid 690] [client 78.85.137.135:64646] script '/srv/http/virtlabs.tk/graph/3r1ep1lgqypc440u.php' not found or unable to stat
+[Wed May 16 09:35:47.892996 2018] [php7:error] [pid 10333] [client 217.106.238.30:60641] script '/srv/http/virtlabs.tk/graph/prox_ch.php' not found or unable to stat
+[Wed May 16 13:39:25.385524 2018] [cgi:error] [pid 10148] [client 179.209.40.174:53326] AH02811: script not found or unable to stat: /srv/http/virtlabs.tk/graph/hndUnblock.cgi
+[Wed May 16 13:39:28.920461 2018] [cgi:error] [pid 10193] [client 179.209.40.174:53350] AH02811: script not found or unable to stat: /srv/http/virtlabs.tk/graph/tmUnblock.cgi
+[Wed May 16 13:39:39.878796 2018] [php7:error] [pid 10147] [client 179.209.40.174:53418] script '/srv/http/virtlabs.tk/graph/getcfg.php' not found or unable to stat
+[Wed May 16 13:39:43.497288 2018] [php7:error] [pid 7449] [client 179.209.40.174:53443] script '/srv/http/virtlabs.tk/graph/getcfg.php' not found or unable to stat
