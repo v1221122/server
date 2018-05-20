@@ -23,6 +23,7 @@ class Auth(_PostgresDb.Entity):
 class Online(_PostgresDb.Entity):
     id = PrimaryKey(int, auto=True)
     worker_id = Required(int)
+    queue_number = Required(int)
    
 class Taxi_order(_PostgresDb.Entity):
     id = PrimaryKey(int, auto=True)

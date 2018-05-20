@@ -174,7 +174,8 @@ def end_order():
     
 @app.route('/work/exit_queue')
 def exit_queue():
-    pass
+    with db_session:
+        select(p for p in Online if p.id = request.cookies.get('id')).delete()
     
 
 
