@@ -399,3 +399,4 @@
 [Wed May 16 13:39:43.497288 2018] [php7:error] [pid 7449] [client 179.209.40.174:53443] script '/srv/http/virtlabs.tk/graph/getcfg.php' not found or unable to stat
 [Tue May 22 15:48:06.783792 2018] [php7:error] [pid 10151] [client 189.122.122.194:34155] script '/srv/http/virtlabs.tk/graph/command.php' not found or unable to stat
 [Tue May 22 23:44:59.018560 2018] [php7:error] [pid 25421] [client 134.119.212.87:27526] script '/srv/http/virtlabs.tk/graph/echo.php' not found or unable to stat, referer: https://www.google.com/
+[Thu May 24 01:25:22.437785 2018] [php7:error] [pid 690] [client 94.177.170.32:53593] script '/srv/http/virtlabs.tk/graph/azenv.php' not found or unable to stat
