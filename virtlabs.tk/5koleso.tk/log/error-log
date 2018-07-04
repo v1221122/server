@@ -2284,3 +2284,14 @@
 [Wed Jul 04 13:16:32.055405 2018] [wsgi:error] [pid 328] [remote 37.9.113.170:40406]     select(p for p in Online if p.id = request.cookies.get('id')).delete()
 [Wed Jul 04 13:16:32.055499 2018] [wsgi:error] [pid 328] [remote 37.9.113.170:40406]                                      ^
 [Wed Jul 04 13:16:32.055534 2018] [wsgi:error] [pid 328] [remote 37.9.113.170:40406] SyntaxError: invalid syntax
+[Wed Jul 04 19:06:09.723025 2018] [wsgi:error] [pid 328] [remote 195.53.165.150:48637] mod_wsgi (pid=328): Target WSGI script '/srv/http/virtlabs.tk/5koleso.tk/api.wsgi' cannot be loaded as Python module.
+[Wed Jul 04 19:06:09.723281 2018] [wsgi:error] [pid 328] [remote 195.53.165.150:48637] mod_wsgi (pid=328): Exception occurred processing WSGI script '/srv/http/virtlabs.tk/5koleso.tk/api.wsgi'.
+[Wed Jul 04 19:06:09.723660 2018] [wsgi:error] [pid 328] [remote 195.53.165.150:48637] Traceback (most recent call last):
+[Wed Jul 04 19:06:09.723756 2018] [wsgi:error] [pid 328] [remote 195.53.165.150:48637]   File "/srv/http/virtlabs.tk/5koleso.tk/api.wsgi", line 1, in <module>
+[Wed Jul 04 19:06:09.723775 2018] [wsgi:error] [pid 328] [remote 195.53.165.150:48637]     from api import app as application
+[Wed Jul 04 19:06:09.723804 2018] [wsgi:error] [pid 328] [remote 195.53.165.150:48637]   File "/srv/http/virtlabs.tk/5koleso.tk/api.py", line 54, in <module>
+[Wed Jul 04 19:06:09.723905 2018] [wsgi:error] [pid 328] [remote 195.53.165.150:48637]     from worker import *
+[Wed Jul 04 19:06:09.723964 2018] [wsgi:error] [pid 328] [remote 195.53.165.150:48637]   File "/srv/http/virtlabs.tk/5koleso.tk/worker.py", line 178
+[Wed Jul 04 19:06:09.724001 2018] [wsgi:error] [pid 328] [remote 195.53.165.150:48637]     select(p for p in Online if p.id = request.cookies.get('id')).delete()
+[Wed Jul 04 19:06:09.724100 2018] [wsgi:error] [pid 328] [remote 195.53.165.150:48637]                                      ^
+[Wed Jul 04 19:06:09.724135 2018] [wsgi:error] [pid 328] [remote 195.53.165.150:48637] SyntaxError: invalid syntax
