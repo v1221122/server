@@ -2229,3 +2229,58 @@
 [Mon Jul 02 21:24:18.545307 2018] [wsgi:error] [pid 328] [remote 209.97.146.77:35292]     select(p for p in Online if p.id = request.cookies.get('id')).delete()
 [Mon Jul 02 21:24:18.545405 2018] [wsgi:error] [pid 328] [remote 209.97.146.77:35292]                                      ^
 [Mon Jul 02 21:24:18.545439 2018] [wsgi:error] [pid 328] [remote 209.97.146.77:35292] SyntaxError: invalid syntax
+[Wed Jul 04 02:58:13.377921 2018] [wsgi:error] [pid 328] [remote 37.9.113.74:39217] mod_wsgi (pid=328): Target WSGI script '/srv/http/virtlabs.tk/5koleso.tk/api.wsgi' cannot be loaded as Python module.
+[Wed Jul 04 02:58:13.378164 2018] [wsgi:error] [pid 328] [remote 37.9.113.74:39217] mod_wsgi (pid=328): Exception occurred processing WSGI script '/srv/http/virtlabs.tk/5koleso.tk/api.wsgi'.
+[Wed Jul 04 02:58:13.378540 2018] [wsgi:error] [pid 328] [remote 37.9.113.74:39217] Traceback (most recent call last):
+[Wed Jul 04 02:58:13.378636 2018] [wsgi:error] [pid 328] [remote 37.9.113.74:39217]   File "/srv/http/virtlabs.tk/5koleso.tk/api.wsgi", line 1, in <module>
+[Wed Jul 04 02:58:13.378654 2018] [wsgi:error] [pid 328] [remote 37.9.113.74:39217]     from api import app as application
+[Wed Jul 04 02:58:13.378777 2018] [wsgi:error] [pid 328] [remote 37.9.113.74:39217]   File "/srv/http/virtlabs.tk/5koleso.tk/api.py", line 54, in <module>
+[Wed Jul 04 02:58:13.378793 2018] [wsgi:error] [pid 328] [remote 37.9.113.74:39217]     from worker import *
+[Wed Jul 04 02:58:13.378845 2018] [wsgi:error] [pid 328] [remote 37.9.113.74:39217]   File "/srv/http/virtlabs.tk/5koleso.tk/worker.py", line 178
+[Wed Jul 04 02:58:13.378883 2018] [wsgi:error] [pid 328] [remote 37.9.113.74:39217]     select(p for p in Online if p.id = request.cookies.get('id')).delete()
+[Wed Jul 04 02:58:13.378978 2018] [wsgi:error] [pid 328] [remote 37.9.113.74:39217]                                      ^
+[Wed Jul 04 02:58:13.379012 2018] [wsgi:error] [pid 328] [remote 37.9.113.74:39217] SyntaxError: invalid syntax
+[Wed Jul 04 02:58:17.186424 2018] [wsgi:error] [pid 328] [remote 37.9.113.74:56954] mod_wsgi (pid=328): Target WSGI script '/srv/http/virtlabs.tk/5koleso.tk/api.wsgi' cannot be loaded as Python module.
+[Wed Jul 04 02:58:17.186666 2018] [wsgi:error] [pid 328] [remote 37.9.113.74:56954] mod_wsgi (pid=328): Exception occurred processing WSGI script '/srv/http/virtlabs.tk/5koleso.tk/api.wsgi'.
+[Wed Jul 04 02:58:17.187039 2018] [wsgi:error] [pid 328] [remote 37.9.113.74:56954] Traceback (most recent call last):
+[Wed Jul 04 02:58:17.187253 2018] [wsgi:error] [pid 328] [remote 37.9.113.74:56954]   File "/srv/http/virtlabs.tk/5koleso.tk/api.wsgi", line 1, in <module>
+[Wed Jul 04 02:58:17.187278 2018] [wsgi:error] [pid 328] [remote 37.9.113.74:56954]     from api import app as application
+[Wed Jul 04 02:58:17.187309 2018] [wsgi:error] [pid 328] [remote 37.9.113.74:56954]   File "/srv/http/virtlabs.tk/5koleso.tk/api.py", line 54, in <module>
+[Wed Jul 04 02:58:17.187324 2018] [wsgi:error] [pid 328] [remote 37.9.113.74:56954]     from worker import *
+[Wed Jul 04 02:58:17.187378 2018] [wsgi:error] [pid 328] [remote 37.9.113.74:56954]   File "/srv/http/virtlabs.tk/5koleso.tk/worker.py", line 178
+[Wed Jul 04 02:58:17.187415 2018] [wsgi:error] [pid 328] [remote 37.9.113.74:56954]     select(p for p in Online if p.id = request.cookies.get('id')).delete()
+[Wed Jul 04 02:58:17.187514 2018] [wsgi:error] [pid 328] [remote 37.9.113.74:56954]                                      ^
+[Wed Jul 04 02:58:17.187548 2018] [wsgi:error] [pid 328] [remote 37.9.113.74:56954] SyntaxError: invalid syntax
+[Wed Jul 04 05:35:04.213211 2018] [wsgi:error] [pid 328] [remote 209.97.145.114:57574] mod_wsgi (pid=328): Target WSGI script '/srv/http/virtlabs.tk/5koleso.tk/api.wsgi' cannot be loaded as Python module.
+[Wed Jul 04 05:35:04.213459 2018] [wsgi:error] [pid 328] [remote 209.97.145.114:57574] mod_wsgi (pid=328): Exception occurred processing WSGI script '/srv/http/virtlabs.tk/5koleso.tk/api.wsgi'.
+[Wed Jul 04 05:35:04.213820 2018] [wsgi:error] [pid 328] [remote 209.97.145.114:57574] Traceback (most recent call last):
+[Wed Jul 04 05:35:04.213913 2018] [wsgi:error] [pid 328] [remote 209.97.145.114:57574]   File "/srv/http/virtlabs.tk/5koleso.tk/api.wsgi", line 1, in <module>
+[Wed Jul 04 05:35:04.213931 2018] [wsgi:error] [pid 328] [remote 209.97.145.114:57574]     from api import app as application
+[Wed Jul 04 05:35:04.213959 2018] [wsgi:error] [pid 328] [remote 209.97.145.114:57574]   File "/srv/http/virtlabs.tk/5koleso.tk/api.py", line 54, in <module>
+[Wed Jul 04 05:35:04.213973 2018] [wsgi:error] [pid 328] [remote 209.97.145.114:57574]     from worker import *
+[Wed Jul 04 05:35:04.214024 2018] [wsgi:error] [pid 328] [remote 209.97.145.114:57574]   File "/srv/http/virtlabs.tk/5koleso.tk/worker.py", line 178
+[Wed Jul 04 05:35:04.214061 2018] [wsgi:error] [pid 328] [remote 209.97.145.114:57574]     select(p for p in Online if p.id = request.cookies.get('id')).delete()
+[Wed Jul 04 05:35:04.214154 2018] [wsgi:error] [pid 328] [remote 209.97.145.114:57574]                                      ^
+[Wed Jul 04 05:35:04.214188 2018] [wsgi:error] [pid 328] [remote 209.97.145.114:57574] SyntaxError: invalid syntax
+[Wed Jul 04 13:16:28.177409 2018] [wsgi:error] [pid 328] [remote 37.9.113.170:56212] mod_wsgi (pid=328): Target WSGI script '/srv/http/virtlabs.tk/5koleso.tk/api.wsgi' cannot be loaded as Python module.
+[Wed Jul 04 13:16:28.177756 2018] [wsgi:error] [pid 328] [remote 37.9.113.170:56212] mod_wsgi (pid=328): Exception occurred processing WSGI script '/srv/http/virtlabs.tk/5koleso.tk/api.wsgi'.
+[Wed Jul 04 13:16:28.178132 2018] [wsgi:error] [pid 328] [remote 37.9.113.170:56212] Traceback (most recent call last):
+[Wed Jul 04 13:16:28.178227 2018] [wsgi:error] [pid 328] [remote 37.9.113.170:56212]   File "/srv/http/virtlabs.tk/5koleso.tk/api.wsgi", line 1, in <module>
+[Wed Jul 04 13:16:28.178245 2018] [wsgi:error] [pid 328] [remote 37.9.113.170:56212]     from api import app as application
+[Wed Jul 04 13:16:28.178274 2018] [wsgi:error] [pid 328] [remote 37.9.113.170:56212]   File "/srv/http/virtlabs.tk/5koleso.tk/api.py", line 54, in <module>
+[Wed Jul 04 13:16:28.178288 2018] [wsgi:error] [pid 328] [remote 37.9.113.170:56212]     from worker import *
+[Wed Jul 04 13:16:28.178337 2018] [wsgi:error] [pid 328] [remote 37.9.113.170:56212]   File "/srv/http/virtlabs.tk/5koleso.tk/worker.py", line 178
+[Wed Jul 04 13:16:28.178375 2018] [wsgi:error] [pid 328] [remote 37.9.113.170:56212]     select(p for p in Online if p.id = request.cookies.get('id')).delete()
+[Wed Jul 04 13:16:28.178470 2018] [wsgi:error] [pid 328] [remote 37.9.113.170:56212]                                      ^
+[Wed Jul 04 13:16:28.178505 2018] [wsgi:error] [pid 328] [remote 37.9.113.170:56212] SyntaxError: invalid syntax
+[Wed Jul 04 13:16:32.054548 2018] [wsgi:error] [pid 328] [remote 37.9.113.170:40406] mod_wsgi (pid=328): Target WSGI script '/srv/http/virtlabs.tk/5koleso.tk/api.wsgi' cannot be loaded as Python module.
+[Wed Jul 04 13:16:32.054787 2018] [wsgi:error] [pid 328] [remote 37.9.113.170:40406] mod_wsgi (pid=328): Exception occurred processing WSGI script '/srv/http/virtlabs.tk/5koleso.tk/api.wsgi'.
+[Wed Jul 04 13:16:32.055162 2018] [wsgi:error] [pid 328] [remote 37.9.113.170:40406] Traceback (most recent call last):
+[Wed Jul 04 13:16:32.055256 2018] [wsgi:error] [pid 328] [remote 37.9.113.170:40406]   File "/srv/http/virtlabs.tk/5koleso.tk/api.wsgi", line 1, in <module>
+[Wed Jul 04 13:16:32.055274 2018] [wsgi:error] [pid 328] [remote 37.9.113.170:40406]     from api import app as application
+[Wed Jul 04 13:16:32.055301 2018] [wsgi:error] [pid 328] [remote 37.9.113.170:40406]   File "/srv/http/virtlabs.tk/5koleso.tk/api.py", line 54, in <module>
+[Wed Jul 04 13:16:32.055317 2018] [wsgi:error] [pid 328] [remote 37.9.113.170:40406]     from worker import *
+[Wed Jul 04 13:16:32.055367 2018] [wsgi:error] [pid 328] [remote 37.9.113.170:40406]   File "/srv/http/virtlabs.tk/5koleso.tk/worker.py", line 178
+[Wed Jul 04 13:16:32.055405 2018] [wsgi:error] [pid 328] [remote 37.9.113.170:40406]     select(p for p in Online if p.id = request.cookies.get('id')).delete()
+[Wed Jul 04 13:16:32.055499 2018] [wsgi:error] [pid 328] [remote 37.9.113.170:40406]                                      ^
+[Wed Jul 04 13:16:32.055534 2018] [wsgi:error] [pid 328] [remote 37.9.113.170:40406] SyntaxError: invalid syntax
