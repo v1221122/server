@@ -470,3 +470,4 @@
 [Thu Jul 05 11:00:00.096442 2018] [php7:error] [pid 13518] [client 46.161.9.31:54076] script '/srv/http/virtlabs.tk/graph/echo.php' not found or unable to stat, referer: https://www.google.com/
 [Fri Jul 06 06:32:11.077612 2018] [cgi:error] [pid 7758] [client 87.138.108.161:41421] AH02811: script not found or unable to stat: /srv/http/virtlabs.tk/graph/login.cgi
 [Fri Jul 06 12:57:24.744772 2018] [php7:error] [pid 332] [client 176.120.25.160:46306] script '/srv/http/virtlabs.tk/graph/prox_ch.php' not found or unable to stat
+[Sat Jul 07 12:15:07.560138 2018] [cgi:error] [pid 4756] [client 139.219.100.104:39871] AH02811: script not found or unable to stat: /srv/http/cgi-bin
