@@ -482,3 +482,5 @@
 [Sun Jul 08 08:41:19.335853 2018] [php7:error] [pid 334] [client 193.112.109.77:5023] script '/srv/http/virtlabs.tk/graph/db.init.php' not found or unable to stat
 [Sun Jul 08 08:41:20.526111 2018] [php7:error] [pid 335] [client 193.112.109.77:5094] script '/srv/http/virtlabs.tk/graph/db_session.init.php' not found or unable to stat
 [Sun Jul 08 08:41:22.098128 2018] [php7:error] [pid 13518] [client 193.112.109.77:5219] script '/srv/http/virtlabs.tk/graph/sheep.php' not found or unable to stat
+[Sun Jul 08 22:17:59.551474 2018] [cgi:error] [pid 333] [client 92.8.84.191:53850] AH02811: script not found or unable to stat: /srv/http/virtlabs.tk/graph/login.cgi
+[Mon Jul 09 09:33:58.140627 2018] [cgi:error] [pid 7758] [client 152.238.136.60:34207] AH02811: script not found or unable to stat: /srv/http/virtlabs.tk/graph/login.cgi

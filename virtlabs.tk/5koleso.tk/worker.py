@@ -19,10 +19,10 @@ from initdb import Worker, Auth, Online, Taxi_order
 from api import app
 
 
-timer = { 
+timer = {
         'now': time.time(),
         '1': 0
-}  # List for worker's timers  
+}  # List for worker's timers
 
 
 flag = False
@@ -35,11 +35,11 @@ def auth_check():
         return redirect('/work/index')
     return redirect('/work/auth')
 
-@app.route('/work/auth')  # Authentication  
+@app.route('/work/auth')  # Authentication
 def auth():
     return render_template('work/auth.html')
 
-@app.route('/work/check_worker', methods=['POST'])  # Check authentication  
+@app.route('/work/check_worker', methods=['POST'])  # Check authentication
 def check_worker():
     with db_session:
         user = Auth.get(login=request.form['login'])
@@ -50,7 +50,7 @@ def check_worker():
                 return resp
     return redirect('/work/auth')
 
-@app.route('/work/index')  # Main page  
+@app.route('/work/index')  # Main page
 def work_index():
     context = {
         "worker_id": request.cookies.get('id'),
@@ -58,13 +58,13 @@ def work_index():
     }
     return render_template('work/index_w.html', **context)
 
-@app.route('/work/queue')  # Page to enter the queue  
+@app.route('/work/queue')  # Page to enter the queue
 def queue():
     return render_template('work/queue.html', part=request.args.get('part'), back='index')
 
-@app.route('/work/part')  # Page with waiting the orders  
+@app.route('/work/part')  # Page with waiting the orders
 def work_part():
-    const = ['', 'Заречный', 'Пенза']  # Constant for directions  
+    const = ['', 'Заречный', 'Пенза']  # Constant for directions
     part = int(request.args.get('part'))
     context = dict()
     with db_session:
@@ -79,7 +79,7 @@ def work_part():
         }
         return render_template('work/orders.html', **context)
 
-@app.route('/work/order')  # Selected order details  
+@app.route('/work/order')  # Selected order details
 def order():
     context = {
         'id': request.args.get('id'),
@@ -92,7 +92,7 @@ def order():
     }
     return render_template('work/order.html', **context)
 
-@app.route('/work/wait_confirm')  # Page with stopped timer  
+@app.route('/work/wait_confirm')  # Page with stopped timer
 def wait_confirm():
     context = {
         'id': request.args.get('id'),
@@ -115,8 +115,8 @@ def wait_confirm():
     flag = True
     return render_template('work/wait_confirm.html', **context)  # !!!! add timer start
 
-    
-@app.route('/work/confirm')  # Page with timer  
+
+@app.route('/work/confirm')  # Page with timer
 def confirm():
     context = {
         'id': request.args.get('id'),
@@ -141,7 +141,7 @@ def confirm():
         time_flag = True
     return render_template('work/confirm.html', **context)
 
-@app.route('/work/lets_go')  # Go go go  
+@app.route('/work/lets_go')  # Go go go
 def lets_go():
     global time_flag
     if time_flag:
@@ -161,29 +161,35 @@ def lets_go():
     }
     return render_template('/work/lets_go.html', **context)
 
-@app.route('/work/cancel')  # Cancelling order  
+@app.route('/work/cancel')  # Cancelling order
 def work_cancel():
     # update worker_id in order!!!!
     return redirect('/work/index')
 
-@app.route('/work/end_order')  # Ending order  
+@app.route('/work/end_order')  # Ending order
 def end_order():
     with db_session:
         select(p for p in Taxi_order if p.id == request.args.get('id')).delete()  # need to store order and then delete and delete worker from queue!!!!
     return redirect('/work/index')
-    
+
 @app.route('/work/exit_queue')
 def exit_queue():
     with db_session:
-        select(p for p in Online if p.id = request.cookies.get('id')).delete()
-    
+        select(p for p in Online if p.id == request.cookies.get('id')).delete()
+
+@app.route('/work/logout')
+def logout():
+    with db_session:
+        select(p for p in Online if p.id == request.cookies.get('id')).delete()
 
 
-@app.route('/work/application')  # Apk file  
+
+
+@app.route('/work/application')  # Apk file
 def application_work():
     f = os.path.join(app.root_path, 'static', 'apk', 'work', 'forsaje_work.apk')
     return send_file(f, as_attachment=True, attachment_filename='forsaje_work.apk')
 
-@app.route('/work/info')  # Info page  
+@app.route('/work/info')  # Info page
 def info():
     return render_template('/work/info.html', back='index')

@@ -190,3 +190,5 @@ su
 su
 psql -U alex_forsaje
 su
+apachectl status
+su
