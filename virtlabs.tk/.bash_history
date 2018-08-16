@@ -192,3 +192,7 @@ psql -U alex_forsaje
 su
 apachectl status
 su
+df
+df -h
+su
+su
