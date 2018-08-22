@@ -196,3 +196,8 @@ df
 df -h
 su
 su
+psql -U alex_forsaje
+apachectl status
+apachectl restart
+su
+su

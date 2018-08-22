@@ -17,7 +17,7 @@ from initdb import Online, Taxi_order, Worker
 
 from api import app
 
-@app.route('/')
+@app.route('/')  # Greeting page
 def main():
     with db_session:
         query = Online.select()
@@ -27,12 +27,12 @@ def main():
         return render_template('index_p.html', **context)
 
 
-@app.route('/get_form')
+@app.route('/get_form')  # Page with order info input
 def get_form():
     return render_template('get_form.html')
 
 
-@app.route('/commit')
+@app.route('/commit')  # Function to write order data to database
 def commit_to_db():
     d = request.args.to_dict()
     order = {
@@ -53,7 +53,7 @@ def commit_to_db():
         else:
             return redirect('/')
 
-@app.route('/wait')
+@app.route('/wait')  # Page with car description and time
 def wait():
     current_car = dict()
     id = 0
@@ -76,7 +76,7 @@ def wait():
     return render_template('wait.html', **context)
 
 
-@app.route('/wait_page')
+@app.route('/wait_page')  # Page with timer
 def wait_page():
     confirm = False
     time = request.args.get('time')
@@ -100,8 +100,8 @@ def wait_page():
     }
     return render_template('wait_page.html', **context)
 
-    
-@app.route('/complete')
+
+@app.route('/complete')  # Function to end order
 def complete():
     with db_session:
         if request.cookies.get('user_phone'):
@@ -109,7 +109,7 @@ def complete():
             select(p for p in Taxi_order if p.phone == phone).p_confirm = True
     return redirect('/')
 
-@app.route('/cancel')
+@app.route('/cancel')  # Function to cancel order
 def cancel():
     with db_session:
         if request.cookies.get('user_phone'):
@@ -117,7 +117,12 @@ def cancel():
             select(p for p in Taxi_order if p.phone == phone).delete()
     return redirect('/')
 
-@app.route('/application')
+
+
+
+
+
+@app.route('/application')  # Apk file
 def application():
     f = os.path.join(app.root_path, 'static', 'apk', 'forsaje.apk')
     return send_file(f, as_attachment=True, attachment_filename='taxi_forsaje.apk')

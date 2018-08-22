@@ -10,7 +10,7 @@ from flask import (
                     make_response,
                     session
 )
-from pony.orm import db_session, select, delete
+from pony.orm import db_session, select, delete, commit
 
 
 from initdb import Worker, Auth, Online, Taxi_order
@@ -18,7 +18,7 @@ from initdb import Worker, Auth, Online, Taxi_order
 
 app = Flask(__name__)
 app.secret_key = '\x8a<\x1fQ\xf1A#:\xb5A\x18\x8b\xcb\x84\xb9\xe8k\xaf1\xb5\xdc\x04x]'
-app.debug = False
+app.debug = True
 
 
 
@@ -52,4 +52,3 @@ def robots():
 from passenger import *
 
 from worker import *
-

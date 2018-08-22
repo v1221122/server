@@ -19,6 +19,8 @@ from initdb import Worker, Auth, Online, Taxi_order
 from api import app
 
 
+worker_queue = list()
+
 timer = {
         'now': time.time(),
         '1': 0
@@ -47,6 +49,8 @@ def check_worker():
             if user.password == request.form['password']:
                 resp = make_response(redirect('/work/index'))
                 resp.set_cookie('id', str(user.id))
+                with db_session:
+                    ins = Online(worker_id=user.id)
                 return resp
     return redirect('/work/auth')
 
@@ -64,14 +68,16 @@ def queue():
 
 @app.route('/work/part')  # Page with waiting the orders
 def work_part():
+    global worker_queue
     const = ['', 'Заречный', 'Пенза']  # Constant for directions
     part = int(request.args.get('part'))
-    context = dict()
     with db_session:
         worker = Worker.get(id=request.args.get('id'))
+        if request.args.get('id') not in worker_queue:
+            worker_queue.append(request.args.get('id'))
         context = {
-            'queue': len(Online.select()),
-            'position': 1,
+            'queue': len(worker_queue),
+            'position': worker_queue.index(request.args.get('id')) + 1,
             'direction': const[part],
             'orders': Taxi_order.select(),
             'refresh': True,
@@ -174,13 +180,14 @@ def end_order():
 
 @app.route('/work/exit_queue')
 def exit_queue():
-    with db_session:
-        select(p for p in Online if p.id == request.cookies.get('id')).delete()
+    worker_queue.pop(0)
+    return redirect('/work/index')
 
 @app.route('/work/logout')
 def logout():
     with db_session:
         select(p for p in Online if p.id == request.cookies.get('id')).delete()
+    return redirect('/work/auth')
 
 
 
