@@ -201,3 +201,6 @@ apachectl status
 apachectl restart
 su
 su
+mv 5koleso.tk/templates/sound.mp3 5koleso.tk/static/sound/
+su
+cp 5koleso.tk/static/sound/free.mp3 5koleso.tk/static/sound/target.mp3
