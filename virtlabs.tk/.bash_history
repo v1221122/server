@@ -204,3 +204,74 @@ su
 mv 5koleso.tk/templates/sound.mp3 5koleso.tk/static/sound/
 su
 cp 5koleso.tk/static/sound/free.mp3 5koleso.tk/static/sound/target.mp3
+top
+webdav disk.yandex.ru
+nano .bash_history 
+cadaver disk.yandex.ru
+cadaver https://webdav.yandex.ru
+ls
+python trader.py
+python trader.py
+python trader.py
+time
+date
+python trader.py
+date
+python trader.py
+python trader.py
+nano trader.py 
+python trader.py
+python trader.py
+nano trader.py 
+python trader.py
+nano trader.py 
+python trader.py
+nano trader.py 
+python trader.py
+nano trader.py 
+time
+python
+python trader.py 
+python trader.py &
+%1
+python trader.py &
+python trader.py
+nohup python trader.py 
+jobs
+jobs
+top
+jobs
+top
+jobs
+top
+ps
+fg
+fg 14462
+kill 14462
+top
+nano trader.py 
+nano .bash_history 
+nohup python trader.py 
+ls
+cat nohup.out 
+cat nohup.out 
+nohup python trader.py 
+cat nohup.out 
+python trader.py 
+python trader.py 
+python trader.py 
+nohup python trader.py 
+top
+cat nohup.out 
+cat nohup.out 
+top
+cat nohup.out 
+cat nohup.out 
+top
+kill 15012
+python trader.py 
+nohup python trader.py 
+cat nohup.out 
+cat nohup.out 
+cat nohup.out 
+top
