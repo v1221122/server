@@ -275,3 +275,17 @@ cat nohup.out
 cat nohup.out 
 cat nohup.out 
 top
+cat no
+cat nohup.out 
+rm nohup.out 
+top
+kill 15039
+nohup python trader.py 
+top
+cat nohup.out 
+kill 20889
+python trader.py 
+nohup python trader.py 
+cat nohup.out 
+cat nohup.out 
+cat nohup.out 
