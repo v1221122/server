@@ -1275,3 +1275,5 @@
 [Sun Sep 02 09:03:26.292464 2018] [php7:error] [pid 17537] [client 180.76.145.233:12075] script '/srv/http/virtlabs.tk/graph/default.php' not found or unable to stat
 [Sun Sep 02 09:03:26.771259 2018] [php7:error] [pid 17538] [client 180.76.145.233:12195] script '/srv/http/virtlabs.tk/graph/sean.php' not found or unable to stat
 [Sun Sep 02 09:03:27.234338 2018] [php7:error] [pid 8928] [client 180.76.145.233:12311] script '/srv/http/virtlabs.tk/graph/app.php' not found or unable to stat
+[Mon Sep 03 05:51:43.082612 2018] [cgi:error] [pid 17539] [client 46.4.24.9:44422] AH02811: script not found or unable to stat: /srv/http/cgi-bin
+[Mon Sep 03 05:51:43.191032 2018] [cgi:error] [pid 11769] [client 46.4.24.9:44458] AH02811: script not found or unable to stat: /srv/http/cgi-bin
