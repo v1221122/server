@@ -289,3 +289,9 @@ nohup python trader.py
 cat nohup.out 
 cat nohup.out 
 cat nohup.out 
+hwclock --show
+date
+hwclock --systohc
+timedatectl
+hwclock --debug
+top
