@@ -295,3 +295,4 @@ hwclock --systohc
 timedatectl
 hwclock --debug
 top
+su
