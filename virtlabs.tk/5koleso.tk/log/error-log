@@ -379,3 +379,179 @@
 [Wed Aug 22 11:20:18.227759 2018] [wsgi:error] [pid 29829] [remote 176.59.104.106:29391]     ), exc_info=exc_info)
 [Wed Aug 22 11:20:18.227818 2018] [wsgi:error] [pid 29829] [remote 176.59.104.106:29391] Message: 'Exception on /work/check_worker [POST]'
 [Wed Aug 22 11:20:18.227833 2018] [wsgi:error] [pid 29829] [remote 176.59.104.106:29391] Arguments: ()
+[Mon Sep 24 15:58:04.601737 2018] [wsgi:error] [pid 15401] [remote 176.59.98.114:59025] mod_wsgi (pid=15401): Target WSGI script '/srv/http/virtlabs.tk/5koleso.tk/api.wsgi' cannot be loaded as Python module.
+[Mon Sep 24 15:58:04.602094 2018] [wsgi:error] [pid 15401] [remote 176.59.98.114:59025] mod_wsgi (pid=15401): Exception occurred processing WSGI script '/srv/http/virtlabs.tk/5koleso.tk/api.wsgi'.
+[Mon Sep 24 15:58:04.621062 2018] [wsgi:error] [pid 15401] [remote 176.59.98.114:59025] Traceback (most recent call last):
+[Mon Sep 24 15:58:04.621227 2018] [wsgi:error] [pid 15401] [remote 176.59.98.114:59025]   File "/srv/http/virtlabs.tk/5koleso.tk/api.wsgi", line 1, in <module>
+[Mon Sep 24 15:58:04.621248 2018] [wsgi:error] [pid 15401] [remote 176.59.98.114:59025]     from api import app as application
+[Mon Sep 24 15:58:04.621278 2018] [wsgi:error] [pid 15401] [remote 176.59.98.114:59025]   File "/srv/http/virtlabs.tk/5koleso.tk/api.py", line 54, in <module>
+[Mon Sep 24 15:58:04.621291 2018] [wsgi:error] [pid 15401] [remote 176.59.98.114:59025]     from worker import *
+[Mon Sep 24 15:58:04.621357 2018] [wsgi:error] [pid 15401] [remote 176.59.98.114:59025]   File "/srv/http/virtlabs.tk/5koleso.tk/worker.py", line 205
+[Mon Sep 24 15:58:04.621633 2018] [wsgi:error] [pid 15401] [remote 176.59.98.114:59025]     f = os.path.join(app.root_path, 'static', 'sound', 'free.mp3')
+[Mon Sep 24 15:58:04.621730 2018] [wsgi:error] [pid 15401] [remote 176.59.98.114:59025]     ^
+[Mon Sep 24 15:58:04.621767 2018] [wsgi:error] [pid 15401] [remote 176.59.98.114:59025] IndentationError: unexpected indent
+[Mon Sep 24 16:04:49.292276 2018] [wsgi:error] [pid 15401] [remote 176.59.98.114:27835] mod_wsgi (pid=15401): Target WSGI script '/srv/http/virtlabs.tk/5koleso.tk/api.wsgi' cannot be loaded as Python module.
+[Mon Sep 24 16:04:49.292599 2018] [wsgi:error] [pid 15401] [remote 176.59.98.114:27835] mod_wsgi (pid=15401): Exception occurred processing WSGI script '/srv/http/virtlabs.tk/5koleso.tk/api.wsgi'.
+[Mon Sep 24 16:04:49.293026 2018] [wsgi:error] [pid 15401] [remote 176.59.98.114:27835] Traceback (most recent call last):
+[Mon Sep 24 16:04:49.293138 2018] [wsgi:error] [pid 15401] [remote 176.59.98.114:27835]   File "/srv/http/virtlabs.tk/5koleso.tk/api.wsgi", line 1, in <module>
+[Mon Sep 24 16:04:49.293156 2018] [wsgi:error] [pid 15401] [remote 176.59.98.114:27835]     from api import app as application
+[Mon Sep 24 16:04:49.293186 2018] [wsgi:error] [pid 15401] [remote 176.59.98.114:27835]   File "/srv/http/virtlabs.tk/5koleso.tk/api.py", line 54, in <module>
+[Mon Sep 24 16:04:49.293200 2018] [wsgi:error] [pid 15401] [remote 176.59.98.114:27835]     from worker import *
+[Mon Sep 24 16:04:49.293252 2018] [wsgi:error] [pid 15401] [remote 176.59.98.114:27835]   File "/srv/http/virtlabs.tk/5koleso.tk/worker.py", line 205
+[Mon Sep 24 16:04:49.293289 2018] [wsgi:error] [pid 15401] [remote 176.59.98.114:27835]     f = os.path.join(app.root_path, 'static', 'sound', 'free.mp3')
+[Mon Sep 24 16:04:49.293373 2018] [wsgi:error] [pid 15401] [remote 176.59.98.114:27835]     ^
+[Mon Sep 24 16:04:49.293407 2018] [wsgi:error] [pid 15401] [remote 176.59.98.114:27835] IndentationError: unexpected indent
+[Mon Sep 24 16:04:49.522681 2018] [wsgi:error] [pid 15401] [remote 176.59.98.114:2960] mod_wsgi (pid=15401): Target WSGI script '/srv/http/virtlabs.tk/5koleso.tk/api.wsgi' cannot be loaded as Python module.
+[Mon Sep 24 16:04:49.522939 2018] [wsgi:error] [pid 15401] [remote 176.59.98.114:2960] mod_wsgi (pid=15401): Exception occurred processing WSGI script '/srv/http/virtlabs.tk/5koleso.tk/api.wsgi'.
+[Mon Sep 24 16:04:49.523364 2018] [wsgi:error] [pid 15401] [remote 176.59.98.114:2960] Traceback (most recent call last):
+[Mon Sep 24 16:04:49.523468 2018] [wsgi:error] [pid 15401] [remote 176.59.98.114:2960]   File "/srv/http/virtlabs.tk/5koleso.tk/api.wsgi", line 1, in <module>
+[Mon Sep 24 16:04:49.523486 2018] [wsgi:error] [pid 15401] [remote 176.59.98.114:2960]     from api import app as application
+[Mon Sep 24 16:04:49.523516 2018] [wsgi:error] [pid 15401] [remote 176.59.98.114:2960]   File "/srv/http/virtlabs.tk/5koleso.tk/api.py", line 54, in <module>
+[Mon Sep 24 16:04:49.523529 2018] [wsgi:error] [pid 15401] [remote 176.59.98.114:2960]     from worker import *
+[Mon Sep 24 16:04:49.523581 2018] [wsgi:error] [pid 15401] [remote 176.59.98.114:2960]   File "/srv/http/virtlabs.tk/5koleso.tk/worker.py", line 205
+[Mon Sep 24 16:04:49.523734 2018] [wsgi:error] [pid 15401] [remote 176.59.98.114:2960]     f = os.path.join(app.root_path, 'static', 'sound', 'free.mp3')
+[Mon Sep 24 16:04:49.523810 2018] [wsgi:error] [pid 15401] [remote 176.59.98.114:2960]     ^
+[Mon Sep 24 16:04:49.523844 2018] [wsgi:error] [pid 15401] [remote 176.59.98.114:2960] IndentationError: unexpected indent
+[Mon Sep 24 16:04:52.792830 2018] [wsgi:error] [pid 15401] [remote 176.59.98.114:39282] mod_wsgi (pid=15401): Target WSGI script '/srv/http/virtlabs.tk/5koleso.tk/api.wsgi' cannot be loaded as Python module.
+[Mon Sep 24 16:04:52.793107 2018] [wsgi:error] [pid 15401] [remote 176.59.98.114:39282] mod_wsgi (pid=15401): Exception occurred processing WSGI script '/srv/http/virtlabs.tk/5koleso.tk/api.wsgi'.
+[Mon Sep 24 16:04:52.793512 2018] [wsgi:error] [pid 15401] [remote 176.59.98.114:39282] Traceback (most recent call last):
+[Mon Sep 24 16:04:52.793610 2018] [wsgi:error] [pid 15401] [remote 176.59.98.114:39282]   File "/srv/http/virtlabs.tk/5koleso.tk/api.wsgi", line 1, in <module>
+[Mon Sep 24 16:04:52.793629 2018] [wsgi:error] [pid 15401] [remote 176.59.98.114:39282]     from api import app as application
+[Mon Sep 24 16:04:52.793658 2018] [wsgi:error] [pid 15401] [remote 176.59.98.114:39282]   File "/srv/http/virtlabs.tk/5koleso.tk/api.py", line 54, in <module>
+[Mon Sep 24 16:04:52.793672 2018] [wsgi:error] [pid 15401] [remote 176.59.98.114:39282]     from worker import *
+[Mon Sep 24 16:04:52.793723 2018] [wsgi:error] [pid 15401] [remote 176.59.98.114:39282]   File "/srv/http/virtlabs.tk/5koleso.tk/worker.py", line 205
+[Mon Sep 24 16:04:52.793760 2018] [wsgi:error] [pid 15401] [remote 176.59.98.114:39282]     f = os.path.join(app.root_path, 'static', 'sound', 'free.mp3')
+[Mon Sep 24 16:04:52.793827 2018] [wsgi:error] [pid 15401] [remote 176.59.98.114:39282]     ^
+[Mon Sep 24 16:04:52.793860 2018] [wsgi:error] [pid 15401] [remote 176.59.98.114:39282] IndentationError: unexpected indent
+[Mon Sep 24 16:04:56.032234 2018] [wsgi:error] [pid 15401] [remote 176.59.98.114:64023] mod_wsgi (pid=15401): Target WSGI script '/srv/http/virtlabs.tk/5koleso.tk/api.wsgi' cannot be loaded as Python module.
+[Mon Sep 24 16:04:56.032551 2018] [wsgi:error] [pid 15401] [remote 176.59.98.114:64023] mod_wsgi (pid=15401): Exception occurred processing WSGI script '/srv/http/virtlabs.tk/5koleso.tk/api.wsgi'.
+[Mon Sep 24 16:04:56.032978 2018] [wsgi:error] [pid 15401] [remote 176.59.98.114:64023] Traceback (most recent call last):
+[Mon Sep 24 16:04:56.033081 2018] [wsgi:error] [pid 15401] [remote 176.59.98.114:64023]   File "/srv/http/virtlabs.tk/5koleso.tk/api.wsgi", line 1, in <module>
+[Mon Sep 24 16:04:56.033100 2018] [wsgi:error] [pid 15401] [remote 176.59.98.114:64023]     from api import app as application
+[Mon Sep 24 16:04:56.033129 2018] [wsgi:error] [pid 15401] [remote 176.59.98.114:64023]   File "/srv/http/virtlabs.tk/5koleso.tk/api.py", line 54, in <module>
+[Mon Sep 24 16:04:56.033143 2018] [wsgi:error] [pid 15401] [remote 176.59.98.114:64023]     from worker import *
+[Mon Sep 24 16:04:56.033196 2018] [wsgi:error] [pid 15401] [remote 176.59.98.114:64023]   File "/srv/http/virtlabs.tk/5koleso.tk/worker.py", line 205
+[Mon Sep 24 16:04:56.033233 2018] [wsgi:error] [pid 15401] [remote 176.59.98.114:64023]     f = os.path.join(app.root_path, 'static', 'sound', 'free.mp3')
+[Mon Sep 24 16:04:56.033305 2018] [wsgi:error] [pid 15401] [remote 176.59.98.114:64023]     ^
+[Mon Sep 24 16:04:56.033340 2018] [wsgi:error] [pid 15401] [remote 176.59.98.114:64023] IndentationError: unexpected indent
+[Mon Sep 24 16:04:59.275097 2018] [wsgi:error] [pid 15401] [remote 176.59.98.114:57603] mod_wsgi (pid=15401): Target WSGI script '/srv/http/virtlabs.tk/5koleso.tk/api.wsgi' cannot be loaded as Python module.
+[Mon Sep 24 16:04:59.275389 2018] [wsgi:error] [pid 15401] [remote 176.59.98.114:57603] mod_wsgi (pid=15401): Exception occurred processing WSGI script '/srv/http/virtlabs.tk/5koleso.tk/api.wsgi'.
+[Mon Sep 24 16:04:59.275815 2018] [wsgi:error] [pid 15401] [remote 176.59.98.114:57603] Traceback (most recent call last):
+[Mon Sep 24 16:04:59.276064 2018] [wsgi:error] [pid 15401] [remote 176.59.98.114:57603]   File "/srv/http/virtlabs.tk/5koleso.tk/api.wsgi", line 1, in <module>
+[Mon Sep 24 16:04:59.276084 2018] [wsgi:error] [pid 15401] [remote 176.59.98.114:57603]     from api import app as application
+[Mon Sep 24 16:04:59.276115 2018] [wsgi:error] [pid 15401] [remote 176.59.98.114:57603]   File "/srv/http/virtlabs.tk/5koleso.tk/api.py", line 54, in <module>
+[Mon Sep 24 16:04:59.276129 2018] [wsgi:error] [pid 15401] [remote 176.59.98.114:57603]     from worker import *
+[Mon Sep 24 16:04:59.276185 2018] [wsgi:error] [pid 15401] [remote 176.59.98.114:57603]   File "/srv/http/virtlabs.tk/5koleso.tk/worker.py", line 205
+[Mon Sep 24 16:04:59.276222 2018] [wsgi:error] [pid 15401] [remote 176.59.98.114:57603]     f = os.path.join(app.root_path, 'static', 'sound', 'free.mp3')
+[Mon Sep 24 16:04:59.276295 2018] [wsgi:error] [pid 15401] [remote 176.59.98.114:57603]     ^
+[Mon Sep 24 16:04:59.276329 2018] [wsgi:error] [pid 15401] [remote 176.59.98.114:57603] IndentationError: unexpected indent
+[Mon Sep 24 16:05:02.502817 2018] [wsgi:error] [pid 15401] [remote 176.59.98.114:38858] mod_wsgi (pid=15401): Target WSGI script '/srv/http/virtlabs.tk/5koleso.tk/api.wsgi' cannot be loaded as Python module.
+[Mon Sep 24 16:05:02.503139 2018] [wsgi:error] [pid 15401] [remote 176.59.98.114:38858] mod_wsgi (pid=15401): Exception occurred processing WSGI script '/srv/http/virtlabs.tk/5koleso.tk/api.wsgi'.
+[Mon Sep 24 16:05:02.503566 2018] [wsgi:error] [pid 15401] [remote 176.59.98.114:38858] Traceback (most recent call last):
+[Mon Sep 24 16:05:02.503669 2018] [wsgi:error] [pid 15401] [remote 176.59.98.114:38858]   File "/srv/http/virtlabs.tk/5koleso.tk/api.wsgi", line 1, in <module>
+[Mon Sep 24 16:05:02.503687 2018] [wsgi:error] [pid 15401] [remote 176.59.98.114:38858]     from api import app as application
+[Mon Sep 24 16:05:02.503717 2018] [wsgi:error] [pid 15401] [remote 176.59.98.114:38858]   File "/srv/http/virtlabs.tk/5koleso.tk/api.py", line 54, in <module>
+[Mon Sep 24 16:05:02.503730 2018] [wsgi:error] [pid 15401] [remote 176.59.98.114:38858]     from worker import *
+[Mon Sep 24 16:05:02.503785 2018] [wsgi:error] [pid 15401] [remote 176.59.98.114:38858]   File "/srv/http/virtlabs.tk/5koleso.tk/worker.py", line 205
+[Mon Sep 24 16:05:02.503821 2018] [wsgi:error] [pid 15401] [remote 176.59.98.114:38858]     f = os.path.join(app.root_path, 'static', 'sound', 'free.mp3')
+[Mon Sep 24 16:05:02.503894 2018] [wsgi:error] [pid 15401] [remote 176.59.98.114:38858]     ^
+[Mon Sep 24 16:05:02.503927 2018] [wsgi:error] [pid 15401] [remote 176.59.98.114:38858] IndentationError: unexpected indent
+[Mon Sep 24 16:05:05.731716 2018] [wsgi:error] [pid 15401] [remote 176.59.98.114:50666] mod_wsgi (pid=15401): Target WSGI script '/srv/http/virtlabs.tk/5koleso.tk/api.wsgi' cannot be loaded as Python module.
+[Mon Sep 24 16:05:05.732004 2018] [wsgi:error] [pid 15401] [remote 176.59.98.114:50666] mod_wsgi (pid=15401): Exception occurred processing WSGI script '/srv/http/virtlabs.tk/5koleso.tk/api.wsgi'.
+[Mon Sep 24 16:05:05.732422 2018] [wsgi:error] [pid 15401] [remote 176.59.98.114:50666] Traceback (most recent call last):
+[Mon Sep 24 16:05:05.732524 2018] [wsgi:error] [pid 15401] [remote 176.59.98.114:50666]   File "/srv/http/virtlabs.tk/5koleso.tk/api.wsgi", line 1, in <module>
+[Mon Sep 24 16:05:05.732542 2018] [wsgi:error] [pid 15401] [remote 176.59.98.114:50666]     from api import app as application
+[Mon Sep 24 16:05:05.732573 2018] [wsgi:error] [pid 15401] [remote 176.59.98.114:50666]   File "/srv/http/virtlabs.tk/5koleso.tk/api.py", line 54, in <module>
+[Mon Sep 24 16:05:05.732587 2018] [wsgi:error] [pid 15401] [remote 176.59.98.114:50666]     from worker import *
+[Mon Sep 24 16:05:05.732639 2018] [wsgi:error] [pid 15401] [remote 176.59.98.114:50666]   File "/srv/http/virtlabs.tk/5koleso.tk/worker.py", line 205
+[Mon Sep 24 16:05:05.732677 2018] [wsgi:error] [pid 15401] [remote 176.59.98.114:50666]     f = os.path.join(app.root_path, 'static', 'sound', 'free.mp3')
+[Mon Sep 24 16:05:05.732861 2018] [wsgi:error] [pid 15401] [remote 176.59.98.114:50666]     ^
+[Mon Sep 24 16:05:05.732898 2018] [wsgi:error] [pid 15401] [remote 176.59.98.114:50666] IndentationError: unexpected indent
+[Mon Sep 24 16:05:08.975133 2018] [wsgi:error] [pid 15401] [remote 176.59.98.114:59973] mod_wsgi (pid=15401): Target WSGI script '/srv/http/virtlabs.tk/5koleso.tk/api.wsgi' cannot be loaded as Python module.
+[Mon Sep 24 16:05:08.975440 2018] [wsgi:error] [pid 15401] [remote 176.59.98.114:59973] mod_wsgi (pid=15401): Exception occurred processing WSGI script '/srv/http/virtlabs.tk/5koleso.tk/api.wsgi'.
+[Mon Sep 24 16:05:08.975861 2018] [wsgi:error] [pid 15401] [remote 176.59.98.114:59973] Traceback (most recent call last):
+[Mon Sep 24 16:05:08.975964 2018] [wsgi:error] [pid 15401] [remote 176.59.98.114:59973]   File "/srv/http/virtlabs.tk/5koleso.tk/api.wsgi", line 1, in <module>
+[Mon Sep 24 16:05:08.975982 2018] [wsgi:error] [pid 15401] [remote 176.59.98.114:59973]     from api import app as application
+[Mon Sep 24 16:05:08.976013 2018] [wsgi:error] [pid 15401] [remote 176.59.98.114:59973]   File "/srv/http/virtlabs.tk/5koleso.tk/api.py", line 54, in <module>
+[Mon Sep 24 16:05:08.976026 2018] [wsgi:error] [pid 15401] [remote 176.59.98.114:59973]     from worker import *
+[Mon Sep 24 16:05:08.976078 2018] [wsgi:error] [pid 15401] [remote 176.59.98.114:59973]   File "/srv/http/virtlabs.tk/5koleso.tk/worker.py", line 205
+[Mon Sep 24 16:05:08.976114 2018] [wsgi:error] [pid 15401] [remote 176.59.98.114:59973]     f = os.path.join(app.root_path, 'static', 'sound', 'free.mp3')
+[Mon Sep 24 16:05:08.976185 2018] [wsgi:error] [pid 15401] [remote 176.59.98.114:59973]     ^
+[Mon Sep 24 16:05:08.976219 2018] [wsgi:error] [pid 15401] [remote 176.59.98.114:59973] IndentationError: unexpected indent
+[Mon Sep 24 16:05:12.222703 2018] [wsgi:error] [pid 15401] [remote 176.59.98.114:47059] mod_wsgi (pid=15401): Target WSGI script '/srv/http/virtlabs.tk/5koleso.tk/api.wsgi' cannot be loaded as Python module.
+[Mon Sep 24 16:05:12.222998 2018] [wsgi:error] [pid 15401] [remote 176.59.98.114:47059] mod_wsgi (pid=15401): Exception occurred processing WSGI script '/srv/http/virtlabs.tk/5koleso.tk/api.wsgi'.
+[Mon Sep 24 16:05:12.223426 2018] [wsgi:error] [pid 15401] [remote 176.59.98.114:47059] Traceback (most recent call last):
+[Mon Sep 24 16:05:12.223527 2018] [wsgi:error] [pid 15401] [remote 176.59.98.114:47059]   File "/srv/http/virtlabs.tk/5koleso.tk/api.wsgi", line 1, in <module>
+[Mon Sep 24 16:05:12.223544 2018] [wsgi:error] [pid 15401] [remote 176.59.98.114:47059]     from api import app as application
+[Mon Sep 24 16:05:12.223574 2018] [wsgi:error] [pid 15401] [remote 176.59.98.114:47059]   File "/srv/http/virtlabs.tk/5koleso.tk/api.py", line 54, in <module>
+[Mon Sep 24 16:05:12.223589 2018] [wsgi:error] [pid 15401] [remote 176.59.98.114:47059]     from worker import *
+[Mon Sep 24 16:05:12.223641 2018] [wsgi:error] [pid 15401] [remote 176.59.98.114:47059]   File "/srv/http/virtlabs.tk/5koleso.tk/worker.py", line 205
+[Mon Sep 24 16:05:12.223677 2018] [wsgi:error] [pid 15401] [remote 176.59.98.114:47059]     f = os.path.join(app.root_path, 'static', 'sound', 'free.mp3')
+[Mon Sep 24 16:05:12.223748 2018] [wsgi:error] [pid 15401] [remote 176.59.98.114:47059]     ^
+[Mon Sep 24 16:05:12.223782 2018] [wsgi:error] [pid 15401] [remote 176.59.98.114:47059] IndentationError: unexpected indent
+[Mon Sep 24 16:05:15.451916 2018] [wsgi:error] [pid 15401] [remote 176.59.98.114:34097] mod_wsgi (pid=15401): Target WSGI script '/srv/http/virtlabs.tk/5koleso.tk/api.wsgi' cannot be loaded as Python module.
+[Mon Sep 24 16:05:15.452217 2018] [wsgi:error] [pid 15401] [remote 176.59.98.114:34097] mod_wsgi (pid=15401): Exception occurred processing WSGI script '/srv/http/virtlabs.tk/5koleso.tk/api.wsgi'.
+[Mon Sep 24 16:05:15.452642 2018] [wsgi:error] [pid 15401] [remote 176.59.98.114:34097] Traceback (most recent call last):
+[Mon Sep 24 16:05:15.452748 2018] [wsgi:error] [pid 15401] [remote 176.59.98.114:34097]   File "/srv/http/virtlabs.tk/5koleso.tk/api.wsgi", line 1, in <module>
+[Mon Sep 24 16:05:15.452870 2018] [wsgi:error] [pid 15401] [remote 176.59.98.114:34097]     from api import app as application
+[Mon Sep 24 16:05:15.452905 2018] [wsgi:error] [pid 15401] [remote 176.59.98.114:34097]   File "/srv/http/virtlabs.tk/5koleso.tk/api.py", line 54, in <module>
+[Mon Sep 24 16:05:15.452919 2018] [wsgi:error] [pid 15401] [remote 176.59.98.114:34097]     from worker import *
+[Mon Sep 24 16:05:15.452975 2018] [wsgi:error] [pid 15401] [remote 176.59.98.114:34097]   File "/srv/http/virtlabs.tk/5koleso.tk/worker.py", line 205
+[Mon Sep 24 16:05:15.453013 2018] [wsgi:error] [pid 15401] [remote 176.59.98.114:34097]     f = os.path.join(app.root_path, 'static', 'sound', 'free.mp3')
+[Mon Sep 24 16:05:15.453086 2018] [wsgi:error] [pid 15401] [remote 176.59.98.114:34097]     ^
+[Mon Sep 24 16:05:15.453120 2018] [wsgi:error] [pid 15401] [remote 176.59.98.114:34097] IndentationError: unexpected indent
+[Mon Sep 24 16:05:18.691824 2018] [wsgi:error] [pid 15401] [remote 176.59.98.114:60888] mod_wsgi (pid=15401): Target WSGI script '/srv/http/virtlabs.tk/5koleso.tk/api.wsgi' cannot be loaded as Python module.
+[Mon Sep 24 16:05:18.692112 2018] [wsgi:error] [pid 15401] [remote 176.59.98.114:60888] mod_wsgi (pid=15401): Exception occurred processing WSGI script '/srv/http/virtlabs.tk/5koleso.tk/api.wsgi'.
+[Mon Sep 24 16:05:18.692531 2018] [wsgi:error] [pid 15401] [remote 176.59.98.114:60888] Traceback (most recent call last):
+[Mon Sep 24 16:05:18.692631 2018] [wsgi:error] [pid 15401] [remote 176.59.98.114:60888]   File "/srv/http/virtlabs.tk/5koleso.tk/api.wsgi", line 1, in <module>
+[Mon Sep 24 16:05:18.692650 2018] [wsgi:error] [pid 15401] [remote 176.59.98.114:60888]     from api import app as application
+[Mon Sep 24 16:05:18.692680 2018] [wsgi:error] [pid 15401] [remote 176.59.98.114:60888]   File "/srv/http/virtlabs.tk/5koleso.tk/api.py", line 54, in <module>
+[Mon Sep 24 16:05:18.692694 2018] [wsgi:error] [pid 15401] [remote 176.59.98.114:60888]     from worker import *
+[Mon Sep 24 16:05:18.692747 2018] [wsgi:error] [pid 15401] [remote 176.59.98.114:60888]   File "/srv/http/virtlabs.tk/5koleso.tk/worker.py", line 205
+[Mon Sep 24 16:05:18.692783 2018] [wsgi:error] [pid 15401] [remote 176.59.98.114:60888]     f = os.path.join(app.root_path, 'static', 'sound', 'free.mp3')
+[Mon Sep 24 16:05:18.692853 2018] [wsgi:error] [pid 15401] [remote 176.59.98.114:60888]     ^
+[Mon Sep 24 16:05:18.692887 2018] [wsgi:error] [pid 15401] [remote 176.59.98.114:60888] IndentationError: unexpected indent
+[Mon Sep 24 16:05:21.932537 2018] [wsgi:error] [pid 15401] [remote 176.59.98.114:60147] mod_wsgi (pid=15401): Target WSGI script '/srv/http/virtlabs.tk/5koleso.tk/api.wsgi' cannot be loaded as Python module.
+[Mon Sep 24 16:05:21.932858 2018] [wsgi:error] [pid 15401] [remote 176.59.98.114:60147] mod_wsgi (pid=15401): Exception occurred processing WSGI script '/srv/http/virtlabs.tk/5koleso.tk/api.wsgi'.
+[Mon Sep 24 16:05:21.933283 2018] [wsgi:error] [pid 15401] [remote 176.59.98.114:60147] Traceback (most recent call last):
+[Mon Sep 24 16:05:21.933387 2018] [wsgi:error] [pid 15401] [remote 176.59.98.114:60147]   File "/srv/http/virtlabs.tk/5koleso.tk/api.wsgi", line 1, in <module>
+[Mon Sep 24 16:05:21.933405 2018] [wsgi:error] [pid 15401] [remote 176.59.98.114:60147]     from api import app as application
+[Mon Sep 24 16:05:21.933434 2018] [wsgi:error] [pid 15401] [remote 176.59.98.114:60147]   File "/srv/http/virtlabs.tk/5koleso.tk/api.py", line 54, in <module>
+[Mon Sep 24 16:05:21.933448 2018] [wsgi:error] [pid 15401] [remote 176.59.98.114:60147]     from worker import *
+[Mon Sep 24 16:05:21.933500 2018] [wsgi:error] [pid 15401] [remote 176.59.98.114:60147]   File "/srv/http/virtlabs.tk/5koleso.tk/worker.py", line 205
+[Mon Sep 24 16:05:21.933536 2018] [wsgi:error] [pid 15401] [remote 176.59.98.114:60147]     f = os.path.join(app.root_path, 'static', 'sound', 'free.mp3')
+[Mon Sep 24 16:05:21.933607 2018] [wsgi:error] [pid 15401] [remote 176.59.98.114:60147]     ^
+[Mon Sep 24 16:05:21.933641 2018] [wsgi:error] [pid 15401] [remote 176.59.98.114:60147] IndentationError: unexpected indent
+[Mon Sep 24 16:05:22.151579 2018] [wsgi:error] [pid 15401] [remote 176.59.98.114:26342] mod_wsgi (pid=15401): Target WSGI script '/srv/http/virtlabs.tk/5koleso.tk/api.wsgi' cannot be loaded as Python module.
+[Mon Sep 24 16:05:22.151867 2018] [wsgi:error] [pid 15401] [remote 176.59.98.114:26342] mod_wsgi (pid=15401): Exception occurred processing WSGI script '/srv/http/virtlabs.tk/5koleso.tk/api.wsgi'.
+[Mon Sep 24 16:05:22.152292 2018] [wsgi:error] [pid 15401] [remote 176.59.98.114:26342] Traceback (most recent call last):
+[Mon Sep 24 16:05:22.152395 2018] [wsgi:error] [pid 15401] [remote 176.59.98.114:26342]   File "/srv/http/virtlabs.tk/5koleso.tk/api.wsgi", line 1, in <module>
+[Mon Sep 24 16:05:22.152413 2018] [wsgi:error] [pid 15401] [remote 176.59.98.114:26342]     from api import app as application
+[Mon Sep 24 16:05:22.152443 2018] [wsgi:error] [pid 15401] [remote 176.59.98.114:26342]   File "/srv/http/virtlabs.tk/5koleso.tk/api.py", line 54, in <module>
+[Mon Sep 24 16:05:22.152458 2018] [wsgi:error] [pid 15401] [remote 176.59.98.114:26342]     from worker import *
+[Mon Sep 24 16:05:22.152510 2018] [wsgi:error] [pid 15401] [remote 176.59.98.114:26342]   File "/srv/http/virtlabs.tk/5koleso.tk/worker.py", line 205
+[Mon Sep 24 16:05:22.152546 2018] [wsgi:error] [pid 15401] [remote 176.59.98.114:26342]     f = os.path.join(app.root_path, 'static', 'sound', 'free.mp3')
+[Mon Sep 24 16:05:22.152617 2018] [wsgi:error] [pid 15401] [remote 176.59.98.114:26342]     ^
+[Mon Sep 24 16:05:22.152651 2018] [wsgi:error] [pid 15401] [remote 176.59.98.114:26342] IndentationError: unexpected indent
+[Mon Sep 24 16:23:21.493259 2018] [wsgi:error] [pid 15401] [remote 176.59.98.114:17140] mod_wsgi (pid=15401): Target WSGI script '/srv/http/virtlabs.tk/5koleso.tk/api.wsgi' cannot be loaded as Python module.
+[Mon Sep 24 16:23:21.493581 2018] [wsgi:error] [pid 15401] [remote 176.59.98.114:17140] mod_wsgi (pid=15401): Exception occurred processing WSGI script '/srv/http/virtlabs.tk/5koleso.tk/api.wsgi'.
+[Mon Sep 24 16:23:21.494012 2018] [wsgi:error] [pid 15401] [remote 176.59.98.114:17140] Traceback (most recent call last):
+[Mon Sep 24 16:23:21.494121 2018] [wsgi:error] [pid 15401] [remote 176.59.98.114:17140]   File "/srv/http/virtlabs.tk/5koleso.tk/api.wsgi", line 1, in <module>
+[Mon Sep 24 16:23:21.494140 2018] [wsgi:error] [pid 15401] [remote 176.59.98.114:17140]     from api import app as application
+[Mon Sep 24 16:23:21.494168 2018] [wsgi:error] [pid 15401] [remote 176.59.98.114:17140]   File "/srv/http/virtlabs.tk/5koleso.tk/api.py", line 54, in <module>
+[Mon Sep 24 16:23:21.494182 2018] [wsgi:error] [pid 15401] [remote 176.59.98.114:17140]     from worker import *
+[Mon Sep 24 16:23:21.494234 2018] [wsgi:error] [pid 15401] [remote 176.59.98.114:17140]   File "/srv/http/virtlabs.tk/5koleso.tk/worker.py", line 205
+[Mon Sep 24 16:23:21.494271 2018] [wsgi:error] [pid 15401] [remote 176.59.98.114:17140]     f = os.path.join(app.root_path, 'static', 'sound', 'free.mp3')
+[Mon Sep 24 16:23:21.494343 2018] [wsgi:error] [pid 15401] [remote 176.59.98.114:17140]     ^
+[Mon Sep 24 16:23:21.494377 2018] [wsgi:error] [pid 15401] [remote 176.59.98.114:17140] IndentationError: unexpected indent
+[Mon Sep 24 16:25:02.074719 2018] [wsgi:error] [pid 15577] [remote 176.59.98.114:29617] mod_wsgi (pid=15577): Target WSGI script '/srv/http/virtlabs.tk/5koleso.tk/api.wsgi' cannot be loaded as Python module.
+[Mon Sep 24 16:25:02.075118 2018] [wsgi:error] [pid 15577] [remote 176.59.98.114:29617] mod_wsgi (pid=15577): Exception occurred processing WSGI script '/srv/http/virtlabs.tk/5koleso.tk/api.wsgi'.
+[Mon Sep 24 16:25:02.076369 2018] [wsgi:error] [pid 15577] [remote 176.59.98.114:29617] Traceback (most recent call last):
+[Mon Sep 24 16:25:02.076532 2018] [wsgi:error] [pid 15577] [remote 176.59.98.114:29617]   File "/srv/http/virtlabs.tk/5koleso.tk/api.wsgi", line 1, in <module>
+[Mon Sep 24 16:25:02.076552 2018] [wsgi:error] [pid 15577] [remote 176.59.98.114:29617]     from api import app as application
+[Mon Sep 24 16:25:02.076690 2018] [wsgi:error] [pid 15577] [remote 176.59.98.114:29617]   File "/srv/http/virtlabs.tk/5koleso.tk/api.py", line 54, in <module>
+[Mon Sep 24 16:25:02.076706 2018] [wsgi:error] [pid 15577] [remote 176.59.98.114:29617]     from worker import *
+[Mon Sep 24 16:25:02.076773 2018] [wsgi:error] [pid 15577] [remote 176.59.98.114:29617]   File "/srv/http/virtlabs.tk/5koleso.tk/worker.py", line 205
+[Mon Sep 24 16:25:02.077077 2018] [wsgi:error] [pid 15577] [remote 176.59.98.114:29617]     f = os.path.join(app.root_path, 'static', 'sound', 'free.mp3')
+[Mon Sep 24 16:25:02.077208 2018] [wsgi:error] [pid 15577] [remote 176.59.98.114:29617]     ^
+[Mon Sep 24 16:25:02.077247 2018] [wsgi:error] [pid 15577] [remote 176.59.98.114:29617] IndentationError: unexpected indent

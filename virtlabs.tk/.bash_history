@@ -296,3 +296,14 @@ timedatectl
 hwclock --debug
 top
 su
+apachectl -k graceful
+su
+su
+ls
+cd ../test
+cd ../test-nerrevar.tk/
+ls
+mkdir log
+su
+apachectl status
+su
