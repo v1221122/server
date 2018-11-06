@@ -307,3 +307,6 @@ mkdir log
 su
 apachectl status
 su
+apachectl status
+su
+su
