@@ -1,3 +1,5 @@
 [Mon Apr 02 15:57:48.201864 2018] [ssl:warn] [pid 252] AH01909: www.domovenok.cf:443:0 server certificate does NOT include an ID which matches the server name
 [Mon Apr 02 16:03:24.335405 2018] [ssl:warn] [pid 252] AH01909: www.domovenok.cf:443:0 server certificate does NOT include an ID which matches the server name
 [Mon Apr 02 16:03:32.170215 2018] [ssl:warn] [pid 252] AH01909: www.domovenok.cf:443:0 server certificate does NOT include an ID which matches the server name
+[Thu Nov 08 07:51:59.009937 2018] [wsgi:error] [pid 10234] [remote 188.32.100.96:14046] mod_wsgi (pid=10234): Exception occurred processing WSGI script '/srv/http/virtlabs.tk/alena/api.py'.
+[Thu Nov 08 07:51:59.019836 2018] [wsgi:error] [pid 10234] [remote 188.32.100.96:14046] OSError: Apache/mod_wsgi failed to write response data: Broken pipe.
